@@ -157,7 +157,26 @@ root.render();
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+```
 
+### How to update the rendered elements
+
+So, this `<h1>` element is already rendered on the screen. Now, you want to update this render elements. Example, can create a function tick. And inside this function have a const element and multiple line of <div>.
+
+```js
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+function tick() {
+    const element = (
+        <div>
+            <h1>Hello World, let's learn about the Render Elements</h1>
+            <h2>It is {new Date().toLocaleTimeString()}</h2>
+        </div>
+    );
+    root.render(element);
+}
+
+setInterval(tick, 1000);
 ```
 
 Let’s say there is a `<div>` somewhere in your HTML file:
