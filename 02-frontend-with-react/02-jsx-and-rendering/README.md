@@ -1,9 +1,11 @@
 # JSX
 
 This variable declaration:
+
 ```js
 const element = <h1>Hello, world!</h1>;
 ```
+
 This funny tag syntax is neither a string nor HTML.
 
 It is called JSX, and it is a syntax extension to JavaScript. Recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.
@@ -16,7 +18,7 @@ Instead of artificially separating technologies by putting markup and logic in s
 
 React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.
 
-## Empty Fragment <></> & Other  Ways to return `jsx`
+## Empty Fragment <></> & Other  Ways to return `jsx`.
 
 Declare a variable called `element` and then use it inside JSX by wrapping it in {curly braces}:
 
@@ -37,7 +39,7 @@ export default App;
 
 inside the `<div>{expression}</div>` you are writing something kind of an expression and this expression is actually called a JSX. So, you can use a Expressions inside the HTML which will be looking very similar to the HTML but, they are not the HTML. They are the extended version of the JavaScript.
 
-Want to return multiple <div>. You can only return one single HTML tag.
+Want to return multiple `<div>`. You can only return one single HTML tag.
 
 ```js
 function App() {
@@ -82,7 +84,7 @@ const element = (
   </h1>
 );
 ```
-  
+
 We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.
 
 ## Conditional Rendering
@@ -114,5 +116,44 @@ function App() {
 }
 
 export default App;
+```
+
+>🍝 Read More: [JSX](https://reactjs.org/docs/introducing-jsx.html)
+
+# Render Elements
+
+Elements are the smallest building blocks of React apps.
+
+An element describes what you want to see on the screen:
+
+```js
+const element = <h1>Hello, world</h1>;
+```
+
+Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.
+
+>💡Note:
+>One might confuse elements with a more widely known concept of “components”. Elements are what components are “made of”. They are different.
+
+## Rendering an Element into the DOM
+
+Let’s say there is a `<div>` somewhere in your HTML file:
+
+```html
+<div id="root"></div>
+```
+
+We call this a `root` DOM node because everything inside it will be managed by React DOM.
+
+Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.
+
+To render a React element, first pass the DOM element to `ReactDOM.createRoot()`, then pass the React element to `root.render()`:
+
+```js
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+);
+const element = <h1>Hello, world</h1>;    // It displays “Hello, world” on the page.
+root.render(element);
 ```
 
