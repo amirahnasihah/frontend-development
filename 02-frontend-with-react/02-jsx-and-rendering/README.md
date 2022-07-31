@@ -139,6 +139,10 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 First, is to create a root elements, which is the `ReactDOM.createRoot()`. And this is going to ceate a root and you can inject that root into your DOM element. Try go to inspect element in your browser then this is our DOM element. Inside the DOM, you see only have with an ID of root. Now, if you want to embed something into the DOM, you can do first, you have to createRoot (`ReactDOM.createRoot`) and you can take the reference of the element which is already in the DOM (`document.getElementById("root")`). This root is alreay in the DOM. We have taken a reference and we have this reference of the root to the ReactDOM.createRoot().
 
+![DOMelement](https://user-images.githubusercontent.com/89834315/182009973-80035b0d-7b90-49d6-9f6c-89652b1c417b.png)
+
+![DOMwithIDroot](https://user-images.githubusercontent.com/89834315/182010117-659c260f-c602-41fe-8bcc-a65fe3e4edf9.png)
+
 We have the root and now whatever we want to render on the screen, we can actually pass in this render function.
 
 Example inside the src\index.js;
