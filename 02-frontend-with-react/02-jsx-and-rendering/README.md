@@ -85,4 +85,34 @@ const element = (
   
 We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.
 
+## Conditional Rendering
+
+```js
+function App() {
+    function formatName(user) {
+        return user.firstName + " " + user.lastName;
+    }
+
+    function getGreeting(user) {
+        if (user) {
+            return <h1>Hello and welcome, {formatName(user)}!</h1>;
+        }
+        return <h1>Hello, Stranger!</h1>;
+    }
+
+    const user = {
+        firstName: "Amirah",
+        lastName: "Nasihah",
+    };
+
+    // const element = <h1>Hello World and Welcome to first react app!</h1>;
+    return (
+        <div>
+            <div>{getGreeting(user)}</div>  /*if not passed the user, it return Hello, Stranger!*/
+        </div>
+    );
+}
+
+export default App;
+```
 
