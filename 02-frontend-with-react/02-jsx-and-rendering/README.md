@@ -122,7 +122,7 @@ export default App;
 
 # Render Elements
 
-Elements are the smallest building blocks of React apps.
+Elements are the smallest building blocks of React apps. What you see on the browsers are elements.
 
 An element describes what you want to see on the screen:
 
@@ -136,6 +136,29 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 >One might confuse elements with a more widely known concept of “components”. Elements are what components are “made of”. They are different.
 
 ## Rendering an Element into the DOM
+
+First, is to create a root elements, which is the `ReactDOM.createRoot()`. And this is going to ceate a root and you can inject that root into your DOM element. Try go to inspect element in your browser then this is our DOM element. Inside the DOM, you see only have with an ID of root. Now, if you want to embed something into the DOM, you can do first, you have to createRoot (`ReactDOM.createRoot`) and you can take the reference of the element which is already in the DOM (`document.getElementById("root")`). This root is alreay in the DOM. We have taken a reference and we have this reference of the root to the ReactDOM.createRoot().
+
+We have the root and now whatever we want to render on the screen, we can actually pass in this render function.
+
+Example inside the src\index.js;
+
+```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+// import App from './App';
+import reportWebVitals from "./reportWebVitals";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render();
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+```
 
 Let’s say there is a `<div>` somewhere in your HTML file:
 
