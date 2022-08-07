@@ -1,5 +1,9 @@
 # Front-End Development
 
+- [Front-End Development](#front-end-development)
+- [Front-End Developer](#front-end-developer)
+- [Front-End Dev Skills](#front-end-dev-skills)
+
 Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.
 
 # Front-End Developer
@@ -19,4 +23,3 @@ Basic to advanced HTML, CSS, DOM, JavaScript, HTTP/URL, and browser skills are a
 🚀 front-end development beginner course (A to Z)
 
 >🍝 sauce: [front-end](https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html)
-
