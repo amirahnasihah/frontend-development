@@ -1,7 +1,13 @@
-Handling Events
+# Handling Events
+
 Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
-React events are named using camelCase, rather than lowercase.
-With JSX you pass a function as the event handler, rather than a string.
+
+- React events are named using camelCase, rather than lowercase.
+- With JSX you pass a function as the event handler, rather than a string.
+
+App.js
+
+```js
 import "./styles.css";
 import React, { useState } from "react";
 import Clock from "./components/Clock";
@@ -25,6 +31,7 @@ export default function App() {
    </>
  );
 }
+```
  
 // create useState in the App.js
 // const [flag, setFlag] = useState(true);
@@ -67,8 +74,9 @@ export default function App() {
 
 // but, here what i want to show you something are the previous video which is lifecycle method
 
-// so what happened is whenever i clicke the toggle clock component,
+// so what happened is whenever i clicked the toggle clock component,
 
+```js
 import "./styles.css";
 import React, { useState } from "react";
 import Clock from "./components/Clock";
@@ -91,6 +99,7 @@ function App() {
 }
  
 export default App;
+```
  
 // create useState in the App.js
 // const [flag, setFlag] = useState(true);
@@ -153,15 +162,10 @@ export default App;
 // so, in this way, you can handle the events in react application.
  
 // so in the next one, we will see how we can do the conditional rendering in react.
- 
-
-
-
-
-
-
 
 First result
+
+```js
 import "./styles.css";
 import React, { useState } from "react";
 import Clock from "./components/Clock";
@@ -185,9 +189,11 @@ export default function App() {
    </>
  );
 
+```
  
 Second result
- 
+
+```js
 import "./styles.css";
 import React, { useState } from "react";
 import Clock from "./components/Clock";
@@ -210,3 +216,4 @@ function App() {
 }
  
 export default App;
+```
