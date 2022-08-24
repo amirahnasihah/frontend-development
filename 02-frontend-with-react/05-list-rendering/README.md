@@ -1,7 +1,8 @@
-Lists and Keys
+# Lists and Keys
+
 First, let’s review how you transform lists in JavaScript.
 
-
+```js
 function Blog(props) {
  const body = props.posts.map((post) => {
    return (
@@ -12,7 +13,7 @@ function Blog(props) {
      </>
    );
  });
- 
+
  return (
    <>
      <h1>List of Objects</h1>
@@ -20,10 +21,9 @@ function Blog(props) {
    </>
  );
 }
- 
-export default Blog;
- 
 
+export default Blog;
+```
 
 // how to handle the list and keys in react application.
 // so, goto App.js, we have a simple [{key:value}, {key:value}] array of objects and that is the const "posts" and in this object you have an ID, title, body
@@ -153,11 +153,12 @@ export default Blog;
 //     </div>
 //   )
 // }
- 
-// so, we can directly use the ID here inside the <div>
+
+// so, we can directly use the ID here inside the `<div>`
 // so let me have the id, title, content
 // then save it
 
+```js
 function Blog(props) {
  const body = props.posts.map((post) => {
    return (
@@ -186,7 +187,7 @@ function Post({ id, title, body }) {
 }
  
 export default Blog;
-
+```
 
 // we dont see anything and here we made a mistake.
 // so, im gonna have a constant and on the constant, we can remove the restructuring we did before
@@ -219,6 +220,7 @@ export default Blog;
 FULL
 Blog.js
 
+```js
 function Blog(props) {
  const body = props.posts.map((post) => {
    return <Post key={post.id} post={post} />;
@@ -245,9 +247,11 @@ function Post(props) {
 }
  
 export default Blog;
+```
 
 App.js
 
+```js
 import "./styles.css";
 import Blog from "./components/Blog";
  
@@ -283,4 +287,4 @@ export default function App() {
    </div>
  );
 }
-
+```
