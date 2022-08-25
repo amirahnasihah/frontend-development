@@ -30,10 +30,7 @@ function Clock() {
 export default Clock;
 ```
 
-# State is Memory of a Component
 
-As a result of an interaction, components frequently need to update what's on the screen.
-Typing into the form updates the input box, clicking "next" on an image carousel changes the picture displayed, and clicking "purchase" adds a product to the shopping cart. Components must "remember" information such as the current input value, the current picture, and the shopping cart. This type of component-specific memory is referred to as state in React.
 
 ## First Step
 
@@ -48,14 +45,14 @@ Export this component by type `export default Clock` below the function.
 ```js
 function Clock() {}
 
-export default Clock
+export default Clock;
 ```
 
-In this component lets create a function and this function will be the `showDate()` function.
+In this component lets create another function and this function will be the `showDate()` function.
 
 After have showDate(), we'll have a `<h1>` tag to make it large or other tags you prefer and this `<h1>` will have the date of `{new Date().toString()}`
 `return <h1>{new Date().toString()}</h1>;`
-then we call this function with the setInterval(). and have the setInterval as let's call the function first
+Then we call this function with the setInterval(). and have the setInterval as let's call the function first
 
 ```js
 function showDate() {
