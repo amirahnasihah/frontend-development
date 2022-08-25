@@ -83,14 +83,15 @@ function showDate() {
 setInterval(showDate, 1000);
 ```
 
-Also have to also return a jsx bcs every component return a JSX.
+Also have to also return a JSX bcs every component return a JSX.
 
-Return a jsx below the setInterval() method
+Return a JSX below the setInterval() method
 
 Type `return (<div> </div>)`
 
 And gonna call the showDate() function inside the `<div>` JSX.
 
+```js
 function Clock() {
  return (
    <>
@@ -99,10 +100,12 @@ function Clock() {
    </>
  );
 }
+```
 
+If not see anything happening, go to App.js and import our Clock Component, then use the Clock Component by adding the `<Clock />`.
 
+APP.js
 
-// If not see anything happening, go to App.js and import our Clock Component, then use the Clock Component by adding the <Clock />
 
 // now we will see that what is actually happening when we use the Clock component. We see the time and here in the clock component, you will see that we have a setInterval which is being called every one second.
 // So, if i go to the inspect element (f12 hotkey) and if i go to console, then in the console you will see that the time is getting updated every second.
@@ -113,7 +116,7 @@ function Clock() {
 
 // But then, why is this time not getting updated on my screen? Inside the console it gets updated every one second
 // and that's where we have to use the State
-// So a state will be a local state of a component. So, whenever a state is changed, a component will re-render and it will render the updated jsx.
+// So a state will be a local state of a component. So, whenever a state is changed, a component will re-render and it will render the updated JSX.
 // so what we can do is, need to import a state.
 // what to do is in Clock.js Component
 // have an `import React from 'react';` at the top
