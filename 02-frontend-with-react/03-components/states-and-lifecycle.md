@@ -106,13 +106,13 @@ If not see anything happening, go to App.js and import our Clock Component, then
 
 APP.js
 
+> code
 
-// now we will see that what is actually happening when we use the Clock component. We see the time and here in the clock component, you will see that we have a setInterval which is being called every one second.
-// So, if i go to the inspect element (f12 hotkey) and if i go to console, then in the console you will see that the time is getting updated every second.
+Now we will see that what is actually happening when we use the Clock component. We see the time and here in the clock component, you will see that we have a setInterval which is being called every one second.
 
+So, if i go to the inspect element (F12 hotkey) and if I go to console, then in the console you will see that the time is getting updated every second.
 
-
-# Time not updated on the screen?
+## Time not updated every second on the screen?
 
 // But then, why is this time not getting updated on my screen? Inside the console it gets updated every one second
 // and that's where we have to use the State
