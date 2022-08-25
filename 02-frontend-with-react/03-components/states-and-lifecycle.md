@@ -202,11 +202,16 @@ export default Clock;
 ```
 
 
-This showDate() function works as updating in every one second, and we use showDate() function inside the Clock function to update the time every one second, to do that, we use state variable which is `setTime(new Date().toString())`. Earlier in showDate() function we put `return <h6>{date}</h6>;` but because whenever you use a useState(), it actually gives you a time Variable and it also gives a function to update that variable.
-// thats why we change from `return <h6>{date}</h6>;` to `setTime(new Date().toString())`
-//  now on the screen, the time is running every one second and also from the console.
+This showDate() function works as updating in every one second, and we use showDate() function inside the Clock function to update the time every one second, to do that, we use state variable which is `setTime(new Date().toString())`. Earlier in showDate() function we put `return <h6>{date}</h6>;` because whenever you use a useState(), it actually gives you a time Variable and it also gives a function to update that variable.
 
-// cannot make it in global variable when using State
+Thats why we change from `return <h6>{date}</h6>;` to `setTime(new Date().toString())`.
+
+Now on the screen, the time is running every one second and also from the console.
+
+
+Cannot make it in global variable when using State
+
+```js
 import React, { useState } from "react";
  
 function Clock() {
@@ -227,8 +232,10 @@ function Clock() {
 }
  
 export default Clock;
+```
 
-USE EFFECT
+
+## Life
 
 // min 05:03
 // { useState }
