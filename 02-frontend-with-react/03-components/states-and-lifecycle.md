@@ -237,10 +237,13 @@ export default Clock;
 
 ## Lifecylces with `useEffect`
 
-Now, what is this `useState()` is and what is this time and setTime() is.
-// so whenever you want to create a state, lets have a state
-// im gonna have a constant and now im going to create a state variable of name.
-// so, you will give it as a `name` and then whenever you want  to update this name, you will update with the help of a setName function.
+Now, what is this `useState()` is and what is this `[time]` and `[setTime]` is.
+
+So whenever you want to create a state, lets have a state.
+
+I'm gonna have a constant and now im going to create a state variable of name.
+
+So, you will give it as a `name` and then whenever you want  to update this name, you will update with the help of a setName function.
 // `const [name, setName] `
 // Ex; you can also do the same thing is whenever you want to have a flag. Alright, and now you want to update this flag value so you will have a `setFlag`,
 // `const [flag, setFlag] `
@@ -250,7 +253,7 @@ Now, what is this `useState()` is and what is this time and setTime() is.
 // So, my initial value of the flag is `true`. so lets have a `useState(true)`
 // so in this way you will use the State
 
-USE EFFECT / LIFE CYCLE
+## USE EFFECT / LIFE CYCLE
 
 // now what is the lifecycle?
 // so whenever you have a component the component also have the life cycles.
