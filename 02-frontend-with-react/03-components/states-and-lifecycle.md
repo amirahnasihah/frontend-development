@@ -269,15 +269,17 @@ So whenever you have a component the component also have the life cycles.
 
 So the lifecycles will be that you want to execute something whenever your component is *mounted* or whenever your component is first time rendered or you want to do something whenever your component is getting updated or whenever you component is destroyed.
 
-// > Mounting is the phase in which our React component mounts on the DOM (i.e., is created and inserted into the DOM). This method is called just before a component mounts on the DOM or the render method is called. After this method, the component gets mounted.
+> 💡 Mounting is the phase in which our React component mounts on the DOM (i.e., is created and inserted into the DOM). This method is called just before a component mounts on the DOM or the render method is called. After this method, the component gets mounted.
 
-// ex; Clock component is inserted into the DOM
+Example, Clock component is inserted into the DOM
 
-// we use lifecycle because we want the clock keeps updating. So, need to use the useEffect() function
+We use lifecycle because we want the clock keeps updating. So, need to use the `useEffect()` function
 
-// so, in those cases, you will use a life cycle | to use a lifecycle
-// to use a life cycle method in the function component.
-// we make a use of a useEffect hook.
+So, in those cases, you will use a life cycle | to use a lifecycle
+
+To use a life cycle method in the function component.
+
+We make a use of a useEffect hook.
 // `import React, { useState, useEffect } from "react";`
 // so, this way I will use and useEffect hook. and now what im going to do here is that im gonna write a `useEffect` and this `useEffect` will have two arguments.
 // `useEffect(args1, args2)`
