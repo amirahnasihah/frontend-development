@@ -127,13 +127,23 @@ What to do is in Clock.js Component
 Have an `import React from 'react';` at the top
 
 And in order to use a State, there is a hook called useState. => {useState}
-// `import React, { useState } from "react";`
-// alright, now going to create a constant.
 
-// how you will use a state in a function component??
-// so you create a constant that you have to use array [] like structure and then you will have a useState()
-// and here you need to give the initial value of your state. so, my initial value will be the same which is the Date() function.
-// const [] = useState(new Date().toString())
+```js
+import React, { useState } from "react";
+```
+
+Alright, now going to create a constant.
+
+How you will use a state in a function component??
+
+So, you create a constant that you have to use array [] like structure and then you will have a useState()
+
+And here you need to give the initial value of your state. so, my initial value will be the same which is the Date() function.
+
+```js
+const [] = useState(new Date().toString())
+```
+
 // put inside useState(), and here I will have the time and I will have a setTime. Whenever you use a useState(), it actually gives you a time Variable and it also gives a function to update that variable.
 // const [time, setTime] = useState(new Date().toString())
 
