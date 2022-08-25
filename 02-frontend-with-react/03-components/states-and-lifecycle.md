@@ -114,13 +114,19 @@ So, if I go to the inspect element (F12 hotkey) and if I go to console, then in 
 
 ## Time not updated every second on the screen?
 
-// But then, why is this time not getting updated on my screen? Inside the console it gets updated every one second
-// and that's where we have to use the State
-// So a state will be a local state of a component. So, whenever a state is changed, a component will re-render and it will render the updated JSX.
-// so what we can do is, need to import a state.
-// what to do is in Clock.js Component
-// have an `import React from 'react';` at the top
-// and in order to use a State, there is a hook called useState. => {useState}
+But then, why is this time not getting updated on my screen? Inside the console it gets updated every one second.
+
+And that's where we have to use the State.
+
+A state will be a local state of a component. So, whenever a state is changed, a component will re-render and it will render the updated JSX.
+
+So, what we can do is, need to import a state.
+
+What to do is in Clock.js Component
+
+Have an `import React from 'react';` at the top
+
+And in order to use a State, there is a hook called useState. => {useState}
 // `import React, { useState } from "react";`
 // alright, now going to create a constant.
 
