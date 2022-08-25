@@ -1,4 +1,9 @@
-FULL TUTORIAL CODE
+# State is Memory of a Component
+
+As a result of an interaction, components frequently need to update what's on the screen.
+Typing into the form updates the input box, clicking "next" on an image carousel changes the picture displayed, and clicking "purchase" adds a product to the shopping cart. Components must "remember" information such as the current input value, the current picture, and the shopping cart. This type of component-specific memory is referred to as state in React.
+
+# FULL TUTORIAL CODE
 
 ```js
 import React, { useState, useEffect } from "react";
@@ -29,8 +34,6 @@ function Clock() {
  
 export default Clock;
 ```
-
-
 
 ## First Step
 
