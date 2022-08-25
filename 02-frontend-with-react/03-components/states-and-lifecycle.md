@@ -53,8 +53,12 @@ export default Clock;
 
 In this component lets create another function and this function will be the `showDate()` function.
 
-After have showDate(), we'll have a `<h1>` tag to make it large or other tags you prefer and this `<h1>` will have the date of `{new Date().toString()}`
-`return <h1>{new Date().toString()}</h1>;`
+After have showDate(), we'll have a `<h1>` tag to make it large or other tags you prefer and this `<h1>` will have the date of `{new Date().toString()}`.
+
+```js
+return <h1>{new Date().toString()}</h1>;
+```
+
 Then we call this function with the setInterval(). and have the setInterval as let's call the function first
 
 ```js
