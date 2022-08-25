@@ -59,7 +59,7 @@ After have showDate(), we'll have a `<h1>` tag to make it large or other tags yo
 return <h1>{new Date().toString()}</h1>;
 ```
 
-Then we call this function with the setInterval(). and have the setInterval as let's call the function first
+Then we call this function with the setInterval(). And have the setInterval as in every one second. Let's call the function first.
 
 ```js
 function showDate() {
@@ -68,7 +68,9 @@ function showDate() {
 setInterval(showDate, 1000);
 ```
 
-`setInterval(showDate, 1000);`` and this function will be called in every one second.
+`setInterval(showDate, 1000);`
+
+And this function will be called in every one second.
 
 alright, and another thing gonna do is also console.log() above the return method. we console.log the Date() function to see whether its running or not in our console.
 
