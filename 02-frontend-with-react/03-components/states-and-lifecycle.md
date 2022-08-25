@@ -1,9 +1,14 @@
-# State is Memory of a Component
+# React Tutorial Beginner - useState and useEffect with Example Code
 
-As a result of an interaction, components frequently need to update what's on the screen.
-Typing into the form updates the input box, clicking "next" on an image carousel changes the picture displayed, and clicking "purchase" adds a product to the shopping cart. Components must "remember" information such as the current input value, the current picture, and the shopping cart. This type of component-specific memory is referred to as state in React.
+I'm going to give you a step-by-step tutorial on understanding the main concepts of React which introduce the concept of state and lifecycle in a React component.
 
-# FULL TUTORIAL CODE
+## State is Memory of a Component
+
+Let's have a brief on what State are. As a result of an interaction, components frequently need to update what's on the screen. Typing into the form updates the input box, clicking "next" on an image carousel changes the picture displayed, and clicking "purchase" adds a product to the shopping cart. Components must "remember" information such as the current input value, the current picture, and the shopping cart. This type of component-specific memory is referred to as state in React.
+
+## FULL TUTORIAL CODE
+
+These are the code that you will achieved once you are done with the tutorial. My advices are, do read it until finish and start doing again using code editor.
 
 ```js
 import React, { useState, useEffect } from "react";
