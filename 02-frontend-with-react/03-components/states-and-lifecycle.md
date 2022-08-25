@@ -87,8 +87,10 @@ Also have to also return a jsx bcs every component return a JSX.
 
 Return a jsx below the setInterval() method
 
-// type return (<div> </div>)
-// and gonna call the showDate() function inside the <div> jsx
+Type `return (<div> </div>)`
+
+And gonna call the showDate() function inside the `<div>` Jsx
+
 function Clock() {
  return (
    <>
