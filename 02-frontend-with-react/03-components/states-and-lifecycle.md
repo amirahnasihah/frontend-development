@@ -139,19 +139,22 @@ How you will use a state in a function component?
 So, you create a constant and you have to use array [] like structure and then you will have a useState().
 
 ```js
-const [] = useState()
+const [] = useState();
 ```
 
-And here you need to give the initial value of your state. So, my initial value will be the same which is the Date() function.
+And here you need to give the initial value of your state => useState(initial value). So, my initial value will be the same which is the Date() function.
 
 ```js
 const [] = useState(new Date().toString())
 ```
 
-// put inside useState(), and here I will have the time and I will have a setTime. Whenever you use a useState(), it actually gives you a time Variable and it also gives a function to update that variable.
-// const [time, setTime] = useState(new Date().toString())
+Put inside useState(), and here I will have the time and I will have a setTime. Whenever you use a useState(), it actually gives you a time variable and it also gives a function to update that variable.
 
-// so now, we going to change line 12: return <div>{showDate()}</div>;
+```js
+const [time, setTime] = useState(new Date().toString())
+```
+
+So now, we going to change line 12: return <div>{showDate()}</div>;
 // and have a {time} here and save it. then start seeing a time on the screen and this is the time.
 // now, going to do is I need to update that time.
 // so whenever this setInterval makes a call to the showDate() in every one second instead of, returning this `return <h1>{new Date().toString()}</h1>;`
