@@ -251,18 +251,23 @@ const [name, setName]
 
 Example, you can also do the same thing is whenever you want to have a flag. Alright, and now you want to update this flag value so you will have a `setFlag`
 
-const [flag, setFlag] `
-// Alright, so you will use the `useState()` as
-// `const [flag, setFlag] = useState()`
-// and then you will set the initial value.
-// So, my initial value of the flag is `true`. so lets have a `useState(true)`
-// so in this way you will use the State
+```js
+const [flag, setFlag]
+```
 
-## LIFE CYCLE
+Alright, so you will use the `useState()` as `const [flag, setFlag] = useState()` and then you will set the initial value.
 
-// now what is the lifecycle?
-// so whenever you have a component the component also have the life cycles.
-// so the lifecycles will be that you want to execute something whenever your component is *mounted* or whenever your component is first time rendered or you want to do something whenever your component is getting updated or whenever you component is destroyed.
+So, my initial value of the flag is `true`. so lets have a `useState(true)`.
+
+So in this way you will use the State.
+
+# LIFE CYCLE
+
+Now what is the lifecycle?
+
+So whenever you have a component the component also have the life cycles.
+
+So the lifecycles will be that you want to execute something whenever your component is *mounted* or whenever your component is first time rendered or you want to do something whenever your component is getting updated or whenever you component is destroyed.
 
 // > Mounting is the phase in which our React component mounts on the DOM (i.e., is created and inserted into the DOM). This method is called just before a component mounts on the DOM or the render method is called. After this method, the component gets mounted.
 
