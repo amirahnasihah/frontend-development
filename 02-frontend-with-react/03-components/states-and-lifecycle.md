@@ -72,18 +72,21 @@ setInterval(showDate, 1000);
 
 And this function will be called in every one second.
 
-alright, and another thing gonna do is also console.log() above the return method. we console.log the Date() function to see whether its running or not in our console.
+Alright, and another thing gonna do is also console.log() above the return method. We console.log() the Date() function to see whether its running or not in our console.
 
 ```js
 function showDate() {
  console.log(new Date().toString());
  return <h1>{new Date().toString()}</h1>;
 }
+
 setInterval(showDate, 1000);
 ```
 
-// also have to also return a jsx bcs every component return a JSX
-// return a jsx below the setInterval() method
+Also have to also return a jsx bcs every component return a JSX.
+
+Return a jsx below the setInterval() method
+
 // type return (<div> </div>)
 // and gonna call the showDate() function inside the <div> jsx
 function Clock() {
