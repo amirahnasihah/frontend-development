@@ -156,7 +156,7 @@ const [time, setTime] = useState(new Date().toString())
 
 So now, we going to change line 12: `return <div>{showDate()}</div>;`.
 
-And have a {time} here and save it. Then start seeing a time on the screen and this is the time.
+And have a `{time}` here and save it. Then start seeing a time on the screen and this is the time.
 
 Now, what I'm going to do is I need to update that time.
 
@@ -164,12 +164,17 @@ So whenever this setInterval makes a call to the showDate() in every one second 
 
 I'm going to update my state.
 
-IMPORTANT: UPDATE THE STATE
-// So want to update my state, im gonna do a setTime() and this setTime() is going to update the state.
-// So, let type `setTime(new Date().toString())` and save it.
-// So, in every one second my showDate() function is being called `function showDate() {` and whenever it is called I change the state variable.
-// So, you change the state variable with the help of `set` function `, setTime] = ..` This is a set function `setTime(new Date().toString());` and as soon as I do a setTime() with a new updated time `new Date().toString()`, so my state `useState()` gets changed and whenever the states get change, the component is re-rendered and that's where we will see that the screen is now updating.
-// we can see now on the screen the time is running every one second and also from the console.
+## TO UPDATE THE STATE
+
+So want to update my state, im gonna do a setTime() and this setTime() is going to update the state.
+
+So, let type `setTime(new Date().toString())` and save it.
+
+So, in every one second my showDate() function is being called `function showDate() {` and whenever it is called I change the state variable.
+
+So, you change the state variable with the help of `set` function `, setTime] = ..` This is a set function `setTime(new Date().toString());` and as soon as I do a setTime() with a new updated time `new Date().toString()`, so my state `useState()` gets changed and whenever the states get change, the component is re-rendered and that's where we will see that the screen is now updating.
+
+e can see now on the screen the time is running every one second and also from the console.
 
 // if error occurs, make sure that the showDate() is inside the Clock() function
 import React, { useState } from "react";
