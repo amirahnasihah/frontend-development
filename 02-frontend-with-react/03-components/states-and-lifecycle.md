@@ -42,10 +42,12 @@ To begin, you can start create your own react app using command line or can dire
 Create a new folder inside the src folder named components. Then, create a JavaScript file called Clock.js which in React is the component of Clock.
 
 
-create a function Clock Component.
-export this component by type `export default  Clock` below the function
-in this component lets create a function and this function will be the `showDate()` function
-after have showDate(), we'll have a `<h1>` tag to make it large or other tags you prefer and this `<h1>`` will have the date of `{new Date().toString()}
+Create a function Clock Component.
+
+Export this component by type `export default Clock` below the function.
+
+In this component lets create a function and this function will be the `showDate()` function
+after have showDate(), we'll have a `<h1>` tag to make it large or other tags you prefer and this `<h1>` will have the date of `{new Date().toString()}`
 `return <h1>{new Date().toString()}</h1>;`
 then we call this function with the setInterval(). and have the setInterval as let's call the function first
 
