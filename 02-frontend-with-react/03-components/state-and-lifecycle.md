@@ -1,26 +1,26 @@
 - [React Tutorial Beginner - `useState` and `useEffect` with Example Code](#react-tutorial-beginner---usestate-and-useeffect-with-example-code)
-  - [State is Memory of a Component](#state-is-memory-of-a-component)
-  - [Full Tutorial Code](#full-tutorial-code)
-  - [First Step](#first-step)
-  - [Time not updated on the screen?](#time-not-updated-on-the-screen)
-  - [TO UPDATE THE STATE](#to-update-the-state)
+- [State is Memory of a Component](#state-is-memory-of-a-component)
+- [Full Tutorial Code](#full-tutorial-code)
+- [First Step](#first-step)
+- [Time not updated on the screen](#time-not-updated-on-the-screen)
+- [To Update the State](#to-update-the-state)
   - [`useState` Hook](#usestate-hook)
 - [Lifecycle using the `useEffect`](#lifecycle-using-the-useeffect)
-  - [Dependency Array](#dependency-array)
+- [Dependency Array](#dependency-array)
 
 # React Tutorial Beginner - `useState` and `useEffect` with Example Code
 
 In this tutorial, I'm going to give you a step-by-step guide on understanding the main concepts of React which introduce the concept of state and lifecycle in a React component.
 
-## State is Memory of a Component
+# State is Memory of a Component
 
-Let's have a brief on what `State` are.
+Let's have a brief on what `State` is.
 
-As a result of an interaction, components frequently need to update what's on the screen. Typing into the form updates the input box, clicking "next" on an image carousel changes the picture displayed, and clicking "purchase" adds a product to the shopping cart. Components must "remember" information such as the current input value, the current picture, and the shopping cart. This type of component-specific memory is referred to as state in React.
+As a result of an interaction, components frequently need to update what's on the screen. Typing into the form updates the input box, clicking "next" on an image carousel changes the picture displayed and clicking "purchase" adds a product to the shopping cart. Components must "remember" information such as the current input value, the current picture, and the shopping cart. This type of component-specific memory is referred to as a state in React.
 
-## Full Tutorial Code
+# Full Tutorial Code
 
-These are the code that you will achieved once you are done with the tutorial. My advices are, do read it until finish and start doing again using code editor.
+These are the code that you will achieve once you are done with the tutorial. My advice is, to read it until finished and start doing again using the code editor.
 
 ```js
 import React, { useState, useEffect } from "react";
@@ -49,15 +49,15 @@ function Clock() {
 export default Clock;
 ```
 
-## First Step
+# First Step
 
-To begin, you can start create your own react app using command line or can directly go to [CodeSandbox](https://codesandbox.io/) if you want to skip using the command line which more faster. CodeSandbox is an online code editor and prototype tool that speeds up the creation and sharing of web apps where you can directly deploy your app without a hustle.
+To begin, you can start creating your own react app using the command line or can directly go to [CodeSandbox](https://codesandbox.io/) if you want to skip using the command line which is faster. CodeSandbox is an online code editor and prototype tool that speeds up the creation and sharing of web apps where you can directly deploy your app without any hustle.
 
 First, create a new folder inside the `src` folder named `components`. Then, create a JavaScript file called `Clock.js` which in React is the component of `Clock`.
 
 Create a function `Clock` Component.
 
-Export this component by type `export default Clock` below the function.
+Export this component by typing` export default Clock` below the function.
 
 ```js
 function Clock() {}
@@ -65,7 +65,7 @@ function Clock() {}
 export default Clock;
 ```
 
-In this component let's create another function and this function will be the `showDate()` function.
+Let's create another function in this component, which will be the `showDate()` function.
 
 After have `showDate()`, we'll have a `<h1>` tag to make it large or other tags you prefer and this `<h1>` will have the date of `{new Date().toString()}`.
 
@@ -96,7 +96,7 @@ function showDate() {
 setInterval(showDate, 1000);
 ```
 
-And have to also return a JSX because every component return a JSX.
+And have to also return a JSX because every component returns a JSX.
 
 Return a JSX below the `setInterval()` method.
 
@@ -147,9 +147,9 @@ function App() {
 export default App;
 ```
 
-Now we will see that what is actually happening when we use the Clock component. We see the time and here in the Clock component, you will see that we have a `setInterval` which is being called every one second.
+Now we will see what is actually happening when we use the Clock component. We see the time and here in the Clock component, you will see that we have a `setInterval` which is being called every one second.
 
-So, if I go to the inspect element (`F12` hotkey) and if I go to console, then in the console you will see that the time is getting updated every second. This is what we will achieved so far:
+So, if I go to the inspect element (`F12` hotkey) and if I go to console, then in the console you will see that the time is getting updated every second. This is what we will achieve so far:
 
 ```javascript
 function Clock() {
@@ -170,13 +170,13 @@ setInterval(showDate, 1000);
 export default Clock;
 ```
 
-## Time not updated on the screen?
+# Time not updated on the screen
 
-But then, on the screen this time not getting updated every second. Only inside the console it gets updated every one second.
+But then, on the screen this time not getting updated every second. Only inside the console does it get updated every second.
 
 And that is where we have to use the `State`.
 
-A state will be a local state of a component. So, whenever a state is changed, a component will re-render and it will render the updated `JSX`.
+A state will be a local state of a component. So, whenever a State is changed, a component will re-render and it will render the updated `JSX`.
 
 So, what we can do is, we need to import a State.
 
@@ -188,7 +188,7 @@ And in order to use a State, there is a hook called `useState`. To use the `useS
 import React, { useState } from "react";
 ```
 
-Alright, now let's create a `constant`. To use a State in a function component, you need to create a constant and you have to use array `[]` like structure and then you will have a `useState()`. Like this:
+Alright, now let's create a `constant`. To use a State in a function component, you need to create a constant and you have to use an array `[]` like structure, and then you will have a `useState()`. Like this:
 
 ```js
 const [] = useState();
@@ -225,17 +225,17 @@ So whenever this `setInterval` makes a call to the `showDate()` in every one sec
 
 Next, I'm going to update my state.
 
-## TO UPDATE THE STATE
+# To Update the State
 
 So want to update my state, I'm going to do a `setTime()` and this `setTime()` is going to update the state.
 
 So, let's type `setTime(new Date().toString())` and save it.
 
-So, in every one second my `showDate()` function is being called `function showDate() {` and whenever it is called I changed the state variable.
+So, every second my `showDate()` function is being called `function showDate() {` and whenever it is called I changed the state variable.
 
 So, you change the state variable with the help of `set` function; `[setTime] = ..`. This is a set function `setTime(new Date().toString());` and as soon as I do a `setTime()` with a new updated time `new Date().toString()`, so my state `useState()` gets changed and whenever the states get change, the component is re-rendered and that's where we will see that the screen is now updating.
 
-We can see now on the screen the time is running every one second and also from the console.
+We can see now on the screen the time is running every second and also from the console.
 
 If error occurs, make sure that the `showDate()` is inside the `Clock()` function. Like below:
 
@@ -297,13 +297,13 @@ Now, what is this `useState()` is and what is this `[time]` and `[setTime]` is.
 
 Let's have a state, I'm gonna have a constant and now I'm going to create a state variable of `name`.
 
-So, you will give it as a `name` and then whenever you want to update this name, you will update with the help of a `setName` function.
+So, you will give it as a `name`, and then whenever you want to update this name, you will update it with the help of a `setName` function.
 
 ```js
 const [name, setName]
 ```
 
-Example, you can also do the same thing is whenever you want to have a flag. Alright, and now you want to update this flag value so you will have a `setFlag`
+For example, you can also do the same thing whenever you want to have a flag. Alright, and now you want to update this flag value so you will have a `setFlag`
 
 ```js
 const [flag, setFlag]
@@ -313,25 +313,25 @@ Alright, so you will use the `useState()` as `const [flag, setFlag] = useState()
 
 So, my initial value of the flag is `true`. so let's have a `useState(true)`.
 
-In this way you will create and use the State.
+In this way, you will create and use the State.
 
 # Lifecycle using the `useEffect`
 
-Now what is the lifecycle?
+Now, what is the lifecycle?
 
-So whenever you have a component, the component also have the lifecycles.
+So whenever you have a component, the component also has lifecycles.
 
-So the lifecycles will be that you want to execute something whenever your component is *mounted* or whenever your component is first time rendered or you want to do something whenever your component is getting updated or whenever you component is destroyed.
+So the lifecycles will be that you want to execute something whenever your component is *mounted* or whenever your component is first time rendered or you want to do something whenever your component is getting updated or whenever your component is destroyed.
 
 > 💡 Mounting is the phase in which our React component mounts on the DOM (i.e., is created and inserted into the DOM). This method is called just before a component mounts on the DOM or the render method is called. After this method, the component gets mounted.
 
-Example, Clock component is inserted into the `DOM`.
+For example, the Clock component is inserted into the `DOM`.
 
 We use lifecycle because we want the clock keeps updating. So, need to use the `useEffect()` function
 
 So, in those cases, you will use a lifecycle.
 
-To use a life cycle method in the function component, we make a use of a `useEffect` hook.
+To use a life cycle method in the function component, we make use of a `useEffect` hook.
 
 ```js
 import React, { useState, useEffect } from "react";
@@ -339,13 +339,13 @@ import React, { useState, useEffect } from "react";
 
 So, this way I will use an `useEffect` hook. And now what I'm going to do here is that I'm going to write a `useEffect` and this `useEffect` will have two arguments, `useEffect(args1, args2)`
 
-The first arguments will be a `function` or a side effect that you want to run and the second argument will be a dependency array. I will use an arrow function as the first argument.
+The first argument will be a `function` or a side effect that you want to run and the second argument will be a dependency array. I will use an arrow function as the first argument.
 
 ```js
 useEffect(() => {})
 ```
 
-And the second argument will be the dependency array. So this dependency array will depend on these State variable.
+And the second argument will be the dependency array. So this dependency array will depend on these State variables.
 
 So, now what I'm going to do here is that let's have a `console.log()` and I'm going to have here a string of `"component mounted or updated"`.
 
@@ -357,13 +357,13 @@ Alright, and remove the dependency array and save it.
  });
 ```
 
-I'll save it and now let's go to the inspect element and I will go to the console and here I will just remove this function because we dont want and its polluting our console. Let's comment out `console.log(new Date().toString());`
+I'll save it and now let's go to the inspect element and I will go to the console and here I will just remove this function because we don't want and it's polluting our console. Let's comment out `console.log(new Date().toString());`
 
 Alright, now I will refresh my page. And you will see that as soon as I refresh my page, My component is mounted and my state is also getting updated.
 
 So, the state is getting updated because this state variable is getting updated.
 
-So, if I don't want that this get updated every time, what I can do here is that I have a dependency array `[]`
+So, if I don't want that this gets updated every time, what I can do here is that I have a dependency array `[]`
 
 ```js
  useEffect(() => {
@@ -371,7 +371,7 @@ So, if I don't want that this get updated every time, what I can do here is that
  }, []);
 ```
 
-And if I give it dependency in this array of a state where able then in that case the `useEffect()` will run only if the state variable changes.
+And if I give it a dependency in this array of a state where able then in that case the `useEffect()` will run only if the state variable changes.
 
 So, what I'm going to do is I'm going to have a flag here:
 
@@ -379,40 +379,40 @@ So, what I'm going to do is I'm going to have a flag here:
 useEffect( ... ;}, [flag]);
 ```
 
-Then, save it and now will refresh the page.
+Then, save it, and now will refresh the page.
 
-So, you now will see that eventhough your time is getting changed in every one second, your `useEffect()` `useEffect( ... ;}, [time]);` is not running because your `useEffect()` is now dependent on another state variable which is a `time`.
+So, you now will see that even though your time is getting changed in every one second, your `useEffect()` `useEffect( ... ;}, [time]);` is not running because your `useEffect()` is now dependent on another state variable which is a `time`.
 
 So, that means whenever a `time` is changed in that case, the `useEffect()` will run.
 
-So, if the flag is changing from `true` to `false`, then you will see that the useEffect will run if I change this flag to `true` again, then you will see that the useEffect will run.
+So, if the flag is changing from `true` to `false`, then you will see that the `useEffect` will run if I change this flag to `true` again, then you will see that the `useEffect` will run.
 
-So this way this is a lifecycle of a component, that whenever a component is mounted or whenever a component is updated. you want to run some side effects.
+So this way this is a lifecycle of a component, whenever a component is mounted or whenever a component is updated. you want to run some side effects.
 
 
-Now, there is a scenario that whenever a component is destroyed you want to run effect of unmount that whenever the component is unmounted you want to do something.
+Now, there is a scenario that whenever a component is destroyed you want to run effect of unmounting that whenever the component is unmounted you want to do something.
 
 So, in that case, what we can do is that let's have a constant and gonna have an interval and  I will remove/cut the `setInterval()`
 
 So now I have the interval here and this interval depends on the time.
 
-So, I'm gonna copy this {time} and gonna have the {time} here at useEffect dependency array:
+So, I'm gonna copy this {time} and gonna have the {time} here at `useEffect` dependency array:
 
 ```js
 useEffect( ... ;}, [time]);
 ```
 
-So, you can see that every time this showDate() function is running my component is getting updated.
+So, you can see that every time this `showDate()` function is running my component is getting updated.
 
-So, that's why we see a lot component updated on console logs.
+So, that's why we see a lot components updated on console logs.
 
-Now, let's assume that you have a subscription of this interval.
+Now, let's assume that you have a subscription to this interval.
 
 Now, you want to clear this subscription whenever your component is unmounted or whenever your component is not visible on your screen.
 
-So what we can do here, inside this `useEffect()` function is that we can have a clean of function. Which will have a return and this will be an arrow function. Alright and here, inside this arrow function you can do your cleanup.
+So what we can do here, inside this `useEffect()` function is that we can have a clean function. Which will have a return and this will be an arrow function. Alright and here, inside this arrow function, you can do your cleanup.
 
-So, let me have a `console.log("cleanup of Interval")` and below gonna have the `clearInterval` method. And lets gonna clear this interval. I'm going to add the constant interval into the `clearInterval(interval)`. Like below:
+So, let me have a `console.log("cleanup of Interval")` and below gonna have the `clearInterval` method. And let gonna clear this interval. I'm going to add the constant interval into the `clearInterval(interval)`. Like below:
 
 ```js
 () => {
@@ -421,7 +421,7 @@ So, let me have a `console.log("cleanup of Interval")` and below gonna have the 
    };
 ```
 
-Now see that whenever a component is mounted. the first thing will happen is the `cleanup function` will run whenever this component mounted or whenever a component is unmounted.
+Now see that whenever a component is mounted. the first thing that will happen is the `cleanup function` will run whenever this component is mounted or whenever a component is unmounted.
 
 ```js
 useEffect(() => {
@@ -434,9 +434,9 @@ useEffect(() => {
 }, [time]);
 ```
 
-## Dependency Array
+# Dependency Array
 
-If we remove the dependency, which is [time], in console will look like this, not update the interval.
+If we remove the dependency, which is [time], in the console will look like this, not update the interval.
 
 ```cmd
 component keep mounted or updated
@@ -449,7 +449,7 @@ component keep mounted or updated
 
 It is not running because the `useEffect()` is now dependent on another state variable which is a `time`.
 
-But if we put dependency array [time], then in the console will look like this:
+But if we put dependency array [time], then the console will look like this:
 
 ```cmd
 cleanup of Interval
@@ -463,8 +463,8 @@ component keep mounted or updated
 cleanup of Interval
 ```
 
-Then, in that case the `useEffect()` will run only if the state variable changes.
-The second argument is will be the dependency array. So, this dependency array will depend on these State variable.
+Then, in that case, the `useEffect()` will run only if the state variable changes.
+The second argument is will be the dependency array. So, this dependency array will depend on these State variables.
 
 So, this is how you will do the State and the lifecycle in the React components.
 
