@@ -45,6 +45,12 @@ Create a function Clock Component.
 
 Export this component by type `export default Clock` below the function.
 
+```js
+function Clock() {}
+
+export default Clock
+```
+
 In this component lets create a function and this function will be the `showDate()` function.
 
 After have showDate(), we'll have a `<h1>` tag to make it large or other tags you prefer and this `<h1>` will have the date of `{new Date().toString()}`
