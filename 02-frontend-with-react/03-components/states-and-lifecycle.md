@@ -294,17 +294,16 @@ useEffect(() => {})
 And the second argument will be dependency array. So this dependency array will depend on these State variable.
 
 So, now what im gonna do here is that let's have a console.log() and im gonna have here "component mounted or updated"
-// `console.log("component mounted or updated")`
-// alright, and remove the dependency array and save it.
-// `useEffect(() => {console.log("component mounted or updated");});`
+
+Alright, and remove the dependency array and save it.
 
 ```js
  useEffect(() => {
    console.log("component mounted or updated");
  });
+```
 
-
-// i'll save it and now lets go to the inspect element and I will go to the console and here I will just remove this function because we dont want and its polluting our console
+I'll save it and now lets go to the inspect element and I will go to the console and here I will just remove this function because we dont want and its polluting our console
 // comment out //console.log(new Date().toString());
 // alright, now I will just refresh my page. and you will see that as soon as a refresh my page. my component is mounted and my state is also getting updated.
 // so since the state is getting updated because this state variable is getting updated.
