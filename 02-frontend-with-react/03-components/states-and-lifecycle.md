@@ -154,11 +154,15 @@ Put inside useState(), and here I will have the time and I will have a setTime. 
 const [time, setTime] = useState(new Date().toString())
 ```
 
-So now, we going to change line 12: return <div>{showDate()}</div>;
-// and have a {time} here and save it. then start seeing a time on the screen and this is the time.
-// now, going to do is I need to update that time.
-// so whenever this setInterval makes a call to the showDate() in every one second instead of, returning this `return <h1>{new Date().toString()}</h1>;`
-// Im going to update my state.
+So now, we going to change line 12: `return <div>{showDate()}</div>;`.
+
+And have a {time} here and save it. Then start seeing a time on the screen and this is the time.
+
+Now, what I'm going to do is I need to update that time.
+
+So whenever this setInterval makes a call to the showDate() in every one second instead of, returning this `return <h1>{new Date().toString()}</h1>;`
+
+I'm going to update my state.
 
 IMPORTANT: UPDATE THE STATE
 // So want to update my state, im gonna do a setTime() and this setTime() is going to update the state.
