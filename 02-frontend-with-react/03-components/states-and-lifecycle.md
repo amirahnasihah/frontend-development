@@ -235,11 +235,9 @@ export default Clock;
 ```
 
 
-## Life
+## Lifecylces with `useEffect`
 
-// min 05:03
-// { useState }
-// now, what is this useState() is and what this time and setTime() is.
+Now, what is this `useState()` is and what is this time and setTime() is.
 // so whenever you want to create a state, lets have a state
 // im gonna have a constant and now im going to create a state variable of name.
 // so, you will give it as a `name` and then whenever you want  to update this name, you will update with the help of a setName function.
