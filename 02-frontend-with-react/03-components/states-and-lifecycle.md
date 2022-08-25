@@ -275,14 +275,15 @@ Example, Clock component is inserted into the DOM
 
 We use lifecycle because we want the clock keeps updating. So, need to use the `useEffect()` function
 
-So, in those cases, you will use a life cycle | to use a lifecycle
+So, in those cases, you will use a life cycle.
 
-To use a life cycle method in the function component.
+To use a life cycle method in the function component, we make a use of a useEffect hook.
 
-We make a use of a useEffect hook.
-// `import React, { useState, useEffect } from "react";`
-// so, this way I will use and useEffect hook. and now what im going to do here is that im gonna write a `useEffect` and this `useEffect` will have two arguments.
-// `useEffect(args1, args2)`
+```js
+import React, { useState, useEffect } from "react";
+```
+
+So, this way I will use and useEffect hook. and now what im going to do here is that im gonna write a `useEffect` and this `useEffect` will have two arguments, `useEffect(args1, args2)
 // the first arguments will be a `function` or a side effect that you want to run and the second argument will be dependency array.
 // `useEffect(() => {})`
 // and the second argument will be dependency array. so this dependency array will depend on these State variable.
