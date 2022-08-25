@@ -134,11 +134,15 @@ import React, { useState } from "react";
 
 Alright, now going to create a constant.
 
-How you will use a state in a function component??
+How you will use a state in a function component?
 
-So, you create a constant that you have to use array [] like structure and then you will have a useState()
+So, you create a constant and you have to use array [] like structure and then you will have a useState().
 
-And here you need to give the initial value of your state. so, my initial value will be the same which is the Date() function.
+```js
+const [] = useState()
+```
+
+And here you need to give the initial value of your state. So, my initial value will be the same which is the Date() function.
 
 ```js
 const [] = useState(new Date().toString())
