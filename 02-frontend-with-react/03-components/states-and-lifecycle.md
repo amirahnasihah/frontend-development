@@ -283,17 +283,26 @@ To use a life cycle method in the function component, we make a use of a useEffe
 import React, { useState, useEffect } from "react";
 ```
 
-So, this way I will use and useEffect hook. and now what im going to do here is that im gonna write a `useEffect` and this `useEffect` will have two arguments, `useEffect(args1, args2)
-// the first arguments will be a `function` or a side effect that you want to run and the second argument will be dependency array.
-// `useEffect(() => {})`
-// and the second argument will be dependency array. so this dependency array will depend on these State variable.
-// so, now what im gonna do here is that let's have a console.log() and im gonna have here "component mounted or updated"
+So, this way I will use and useEffect hook. and now what im going to do here is that im gonna write a `useEffect` and this `useEffect` will have two arguments, `useEffect(args1, args2)`
+
+The first arguments will be a `function` or a side effect that you want to run and the second argument will be dependency array.
+
+```js
+useEffect(() => {})
+```
+
+And the second argument will be dependency array. So this dependency array will depend on these State variable.
+
+So, now what im gonna do here is that let's have a console.log() and im gonna have here "component mounted or updated"
 // `console.log("component mounted or updated")`
 // alright, and remove the dependency array and save it.
 // `useEffect(() => {console.log("component mounted or updated");});`
+
+```js
  useEffect(() => {
    console.log("component mounted or updated");
  });
+
 
 // i'll save it and now lets go to the inspect element and I will go to the console and here I will just remove this function because we dont want and its polluting our console
 // comment out //console.log(new Date().toString());
