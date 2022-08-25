@@ -37,9 +37,9 @@ Typing into the form updates the input box, clicking "next" on an image carousel
 
 ## First Step
 
-To begin, you can start create your own react app using command line or can directly go to [CodeSandbox](https://codesandbox.io/) if you want to skip using the command line which more faster. CodeSandbox is an online code editor and prototype tool that speeds up the creation and sharing of web apps where 
+To begin, you can start create your own react app using command line or can directly go to [CodeSandbox](https://codesandbox.io/) if you want to skip using the command line which more faster. CodeSandbox is an online code editor and prototype tool that speeds up the creation and sharing of web apps where you can directly deploy your app without a hustle.
 
-Create a new folder inside the src folder named components. Then, create a JavaScript file called Clock.js which in React is the component of Clock.
+First, create a new folder inside the src folder named components. Then, create a JavaScript file called Clock.js which in React is the component of Clock.
 
 Create a function Clock Component.
 
