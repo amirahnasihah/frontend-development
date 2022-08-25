@@ -1,4 +1,4 @@
-FULL Tu CODE
+FULL TUTORIAL CODE
 
 ```js
 import React, { useState, useEffect } from "react";
