@@ -89,7 +89,7 @@ Return a jsx below the setInterval() method
 
 Type `return (<div> </div>)`
 
-And gonna call the showDate() function inside the `<div>` Jsx
+And gonna call the showDate() function inside the `<div>` JSX.
 
 function Clock() {
  return (
