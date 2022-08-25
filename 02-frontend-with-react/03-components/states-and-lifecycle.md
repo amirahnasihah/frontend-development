@@ -1,4 +1,6 @@
- 
+FULL Tu CODE
+
+```js
 import React, { useState, useEffect } from "react";
  
 function Clock() {
@@ -26,7 +28,7 @@ function Clock() {
 }
  
 export default Clock;
-
+```
 
 # State is Memory of a Component
 
