@@ -35,6 +35,7 @@ export default Clock;
 As a result of an interaction, components frequently need to update what's on the screen.
 Typing into the form updates the input box, clicking "next" on an image carousel changes the picture displayed, and clicking "purchase" adds a product to the shopping cart. Components must "remember" information such as the current input value, the current picture, and the shopping cart. This type of component-specific memory is referred to as state in React.
 
+# 
 
 To begin, you can start create your own react app using command line or can directly go to [CodeSandbox](https://codesandbox.io/), it is an online code editor and prototype tool that speeds up the creation and sharing of web apps.
 
@@ -57,9 +58,7 @@ setInterval(showDate, 1000);
 
 `setInterval(showDate, 1000);`` and this function will be called in every one second.
 
-// alright, and another thing gonna do is also console.log() above the return method. we console.log the Date() function to see whether its running or not in our console.
-
-// `console.log(new Date().toString());`
+alright, and another thing gonna do is also console.log() above the return method. we console.log the Date() function to see whether its running or not in our console.
 
 ```js
 function showDate() {
