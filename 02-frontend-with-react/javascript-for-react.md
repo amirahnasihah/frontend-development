@@ -24,4 +24,5 @@ function funDecl() {
 funDecl();
 ```
 
-Once invoked, you will see 
+Once invoked, you will see You're doing great! on the console.
+
