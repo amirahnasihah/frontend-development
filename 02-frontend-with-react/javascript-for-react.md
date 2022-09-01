@@ -53,4 +53,8 @@ function hey() {
 }
 ```
 
-Function Expression are not hoisted. You cannot invoke a function created by a function expression. It will cause an error.
+Function Expression are not hoisted. You cannot invoke a function created by a function expression. It will cause a TypeError error.
+
+```JavaScript
+
+```
