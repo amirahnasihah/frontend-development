@@ -28,3 +28,5 @@ Once invoked, you will see You're doing great! on the console.
 
 ## Function Expression
 
+Create the function as a variable.
+
