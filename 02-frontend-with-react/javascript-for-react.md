@@ -42,4 +42,7 @@ Once invoked, you will see the same result.
 
 ### Function Hoisting
 
-Function Declaration are hoisted. You can invoke or call the function before you 
+Function Declaration are hoisted. You can invoke or call the function before you declare it.
+
+
+Function Expression are not hoisted. You cannot invoke a function created
