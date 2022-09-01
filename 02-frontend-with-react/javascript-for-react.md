@@ -38,3 +38,6 @@ const logCompliment = function() {
 logCompliment();
 ```
 
+Once invoked, you will see the same result.
+
+### 
