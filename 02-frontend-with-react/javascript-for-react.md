@@ -14,4 +14,5 @@ function logCompliment() {
 }
 ```
 
-Once have dec
+Once have declared the function, we need to invoke or call to see it execute:
+
