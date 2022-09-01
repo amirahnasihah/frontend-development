@@ -45,4 +45,4 @@ Once invoked, you will see the same result.
 Function Declaration are hoisted. You can invoke or call the function before you declare it.
 
 
-Function Expression are not hoisted. You cannot invoke a function created
+Function Expression are not hoisted. You cannot invoke a function created by a function expression. It will cause an error.
