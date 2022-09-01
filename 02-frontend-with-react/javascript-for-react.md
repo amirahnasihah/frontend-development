@@ -44,5 +44,13 @@ Once invoked, you will see the same result.
 
 Function Declaration are hoisted. You can invoke or call the function before you declare it.
 
+```JavaScript
+// Invoking the function before it's declared
+hey();
+// Function Declaration
+function hey() {
+  alert("hey!");
+}
+```
 
 Function Expression are not hoisted. You cannot invoke a function created by a function expression. It will cause an error.
