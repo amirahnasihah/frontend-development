@@ -6,7 +6,7 @@ Here's are the different syntax options that can be used to create a function.
 
 ## Function Declarations
 
-Also known as function definition starts with the function keyword, followed by the function's name, e.g, funDecl. The JavaScript statements that are part of the function are defined between the curly braces.
+Also known as function definition starts with the function keyword, followed by the function's name, e.g, `funDecl`. The JavaScript statements that are part of the function are defined between the curly braces `{}`.
 
 ``` JavaScript
 function funDecl() {
@@ -14,7 +14,7 @@ function funDecl() {
 }
 ```
 
-Once have declared the function, we need to invoke or call to see it execute:
+Once have declared the function, you need to invoke or call to see it execute:
 
 ```JavaScript
 function funDecl() {
@@ -24,3 +24,4 @@ function funDecl() {
 funDecl();
 ```
 
+Once invoked, you will see 
