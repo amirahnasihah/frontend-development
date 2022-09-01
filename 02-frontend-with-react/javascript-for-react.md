@@ -30,3 +30,10 @@ Once invoked, you will see You're doing great! on the console.
 
 Create the function as a variable.
 
+```JavaScript
+const logCompliment = function() {
+  console.log("You're doing great!");
+};
+
+logCompliment();
+```
