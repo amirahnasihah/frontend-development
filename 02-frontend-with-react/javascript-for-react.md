@@ -42,3 +42,4 @@ Once invoked, you will see the same result.
 
 ### Function Hoisting
 
+Function Declaration are hoisted. You can invoke or call the function before you 
