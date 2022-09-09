@@ -7,6 +7,7 @@
   - [`useState` Hook](#usestate-hook)
 - [Lifecycle using the `useEffect`](#lifecycle-using-the-useeffect)
 - [Dependency Array](#dependency-array)
+- [Code Output](#code-output)
 
 # React Tutorial Beginner - `useState` and `useEffect` with Example Code
 
@@ -467,5 +468,13 @@ Then, in that case, the `useEffect()` will run only if the state variable change
 The second argument is will be the dependency array. So, this dependency array will depend on these State variables.
 
 So, this is how you will do the State and the lifecycle in the React components.
+
+# Code Output
+
+[Code Output](https://codesandbox.io/embed/state-and-lifecycle-57yhrb?autoresize=1&fontsize=14&hidenavigation=1&theme=dark)
+
+---
+
+Do share it with the community at [daily.dev](https://app.daily.dev/) by entering the article's URL / link to add it to the feed.
 
 [GO UP](#react-tutorial-beginner---usestate-and-useeffect-with-example-code)
