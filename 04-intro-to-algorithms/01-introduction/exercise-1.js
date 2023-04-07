@@ -5,6 +5,12 @@ const assert = require("assert");
 // If the target does not exist in inputArray, then the function should return false
 const find = (inputArray, target) => {
   // Put your code below
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] === target) {
+      return true;
+    }
+  }
+  return false;
 };
 
 // DO NOT MODIFY THE CODE BELOW
