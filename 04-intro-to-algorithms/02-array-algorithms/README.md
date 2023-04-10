@@ -8,12 +8,12 @@ If some of the test cases are failing, that means you have some obvious scenario
 
 ## 1.1 In this part, you are going to try coding the “Find Missing Numbers” algorithm question we discussed in class
 
-Open `exercise-1.js` file and please finish the findMissingNumber function according to the specification in the file. We have prepared some test cases for you to test your functions.
+Open `exercise-1.js` file and please finish the `findMissingNumber` function according to the specification in the file. We have prepared some test cases for you to test your functions.
 
 ## 1.2 In this part, you are going to try coding the “Find Duplicate Numbers” algorithm question we discussed in class
 
-Open `exercise-2.js` file and please finish the findDuplicateNumbers function according to the specification in the file. We have prepared some test cases for you to test your functions.
+Open `exercise-2.js` file and please finish the `findDuplicateNumbers` function according to the specification in the file. We have prepared some test cases for you to test your functions.
 
 ## 1.3 In this part, you are going to try coding the “Find Pairs” algorithm question we discussed in class
 
-Open `exercise-3.js` file and please finish the findPairs function according to the specification in the file. We have prepared some test cases for you to test your functions.
+Open `exercise-3.js` file and please finish the `findPairs` function according to the specification in the file. We have prepared some test cases for you to test your functions.
