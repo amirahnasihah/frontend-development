@@ -12,6 +12,13 @@
     - [Techniques that we used](#techniques-that-we-used)
   - [Question 2 - Finding Duplicate Number](#question-2---finding-duplicate-number)
     - [Finding Missing Number](#finding-missing-number-1)
+    - [What is your solution?](#what-is-your-solution-1)
+    - [Example Algorithm](#example-algorithm-1)
+    - [Part 1 - Sort the Array](#part-1---sort-the-array)
+    - [Part 2 - Check for Duplicating Numbers](#part-2---check-for-duplicating-numbers)
+    - [Part 3 - Avoid Duplicating Results](#part-3---avoid-duplicating-results)
+    - [Techniques that we used](#techniques-that-we-used-1)
+  - [Question 3 - Finding Number Pairs](#question-3---finding-number-pairs)
 
 # Coding the Array Algorithms questions
 
@@ -61,10 +68,12 @@ Input Array: [3, 7, 1] → Missing 2, 4, 5, 6
 
 ### What is your solution?
 
-Hint: Confirm the range of the array first. (doesnt have to code, can pseudocode or methodology)
+Hint: Confirm the range of the array first.
 
-```
-create variable arr  = [1, 3, 7] 
+```md
+<!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
+
+create variable arr  = [1, 3, 7]
 ```
 
 ### Example Algorithm
@@ -143,7 +152,7 @@ let tempResultArray = []
 for (let i = min; i <= max; i++){
     // Check if the number exists in the array by using a for loop and “indexOf” Function
     if (arr.indexOf(i) === -1){
-    // if a number is missing, then we push it to the result array
+    // if a number is missing, then we push it to the result array -> tempResultArray = [2, 4, 5, 6]
     tempResultArray.push(i)
     }
 }
@@ -152,9 +161,11 @@ console.log(tempResultArray)
 
 **EXPLAINATION**
 
+mula2, js check i = 1 sbb mmg dri awal i equal to 1. then, i equal to 2 sbb i++. 2 takda dalam array dan -1, jadi 2 added or push inside to array. pastu check 3, 3 ada jadi js do nothing. then, i++ iaitu 4. 4 not exist and -1, jadi push inside array. etc...
+
 1. `let tempResultArray = []`: Declares a new empty array called `tempResultArray`, which will be used to store any missing numbers found in the loop below.
 
-2. `for (let i = min; i <= max; i++){`: Starts a loop that will iterate through each number between `min` and `max` (inclusive).
+2. `for (let i = min; i <= max; i++){`: Starts a loop that will iterate through each number between `min` and `max` (inclusive). (min is 1, max is 7)
 
 3. `if (arr.indexOf(i) === -1){`: Checks if the current number `i` is present in the `arr` array by using the `indexOf` method. If the result is `-1`, that means the number was not found in the array.
 
@@ -164,7 +175,7 @@ console.log(tempResultArray)
 
 In summary, this code is finding all the missing numbers between `min` and `max` in the `arr` array. It does this by iterating through each number between `min` and `max` (inclusive) and checking if each number exists in the `arr` array. If a number is not found in `arr`, it is added to the `tempResultArray`. Finally, the contents of `tempResultArray` are printed to the console.
 
-> indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+> `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present. (indexOf() is basically a searching function. -1 means not exist in the array)
 
 example:
 
@@ -182,7 +193,23 @@ console.log(beasts.indexOf('giraffe'));
 // Expected output: -1
 ```
 
-> what does inclusive means
+> `push()` method adds the specified elements to the end of an array and returns the new length of the array.
+
+```js
+const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count);
+// Expected output: 4
+console.log(animals);
+// Expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals);
+// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+```
+
+> what does "inclusive" means ??
 
 ```md
 "Inclusive" means that the starting and ending values in a range are included in the range. In other words, when a range is defined as "inclusive," it means that the range includes both the starting value and the ending value.
@@ -199,6 +226,35 @@ In summary, when a range is defined as "inclusive," it means that both the start
 1. Temporary Variables
 2. Looping Twice
 
+```js
+// Part 1 - Finding Max and Min
+arr = [3, 7, 1]
+let max = arr[0];
+let min = arr[0];
+
+for(let i = 1 ;i<arr.length;i++){
+    if(arr[i] > max){
+    max = arr[i];
+    }
+    if(arr[i] < min){
+    min = arr[i];
+    }
+}
+
+// Part 2 - Check for Missing Numbers
+let tempResultArray = []
+
+for (let i = min; i<= max; i++){
+    if (arr.indexOf(i) === -1){
+    tempResultArray.push(i)
+    }
+}
+console.log(tempResultArray)
+
+
+// Expected output: [2, 4, 5, 6]
+```
+
 ## Question 2 - Finding Duplicate Number
 
 ### Finding Missing Number
@@ -212,3 +268,137 @@ Input Array: [2, 3, 3, 7, 9, 2] → Duplicating Numbers: 2, 3
 Example 2:
 Input Array: [2, 3, 3, 3, 7, 9, 2] → Duplicating Numbers: 2, 3
 ```
+
+### What is your solution?
+
+Hint: Would it be easier if you sort the array first?
+
+```md
+<!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
+
+1. Sort the array first.: Sorts the input array in ascending order using a sorting algorithm. This is done so that we can easily compare each number to the number next to it in the array.
+
+Create a temporary result array.: Declares an empty array called tempResultArray, which will be used to store any duplicate numbers found in the loop below.
+
+Use a for loop to go through each number in the sorted array. Compare each number to the number next to it.: Iterates through each number in the sorted array using a for loop, and compares each number to the number next to it.
+
+If the next number is same as the number, then add it to the temporary result array.: If the current number is the same as the number next to it, then it is a duplicate. The duplicate number is then added to the tempResultArray using the push method.
+
+Return the temporary array as result.: After all numbers in the array have been checked for duplicates, the tempResultArray is returned as the output of the function.
+
+In summary, this algorithm finds all the duplicate numbers in the input array by first sorting the array, and then iterating through each number in the sorted array to compare it to the number next to it. If a duplicate number is found, it is added to a tempResultArray, which is then returned as the output of the function.
+```
+
+### Example Algorithm
+
+1. Sort the array first.
+2. Create a temporary result array.
+3. Use a for loop to go through each number in the sorted array. Compare each number the the number next to it.
+4. If the next number is same as the number, then add it to the temporary result array.
+5. Return the temporary array as result.
+
+### Part 1 - Sort the Array
+
+First, we need to sort the array so the same numbers will be next to each other.
+
+```js
+arr = [2, 3, 3, 7, 9, 2]
+// We first sort the array and save it in a new variable.
+sortedArr = arr.sort()
+```
+
+> sort()method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. To sort the elements in an array without mutating the original array, use toSorted().
+
+```js
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// Expected output: Array [1, 100000, 21, 30, 4]
+```
+
+### Part 2 - Check for Duplicating Numbers
+
+In the step, we are going to leverage a for loop to check on the numbers one by one. If the number is same as the next number, then it is duplicated.
+
+After identified the duplicating number, then we push it to the tempResultArray. 
+
+Input Array: [2, 2, 3, 3, 3, 7, 9]
+
+```js
+// Create an array to store the final results
+let tempResultArray = []
+
+// We don’t need to check for the final number → sortedArr.length - 1
+for (let i = 0; i < sortedArr.length - 1; i++){
+    // If the number equals to the next number, that means it’s duplicated. 
+    if (sortedArr[i] === sortedArr[i+1]){
+    // If a number is missing, then we push it to the result array
+    tempResultArray.push(sortedArr[i])
+    }
+}
+
+console.log(tempResultArray)
+```
+
+### Part 3 - Avoid Duplicating Results
+
+If we just push the number to result array without checking if it is already in the result array, then our result would have duplicating numbers too.
+
+e.g. Input Array: [2, 2, 3, 3, 3, 7, 9] → [2, 3, 3]
+
+```js
+let tempResultArray = []
+
+for (let i = 0; i < sortedArr.length - 1; i++){
+    if (sortedArr[i] === sortedArr[i+1]){
+        // Additional check before pushing the number to the result array
+        if (tempResultArray.indexOf(sortedArr[i]) === -1){
+            tempResultArray.push(sortedArr[i])
+        }
+    }
+}
+
+console.log(tempResultArray)
+```
+
+### Techniques that we used
+
+1. Sorting First
+2. Temporary Variable
+
+Full
+
+```js
+// Part 1 - Sort the Array
+arr = [2, 3, 3, 7, 9, 2]
+sortedArr = arr.sort()
+
+// Part 2 - Check for Duplicating Numbers
+let tempResultArray = []
+for (let i = 0; i < sortedArr.length - 1; i++){
+    if (sortedArr[i] === sortedArr[i+1]){
+        tempResultArray.push(sortedArr[i])
+    }
+}
+console.log(tempResultArray)
+
+// Part 3 - Avoid Duplicating Results
+let tempResultArray = []
+
+for (let i = 0; i < sortedArr.length - 1; i++){
+    if (sortedArr[i] === sortedArr[i+1]){
+        if (tempResultArray.indexOf(sortedArr[i]) === -1){
+            tempResultArray.push(sortedArr[i])
+        }
+    }
+}
+
+console.log(tempResultArray)
+```
+
+## Question 3 - Finding Number Pairs

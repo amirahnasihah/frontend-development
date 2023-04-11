@@ -5,17 +5,27 @@ const assert = require("assert");
 
 const findMissingNumber = (arr) => {
   // Add your code here
-  const maxNum = Math.max(...arr);
-  const minNum = Math.min(...arr);
-  const missingNums = [];
+  let max = arr[0];
+  let min = arr[0];
 
-  for (let i = minNum + 1; i < maxNum; i++) {
-    if (!arr.includes(i)) {
-      missingNums.push(i);
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+    if (arr[i] < min) {
+      min = arr[i];
     }
   }
 
-  return missingNums;
+  let tempResultArray = [];
+
+  for (let i = min; i <= max; i++) {
+    if (arr.indexOf(i) === -1) {
+      tempResultArray.push(i);
+    }
+  }
+
+  return tempResultArray;
 };
 
 // DO NOT MODIFY CODE BELOW
