@@ -325,7 +325,7 @@ console.log(array1);
 // Expected output: Array [1, 100000, 21, 30, 4]
 ```
 
-### Part 2 - Check for Duplicating Numbers
+### Part 2 - Check for Duplicating Numbers (important part)
 
 In the step, we are going to leverage a for loop to check on the numbers one by one. If the number is same as the next number, then it is duplicated.
 
