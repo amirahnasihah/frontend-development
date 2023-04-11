@@ -276,7 +276,7 @@ Hint: Would it be easier if you sort the array first? (this question quite diffi
 ```md
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
-Example; initiahave array [1, 3, 9, 2, 9, 3]
+Example; initially, have array [1, 3, 9, 2, 9, 3]. Then, if sorted 
 
 1. `Sort the array first.`: Sorts the input array in ascending order using a sorting algorithm. This is done so that we can easily compare each number to the number next to it in the array.
 
