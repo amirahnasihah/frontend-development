@@ -271,7 +271,7 @@ Input Array: [2, 3, 3, 3, 7, 9, 2] → Duplicating Numbers: 2, 3
 
 ### What is your solution?
 
-Hint: Would it be easier if you sort the array first?
+Hint: Would it be easier if you sort the array first? (this question quite difficult)
 
 ```md
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
