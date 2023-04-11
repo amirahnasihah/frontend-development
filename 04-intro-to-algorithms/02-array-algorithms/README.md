@@ -276,6 +276,8 @@ Hint: Would it be easier if you sort the array first? (this question quite diffi
 ```md
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
+Example; initiahave array [1, 3, 9, 2, 9, 3]
+
 1. `Sort the array first.`: Sorts the input array in ascending order using a sorting algorithm. This is done so that we can easily compare each number to the number next to it in the array.
 
 2. `Create a temporary result array.`: Declares an empty array called tempResultArray, which will be used to store any duplicate numbers found in the loop below.
