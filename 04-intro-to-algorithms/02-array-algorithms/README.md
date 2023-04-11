@@ -308,7 +308,7 @@ arr = [2, 3, 3, 7, 9, 2]
 // We first sort the array and save it in a new variable.
 sortedArr = arr.sort()
 
-// Expected output: []
+// Expected output: [2, 2, 3, 3, 7, 9]
 ```
 
 > sort()method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. To sort the elements in an array without mutating the original array, use toSorted().
