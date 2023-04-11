@@ -349,6 +349,8 @@ for (let i = 0; i < sortedArr.length - 1; i++){
 console.log(tempResultArray)
 ```
 
+
+
 ### Part 3 - Avoid Duplicating Results
 
 If we just push the number to result array without checking if it is already in the result array, then our result would have duplicating numbers too.
