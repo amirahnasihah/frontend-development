@@ -276,15 +276,15 @@ Hint: Would it be easier if you sort the array first?
 ```md
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
-1. Sort the array first.: Sorts the input array in ascending order using a sorting algorithm. This is done so that we can easily compare each number to the number next to it in the array.
+1. `Sort the array first.: Sorts the input array in ascending order using a sorting algorithm. This is done so that we can easily compare each number to the number next to it in the array.
 
-Create a temporary result array.: Declares an empty array called tempResultArray, which will be used to store any duplicate numbers found in the loop below.
+2. Create a temporary result array.: Declares an empty array called tempResultArray, which will be used to store any duplicate numbers found in the loop below.
 
-Use a for loop to go through each number in the sorted array. Compare each number to the number next to it.: Iterates through each number in the sorted array using a for loop, and compares each number to the number next to it.
+3. Use a for loop to go through each number in the sorted array. Compare each number to the number next to it.: Iterates through each number in the sorted array using a for loop, and compares each number to the number next to it.
 
-If the next number is same as the number, then add it to the temporary result array.: If the current number is the same as the number next to it, then it is a duplicate. The duplicate number is then added to the tempResultArray using the push method.
+4. If the next number is same as the number, then add it to the temporary result array.: If the current number is the same as the number next to it, then it is a duplicate. The duplicate number is then added to the tempResultArray using the push method.
 
-Return the temporary array as result.: After all numbers in the array have been checked for duplicates, the tempResultArray is returned as the output of the function.
+5. Return the temporary array as result.: After all numbers in the array have been checked for duplicates, the tempResultArray is returned as the output of the function.
 
 In summary, this algorithm finds all the duplicate numbers in the input array by first sorting the array, and then iterating through each number in the sorted array to compare it to the number next to it. If a duplicate number is found, it is added to a tempResultArray, which is then returned as the output of the function.
 ```
