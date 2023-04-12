@@ -58,7 +58,7 @@ Open `exercise-3.js` file and please finish the `findPairs` function according t
 
 You have an unsorted integer array (without duplicate number) and **some numbers are missing** in this array. In order to make the array **consecutive**. **How do you find that missing number?**
 
-```md
+```markdown
 Example 1:
 Input Array: [1, 3, 7] → Missing 2, 4, 5, 6
 
@@ -70,7 +70,7 @@ Input Array: [3, 7, 1] → Missing 2, 4, 5, 6
 
 Hint: Confirm the range of the array first.
 
-```md
+```markdown
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
 create variable arr  = [1, 3, 7]
@@ -86,7 +86,7 @@ In summary, the algorithm finds all the numbers that are missing from the input 
 
 > why stores them in a temporary result array ??
 
-```md
+```markdown
 The reason for storing the missing numbers in a temporary result array is to return them as the output of the algorithm. The algorithm is designed to find the missing numbers between the minimum and maximum values in the input array. Since the algorithm needs to return the missing numbers, it needs a place to store them, and that is where the temporary result array comes into play.
 
 By storing the missing numbers in a temporary result array, the algorithm can collect all the missing numbers efficiently and return them as a single output at the end of the computation. Without a temporary result array, the algorithm would have to return each missing number as soon as it is found, which would be less efficient and require more code to keep track of the output.
@@ -100,7 +100,7 @@ Therefore, by using a temporary result array, the algorithm can easily collect a
 
 First, we need to have a function to find the max and min number of the array. (In order to find the range of the array)
 
-```js
+```javascript
 arr = [3, 7, 1]
 // We First assume the max and min are the first number in the array
 let max = arr[0];
@@ -145,7 +145,7 @@ Then we will loop through the numbers from min to max, and check if we are missi
 
 tempResultArray is to return them as the output of the algorithm. we always do this, create a temporary result.
 
-```js
+```javascript
 // Create an array to store the final results
 let tempResultArray = []
 
@@ -179,7 +179,7 @@ In summary, this code is finding all the missing numbers between `min` and `max`
 
 example:
 
-```js
+```javascript
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 
 console.log(beasts.indexOf('bison'));
@@ -195,7 +195,7 @@ console.log(beasts.indexOf('giraffe'));
 
 > `push()` method adds the specified elements to the end of an array and returns the new length of the array.
 
-```js
+```javascript
 const animals = ['pigs', 'goats', 'sheep'];
 
 const count = animals.push('cows');
@@ -211,7 +211,7 @@ console.log(animals);
 
 > what does "inclusive" means ??
 
-```md
+```markdown
 "Inclusive" means that the starting and ending values in a range are included in the range. In other words, when a range is defined as "inclusive," it means that the range includes both the starting value and the ending value.
 
 For example, if we say that a loop should iterate through all the numbers between 1 and 10 inclusive, that means that the loop should iterate through the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.
@@ -226,7 +226,7 @@ In summary, when a range is defined as "inclusive," it means that both the start
 1. Temporary Variables
 2. Looping Twice
 
-```js
+```javascript
 // Part 1 - Finding Max and Min
 arr = [3, 7, 1]
 let max = arr[0];
@@ -261,7 +261,7 @@ console.log(tempResultArray)
 
 You have an unsorted integer array (with duplicate number). In order to find these duplicate number, what will you do?
 
-```md
+```markdown
 Example 1:
 Input Array: [2, 3, 3, 7, 9, 2] → Duplicating Numbers: 2, 3
 
@@ -273,7 +273,7 @@ Input Array: [2, 3, 3, 3, 7, 9, 2] → Duplicating Numbers: 2, 3
 
 Hint: Would it be easier if you sort the array first? (this question quite difficult)
 
-```md
+```markdown
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
 Example; initially, have array [1, 3, 9, 2, 9, 3]. Then, if after sorted —> [1, 2, 3, 3, 9, 9] = easier.
@@ -303,7 +303,7 @@ In summary, this algorithm finds all the duplicate numbers in the input array by
 
 First, we need to sort the array so the same numbers will be next to each other.
 
-```js
+```javascript
 arr = [2, 3, 3, 7, 9, 2]
 // We first sort the array and save it in a new variable.
 sortedArr = arr.sort()
@@ -313,7 +313,7 @@ sortedArr = arr.sort()
 
 > sort()method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. To sort the elements in an array without mutating the original array, use toSorted().
 
-```js
+```javascript
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();
 console.log(months);
@@ -333,7 +333,7 @@ After identified the duplicating number, then we push it to the tempResultArray.
 
 Input Array (already sort): [2, 2, 3, 3, 3, 7, 9]
 
-```js
+```javascript
 // Create an array to store the final results
 let tempResultArray = []
 
@@ -352,10 +352,11 @@ console.log(tempResultArray)
 **EXPLAINATION**
 
 Input Array (already sort): [2, 3, 3, 3, 7, 9]
+i = 0, 1, 2, 3, 4, 5
 
-i equal to 0 (which is 2). so, comparing element 0 with element 1 (which is 3). 2 not equal to 3, so gonna do i++. now, index 1 compare with index 2 (which is 3 also). its duplicate, so push it number 3 into tempResultArray. then, i++ again, compare index 2 with index 3 (which is 3 too). its duplicate, push 3 into tempResultArray. i++, compare index 3 with index 4 (which is 7). 
+i equal to 0 (which is 2). so, comparing element 0 with element 1 (which is 3). 2 not equal to 3, so gonna do i++. now, index 1 compare with index 2 (which is 3 also). its duplicate, so push it number 3 into tempResultArray. then, i++ again, compare index 2 with index 3 (which is 3 too). its duplicate, push 3 into tempResultArray. i++, compare index 3 with index 4 (which is 7). i++, compare the element 4 and 5 (which is 9). 7 & 9 not the same
 
-tempResultArray = [3, 3, ]
+tempResultArray = [3, 3]
 
 1. `let tempResultArray = []`: Initializes an empty array called `tempResultArray`, which will be used to store any duplicate numbers found in the loop below.
 
@@ -375,7 +376,7 @@ If we just push the number to result array without checking if it is already in 
 
 e.g. Input Array: [2, 2, 3, 3, 3, 7, 9] → [2, 3, 3]
 
-```js
+```javascript
 let tempResultArray = []
 
 for (let i = 0; i < sortedArr.length - 1; i++){
@@ -397,7 +398,7 @@ console.log(tempResultArray)
 
 Full
 
-```js
+```javascript
 // Part 1 - Sort the Array
 arr = [2, 3, 3, 7, 9, 2]
 sortedArr = arr.sort()
@@ -410,6 +411,7 @@ for (let i = 0; i < sortedArr.length - 1; i++){
     }
 }
 console.log(tempResultArray)
+
 
 // Part 3 - Avoid Duplicating Results
 let tempResultArray = []
