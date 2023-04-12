@@ -1,4 +1,12 @@
-# Front-End Development
+# Front-End Development course
+
+# Topics
+
+1. Programming 101
+2. React main concepts with building CRUD project
+3. Build 2 React projects
+4. Algorithms
+5. Coding Interview Questions
 
 - [Front-End Development](#front-end-development)
 - [Front-End Developer](#front-end-developer)
