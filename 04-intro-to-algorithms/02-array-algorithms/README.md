@@ -331,7 +331,7 @@ In the step, we are going to leverage a for loop to check on the numbers one by 
 
 After identified the duplicating number, then we push it to the tempResultArray. 
 
-Input Array: [2, 2, 3, 3, 3, 7, 9]
+Input Array (already sort): [2, 2, 3, 3, 3, 7, 9]
 
 ```js
 // Create an array to store the final results
@@ -351,9 +351,15 @@ console.log(tempResultArray)
 
 **EXPLAINATION**
 
+Input Array (already sort): [2, 3, 3, 3, 7, 9]
+
+i equal to 0 (which is 2). so, comparing element 0 with element 1 (which is 3). 2 not equal to 3, so gonna do i++. now, index 1 compare with index 2 (which is 3 also). its duplicate, so push it number 3 into tempResultArray. then, i++ again, compare index 2 with index 3 (which is 3 too). its duplicate, push 3 into tempResultArray. i++, compare index 3 with index 4 (which is 7). 
+
+tempResultArray = [3, 3, ]
+
 1. `let tempResultArray = []`: Initializes an empty array called `tempResultArray`, which will be used to store any duplicate numbers found in the loop below.
 
-2. `for (let i = 0; i < sortedArr.length - 1; i++)`: Sets up a for loop to iterate through each number in the `sortedArr` array, from the first element to the second to last element. We don't need to check the last element since we're comparing it to the next element.
+2. `for (let i = 0; i < sortedArr.length -1; i++)`: Sets up a for loop to iterate through each number in the `sortedArr` array, from the first element to the second to last element. We don't need to check the last element since we're comparing it to the next element.
 
 3. `if (sortedArr[i] === sortedArr[i+1])`: Checks if the current element is the same as the next element. If it is, that means the current element is a duplicate.
 
