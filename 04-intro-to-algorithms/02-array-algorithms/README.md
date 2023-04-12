@@ -349,7 +349,11 @@ for (let i = 0; i < sortedArr.length - 1; i++){
 console.log(tempResultArray)
 ```
 
+**EXPLAINATION**
 
+```md
+
+```
 
 ### Part 3 - Avoid Duplicating Results
 
