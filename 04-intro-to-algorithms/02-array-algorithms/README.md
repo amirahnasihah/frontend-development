@@ -351,9 +351,17 @@ console.log(tempResultArray)
 
 **EXPLAINATION**
 
-```md
+1. `let tempResultArray = []`: Initializes an empty array called `tempResultArray`, which will be used to store any duplicate numbers found in the loop below.
 
-```
+2. `for (let i = 0; i < sortedArr.length - 1; i++)`: Sets up a for loop to iterate through each number in the `sortedArr` array, from the first element to the second to last element. We don't need to check the last element since we're comparing it to the next element.
+
+3. `if (sortedArr[i] === sortedArr[i+1])`: Checks if the current element is the same as the next element. If it is, that means the current element is a duplicate.
+
+4. `tempResultArray.push(sortedArr[i])`: If a duplicate number is found, it is added to the `tempResultArray` using the `push` method.
+
+5. `console.log(tempResultArray)`: Outputs the `tempResultArray` to the console, which contains all the duplicate numbers found in the `sortedArr` array.
+
+In summary, this code is a simple way to find all the duplicate numbers in a sorted array by iterating through each number in the array and comparing it to the next number. If a duplicate number is found, it is added to a `tempResultArray`, which is then output to the console.
 
 ### Part 3 - Avoid Duplicating Results
 
