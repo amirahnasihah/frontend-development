@@ -177,7 +177,7 @@ In summary, this code is finding all the missing numbers between `min` and `max`
 
 > `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present. (indexOf() is basically a searching function. -1 means not exist in the array)
 
-example:
+**JS Fact:**
 
 ```javascript
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
@@ -313,6 +313,8 @@ sortedArr = arr.sort()
 
 > sort()method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. To sort the elements in an array without mutating the original array, use toSorted().
 
+**JS Fact:**
+
 ```javascript
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();
@@ -348,7 +350,7 @@ for (let i = 0; i < sortedArr.length - 1; i++){
     }
 }
 
-console.log(tempResultArray)
+console.log(tempResultArray) // Expected output: [2, 3, 3]
 ```
 
 **EXPLAINATION**
@@ -362,7 +364,7 @@ tempResultArray = [3, 3]
 
 1. `let tempResultArray = []`: Initializes an empty array called `tempResultArray`, which will be used to store any duplicate numbers found in the loop below.
 
-2. `for (let i = 0; i < sortedArr.length -1; i++)`: Sets up a for loop to iterate through each number in the `sortedArr` array, from the first element to the second to last element. We don't need to check the last element since we're comparing it to the next element.
+2. `for (let i = 0; i < sortedArr.length - 1; i++)`: Sets up a for loop to iterate through each number in the `sortedArr` array, from the first element to the second to last element. We don't need to check the last element since we're comparing it to the next element.
 
 3. `if (sortedArr[i] === sortedArr[i+1])`: Checks if the current element is the same as the next element. If it is, that means the current element is a duplicate.
 
