@@ -491,8 +491,7 @@ Hint: Using 2 loops, nested loops
 ### Example Algorithm
 
 1. Use a for loop to loop through the input array
-2. For each element in the input array, calculate the sum of this element 
-with each of the other elements
+2. For each element in the input array, calculate the sum of this element with each of the other elements
 3. For those that add up to our target sum, print the pair
 
 ### Part 1 - Loop Thru the Array
