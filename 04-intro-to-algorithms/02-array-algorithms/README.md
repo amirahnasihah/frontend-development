@@ -488,6 +488,12 @@ Results: 4, 6
 
 Hint: Using 2 loops, nested loops
 
+```markdown
+<!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
+
+
+```
+
 ### Example Algorithm
 
 1. Use a for loop to loop through the input array
@@ -496,7 +502,7 @@ Hint: Using 2 loops, nested loops
 
 ### Part 1 - Loop Thru the Array
 
-First, we need to loop through the array
+First, we need to loop through the array:
 
 ```javascript
 let arr = [2, 3, 7, 9, 2]
@@ -512,7 +518,11 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-### Part 2 - Loop Thru in a Nested Loop
+**EXPLAINATION**
+
+
+
+### Part 2 - Loop Thru in a Nested Loop (important part)
 
 Then we need to create a nested loop to go thru each of the elements again.
 
@@ -531,11 +541,12 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-|   |   |   |   |   |
+|   | 2  | 3  | 7  | 9  |
 |---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+| 2  | 4  | 5  | 9  | 11  |
+| 3  | 5  | 6  | 10  | 12  |
+| 7  | 9  | 10  | 14  | 16  |
+| 9  | 11  | 12  | 16  | 18  |
 
 **EXPLAINATION**
 
@@ -556,11 +567,12 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-|   |   |   |   |   |
+|   | 2  | 3  | 7  | 9  |
 |---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+| 2  |   |   |   |   |
+| 3  |   |   |   |   |
+| 7  |   |   |   |   |
+| 9  |   |   |   |   |
 
 ### Part 3 - Avoiding Duplicate Results
 
