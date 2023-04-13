@@ -392,7 +392,7 @@ for (let i = 0; i < sortedArr.length - 1; i++){
     }
 }
 
-console.log(tempResultArray)
+console.log(tempResultArray) // Expected output: [2, 3]
 ```
 
 ### Techniques that we used
@@ -414,7 +414,7 @@ for (let i = 0; i < sortedArr.length - 1; i++){
         tempResultArray.push(sortedArr[i])
     }
 }
-console.log(tempResultArray)
+console.log(tempResultArray) // Output: [2, 3, 3]
 
 
 // Part 3 - Avoid Duplicating Results
@@ -428,7 +428,7 @@ for (let i = 0; i < sortedArr.length - 1; i++){
     }
 }
 
-console.log(tempResultArray)
+console.log(tempResultArray) // Output: [[2, 3]]
 ```
 
 ## Question 3 - Finding Number Pairs
