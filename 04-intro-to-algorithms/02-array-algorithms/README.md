@@ -350,11 +350,19 @@ for (let i = 0; i < sortedArr.length - 1; i++){
     }
 }
 
-console.log(tempResultArray) // Expected output: [2, 3, 3]
+console.log(tempResultArray) // Output: [2, 3, 3]
 ```
 
 **EXPLAINATION**
 
+Input Array: [2, 2, 3, 3, 3, 7, 9] → [2, 3, 3]
+
+As a start we have, i = 0. at very beginning we compare the first element (which is 2) with the second element (which is 2). 2 and 2 is duplicate, so push to tempResultArray of second element (which is 2). then, i++. now, i = 1. compare second element with third element (which is 3). 2 and 3 not duplicate, so do nothing. again, i++. now, start at i = 2 (third element of index 2, which is 3). compare third element with fourth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3. again, i++. now, index start at i = 3. compare fourth element with fifth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3. again, i++. now, index start with i = 4. compare fifth element with sixth element (which is 7). 3 and 7 not duplicate, so do nothing. 7 and 9 not compare with the last element (which is 9), `i < sortedArr.length - 1;`
+
+tempResultArray = [2, 3, 3]
+
+
+////////////////////
 Input Array (already sort): [2, 3, 3, 3, 7, 9]
 i = 0, 1, 2, 3, 4, 5
 
@@ -378,7 +386,7 @@ In summary, this code is a simple way to find all the duplicate numbers in a sor
 
 If we just push the number to result array without checking if it is already in the result array, then our result would have duplicating numbers too.
 
-e.g. Input Array: [2, 2, 3, 3, 3, 7, 9] → [2, 3, 3]
+e.g. Input Array: [2, 2, 3, 3, 3, 7, 9] → [2, 3, 3]. we dont want this.
 
 ```javascript
 let tempResultArray = []
@@ -396,15 +404,6 @@ console.log(tempResultArray) // Expected output: [2, 3]
 ```
 
 **EXPLAINATION**
-
-Input Array: [2, 2, 3, 3, 3, 7, 9] → [2, 3, 3]
-
-As a start we have, i = 0. at very beginning we compare the first element (which is 2) with the second element (which is 2). 2 and 2 is duplicate, so push to tempResultArray of second element (which is 2). then, i++. now, i = 1. compare second element with third element (which is 3). 2 and 3 not duplicate, so do nothing. again, i++. now, start at i = 2 (third element of index 2, which is 3). compare third element with fourth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3. again, i++. now, index start at i = 3. compare fourth element with fifth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3. again, i++. now, index start with i = 4. compare fifth element with sixth element (which is 7). 3 and 7 not duplicate, so do nothing. 7 and 9 not compare with the last element (which is 9), `i < sortedArr.length - 1;`
-
-tempResultArray = [2, 3, 3]
-
-
-
 
 Input Array: [2, 2, 3, 3, 3, 7, 9]
 
@@ -430,6 +429,8 @@ tempResultArray = [2, 3]
 6. `console.log(tempResultArray)`: Outputs the `tempResultArray` to the console, which contains all the unique duplicate numbers found in the `sortedArr` array.
 
 In summary, this code is a more advanced way to find all the duplicate numbers in a sorted array by iterating through each number in the array and comparing it to the next number. If a duplicate number is found and it hasn't already been added to a `tempResultArray`, it is added to the array using the push method. The final output is the `tempResultArray` containing all the unique duplicate numbers found in the `sortedArr` array.
+
+> other function called unique. can search it for more info.
 
 ### Techniques that we used
 
@@ -537,7 +538,7 @@ for (let i = 0; i < arr.length; i++) {
 |   |   |   |   |   |
 |   |   |   |   |   |
 
-**Visual guide**
+**EXPLAINATION**
 
 Input Array: [2, 3, 7, 9] 
 
