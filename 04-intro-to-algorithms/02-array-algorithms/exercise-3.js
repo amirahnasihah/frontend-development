@@ -9,19 +9,7 @@ const assert = require("assert");
 
 const findPairs = (arr, targetSum) => {
   // Add your code here
-  const pairs = [];
-  const set = new Set(arr);
-
-  for (let num of arr) {
-    const diff = targetSum - num;
-    if (set.has(diff) && diff !== num) {
-      pairs.push([num, diff]);
-      set.delete(num);
-      set.delete(diff);
-    }
-  }
-
-  return pairs;
+  
 };
 
 // DO NOT MODIFY CODE BELOW
