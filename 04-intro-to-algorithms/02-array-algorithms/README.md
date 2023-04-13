@@ -395,6 +395,22 @@ for (let i = 0; i < sortedArr.length - 1; i++){
 console.log(tempResultArray) // Expected output: [2, 3]
 ```
 
+**EXPLAINATION**
+
+1. `let tempResultArray = []`: Initializes an empty array called `tempResultArray`, which will be used to store any duplicate numbers found in the loop below.
+
+2. `for (let i = 0; i < sortedArr.length - 1; i++)`: Sets up a for loop to iterate through each number in the `sortedArr` array, from the first element to the second to last element. We don't need to check the last element since we're comparing it to the next element.
+
+3. `if (sortedArr[i] === sortedArr[i+1])`: Checks if the current element is the same as the next element. If it is, that means the current element is a duplicate.
+
+4. `if (tempResultArray.indexOf(sortedArr[i]) === -1)`: Checks if the current duplicate number has already been added to the `tempResultArray`. If the index of the current duplicate number is `-1`, that means it hasn't been added yet.
+
+5. `tempResultArray.push(sortedArr[i])`: If a duplicate number is found and it hasn't already been added to the `tempResultArray`, it is added using the `push` method.
+
+6. `console.log(tempResultArray)`: Outputs the `tempResultArray` to the console, which contains all the unique duplicate numbers found in the `sortedArr` array.
+
+In summary, this code is a more advanced way to find all the duplicate numbers in a sorted array by iterating through each number in the array and comparing it to the next number. If a duplicate number is found and it hasn't already been added to a `tempResultArray`, it is added to the array using the push method. The final output is the `tempResultArray` containing all the unique duplicate numbers found in the `sortedArr` array.
+
 ### Techniques that we used
 
 1. Sorting First
@@ -428,7 +444,7 @@ for (let i = 0; i < sortedArr.length - 1; i++){
     }
 }
 
-console.log(tempResultArray) // Output: [[2, 3]]
+console.log(tempResultArray) // Output: [2, 3]
 ```
 
 ## Question 3 - Finding Number Pairs
