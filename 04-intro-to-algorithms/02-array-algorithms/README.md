@@ -531,3 +531,41 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
+Code dry in
+
+Input Array: [2, 3, 7, 9] 
+
+```javascript
+let arr = [2, 3, 7, 9, 2]
+let targetSum = 10
+
+// Create a second loop, a nested loop to loop thru the array again, so we can calculate the sum of the elements
+for (let i = 0; i < arr.length; i++) {
+  // Add up each pair of elements and see if that add up to the target sum
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[i] + arr[j] === targetSum) {
+    console.log(arr[i] + ", " + arr[j])
+    }
+  }
+}
+```
+
+### Part 3 - Avoiding Duplicate Results
+
+You might noticed that, the results are duplicated (i.e. both 3,7 and 
+7,3 are printed out). We need to update the
+
+```javascript
+let arr = [2, 3, 7, 9]
+let targetSum = 10
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = i + 1; j < arr.length; j++) {
+  if (arr[i] + arr[j] === targetSum) {
+  console.log(arr[i] + ", " + arr[j])
+    }
+  }
+}
+```
+
+We can only calculate half of the iteration, to avoid duplicate results
