@@ -502,11 +502,32 @@ First, we need to loop through the array
 let arr = [2, 3, 7, 9, 2]
 let targetSum = 10
 
+// We first loop thru the array elements one by one
 for (let i = 0; i < arr.length; i++) {
   for (let j = i; j < arr.length; j++) {
     if (arr[i] + arr[j] === targetSum) {
       console.log(arr[i] + ", " + arr[j])
- }
- }
+    }
+  }
 }
 ```
+
+### Part 2 - Loop Thru in a Nested Loop
+
+Then we need to create a nested loop to go thru each of the elements again.
+
+```javascript
+let arr = [2, 3, 7, 9]
+let targetSum = 10
+
+// Create a second loop, a nested loop to loop thru the array again, so we can calculate the sum of the elements
+for (let i = 0; i < arr.length; i++) {
+  // Add up each pair of elements and see if that add up to the target sum
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[i] + arr[j] === targetSum) {
+    console.log(arr[i] + ", " + arr[j])
+    }
+  }
+}
+```
+
