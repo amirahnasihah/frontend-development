@@ -5,21 +5,19 @@ const assert = require("assert");
 
 const findDuplicateNumbers = (arr) => {
   // Add your code here
-  const counts = {};
-  const duplicates = [];
+  const sortedArr = arr.sort()
+  let tempResultArray = []
 
-  for (const num of arr) {
-    counts[num] = counts[num] ? counts[num] + 1 : 1;
-  }
-
-  for (const num in counts) {
-    if (counts[num] > 1) {
-      duplicates.push(Number(num));
+  for(let i = 0; i < sortedArr.length - 1; i++) {
+    if(sortedArr[i] === sortedArr[i + 1]) {
+      // Additional check before pushing the number to the result array
+      if(tempResultArray.indexOf(sortedArr[i]) === -1) {
+        tempResultArray.push(sortedArr[i])
+      }
     }
   }
-
-  return duplicates;
-};
+  return tempResultArray;
+}
 
 // DO NOT MODIFY CODE BELOW
 // Test Cases
