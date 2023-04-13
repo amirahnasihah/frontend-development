@@ -550,6 +550,9 @@ for (let i = 0; i < arr.length; i++) {
 
 **EXPLAINATION**
 
+outer loop `for (let i = 0; i < arr.length; i++) {`, we try to loop the left-end column. for each of the number we want to calculate, we use the second for loop to calculate 2 + 2 = 4, 2+3, 2+7, 2+9. and the first row (which is 2) is done. next row (which is 3), it will go the same for loop iteration, 3+2, 3+3, 3+7, 3+9. next row (which is 7). next row (which is 9). so, thru out the process everytime when we do this sum up we also check whether it is equal to the targetSum. targetSum is 10. basically, can find 2 answers. which is 3+7 or 7+3. then, we printed out the answer.
+
+
 Input Array: [2, 3, 7, 9] 
 
 ```javascript
