@@ -552,6 +552,7 @@ for (let i = 0; i < arr.length; i++) {
 
 outer loop `for (let i = 0; i < arr.length; i++) {`, we try to loop the left-end column. for each of the number we want to calculate, we use the second for loop to calculate 2 + 2 = 4, 2+3, 2+7, 2+9. and the first row (which is 2) is done. next row (which is 3), it will go the same for loop iteration, 3+2, 3+3, 3+7, 3+9. next row (which is 7). next row (which is 9). so, thru out the process everytime when we do this sum up we also check whether it is equal to the targetSum. targetSum is 10. basically, can find 2 answers. which is 3+7 or 7+3. then, we printed out the answer.
 
+dry run:
 
 Input Array: [2, 3, 7, 9] 
 
@@ -576,6 +577,17 @@ for (let i = 0; i < arr.length; i++) {
 | 3  |   |   |   |   |
 | 7  |   |   |   |   |
 | 9  |   |   |   |   |
+
+at first we have index start 0 which is, i = 0. and also j = 0 at start. index i = 0 (which is 2) + index j = 0 (which is 2) equal to 4. targetSum is 10, so ignore 2 + 2.
+still inside orange (second loop) for loop. next, j++. j become 1. so, index i = 0 (which is 2) + index j = 1 (which is 3) equal to 5. targetSum is 10, so ignore 2 + 3.
+next, j++. j become 2. so, index i = 0 (which is 2) + index j = 2 (which is 7) equal to 9. targetSum is 10, so ignore 2 + 3.
+next, j++. j become 3. so, index i = 0 (which is 2) + index j = 3 (which is 9) equal to 11. targetSum is 10, so ignore 2 + 9.
+next, j++. j become 4. this time 4 is larger than the length. not fulfill the criteria. the criteria is j smaller than the length (which is 3). so, second for loop is done.
+then back to the first (outer) for loop.
+next, i++. i become 1. then we are going to start second for loop again. with start j = 0. index i = 1 (which is 2) + index j = 0 (which is 7) equal to 9. targetSum is 10, so ignore 2 + 3.
+
+i = 0
+j = 0, 1, 2, 3, 4
 
 ### Part 3 - Avoiding Duplicate Results
 
