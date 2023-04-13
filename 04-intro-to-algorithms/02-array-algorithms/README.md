@@ -407,7 +407,7 @@ console.log(tempResultArray) // Expected output: [2, 3]
 
 Input Array: [2, 2, 3, 3, 3, 7, 9]
 
-As a start we have, i = 0. at very beginning we compare the first element (which is 2) with the second element (which is 2). 2 and 2 is duplicate, so push to tempResultArray of second element (which is 2).
+As a start we have, i = 0. at very beginning we compare the first element (which is 2) with the second element (which is 2). 2 and 2 is duplicate, so push to tempResultArray of second element (which is 2). but before that, the element go to `indexOf(sortedArr[i]) === -1)`. sortedArr[i] is actually equal to 3. so, we check whether in tempResultArray already got 3. `-1` means not exist. if not exist, push to tempResultArray.
 then, i++. now, i = 1. compare second element with third element (which is 3). 2 and 3 not duplicate, so do nothing.
 again, i++. now, start at i = 2 (third element of index 2, which is 3). compare third element with fourth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3.
 again, i++. now, index start at i = 3. compare fourth element with fifth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3.
