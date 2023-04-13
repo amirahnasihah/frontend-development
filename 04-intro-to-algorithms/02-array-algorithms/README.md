@@ -469,3 +469,44 @@ console.log(tempResultArray) // Output: [2, 3]
 
 ## Question 3 - Finding Number Pairs
 
+### Finding Missing Number
+
+How to find all pairs of integer in an array whose sum is equal to a given number?
+
+```markdown
+Example 1:
+Input Array: [2, 3, 7, 9, 2], Target Sum: 10
+Results: 3, 7
+
+Example 2:
+Input Array: [3, 4, 6, 1], Target Sum: 10
+Results: 4, 6
+```
+
+### What is your solution?
+
+Hint: Using 2 loops, nested loops
+
+### Example Algorithm
+
+1. Use a for loop to loop through the input array
+2. For each element in the input array, calculate the sum of this element 
+with each of the other elements
+3. For those that add up to our target sum, print the pair
+
+### Part 1 - Loop Thru the Array
+
+First, we need to loop through the array
+
+```javascript
+let arr = [2, 3, 7, 9, 2]
+let targetSum = 10
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = i; j < arr.length; j++) {
+    if (arr[i] + arr[j] === targetSum) {
+      console.log(arr[i] + ", " + arr[j])
+ }
+ }
+}
+```
