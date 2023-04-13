@@ -356,7 +356,7 @@ console.log(tempResultArray)
 Input Array (already sort): [2, 3, 3, 3, 7, 9]
 i = 0, 1, 2, 3, 4, 5
 
-i equal to 0 (which is 2). so, comparing element 0 with element 1 (which is 3). 2 not equal to 3, so gonna do i++. now, index 1 compare with index 2 (which is 3 also). its duplicate, so push it number 3 into tempResultArray. then, i++ again, compare index 2 with index 3 (which is 3 too). its duplicate, push 3 into tempResultArray. i++, compare index 3 with index 4 (which is 7). i++, compare the element 4 and 5 (which is 9). 7 & 9 not the same
+i equal to 0 (which is 2). so, comparing element 0 with element 1 (which is 3). 2 not equal to 3, so gonna do i++. now, index 1 compare with index 2 (which is 3 also). its duplicate, so push it number 3 into tempResultArray. then, i++ again, compare index 2 with index 3 (which is 3 too). its duplicate, push 3 into tempResultArray. i++, compare index 3 with index 4 (which is 7). i++, compare the element 4 and 5 (which is 9). 7 & 9 not the same so do nothing.
 
 tempResultArray = [3, 3]
 
