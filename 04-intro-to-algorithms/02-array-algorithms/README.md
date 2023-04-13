@@ -560,12 +560,15 @@ let arr = [2, 3, 7, 9]
 let targetSum = 10
 
 for (let i = 0; i < arr.length; i++) {
+  // We can only calculate half of the iteration, to avoid duplicate results
   for (let j = i + 1; j < arr.length; j++) {
-  if (arr[i] + arr[j] === targetSum) {
-  console.log(arr[i] + ", " + arr[j])
+    if (arr[i] + arr[j] === targetSum) {
+      console.log(arr[i] + ", " + arr[j])
     }
   }
 }
 ```
 
-We can only calculate half of the iteration, to avoid duplicate results
+### Techniques that we used
+
+1. Nested Loops
