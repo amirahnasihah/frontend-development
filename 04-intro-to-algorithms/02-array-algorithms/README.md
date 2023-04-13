@@ -397,6 +397,12 @@ console.log(tempResultArray) // Expected output: [2, 3]
 
 **EXPLAINATION**
 
+Input Array: [2, 2, 3, 3, 3, 7, 9] → [2, 3, 3]
+
+As a start we have, i = 0. at very beginning we compare the first element (which is 2) with the second element (which is 2). 2 and 2 is duplicate, so push to tempResultArray of second element (which is 2). then, i++. now, i = 1. compare second element with third element (which is 3). 2 and 3 not duplicate, so do nothing. again, i++. now, start at i = 2 (third element of index 2, which is 3). compare third element with fourth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3. again, i++. now, index start at i = 3. compare fourth element with fifth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3. again, i++. now, index start with i = 4. compare fifth element with sixth element (which is 7). 3 and 7 not duplicate, so do nothing. 7 and 9 not compare with the last element (which is 9), `i < sortedArr.length - 1;`
+
+tempResultArray = [2, 3, 3]
+
 1. `let tempResultArray = []`: Initializes an empty array called `tempResultArray`, which will be used to store any duplicate numbers found in the loop below.
 
 2. `for (let i = 0; i < sortedArr.length - 1; i++)`: Sets up a for loop to iterate through each number in the `sortedArr` array, from the first element to the second to last element. We don't need to check the last element since we're comparing it to the next element.
