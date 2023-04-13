@@ -531,7 +531,13 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-Code dry in
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
+**Visual guide**
 
 Input Array: [2, 3, 7, 9] 
 
@@ -549,6 +555,12 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 ```
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
 
 ### Part 3 - Avoiding Duplicate Results
 
