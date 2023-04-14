@@ -571,9 +571,13 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
+i = vertical / column |   |
+j = horizontal / row _   _
+`console.log(arr[i] + ", " + arr[j])`
+
 |   | 2  | 3  | 7  | 9  |
 |---|---|---|---|---|
-| 2  |   |   |   |   |
+| 2  | 4  | 5  | 9  | 11  |
 | 3  |   |   |   |   |
 | 7  |   |   |   |   |
 | 9  |   |   |   |   |
@@ -583,11 +587,23 @@ still inside orange (second loop) for loop. next, j++. j become 1. so, index i =
 next, j++. j become 2. so, index i = 0 (which is 2) + index j = 2 (which is 7) equal to 9. targetSum is 10, so ignore 2 + 3.
 next, j++. j become 3. so, index i = 0 (which is 2) + index j = 3 (which is 9) equal to 11. targetSum is 10, so ignore 2 + 9.
 next, j++. j become 4. this time 4 is larger than the length. not fulfill the criteria. the criteria is j smaller than the length (which is 3). so, second for loop is done.
-then back to the first (outer) for loop.
-next, i++. i become 1. then we are going to start second for loop again. with start j = 0. index i = 1 (which is 2) + index j = 0 (which is 7) equal to 9. targetSum is 10, so ignore 2 + 3.
 
 i = 0
 j = 0, 1, 2, 3, 4
+
+then back to the first (outer) for loop.
+now, i equal to 1. then we are going to start the second for loop again. with it start j = 0. this time, we add up `arr[1] + ", " + arr[0]` (which is 3 + 2 = 5).
+next, j++. j become 1. this time, we add up `arr[1] + ", " + arr[1]` (which is 3 + 3 = 6).
+next, j++. j become 2. this time, we add up `arr[1] + ", " + arr[2]` (which is 3 + 7 = 10).
+next, j++. j become 3. this time, we add up `arr[1] + ", " + arr[3]` (which is 3 + 9 = 12).
+
+i = 1
+j = 0, 1, 2, 3
+
+|   | 2  | 3  | 7  | 9  |
+|---|---|---|---|---|
+| 2  | 4  | 5  | 9  | 11  |
+| 3  | 5  | 6  | 10  | 12  |
 
 ### Part 3 - Avoiding Duplicate Results
 
