@@ -12,7 +12,6 @@ const findPairs = (arr, targetSum) => {
   const result = [];
 
   for(let i = 0; i < arr.length; i++) {
-    // We can only calculate half of the iteration, to avoid duplicate results
     for(let j = i + 1; j < arr.length; j++) {
       if(arr[i] + arr[j] === targetSum) {
         result.push([arr[i], arr[j]]);
