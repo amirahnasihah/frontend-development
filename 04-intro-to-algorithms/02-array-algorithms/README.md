@@ -592,18 +592,26 @@ i = 0
 j = 0, 1, 2, 3, 4
 
 then back to the first (outer) for loop.
-now, i equal to 1. then we are going to start the second for loop again. with it start j = 0. this time, we add up `arr[1] + ", " + arr[0]` (which is 3 + 2 = 5).
-next, j++. j become 1. this time, we add up `arr[1] + ", " + arr[1]` (which is 3 + 3 = 6).
-next, j++. j become 2. this time, we add up `arr[1] + ", " + arr[2]` (which is 3 + 7 = 10).
+now, i equal to 1. then we are going to start the second for loop again. with it start the j = 0. this time, we add up `arr[1] + ", " + arr[0]` (which is 3 + 2 = 5).
+next, j++. j become 1. this time, we add up `arr[1] + ", " + arr[1]` (which is 3 + 3 = 6). check with targetSum is 10, so ignore.
+next, j++. j become 2. this time, we add up `arr[1] + ", " + arr[2]` (which is 3 + 7 = 10). check with targetSum is 10, so answer equal to targetSum. bingo. printed out answer = [3, 7]. printed out arr[i] first then arr[j]. (first answer)
 next, j++. j become 3. this time, we add up `arr[1] + ", " + arr[3]` (which is 3 + 9 = 12).
+next, j++. j become 4. 4 is longer than the arr length. not fulfill the criteria. so, second for loop is done again. second for loop once again ended.
 
 i = 1
-j = 0, 1, 2, 3
+j = 0, 1, 2, 3, 4
 
 |   | 2  | 3  | 7  | 9  |
 |---|---|---|---|---|
 | 2  | 4  | 5  | 9  | 11  |
 | 3  | 5  | 6  | 10  | 12  |
+
+then back to the first (outer) for loop.
+now, i equal to 2. j start from 0 again. then we are going to start the second for loop again. with it start j = 0. this time, we add up `arr[1] + ", " + arr[0]` (which is 3 + 2 = 5).
+
+
+i = 2
+j = 
 
 ### Part 3 - Avoiding Duplicate Results
 
