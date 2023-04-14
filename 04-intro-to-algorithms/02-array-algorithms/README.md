@@ -617,15 +617,25 @@ then back to the first (outer) for loop.
 now, i equal to 2. j start from 0 again. then we are going to start the second for loop once again. this time, we add up `arr[2] + ", " + arr[0]` (which is 7 + 2 = 9).
 next, j++. j become 1. this time, we add up `arr[2] + ", " + arr[1]` (which is 7 + 3 = 10). check with targetSum is 10, so answer equal to targetSum. bingo. printed out answer = [3, 7]. printed out arr[i] first then arr[j]. (second answer)
 next, j++. j become 2. this time, we add up `arr[2] + ", " + arr[2]` (which is 7 + 7 = 14). check with targetSum is 10, so ignore.
+and so on.
+
+
 
 i = 2
 j = 0
 
-|   | 2  | 3  | 7  | 9  |
-|---|---|---|---|---|
-| 2  | 4  | 5  | 9  | 11  |
-| 3  | 5  | 6  | 10  | 12  |
-| 7  | 9  | 10  | 14  | 16  |
+              j
+  |   | 2  | 3  | 7  | 9  |
+  |---|---|---|---|---|
+i  | 2  | 4  | 5  | 9  | 11  |
+  | 3  | 5  | 6  | 10  | 12  |
+  | 7  | 9  | 10  | 14  | 16  |
+
+summary, this using two for loop.
+
+> issues/ how to make this algorithm more efficient ??
+
+1. have redundant calculation.
 
 ### Part 3 - Avoiding Duplicate Results
 
@@ -644,6 +654,13 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 ```
+
+|   | 2  | 3  | 7  | 9  |
+|---|---|---|---|---|
+| 2  | 4  | 5  | 9  | 11  |
+| 3  | 5  | 6  | 10  | 12  |
+| 7  | 9  | 10  | 14  | 16  |
+| 9  | 11  | 12  | 16  | 18  |
 
 ### Techniques that we used
 
