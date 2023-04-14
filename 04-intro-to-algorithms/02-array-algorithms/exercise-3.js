@@ -9,7 +9,18 @@ const assert = require("assert");
 
 const findPairs = (arr, targetSum) => {
   // Add your code here
-  
+  const result = [];
+
+  for(let i = 0; i < arr.length; i++) {
+    // We can only calculate half of the iteration, to avoid duplicate results
+    for(let j = i + 1; j < arr.length; j++) {
+      if(arr[i] + arr[j] === targetSum) {
+        result.push([arr[i], arr[j]]);
+      }
+    }
+  }
+
+  return result;
 };
 
 // DO NOT MODIFY CODE BELOW
