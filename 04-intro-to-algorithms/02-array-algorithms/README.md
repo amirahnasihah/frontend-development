@@ -362,7 +362,11 @@ As a start we have, i = 0. at very beginning we compare the first element (which
 tempResultArray = [2, 3, 3]
 
 
+
 ////////////////////
+
+
+
 Input Array (already sort): [2, 3, 3, 3, 7, 9]
 i = 0, 1, 2, 3, 4, 5
 
@@ -408,13 +412,18 @@ console.log(tempResultArray) // Expected output: [2, 3]
 Input Array: [2, 2, 3, 3, 3, 7, 9]
 
 As a start we have, i = 0. at very beginning we compare the first element (which is 2) with the second element (which is 2). 2 and 2 is duplicate, so push to tempResultArray of second element (which is 2). but before that, the element go to `indexOf(sortedArr[i]) === -1)`. sortedArr[i] is actually equal to 3. so, we check whether in tempResultArray already got 3. `-1` means not exist. if not exist, push to tempResultArray.
+
 then, i++. now, i = 1. compare second element with third element (which is 3). 2 and 3 not duplicate, so do nothing.
+
 again, i++. now, start at i = 2 (third element of index 2, which is 3). compare third element with fourth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3.
+
 again, i++. now, index start at i = 3. compare fourth element with fifth element (which is 3). 3 and 3 is duplicate, so push to tempResultArray which is 3.
+
 again, i++. now, index start with i = 4. compare fifth element with sixth element (which is 7). 3 and 7 not duplicate, so do nothing.
+
 7 and 9 not compare with the last element (which is 9), `i < sortedArr.length - 1;`
 
-tempResultArray = [2, 3]
+`tempResultArray = [2, 3]`
 
 1. `let tempResultArray = []`: Initializes an empty array called `tempResultArray`, which will be used to store any duplicate numbers found in the loop below.
 
@@ -552,8 +561,6 @@ for (let i = 0; i < arr.length; i++) {
 
 outer loop `for (let i = 0; i < arr.length; i++) {`, we try to loop the left-end column. for each of the number we want to calculate, we use the second for loop to calculate 2 + 2 = 4, 2+3, 2+7, 2+9. and the first row (which is 2) is done. next row (which is 3), it will go the same for loop iteration, 3+2, 3+3, 3+7, 3+9. next row (which is 7). next row (which is 9). so, thru out the process everytime when we do this sum up we also check whether it is equal to the targetSum. targetSum is 10. basically, can find 2 answers. which is 3+7 or 7+3. then, we printed out the answer.
 
-dry run:
-
 Input Array: [2, 3, 7, 9] 
 
 ```javascript
@@ -607,16 +614,22 @@ j = 0, 1, 2, 3, 4
 | 3  | 5  | 6  | 10  | 12  |
 
 then back to the first (outer) for loop.
-now, i equal to 2. j start from 0 again. then we are going to start the second for loop again. with it start j = 0. this time, we add up `arr[1] + ", " + arr[0]` (which is 3 + 2 = 5).
-
+now, i equal to 2. j start from 0 again. then we are going to start the second for loop once again. this time, we add up `arr[2] + ", " + arr[0]` (which is 7 + 2 = 9).
+next, j++. j become 1. this time, we add up `arr[2] + ", " + arr[1]` (which is 7 + 3 = 10). check with targetSum is 10, so answer equal to targetSum. bingo. printed out answer = [3, 7]. printed out arr[i] first then arr[j]. (second answer)
+next, j++. j become 2. this time, we add up `arr[2] + ", " + arr[2]` (which is 7 + 7 = 14). check with targetSum is 10, so ignore.
 
 i = 2
-j = 
+j = 0
+
+|   | 2  | 3  | 7  | 9  |
+|---|---|---|---|---|
+| 2  | 4  | 5  | 9  | 11  |
+| 3  | 5  | 6  | 10  | 12  |
+| 7  | 9  | 10  | 14  | 16  |
 
 ### Part 3 - Avoiding Duplicate Results
 
-You might noticed that, the results are duplicated (i.e. both 3,7 and 
-7,3 are printed out). We need to update the
+You might noticed that, the results are duplicated (i.e. both 3,7 and 7,3 are printed out). We need to update the
 
 ```javascript
 let arr = [2, 3, 7, 9]
