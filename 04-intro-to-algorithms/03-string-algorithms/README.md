@@ -190,6 +190,24 @@ for (let i = 0; i<originalString.length; i++) {
 }
 ```
 
+**EXPLAINATION**
+
+1. `originalString = "Hello"`: This line declares a variable called `originalString` and assigns it the value "Hello". This will be the string we're searching for the target string within.
+
+2. `targetString = "lo"`: This line declares a variable called `targetString` and assigns it the value "lo". This is the string we're looking for within the larger originalString.
+
+3. `for (let i = 0; i<originalString.length; i++) {`: This line starts a loop that will iterate over every character in the originalString. It declares a variable called i that starts at 0, and will continue looping as long as i is less than the length of the originalString.
+
+4. `for (let j = 0; j < targetString.length; j++) {`: This line starts a second loop that will iterate over every character in the targetString. It declares a variable called j that starts at 0, and will continue looping as long as j is less than the length of the targetString.
+
+5. `if (originalString[i + j] !== targetString[j]) {`: This line checks whether the character at position i+j in the originalString is not equal to the character at position j in the targetString. If this is true, it means we haven't found a match, so we break out of the inner loop and move on to the next character in the originalString.
+
+6. `else if (j ===targetString.length -1) {`: This line checks whether we've reached the end of the targetString (i.e., whether j is equal to the length of the targetString minus 1). If this is true, it means we've found a match, so we log a message to the console indicating the position where the match was found.
+
+7. `console.log("Found at position " + i)`: This line logs a message to the console indicating that we've found a match at position i in the `originalString`.
+
+In summary, this code loops through every character in the `originalString`, and for each character, it loops through every character in the `targetString` to see if there's a match. If it finds a match, it logs the position of the match to the console.
+
 ### Techniques that we used
 
 1. Nested Loops
