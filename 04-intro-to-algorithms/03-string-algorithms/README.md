@@ -132,3 +132,33 @@ for (let i = 0; i < 5; i++) {
 ```
 
 Console Output
+
+```console
+It's now 0
+It's now 1
+It's now 2
+It's now 4
+```
+
+> return vs break vs continue ??
+
+### Part 2 - Creating the Inner Loop
+
+In this step, we need to create an inner loop that would help us in checking if the next few letters (including the current letter) matched with the inner loop.
+
+```javascript
+originalString = "Hello"
+targetString = "lo"
+
+for (let i = 0; i<originalString.length; i++){
+  // Leave for Step 2
+  for (let j = 0; j < targetString.length; j++){
+    if (originalString[i + j] !== targetString[j]){
+    break;
+ }
+ else if (originalString[i + j] === targetString[j] && j ===targetString.length -1){
+ console.log("Found at position " + i)
+ }
+ }
+}
+```
