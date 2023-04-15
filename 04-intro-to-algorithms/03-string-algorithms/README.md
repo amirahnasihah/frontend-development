@@ -89,8 +89,46 @@ Very simple, just creating a simple for loop to loop through whole string.
 ```javascript
 originalString = "Hello"
 
-for (let i = 0; i<originalString.length; i++){
+for (let i = 0; i < originalString.length; i++) {
  // Leave for Step 2
  
 }
 ```
+
+### Break
+
+Ending the loop immediately
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    // Jump to here whe the break line is hit
+    break;
+  }
+  console.log("It's now " + i)
+}
+```
+
+Console Output
+
+```console
+It's now 0
+It's now 1
+It's now 2
+```
+
+### Continue
+
+Ending the current iteration, but not ending the loop
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    // Jump to here when continue is hit
+    continue;
+  }
+  console.log("It's now " + i)
+}
+```
+
+Console Output
