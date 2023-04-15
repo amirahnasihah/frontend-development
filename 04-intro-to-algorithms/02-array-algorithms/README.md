@@ -40,7 +40,7 @@ Open `exercise-2.js` file and please finish the `findDuplicateNumbers` function 
 
 Open `exercise-3.js` file and please finish the `findPairs` function according to the specification in the file. We have prepared some test cases for you to test your functions.
 
-# Array Algorithms (Notes)
+# Lecture 2: Array Algorithms
 
 **Arrays**
 
