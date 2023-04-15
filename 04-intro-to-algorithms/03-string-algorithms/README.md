@@ -213,3 +213,149 @@ In summary, this code loops through every character in the `originalString`, and
 1. Nested Loops
 
 ## Strings Question 2 - Reverse Word Order
+
+### Reverse Word Order
+
+How can you reverse the word order in a string? (Implement the array.reverse() function for string)
+
+Example 1:
+Input String: Talentlabs, Output: sbaltnelaT
+
+Example 2:
+Input Array: Hello, Output: olleH
+
+### What is your solution?
+
+Hint: Use a loop with temp variable
+
+```markdown
+<!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
+
+
+```
+
+### Example Algorithm
+
+1. Use a for loop to loop thru the inputString from the end of the array
+2. For each letter, append it to a temp string
+3. Return temp string as result
+
+### Part 1 - Loop Thru the Array
+
+First, we need to loop through the array
+
+``` javascript
+const inputString = "Talentlabs"
+let result = ""
+
+for (let i = inputString.length-1; i >= 0; i--){
+ result += inputString[i]
+}
+
+console.log(result)
+```
+
+`i--` —> count down instead of count up
+
+`inputString.length-1` —> Start from the end of the array
+
+**EXPLAINATION**
+
+```javascript
+const inputString = "Talentlabs"
+let result = ""
+
+for (let i = inputString.length-1; i >= 0; i--) {
+ result += inputString[i]
+}
+console.log(result)
+
+// Output: sbaltnelaT
+```
+
+i: 9 8 7 6 5 4 3 2 1 0 -1
+result: sbaltnelaT
+
+### Techniques that we used
+
+1. Loop
+2. Temp Variable
+
+## Strings Question 3 - Anagram
+
+### Anagram
+
+How to check if two strings are anagram to each other?
+
+Definition of anagram: words with same letters, but different word.
+(e.g. Paris/Pairs are anagram, arc/car are anagram)
+
+1. Example 1 (Found case):
+Input String 1: Paris, Input String 2: Pairs 
+Result: true
+
+2. Example 2 (Not found case):
+Input String 1: Hello, Input String 2: Bye
+Result: false
+
+### What is your solution?
+
+Hint: Use sorting
+
+### Example Algorithm
+
+1. Convert the two strings into array by using “split()” function
+2. Sort the two arrays using the “sort()” function
+3. Convert the two arrays back to strings
+4. Compare the two strings and see they the two strings equals to each other
+
+### Revision - split()
+
+### Revision - sort()
+
+### Revision - join()
+
+### Part 1 - Convert string to array 
+
+Convert the string to array so we can use the sort function later.
+
+``` javascript
+const inputString1 = "Paris"
+const inputString2 = "Pairs"
+
+stringInArray1 = inputString1.split("")
+stringInArray2 = inputString2.split("")
+```
+
+### Part 2 - Sort the two arrays 
+
+Sort the arrays so we can compare the two arrays compositions.
+
+```javascript
+const inputString1 = "Paris"
+const inputString2 = "Pairs"
+
+stringInArray1 = inputString1.split("")
+stringInArray2 = inputString2.split("")
+
+const sortedArrar1 = stringInArray1.sort()
+const sortedArrar2 = stringInArray2.sort()
+```
+
+### Part 3 - Compare the sorted array 
+
+Join the sorted array back to a string, and compare if the two strings are the same.
+
+```javascript
+const inputString1 = "Paris"
+const inputString2 = "Pairs"
+stringInArray1 = inputString1.split("")
+stringInArray2 = inputString2.split("")
+const sortedArray1 = stringInArray1.sort()
+const sortedArrar2 = stringInArray2.sort()
+if (sortedArray1.join("") === sortedArray2.join("")){
+ console.log("Anagram")
+}else {
+ console.log("Not Anagram")
+}
+```
