@@ -17,3 +17,14 @@ Open `exercise-2.js` file and please finish the `reverse` function according to 
 ## 1.3 In this part, you are going to try coding the “Find Substring” algorithm question we discussed in class
 
 Open `exercise-3.js` file and please finish the `checkAnagram` function according to the specification in the file. We have prepared some test cases for you to test your functions.
+
+# Lecture 3: String Algorithms (String as Arrays)
+
+## Agenda
+
+- Treating Strings as Arrays
+- Strings Question 1 - Finding Substring
+- Strings Question 2- Reverse Word Order
+- Strings Question 3 - Anagram
+
+##
