@@ -150,15 +150,17 @@ In this step, we need to create an inner loop that would help us in checking if 
 originalString = "Hello"
 targetString = "lo"
 
-for (let i = 0; i<originalString.length; i++){
+for (let i = 0; i<originalString.length; i++) {
   // Leave for Step 2
-  for (let j = 0; j < targetString.length; j++){
-    if (originalString[i + j] !== targetString[j]){
-    break;
- }
- else if (originalString[i + j] === targetString[j] && j ===targetString.length -1){
- console.log("Found at position " + i)
- }
+  for (let j = 0; j < targetString.length; j++) {
+    // Case 1: Not Match, and end this iteration
+    if (originalString[i + j] !== targetString[j]) {
+      break;
+  }
+  // Case 2: Match and it’s the last character
+  else if (originalString[i + j] === targetString[j] && j ===targetString.length -1) {
+    console.log("Found at position " + i)
+  }
  }
 }
 ```
