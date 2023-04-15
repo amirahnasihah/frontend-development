@@ -349,13 +349,81 @@ Join the sorted array back to a string, and compare if the two strings are the s
 ```javascript
 const inputString1 = "Paris"
 const inputString2 = "Pairs"
+
 stringInArray1 = inputString1.split("")
 stringInArray2 = inputString2.split("")
+
 const sortedArray1 = stringInArray1.sort()
 const sortedArrar2 = stringInArray2.sort()
-if (sortedArray1.join("") === sortedArray2.join("")){
+
+if (sortedArray1.join("") === sortedArray2.join("")) {
  console.log("Anagram")
-}else {
+} else {
  console.log("Not Anagram")
 }
 ```
+
+**EXPLAINATION**
+
+```javascript
+const inputString1 = "Paris"
+
+const inputString2 = "Pairs"
+
+stringInArray1 = inputString1.split("")
+stringInArray2 = inputString2.split("")
+
+const sortedArray1 = stringInArray1.sort()
+const sortedArrar2 = stringInArray2.sort()
+
+if (sortedArray1.join("") === sortedArray2.join("")) {
+ console.log("Anagram")
+} else {
+ console.log("Not Anagram")
+}
+```
+
+Input: abb, ba
+
+Step 1, after split:
+[a, b, b]
+[b, a]
+
+Step 2, Sorting:
+a, b, b
+a, b
+
+Step 3 Join back:
+abb
+ab
+
+### Anagram 2.0
+
+How to ignore cases when checking for anagram?
+
+1. Example 1 (Found case):
+Input String 1: Paris, Input String 2: pairs 
+Results: true
+
+2. Example 2 (Not found case):
+Input String 1: Paris, Input String 2: paris
+Results: false (because they are the same word)
+
+### What is missing for our solution 1?
+
+1. ignore cases
+2. check if the two words are actually the same word
+
+Solution:
+
+Convert the string to lowercase letters:
+
+```javascript
+let str = "Hello World!";
+
+str.toLowerCase();
+```
+
+### Techniques that we used
+
+1. Sorting
