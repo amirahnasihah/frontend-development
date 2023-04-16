@@ -231,7 +231,7 @@ console.log(getRectArea(-3, 4));
 `return` statement is used to return a value from a function and exit the function. When `return` is encountered inside a function, the program exits the function immediately and returns the specified value.
 In summary, `break` is used to break out of a loop or `switch` statement, while `return` is used to return a value from a function and exit the function.
 
-### Part 2 - Creating the Inner Loop
+### Part 2 - Creating the Inner Loop (importat part)
 
 In this step, we need to create an inner loop that would help us in checking if the next few letters (including the current letter) matched with the inner loop.
 
