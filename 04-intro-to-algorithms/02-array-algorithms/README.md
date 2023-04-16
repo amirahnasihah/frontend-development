@@ -107,7 +107,7 @@ let max = arr[0];
 let min = arr[0];
 
 // Then, We use a for-loop to loop though the whole array to find the real max and min number by comparison
-for(let i = 1 ;i<arr.length;i++){
+for(let i = 1; i < arr.length; i++){
     if(arr[i] > max){
     max = arr[i];
     }
