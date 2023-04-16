@@ -305,7 +305,7 @@ In summary, this code loops through every character in the `originalString`, and
 
 ### Reverse Word Order
 
-How can you reverse the word order in a string? (Implement the array.reverse() function for string)
+How can you reverse the word order in a string? (Implement the `array.reverse()` function for string)
 
 Example 1:
 Input String: Talentlabs, Output: sbaltnelaT
@@ -349,6 +349,28 @@ console.log(result)
 `inputString.length-1` —> Start from the end of the array
 
 **EXPLAINATION**
+
+1. `const inputString = "Talentlabs"`: This line creates a constant variable called `inputString` and sets its value to the string `"Talentlabs"`.
+
+2. `let result = ""`: This line creates a variable called `result` and sets its initial value to an empty string.
+
+3. `for (let i = inputString.length-1; i >= 0; i--)`: This line sets up a for loop that will iterate over each character in `inputString`, starting with the last character and moving backwards towards the first character. `let i = inputString.length-1` initializes the loop variable `i` to the last index of the string, `-1` is used because the index starts from `0` in programming. The loop will continue as long as `i` is greater than or equal to `0` `(i >= 0)`. `i--` decrements the loop variable by 1 in each iteration.
+
+4. `result += inputString[i]`: This line adds the current character to the end of the result string. `inputString[i]` retrieves the character at index `i` from `inputString`.
+
+5. `console.log(result)`: This line outputs the final result string to the console.
+
+Overall, the code takes a given string and reverses the order of its characters. It does this by iterating over the string in reverse order, and concatenating each character to a new string variable `result`. Finally, it outputs the reversed string to the console.
+
+> explain further `result += inputString[i]` is shorthand for `result = result + inputString[i]`.
+
+It's a compound assignment operator that concatenates the current character (`inputString[i]`) to the end of the result string.
+
+In each iteration of the `for` loop, `inputString[i]` retrieves the character at the current index (`i`) from `inputString`. For example, on the first iteration when `i = inputString.length-1`, inputString[i] retrieves the last character of the string. On the second iteration, inputString[i] retrieves the second-to-last character of the string, and so on.
+
+By using `+=`, we append each character to the end of the result string. The result string starts as an empty string, so each character from `inputString` is simply added to the end of it in reverse order.
+
+At the end of the for loop, the result string contains all the characters from inputString in reverse order.
 
 ```javascript
 const inputString = "Talentlabs"
