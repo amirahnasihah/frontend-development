@@ -12,8 +12,20 @@ const assert = require('assert');
 // It should return -1
 
 const findSubstring = (inputString, targetString) => {
-    // Add your code here
-    
+  // Add your code here
+  for(let i = 0; i < inputString.length; i++) {
+    // Leave for Step 2
+    for(let j = 0; j < targetString.length; j++) {
+      // Case 1: Not Match, and end this iteration
+      if(inputString[i + j] !== targetString[j]) {
+        break;
+      }
+      // Case 2: Match and it’s the last character
+      else if(inputString[i + j] === targetString[j] && j === targetString.length - 1) {
+        console.log("Found at position " + i)
+      }
+    }
+  }
 }
 
 // DO NOT MODIFY CODE BELOW
