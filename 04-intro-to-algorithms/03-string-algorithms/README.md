@@ -113,19 +113,23 @@ for (let i = 0; i < originalString.length; i++) {
 
 ### Break
 
-Ending the loop immediately
+Ending the whole loop immediately
 
 ```javascript
 for (let i = 0; i < 5; i++) {
   if (i === 3) {
     // Jump to here whe the break line is hit
-    break;
+    break; // exit the loop when i is equal to 3
   }
   console.log("It's now " + i)
 }
 ```
 
-Console Output
+**EXPLAINATION**
+
+The above code will print the numbers from 0 to 2, and then exit the loop when i is equal to 3.
+
+Console Output:
 
 although originally, we're going to do 0, 1, 2, 3. but, we drop off at 3. so, the console output only have 0, 1, and 2.
 same as with the `while` loop.
@@ -177,6 +181,8 @@ It's now 2
 It's now 4
 ```
 
+if the line `continue` is hit, then end the current loop and immediately go to `i++`. the for loop will still continue. i === 3 are skipped from the output.
+
 **JS FACT**
 
 > `continue` statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
@@ -192,7 +198,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log(text);
-// Expected output: "012456789"
+// Expected output: "012456789" (3 is drop off)
 ```
 
 Description:
@@ -222,6 +228,9 @@ console.log(getRectArea(-3, 4));
 
 > return vs break vs continue ??
 
+`return` statement is used to return a value from a function and exit the function. When `return` is encountered inside a function, the program exits the function immediately and returns the specified value.
+In summary, `break` is used to break out of a loop or `switch` statement, while `return` is used to return a value from a function and exit the function.
+
 ### Part 2 - Creating the Inner Loop
 
 In this step, we need to create an inner loop that would help us in checking if the next few letters (including the current letter) matched with the inner loop.
@@ -230,7 +239,7 @@ In this step, we need to create an inner loop that would help us in checking if 
 originalString = "Hello"
 targetString = "lo"
 
-for (let i = 0; i<originalString.length; i++) {
+for (let i = 0; i < originalString.length; i++) {
   // Leave for Step 2
   for (let j = 0; j < targetString.length; j++) {
     // Case 1: Not Match, and end this iteration
@@ -255,7 +264,7 @@ Double check the logic and see if there are anything your missed or can be remov
 originalString = "Hello"
 targetString = "lo"
 
-for (let i = 0; i<originalString.length; i++) {
+for (let i = 0; i < originalString.length; i++) {
   // Leave for Step 2
   for (let j = 0; j < targetString.length; j++) {
     // Case 1: Not Match, and end this iteration
@@ -263,7 +272,7 @@ for (let i = 0; i<originalString.length; i++) {
       break;
   }
   // Case 2: Match and it’s the last character
-  else if (j ===targetString.length -1) {
+  else if (j === targetString.length -1) {
     console.log("Found at position " + i)
   }
  }
