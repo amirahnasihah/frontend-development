@@ -63,6 +63,24 @@ Results: 3
 Input Array: "Good Evening”, Target: "app"
 Results: -1
 
+**JS Fact:**
+
+> `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present. (indexOf() is basically a searching function. -1 means not exist in the array)
+
+```javascript
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// Expected output: 1
+
+// Start from index 2
+console.log(beasts.indexOf('bison', 2));
+// Expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// Expected output: -1
+```
+
 ### What is your solution?
 
 Hint: Using 2 loops, nested loops
@@ -75,12 +93,10 @@ Hint: Using 2 loops, nested loops
 
 ### Example Algorithm
 
-1. Use a for loop to loop through the input array
-2. For each letter, use a second loop to loop thru the next couple letter. 
-Check each letter against the target string. Go on and on until the whole 
-“target string” is matched, or one of the letter it not matching
+1. Use a for loop to loop through the input array.
+2. For each letter, use a second loop to loop thru the next couple letter. Check each letter against the target string. Go on and on until the whole “target string” is matched, or one of the letter it not matching.
 3. If the whole “target string” is matched, return true.
-4. If the outer loop finished, but still no fully matched substring, return false
+4. If the outer loop finished, but still no fully matched substring, return false.
 
 ### Part 1 - Creating Outer Loop
 
@@ -138,6 +154,65 @@ It's now 0
 It's now 1
 It's now 2
 It's now 4
+```
+
+**JS FACT**
+
+> `break` statement terminates the current loop or `switch` statement and transfers program control to the statement following the terminated statement. It can also be used to jump past a labeled statement when used within that labeled statement.
+
+```javascript
+let i = 0;
+
+while (i < 6) {
+  if (i === 3) {
+    break;
+  }
+  i = i + 1;
+}
+
+console.log(i);
+// Expected output: 3
+```
+
+> `continue` statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
+
+```javascript
+let text = '';
+
+for (let i = 0; i < 10; i++) {
+  if (i === 3) {
+    continue;
+  }
+  text = text + i;
+}
+
+console.log(text);
+// Expected output: "012456789"
+```
+
+Description:
+
+In contrast to the `break` statement, continue does not terminate the execution of the loop entirely, but instead:
+
+1. In a `while` or `do...while` loop, it jumps back to the condition.
+2. In a `for` loop, it jumps to the update expression.
+3. In a `for...in`, `for...of`, or `for await...of` loop, it jumps to the next iteration.
+
+> `return` statement ends function execution and specifies a value to be returned to the function caller.
+
+```javascript
+function getRectArea(width, height) {
+  if (width > 0 && height > 0) {
+    return width * height;
+  }
+  return 0;
+}
+
+console.log(getRectArea(3, 4));
+// Expected output: 12
+
+console.log(getRectArea(-3, 4));
+// Expected output: 0
 ```
 
 > return vs break vs continue ??
