@@ -21,7 +21,7 @@ const findSubstring = (inputString, targetString) => {
         break;
       }
       // Case 2: Match and it’s the last character
-      else if(inputString[i + j] === targetString[j] && j === targetString.length - 1) {
+      else if(j === targetString.length - 1) {
         console.log("Found at position " + i)
       }
     }
