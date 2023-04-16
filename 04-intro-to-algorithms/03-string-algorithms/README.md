@@ -486,6 +486,8 @@ Step 3 Join back:
 abb
 ab
 
+## Strings Question 3 - Anagram
+
 ### Anagram 2.0
 
 How to ignore cases when checking for anagram?
