@@ -127,10 +127,31 @@ for (let i = 0; i < 5; i++) {
 
 Console Output
 
+although originally, we're going to do 0, 1, 2, 3. but, we drop off at 3. so, the console output only have 0, 1, and 2.
+same as with the `while` loop.
+
 ```console
 It's now 0
 It's now 1
 It's now 2
+```
+
+**JS FACT**
+
+> `break` statement terminates the current loop or `switch` statement and transfers program control to the statement following the terminated statement. It can also be used to jump past a labeled statement when used within that labeled statement.
+
+```javascript
+let i = 0;
+
+while (i < 6) {
+  if (i === 3) {
+    break;
+  }
+  i = i + 1;
+}
+
+console.log(i);
+// Expected output: 3
 ```
 
 ### Continue
@@ -157,22 +178,6 @@ It's now 4
 ```
 
 **JS FACT**
-
-> `break` statement terminates the current loop or `switch` statement and transfers program control to the statement following the terminated statement. It can also be used to jump past a labeled statement when used within that labeled statement.
-
-```javascript
-let i = 0;
-
-while (i < 6) {
-  if (i === 3) {
-    break;
-  }
-  i = i + 1;
-}
-
-console.log(i);
-// Expected output: 3
-```
 
 > `continue` statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
 
