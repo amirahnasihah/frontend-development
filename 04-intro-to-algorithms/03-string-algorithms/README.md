@@ -409,9 +409,19 @@ Result: true
 Input String 1: Hello, Input String 2: Bye
 Result: false
 
+> What is Anagram ??
+
+An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. For example, the word anagram itself can be rearranged into nag a ram, as well as the word binary into brainy and the word adobe into abode.
+
 ### What is your solution?
 
 Hint: Use sorting
+
+```markdown
+<!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
+
+
+```
 
 ### Example Algorithm
 
@@ -422,11 +432,70 @@ Hint: Use sorting
 
 ### Revision - split()
 
+**JS FACT**
+
+> `split()` method takes a pattern and divides a String into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array.
+
+```javascript
+const str = 'The quick brown fox jumps over the lazy dog.';
+
+const words = str.split(' ');
+console.log(words[4]);
+// Expected output: "fox"
+
+const chars = str.split('');
+console.log(chars[8]);
+// Expected output: "k"
+
+const letter = str.split('');
+console.log(letter);
+// Expected output: Array ["T", "h", "e", " ", "q", "u", "i", "c", "k", " ", "b", "r", "o", "w", "n", " ", "f", "o", "x", " ", "j", "u", "m", "p", "s", " ", "o", "v", "e", "r", " ", "t", "h", "e", " ", "l", "a", "z", "y", " ", "d", "o", "g", "."]
+
+const strCopy = str.split();
+console.log(strCopy);
+// Expected output: Array ["The quick brown fox jumps over the lazy dog."]
+```
+
 ### Revision - sort()
+
+**JS FACT**
+
+> `sort()` method sorts an array alphabetically.
+
+```javascript
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// Expected output: Array [1, 100000, 21, 30, 4]
+```
+
+> `reverse()` method reverses the elements in an array. You can use it to sort an array in descending order.
 
 ### Revision - join()
 
-### Part 1 - Convert string to array 
+**JS FACT**
+
+> `join()` method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+
+```javascript
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// Expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// Expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// Expected output: "Fire-Air-Water"
+```
+
+### Part 1 - Convert string to array
 
 Convert the string to array so we can use the sort function later.
 
@@ -436,9 +505,12 @@ const inputString2 = "Pairs"
 
 stringInArray1 = inputString1.split("")
 stringInArray2 = inputString2.split("")
+
+console.log(stringInArray1); // Expected output: Array ["P", "a", "r", "i", "s"]
+console.log(stringInArray2); // Expected output: Array ["P", "a", "i", "r", "s"]
 ```
 
-### Part 2 - Sort the two arrays 
+### Part 2 - Sort the two arrays
 
 Sort the arrays so we can compare the two arrays compositions.
 
@@ -449,9 +521,15 @@ const inputString2 = "Pairs"
 stringInArray1 = inputString1.split("")
 stringInArray2 = inputString2.split("")
 
-const sortedArrar1 = stringInArray1.sort()
-const sortedArrar2 = stringInArray2.sort()
+const sortedArray1 = stringInArray1.sort()
+const sortedArray2 = stringInArray2.sort()
 ```
+
+console.log(stringInArray1); // Expected output: Array ["P", "a", "r", "i", "s"]
+console.log(stringInArray2); // Expected output: Array ["P", "a", "i", "r", "s"]
+
+console.log(sortedArray1); // Expected output: Array ["P", "a", "i", "r", "s"]
+console.log(sortedArray2); // Expected output: Array ["P", "a", "i", "r", "s"]
 
 ### Part 3 - Compare the sorted array 
 
@@ -465,7 +543,7 @@ stringInArray1 = inputString1.split("")
 stringInArray2 = inputString2.split("")
 
 const sortedArray1 = stringInArray1.sort()
-const sortedArrar2 = stringInArray2.sort()
+const sortedArray2 = stringInArray2.sort()
 
 if (sortedArray1.join("") === sortedArray2.join("")) {
  console.log("Anagram")
@@ -493,6 +571,8 @@ if (sortedArray1.join("") === sortedArray2.join("")) {
  console.log("Not Anagram")
 }
 ```
+
+**Guide**
 
 Input: abb, ba
 
@@ -538,3 +618,29 @@ str.toLowerCase();
 ### Techniques that we used
 
 1. Sorting
+
+Full
+
+```javascript
+const inputString1 = "Paris"
+const inputString2 = "Pairs"
+
+stringInArray1 = inputString1.split("")
+stringInArray2 = inputString2.split("")
+console.log(stringInArray1); // Expected output: Array ["P", "a", "r", "i", "s"]
+console.log(stringInArray2); // Expected output: Array ["P", "a", "i", "r", "s"]
+
+const sortedArray1 = stringInArray1.sort()
+const sortedArray2 = stringInArray2.sort()
+console.log(sortedArray1); // Expected output: Array ["P", "a", "i", "r", "s"]
+console.log(sortedArray2); // Expected output: Array ["P", "a", "i", "r", "s"]
+
+if (sortedArray1.join("") === sortedArray2.join("")) {
+ console.log("Anagram")
+} else {
+ console.log("Not Anagram")
+}
+// Expected output: "Anagram"
+
+
+```
