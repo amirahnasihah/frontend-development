@@ -175,9 +175,9 @@ mula2, js check i = 1 sbb mmg dri awal i equal to 1. then, i equal to 2 sbb i++.
 
 In summary, this code is finding all the missing numbers between `min` and `max` in the `arr` array. It does this by iterating through each number between `min` and `max` (inclusive) and checking if each number exists in the `arr` array. If a number is not found in `arr`, it is added to the `tempResultArray`. Finally, the contents of `tempResultArray` are printed to the console.
 
-> `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present. (indexOf() is basically a searching function. -1 means not exist in the array)
-
 **JS Fact:**
+
+> `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present. (indexOf() is basically a searching function. -1 means not exist in the array)
 
 ```javascript
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
@@ -311,9 +311,9 @@ sortedArr = arr.sort()
 // Expected output: [2, 2, 3, 3, 7, 9]
 ```
 
-> sort()method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. To sort the elements in an array without mutating the original array, use toSorted().
-
 **JS Fact:**
+
+> `sort()` method sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. To sort the elements in an array without mutating the original array, use `toSorted()`.
 
 ```javascript
 const months = ['March', 'Jan', 'Feb', 'Dec'];
