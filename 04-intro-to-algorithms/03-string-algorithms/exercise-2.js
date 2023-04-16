@@ -5,7 +5,11 @@ const assert = require('assert');
 
 const reverse = (inputString) => {
   // Add your code here
-
+  let result = "";
+  for(let i = inputString.length - 1; i >= 0; i--) {
+    result += inputString[i];
+  }
+  return result;
 }
 
 // DO NOT MODIFY CODE BELOW
