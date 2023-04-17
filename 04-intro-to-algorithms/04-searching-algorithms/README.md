@@ -1,3 +1,22 @@
+- [Coding the searching algorithm questions](#coding-the-searching-algorithm-questions)
+  - [1.1 In this part, you are going to try coding the “Reverse String” algorithm question we discussed in class.](#11-in-this-part-you-are-going-to-try-coding-the-reverse-string-algorithm-question-we-discussed-in-class)
+  - [1.2 In this part, you are going to try coding the “Find Substring” algorithm question we discussed in class](#12-in-this-part-you-are-going-to-try-coding-the-find-substring-algorithm-question-we-discussed-in-class)
+- [Lecture 4: Searching Algorithms\\](#lecture-4-searching-algorithms)
+  - [Common Algorithms](#common-algorithms)
+    - [Common Algorithms](#common-algorithms-1)
+    - [Searching Algorithm](#searching-algorithm)
+    - [Sorting Algorithms](#sorting-algorithms)
+  - [Searching Algorithm 1 - Linear Search](#searching-algorithm-1---linear-search)
+    - [Linear Search](#linear-search)
+    - [Linear Search Algorithm](#linear-search-algorithm)
+    - [Converting into Code](#converting-into-code)
+  - [Searching Algorithm 2 - Binary Search](#searching-algorithm-2---binary-search)
+    - [Is there a faster way of searching?](#is-there-a-faster-way-of-searching)
+    - [Consider this scenario](#consider-this-scenario)
+    - [Consider this scenario](#consider-this-scenario-1)
+    - [Binary Search](#binary-search)
+    - [Converting into Code](#converting-into-code-1)
+
 # Coding the searching algorithm questions
 
 General Notes:
@@ -14,7 +33,14 @@ Open `linear-search.js` file and please finish the `linearSearch` function accor
 
 Open `binary-search.js` file and please finish the `binarySearch` function according to the specification in the file. We have prepared some test cases for you to test your functions.
 
-# Lecture 4: Searching Algorithms
+# Lecture 4: Searching Algorithms\
+
+Agenda:
+
+- Common Algorithms
+- Searching
+- Linear Search
+- Binary Search
 
 ## Common Algorithms
 
