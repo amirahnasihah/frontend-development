@@ -9,9 +9,19 @@ const assert = require('assert');
 // E.g. Input String 1: "Hello", Input String 2: "Bye" => false
 
 
-const checkAnagram = (inputString1, inputString2) => {    
+const checkAnagram = (inputString1, inputString2) => {
   // Add your code here
-  
+  stringInArray1 = inputString1.split("")
+  stringInArray2 = inputString2.split("")
+
+  const sortedArray1 = stringInArray1.sort()
+  const sortedArray2 = stringInArray2.sort()
+
+  if(sortedArray1.join("") === sortedArray2.join("")) {
+    return true
+  } else {
+    return false
+  }
 }
 
 // DO NOT MODIFY CODE BELOW
