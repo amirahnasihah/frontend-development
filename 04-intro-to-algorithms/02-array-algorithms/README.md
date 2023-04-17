@@ -2,7 +2,7 @@
   - [1.1 In this part, you are going to try coding the “Find Missing Numbers” algorithm question we discussed in class](#11-in-this-part-you-are-going-to-try-coding-the-find-missing-numbers-algorithm-question-we-discussed-in-class)
   - [1.2 In this part, you are going to try coding the “Find Duplicate Numbers” algorithm question we discussed in class](#12-in-this-part-you-are-going-to-try-coding-the-find-duplicate-numbers-algorithm-question-we-discussed-in-class)
   - [1.3 In this part, you are going to try coding the “Find Pairs” algorithm question we discussed in class](#13-in-this-part-you-are-going-to-try-coding-the-find-pairs-algorithm-question-we-discussed-in-class)
-- [Array Algorithms (Notes)](#array-algorithms-notes)
+- [Lecture 2: Array Algorithms](#lecture-2-array-algorithms)
   - [Question 1 - Finding Missing Number](#question-1---finding-missing-number)
     - [Finding Missing Number](#finding-missing-number)
     - [What is your solution?](#what-is-your-solution)
@@ -15,10 +15,17 @@
     - [What is your solution?](#what-is-your-solution-1)
     - [Example Algorithm](#example-algorithm-1)
     - [Part 1 - Sort the Array](#part-1---sort-the-array)
-    - [Part 2 - Check for Duplicating Numbers](#part-2---check-for-duplicating-numbers)
+    - [Part 2 - Check for Duplicating Numbers (important part)](#part-2---check-for-duplicating-numbers-important-part)
     - [Part 3 - Avoid Duplicating Results](#part-3---avoid-duplicating-results)
     - [Techniques that we used](#techniques-that-we-used-1)
   - [Question 3 - Finding Number Pairs](#question-3---finding-number-pairs)
+    - [Finding Missing Number](#finding-missing-number-2)
+    - [What is your solution?](#what-is-your-solution-2)
+    - [Example Algorithm](#example-algorithm-2)
+    - [Part 1 - Loop Thru the Array](#part-1---loop-thru-the-array)
+    - [Part 2 - Loop Thru in a Nested Loop (important part)](#part-2---loop-thru-in-a-nested-loop-important-part)
+    - [Part 3 - Avoiding Duplicate Results](#part-3---avoiding-duplicate-results)
+    - [Techniques that we used](#techniques-that-we-used-2)
 
 # Coding the Array Algorithms questions
 

@@ -1,3 +1,8 @@
+- [Brute Force and Recursion](#brute-force-and-recursion)
+  - [Part 1 Coding a brute force search algorithm](#part-1-coding-a-brute-force-search-algorithm)
+  - [Part 2 Coding a factorial function using recursion technique](#part-2-coding-a-factorial-function-using-recursion-technique)
+- [Lecture 1: Brute Force and Recursion](#lecture-1-brute-force-and-recursion)
+
 # Brute Force and Recursion
 
 ## Part 1 Coding a brute force search algorithm

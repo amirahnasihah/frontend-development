@@ -13,3 +13,5 @@ Open `linear-search.js` file and please finish the `linearSearch` function accor
 ## 1.2 In this part, you are going to try coding the “Find Substring” algorithm question we discussed in class
 
 Open `binary-search.js` file and please finish the `binarySearch` function according to the specification in the file. We have prepared some test cases for you to test your functions.
+
+# Lecture 4: Searching Algorithms
