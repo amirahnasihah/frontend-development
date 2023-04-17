@@ -11,17 +11,20 @@ const assert = require('assert');
 
 const checkAnagram = (inputString1, inputString2) => {
   // Add your code here
-  stringInArray1 = inputString1.split("")
-  stringInArray2 = inputString2.split("")
+	const lowerCaseString1 = inputString1.toLowerCase();
+  const lowerCaseString2 = inputString2.toLowerCase();
 
-  const sortedArray1 = stringInArray1.sort()
-  const sortedArray2 = stringInArray2.sort()
-
-  if(sortedArray1.join("") === sortedArray2.join("")) {
-    return true
-  } else {
-    return false
+  if (lowerCaseString1 === lowerCaseString2) {
+    return false;
   }
+
+  const stringInArray1 = lowerCaseString1.split("");
+  const stringInArray2 = lowerCaseString2.split("");
+
+  const sortedArray1 = stringInArray1.sort();
+  const sortedArray2 = stringInArray2.sort();
+
+  return sortedArray1.join("") === sortedArray2.join("");
 }
 
 // DO NOT MODIFY CODE BELOW
