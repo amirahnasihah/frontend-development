@@ -8,7 +8,6 @@ const assert = require('assert');
 // E.g. Input String 1: "Paris", Input String 2: "pairs" => true
 // E.g. Input String 1: "Hello", Input String 2: "Bye" => false
 
-
 const checkAnagram = (inputString1, inputString2) => {
   // Add your code here
 	const lowerCaseString1 = inputString1.toLowerCase();
