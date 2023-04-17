@@ -644,3 +644,25 @@ if (sortedArray1.join("") === sortedArray2.join("")) {
 
 
 ```
+
+exercise-3.js:
+
+```javascript
+const inputString1 = "Paris"
+const inputString2 = "Pairs"
+
+const lowerCaseString1 = inputString1.toLowerCase();
+const lowerCaseString2 = inputString2.toLowerCase();
+
+if (lowerCaseString1 === lowerCaseString2) {
+  return false;
+}
+
+const stringInArray1 = lowerCaseString1.split("");
+const stringInArray2 = lowerCaseString2.split("");
+
+const sortedArray1 = stringInArray1.sort();
+const sortedArray2 = stringInArray2.sort();
+
+return sortedArray1.join("") === sortedArray2.join("");
+```
