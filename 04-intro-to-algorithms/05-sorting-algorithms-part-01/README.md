@@ -257,7 +257,7 @@ In the second iteration (i=1), we need to compare 3 times only (1-2, 2-3, 3-4) a
 
 In the context of a loop, the condition "i < arr.length-1" means that the loop will execute as long as the value of variable "i" is less than the length of the array "arr" minus 1.
 
-Since array indices start from 0, the last index of the array is always its length minus 1. Therefore, the loop condition "i < arr.length-1" ensures that the loop will iterate through all the elements of the array, except for the last one.
+Since array indices start from 0, the last index of the array is always its length minus 1. Therefore, the loop condition "i < arr.length-1" ensures that ==the loop will iterate through all the elements of the array, except for the last one==.
 
 For example, if an array "arr" has a length of 5, the condition "i < arr.length-1" will be true for values of "i" from 0 to 3, and the loop will execute 4 times, which is equal to the length of the array minus 1. This is because the last element of the array will already be in its correct position after the previous iterations, so there is no need to iterate over it again.
 
