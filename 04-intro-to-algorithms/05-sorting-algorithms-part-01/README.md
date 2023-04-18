@@ -239,6 +239,20 @@ In the second iteration (i=1), we need to compare 3 times only (1-2, 2-3, 3-4) a
 - For each iteration, we only need to check for “number of unfixed elements - 1” times
 - Number of unfixed elements = array.length - i
 
+**Line By Line**
+
+1. `const arr = [14, 33, 28, 40, 10]`: An array of integers is defined and initialized with 5 values.
+
+2. `for (let i = 0; i < arr.length-1; i++)`: A loop is initiated that iterates through the array from the first element to the second last element. This is because, after each iteration, the largest number in the unsorted part of the array will bubble up to the end of the array, so there is no need to iterate through it again.
+
+3. `for (let j = 0; j < arr.length-i-1; j++)`: Another loop is initiated for each iteration of the outer loop, which compares adjacent elements of the array and swaps them if they are not in the correct order. The loop starts from the first element and goes up to the (length of the array - current iteration number - 1) element, because after each iteration, the largest number will be at the end of the unsorted part of the array, so there is no need to compare it again.
+
+4. `if (arr[j] > arr[j + 1])`: If the current element is greater than the next element, the two elements are swapped.
+
+5. `j_value = arr[j]`, `j_plus_1_value = arr[j + 1]`, `arr[j] = j_plus_1_value`, `arr[j + 1] = j_value`: This code swaps the values of the two adjacent elements if they are not in the correct order.
+
+6. `console.log(arr)`: After all the iterations and comparisons, the sorted array is printed to the console.
+
 ## Sorting Algorithm 2 - Insertion Sort
 
 ### Insertion Sort
