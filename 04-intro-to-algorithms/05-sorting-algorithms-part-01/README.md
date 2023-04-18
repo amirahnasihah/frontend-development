@@ -264,23 +264,26 @@ For example, if an array "arr" has a length of 5, the condition "i < arr.length-
 **bubble-sort.js**
 
 ```javascript
-const arr = [14, 33, 28, 40, 10]
+const bubbleSort = (arr) => {
+  // Copy the input array and work on the cloned array
+  // In JS, we always try to work in an immutable way
+  let inputArr = [...arr]
 
-// How many iterations of swapping we need to do?
-for (let i = 0; i < arr.length-1; i++) {
-    // For each iteration, how many comparisons we need to do?
-    for (let j = 0; j < arr.length-i-1; j++) {
-        if (arr[j] > arr[j + 1]) {
-            j_value = arr[j]
-            j_plus_1_value = arr[j + 1]
-            arr[j] = j_plus_1_value
-            arr[j + 1] = j_value
-        }
+  // Main Logic
+  // Add your code here
+  for(let i = 0; i < inputArr.length - 1; i++) {
+    for(let j = 0; j < inputArr.length - i - 1; j++) {
+      if(inputArr[j] > inputArr[j + 1]) {
+        j_value = inputArr[j]
+        j_plus_1_value = inputArr[j + 1]
+        inputArr[j] = j_plus_1_value
+        inputArr[j + 1] = j_value
+      }
     }
-}
+  }
 
-console.log(arr)
-// Output: [10, 14, 28, 33, 40]
+  return inputArr;
+}
 ```
 
 ## Sorting Algorithm 2 - Insertion Sort
