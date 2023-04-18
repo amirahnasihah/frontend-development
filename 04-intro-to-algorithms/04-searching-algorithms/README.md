@@ -203,3 +203,7 @@ while (start <= end) {
 **JS FACT**
 
 1. indexOf()
+
+
+Full Binary search
+
