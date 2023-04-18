@@ -13,8 +13,7 @@ const binarySearch = (arr, target) => {
     let middle = Math.floor((start + end) / 2)
 
     if(arr[middle] === target) {
-      console.log("Found at position: " + middle);
-      break;
+      return middle;
     }
     else if(arr[middle] < target) {
       start = middle + 1;
@@ -23,6 +22,8 @@ const binarySearch = (arr, target) => {
       end = middle - 1;
     }
   }
+
+  return -1;
 }
 
 // DO NOT MODIFY CODE BELOW
