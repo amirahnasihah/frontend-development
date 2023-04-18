@@ -5,10 +5,14 @@ const assert = require('assert');
 // Return the -1 if not found
 
 
-const linearSearch = (arr, target) => {    
+const linearSearch = (arr, target) => {
   // Add your code here
-
-  
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] == target) {
+      console.log("Found at position: " + i);
+      break;
+    }
+  }
 }
 
 // DO NOT MODIFY CODE BELOW
