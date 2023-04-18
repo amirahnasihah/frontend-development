@@ -11,8 +11,18 @@ const bubbleSort = (arr) => {
 
   // Main Logic
   // Add your code here
+  for(let i = 0; i < inputArr.length - 1; i++) {
+    for(let j = 0; j < inputArr.length - i - 1; j++) {
+      if(inputArr[j] > inputArr[j + 1]) {
+        j_value = inputArr[j]
+        j_plus_1_value = inputArr[j + 1]
+        inputArr[j] = j_plus_1_value
+        inputArr[j + 1] = j_value
+      }
+    }
+  }
 
-
+  return inputArr;
 }
 
 // DO NOT MODIFY CODE BELOW
