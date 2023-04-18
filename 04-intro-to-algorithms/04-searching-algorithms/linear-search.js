@@ -9,10 +9,10 @@ const linearSearch = (arr, target) => {
   // Add your code here
   for(let i = 0; i < arr.length; i++) {
     if(arr[i] == target) {
-      console.log("Found at position: " + i);
-      break;
+      return i;
     }
   }
+  return -1;
 }
 
 // DO NOT MODIFY CODE BELOW
