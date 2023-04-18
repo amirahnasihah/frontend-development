@@ -261,6 +261,28 @@ Since array indices start from 0, the last index of the array is always its leng
 
 For example, if an array "arr" has a length of 5, the condition "i < arr.length-1" will be true for values of "i" from 0 to 3, and the loop will execute 4 times, which is equal to the length of the array minus 1. This is because the last element of the array will already be in its correct position after the previous iterations, so there is no need to iterate over it again.
 
+**bubble-sort.js**
+
+```javascript
+const arr = [14, 33, 28, 40, 10]
+
+// How many iterations of swapping we need to do?
+for (let i = 0; i < arr.length-1; i++) {
+    // For each iteration, how many comparisons we need to do?
+    for (let j = 0; j < arr.length-i-1; j++) {
+        if (arr[j] > arr[j + 1]) {
+            j_value = arr[j]
+            j_plus_1_value = arr[j + 1]
+            arr[j] = j_plus_1_value
+            arr[j + 1] = j_value
+        }
+    }
+}
+
+console.log(arr)
+// Output: [10, 14, 28, 33, 40]
+```
+
 ## Sorting Algorithm 2 - Insertion Sort
 
 ### Insertion Sort
