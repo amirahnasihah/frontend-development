@@ -51,6 +51,8 @@ Agenda:
 
 Sample Interview Questions:
 - Can you name and describe 2 sorting algorithms to me?
+answer: Bubble sort, Merge sort, Quick sort
+
 - Can you describe “Binary Search” algorithm to me?
 
 ### Searching Algorithm
