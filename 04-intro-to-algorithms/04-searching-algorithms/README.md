@@ -98,6 +98,20 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
+**linear-search.js exercise:**
+
+```javascript
+const linearSearch = (arr, target) => {
+  // Add your code here
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] == target) {
+      return i;
+    }
+  }
+  return -1;
+}
+```
+
 ## Searching Algorithm 2 - Binary Search
 
 ### Is there a faster way of searching?
@@ -204,8 +218,11 @@ while (start <= end) {
 
 **JS FACT**
 
-1. indexOf()
+1. 
 
+**binary-search.js exercise:**
 
-Full Binary search
+```javascript
+
+```
 
