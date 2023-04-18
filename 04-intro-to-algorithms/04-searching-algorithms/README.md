@@ -156,8 +156,7 @@ select * from students_table where classes = “JS” order by id
 ### Consider this scenario
 
 - What the numbers are sorted first?
-- 
-Question Statement becomes:
+- Question Statement becomes:
 How to find an element in a sorted array?
 
 Example:
