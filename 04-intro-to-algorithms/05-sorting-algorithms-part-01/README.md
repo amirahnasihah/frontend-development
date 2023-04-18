@@ -75,6 +75,7 @@ Sorting in an increasing order
 |:-:|:-:|:-:|:-:|:-:|
 
 ![Array Sorting Algorithms](https://lamfo-unb.github.io/img/Sorting-algorithms/Complexity.png)
+
 Source: https://lamfo-unb.github.io/2019/04/21/Sorting-algorithms/
 
 ## Sorting Algorithm 1 - Bubble Sort
@@ -191,6 +192,8 @@ We need to repeat step 1 to 4 again. Until our array is sorted.
 |:-:|:-:|:-:|:-:|:-:|
 
 ### Bubble Sort Algorithm
+
+Converting into code:
 
 ```javascript
 const arr = [14, 33, 28, 40, 10]
@@ -328,6 +331,8 @@ element "9" → Insert before “12”
 |:-:|:-:|:-:|:-:|:-:|
 
 ### Insertion Sort Algorithm
+
+Converting into code:
 
 ```javascript
 const arr = [12, 9, 20, 4, 5]
