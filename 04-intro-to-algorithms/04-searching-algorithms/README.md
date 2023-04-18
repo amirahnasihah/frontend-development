@@ -202,5 +202,4 @@ while (start <= end) {
 
 **JS FACT**
 
-oalaoaolala
-,sls
+1. indexOf()
