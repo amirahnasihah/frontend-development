@@ -7,7 +7,6 @@ const assert = require('assert');
 // You should use merge sort algorithm for this exercise
 
 const merge = (leftList, rightList) => {
-  // Add your code here
   let arr = [];
 
     while (leftList.length > 0 && rightList.length > 0) {
