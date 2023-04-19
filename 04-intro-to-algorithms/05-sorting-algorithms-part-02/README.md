@@ -370,12 +370,33 @@ function merge(leftList, rightList) {
 ```javascript
 const merge = (leftList, rightList) => {
   // Add your code here
+  let arr = [];
 
+    while (leftList.length > 0 && rightList.length > 0) {
+        if (leftList[0] < rightList[0]) {
+            arr.push(leftList.shift());
+        }
+        else {
+            arr.push(rightList.shift());
+        }
+    }
+
+    return arr.concat(leftList).concat(rightList);
 }
 
 const mergeSort = (inputList) => {
   // Add your code here
+  if (inputList.length === 1) {
+        return inputList;
+    } else {
+        const half = inputList.length / 2;
+        const left = inputList.splice(0, half);
+        
+        const sortedLeft = mergeSort(left);
+        const sortedRight = mergeSort(inputList);
 
+        return merge(sortedLeft, sortedRight);
+    }
 }
 ```
 
@@ -601,10 +622,33 @@ const quickSort = (arr, minIndex, maxIndex) => {
 
 ```javascript
 const partition = (arr, minIndex, maxIndex) => {
+  pivot = arr[maxIndex];
 
+    i = minIndex - 1;
+
+    for (let j = minIndex; j < maxIndex - 1; j++) {
+        if (arr[j] < pivot) {
+            i++;
+
+            tempI = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tempI;
+        }
+    }
+
+    tempIPlus1 = arr[i+1];
+    arr[i+1] = pivot;
+    arr[maxIndex] = tempIPlus1
+
+    return i+1;
 }
 
 const quickSort = (arr, minIndex, maxIndex) => {
+    if (maxIndex > minIndex) {
+        pi = partition(arr, minIndex, maxIndex);
 
+        quickSort(arr, minIndex, pi-1);
+        quickSort(arr, pi + 1, maxIndex);
+    }
 }
 ```
