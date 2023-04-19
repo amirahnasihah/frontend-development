@@ -297,6 +297,7 @@ const bubbleSort = (arr) => {
 ### Insertion Sort
 
 ![Insertion Sort](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif?20110419160033)
+
 By Swfung8 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14961606
 
 **Key Study Notes:**
