@@ -290,7 +290,7 @@ const bubbleSort = (arr) => {
 
 ### Insertion Sort
 
-- The idea of insertion sort is to insert the elements to the right position one by one, from the left to right
+- The idea of insertion sort is to insert the elements to the right position one by one, from the left to right (dari kiri ke kanan)
   - For the first iteration, the focus is to make sure the first 2 items are sorted
   - For the second iteration, the focus is to make sure the first 3 items are sorted
 
