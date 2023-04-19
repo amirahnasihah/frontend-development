@@ -21,6 +21,7 @@ const insertionSort = (arr) => {
     }
     inputArr[j + 1] = current;
   }
+  
   return inputArr;
 }
 
