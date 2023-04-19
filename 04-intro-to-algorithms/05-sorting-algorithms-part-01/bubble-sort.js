@@ -10,7 +10,6 @@ const bubbleSort = (arr) => {
   let inputArr = [...arr]
 
   // Main Logic
-  // Add your code here
   for(let i = 0; i < inputArr.length - 1; i++) {
     for(let j = 0; j < inputArr.length - i - 1; j++) {
       if(inputArr[j] > inputArr[j + 1]) {
