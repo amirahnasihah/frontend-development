@@ -10,23 +10,23 @@ const assert = require('assert');
 const partition = (arr, minIndex, maxIndex) => {
   pivot = arr[maxIndex];
 
-    i = minIndex - 1;
+  i = minIndex - 1;
 
-    for (let j = minIndex; j < maxIndex - 1; j++) {
-        if (arr[j] < pivot) {
-            i++;
+  for (let j = minIndex; j <= maxIndex - 1; j++) {
+      if (arr[j] < pivot) {
+          i++;
 
-            tempI = arr[i];
-            arr[i] = arr[j];
-            arr[j] = tempI;
-        }
-    }
+          tempI = arr[i];
+          arr[i] = arr[j];
+          arr[j] = tempI;
+      }
+  }
 
-    tempIPlus1 = arr[i+1];
-    arr[i+1] = pivot;
-    arr[maxIndex] = tempIPlus1
+  tempIPlus1 = arr[i+1];
+  arr[i+1] = pivot;
+  arr[maxIndex] = tempIPlus1
 
-    return i+1;
+  return i+1;
 }
 
 const quickSort = (arr, minIndex, maxIndex) => {
