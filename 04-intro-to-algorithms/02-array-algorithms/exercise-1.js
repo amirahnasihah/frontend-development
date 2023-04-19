@@ -4,7 +4,6 @@ const assert = require("assert");
 // E.g. input = [3, 7, 1], output should be [2, 4, 5, 6]
 
 const findMissingNumber = (arr) => {
-  // Add your code here
   let max = arr[0];
   let min = arr[0];
 
