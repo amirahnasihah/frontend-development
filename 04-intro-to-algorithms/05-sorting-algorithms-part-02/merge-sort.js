@@ -8,12 +8,33 @@ const assert = require('assert');
 
 const merge = (leftList, rightList) => {
   // Add your code here
+  let arr = [];
 
+    while (leftList.length > 0 && rightList.length > 0) {
+        if (leftList[0] < rightList[0]) {
+            arr.push(leftList.shift());
+        }
+        else {
+            arr.push(rightList.shift());
+        }
+    }
+
+    return arr.concat(leftList).concat(rightList);
 }
 
 const mergeSort = (inputList) => {
   // Add your code here
+  if (inputList.length === 1) {
+        return inputList;
+    } else {
+        const half = inputList.length / 2;
+        const left = inputList.splice(0, half);
+        
+        const sortedLeft = mergeSort(left);
+        const sortedRight = mergeSort(inputList);
 
+        return merge(sortedLeft, sortedRight);
+    }
 }
 
 // DO NOT MODIFY CODE BELOW
