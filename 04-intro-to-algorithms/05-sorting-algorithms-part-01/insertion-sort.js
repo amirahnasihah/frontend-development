@@ -10,7 +10,6 @@ const insertionSort = (arr) => {
   let inputArr = [...arr]
 
   // Main Logic
-  // Add your code here
   for(let i = 1; i < inputArr.length; i++) {
     let current = inputArr[i];
     let j = i - 1;
