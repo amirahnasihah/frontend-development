@@ -504,7 +504,7 @@ const partition = (arr, minIndex, maxIndex) => {
     i = minIndex - 1;
 
     // Find the right position of pivot
-    for (let j = minIndex; j < maxIndex - 1; j++) {
+    for (let j = minIndex; j <= maxIndex - 1; j++) {
         if (arr[j] < pivot) {
             i++;
 
@@ -626,7 +626,7 @@ const partition = (arr, minIndex, maxIndex) => {
 
     i = minIndex - 1;
 
-    for (let j = minIndex; j < maxIndex - 1; j++) {
+    for (let j = minIndex; j <= maxIndex - 1; j++) {
         if (arr[j] < pivot) {
             i++;
 
