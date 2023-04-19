@@ -1,4 +1,4 @@
-- [Coding the sorting algorithms](#coding-the-sorting-algorithms)
+- [Assignment 6 - Sorting Algorithm (Part 2)](#assignment-6---sorting-algorithm-part-2)
   - [1.1 In this part, you are going to try coding the Merge Sort algorithm we discussed in class.](#11-in-this-part-you-are-going-to-try-coding-the-merge-sort-algorithm-we-discussed-in-class)
   - [1.2 In this part, you are going to try coding the Quick Sort algorithm we discussed in class.](#12-in-this-part-you-are-going-to-try-coding-the-quick-sort-algorithm-we-discussed-in-class)
 - [Lecture 6: Sorting Algorithms - Part 2](#lecture-6-sorting-algorithms---part-2)
@@ -12,7 +12,9 @@
     - [Merge Sort](#merge-sort-3)
     - [Merge Sort](#merge-sort-4)
     - [Merge Sort](#merge-sort-5)
+  - [|:-:|](#-)
     - [Merge Sort](#merge-sort-6)
+  - [|:-:|:-:|](#--)
     - [Merge Sort](#merge-sort-7)
     - [Merge Sort](#merge-sort-8)
     - [Merge Sort Algorithm](#merge-sort-algorithm)
@@ -29,7 +31,7 @@
     - [Summarizing Partition](#summarizing-partition-1)
     - [Quick Sort](#quick-sort-1)
 
-# Coding the sorting algorithms
+# Assignment 6 - Sorting Algorithm (Part 2)
 
 General Notes:
 

@@ -1,4 +1,4 @@
-- [Coding the array algorithm questions](#coding-the-array-algorithm-questions)
+- [Assignment 3 - String Algorithms](#assignment-3---string-algorithms)
   - [1.1 In this part, you are going to try coding the “Find Substring” algorithm question we discussed in class](#11-in-this-part-you-are-going-to-try-coding-the-find-substring-algorithm-question-we-discussed-in-class)
   - [1.2 In this part, you are going to try coding the “Reverse String” algorithm question we discussed in class.](#12-in-this-part-you-are-going-to-try-coding-the-reverse-string-algorithm-question-we-discussed-in-class)
   - [1.3 In this part, you are going to try coding the “Find Substring” algorithm question we discussed in class](#13-in-this-part-you-are-going-to-try-coding-the-find-substring-algorithm-question-we-discussed-in-class)
@@ -36,7 +36,7 @@
     - [Techniques that we used](#techniques-that-we-used-2)
 
 
-# Coding the array algorithm questions
+# Assignment 3 - String Algorithms
 
 General Notes:
 

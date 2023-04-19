@@ -1,4 +1,4 @@
-- [Coding the searching algorithm questions](#coding-the-searching-algorithm-questions)
+- [Assignment 4 - Searching Algorithms](#assignment-4---searching-algorithms)
   - [1.1 In this part, you are going to try coding the “Reverse String” algorithm question we discussed in class.](#11-in-this-part-you-are-going-to-try-coding-the-reverse-string-algorithm-question-we-discussed-in-class)
   - [1.2 In this part, you are going to try coding the “Find Substring” algorithm question we discussed in class](#12-in-this-part-you-are-going-to-try-coding-the-find-substring-algorithm-question-we-discussed-in-class)
 - [Lecture 4: Searching Algorithms\\](#lecture-4-searching-algorithms)
@@ -17,7 +17,7 @@
     - [Binary Search](#binary-search)
     - [Converting into Code](#converting-into-code-1)
 
-# Coding the searching algorithm questions
+# Assignment 4 - Searching Algorithms
 
 General Notes:
 

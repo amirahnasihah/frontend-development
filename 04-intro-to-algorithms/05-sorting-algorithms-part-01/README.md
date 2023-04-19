@@ -1,4 +1,4 @@
-- [Coding the sorting algorithms](#coding-the-sorting-algorithms)
+- [Assignment 5 - Sorting Algorithm (Part 1)](#assignment-5---sorting-algorithm-part-1)
   - [1.1 In this part, you are going to try coding the Bubble Sort algorithm we discussed in class.](#11-in-this-part-you-are-going-to-try-coding-the-bubble-sort-algorithm-we-discussed-in-class)
   - [1.2 In this part, you are going to try coding the “Find Substring” algorithm question we discussed in class](#12-in-this-part-you-are-going-to-try-coding-the-find-substring-algorithm-question-we-discussed-in-class)
 - [Lecture 5: Sorting Algorithms - Part 1](#lecture-5-sorting-algorithms---part-1)
@@ -25,7 +25,7 @@
     - [Insertion Sort](#insertion-sort-6)
     - [Insertion Sort Algorithm](#insertion-sort-algorithm)
 
-# Coding the sorting algorithms
+# Assignment 5 - Sorting Algorithm (Part 1)
 
 General Notes:
 

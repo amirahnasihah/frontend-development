@@ -1,4 +1,4 @@
-- [Coding the Array Algorithms questions](#coding-the-array-algorithms-questions)
+- [Assignment 2 - Array Algorithms](#assignment-2---array-algorithms)
   - [1.1 In this part, you are going to try coding the “Find Missing Numbers” algorithm question we discussed in class](#11-in-this-part-you-are-going-to-try-coding-the-find-missing-numbers-algorithm-question-we-discussed-in-class)
   - [1.2 In this part, you are going to try coding the “Find Duplicate Numbers” algorithm question we discussed in class](#12-in-this-part-you-are-going-to-try-coding-the-find-duplicate-numbers-algorithm-question-we-discussed-in-class)
   - [1.3 In this part, you are going to try coding the “Find Pairs” algorithm question we discussed in class](#13-in-this-part-you-are-going-to-try-coding-the-find-pairs-algorithm-question-we-discussed-in-class)
@@ -27,7 +27,7 @@
     - [Part 3 - Avoiding Duplicate Results](#part-3---avoiding-duplicate-results)
     - [Techniques that we used](#techniques-that-we-used-2)
 
-# Coding the Array Algorithms questions
+# Assignment 2 - Array Algorithms
 
 General Notes:
 
