@@ -19,7 +19,7 @@ const findSubstring = (inputString, targetString) => {
         break;
       }
       else if(j === targetString.length - 1) {
-        return i; // Return the position where the target string is found
+        return i;
       }
     }
   }
