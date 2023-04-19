@@ -32,7 +32,6 @@ Algorithm:
 
 6. [Sorting Algorithm Part 2](https://github.com/amirahnasihah/frontend-development/tree/main/04-intro-to-algorithms/05-sorting-algorithms-part-02)
 
-
 ---
 
 `2023@amirahnasihah X talentlabs`
