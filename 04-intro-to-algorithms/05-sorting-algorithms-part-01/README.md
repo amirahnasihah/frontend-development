@@ -346,7 +346,7 @@ element "9" → Insert before “12”
 
 ### Insertion Sort
 
-3rd: i = 3 (third element of the array).It will start comparing the previous element to the first element in the array. All the element larger than array[3] will move 1 position ahead.
+3rd: i = 3 (third element of the array). It will start comparing the previous element to the first element in the array. All the element larger than array[3] will move 1 position ahead.
 
 **Before Insertion**
 
@@ -419,4 +419,31 @@ while (j >= 0 && current < arr[j]) {```==
 
 - We will need to check for every elements before the “current element”, so we will start with j - 1.
 
-- The meaning here is - for every elements that is smaller than “current element” and before the “current element”, we shift it to the right by 1. 
+- The meaning here is - for every elements that is smaller than “current element” and before the “current element”, we shift it to the right by 1.
+
+**EXPLAINATION**
+
+**insertion-sort.js**
+
+```javascript
+const insertionSort = (arr) => {
+  // Copy the input array and work on the cloned array
+  // In JS, we always try to work in an immutable way
+  let inputArr = [...arr]
+
+  // Main Logic
+  // Add your code here
+  for(let i = 1; i < inputArr.length; i++) {
+    let current = inputArr[i];
+    let j = i - 1;
+
+    while(j >= 0 && current < inputArr[j]) {
+      inputArr[j + 1] = inputArr[j];
+      j--;
+    }
+    inputArr[j + 1] = current;
+  }
+  
+  return inputArr;
+}
+```
