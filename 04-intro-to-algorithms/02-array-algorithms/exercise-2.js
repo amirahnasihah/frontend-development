@@ -4,7 +4,6 @@ const assert = require("assert");
 // E.g. input array = [7, 2, 2, 3, 3, 9], output should be [2, 3]
 
 const findDuplicateNumbers = (arr) => {
-  // Add your code here
   const sortedArr = arr.sort()
   let tempResultArray = []
 
