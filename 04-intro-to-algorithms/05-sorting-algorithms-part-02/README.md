@@ -368,7 +368,15 @@ function merge(leftList, rightList) {
 **merge-sort.js**
 
 ```javascript
+const merge = (leftList, rightList) => {
+  // Add your code here
 
+}
+
+const mergeSort = (inputList) => {
+  // Add your code here
+
+}
 ```
 
 ## Sorting Algorithm 4 - Quick Sort
@@ -592,5 +600,11 @@ const quickSort = (arr, minIndex, maxIndex) => {
 **quick-sort.js**
 
 ```javascript
+const partition = (arr, minIndex, maxIndex) => {
 
+}
+
+const quickSort = (arr, minIndex, maxIndex) => {
+
+}
 ```
