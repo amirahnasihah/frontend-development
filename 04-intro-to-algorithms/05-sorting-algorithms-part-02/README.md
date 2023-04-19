@@ -79,14 +79,14 @@ function factorial(n) {
 
 **Visual Guide**
 
-Factorial(5) ← return 5 * Factorial(4) = 120 ← ← return 4 * Factorial(3) = 24 ← return 3 * Factorial(2) = 6 ← return 2 * Factorial(1) = 2 ← 1
+Factorial(5) ← return 5 * Factorial(4) = 120 ← return 4 * Factorial(3) = 24 ← return 3 * Factorial(2) = 6 ← return 2 * Factorial(1) = 2 ← 1
 
 ## Sorting Algorithm 3 - Merge Sort
 
 ### Merge Sort
 
 - Merge Sort divides the input array into two halves, calls itself(the merge sort function) for the two halves, and then merges the two sorted halves.
-- This is often referred as “Divide and Conquer” - Break down the problem to smaller problem
+- This is often referred as “Divide and Conquer” - Break down the problem to smaller problem.
 
 ![Merge Sort](https://learnprogramo.com/wp-content/uploads/2020/04/merge-sort-example.png)
 
@@ -383,6 +383,10 @@ function merge(leftList, rightList) {
 
 |1|17|3|10|9|==6==|
 |:-:|:-:|:-:|:-:|:-:|:-:|
+
+![Quick Sort](https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif)
+
+Source: https://commons.m.wikimedia.org/wiki/File:Quicksort-example.gif 
 
 ### Pivot
 
