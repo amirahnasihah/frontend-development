@@ -5,7 +5,6 @@ const assert = require('assert');
 // Return the -1 if not found
 
 const binarySearch = (arr, target) => {
-  // Add your code here
   let start = 0
   let end = arr.length - 1
 
