@@ -10,7 +10,6 @@ const findDuplicateNumbers = (arr) => {
 
   for(let i = 0; i < sortedArr.length - 1; i++) {
     if(sortedArr[i] === sortedArr[i + 1]) {
-      // Additional check before pushing the number to the result array
       if(tempResultArray.indexOf(sortedArr[i]) === -1) {
         tempResultArray.push(sortedArr[i])
       }
