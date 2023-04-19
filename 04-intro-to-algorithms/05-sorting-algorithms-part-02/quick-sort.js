@@ -8,11 +8,34 @@ const assert = require('assert');
 // You should use quick sort algorithm for this exercise
 
 const partition = (arr, minIndex, maxIndex) => {
+  pivot = arr[maxIndex];
 
+    i = minIndex - 1;
+
+    for (let j = minIndex; j < maxIndex - 1; j++) {
+        if (arr[j] < pivot) {
+            i++;
+
+            tempI = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tempI;
+        }
+    }
+
+    tempIPlus1 = arr[i+1];
+    arr[i+1] = pivot;
+    arr[maxIndex] = tempIPlus1
+
+    return i+1;
 }
 
 const quickSort = (arr, minIndex, maxIndex) => {
+  if (maxIndex > minIndex) {
+        pi = partition(arr, minIndex, maxIndex);
 
+        quickSort(arr, minIndex, pi-1);
+        quickSort(arr, pi + 1, maxIndex);
+    }
 }
 
 // DO NOT MODIFY CODE BELOW
