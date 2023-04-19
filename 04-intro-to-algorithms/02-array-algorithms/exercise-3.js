@@ -8,7 +8,6 @@ const assert = require("assert");
 // It should return [[7, 3], [9, 1]]
 
 const findPairs = (arr, targetSum) => {
-  // Add your code here
   const result = [];
 
   for(let i = 0; i < arr.length; i++) {
