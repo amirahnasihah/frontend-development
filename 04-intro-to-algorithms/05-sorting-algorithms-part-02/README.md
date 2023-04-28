@@ -30,6 +30,7 @@
     - [Summarizing Partition](#summarizing-partition)
     - [Summarizing Partition](#summarizing-partition-1)
     - [Quick Sort](#quick-sort-1)
+  - [Merge Sort vs Quick Sort](#merge-sort-vs-quick-sort)
 
 # Assignment 6 - Sorting Algorithm (Part 2)
 
@@ -654,3 +655,33 @@ const quickSort = (arr, minIndex, maxIndex) => {
     }
 }
 ```
+
+## Merge Sort vs Quick Sort
+
+> whats differences between Merge Sort and Quick Sort?
+
+Merge Sort and Quick Sort are two popular sorting algorithms used in computer science. Here are some key differences between the two:
+
+1. Algorithm Type: ==Merge Sort is a divide and conquer algorithm, while Quick Sort is a divide and conquer and recursive algorithm==.
+
+2. ==Approach==: Merge Sort divides the list into smaller parts, sorts each part, and then combines them back together. Quick Sort chooses a "pivot" item and divides the list into two smaller lists: one with items smaller than the pivot, and one with items larger than the pivot. This process is repeated until the entire list is sorted.
+
+3. Time Complexity: In the average case, both Merge Sort and Quick Sort have a time complexity of O(nlogn). However, Quick Sort has a worst-case time complexity of O(n^2), while Merge Sort always has a worst-case time complexity of O(nlogn).
+
+4. Space Complexity: Merge Sort has a space complexity of O(n), while Quick Sort has a space complexity of O(logn) in the best case and O(n) in the worst case.
+
+5. Stability: Merge Sort is a stable sorting algorithm, which means that it maintains the relative order of equal elements in the input sequence. Quick Sort is not stable, which means that the relative order of equal elements may not be preserved in the sorted output.
+
+6. Pivot Selection: Quick Sort selects a pivot element from the array and partitions the array around the pivot. The choice of pivot can greatly affect the efficiency of the algorithm. Merge Sort does not use a pivot and instead divides the array into two halves.
+
+7. Recursive vs. Iterative: Quick Sort is often implemented recursively, while Merge Sort can be implemented either recursively or iteratively.
+
+In general, Merge Sort is preferred when stability is required or when worst-case time complexity is a concern. Quick Sort is preferred when average-case performance is important and when additional space usage is a concern.
+
+> what is pivot ?
+
+In the ==context of Quick Sort, the "pivot" is an element selected from the array being sorted==. It is used as a reference point for dividing the array into two sub-arrays during the sorting process. The pivot can be any element in the array, but it is usually chosen to be the first, last, or middle element.
+
+Once the pivot is selected, the algorithm compares all other elements in the array to the pivot, and then arranges them into two groups: elements that are less than or equal to the pivot, and elements that are greater than the pivot. The pivot is then placed between these two groups.
+
+This process is repeated recursively on each of the two sub-arrays until the entire array is sorted. The choice of pivot can greatly affect the efficiency of the algorithm, and various methods have been developed to select an optimal pivot element.
