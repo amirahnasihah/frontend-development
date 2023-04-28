@@ -664,7 +664,7 @@ Merge Sort and Quick Sort are two popular sorting algorithms used in computer sc
 
 1. Algorithm Type: ==Merge Sort is a divide and conquer algorithm, while Quick Sort is a divide and conquer and recursive algorithm==.
 
-2. ==Approach==: Merge Sort divides the list into smaller parts, sorts each part, and then combines them back together. Quick Sort chooses a "pivot" item and divides the list into two smaller lists: one with items smaller than the pivot, and one with items larger than the pivot. This process is repeated until the entire list is sorted.
+2. ==Approach==: Merge Sort divides the list into smaller parts, sorts each part, and then combines them back together, till we reach a single part where we cannot longer divide. Quick Sort chooses a "pivot" item and divides the list into two smaller lists: one with items smaller than the pivot, and one with items larger than the pivot. This process is repeated until the entire list is sorted.
 
 3. Time Complexity: In the average case, both Merge Sort and Quick Sort have a time complexity of O(nlogn). However, Quick Sort has a worst-case time complexity of O(n^2), while Merge Sort always has a worst-case time complexity of O(nlogn).
 
