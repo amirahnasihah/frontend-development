@@ -31,6 +31,8 @@
     - [Summarizing Partition](#summarizing-partition-1)
     - [Quick Sort](#quick-sort-1)
   - [Merge Sort vs Quick Sort](#merge-sort-vs-quick-sort)
+    - [geeksforgeeks (other reference)](#geeksforgeeks-other-reference)
+      - [Algorithm:](#algorithm)
 
 # Assignment 6 - Sorting Algorithm (Part 2)
 
@@ -685,3 +687,26 @@ In the ==context of Quick Sort, the "pivot" is an element selected from the arra
 Once the pivot is selected, the algorithm compares all other elements in the array to the pivot, and then arranges them into two groups: elements that are less than or equal to the pivot, and elements that are greater than the pivot. The pivot is then placed between these two groups.
 
 This process is repeated recursively on each of the two sub-arrays until the entire array is sorted. The choice of pivot can greatly affect the efficiency of the algorithm, and various methods have been developed to select an optimal pivot element.
+
+### geeksforgeeks (other reference)
+
+> source: https://www.geeksforgeeks.org/merge-sort/
+
+#### Algorithm:
+
+```console
+step 1: start
+
+step 2: declare array and left, right, mid variable
+
+step 3: perform merge function.
+    if left > right
+        return
+    mid= (left+right)/2
+    mergesort(array, left, mid)
+    mergesort(array, mid+1, right)
+    merge(array, left, mid, right)
+
+step 4: Stop
+```
+
