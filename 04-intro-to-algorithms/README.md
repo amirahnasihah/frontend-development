@@ -11,8 +11,6 @@
 
 ## What is Algorithm?
 
-Algorithm:
-
 - A methodology to solve problem, a description of the steps to solve a problem
 - The focus is not about “coding”, but the “thinking”
 - There are no formulas, but some common way of thinking about a problem
