@@ -30,4 +30,11 @@ Basic to advanced HTML, CSS, DOM, JavaScript, HTTP/URL, and browser skills are a
 
 CodeSandbox practices
 
-1. GET method from api
+1. To get and display data from API using GET method from api
+
+<iframe src="https://codesandbox.io/embed/reactjs-get-method-s27ukk?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="reactjs-GET-method"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
