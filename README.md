@@ -27,3 +27,7 @@ Basic to advanced HTML, CSS, DOM, JavaScript, HTTP/URL, and browser skills are a
 🚀 front-end development beginner course (A to Z)
 
 >🍝 sauce: [front-end](https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html)
+
+CodeSandbox practices
+
+1. GET method from api
