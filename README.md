@@ -33,3 +33,4 @@ CodeSandbox practices
 1. To get and display data from API using GET method. Side note: `useState()`, `useEffect()`, `map()`
 
 [![Edit reactjs-GET-method](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/reactjs-get-method-s27ukk?fontsize=14&hidenavigation=1&theme=dark)
+
