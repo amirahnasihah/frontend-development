@@ -1,290 +1,289 @@
-# Lists and Keys
+- [Creating Dynamic Lists in React: A Step-by-Step Guide](#creating-dynamic-lists-in-react-a-step-by-step-guide)
+- [Code Output](#code-output)
+- [Getting Started](#getting-started)
+- [What Components Needed](#what-components-needed)
+- [Data Retrieving Component](#data-retrieving-component)
+- [Display the Lists Component](#display-the-lists-component)
+- [Reusable Component](#reusable-component)
+- [Destructuring](#destructuring)
+- [Full Code](#full-code)
 
-First, let’s review how you transform lists in JavaScript.
+# Creating Dynamic Lists in React: A Step-by-Step Guide
 
-```js
-function Blog(props) {
- const body = props.posts.map((post) => {
-   return (
-     <>
-       <li>{post.id}</li>
-       <li>{post.title}</li>
-       <li>{post.body}</li>
-     </>
-   );
- });
+Lists in React are similar to lists in JavaScript. They are commonly used to display menus or a list of items on a website. **<mark>To use lists in React, we need to use a unique </mark>** `key` **<mark> attribute for each item in the list.</mark>** This is important because it helps React identify which items have been changed, updated or removed.
 
- return (
-   <>
-     <h1>List of Objects</h1>
-     <h3>{body}</h3>
-   </>
- );
-}
+> Hey there friends! It's been a minute since I last posted on this platform, but I'm back and ready to dive into the world of React once again. Let's get started!
 
-export default Blog;
-```
+To create a list in React, it is best to **create a new component specifically for the list**. This component will take in the list data through `props`. Inside the component, we can use the `map` function to iterate through the list and display each item.
 
-// how to handle the list and keys in react application.
-// so, goto App.js, we have a simple [{key:value}, {key:value}] array of objects and that is the const "posts" and in this object you have an ID, title, body
-// now what we will do is we want to display all the post on our screen.
-// What im going to do is lets create a new component
-// so, a new file name Blog.js
-// then inside Blog.js gonna have a function name Blog and its gonna take a props
-// function Blog(props)
-// then, export default this Blog
-// now, we have to use this Blog in App component
-// import Blog component from 'react' then, use the Blog
-// <Blog />
- 
-// # inside App.js
-// now, when I have to use it, I want to pass the data and the data is the const 'posts.
-// so we are going to pass this post with the help of props.
-// so, lets go here <Blog /> at App component and pass this posts with the help of props
-// <Blog posts={}/>
-// what i will do is im gonna have all the posts and this value of the posts is the array of the post.
-// so, lets go here in <Blog /> and here we dont have anything. saved,
-// <Blog posts={posts}/>
- 
-// # goto Blog.js
-//so, thats why we are not able to see here anything.
-// in Blog function, lets do return a jsx
-// lets have a div and inside the div gonna write the {body}
-// return <div>{body}</div>
-// got error. need to define this 'body' variables
-// so, lets have a constant body and we need to now look all the 'posts' and need to display the data.
-// so if we go to the props then inside the props we are going to have the posts
-// const body = props.posts
-// the force??? we need to map all the posts.
-// so lets use the map() and this map is going to give us an individual post
-// props.posts.map(post)
-// and im going to create an arrow function here as well.
-// props.posts.map((post) => {})
-// I want to display. So, what i will do is im gonna have a return here arrow function, and inside the return i will do a list <li> and then what i can do i can have here the "post.id"
-// return <li>post.id</li>
-// alright and then i can have a similar, can have the post.title and have post.body and saved it
-// return (
-//   <>
-//     <li>post.id</li>
-//     <li>post.title</li>
-//     <li>post.body</li>
-//   </>
-// now, you will see that what we are able to see here is we have the post.id, but since its a variable so we have to add curly braces. then saved it
-// return (
-//   <>
-//     <li>{post.id}</li>
-//     <li>{post.title}</li>
-//     <li>{post.body}</li>
-//   </>
- 
-// now, we will see that we have the id, title, and body to the react and we are able to display all this information
-// alright, now let refresh it
-// then in console, you will see that we get a warning
-// Warning: Each child in a list should have a unique "key" prop.
-// Check the render method of `Blog`. See https://reactjs.org/link/warning-keys for more information.
-// at Blog (https://1571uj.csb.app/src/components/Blog.js:13:22)
-// at div
-// at App
- 
-// so, here we have a multiple list <li>.
-// but each of the child should be have a unique key
-// so, what im going to do is going to do a little bit of restructuring here
-// so gonna change the list to
- 
-// change this to <Post /> so i will have a post
-// inside the Post, im going to pass the individual post
-// okay, so let me have a key as well
-// so im gonna give a key and this key should be unique.
-// so, what we can do is we can have the post.id because the id will be a unique and then gonna pass the post as well.
-// so, let me have an individual post and this individual post will be equals to the {post}
-// now we have this and now
- 
-// return (
-//   <>
-//     <Post key={post.id} post={post}/>
-//     <li>{post.id}</li>
-//     <li>{post.title}</li>
-//     <li>{post.body}</li>
-//   </>
-// );
- 
-// now we have this and now im going to cut multiple <li>,
-// return (
-//   <>
-//     <Post key={post.id} post={post}/>
-//   </>
-// );
- 
-// and we can create a new component of the post.
-// so lets go down outside the Blog component
-// im going to create a function Post which going to take the props.
-// function Post(props) {}
-// And then we return a list <li>
- 
-// function Post(props) {
-//     <li>{post.id}</li>
-//     <li>{post.title}</li>
-//     <li>{post.body}</li>
-// }
- 
-// so, what i will do i will change <li> to <div>
-// can remove the fragment in <Post key={} post={} />
- 
-// then what we can do is we can have a <div> here, then inside the <div> gonna have {post.id}. will change <li> to <div>
- 
-// function Post(props) {
-//   return (
-//     <div>
-//       <div>{post.id}</div>
-//       <div>{post.title}</div>
-//       <div>{post.body}</div>
-//     </div>
-//   )
-// }
- 
-// then, what we can do here since we have the props, so we can restructure the props and on this prop. we have the ID we have the title, body
- 
-// function Post({id, title, body}) {
-//   return (
-//     <div>
-//       <div>{id}</div>
-//       <div>{title}</div>
-//       <div>{body}</div>
-//     </div>
-//   )
-// }
+For the sake of simplicity and learning, this **article will give a simple example of creating a list of posts**, where the `key` is "id" of the post, and the "title" and "body" of the post is displayed. The final output of the tutorial is shown in an embedded code editor. It's recommended to follow this tutorial and practice it several times to better understand the concepts.
 
-// so, we can directly use the ID here inside the `<div>`
-// so let me have the id, title, content
-// then save it
+# Code Output
 
-```js
-function Blog(props) {
- const body = props.posts.map((post) => {
-   return (
-     <>
-       <Post key={post.id} post={post} />
-     </>
-   );
- });
- 
- return (
-   <>
-     <h1>List of Objects</h1>
-     <h3>{body}</h3>
-   </>
- );
-}
- 
-function Post({ id, title, body }) {
- return (
-   <div>
-     <div>{id}</div>
-     <div>{title}</div>
-     <div>{body}</div>
-   </div>
- );
-}
- 
-export default Blog;
-```
+You will get this result once you have finished the tutorial.
 
-// we dont see anything and here we made a mistake.
-// so, im gonna have a constant and on the constant, we can remove the restructuring we did before
-// so, let add to the const and this will be equals to the props.post because we have a post and lets have a props in Post function
-// now i will save it and we will see
+<iframe src="https://codesandbox.io/embed/list-and-keys-oyww56?fontsize=14&hidenavigation=1&theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
 
-// function Post(props) {
-//   const { id, title, body } = props.post;
+[![Edit list-and-keys](https://codesandbox.io/static/img/play-codesandbox.svg align="left")](https://codesandbox.io/s/list-and-keys-oyww56?fontsize=14&hidenavigation=1&theme=dark)
 
-//   return (
-//     <div>
-//       <div>{id}</div>
-//       <div>{title}</div>
-//       <div>{body}</div>
-//     </div>
-//   );
-// }
+# Getting Started
 
-// now we see we have all the information now, we dont even see the warning
-// so if we want to see the warning again, just remove the return <Post post={post} />;
+To begin, you can create react app using the command line or any code editor (e.g., VSCode). You can also directly use the [CodeSandbox](https://codesandbox.io/) for an online code editor that is simple to use and allows you to deploy your code.
 
-// then we see that functionality work as it is but you will see a warning which is that each child in the list should have a unique key
-// so thats where you need to give a unique key whenever you use a list and thats where its a list and a keys.
-// so this how you can do the rendering of the list and you have to add a keys
+# What Components Needed
 
-// so in the next, we are going to see how we can handle forms in react application.
+First, we need to understand what components are required to display a list of blog posts using React. You will need to create at least the following components:
 
+1. A component that retrieves the blog post data from a source, **a Parent component - (App.js).**
 
+2. A component that renders the list of blog posts, **a Child component - (BlogList.js).**
 
-FULL
-Blog.js
+3. A reusable component that can be reused in other parts of the application where you want to display a single blog post, **an Inner Child Component - (BlogCard.js).**
 
-```js
-function Blog(props) {
- const body = props.posts.map((post) => {
-   return <Post key={post.id} post={post} />;
- });
- 
- return (
-   <>
-     <h1>List of Objects</h1>
-     <h3>{body}</h3>
-   </>
- );
-}
- 
-function Post(props) {
- const { id, title, body } = props.post;
- 
- return (
-   <div>
-     <div>{id}</div>
-     <div>{title}</div>
-     <div>{body}</div>
-   </div>
- );
-}
- 
-export default Blog;
-```
+You can create these components as separate JavaScript files and import them into your main application file, where you can use them to build out the list of blog posts.
 
-App.js
+# Data Retrieving Component
 
-```js
-import "./styles.css";
-import Blog from "./components/Blog";
- 
+1. `App.js` - This component would handle retrieving the blog post data from any source. For the sake of simplicity, we will just have a simple array of objects `[{key:value}, {key:value}]` and that is the `const posts`. Inside them, we have the `id`, `title`, and `body`.
+    
+
+We will import the BlogList component into the App component and pass the `posts` data through props because we want to use the `posts` data to be displayed in the BlogList.
+
+**App.js**
+
+```JSX
+import BlogList from "./components/BlogList";
+
 export default function App() {
- const posts = [
-   {
-     userId: 8,
-     id: 71,
-     title: "et iusto veniam et illum aut fuga",
-     body:
-       "occaecati a doloribus\niste saepe consectetur placeat eum voluptate dolorem et\nqui quo quia voluptas\nrerum ut id enim velit est perferendis"
-   },
-   {
-     userId: 8,
-     id: 72,
-     title: "sint hic doloribus consequatur eos non id",
-     body:
-       "quam occaecati qui deleniti consectetur\nconsequatur aut facere quas exercitationem aliquam hic voluptas\nneque id sunt ut aut accusamus\nsunt consectetur expedita inventore velit"
-   },
-   {
-     userId: 8,
-     id: 73,
-     title: "consequuntur deleniti eos quia temporibus ab aliquid at",
-     body:
-       "voluptatem cumque tenetur consequatur expedita ipsum nemo quia explicabo\naut eum minima consequatur\ntempore cumque quae est et\net in consequuntur voluptatem voluptates aut"
-   }
- ];
- 
- return (
-   <div className="App">
-     <Blog posts={posts} />
-     <h2>Start editing to see some magic happen!</h2>
-   </div>
- );
+	const posts = [
+		{
+			id: 1,
+			title: "buildspace web3 demo showcase!",
+			body:
+				"Last night's buildspace demo day was a blast, as was go-karting around the map on gather.town dressed as a pumpkin. It's a massive web3 display! Over…"
+		},
+		{
+			id: 2,
+			title: "ReactJS - Introduction",
+			body:
+				"What is ReactJS? ➡️declarative, efficient, and flexible JavaScript library for building reusable UI components. ➡️an open-source, component-based…"
+		},
+		{
+			id: 3,
+			title: "Build Metaverse with Gather.Town for Free",
+			body:
+				"Gather.Town Looking for more interactive web-conferencing software like Zoom, but with more fun virtual interactions just like in real life. Then, you…"
+		}
+	];
+
+	return (
+		<div>
+			<BlogList posts={posts} />
+		</div>
+	);
 }
 ```
+
+# Display the Lists Component
+
+1. `BlogList.js` - This component would render the list of blog posts using the data retrieved by the `App`component and display all the posts on our screen browser.
+    
+
+Inside the BlogList functional component, it will take `props`.
+
+```JSX
+import BlogCard from "./BlogCard";
+
+const BlogList = (props) => {
+	const content = props.posts.map((post) => {
+		return <BlogCard key={post.id} props={post} />;
+	});
+
+	return (
+		<div>
+			<h1>My Posts</h1>
+			<div>{content}</div>
+		</div>
+	);
+};
+
+export default BlogList;
+```
+
+This code is a React component named BlogList which maps over an array of blog posts (`props.posts`) and returns an array of BlogCard components. Each BlogCard component is rendered with a unique `key` prop ([`post.id`](http://post.id)) and passed the whole post data as `props` (`props={post}`).
+
+**<mark>Let's go line-by-line through the code:</mark>**
+
+1. `import BlogCard from "./BlogCard"`: This line imports a component called `BlogCard` from another file called `BlogCard.js` in the same directory.
+    
+2. `const BlogList = (props) => {...}`: This line creates a new component called `BlogList` using a special type of function called an arrow function. This component will receive data from outside the component through its `props` argument.
+    
+3. `const content =` [`props.posts.map`](http://props.posts.map)`((post) => {`: This line creates a new constant called `content` which will contain an array of components created by mapping over the `posts` array received through `props`. It maps through an array of posts stored in `props` and creates a new array of `BlogCard` components for each post where it will return a component for each post. <mark>"Mapping through an array"</mark> means iterating/looping over the elements of an array and performing a specific operation on each element.
+    
+4. `return <BlogCard key={post.id} props={post} />;`: This line returns a new component of type `BlogCard` for each `post` in the `posts` array. The component will receive data through its `props` argument and will have a `key` property set to the `id` of the current `post`. **Remember to use lists in React, we need to have a unique key attribute for each item in the list.** Otherwise, a warning will appear.
+    
+5. `<div>{content}</div>`: This line returns a `div` element that contains all the `BlogCard` components created in the previous step. Which embeds the mapped array of `BlogCard` components into a div element.
+    
+6. `<h1>My Posts</h1>`: This line displays a header element with the text "My Posts".
+    
+7. `<div>...</div>`: This line wraps the header and the `content` div in a parent div.
+    
+8. `export default BlogList;`: This line exports the `BlogList` component so that it can be used in other files.
+    
+
+The overall **logic of this code** is to create a <mark>component </mark> `BlogList` <mark> that displays a list of blog posts using the </mark> `BlogCard` <mark> component</mark>. The component receives data about the posts through its `props` argument, maps over the `posts` array to create an array of `BlogCard` components, and displays these components in a div along with a header.
+
+# Reusable Component
+
+1. `BlogCard.js` - This component would be a reusable component that takes a single blog post as a prop and displays the details of the blog post in a card format. This component can be reused in other parts of the application where you want to display a single blog post.
+    
+
+<mark>This component uses destructuring assignment</mark> to extract the "id", "title", and "body" properties from the props object.
+
+This component in React is called "BlogCard". It takes in a prop called "props", which contains information about a blog post. The component then uses destructuring assignment to extract the "id", "title", and "body" properties from the props object.
+
+The component then returns a JSX element that **<mark>displays the post information in a specific format.</mark>** The id of the post is displayed first, followed by its title, and then its body content.
+
+```javascript
+const BlogCard = ({ props }) => {
+	const { id, title, body } = props;
+
+	return (
+		<div>
+			<h2>
+				{id}. {title}
+			</h2>
+			<p>{body}</p>
+		</div>
+	);
+};
+
+export default BlogCard;
+```
+
+**<mark>Let's go through line-by-line:</mark>**
+
+1. `const BlogCard = ({ props }) => {...}`: This line creates a new component called `BlogCard` using an arrow function. This component will receive data from outside the component through its `props` argument.
+    
+2. `const { id, title, body } = props;`: This line uses destructuring to extract the `id`, `title`, and `body` properties from the `props` object.
+    
+3. `<h2>{id}. {title}</h2>`: This line returns a header element with the `id` and `title` properties from the `props` object.
+    
+4. `<p>{body}</p>`: This line returns a paragraph element with the `body` property from the `props` object.
+    
+5. `<div>...</div>`: This line wraps the header and paragraph elements in a parent div.
+    
+6. `export default BlogCard;`: This line exports the `BlogCard` component so it can be used in other files.
+    
+
+The overall logic of this code is to create a component `BlogCard` that displays a single blog post. The component receives data about the post through its `props` argument and displays the post's `id`, `title`, and `body` properties in a header and a paragraph element.
+
+# Destructuring
+
+Destructuring is a feature in JavaScript that allows you to extract data from arrays or objects and assign them to variables. The main purpose of destructuring is to make it easier and more convenient to access the properties and values of an object or array.
+
+```javascript
+// First code snippet
+const BlogList = (props) => {
+
+// vs
+
+// Second code snippet
+const BlogCard = ({ props }) => {
+```
+
+**<mark>What is the difference between these two? Why are props inside the BlogList not destructured?</mark>**
+
+The difference between these two code snippets is that in the first code snippet, `props` is passed to the `BlogList` component as a single argument, and in the second code snippet, `props` is destructured from the props object passed to the `BlogCard` component.
+
+1. First code snippet - `props` is an object that contains all of the properties that are passed to the `BlogList` component. In this case, it is **not necessary to destruct the props object, as the code only needs to access one property,** `posts`**.**
+    
+2. Second code snippet - `props` **is destructured from the props object**, allowing for the properties `id`, `title`, and `body` to be accessed directly. This reduces the need to access properties through the `props` object and makes the code more readable and maintainable.
+    
+
+In short, **the difference is in the way that the properties are accessed within the component**. The **<mark>first code snippet accesses the properties through the </mark>** `props` **<mark> object, while the second code snippet accesses the properties directly by destructuring the </mark>** `props` **<mark> object.</mark>**
+
+# Full Code
+
+***App.js***
+
+```javascript
+import BlogList from "./components/BlogList";
+
+export default function App() {
+	const posts = [
+		{
+			id: 1,
+			title: "buildspace web3 demo showcase!",
+			body:
+				"Last night's buildspace demo day was a blast, as was go-karting around the map on gather.town dressed as a pumpkin. It's a massive web3 display! Over…"
+		},
+		{
+			id: 2,
+			title: "ReactJS - Introduction",
+			body:
+				"What is ReactJS? ➡️declarative, efficient, and flexible JavaScript library for building reusable UI components. ➡️an open-source, component-based…"
+		},
+		{
+			id: 3,
+			title: "Build Metaverse with Gather.Town for Free",
+			body:
+				"Gather.Town Looking for more interactive web-conferencing software like Zoom, but with more fun virtual interactions just like in real life. Then, you…"
+		}
+	];
+
+	return (
+		<div>
+			<BlogList posts={posts} />
+		</div>
+	);
+}
+```
+
+***BlogList.js***
+
+```javascript
+import BlogCard from "./BlogCard";
+
+const BlogList = (props) => {
+	const content = props.posts.map((post) => {
+		return <BlogCard key={post.id} props={post} />;
+	});
+
+	return (
+		<div>
+			<h1>My Posts</h1>
+			<div>{content}</div>
+		</div>
+	);
+};
+
+export default BlogList;
+```
+
+***BlogCard.js***
+
+```javascript
+const BlogCard = ({ props }) => {
+	const { id, title, body } = props;
+
+	return (
+		<div>
+			<h2>
+				{id}. {title}
+			</h2>
+			<p>{body}</p>
+		</div>
+	);
+};
+
+export default BlogCard;
+```
+
+---
+
+👉 Please share my posts with the community at [**daily.dev**](http://daily.dev) / social media by adding the article's URL to the feed. By adding my article's URL to the feed, I can share my insights and knowledge with other tech enthusiasts and contribute to the passionate community.
+
+`Cheers✨`
+
+> <mark>Thank you</mark> for your continued support and for sticking around even though I've been away for a bit. I've been busy with some exciting projects, but I'm thrilled to be back and writing again!
