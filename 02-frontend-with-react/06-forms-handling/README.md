@@ -21,6 +21,9 @@ This form has the default HTML form behavior of browsing to a new page when the 
 // and here in Form.js Im gonna have a function Form() and then im gonna export this form
 // so let me have it form, export default form
 // and then what i will do is im gonna create a form.
+
+## Create Form Component
+
 // so, im gonna create a form
 // lets create a form so we will to return a jsx.
 // alright, inside the jsx Im gonna have a form and then im gonna have a label and the label will be the name. Then, I will have the input element.

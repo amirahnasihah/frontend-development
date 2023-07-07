@@ -22,7 +22,7 @@ In the below code, we import the `useState` hook from React, which allows us to 
 
 We use the `useState` hook to define the `formData` state variable and its corresponding setter function, `setFormData`. The initial value of `formData` is set to `initialValue`. Here's the initial structure of the component:
 
-```jsx
+```javascript
 import { useState } from "react";
 
 function Form() {
@@ -33,6 +33,20 @@ function Form() {
   };
 
   const [formData, setFormData] = useState(initialValue);
+
+  return (
+      <form>
+        <label>Name</label>
+        <input type="text" value={} onChange={} />
+        <br />
+        <label>Email</label>
+        <input type="email" value={} onChange={} />
+        <br />
+        <label>Password</label>
+        <input type="password" value={} onChange={} />
+      </form>
+    );
+
 }
 
 export default Form;
@@ -42,7 +56,7 @@ export default Form;
 
 To handle form submission, we define the `handleSubmit` function. This function is called when the user submits the form. We prevent the default form behavior of refreshing the page by calling `e.preventDefault()`. Instead, we display an alert with the stringified form data using `JSON.stringify(formData)`.
 
-```jsx
+```javascript
 import { useState } from "react";
 
 function Form() {
@@ -59,11 +73,11 @@ export default Form;
 
 ## The `value` attribute
 
-Within the `return` statement, we define the JSX structure of the form. **Each input element is associated with a specific property in the `formData` object**. The `value` attribute of each input element is set to the value stored in the `formData` state.
+Within the `return` statement, we define the javascript structure of the form. **Each input element is associated with a specific property in the `formData` object**. The `value` attribute of each input element is set to the value stored in the `formData` state.
 
 > Here are the other different input types you can use in HTML: [HTML Input Types element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
-```jsx
+```javascript
 import { useState } from "react";
 
 function Form() {
@@ -81,7 +95,7 @@ function Form() {
       <input
         type="password"
         placeholder="enter password"
-        value={formData.password} // add this to the value stored in the `formData` state, password
+        value={formData.password} // add this
       />
     </form>
   );
@@ -94,7 +108,7 @@ To update the form data in response to user input, we **define an `onChange` eve
 
 By following this approach, we create controlled components where the input values are managed by the React state. As a result, whenever the user types in an input field, the state is updated, and the corresponding input element reflects the new value.
 
-```jsx
+```javascript
 import { useState } from "react";
 
 function Form() {
@@ -148,7 +162,7 @@ In the example above, an alert is shown with the stringified `formData` object w
 
 To use the `Form` component in your application, import it and render it within another component:
 
-```jsx
+```javascript
 import React from "react";
 import Form from "./Form";
 
@@ -164,7 +178,7 @@ function App() {
 export default App;
 ```
 
-In the `App` component, we import and render the `Form` component within a `<div>`. You can modify the surrounding JSX and add additional components as needed.
+In the `App` component, we import and render the `Form` component within a `<div>`. You can modify the surrounding javascript and add additional components as needed.
 
 By implementing controlled components in React, you can easily handle form input and manage the form state using React's state management capabilities. This approach provides a reliable way to capture user input and perform actions based on the submitted form data.
 
