@@ -69,6 +69,8 @@ export default Form;
 // <button type="submit">Submit</button>
 <button type="submit">Submit</button>
 
+## 
+
 // and then what i will do here is that im going to create a local state for my forms.
 // so what i will do the initial value of my form should be empty.
 // so, i will create an initial
@@ -96,6 +98,8 @@ export default Form;
 
 // const [formData, setFormData] = useState(initialValue);
 const [formData, setFormData] = useState(initialValue);
+
+## Display the initial values
 
 // and now what we will do is we want to display the name first
 // so, if we want to display the name, so what i will do is im going to use this as {formData.name}
@@ -131,6 +135,8 @@ const [formData, setFormData] = useState(initialValue);
 // but lets give this name an empty string we dont want it.
 // and now if i refresh again, then we will not see anything here.
 // now that what i want is that as soon as i type somthing here on the screen, im not able to see anything here
+
+# Controlled Component
 
 // controlled components
 // so thats where what we have to do is we have to add a onChange because this is called a 'controlled components'
