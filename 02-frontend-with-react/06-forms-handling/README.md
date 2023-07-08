@@ -194,9 +194,6 @@ const [formData, setFormData] = useState(initialValue);
      />
 
 
-
-
-
 // and what i want is whenever i fill in my form and then i submit my form i need to have the values.
 // so, in order to print the values, what i will do is im gonna simply have a paragraph tag here below the submit button
 // and then im gonna have here a JSON.stringify and im gonna print the formData.
