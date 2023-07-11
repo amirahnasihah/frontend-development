@@ -192,7 +192,6 @@ const [formData, setFormData] = useState(initialValue);
          setFormData({ ...formData, password: e.target.value });
        }}
      />
-dsdas
 
 // and what i want is whenever i fill in my form and then i submit my form i need to have the values.
 // so, in order to print the values, what i will do is im gonna simply have a paragraph tag here below the submit button
