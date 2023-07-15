@@ -35,7 +35,6 @@
     - [What is missing for our solution 1?](#what-is-missing-for-our-solution-1)
     - [Techniques that we used](#techniques-that-we-used-2)
 
-
 # Assignment 3 - String Algorithms
 
 General Notes:
