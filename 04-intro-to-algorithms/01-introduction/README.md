@@ -25,6 +25,8 @@
     - [Simple JavaScript Recursive Function Example](#simple-javascript-recursive-function-example-1)
     - [Simple JavaScript Recursive Function Example](#simple-javascript-recursive-function-example-2)
     - [Simple JavaScript Recursive Function Example](#simple-javascript-recursive-function-example-3)
+- [FEEDBACK](#feedback)
+  - [exercise-2.js](#exercise-2js)
 
 # Assignment 1 - Brute Force and Recursion
 
@@ -264,3 +266,29 @@ The count down will stop when the next number is zero.
 we can add an if condition to check this condition.
 
 **The smallest example of the same task has ==a non-recursive solution== (==fromNumber = 0 is the non-recursive solution this time==).
+
+# FEEDBACK
+
+Your code for Task 1 looks excellent and handles the given task perfectly.
+
+For Task 2, your code is functioning correctly for positive input numbers. However, it is **important to consider how your code handles negative input numbers**. Currently, **the loop will not stop if a negative number is provided, which is not ideal**. **To address negative input numbers, you could add a check at the start of your function** to return an error message or throw an exception if the input is negative. This will make your function more robust and prevent unexpected errors from occurring. 
+
+## exercise-2.js
+
+To handle negative input numbers in the factorial function, you can add a check at the beginning of the function and throw an error if the input is negative. Here's an updated version of the code that includes this check:
+
+```javascript
+const factorial = (input) => {
+  if (input < 0) {
+    throw new Error("Input must be a non-negative number.");
+  }
+
+  if (input === 0 || input === 1) {
+    return 1;
+  }
+
+  return input * factorial(input - 1);
+};
+```
+
+With this modification, if a negative number is passed to the `factorial` function, it will throw an error with the message "Input must be a non-negative number." This helps ensure that the function is used correctly and avoids infinite recursion in the case of negative input.

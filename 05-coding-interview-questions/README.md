@@ -1,1 +1,4 @@
-# Coding Interview Preparations
+# Coding Interview Practice Questions (JavaScript)
+
+## Module Introduction
+
