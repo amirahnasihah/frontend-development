@@ -102,6 +102,14 @@ Brute Force Algorithms are straightforward methods of solving a problem that ==r
 
 A brute force algorithm ==solves a problem through exhaustion==: it goes through all possible choices until a solution is found. The time complexity of a brute force algorithm is often proportional to the input size. Brute force algorithms are simple and consistent, but very slow.
 
+**further explaination:**
+
+A brute force algorithm is a way to solve a problem by trying out all the possible options until we find the correct solution. It's like trying every combination until we get the right one.
+
+The time complexity of a brute force algorithm depends on how much data we have to deal with. If we have a lot of data, it will take a long time to go through all the possibilities.
+
+Brute force algorithms are easy to understand and always give the right answer, but they can be really slow because they have to check every option one by one. So, while they are straightforward, they might not be the best choice for big problems where speed is important.
+
 ### Brute Force Algorithm Example 1
 
 For example, imagine you have a small padlock with 3 digits, each from 0-9. You forgot your combination, but you don't want to buy another padlock.
