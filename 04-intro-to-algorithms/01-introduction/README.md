@@ -92,6 +92,8 @@ for (i of inputArray) {
 console.log(tempMaxNumber);
 ```
 
+> both "undefined" and "null" represent the lack of a meaningful value, but "undefined" often occurs when something was expected to have a value, but it was never assigned or doesn't exist, while "null" is used when you want to explicitly say that a variable has no value or is empty.
+
 ## Common Algorithm Type 1 - Brute Force
 
 ### What is Brute force algorithm?
