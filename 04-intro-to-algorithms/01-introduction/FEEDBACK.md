@@ -40,6 +40,7 @@ Factorials are often used in mathematics and computer science to solve problems 
 
 In programming, calculating factorials can be done using loops or recursive functions. By repeatedly multiplying the number by the preceding whole numbers until reaching 1, you can find the factorial value.
 
-` title URL link_text
-code_snippet
-```
+todo
+laravel
+crud laravel
+gulp
