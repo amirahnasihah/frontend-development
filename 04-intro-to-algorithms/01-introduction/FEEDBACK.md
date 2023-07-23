@@ -42,7 +42,7 @@ In programming, calculating factorials can be done using loops or recursive func
 
 todo:
 need to read algo and iv q talentlabs
-prep email k dev talentlabs
+prep email k dev talentlabs - ask k dev, web dev
 php
 laravel
 crud laravel
