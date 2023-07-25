@@ -39,11 +39,3 @@ Similarly, the factorial of 4 (4!) is:
 Factorials are often used in mathematics and computer science to solve problems involving permutations, combinations, and counting arrangements. They can be useful in various algorithms and calculations.
 
 In programming, calculating factorials can be done using loops or recursive functions. By repeatedly multiplying the number by the preceding whole numbers until reaching 1, you can find the factorial value.
-
-todo:
-need to read algo and iv q talentlabs
-prep email k dev talentlabs - ask k dev, web dev
-php
-laravel
-crud laravel
-gulp
