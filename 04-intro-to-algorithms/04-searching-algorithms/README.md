@@ -112,6 +112,35 @@ const linearSearch = (arr, target) => {
 }
 ```
 
+To iterate across the array from left to right searching for a target element.
+
+Pseudocode example #1:
+
+```
+Repeat, starting at the first element:
+    If the element is the target element, stop
+    Else, move to the next element
+```
+
+Pseudocode example #2:
+
+```
+For i from 0 to n–1
+    If i'th element is target_element
+        Return true
+Return false
+```
+
+JavaScript example:
+
+```javascript
+linearSearch = (arr, target) => {
+    for (let i = 0; i < arr.length; i++)
+        if (arr[i] === target) return true;
+    return false;
+}
+```
+
 ## Searching Algorithm 2 - Binary Search
 
 ### Is there a faster way of searching?
