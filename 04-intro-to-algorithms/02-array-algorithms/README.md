@@ -540,6 +540,8 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Part 2 - Loop Thru in a Nested Loop (important part)
 
+
+
 Then we need to create a nested loop to go thru each of the elements again.
 
 ```javascript
@@ -679,3 +681,82 @@ if i is 2 now, then j + 1 = 3.
 ### Techniques that we used
 
 1. Nested Loops
+
+[example question](https://medium.com/tech-interview-collection/solving-thetwo-product-problem-in-js-using-brute-force-hashing-and-binary-search-patterns-with-2335cccf0d8):
+
+> Given a list of numbers, find two numbers that sum up to a given target and return the product of these numbers.
+
+Some things to consider before solving this problem:
+
+1. The given list is unsorted
+2. There are no duplicates of numbers
+3. Each input should return exactly one solution
+
+```
+Sample input: 
+list = [1721, 979, 366, 299, 756, 1456]
+target = 2020
+
+Sample output: 
+514579
+
+Explanation: 2020 - 1721 = 299; 1721 * 299 = 514579
+```
+
+**Solution Using Brute Force Pattern**
+
+Pseudocode:
+
+```
+Repeat, starting at first element
+```
+
+```javascript
+function twoProducts(list, target) {
+  let product = 0;
+
+  for (let i = 0; i < list.length; i++) {
+    for (let j = i+1; j < list.length; j++) {
+      if ( (list[i] + list[j]) === target ) {
+        product = list[i] * list[j];
+      }
+    }
+  }
+  console.log(product);
+}
+
+twoProducts([2, 4, 1, 8, 9], 2);
+```
+
+**Time Complexity Explanation for the Brute Force solution**
+
+This is the most basic and easiest way of solving this problem and probably the first approach that comes to mind when attempting a problem. From the solution above, the list is traversed the first time to get the first number and a second time to get the second number. These two iterations would continue until the two possible numbers are found in the list. Worst case is if the two numbers don’t exist in the list, or if the list contains only one of the two numbers, or if you’re given a list that contains 1 billion different numbers and the first number is at say position 0, and the second number is at the 1 billionth position. Brute force might be useful for solving problems with very small input e.g. a list of two items, but definitely not a way to go when dealing with large datasets or when considering scalability.
+
+```
+Analysis of the above solution:
+The first iteration occurs in O(n)
+The second iteration occurs in O(n)
+Total time complexity = O(n^2)
+Because these two iterations are nested in each other, the total time taken would be O(n) * O(n) = O(n^2), which is quadratic time.
+```
+
+**Solution Using Binary Search**
+
+
+```javascript
+function twoProducts(list, target) {
+  let product = [];
+  let sortedData = list.sort((a, b) => a-b);
+
+  for (let i in sortedData) {
+    let num2 = target - sortedData[i];
+
+    if (binarySearch(sortedData, num2)) {
+      product.push(binarySearch(sortedData, num2))
+    }
+  }
+  console.log(product.reduce((a, b) => a * b))
+}
+
+twoProducts([2, 4, 1, 8, 9], 2);
+```
