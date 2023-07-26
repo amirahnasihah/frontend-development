@@ -71,6 +71,19 @@ Agenda:
   - Go through the numbers in the array one by one, if the number is bigger than tempMaxNumber, then update tempMaxNumber to that number.
   - After going through the whole array, tempMaxNumber is the biggest number in the array.
 
+Pseudocode example:
+
+```
+Create a variable "tempMaxNumber" and set it to negative infinity
+
+For each number "num" in the array:
+    If "num" is greater than "tempMaxNumber":
+        Set "tempMaxNumber" to "num"
+
+After going through the whole array:
+    "tempMaxNumber" is the biggest number in the array
+```
+
 ### Algorithm Example Illustration
 
 Input Array: [5, 3, 7, 2, 5, 9, 0, 3]
