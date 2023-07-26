@@ -13,3 +13,4 @@ for (i of inputArray) {
 }
 
 console.log(tempMaxNumber);
+// 9
