@@ -157,6 +157,24 @@ So you set all the numbers back to 0 and try them one by one:
 
 ### Brute Force Algorithm Example 2
 
+```javascript
+// Brute Force Algorithm to check if a particular letter exists in the array
+function letterExistsInArray(arr, targetLetter) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === targetLetter) {
+      return true; // If there is a match, return true
+    }
+  }
+  return false; // If there are no matches, return false
+}
+
+// Example usage
+const letters = ['a', 'b', 'c', 'd', 'e'];
+const target = 'c';
+const exists = letterExistsInArray(letters, target);
+console.log(exists); // Output: true
+```
+
 **Assignment Question 1**
 
 ```markdown
