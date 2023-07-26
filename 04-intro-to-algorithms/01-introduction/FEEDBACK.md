@@ -96,3 +96,17 @@ d
 The traditional `for` loop with an index is more flexible as it allows you to access both the elements and their corresponding indices in the array. It can be useful when you need to perform operations based on the index, such as modifying elements, filtering, or searching based on the element's position.
 
 In summary, use `for (i of inputArray)` when you only need to access the elements, and use `for (let i = 0; i < arr.length; i++)` when you need to work with both the elements and their indices.
+
+**Acronym LSIP**
+
+```javascript
+const array = [10, 20, 30, 40, 50];
+
+// L: Loop initialization - Initialize the index variable (i) to 0
+// S: Loop condition - Continue as long as the index (i) is less than the array length
+// I: Index-based access - Access elements using the index (i) and print them
+// P: Loop post-processing - Increment the index (i) after each iteration
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+```
