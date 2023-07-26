@@ -12,4 +12,4 @@ for (i of inputArray) {
 	}
 }
 
-console.log(tempMaxNumber)
+console.log(tempMaxNumber);
