@@ -1,9 +1,9 @@
 inputArray = [5, 3, 7, 2, 5, 9, 0, 3];
 
-tempMaxNumber = null;
+tempMaxNumber = 2;
 
 for (i of inputArray) {
-	if (tempMaxNumber === null) {
+	if (tempMaxNumber === 2) {
 		tempMaxNumber = i;
 	} else {
 		if (i > tempMaxNumber) {
