@@ -39,3 +39,58 @@ Similarly, the factorial of 4 (4!) is:
 Factorials are often used in mathematics and computer science to solve problems involving permutations, combinations, and counting arrangements. They can be useful in various algorithms and calculations.
 
 In programming, calculating factorials can be done using loops or recursive functions. By repeatedly multiplying the number by the preceding whole numbers until reaching 1, you can find the factorial value.
+
+# Code Explaination
+
+Both `for (i of inputArray)` and `for (let i = 0; i < arr.length; i++)` are used to iterate over the elements of an array, but they have different ways of accessing the elements and use cases.
+
+1. `for (i of inputArray)`:
+
+This is a `for...of` loop in JavaScript. It directly iterates over the elements of the `inputArray`, without the need for an index variable. In each iteration, the variable `i` will hold the value of the current element in the array.
+
+Example:
+
+```javascript
+const inputArray = [1, 2, 3, 4, 5];
+
+for (const element of inputArray) {
+  console.log(element);
+}
+```
+
+Output:
+```
+1
+2
+3
+4
+5
+```
+
+The `for...of` loop is typically used when you only need to access the elements of an array without caring about the index. It simplifies the syntax and makes the code cleaner.
+
+2. `for (let i = 0; i < arr.length; i++)`:
+
+This is a traditional `for` loop with an index variable `i`. It starts with `i = 0` and increments `i` until it reaches the length of the array `arr.length - 1`. In each iteration, you can access the element at index `i` using `arr[i]`.
+
+Example:
+
+```javascript
+const arr = ['a', 'b', 'c', 'd'];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+```
+
+Output:
+```
+a
+b
+c
+d
+```
+
+The traditional `for` loop with an index is more flexible as it allows you to access both the elements and their corresponding indices in the array. It can be useful when you need to perform operations based on the index, such as modifying elements, filtering, or searching based on the element's position.
+
+In summary, use `for (i of inputArray)` when you only need to access the elements, and use `for (let i = 0; i < arr.length; i++)` when you need to work with both the elements and their indices.
