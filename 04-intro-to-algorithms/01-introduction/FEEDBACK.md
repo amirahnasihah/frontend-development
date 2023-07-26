@@ -42,6 +42,8 @@ In programming, calculating factorials can be done using loops or recursive func
 
 # Code Explaination
 
+## for...of vs for loop with index
+
 Both `for (i of inputArray)` and `for (let i = 0; i < arr.length; i++)` are used to iterate over the elements of an array, but they have different ways of accessing the elements and use cases.
 
 1. `for (i of inputArray)`:
