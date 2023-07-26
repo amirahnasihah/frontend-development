@@ -110,3 +110,47 @@ for (let i = 0; i < array.length; i++) {
   console.log(array[i]);
 }
 ```
+
+## for...of in a function
+
+If you put the code in a function, you can encapsulate the logic for finding the maximum number in the `inputArray`, making it reusable and organized. Here's how you can convert the code into a function:
+
+```javascript
+function findMaxNumber(inputArray) {
+  let tempMaxNumber = 0;
+
+  for (const i of inputArray) {
+    if (tempMaxNumber === 0) {
+      tempMaxNumber = i;
+    } else {
+      if (i > tempMaxNumber) {
+        tempMaxNumber = i;
+      }
+    }
+  }
+
+  return tempMaxNumber;
+}
+
+const inputArray = [5, 3, 7, 2, 5, 9, 0, 3];
+const maxNumber = findMaxNumber(inputArray);
+console.log(maxNumber);
+```
+
+Explanation:
+
+1. We define a function named `findMaxNumber` that takes an `inputArray` as its parameter.
+
+2. Inside the function, we initialize a variable `tempMaxNumber` with `0`, which will be used to store the maximum number found in the array.
+
+3. We use a `for...of` loop to iterate through each element of the `inputArray`.
+
+4. Inside the loop, we check if `tempMaxNumber` is equal to `0`. If it is `0`, we set `tempMaxNumber` to the current element `i`, assuming it is the maximum so far.
+
+5. On subsequent iterations, we compare each element `i` with the current `tempMaxNumber`. If `i` is greater than `tempMaxNumber`, we update `tempMaxNumber` with the value of `i`.
+
+6. After the loop finishes iterating through the entire `inputArray`, the function returns the maximum number found, stored in `tempMaxNumber`.
+
+7. We call the `findMaxNumber` function with the `inputArray` and store the result in the `maxNumber` variable. Finally, we print the result to the console using `console.log(maxNumber)`.
+
+With the code encapsulated in a function, you can easily reuse it for different arrays, making your code more modular and maintainable.
