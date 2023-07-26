@@ -76,9 +76,9 @@ Pseudocode example:
 ```
 Create a variable "tempMaxNumber" and set it to negative infinity
 
-For each number "num" in the array:
-    If "num" is greater than "tempMaxNumber":
-        Set "tempMaxNumber" to "num"
+For each number "element" in the array:
+    If "element" is greater than "tempMaxNumber":
+        Set "tempMaxNumber" to "element"
 
 After going through the whole array:
     "tempMaxNumber" is the biggest number in the array
