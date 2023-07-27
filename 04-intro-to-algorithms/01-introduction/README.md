@@ -109,6 +109,30 @@ for (i of inputArray) {
 console.log(tempMaxNumber);
 ```
 
+in a function:
+
+```javascript
+function findMaxNumber(inputArray) {
+  let tempMaxNumber = 0;
+
+  for (const i of inputArray) {
+    if (tempMaxNumber === 0) {
+      tempMaxNumber = i;
+    } else {
+      if (i > tempMaxNumber) {
+        tempMaxNumber = i;
+      }
+    }
+  }
+
+  return tempMaxNumber;
+}
+
+const inputArray = [5, 3, 7, 2, 5, 9, 0, 3];
+const maxNumber = findMaxNumber(inputArray);
+console.log(maxNumber);
+```
+
 > both "undefined" and "null" represent the lack of a meaningful value, but "undefined" often occurs when something was expected to have a value, but it was never assigned or doesn't exist, while "null" is used when you want to explicitly say that a variable has no value or is empty.
 
 If you change `null` to a number like `4` in the `tempMaxNumber` initialization, it will affect how the code finds the maximum number in the `inputArray`.
