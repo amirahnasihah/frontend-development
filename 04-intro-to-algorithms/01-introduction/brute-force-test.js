@@ -10,3 +10,4 @@ return false
 inputArray=["a", "b", "f", "u", "i", "k", "p", "e", "v", "k", "s"]
 targetLetter = "x"
 console.log(A(inputArray, targetLetter))
+// false
