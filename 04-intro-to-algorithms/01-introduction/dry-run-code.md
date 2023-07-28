@@ -103,3 +103,29 @@ Here's a step-by-step evaluation of the code with the provided `inputArray`:
 4. `console.log(tempMaxNumber)` will print `9`, which is the maximum number in the `inputArray`.
 
 The use of `null` as the initial value for `tempMaxNumber` is a common technique to handle the initial case and ensure that the loop functions correctly. The `else` block allows the code to update `tempMaxNumber` only if the current element `i` is greater than the current `tempMaxNumber`. Otherwise, it leaves `tempMaxNumber` unchanged. This way, `tempMaxNumber` always holds the maximum value encountered so far in the loop.
+
+## explaination
+
+```ma
+is it like this
+
+Loop starts:
+
+if:
+i = 5, tempMaxNumber = null, so tempMaxNumber is updated to 5.
+
+in if statement, this is true. since its true we skip the else block and
+
+then loop again, in if block the tempMaxNumber = 5, and not equal to null, so tempMaxNumber remains 5. and it is false.
+
+so go to next else block and in if statement i = 3, 
+
+else:
+i = 3, tempMaxNumber = 5, i is not greater than tempMaxNumber, so tempMaxNumber remains 5.
+i = 7, tempMaxNumber = 5, 7 is greater than 5, so tempMaxNumber is updated to 7.
+i = 2, tempMaxNumber = 7, 2 is not greater than 7, so tempMaxNumber remains 7.
+i = 5, tempMaxNumber = 7, 5 is not greater than 7, so tempMaxNumber remains 7.
+i = 9, tempMaxNumber = 7, 9 is greater than 7, so tempMaxNumber is updated to 9.
+i = 0, tempMaxNumber = 9, 0 is not greater than 9, so tempMaxNumber remains 9.
+i = 3, tempMaxNumber = 9, 3 is not greater than 9, so tempMaxNumber remains 9.
+```
