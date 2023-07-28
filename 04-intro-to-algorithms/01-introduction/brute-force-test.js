@@ -7,6 +7,6 @@ function A (inputArray, targetLetter) {
 return false
 }
 
-inputArray=["a", "b", "f", "u", "i", "k", p, e, v, k, s]
+inputArray=["a", "b", "f", "u", "i", "k", "p", "e", "v", "k", "s"]
 targetLetter = "p"
 console.log(A(inputArray, targetLetter))
