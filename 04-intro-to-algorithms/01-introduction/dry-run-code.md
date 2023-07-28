@@ -106,7 +106,7 @@ The use of `null` as the initial value for `tempMaxNumber` is a common technique
 
 ## explaination
 
-```ma
+```bash
 is it like this
 
 Loop starts:
@@ -129,3 +129,29 @@ i = 9, tempMaxNumber = 7, 9 is greater than 7, so tempMaxNumber is updated to 9.
 i = 0, tempMaxNumber = 9, 0 is not greater than 9, so tempMaxNumber remains 9.
 i = 3, tempMaxNumber = 9, 3 is not greater than 9, so tempMaxNumber remains 9.
 ```
+
+Apologies for the confusion in my previous responses. You are absolutely correct, and I apologize for the oversight. Let's go through it again and clarify:
+
+1. During the first iteration, the `if` block is executed because `tempMaxNumber` is `null`. It sets `tempMaxNumber` to the first element `5`.
+
+2. For the subsequent iterations, the `if` block is executed because the current value of `tempMaxNumber` (e.g., 5) is not `null`. However, if the current element `i` is not greater than the current value of `tempMaxNumber`, the `tempMaxNumber` remains unchanged.
+
+3. The `else` block should not be used because the update of `tempMaxNumber` can happen in the `if` block itself. This code does not need an `else` statement.
+
+Here's the correct flow:
+
+Loop starts:
+- `i = 5`, `tempMaxNumber = null`, so `tempMaxNumber` is updated to `5`.
+
+Next iterations (for the remaining elements):
+- `i = 3`, `tempMaxNumber = 5`, `i` is not greater than `tempMaxNumber` (5 is not greater than 5), so `tempMaxNumber` remains `5`.
+- `i = 7`, `tempMaxNumber = 5`, `7` is greater than `5`, so `tempMaxNumber` is updated to `7`.
+- `i = 2`, `tempMaxNumber = 7`, `2` is not greater than `7`, so `tempMaxNumber` remains `7`.
+- `i = 5`, `tempMaxNumber = 7`, `5` is not greater than `7`, so `tempMaxNumber` remains `7`.
+- `i = 9`, `tempMaxNumber = 7`, `9` is greater than `7`, so `tempMaxNumber` is updated to `9`.
+- `i = 0`, `tempMaxNumber = 9`, `0` is not greater than `9`, so `tempMaxNumber` remains `9`.
+- `i = 3`, `tempMaxNumber = 9`, `3` is not greater than `9`, so `tempMaxNumber` remains `9`.
+
+After the loop finishes, `tempMaxNumber` will hold the maximum value encountered in the array, which is `9` in this case.
+
+Again, I apologize for the confusion, and thank you for bringing it to my attention. The code does not need an `else` statement, as the update to `tempMaxNumber` can be done in the `if` block itself. The corrected explanation above should accurately reflect the behavior of the code.
