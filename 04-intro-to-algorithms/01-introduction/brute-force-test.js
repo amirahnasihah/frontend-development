@@ -2,12 +2,12 @@ inputArray = [5, 3, 7, 2, 5, 9, 0, 3];
 
 tempMaxNumber = 0;
 
-for (i of inputArray) {
+for (let i = 0; i < inputArray.length; i++) {
 	if (tempMaxNumber === 0) {
-		tempMaxNumber = i;
+		tempMaxNumber = inputArray[i];
 	} else {
-		if (i > tempMaxNumber) {
-			tempMaxNumber = i;
+		if (inputArray[i] > tempMaxNumber) {
+			tempMaxNumber = inputArray[i];
 		}
 	}
 }
