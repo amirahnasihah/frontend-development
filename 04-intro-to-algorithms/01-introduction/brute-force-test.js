@@ -1,13 +1,8 @@
-function A (inputArray, targetLetter) {
-   for (let i = 0; i < inputArray.length; i++) {
-       if (inputArray[i] === targetLetter) {
-         return true;
-      }
-   }
-return false
-}
+const colors = ['red', 'blue', 'green'];
+const fruits = ['apple', 'banana', 'orange'];
 
-inputArray=["a", "b", "f", "u", "i", "k", "p", "e", "v", "k", "s"]
-targetLetter = "x"
-console.log(A(inputArray, targetLetter))
-// false
+for (let i = 0; i < colors.length; i++) {
+  for (let j = 0; j < fruits.length; j++) {
+    console.log(colors[i] + ' ' + fruits[j]);
+  }
+}
