@@ -200,3 +200,33 @@ green orange
 ```
 
 That's the basic idea of nested loops. It's like a loop inside a loop, allowing you to perform repetitive tasks in a structured way. As a beginner, practicing nested loops will help you get comfortable with loops and their use cases in JavaScript.
+
+**my understanding**
+
+```txf
+im practicing how this works based on my understanding
+
+since there are 2 arrays, will use nested loop.
+outer loop; starting element at first index (red), for each element of the colors array, continue to interate until colors length (3).
+inner loop; starting element at first index (apple),  for each element of fruits array, continue to iterate until fruits length.
+then iterate next element of colors array (i++)
+
+basically:
+outer loop start at red (i = 0, which is the colors array);
+
+then entering inner loop that start at apple (j = 0); and continue iterate until fruits length (current element now at 1 out of 3). output: red apple; then go to next element (from 0 to 1, banana). 
+
+again go back to outer loop, start at red (i = 0, which is the colors array);
+
+then we start at inner loop now at banana (j = 1); continue iterate until fruits length (current element now at 2 out of 3). output: red banana; then go to next element j++ (from 1 to 2, orange). 
+
+again go back to outer loop, start at red (i = 0, which is the colors array);
+
+then we start at inner loop now at orange (j = 2); continue iterate until fruits length (current element now at 3 out of 3). output: red orange; then cannot go to next element (end of array).
+
+then go back in outer loop, continue iterate to next element i++ (from 0 to 1, blue). 
+
+outer loop, now current element of colors start at blue (i = 1, which is the colors array);
+
+then entering inner loop that start at apple (j = 0); and continue iterate until fruits length (current element now at 1 out of 3). output: blue apple; then go to next element (from 0 to 1, banana). 
+```
