@@ -155,3 +155,48 @@ Next iterations (for the remaining elements):
 After the loop finishes, `tempMaxNumber` will hold the maximum value encountered in the array, which is `9` in this case.
 
 Again, I apologize for the confusion, and thank you for bringing it to my attention. The code does not need an `else` statement, as the update to `tempMaxNumber` can be done in the `if` block itself. The corrected explanation above should accurately reflect the behavior of the code.
+
+# Nested Loop (easy explain)
+
+Sure! Nested loops in JavaScript are loops that are placed inside another loop. Let's break it down step by step:
+
+1. A loop: A loop is a way to repeat a block of code multiple times. It helps you avoid writing the same code again and again.
+
+2. Nested loop: When you put one loop inside another loop, it becomes a nested loop. The inner loop runs completely for each iteration of the outer loop.
+
+3. Simple example: Let's say you have two lists, one with colors and the other with fruits. You want to print all possible combinations of colors and fruits.
+
+4. Outer loop: The outer loop will go through each color in the colors list.
+
+5. Inner loop: The inner loop will go through each fruit in the fruits list.
+
+6. Combination: For each color, the inner loop will print all the fruits one by one.
+
+Here's an example code:
+
+```javascript
+const colors = ['red', 'blue', 'green'];
+const fruits = ['apple', 'banana', 'orange'];
+
+for (let i = 0; i < colors.length; i++) {
+  for (let j = 0; j < fruits.length; j++) {
+    console.log(colors[i] + ' ' + fruits[j]);
+  }
+}
+```
+
+Output:
+
+```
+red apple
+red banana
+red orange
+blue apple
+blue banana
+blue orange
+green apple
+green banana
+green orange
+```
+
+That's the basic idea of nested loops. It's like a loop inside a loop, allowing you to perform repetitive tasks in a structured way. As a beginner, practicing nested loops will help you get comfortable with loops and their use cases in JavaScript.
