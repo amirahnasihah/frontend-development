@@ -112,4 +112,3 @@ function maxConsecutiveSum(nums) {
 }
 ```
 
-gyyj
