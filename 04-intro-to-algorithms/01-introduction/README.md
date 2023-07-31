@@ -240,6 +240,21 @@ The smallest example of the same task has a non-recursive solution.
 
 Factorial(5) ← return 5 * Factorial(4) = 120 ← return 4 * Factorial(3) = 24 ← return 3 * Factorial(2) = 6 ← return 2 * Factorial(1) = 2 ← 1
 
+
+Example; to calculate the factorial of 5, you multiply all the positive whole numbers from 1 to 5 together:
+
+5! = 5 x 4 x 3 x 2 x 1 = 120
+
+Let's break it down step by step:
+
+1. 5! = 5 x 4 x 3 x 2 x 1
+2. 5! = 20 x 3 x 2 x 1 (5 x 4 = 20)
+3. 5! = 60 x 2 x 1 (20 x 3 = 60)
+4. 5! = 120 x 1 (60 x 2 = 120)
+5. 5! = 120 (120 x 1 = 120)
+
+So, the factorial of 5 is equal to 120.
+
 ### JavaScript Recursive Function Exercise
 
 The factorial function
