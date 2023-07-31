@@ -391,7 +391,7 @@ With this modification, if a negative number is passed to the `factorial` functi
 
 Factorial is a mathematical concept that represents the product of a number and all the positive integers below it. In simpler terms, it is the result of multiplying a number by all the smaller whole numbers until you reach 1.
 
-For example, the factorial of 5 (written as 5!) is calculated as:
+For example, the factorial of 5 (written as 5!). It means we need to multiply all the positive whole numbers from 1 to 5 together:
 
 `5! = 5 x 4 x 3 x 2 x 1 = 120`
 
