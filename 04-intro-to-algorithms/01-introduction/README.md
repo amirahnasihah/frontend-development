@@ -26,9 +26,11 @@
     - [Simple JavaScript Recursive Function Example](#simple-javascript-recursive-function-example-2)
     - [Simple JavaScript Recursive Function Example](#simple-javascript-recursive-function-example-3)
 - [Feedback](#feedback)
-  - [exercise-1.js](#exercise-1js)
   - [exercise-2.js](#exercise-2js)
-  - [What is factorial?](#what-is-factorial)
+- [What is factorial?](#what-is-factorial)
+- [Code Explaination](#code-explaination)
+  - [for...of vs for loop with index](#forof-vs-for-loop-with-index)
+  - [for...of in a function](#forof-in-a-function)
 
 # Assignment 1 - Brute Force and Recursion
 
@@ -361,61 +363,155 @@ we can add an if condition to check this condition.
 
 Your code for Task 1 looks excellent and handles the given task perfectly.
 
-For Task 2, your code is functioning correctly for positive input numbers. However, it is **important to consider how your code handles negative input numbers**. Currently, **the loop will not stop if a negative number is provided, which is not ideal**. **To address negative input numbers, you could add a check at the start of your function** to return an error message or throw an exception if the input is negative. This will make your function more robust and prevent unexpected errors from occurring.
-
-## exercise-1.js
-
-```javascript
-// Task: complete the function that takes in an input array and a search target
-// If the target exists in inputArray, then the function should return true
-// If the target does not exist in inputArray, then the function should return false
-
-const find = (inputArray, target) => {
-  for (let i = 0; i < inputArray.length; i++) {
-    if (inputArray[i] === target) {
-      return true;
-    }
-  }
-  return false;
-};
-```
+For Task 2, your code is functioning correctly for positive input numbers. However, it is **important to consider how your code handles negative input numbers**. Currently, **the loop will not stop if a negative number is provided, which is not ideal**. **To address negative input numbers, you could add a check at the start of your function** to return an error message or throw an exception if the input is negative. This will make your function more robust and prevent unexpected errors from occurring. 
 
 ## exercise-2.js
 
 To handle negative input numbers in the factorial function, you can add a check at the beginning of the function and throw an error if the input is negative. Here's an updated version of the code that includes this check:
 
 ```javascript
-// Task: complete the function that takes in a number and return the value of its factorial
-// Factorial of 5 = 5! = 5 * 4 * 3 * 2 * 1 = 120
-// Note that 0! = 1, and 1! = 1
-
 const factorial = (input) => {
   if (input < 0) {
     throw new Error("Input must be a non-negative number.");
   }
+
   if (input === 0 || input === 1) {
     return 1;
   }
+
   return input * factorial(input - 1);
 };
 ```
 
 With this modification, if a negative number is passed to the `factorial` function, it will throw an error with the message "Input must be a non-negative number." This helps ensure that the function is used correctly and avoids infinite recursion in the case of negative input.
 
-## What is factorial?
+# What is factorial?
 
 Factorial is a mathematical concept that represents the product of a number and all the positive integers below it. In simpler terms, it is the result of multiplying a number by all the smaller whole numbers until you reach 1.
 
-For example, the factorial of 5 (written as 5!). It means we need to multiply all the positive whole numbers from 1 to 5 together:
+For example, the factorial of 5 (written as 5!) is calculated as:
 
 `5! = 5 x 4 x 3 x 2 x 1 = 120`
 
-Similarly, if we want to find the factorial of any other non-negative integer, we just multiply all the positive whole numbers starting from 1 up to that integer.
-
-The factorial of 4 (4!) is:
+Similarly, the factorial of 4 (4!) is:
 
 `4! = 4 x 3 x 2 x 1 = 24`
 
 Factorials are often used in mathematics and computer science to solve problems involving permutations, combinations, and counting arrangements. They can be useful in various algorithms and calculations.
 
 In programming, calculating factorials can be done using loops or recursive functions. By repeatedly multiplying the number by the preceding whole numbers until reaching 1, you can find the factorial value.
+
+# Code Explaination
+
+## for...of vs for loop with index
+
+Both `for (i of inputArray)` and `for (let i = 0; i < arr.length; i++)` are used to iterate over the elements of an array, but they have different ways of accessing the elements and use cases.
+
+1. `for (i of inputArray)`:
+
+This is a `for...of` loop in JavaScript. It directly iterates over the elements of the `inputArray`, without the need for an index variable. In each iteration, the variable `i` will hold the value of the current element in the array.
+
+Example:
+
+```javascript
+const inputArray = [1, 2, 3, 4, 5];
+
+for (const element of inputArray) {
+  console.log(element);
+}
+```
+
+Output:
+```
+1
+2
+3
+4
+5
+```
+
+The `for...of` loop is typically used when you only need to access the elements of an array without caring about the index. It simplifies the syntax and makes the code cleaner.
+
+2. `for (let i = 0; i < arr.length; i++)`:
+
+This is a traditional `for` loop with an index variable `i`. It starts with `i = 0` and increments `i` until it reaches the length of the array `arr.length - 1`. In each iteration, you can access the element at index `i` using `arr[i]`.
+
+Example:
+
+```javascript
+const arr = ['a', 'b', 'c', 'd'];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+```
+
+Output:
+```
+a
+b
+c
+d
+```
+
+The traditional `for` loop with an index is more flexible as it allows you to access both the elements and their corresponding indices in the array. It can be useful when you need to perform operations based on the index, such as modifying elements, filtering, or searching based on the element's position.
+
+In summary, use `for (i of inputArray)` when you only need to access the elements, and use `for (let i = 0; i < arr.length; i++)` when you need to work with both the elements and their indices.
+
+**Acronym LSIP**
+
+```javascript
+const array = [10, 20, 30, 40, 50];
+
+// L: Loop initialization - Initialize the index variable (i) to 0
+// S: Loop condition - Continue as long as the index (i) is less than the array length
+// I: Index-based access - Access elements using the index (i) and print them
+// P: Loop post-processing - Increment the index (i) after each iteration
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+```
+
+## for...of in a function
+
+If you put the code in a function, you can encapsulate the logic for finding the maximum number in the `inputArray`, making it reusable and organized. Here's how you can convert the code into a function:
+
+```javascript
+function findMaxNumber(inputArray) {
+  let tempMaxNumber = 0;
+
+  for (const i of inputArray) {
+    if (tempMaxNumber === 0) {
+      tempMaxNumber = i;
+    } else {
+      if (i > tempMaxNumber) {
+        tempMaxNumber = i;
+      }
+    }
+  }
+
+  return tempMaxNumber;
+}
+
+const inputArray = [5, 3, 7, 2, 5, 9, 0, 3];
+const maxNumber = findMaxNumber(inputArray);
+console.log(maxNumber);
+```
+
+Explanation:
+
+1. We define a function named `findMaxNumber` that takes an `inputArray` as its parameter.
+
+2. Inside the function, we initialize a variable `tempMaxNumber` with `0`, which will be used to store the maximum number found in the array.
+
+3. We use a `for...of` loop to iterate through each element of the `inputArray`.
+
+4. Inside the loop, we check if `tempMaxNumber` is equal to `0`. If it is `0`, we set `tempMaxNumber` to the current element `i`, assuming it is the maximum so far.
+
+5. On subsequent iterations, we compare each element `i` with the current `tempMaxNumber`. If `i` is greater than `tempMaxNumber`, we update `tempMaxNumber` with the value of `i`.
+
+6. After the loop finishes iterating through the entire `inputArray`, the function returns the maximum number found, stored in `tempMaxNumber`.
+
+7. We call the `findMaxNumber` function with the `inputArray` and store the result in the `maxNumber` variable. Finally, we print the result to the console using `console.log(maxNumber)`.
+
+With the code encapsulated in a function, you can easily reuse it for different arrays, making your code more modular and maintainable.
