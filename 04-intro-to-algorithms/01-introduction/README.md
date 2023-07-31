@@ -395,7 +395,9 @@ For example, the factorial of 5 (written as 5!). It means we need to multiply al
 
 `5! = 5 x 4 x 3 x 2 x 1 = 120`
 
-Similarly, the factorial of 4 (4!) is:
+Similarly, if we want to find the factorial of any other non-negative integer, we just multiply all the positive whole numbers starting from 1 up to that integer.
+
+The factorial of 4 (4!) is:
 
 `4! = 4 x 3 x 2 x 1 = 24`
 
