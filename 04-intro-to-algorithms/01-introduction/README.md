@@ -120,8 +120,10 @@ Initially, the tempMaxNumber is empty.
 Loop start:
 	with `i` is 5;
 	if (condition where tempMaxNumber is equal to null) {the code is executed here bcs the condition is true, tempMaxNumber === null}
-	 
+	else block is skipped
 
+Loop again:
+	
 ```
 
 **if in a function:**
