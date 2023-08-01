@@ -122,8 +122,12 @@ Loop start:
 	if (the condition where tempMaxNumber is equal to null) {then, code is executed here bcs the condition is true therefore, the tempMaxNumber is now updated to 5};
 	else block is skipped;
 
+Now, the new tempMaxNumber is 5 (first element).
+
 Loop again:
 	with i is 5;
+	if (the condition where tempMaxNumber is equal to null) {then, code is executed here bcs the condition is true therefore, the tempMaxNumber is now updated to 5};
+	else block is skipped;
 	
 ```
 
