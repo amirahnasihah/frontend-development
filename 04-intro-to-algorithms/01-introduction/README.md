@@ -114,12 +114,12 @@ My understanding:
 
 - remember the if...else statement.
 
-```
+```javascript
 Initially, the tempMaxNumber is empty.
 
 Loop start:
 	with `i` is 5;
-	if (condition where tempMaxNumber is equal to null) {the code is executed here bcs the condition is true so, the tempMaxNumber is upd}
+	if (condition where tempMaxNumber is equal to null) {the code is executed here bcs the condition is true so, the tempMaxNumber is updated to 5}
 	else block is skipped
 
 Loop again:
