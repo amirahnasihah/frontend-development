@@ -115,11 +115,12 @@ My understanding:
 - remember the if...else statement.
 
 ```
-Ini, the tempMaxNumber is empty.
+Initially, the tempMaxNumber is empty.
 
 Loop start:
 	with `i` is 5;
-	if (condition) {Code to be executed if the condition is true}
+	if (condition where tempMaxNumber equal to null) {the code is executed if the condition is true}
+	 
 
 ```
 
