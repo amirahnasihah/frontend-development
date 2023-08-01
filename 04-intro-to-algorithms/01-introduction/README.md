@@ -119,14 +119,14 @@ Initially, the tempMaxNumber is empty.
 
 Loop start:
 	with `i` is 5, the first element;
-	if (the condition where tempMaxNumber is equal to null) {then, code is executed here bcs the condition is true therefore, the tempMaxNumber is now updated to 5};
+	if (the condition is tempMaxNumber is set to null) {then, code is executed here bcs the condition is true therefore, the tempMaxNumber is now updated to 5};
 	else block is skipped;
 
 Now, the new tempMaxNumber is 5 (first element).
 
 Loop again:
 	with i is 5;
-	if (the condition where tempMaxNumber is equal to null) {then, code is executed here bcs the condition is true therefore, the tempMaxNumber is now updated to 5};
+	if (the condition is the tempMaxNumber is set to 5) {then, code is executed here bcs the condition is true therefore, the tempMaxNumber is now updated to 5};
 	else block is skipped;
 	
 ```
