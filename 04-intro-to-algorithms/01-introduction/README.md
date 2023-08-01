@@ -126,8 +126,9 @@ Now, the new tempMaxNumber is 5 (first element).
 
 Loop again:
 	with i is 5;
-	if (the condition is the tempMaxNumber is set to 5) {but then, code is NOT executed here bcs the condition is false. therefore, the go to next else ;
-	else block is skipped;
+	if (the condition is the tempMaxNumber is set to 5) {but then, code is NOT executed here bcs the condition is false. therefore, the go to next, the else block;
+	else (inside else, there is another if statement);
+	
 	
 ```
 
