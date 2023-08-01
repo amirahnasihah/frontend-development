@@ -386,7 +386,7 @@ Loop starts:
 - `i = 5`, `tempMaxNumber = null`, so `tempMaxNumber` is updated to `5`.
 
 Next iterations (for the remaining elements):
-- `i = 3`, `tempMaxNumber = 5`, `i` is not greater than `tempMaxNumber` (5 is not greater than 5), so `tempMaxNumber` remains `5`.
+- `i = 3`, `tempMaxNumber = 5`, `i` is not greater than `tempMaxNumber` (3 is not greater than 5), so `tempMaxNumber` remains `5`.
 - `i = 7`, `tempMaxNumber = 5`, `7` is greater than `5`, so `tempMaxNumber` is updated to `7`.
 - `i = 2`, `tempMaxNumber = 7`, `2` is not greater than `7`, so `tempMaxNumber` remains `7`.
 - `i = 5`, `tempMaxNumber = 7`, `5` is not greater than `7`, so `tempMaxNumber` remains `7`.
