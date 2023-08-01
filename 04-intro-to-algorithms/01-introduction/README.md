@@ -118,8 +118,8 @@ My understanding:
 Initially, the tempMaxNumber is empty.
 
 Loop start:
-	with `i` is 5;
-	if (condition where tempMaxNumber is equal to null) {the code is executed here bcs the condition is true so, the tempMaxNumber is updated to 5}
+	with `i` is 5, the first element;
+	if (the condition where tempMaxNumber is equal to null) {then code is executed here bcs the condition is true so, the tempMaxNumber is updated to 5}
 	else block is skipped
 
 Loop again:
