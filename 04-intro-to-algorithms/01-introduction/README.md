@@ -110,6 +110,14 @@ for (i of inputArray) {
 console.log(tempMaxNumber);
 ```
 
+My understanding:
+
+```
+Now, the tempMaxNumber is empty.
+
+remember the 
+```
+
 **if in a function:**
 
 ```javascript
