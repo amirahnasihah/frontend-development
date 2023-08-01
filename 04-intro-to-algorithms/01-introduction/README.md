@@ -112,10 +112,13 @@ console.log(tempMaxNumber);
 
 My understanding:
 
+- remember the if...else statement.
+
 ```
 Now, the tempMaxNumber is empty.
 
-remember the 
+
+
 ```
 
 **if in a function:**
