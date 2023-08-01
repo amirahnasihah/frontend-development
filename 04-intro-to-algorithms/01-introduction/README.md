@@ -119,7 +119,7 @@ Now, the tempMaxNumber is empty.
 
 Loop start:
 	i is 5;
-	if (condition)
+	if (condition) 
 
 ```
 
