@@ -423,4 +423,44 @@ const maxNumber = findMaxNumber(numbers);
 console.log("The maximum number is:", maxNumber); // Output: The maximum number is: 9
 ```
 
+## `if...else` statement
 
+In JavaScript, the "if" statement is used for conditional execution. It allows you to specify a block of code that will be executed if a certain condition is true. Here's the basic syntax:
+
+```javascript
+if (condition) {
+  // Code to be executed if the condition is true
+} else {
+  // Code to be executed if the condition is false (optional)
+}
+```
+
+For example, let's say we want to display a message if a variable `x` is greater than 10:
+
+```javascript
+let x = 15;
+
+if (x > 10) {
+  console.log("x is greater than 10.");
+} else {
+  console.log("x is not greater than 10.");
+}
+```
+
+If `x` is 15, the first block of code will be executed, and the output will be "x is greater than 10." If `x` is 5, the second block of code will be executed, and the output will be "x is not greater than 10."
+
+You can also use "else if" to add more conditions:
+
+```javascript
+let y = 8;
+
+if (y > 10) {
+  console.log("y is greater than 10.");
+} else if (y === 10) {
+  console.log("y is equal to 10.");
+} else {
+  console.log("y is less than 10.");
+}
+```
+
+In this case, if `y` is 8, the last block of code will be executed, and the output will be "y is less than 10."
