@@ -119,11 +119,11 @@ Initially, the tempMaxNumber is empty.
 
 Loop start:
 	with `i` is 5;
-	if (condition where tempMaxNumber is equal to null) {the code is executed here bcs the condition is true, tempMaxNumber === null}
+	if (condition where tempMaxNumber is equal to null) {the code is executed here bcs the condition is true so, the tempMaxNumber is upd}
 	else block is skipped
 
 Loop again:
-	
+	with i is 5
 ```
 
 **if in a function:**
