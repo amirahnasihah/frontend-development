@@ -582,3 +582,5 @@ const factorial = (input) => {
   return input * factorial(input - 1);
 };
 ```
+
+Alter
