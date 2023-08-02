@@ -463,4 +463,30 @@ if (y > 10) {
 }
 ```
 
-In this case, if `y` is 8, the last block of code will be executed, and the output will be "y is less than 10."
+In this case, if `y` is 8, the last block of code will be executed, and the output will be "y is less than 10.
+
+## `throw new Error()`
+
+The `throw new Error` statement is used in JavaScript to create a new Error object and throw an exception. When an error is thrown, it disrupts the normal flow of the program and transfers control to the nearest exception-handling code block (try-catch).
+
+Here's a common use case for `throw new Error`:
+
+```javascript
+function divide(a, b) {
+  if (b === 0) {
+    throw new Error("Division by zero is not allowed.");
+  }
+  return a / b;
+}
+
+try {
+  const result = divide(10, 0);
+  console.log("Result:", result); // This line won't be executed due to the error
+} catch (error) {
+  console.error("Error caught:", error.message); // Output: Error caught: Division by zero is not allowed.
+}
+```
+
+In the example above, the `divide` function checks if the divisor `b` is equal to zero. If it is, it throws a new `Error` object with the message "Division by zero is not allowed." This prevents the division by zero from occurring and raises an exception.
+
+The `try-catch` block is used to handle the exception. If an error occurs within the `try` block, the control is transferred to the corresponding `catch` block, where you can handle the error appropriately. In this case, the error message is logged to the console.
