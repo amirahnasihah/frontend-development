@@ -583,4 +583,31 @@ const factorial = (input) => {
 };
 ```
 
-Alter
+Alternative:
+
+The provided code defines a recursive function `factorial` that calculates the factorial of a given positive integer `input`. The factorial of a non-negative integer n (denoted as n!) is the product of all positive integers from 1 to n.
+
+Here's a breakdown of how the `factorial` function works:
+
+1. The function checks if the `input` is less than 0. If it is, the function returns `NaN`, as factorial is not defined for negative numbers.
+
+2. Next, the function checks if the `input` is equal to 0 or 1. If it is, the function returns 1, as the factorial of 0 and 1 is defined as 1.
+
+3. If the `input` is greater than 1, the function recursively calls itself with the argument `input - 1`. This recursive call calculates the factorial of the previous number and multiplies it by the current `input`, effectively computing the factorial of the original `input`.
+
+For example, if you call `factorial(5)`, it will calculate 5! as follows:
+```
+factorial(5) = 5 * factorial(4)
+            = 5 * (4 * factorial(3))
+            = 5 * (4 * (3 * factorial(2)))
+            = 5 * (4 * (3 * (2 * factorial(1))))
+            = 5 * (4 * (3 * (2 * 1)))
+            = 5 * (4 * (3 * 2))
+            = 5 * (4 * 6)
+            = 5 * 24
+            = 120
+```
+
+So, `factorial(5)` returns 120.
+
+The `factorial` function works recursively to compute the factorial of any positive integer `input`.
