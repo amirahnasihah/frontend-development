@@ -269,7 +269,9 @@ function bruteForceSafeCombination(targetCombination) {
 0,1,1,2
 0,1,9,9
 ...digit1
-0,0
+1,0,0,0
+1,0,0,1
+
 
 In this pseudocode, we use **nested loops** to represent trying all possible combinations of a 4-digit safe. We start with digit1 being 0 and digit4 being 0, and then we increment digit4 until it reaches 9. When digit4 reaches 9, we increment digit3 by 1 and set digit4 to 0 again, and so on.
 
