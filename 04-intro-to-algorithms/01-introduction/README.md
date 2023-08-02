@@ -172,6 +172,22 @@ function bigNum(intArray) {
 }
 ```
 
+Differences:
+
+The main difference in the second function, `findMaxNumber`, is that it initializes `tempMaxNumber` to 0 instead of using the first element of the array as the initial value. This can lead to incorrect results if all the numbers in the array are negative or zero.
+
+Let's consider an example where all elements of the `inputArray` are negative:
+
+```javascript
+const inputArray = [-5, -3, -7, -2, -5, -9];
+const maxNumber = findMaxNumber(inputArray);
+console.log(maxNumber);
+```
+
+In this case, the output will be 0, which is incorrect because it's not the maximum value in the array.
+
+To address this issue, you should initialize `tempMaxNumber` with the first element of the array.
+
 > both "undefined" and "null" represent the lack of a meaningful value, but "undefined" often occurs when something was expected to have a value, but it was never assigned or doesn't exist, while "null" is used when you want to explicitly say that a variable has no value or is empty.
 
 ## Common Algorithm Type 1 - Brute Force
