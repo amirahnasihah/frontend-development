@@ -174,7 +174,7 @@ function bigNum(intArray) {
 
 Differences:
 
-The main difference in the second function, `findMaxNumber`, is that it initializes `tempMaxNumber` to 0 instead of using the first element of the array as the initial value. This can lead to incorrect results if all the numbers in the array are negative or zero.
+> The main difference in the second function, `findMaxNumber`, is that it initializes `tempMaxNumber` to 0 instead of using the first element of the array as the initial value. This can lead to incorrect results if all the numbers in the array are negative or zero.
 
 Let's consider an example where all elements of the `inputArray` are negative:
 
@@ -245,6 +245,7 @@ function bruteForceSafeCombination(targetCombination) {
 }
 ```
 
+```
 ...digi4
 0,0,0,0
 0,0,0,1
@@ -271,7 +272,7 @@ function bruteForceSafeCombination(targetCombination) {
 ...digit1
 1,0,0,0
 1,0,0,1
-
+```
 
 In this pseudocode, we use **nested loops** to represent trying all possible combinations of a 4-digit safe. We start with digit1 being 0 and digit4 being 0, and then we increment digit4 until it reaches 9. When digit4 reaches 9, we increment digit3 by 1 and set digit4 to 0 again, and so on.
 
