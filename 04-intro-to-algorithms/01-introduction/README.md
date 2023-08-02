@@ -156,6 +156,22 @@ const maxNumber = findMaxNumber(inputArray);
 console.log(maxNumber);
 ```
 
+**for loop with index:**
+
+```javascript
+function bigNum(intArray) {
+    let maxNum = intArray[0]; // Initialize maxNum with the first element
+
+    for (let i = 1; i < intArray.length; i++) {
+        if (intArray[i] > maxNum) {
+            maxNum = intArray[i]; // Update maxNum if a larger number is found
+        }
+    }
+
+    return maxNum;
+}
+```
+
 > both "undefined" and "null" represent the lack of a meaningful value, but "undefined" often occurs when something was expected to have a value, but it was never assigned or doesn't exist, while "null" is used when you want to explicitly say that a variable has no value or is empty.
 
 ## Common Algorithm Type 1 - Brute Force
