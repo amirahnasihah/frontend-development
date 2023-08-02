@@ -742,7 +742,6 @@ Because these two iterations are nested in each other, the total time taken woul
 
 **Solution Using Binary Search**
 
-
 ```javascript
 function twoProducts(list, target) {
   let product = [];
