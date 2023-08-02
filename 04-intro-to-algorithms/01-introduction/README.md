@@ -408,6 +408,7 @@ The factorial function
 n! = n * (n-1)!
 
 n! = 1 (if n = 0 or 1)
+
 n! = n * (n-1)! (if n > 1)
 
 ### JavaScript Recursive Function Exercise
@@ -423,6 +424,7 @@ function factorial(n){
 ```
 
 n! = 1 (if n = 0)
+
 n! = n * (n-1)! (if n > 1)
 
 ### JavaScript Recursive Function Exercise
@@ -445,10 +447,9 @@ Suppose that you need to develop a function that counts down from a specified nu
 
 For example, to count down from 3 to 1:
 
-
-3
-2
-1
+- 3
+- 2
+- 1
 
 ### Simple JavaScript Recursive Function Example
 
