@@ -51,7 +51,7 @@ Open `exercise-3.js` file and please finish the `findPairs` function according t
 
 **further explaination**
 
-JavaScript offers a variety of built-in array methods that can be used to implement various algorithms efficiently. Here are some common array algorithms you can use in JavaScript:
+JavaScript offers a variety of built-in array methods that can be used to implement various algorithms efficiently. Here are some common *array algorithms* you can use in JavaScript:
 
 1. Sorting:
    - `sort()`: Sorts the elements of an array in place based on Unicode values by default. You can provide a custom comparison function for more complex sorting.
@@ -77,7 +77,7 @@ JavaScript offers a variety of built-in array methods that can be used to implem
 7. Concatenation:
    - `concat()`: Returns a new array that combines the elements of two or more arrays.
 
-These are just a few examples, and there are many more array algorithms that you can implement using these methods or by combining them creatively. Let me know if you have a specific algorithm in mind, and I can provide more details!
+These are just a few examples, and there are many more array algorithms that you can implement using these methods or by combining them creatively.
 
 **Arrays**
 
