@@ -145,6 +145,14 @@ Remember, if you need the most up-to-date information, you can visit the Mozilla
 
 ## Question 1 - Finding Missing Number
 
+finding missing number (sorted)
+
+todo:
+
+1. find the range of array first (min and max)
+2. check the missing numbers (loop from min to max, then the missing numberz are push to store in temp array var)
+3. print result of temp array var
+
 ### Finding Missing Number
 
 You have an unsorted integer array (without duplicate number) and **some numbers are missing** in this array. In order to make the array **consecutive**. **How do you find that missing number?**
