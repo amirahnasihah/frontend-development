@@ -335,7 +335,7 @@ Explanation:
 
 Make sure the input array `arr` is sorted for this approach to work correctly. This code will find the missing numbers in the sorted array and print them as output.
 
-### differenc
+### If not to use a function (with issues!)
 
 If you prefer not to use a function and want to keep using your approach to find the missing numbers, you can still do that. Just be mindful of the potential issues I mentioned earlier, such as variable scope and code reusability.
 
