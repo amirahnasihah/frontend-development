@@ -456,8 +456,21 @@ console.log(tempResultArray) // Output: [2, 3, 3]
 
 **further explain**
 
-1. sortedArr.length - 1
+1. sortedArr.length - 1 vs minus 1
 
+The use of `-1` in different contexts. In JavaScript, `-1` is typically used to represent an index or position that is not found or unavailable. It doesn't mean undefined; rather, it indicates the absence of the desired value or element.
+
+For example:
+
+1. `indexOf()`: When the method doesn't find the specified element in the array, it returns `-1`. If the element is found, it returns the index of the first occurrence.
+
+2. `findIndex()`: Similar to `indexOf()`, if the element satisfying the condition is not found, it returns `-1`. Otherwise, it returns the index of the first element that meets the condition.
+
+3. `Array.prototype.includes()`: If the element is not found in the array, it returns `false`. If the element is found, it returns `true`.
+
+You might encounter `-1` in other contexts, such as mathematical operations where it indeed represents the number minus one. However, when it comes to array methods like `indexOf()`, `findIndex()`, and `includes()`, it consistently indicates the absence of the desired value.
+
+To avoid ambiguity, always consider the context in which `-1` is used. In array methods, it usually means "not found" or "absent," while in mathematical operations, it represents subtraction by one. Understanding the context will help you interpret the meaning correctly.
 
 
 2. 
