@@ -472,6 +472,7 @@ You might encounter `-1` in other contexts, such as mathematical operations wher
 
 To avoid ambiguity, always consider the context in which `-1` is used. In array methods, it usually means "not found" or "absent," while in mathematical operations, it represents subtraction by one. Understanding the context will help you interpret the meaning correctly.
 
+**arr.length - 1 (get theast el)**
 
 2. 
 
