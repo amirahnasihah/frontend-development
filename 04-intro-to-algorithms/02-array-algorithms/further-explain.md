@@ -243,3 +243,42 @@ for (let i = 0; i < arr.length; i++)
 This will include the element at index 0 in the loop iterations. The choice of starting the loop at `i = 0` or `i = 1` depends on whether you want to include or exclude the first element of the array in your loop operations.
 
 For example, if you want to perform an operation on all elements of the array, including the first element, you would use `i = 0` as the starting value. However, if you want to skip the first element and start from the second element, you would use `i = 1` as the starting value.
+
+## exercise-1 different approach
+
+
+### 1. 
+
+If you prefer not to use a function and want to keep using your approach to find the missing numbers, you can still do that. Just be mindful of the potential issues I mentioned earlier, such as variable scope and code reusability.
+
+Here's how you can use your approach without using a function:
+
+```javascript
+const arr = [3, 7, 1];
+
+let max = arr[0];
+let min = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i];
+  }
+  if (arr[i] < min) {
+    min = arr[i];
+  }
+}
+
+let tempResultArray = [];
+
+for (let i = min; i <= max; i++) {
+  if (arr.indexOf(i) === -1) {
+    tempResultArray.push(i);
+  }
+}
+
+console.log("Missing numbers:", tempResultArray);
+```
+
+When using this code directly, you should be cautious about the variables' scope, especially if you plan to use them elsewhere in your code. Additionally, without a function, you'll need to copy and paste this code block wherever you want to find missing numbers, which can lead to code duplication and maintenance challenges.
+
+Remember that using a function allows you to encapsulate this logic and reuse it wherever you need to find missing numbers in a sorted array. It promotes a more modular and organized approach to your codebase. If you ever need to modify the logic in the future, you only need to update the function rather than searching for every instance of this code block in your code.
