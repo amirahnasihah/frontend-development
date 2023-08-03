@@ -258,7 +258,7 @@ for (let i = min; i <= max; i++){
 console.log(tempResultArray)
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 mula2, js check i = 1 sbb mmg dri awal i equal to 1. then, i equal to 2 sbb i++. 2 takda dalam array dan -1, jadi 2 added or push inside to array. pastu check 3, 3 ada jadi js do nothing. then, i++ iaitu 4. 4 not exist and -1, jadi push inside array. etc...
 
