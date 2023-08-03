@@ -113,7 +113,9 @@ console.log(numbers); // [1, 2, 3, 4, 5]
 
 In the first example, `sort()` sorts the array lexicographically, changing the original array's order. In the second example, a custom sorting function is provided to sort the fruits array based on the length of the strings. Finally, in the third example, a custom sorting function is used to sort the numbers array in ascending order.
 
-### indexOf()
+### indexOf(), find()
+
+### indexOf
 
 The `indexOf()` method in JavaScript is used to find the index of the first occurrence of a specified element within an array. If the element is not found in the array, it returns -1.
 
@@ -137,3 +139,39 @@ const index3 = fruits.indexOf('kiwi');   // -1 (not found)
 ```
 
 In this example, `indexOf()` finds the index of the first occurrence of the element 'banana', which is 1. It also finds the index of 'grapes', which is 3. However, it doesn't find 'kiwi', so it returns -1 to indicate that the element is not present in the array.
+
+#### find
+
+The `find()` method in JavaScript is used to search for the first element in an array that satisfies a given condition. It returns the value of the first element found, or `undefined` if no element matches the condition.
+
+Here's the syntax of `find()`:
+
+```javascript
+array.find(callback(element[, index[, array]])[, thisArg])
+```
+
+- `callback`: A function that is called for each element in the array. It takes three arguments: `element` (the current element being processed), `index` (optional, the index of the current element), and `array` (optional, the array on which `find` was called).
+
+- `thisArg` (optional): A value to use as `this` when executing the callback function.
+
+Example:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+const foundNumber = numbers.find((element) => element > 2);
+console.log(foundNumber); // 3
+```
+
+In this example, the `find()` method is used to find the first element in the `numbers` array that is greater than 2. It finds 3 as the first element that satisfies the condition, so it returns 3.
+
+If no element satisfies the condition, the `find()` method returns `undefined`. For example:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+const foundNumber = numbers.find((element) => element > 10);
+console.log(foundNumber); // undefined
+```
+
+Here, since there is no element greater than 10 in the `numbers` array, `find()` returns `undefined`.
