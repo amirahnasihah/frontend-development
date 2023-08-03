@@ -41,7 +41,6 @@ const findMissingNumber = (arr) => {
 const sortedArray = [3, 5, 6, 8, 10];
 const missingNumbers = findMissingNumber(sortedArray);
 console.log("Missing numbers:", missingNumbers);
-
 ```
 
 With this corrected version, the code will find the missing numbers in the sorted array and store them in the `tempArray`, which will be printed as output. However, keep in mind that this approach has a time complexity of O(n^2) due to the nested loop (`indexOf` inside a loop), making it less efficient for larger arrays. If you have a sorted array, the previous approach using `for (let i = 0; i < arr.length - 1; i++)` and checking adjacent elements would have a better time complexity of O(n).
