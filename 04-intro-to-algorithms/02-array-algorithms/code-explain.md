@@ -80,6 +80,39 @@ const combined = numbers.concat(letters); // [1, 2, 3, 'a', 'b', 'c']
 
 Remember, if you need the most up-to-date information, you can visit the Mozilla Developer Network (MDN) website for detailed documentation and examples of each method.
 
+### sort()
+
+The `sort()` method in JavaScript is used to sort the elements of an array in place and returns the sorted array. By default, it performs a lexicographic (alphabetical) sort for strings, and a numeric sort for numbers. However, you can provide a custom sorting function to achieve more complex sorting.
+
+Here's the syntax of `sort()`:
+
+```javascript
+array.sort([compareFunction])
+```
+
+- `compareFunction` (optional): A function that defines the sort order. If omitted, the array is sorted lexicographically (alphabetically) for strings, and numerically for numbers. The function takes two elements as arguments and should return a negative value if the first element should be before the second, a positive value if the first element should be after the second, and zero if they are equal.
+
+Example:
+
+```javascript
+const fruits = ['banana', 'apple', 'orange', 'grapes'];
+
+// Sorting lexicographically (alphabetically)
+fruits.sort();
+console.log(fruits); // ['apple', 'banana', 'grapes', 'orange']
+
+// Sorting by string length
+fruits.sort((a, b) => a.length - b.length);
+console.log(fruits); // ['apple', 'grapes', 'banana', 'orange']
+
+// Sorting numerically
+const numbers = [5, 1, 3, 2, 4];
+numbers.sort((a, b) => a - b);
+console.log(numbers); // [1, 2, 3, 4, 5]
+```
+
+In the first example, `sort()` sorts the array lexicographically, changing the original array's order. In the second example, a custom sorting function is provided to sort the fruits array based on the length of the strings. Finally, in the third example, a custom sorting function is used to sort the numbers array in ascending order.
+
 ### indexOf()
 
 The `indexOf()` method in JavaScript is used to find the index of the first occurrence of a specified element within an array. If the element is not found in the array, it returns -1.
