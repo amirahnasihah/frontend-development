@@ -80,4 +80,27 @@ const combined = numbers.concat(letters); // [1, 2, 3, 'a', 'b', 'c']
 
 Remember, if you need the most up-to-date information, you can visit the Mozilla Developer Network (MDN) website for detailed documentation and examples of each method.
 
-### indexOf(), in
+### indexOf()
+
+The `indexOf()` method in JavaScript is used to find the index of the first occurrence of a specified element within an array. If the element is not found in the array, it returns -1.
+
+Here's the syntax of `indexOf()`:
+
+```javascript
+array.indexOf(searchElement[, fromIndex])
+```
+
+- `searchElement`: The element to search for in the array.
+- `fromIndex` (optional): The starting index for the search. If not provided, the search starts from the beginning of the array. If the value is negative, it is treated as counting from the end of the array.
+
+Example:
+
+```javascript
+const fruits = ['apple', 'banana', 'orange', 'grapes', 'banana'];
+
+const index1 = fruits.indexOf('banana'); // 1
+const index2 = fruits.indexOf('grapes'); // 3
+const index3 = fruits.indexOf('kiwi');   // -1 (not found)
+```
+
+In this example, `indexOf()` finds the index of the first occurrence of the element 'banana', which is 1. It also finds the index of 'grapes', which is 3. However, it doesn't find 'kiwi', so it returns -1 to indicate that the element is not present in the array.
