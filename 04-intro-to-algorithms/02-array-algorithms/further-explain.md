@@ -370,3 +370,30 @@ console.log("Missing numbers:", tempResultArray);
 When using this code directly, you should be cautious about the variables' scope, especially if you plan to use them elsewhere in your code. Additionally, without a function, you'll need to copy and paste this code block wherever you want to find missing numbers, which can lead to code duplication and maintenance challenges.
 
 Remember that using a function allows you to encapsulate this logic and reuse it wherever you need to find missing numbers in a sorted array. It promotes a more modular and organized approach to your codebase. If you ever need to modify the logic in the future, you only need to update the function rather than searching for every instance of this code block in your code.
+
+## Finding Missing Numbers (unsorted array + duplicate numbers)
+
+> Why we have to sort first as the first step in algorithm and then create a temp variable array? why cannot create temp variable array first?
+
+Sorting the array first and then creating a temporary result array is not the only approach to find duplicate numbers in an unsorted integer array, but it is an efficient one. Let's explore the reasons behind this choice:
+
+1. **Efficiency**: Sorting the array allows us to group duplicate numbers together, making it easier to identify them. By comparing adjacent elements, we can quickly find duplicates without unnecessary iterations. It reduces the time complexity of the algorithm.
+
+2. **Grouping**: After sorting, duplicate numbers will be adjacent to each other. This grouping simplifies the process of identifying and collecting duplicate numbers in the temporary result array.
+
+3. **Simplicity**: Comparing adjacent elements in a sorted array is straightforward and easy to implement. We only need a single loop to check for duplicates, resulting in simpler code.
+
+4. **Clarity**: Sorting the array clarifies the logic by bringing the duplicates together. The code becomes more readable and understandable.
+
+However, if you prefer to create a temporary result array first and then iterate through the original array to check for duplicates, you can certainly do so. This approach will have a time complexity of O(n^2) since you'll need nested loops to compare every element with all other elements.
+
+Here's an alternative algorithm without sorting:
+
+1. Create an empty temporary result array.
+2. Use a for loop to go through each number in the original array.
+3. For each number, check if it already exists in the temporary result array.
+4. If it does not exist, add it to the temporary result array.
+5. If it already exists, it is a duplicate, and you can skip adding it to the temporary result array.
+6. Return the temporary array as the result.
+
+However, keep in mind that this approach is less efficient than sorting and may not be suitable for very large arrays due to its higher time complexity. Sorting first and then finding duplicates is generally a more optimized approach in terms of time complexity.
