@@ -2,6 +2,8 @@
 
 ## Finding Missing Numbers (sorted array - 2 ways)
 
+> Using includes or -1
+
 To find the missing numbers in a sorted array. Let's break down the steps to accomplish this task:
 
 ```javascript
