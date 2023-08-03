@@ -1,6 +1,6 @@
 # Array Algorithms
 
-## 
+## Built-in array methods
 
 JavaScript offers a variety of built-in array methods that can be used to implement various algorithms efficiently. Here are some common *array algorithms* you can use in JavaScript:
 
@@ -79,3 +79,5 @@ const combined = numbers.concat(letters); // [1, 2, 3, 'a', 'b', 'c']
 ```
 
 Remember, if you need the most up-to-date information, you can visit the Mozilla Developer Network (MDN) website for detailed documentation and examples of each method.
+
+### indexOf(), in
