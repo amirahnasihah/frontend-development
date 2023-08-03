@@ -13,20 +13,29 @@ The code you provided is a different approach to find the missing numbers in a s
 2. **Range Loop:** The second loop using `for (let i = min; i <= max; i++)` will not work correctly because the `min` and `max` values are not updated when the array is not sorted in ascending order. It will only find the missing numbers in the range from the minimum to the maximum elements present in the array.
 
 ```javascript
-const arr = [3, 7, 1];
+const findMissingNumber = (arr) => {
+  let max = arr[0];
+  let min = arr[0];
 
-let min = arr[0];
-let max = arr[arr.length - 1];
-
-let tempArray = [];
-
-for (let i = min; i <= max; i++) {
-  if (arr.indexOf(i) === -1) {
-    tempArray.push(i);
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+    if (arr[i] < min) {
+      min = arr[i];
+    }
   }
-}
 
-console.log("Missing numbers:", tempArray);
+  let tempResultArray = [];
+
+  for (let i = min; i <= max; i++) {
+    if (arr.indexOf(i) === -1) {
+      tempResultArray.push(i);
+    }
+  }
+
+  return tempResultArray;
+};
 ```
 
 With this corrected version, the code will find the missing numbers in the sorted array and store them in the `tempArray`, which will be printed as output. However, keep in mind that this approach has a time complexity of O(n^2) due to the nested loop (`indexOf` inside a loop), making it less efficient for larger arrays. If you have a sorted array, the previous approach using `for (let i = 0; i < arr.length - 1; i++)` and checking adjacent elements would have a better time complexity of O(n).
