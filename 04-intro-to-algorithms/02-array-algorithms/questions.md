@@ -12,10 +12,6 @@ The code you provided is a different approach to find the missing numbers in a s
 
 2. **Range Loop:** The second loop using `for (let i = min; i <= max; i++)` will not work correctly because the `min` and `max` values are not updated when the array is not sorted in ascending order. It will only find the missing numbers in the range from the minimum to the maximum elements present in the array.
 
-3. **Condition check for `max`:** There is a syntax error in the condition check `if (arr[i] > max]`. The closing square bracket `]` should be removed.
-
-To make the code work correctly, you can address the issues mentioned above. Here's the corrected version:
-
 ```javascript
 const arr = [3, 7, 1];
 
