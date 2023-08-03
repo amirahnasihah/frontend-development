@@ -22,6 +22,32 @@
 
 # Other
 
+## Built-in array methods tips
+
+Here's a simple acronym to remember the definitions and basic functionalities of the built-in array methods in JavaScript:
+
+**S.A.R.F. C.R.**
+
+- **S**orting: `sort()` - Sorts the elements of an array.
+- **A**ccessing/Search: `indexOf()`, `lastIndexOf()`, `find()`, `findIndex()` - Access or search for elements in an array.
+- **R**emoving/Filtering: `filter()` - Removes elements from an array based on a condition.
+- **F**orEach/Mapping: `map()` - Applies a function to each element in the array, creating a new array with the results.
+- **C**ombining: `concat()` - Combines multiple arrays into a single array.
+- **R**educing: `reduce()` - Reduces the elements of an array to a single value.
+- **Reversing**: `reverse()` - Reverses the order of elements in an array.
+
+You can try associating each letter of the acronym with the corresponding array method to help you remember their purposes and functionalities easily. For example:
+
+- "S" for `sort()`: Think of arranging elements in a line or sequence.
+- "A" for `indexOf()`, `lastIndexOf()`, `find()`, `findIndex()`: Think of searching for elements in an array.
+- "R" for `filter()`: Think of removing specific elements from the array based on a condition.
+- "F" for `map()`: Think of applying a function to each element to transform them into a new array.
+- "C" for `concat()`: Think of combining arrays into a single one.
+- "R" for `reduce()`: Think of reducing elements to a single value, like adding them up or finding the maximum/minimum value.
+- "Reversing" for `reverse()`: Think of flipping the order of elements in the array.
+
+By creating these associations, you can make it easier to remember the purpose and usage of each array method. Practice using them in various scenarios, and with time, you'll become more comfortable with these powerful tools in JavaScript. Happy coding!
+
 ## Built-in array methods
 
 JavaScript offers a variety of built-in array methods that can be used to implement various algorithms efficiently. Here are some common *array algorithms* you can use in JavaScript:
