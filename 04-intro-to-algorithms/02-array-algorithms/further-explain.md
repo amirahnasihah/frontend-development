@@ -26,7 +26,7 @@
 
 Here's a simple acronym to remember the definitions and basic functionalities of the built-in array methods in JavaScript:
 
-**S.A.R.F. C.R.**
+**S.A.R.F. C.R.R.**
 
 - **S**orting: `sort()` - Sorts the elements of an array.
 - **A**ccessing/Search: `indexOf()`, `lastIndexOf()`, `find()`, `findIndex()` - Access or search for elements in an array.
