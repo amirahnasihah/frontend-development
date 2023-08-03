@@ -454,7 +454,13 @@ for (let i = 0; i < sortedArr.length - 1; i++){
 console.log(tempResultArray) // Output: [2, 3, 3]
 ```
 
-**EXPLANATION**
+**further explain**
+
+1. sortedArr.length - 1
+
+
+
+2. 
 
 Input Array: [2, 2, 3, 3, 3, 7, 9] → [2, 3, 3]
 
