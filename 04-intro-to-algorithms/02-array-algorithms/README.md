@@ -433,7 +433,9 @@ In the step, we are going to leverage a for loop to check on the numbers one by 
 After identified the duplicating number, then we push it to the tempResultArray. 
 
 Input Array (already sort): [2, 2, 3, 3, 3, 7, 9] // Expected output: [2, 3, 3]
+
 arr = [2, 3, 3, 3, 7, 9] // Expected output: [3, 3]
+
 arr = [2, 2, 3, 3, 7, 9] // Output: [2, 3]
 
 ```javascript
