@@ -472,7 +472,29 @@ You might encounter `-1` in other contexts, such as mathematical operations wher
 
 To avoid ambiguity, always consider the context in which `-1` is used. In array methods, it usually means "not found" or "absent," while in mathematical operations, it represents subtraction by one. Understanding the context will help you interpret the meaning correctly.
 
-**arr.length - 1 (get theast el)**
+**arr.length - 1 (get the last index of Array)**
+
+Yes, exactly! When you see `sortedArr.length - 1`, it represents the last index of the `sortedArr`. This is because array indices in JavaScript are zero-based, so the last element of the array will have an index of `array.length - 1`.
+
+For example, consider an array `sortedArr` with five elements:
+
+```javascript
+const sortedArr = [10, 20, 30, 40, 50];
+```
+
+The length of `sortedArr` is `5`, but the last index is `4`, which corresponds to the last element `50`. So, to access the last element of `sortedArr`, you can use `sortedArr[sortedArr.length - 1]`, which would be equivalent to `sortedArr[4]`, resulting in the value `50`.
+
+In array operations, `sortedArr.length - 1` is commonly used to access the last element or to perform actions related to the last index in the array. Just be aware of the zero-based indexing in JavaScript to avoid off-by-one errors.
+
+More clarify;
+
+In the context of `sortedArr.length - 1`, the `- 1` is not a subtraction by one but rather a way to access the last index of the array. The length of an array in JavaScript is the number of elements it contains, and array indices start from 0, not 1.
+
+When you use `sortedArr.length - 1`, you are retrieving the index of the last element in the array, not subtracting one from the length of the array. It helps you access the last element using this index.
+
+For example, let's say `sortedArr` is `[10, 20, 30, 40, 50]`. The length of `sortedArr` is 5, but the last index is `sortedArr.length - 1`, which is 4. So, `sortedArr[sortedArr.length - 1]` will give you the last element, which is `50`.
+
+In summary, `sortedArr.length - 1` is not a subtraction operation but a way to access the last index of the array, enabling you to work with the last element in the array through this index.
 
 2. 
 
