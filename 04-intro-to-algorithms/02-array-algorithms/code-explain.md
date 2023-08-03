@@ -115,7 +115,7 @@ In the first example, `sort()` sorts the array lexicographically, changing the o
 
 ### indexOf(), find()
 
-### indexOf
+#### indexOf
 
 The `indexOf()` method in JavaScript is used to find the index of the first occurrence of a specified element within an array. If the element is not found in the array, it returns -1.
 
