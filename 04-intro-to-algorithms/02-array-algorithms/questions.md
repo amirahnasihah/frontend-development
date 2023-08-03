@@ -4,7 +4,36 @@
 
 > by single loop (includes) and by 2 loops (indexOf)
 
-### sorted array with two loops using indexOf
+### sorted array with two loops using `indexOf`
+
+The code you provided is a different approach to find the missing numbers in a sorted array. While it can work, there are a few issues that need to be addressed:
+
+1. **Initialization of `min` and `max`:** You are setting both `min` and `max` to the first element of the array, which means they will have the same value. Instead, you should initialize `min` and `max` to the first and last elements of the array, respectively, to get the correct range.
+
+2. **Range Loop:** The second loop using `for (let i = min; i <= max; i++)` will not work correctly because the `min` and `max` values are not updated when the array is not sorted in ascending order. It will only find the missing numbers in the range from the minimum to the maximum elements present in the array.
+
+3. **Condition check for `max`:** There is a syntax error in the condition check `if (arr[i] > max]`. The closing square bracket `]` should be removed.
+
+To make the code work correctly, you can address the issues mentioned above. Here's the corrected version:
+
+```javascript
+const arr = [3, 7, 1];
+
+let min = arr[0];
+let max = arr[arr.length - 1];
+
+let tempArray = [];
+
+for (let i = min; i <= max; i++) {
+  if (arr.indexOf(i) === -1) {
+    tempArray.push(i);
+  }
+}
+
+console.log("Missing numbers:", tempArray);
+```
+
+With this corrected version, the code will find the missing numbers in the sorted array and store them in the `tempArray`, which will be printed as output. However, keep in mind that this approach has a time complexity of O(n^2) due to the nested loop (`indexOf` inside a loop), making it less efficient for larger arrays. If you have a sorted array, the previous approach using `for (let i = 0; i < arr.length - 1; i++)` and checking adjacent elements would have a better time complexity of O(n).
 
 ### sorted array with single loop using `includes`
 
