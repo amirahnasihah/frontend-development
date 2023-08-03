@@ -715,21 +715,17 @@ Great job on keeping the code concise and easy to read. Your solution works corr
 
 Task 1 (Score: 29)
 
-Great job! 
-
-Your implementation is correct for all the given test cases. Consider adding an additional check to ensure that the target string does not exceed the input string length. If it does, you can return -1 immediately. Overall, your code is great.
+Your implementation is correct for all the given test cases. **Consider adding an additional check to ensure that the target string does not exceed the input string length. If it does, you can return -1 immediately**. Overall, your code is great.
 
 ## exercise-2.js
 
 Task 2 (Score: 33)
 
-Great job! Your code is well-written and passes all the test cases. You have successfully completed the task by implementing a loop to iterate over the input string and concatenate each character to the result string in reverse order. Keep up the good work!
+Your code is well-written and passes all the test cases. You have successfully completed the task by implementing a loop to iterate over the input string and concatenate each character to the result string in reverse order. Keep up the good work!
 
 ## exercise-3.js
 
 Task 3 (Score: 34)
-
-Great job!
 
 The code is well-written and passes all the test cases. You have successfully completed the task. Keep up the good work!
 

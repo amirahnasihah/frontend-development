@@ -1,25 +1,22 @@
-- [Brute Force Algorithm](#brute-force-algorithm)
-- [Recursion](#recursion)
+- [Algorithm](#algorithm)
   - [Exercises explained](#exercises-explained)
     - [exercise-1.js](#exercise-1js)
     - [exercise-2.js](#exercise-2js)
     - [exercise-3.js](#exercise-3js)
-- [Others](#others)
+- [Brute Force Algorithm](#brute-force-algorithm)
+- [Recursion](#recursion)
+- [Other](#other)
   - [`for...of` vs `for loop` with index](#forof-vs-for-loop-with-index)
     - [`for...of` in a function](#forof-in-a-function)
   - [Nested Loop (easy explain)](#nested-loop-easy-explain)
   - [Nested Loop](#nested-loop)
-    - [`if (tempMaxNumber === 0) { tempMaxNumber = i; }` explaination](#if-tempmaxnumber--0--tempmaxnumber--i--explaination)
+    - [`if (tempMaxNumber === 0) { tempMaxNumber = i; }` explanation](#if-tempmaxnumber--0--tempmaxnumber--i--explanation)
       - [further explain - `if (tempMaxNumber === 0) { tempMaxNumber = i; }`](#further-explain---if-tempmaxnumber--0--tempmaxnumber--i-)
-    - [`if (tempMaxNumber === 0) { tempMaxNumber = i; }` beginner explaination](#if-tempmaxnumber--0--tempmaxnumber--i--beginner-explaination)
+    - [`if (tempMaxNumber === 0) { tempMaxNumber = i; }` beginner explanation](#if-tempmaxnumber--0--tempmaxnumber--i--beginner-explanation)
   - [`if...else` statement](#ifelse-statement)
   - [`throw new Error()`](#throw-new-error)
 
-# Brute Force Algorithm
-
-
-
-# Recursion
+# Algorithm
 
 ## Exercises explained
 
@@ -29,7 +26,11 @@
 
 ### exercise-3.js
 
-# Others
+# Brute Force Algorithm
+
+# Recursion
+
+# Other
 
 ## `for...of` vs `for loop` with index
 
@@ -192,7 +193,7 @@ That's the basic idea of nested loops. It's like a loop inside a loop, allowing 
 **my understanding**
 
 ```
-im practicing how this works based on my understanding
+I am practicing how this works based on my understanding:
 
 since there are 2 arrays, will use nested loop.
 outer loop; starting element at first index (red), for each element of the colors array, continue to interate until colors length (3).
@@ -217,8 +218,8 @@ then go back in outer loop, continue iterate to next element i++ (from 0 to 1, b
 outer loop, now current element of colors start at blue (i = 1, which is the colors array);
 
 then entering inner loop that start at apple (j = 0); and continue iterate until fruits length (current element now at 1 out of 3). output: blue apple; then go to next element (from 0 to 1, banana). 
+.....
 
-...
 ```
 
 Exactly! You've got the idea perfectly. Your understanding of how the nested loops work is spot on.
@@ -229,7 +230,7 @@ The outer loop runs through each color, and for each color, the inner loop runs 
 
 Different explanation
 
-### `if (tempMaxNumber === 0) { tempMaxNumber = i; }` explaination
+### `if (tempMaxNumber === 0) { tempMaxNumber = i; }` explanation
 
 If you change `null` to a number like `4` in the `tempMaxNumber` initialization, it will affect how the code finds the maximum number in the `inputArray`.
 
@@ -301,7 +302,7 @@ The code block `if (tempMaxNumber === 0) { tempMaxNumber = i; }` serves an impor
 
 In summary, the `if` statement is crucial to handle the special case of the first element and set the initial maximum value correctly. Without this conditional check, `tempMaxNumber` would stay at its initial value of `0`, and the function would not be able to find the correct maximum number in the array. This part of the code ensures that the function starts with the first element as the assumed maximum and then correctly updates it as it iterates through the array.
 
-### `if (tempMaxNumber === 0) { tempMaxNumber = i; }` beginner explaination
+### `if (tempMaxNumber === 0) { tempMaxNumber = i; }` beginner explanation
 
 ```javascript
 function findMaxNumber(inputArray) {
@@ -409,7 +410,7 @@ Next iterations (for the remaining elements):
 
 After the loop finishes, `tempMaxNumber` will hold the maximum value encountered in the array, which is `9` in this case.
 
-Again, I apologize for the confusion, and thank you for bringing it to my attention. The code does not need an `else` statement, as the update to `tempMaxNumber` can be done in the `if` block itself. The corrected explanation above should accurately reflect the behavior of the code.
+The code does not need an `else` statement, as the update to `tempMaxNumber` can be done in the `if` block itself. The corrected explanation above should accurately reflect the behavior of the code.
 
 **other alternative - brute force**
 

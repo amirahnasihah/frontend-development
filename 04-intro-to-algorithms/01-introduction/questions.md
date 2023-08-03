@@ -1,11 +1,12 @@
-# Problem in JS Using Brute Force
-
-- [Problem in JS Using Brute Force](#problem-in-js-using-brute-force)
+- [Brute Force Algorithm Problems in JS](#brute-force-algorithm-problems-in-js)
     - [Pseudocode](#pseudocode)
   - [1. Given a list of numbers, find two numbers that sum up to a given target and return the product of these numbers.](#1-given-a-list-of-numbers-find-two-numbers-that-sum-up-to-a-given-target-and-return-the-product-of-these-numbers)
   - [2. Finding the sum of all elements in an array](#2-finding-the-sum-of-all-elements-in-an-array)
   - [`for...of` - Two arrays and want to find pairs of elements, one from each array, whose sum matches a given target value](#forof---two-arrays-and-want-to-find-pairs-of-elements-one-from-each-array-whose-sum-matches-a-given-target-value)
   - [`for` loop w/ index - Two arrays and want to find pairs of elements, one from each array, whose sum matches a given target value](#for-loop-w-index---two-arrays-and-want-to-find-pairs-of-elements-one-from-each-array-whose-sum-matches-a-given-target-value)
+- [Recursive Problems in JS](#recursive-problems-in-js)
+
+# Brute Force Algorithm Problems in JS
 
 ### Pseudocode
 
@@ -179,3 +180,5 @@ Explanation:
 8. Finally, we print the result to the console using `console.log(pairsWithSum)`.
 
 The function now uses traditional `for` loops with indices to achieve the same result as before, finding all pairs of elements from two arrays whose sum matches the target value and returning an array containing those pairs.
+
+# Recursive Problems in JS
