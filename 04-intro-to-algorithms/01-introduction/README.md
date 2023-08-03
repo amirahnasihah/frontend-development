@@ -17,6 +17,7 @@
     - [Brute Force Algorithm Example 2](#brute-force-algorithm-example-2-1)
   - [Common Algorithm Type 2 - Recursion](#common-algorithm-type-2---recursion)
     - [What is Recursive algorithm?](#what-is-recursive-algorithm)
+      - [Factorial](#factorial)
     - [Example of Recursion algorithm](#example-of-recursion-algorithm)
     - [JavaScript Recursive Function Exercise](#javascript-recursive-function-exercise)
     - [JavaScript Recursive Function Exercise](#javascript-recursive-function-exercise-1)
@@ -25,7 +26,7 @@
     - [Simple JavaScript Recursive Function Example](#simple-javascript-recursive-function-example-1)
     - [Simple JavaScript Recursive Function Example](#simple-javascript-recursive-function-example-2)
     - [Simple JavaScript Recursive Function Example](#simple-javascript-recursive-function-example-3)
-- [Feedback on Exercise](#feedback-on-exercise)
+- [Feedback on exercise](#feedback-on-exercise)
   - [exercise-1.js](#exercise-1js)
   - [exercise-2.js](#exercise-2js)
 
@@ -128,8 +129,6 @@ Loop again:
 	with i is 5;
 	if (the condition is the tempMaxNumber is set to 5) {but then, code is NOT executed here bcs the condition is false. therefore, the go to next, the else block;
 	else (inside else, there is another if statement);
-	
-	
 ```
 
 **if in a function:**
@@ -200,7 +199,7 @@ Brute Force Algorithms are straightforward methods of solving a problem that rel
 
 A brute force algorithm **solves a problem through exhaustion**: it goes through all possible choices until a solution is found. The time complexity of a brute force algorithm is often proportional to the input size. Brute force algorithms are simple and consistent, but very slow.
 
-**Further explaination:**
+**further explain:**
 
 In JavaScript, you can implement a brute force algorithm by using loops or recursion.
 
@@ -349,16 +348,22 @@ Recursion is useful for problems that can be represented by a simpler version of
 
 The smallest example of the same task has a non-recursive solution.
 
-**What is Factorial?**
+#### Factorial
+
+```
+5 Factorial = 5! = 5 * 4 * 3 * 2 *1
+
+3! = 3 * 2 * 1 = 6
+
+0! = 1
+1! = 1
+```
+
+What is Factorial?
 
 > The factorial of a non-negative integer is the product of all positive integers less than or equal to that number. For example, the factorial of 5 is 5! = 5 x 4 x 3 x 2 x 1 = 120.
 > 
 > In simpler terms, it is the result of multiplying a number by all the smaller whole numbers until you reach 1.
-
-- 5 Factorial = 5! = 5 * 4 * 3 * 2 *1
-- 3! = 3 * 2 * 1 = 6
-- 0! = 1
-- 1! = 1
 
 The factorial of a non-negative integer is a way to multiply all the positive whole numbers that are less than or equal to that integer.
 
@@ -380,10 +385,13 @@ In programming, calculating factorials can be done using loops or recursive func
 
 ### Example of Recursion algorithm
 
-**Visual Guide**
-
 Factorial(5) ← return 5 * Factorial(4) = 120 ← return 4 * Factorial(3) = 24 ← return 3 * Factorial(2) = 6 ← return 2 * Factorial(1) = 2 ← 1
 
+![factorial](https://camo.githubusercontent.com/1bf679af1f4fbe9957061fbfffefb790247be9a2c4b8b7f33d126943dc21224a/687474703a2f2f332e62702e626c6f6773706f742e636f6d2f2d494d46447a335436654c4d2f564c7a74344866674271492f4141414141414141446c6f2f63716d7141386a592d6e382f73313630302f526563757273696f6e253242696e253242432e6a7067)
+
+source: [Basic CS Topics](https://gist.github.com/sudomain/86e61dec22dc56e6d57057da4ef670ed)
+
+**further explain**
 
 Example; to calculate the factorial of 5, you multiply all the positive whole numbers from 1 to 5 together:
 
@@ -403,29 +411,31 @@ So, the factorial of 5 is equal to 120.
 
 The factorial function
 
+```
 6! = 6*5*4*3*2*1
 6! = 6 *5!
 n! = n * (n-1)!
+```
 
-n! = 1 (if n = 0 or 1)
+**n! = 1 (if n = 0 or 1)**
 
-n! = n * (n-1)! (if n > 1)
+**n! = n * (n-1)! (if n > 1)**
 
 ### JavaScript Recursive Function Exercise
 
 ```javascript
 function factorial(n){
   if(n === 0 || n === 1){
-    return 1;
+    return 1; // ←
   } else{
     return ????;
   }
 }
 ```
 
-n! = 1 (if n = 0)
+**n! = 1 (if n = 0)**
 
-n! = n * (n-1)! (if n > 1)
+**n! = n * (n-1)! (if n > 1)**
 
 ### JavaScript Recursive Function Exercise
 
@@ -438,6 +448,8 @@ function factorial(n){
   }
 }
 ```
+
+Take a look at this animation:
 
 **Assignment Question 2**
 
@@ -462,11 +474,11 @@ function countDown(fromNumber) {
 countDown(3);
 ```
 
-**Any Problem???**
+Any Problem???
 
 ### Simple JavaScript Recursive Function Example
 
-*That program doesn’t have the condition to stop calling itself!*
+**That program doesn’t have the condition to stop calling itself!**
 
 ```javascript
 function countDown(fromNumber) {
@@ -492,15 +504,13 @@ function countDown(fromNumber) {
 countDown(3);
 ```
 
-**EXPLAINATION**
-
 The count down will stop when the next number is zero.
 
 we can add an if condition to check this condition.
 
-**The smallest example of the same task has a non-recursive solution (fromNumber = 0 is the non-recursive solution this time).**
+*\*The smallest example of the same task has a **non-recursive solution (fromNumber = 0 is the non-recursive solution this time)**.
 
-# Feedback on Exercise
+# Feedback on exercise
 
 ## exercise-1.js
 

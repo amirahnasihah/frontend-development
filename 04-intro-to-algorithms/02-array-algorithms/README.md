@@ -26,6 +26,10 @@
     - [Part 2 - Loop Thru in a Nested Loop (important part)](#part-2---loop-thru-in-a-nested-loop-important-part)
     - [Part 3 - Avoiding Duplicate Results](#part-3---avoiding-duplicate-results)
     - [Techniques that we used](#techniques-that-we-used-2)
+- [Feedback on exercise](#feedback-on-exercise)
+  - [exercise-1.js](#exercise-1js)
+  - [exercise-2.js](#exercise-2js)
+  - [exercise-3.js](#exercise-3js)
 
 # Assignment 2 - Array Algorithms
 
@@ -840,7 +844,9 @@ function twoProducts(list, target) {
 twoProducts([2, 4, 1, 8, 9], 2);
 ```
 
-# Feedback
+# Feedback on exercise
+
+Great job on keeping the code concise and easy to read. Your solution works correctly for all the given test cases. Keep up the good work!
 
 ## exercise-1.js
 

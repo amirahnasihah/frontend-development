@@ -16,6 +16,9 @@
     - [Consider this scenario](#consider-this-scenario-1)
     - [Binary Search](#binary-search)
     - [Converting into Code](#converting-into-code-1)
+- [Feedback on exercise](#feedback-on-exercise)
+  - [linear-search.js](#linear-searchjs)
+  - [binary-search.js](#binary-searchjs)
 
 # Assignment 4 - Searching Algorithms
 
@@ -274,3 +277,22 @@ const binarySearch = (arr, target) => {
 }
 ```
 
+# Feedback on exercise
+
+## linear-search.js
+
+> 100/100
+
+Task 1 (Score: 50)
+
+Great job! 
+
+Your code is very well-written and follows best practices. You have correctly implemented the linearSearch function to search for a target in the input array.
+
+There are no issues with your code, and it passes all the test cases. Great work!
+
+## binary-search.js
+
+Task 2 (Score: 50)
+
+Great job on the implementation of binary search algorithm. Your code is clean and easy to read. You have followed the instructions provided correctly and all test cases passed successfully. Overall, you have done an excellent job. Keep up the good work!

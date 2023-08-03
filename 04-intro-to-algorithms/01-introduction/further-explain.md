@@ -1,5 +1,9 @@
 - [Brute Force Algorithm](#brute-force-algorithm)
 - [Recursion](#recursion)
+  - [Exercises explained](#exercises-explained)
+    - [exercise-1.js](#exercise-1js)
+    - [exercise-2.js](#exercise-2js)
+    - [exercise-3.js](#exercise-3js)
 - [Others](#others)
   - [`for...of` vs `for loop` with index](#forof-vs-for-loop-with-index)
     - [`for...of` in a function](#forof-in-a-function)
@@ -8,6 +12,8 @@
     - [`if (tempMaxNumber === 0) { tempMaxNumber = i; }` explaination](#if-tempmaxnumber--0--tempmaxnumber--i--explaination)
       - [further explain - `if (tempMaxNumber === 0) { tempMaxNumber = i; }`](#further-explain---if-tempmaxnumber--0--tempmaxnumber--i-)
     - [`if (tempMaxNumber === 0) { tempMaxNumber = i; }` beginner explaination](#if-tempmaxnumber--0--tempmaxnumber--i--beginner-explaination)
+  - [`if...else` statement](#ifelse-statement)
+  - [`throw new Error()`](#throw-new-error)
 
 # Brute Force Algorithm
 
@@ -15,6 +21,13 @@
 
 # Recursion
 
+## Exercises explained
+
+### exercise-1.js
+
+### exercise-2.js
+
+### exercise-3.js
 
 # Others
 

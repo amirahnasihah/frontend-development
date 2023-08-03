@@ -12,7 +12,9 @@
     - [Merge Sort](#merge-sort-3)
     - [Merge Sort](#merge-sort-4)
     - [Merge Sort](#merge-sort-5)
+  - [|:-:|](#-)
     - [Merge Sort](#merge-sort-6)
+  - [|:-:|:-:|](#--)
     - [Merge Sort](#merge-sort-7)
     - [Merge Sort](#merge-sort-8)
     - [Merge Sort Algorithm](#merge-sort-algorithm)
@@ -31,6 +33,9 @@
   - [Merge Sort vs Quick Sort](#merge-sort-vs-quick-sort)
     - [geeksforgeeks (other reference)](#geeksforgeeks-other-reference)
       - [Algorithm:](#algorithm)
+- [Feedback on exercise](#feedback-on-exercise)
+  - [merge-sort.js](#merge-sortjs)
+  - [quick-sort.js](#quick-sortjs)
 
 # Assignment 6 - Sorting Algorithm (Part 2)
 
@@ -708,4 +713,18 @@ step 3: perform merge function.
 step 4: Stop
 ```
 
-end
+# Feedback on exercise
+
+> 85/100
+
+## merge-sort.js
+
+Task 1 (Score: 85)
+
+Great job on writing the code for the Merge sort algorithm! 
+
+The implementation looks good and the code runs without any errors. The logic you used to sort the array is also correct. However, you can improve your code by adding a check to ensure that the input array is not null or undefined, as the current implementation does not handle such cases.
+
+## quick-sort.js
+
+For the task 2, I will suggest you to avoid unnecessary array swaps. In the partition function, you swap the pivot element with the element at arr[i + 1]. While this works correctly, it is not necessary because the pivot is already at the correct position. Consider removing the swap operation to make the code more efficient.

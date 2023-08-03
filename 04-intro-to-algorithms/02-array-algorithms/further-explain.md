@@ -1,4 +1,26 @@
+- [Array Algorithms](#array-algorithms)
+  - [Exercises explained](#exercises-explained)
+    - [exercise-1.js](#exercise-1js)
+    - [exercise-2.js](#exercise-2js)
+    - [exercise-3.js](#exercise-3js)
+- [Other](#other)
+  - [Built-in array methods](#built-in-array-methods)
+    - [sort()](#sort)
+    - [indexOf(), find()](#indexof-find)
+      - [indexOf](#indexof)
+      - [find](#find)
+
 # Array Algorithms
+
+## Exercises explained
+
+### exercise-1.js
+
+### exercise-2.js
+
+### exercise-3.js
+
+# Other
 
 ## Built-in array methods
 

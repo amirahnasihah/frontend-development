@@ -34,6 +34,10 @@
     - [Anagram 2.0](#anagram-20)
     - [What is missing for our solution 1?](#what-is-missing-for-our-solution-1)
     - [Techniques that we used](#techniques-that-we-used-2)
+- [Feedback on exercise](#feedback-on-exercise)
+  - [exercise-1.js](#exercise-1js)
+  - [exercise-2.js](#exercise-2js)
+  - [exercise-3.js](#exercise-3js)
 
 # Assignment 3 - String Algorithms
 
@@ -354,9 +358,8 @@ Input Array: Hello, Output: olleH
 
 Hint: Use a loop with temp variable
 
-```markdown
+```
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
-
 
 ```
 
@@ -703,3 +706,30 @@ const sortedArray2 = stringInArray2.sort();
 
 return sortedArray1.join("") === sortedArray2.join("");
 ```
+
+# Feedback on exercise
+
+Great job on keeping the code concise and easy to read. Your solution works correctly for all the given test cases. Keep up the good work!
+
+## exercise-1.js
+
+Task 1 (Score: 29)
+
+Great job! 
+
+Your implementation is correct for all the given test cases. Consider adding an additional check to ensure that the target string does not exceed the input string length. If it does, you can return -1 immediately. Overall, your code is great.
+
+## exercise-2.js
+
+Task 2 (Score: 33)
+
+Great job! Your code is well-written and passes all the test cases. You have successfully completed the task by implementing a loop to iterate over the input string and concatenate each character to the result string in reverse order. Keep up the good work!
+
+## exercise-3.js
+
+Task 3 (Score: 34)
+
+Great job!
+
+The code is well-written and passes all the test cases. You have successfully completed the task. Keep up the good work!
+
