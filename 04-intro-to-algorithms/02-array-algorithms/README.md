@@ -49,6 +49,36 @@ Open `exercise-3.js` file and please finish the `findPairs` function according t
 
 # Lecture 2: Array Algorithms
 
+**further explaination**
+
+JavaScript offers a variety of built-in array methods that can be used to implement various algorithms efficiently. Here are some common array algorithms you can use in JavaScript:
+
+1. Sorting:
+   - `sort()`: Sorts the elements of an array in place based on Unicode values by default. You can provide a custom comparison function for more complex sorting.
+
+2. Searching:
+   - `indexOf()`: Returns the index of the first occurrence of a specified element in an array.
+   - `lastIndexOf()`: Returns the index of the last occurrence of a specified element in an array.
+   - `find()`: Returns the value of the first element in the array that satisfies a provided testing function.
+   - `findIndex()`: Returns the index of the first element in the array that satisfies a provided testing function.
+
+3. Filtering:
+   - `filter()`: Creates a new array with all elements that pass the test implemented by the provided function.
+
+4. Mapping:
+   - `map()`: Creates a new array by applying a function to each element of the original array.
+
+5. Reducing:
+   - `reduce()`: Executes a reducer function on each element of the array, resulting in a single output value.
+
+6. Reversing:
+   - `reverse()`: Reverses the order of the elements in an array in place.
+
+7. Concatenation:
+   - `concat()`: Returns a new array that combines the elements of two or more arrays.
+
+These are just a few examples, and there are many more array algorithms that you can implement using these methods or by combining them creatively. Let me know if you have a specific algorithm in mind, and I can provide more details!
+
 **Arrays**
 
 - The most commonly used type of data structure in any programming languages.
