@@ -4,6 +4,10 @@
 
 > by single loop (includes) and by 2 loops (indexOf)
 
+### sorted array with two loops using indexOf
+
+### sorted array with single loop using `includes`
+
 To find the missing numbers in a sorted array. Let's break down the steps to accomplish this task:
 
 ```javascript
