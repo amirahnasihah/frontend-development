@@ -244,7 +244,7 @@ This will include the element at index 0 in the loop iterations. The choice of s
 
 For example, if you want to perform an operation on all elements of the array, including the first element, you would use `i = 0` as the starting value. However, if you want to skip the first element and start from the second element, you would use `i = 1` as the starting value.
 
-## exercise-1.js - Muk Finding Missing Numbers (sorted array)
+## exercise-1.js - Multiple ways Finding Missing Numbers (sorted array)
 
 > by single loop (includes) and by 2 loops (indexOf)
 
@@ -335,7 +335,7 @@ Explanation:
 
 Make sure the input array `arr` is sorted for this approach to work correctly. This code will find the missing numbers in the sorted array and print them as output.
 
-### 1. 
+### differenc
 
 If you prefer not to use a function and want to keep using your approach to find the missing numbers, you can still do that. Just be mindful of the potential issues I mentioned earlier, such as variable scope and code reusability.
 
