@@ -474,7 +474,7 @@ To avoid ambiguity, always consider the context in which `-1` is used. In array 
 
 **arr.length - 1 (get the last index of Array)**
 
-Yes, exactly! When you see `sortedArr.length - 1`, it represents the last index of the `sortedArr`. This is because array indices in JavaScript are zero-based, so the last element of the array will have an index of `array.length - 1`.
+When you see `sortedArr.length - 1`, it represents the last index of the `sortedArr`. This is because array indices in JavaScript are zero-based, so the last element of the array will have an index of `array.length - 1`.
 
 For example, consider an array `sortedArr` with five elements:
 
