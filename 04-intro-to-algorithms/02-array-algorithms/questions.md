@@ -312,4 +312,4 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 ex array `[2, 2, 2, 3, 3, 7, 9]`.
 
-`array[i]` means location of the element where they are at index `i`. ex; the eleme
+`array[i]` means location of the element where they are at index `i`. ex; the location of element 7 which is at index 5.
