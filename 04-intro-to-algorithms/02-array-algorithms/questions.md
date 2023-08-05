@@ -91,7 +91,7 @@ Explanation:
 
 Make sure the input array `arr` is sorted for this approach to work correctly. This code will find the missing numbers in the sorted array and print them as output.
 
-#### practice find missing numbers
+#### Practice Find Missing numbers
 
 i am doing practices of javascript array algorithm
 
@@ -169,3 +169,8 @@ The 'tempArr' will now contain the missing numbers [2, 4, 5, 6]. So, when you lo
 ```
 
 These are the missing numbers that need to be added to the 'arr' to make it a consecutive range without any duplicates.
+
+#### Practice Finding Duplicate Number
+
+You have an unsorted integer array (with duplicate number). In order to find these duplicate number, what will you do?
+
