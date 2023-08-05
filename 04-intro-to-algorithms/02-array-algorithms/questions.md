@@ -95,10 +95,10 @@ Make sure the input array `arr` is sorted for this approach to work correctly. T
 
 Techniques used:
 
-1. Find range of array
-2. Temporary Variables
-3. Looping Twice
-4. Push into temporary variables 
+1. Find range of array (min + max)
+2. Used temporary variables
+3. Looping twice
+4. Push into array temporary variables 
 
 i am doing practices of javascript array algorithm
 
