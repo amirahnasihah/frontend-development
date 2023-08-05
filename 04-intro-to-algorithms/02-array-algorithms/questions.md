@@ -272,3 +272,17 @@ The `tempResult` will now contain the duplicate numbers `[2, 3]`. So, when you l
 ```
 
 These are the duplicate numbers present in the unsorted array.
+
+> What if not put `-1` inside the `(`
+
+If you forget to include `- 1` inside the loop condition `i < sortedArr.length - 1`, the loop will run until the last element of the sorted array. This means the loop will compare the last element with the element after it (which is out of bounds since there is no element after the last one).
+
+Let's consider the same example array `[2, 2, 2, 3, 3, 7, 9]`:
+
+Without `- 1` in the loop condition:
+- When `i = 5`, it compares `7` with `9` (next element). Since there's no next element (index 6), it will produce an error, and the code may crash.
+
+By including `- 1` in the loop condition:
+- When `i = 5`, it compares `7` with `9` (next element). Since `i` reaches the second-to-last element (index 5), the loop stops without causing any errors.
+
+Adding `- 1` in the loop condition is essential to ensure you don't access an out-of-bounds element and to prevent potential errors in your code. Always be cautious with loop conditions to avoid issues related to array indices.
