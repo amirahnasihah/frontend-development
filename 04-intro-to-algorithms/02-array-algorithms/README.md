@@ -505,11 +505,7 @@ As a start we have, i = 0. at very beginning we compare the first element (which
 
 tempResultArray = [2, 3, 3]
 
-
-
-////////////////////
-
-
+----
 
 Input Array (already sort): [2, 3, 3, 3, 7, 9]
 i = 0, 1, 2, 3, 4, 5
@@ -551,7 +547,7 @@ for (let i = 0; i < sortedArr.length - 1; i++){
 console.log(tempResultArray) // Expected output: [2, 3]
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 Input Array: [2, 2, 3, 3, 3, 7, 9]
 
