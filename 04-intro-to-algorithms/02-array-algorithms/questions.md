@@ -188,3 +188,34 @@ Example Algorithm:
 3. Use a for loop to go through each number in the sorted array. Compare each number the the number next to it.
 4. If the next number is same as the number, then add it to the temporary result array.
 5. Return the temporary array as result.
+
+```javascript
+// Sort the Array
+arr = [2, 3, 3, 7, 9, 2]
+sortedArr = arr.sort()
+
+// Check for Duplicating Numbers
+let tempResultArray = []
+for (let i = 0; i < sortedArr.length - 1; i++){
+    if (sortedArr[i] === sortedArr[i+1]){
+        tempResultArray.push(sortedArr[i])
+    }
+}
+console.log(tempResultArray) // Output: [2, 3, 3]
+
+
+// Part 3 - Avoid Duplicating Results
+let tempResultArray = []
+
+for (let i = 0; i < sortedArr.length - 1; i++){
+    if (sortedArr[i] === sortedArr[i+1]){
+        if (tempResultArray.indexOf(sortedArr[i]) === -1){
+            tempResultArray.push(sortedArr[i])
+        }
+    }
+}
+
+console.log(tempResultArray) // Output: [2, 3]
+```
+
+The final output is the `tempResultArray` containing all the unique duplicate numbers found in the `sortedArr` array.
