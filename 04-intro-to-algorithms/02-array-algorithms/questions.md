@@ -273,7 +273,7 @@ The `tempResult` will now contain the duplicate numbers `[2, 3]`. So, when you l
 
 These are the duplicate numbers present in the unsorted array.
 
-> What if not put `-1` inside the `(`
+> What if not put `-1` inside the `(i < sortedArr.length - 1)`
 
 If you forget to include `- 1` inside the loop condition `i < sortedArr.length - 1`, the loop will run until the last element of the sorted array. This means the loop will compare the last element with the element after it (which is out of bounds since there is no element after the last one).
 
