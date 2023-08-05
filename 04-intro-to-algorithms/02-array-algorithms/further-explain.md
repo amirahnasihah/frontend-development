@@ -188,7 +188,7 @@ const index3 = fruits.indexOf('kiwi');   // -1 (not found)
 
 In this example, `indexOf()` finds the index of the first occurrence of the element 'banana', which is 1. It also finds the index of 'grapes', which is 3. However, it doesn't find 'kiwi', so it returns -1 to indicate that the element is not present in the array.
 
-##### `arr.indexOf(i) === -1` and `arr[i] === -1`
+##### Difference `arr.indexOf(i) === -1` and `arr[i] === -1`
 
 The expression `arr.indexOf(i) === -1` and `arr[i] === -1` have different meanings and purposes:
 
