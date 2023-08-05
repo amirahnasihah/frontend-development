@@ -90,3 +90,51 @@ Explanation:
 3. In Step 3, we simply print the `missingNumbers` array as the result.
 
 Make sure the input array `arr` is sorted for this approach to work correctly. This code will find the missing numbers in the sorted array and print them as output.
+
+#### practice find missing numbers
+
+i am doing practices of javascript array algorithm
+
+question: have an unsorted integer array (without duplicate number) and some numbers are missing in this array. In order to make the array consecutive. How do you find that missing number?
+
+arr  = [3, 7, 1]
+
+my answer:
+1. find range of array
+2. two loop
+
+```
+function findNumber(arr) {
+let min = arr[0]
+let max = arr[0]
+
+// start loop or find elements at second index
+for (let i = 1; i < arr.length; i++) {
+      // first want to look the min of array
+     if (arr[i] < min) { 
+        // condition: if current element, 7 < min 3 -> false = skip to next loop | new current, 1 < min 3 -> true = min is 1
+       min = arr[i]
+       }
+      // second want to look the max of array
+      if (arr[i] > max) {
+          // condition: if current element, 7 < min 3 -> true = max is 7
+          max = arr[i]
+       }
+    }
+
+console.log("min", min)
+console.log("max", max)
+
+    // after finish find range, what is the missing number? -> temp var to store missing number
+    let tempArr = []
+
+  // explain this part to me: (let i = min; i <= max; i++ )
+    for (let i = min; i <= max; i++ ) {
+        if (arr.indexOf(i) === -1) {
+            tempArr.push(i)
+        }
+     }
+
+}
+console.log(tempArr)
+```
