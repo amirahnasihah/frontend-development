@@ -286,3 +286,24 @@ By including `- 1` in the loop condition:
 - When `i = 5`, it compares `7` with `9` (next element). Since `i` reaches the second-to-last element (index 5), the loop stops without causing any errors.
 
 Adding `- 1` in the loop condition is essential to ensure you don't access an out-of-bounds element and to prevent potential errors in your code. Always be cautious with loop conditions to avoid issues related to array indices.
+
+> More about this condition `sortedArr[i] === sortedArr[i + 1]`
+
+Certainly! Let's explain the `if` condition `sortedArr[i] === sortedArr[i + 1]` in simple plain English:
+
+This `if` condition is checking whether the current element in the sorted array is equal to the next element in the sorted array.
+
+- `sortedArr[i]`: This represents the current element at the index `i` in the sorted array.
+- `sortedArr[i + 1]`: This represents the next element after the current element, at index `i + 1` in the sorted array.
+
+So, the `if` statement is comparing the value of the current element with the value of the next element. If they are the same (equal), it means we have found a duplicate number.
+
+For example, consider the sorted array `[2, 2, 2, 3, 3, 7, 9]`:
+
+- When `i = 0`, the current element is `2`, and the next element (at `i + 1`) is also `2`. Since they are the same, this means we have found a duplicate number, which is `2`.
+- When `i = 1`, the current element is `2`, and the next element (at `i + 1`) is also `2`. Again, they are the same, and we have another duplicate `2`.
+- When `i = 2`, the current element is `2`, but the next element (at `i + 1`) is `3`. They are not the same, so it's not a duplicate.
+- When `i = 3`, the current element is `3`, and the next element (at `i + 1`) is also `3`. Once again, they are the same, and we have a duplicate `3`.
+- The loop continues, and it will also find the duplicate `3` and the non-duplicate elements `7` and `9`.
+
+In summary, the `if` condition is a simple way to identify duplicate numbers in the sorted array by comparing each element with the next one.
