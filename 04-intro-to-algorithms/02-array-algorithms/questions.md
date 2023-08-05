@@ -314,4 +314,4 @@ ex array `[2, 2, 2, 3, 3, 7, 9]`.
 
 - `array[i]` means location of the element where they are at index `i`. ex; the location of element 7 which is at index 5.
 
-- `array[i + 1]` means location of the element w
+- `array[i + 1]` means location of the element of where they are at index `i` plus 1. ex; the location of element 7 which is at index 5.
