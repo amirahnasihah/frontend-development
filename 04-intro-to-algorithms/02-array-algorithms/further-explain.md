@@ -188,6 +188,24 @@ const index3 = fruits.indexOf('kiwi');   // -1 (not found)
 
 In this example, `indexOf()` finds the index of the first occurrence of the element 'banana', which is 1. It also finds the index of 'grapes', which is 3. However, it doesn't find 'kiwi', so it returns -1 to indicate that the element is not present in the array.
 
+##### `arr.indexOf(i) === -1` and `arr[i] === -1`
+
+The expression `arr.indexOf(i) === -1` and `arr[i] === -1` have different meanings and purposes:
+
+1. `arr.indexOf(i) === -1`:
+   This expression checks whether the value `i` is present in the array `arr`. The `indexOf()` method returns the index of the first occurrence of the specified value in the array. If the value is not found, `indexOf()` returns `-1`. So, `arr.indexOf(i) === -1` checks if the value `i` is NOT present in the array `arr`.
+
+2. `arr[i] === -1`:
+   This expression accesses the element at index `i` in the array `arr` and checks if that element is equal to `-1`. It directly compares the element's value with `-1`.
+
+In the context of finding missing numbers in an array, you need to use `arr.indexOf(i) === -1` rather than `arr[i] === -1`. Here's why:
+
+- When finding missing numbers, you are looking for the elements that are not present in the array but are part of a specific range.
+- `arr.indexOf(i) === -1` checks if the value `i` is not present in the array `arr`, meaning `i` is a missing number.
+- On the other hand, `arr[i] === -1` would check if the element at index `i` in the array is equal to `-1`, which is not what you want in this case. The array doesn't contain `-1`, and this comparison would not give you the correct result for finding missing numbers.
+
+To summarize, you use `arr.indexOf(i) === -1` to check if the value `i` is missing from the array `arr` and is part of the desired range. This condition helps you identify and collect the missing numbers correctly.
+
 #### find
 
 The `find()` method in JavaScript is used to search for the first element in an array that satisfies a given condition. It returns the value of the first element found, or `undefined` if no element matches the condition.
