@@ -204,7 +204,7 @@ for (let i = 0; i < sortedArr.length - 1; i++){
 console.log(tempResultArray) // Output: [2, 3, 3]
 
 
-// Part 3 - Avoid Duplicating Results
+// Avoid Duplicating Results
 let tempResultArray = []
 
 for (let i = 0; i < sortedArr.length - 1; i++){
@@ -219,3 +219,56 @@ console.log(tempResultArray) // Output: [2, 3]
 ```
 
 The final output is the `tempResultArray` containing all the unique duplicate numbers found in the `sortedArr` array.
+
+Sure, let's go through your code to find the duplicate numbers in the unsorted array.
+
+Your approach seems mostly correct, but there are a couple of issues in your code:
+
+1. Sorting the array:
+   You are sorting the original array using `arr.sort()`, which sorts the elements in lexicographic (alphabetical) order by default. For numeric sorting, you need to provide a comparison function. You can fix this by using `arr.sort((a, b) => a - b)`.
+
+2. Explaining the loop condition and condition inside the loop:
+   - `i < sortedArr.length - 1`: This condition ensures that the loop runs until the second-to-last element of the sorted array. Since we compare each element with the next one, there's no need to go beyond the last element.
+   - `(sortedArr[i] === sortedArr[i + 1])`: This checks if the current element is equal to the next element. If they are equal, it means we found a duplicate.
+
+Let's see how your code should look after the necessary corrections:
+
+```javascript
+// Unsorted array with duplicate numbers
+arr = [2, 3, 3, 7, 2, 9, 2]
+
+// Sorting the array in ascending order
+sortedArr = arr.sort((a, b) => a - b); // [2, 2, 2, 3, 3, 7, 9]
+
+// Array to store the duplicate numbers
+let tempResult = [];
+
+// Loop through the sorted array to find duplicates
+for (let i = 0; i < sortedArr.length - 1; i++) {
+  if (sortedArr[i] === sortedArr[i + 1]) {
+    // If the current element is equal to the next element, it's a duplicate
+    tempResult.push(sortedArr[i]);
+  }
+}
+
+console.log(tempResult);
+```
+
+Now, let's find the duplicate numbers in the `arr`:
+
+1. Sorting the array: `[2, 3, 3, 7, 2, 9, 2]` becomes `[2, 2, 2, 3, 3, 7, 9]`.
+2. Looping through the sorted array:
+   - When `i = 0`, it compares `2` with `2` (next element). They are equal, so `2` is a duplicate and gets pushed into `tempResult`.
+   - When `i = 1`, it compares `2` with `2` (next element). They are equal, so `2` is a duplicate and gets pushed into `tempResult`.
+   - When `i = 2`, it compares `2` with `3` (next element). They are not equal.
+   - When `i = 3`, it compares `3` with `3` (next element). They are equal, so `3` is a duplicate and gets pushed into `tempResult`.
+   - When `i = 4`, it compares `3` with `7` (next element). They are not equal.
+   - When `i = 5`, it compares `7` with `9` (next element). They are not equal.
+
+The `tempResult` will now contain the duplicate numbers `[2, 3]`. So, when you log `tempResult`, it will display:
+
+```
+[2, 3]
+```
+
+These are the duplicate numbers present in the unsorted array.
