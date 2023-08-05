@@ -307,3 +307,7 @@ For example, consider the sorted array `[2, 2, 2, 3, 3, 7, 9]`:
 - The loop continues, and it will also find the duplicate `3` and the non-duplicate elements `7` and `9`.
 
 In summary, the `if` condition is a simple way to identify duplicate numbers in the sorted array by comparing each element with the next one.
+
+**self-recap**
+
+array[i] means 
