@@ -310,7 +310,7 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 **self-recap**
 
-ex `fruits = ['banana', 'apple', 'orange', 'grapes'];`
+ex `fruits = ['banana', 'apple', 'apple', 'apple', 'orange', 'grapes', 'grapes'];`
 
 - `array[i]` means location of the element where they are at index `i`. ex; the location of element `orange` which is at index 5.
 
