@@ -310,8 +310,8 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 **self-recap**
 
-> array are `fruits = ['banana', 'apple', 'apple', 'apple', 'orange', 'grapes', 'grapes'];`
+> array are `fruits = ['banana', 'guava', 'apple', 'apple', 'apple', 'orange', 'grapes', 'grapes'];`
 
-- `fruits[i]` means location of the element where they are, at index `i`. ex; the location of the element/value `orange` is at index `4`.
+- `fruits[i]` means location of the element where they are, at index `i`. ex; the location of the element/value `orange` is at index `5`.
 
-- `fruits[i + 1]` means location of the element of where they are, at index `i` plus 1 index. ex; the location of element `banana` where at index `0` plus `1` index is then become index 6. index 6 is the location for number 9
+- `fruits[i + 1]` means location of the element of where they are, at index `i` plus 1 index. ex; the location of element `guava` where at index `1` plus `1` index is then become index `2`. index 6 is the location for number 9
