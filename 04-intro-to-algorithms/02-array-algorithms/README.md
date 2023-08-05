@@ -216,7 +216,7 @@ for(let i = 1; i < arr.length; i++){
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 1. `arr = [3, 7, 1]`: Defines an array `arr` with three values, 3, 7, and 1.
 
@@ -277,6 +277,7 @@ In summary, this code is finding all the missing numbers between `min` and `max`
 **JS Fact:**
 
 > `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present. (indexOf() is basically a searching function. -1 means not exist in the array)
+> ex; in beasts array, the index of the element array is 1
 
 ```javascript
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
