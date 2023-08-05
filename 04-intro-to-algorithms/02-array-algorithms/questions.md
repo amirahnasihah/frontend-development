@@ -138,3 +138,34 @@ console.log("max", max)
 }
 console.log(tempArr)
 ```
+
+Sure, let's go through your code step by step and understand how it works to find the missing numbers in the consecutive range.
+
+1. Finding the minimum and maximum values in the array:
+   Your first loop iterates through the array and updates the variables 'min' and 'max' to store the minimum and maximum values, respectively, present in the array. In this case, 'min' becomes 1, and 'max' becomes 7.
+
+2. Explaining the second loop:
+   The second loop starts with 'i' being equal to 'min' (which is 1) and continues until 'i' is less than or equal to 'max' (which is 7). This loop aims to find the missing numbers in the range from 'min' to 'max'.
+
+3. Finding the missing numbers:
+   Inside the second loop, the code checks if the current value of 'i' exists in the 'arr' using the 'indexOf' method. If 'i' is not found in 'arr', it means 'i' is a missing number, and it gets pushed into the 'tempArr' array.
+
+Now, let's see the missing numbers in the range [1, 7] based on the 'arr' you provided [3, 7, 1]:
+
+1. The minimum value in 'arr' is 1, and the maximum value is 7. So, the range is [1, 7].
+2. Looping through the range [1, 7]:
+   - When 'i' is 1, it exists in 'arr', so it's not a missing number.
+   - When 'i' is 2, it doesn't exist in 'arr', so it's a missing number and gets pushed into 'tempArr'.
+   - When 'i' is 3, it exists in 'arr', so it's not a missing number.
+   - When 'i' is 4, it doesn't exist in 'arr', so it's a missing number and gets pushed into 'tempArr'.
+   - When 'i' is 5, it doesn't exist in 'arr', so it's a missing number and gets pushed into 'tempArr'.
+   - When 'i' is 6, it doesn't exist in 'arr', so it's a missing number and gets pushed into 'tempArr'.
+   - When 'i' is 7, it exists in 'arr', so it's not a missing number.
+
+The 'tempArr' will now contain the missing numbers [2, 4, 5, 6]. So, when you log 'tempArr', it will display:
+
+```
+[2, 4, 5, 6]
+```
+
+These are the missing numbers that need to be added to the 'arr' to make it a consecutive range without any duplicates.
