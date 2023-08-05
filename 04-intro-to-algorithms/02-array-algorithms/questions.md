@@ -310,4 +310,4 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 **self-recap**
 
-array[i] means 
+array[i] means location of the element where they at index i.
