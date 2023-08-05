@@ -91,7 +91,7 @@ Explanation:
 
 Make sure the input array `arr` is sorted for this approach to work correctly. This code will find the missing numbers in the sorted array and print them as output.
 
-#### Practice Find Missing numbers
+#### Practice Find Missing Numbers
 
 i am doing practices of javascript array algorithm
 
