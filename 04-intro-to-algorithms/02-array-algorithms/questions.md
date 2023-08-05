@@ -314,4 +314,4 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 - `fruits[i]` means location of the element where they are, at index `i`. ex; the location of the element/value `orange` is at index `4`.
 
-- `fruits[i + 1]` means location of the element of where they are© at index `i` plus 1 of another index. ex; the location of element 7 where at index 5 plus 1 index is then become index 6. index 6 is the location for number 9
+- `fruits[i + 1]` means location of the element of where they are, at index `i` plus 1 index. ex; the location of element `banana` where at index `0` plus `1` index is then become index 6. index 6 is the location for number 9
