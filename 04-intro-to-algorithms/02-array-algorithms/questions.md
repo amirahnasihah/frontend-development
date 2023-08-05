@@ -181,3 +181,10 @@ These are the missing numbers that need to be added to the 'arr' to make it a co
 
 You have an unsorted integer array (with duplicate number). In order to find these duplicate number, what will you do?
 
+Example Algorithm:
+
+1. Sort the array first.
+2. Create a temporary result array.
+3. Use a for loop to go through each number in the sorted array. Compare each number the the number next to it.
+4. If the next number is same as the number, then add it to the temporary result array.
+5. Return the temporary array as result.
