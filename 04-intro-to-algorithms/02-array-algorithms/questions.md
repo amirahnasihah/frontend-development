@@ -97,7 +97,7 @@ i am doing practices of javascript array algorithm
 
 question: have an unsorted integer array (without duplicate number) and some numbers are missing in this array. In order to make the array consecutive. How do you find that missing number?
 
-arr  = [3, 7, 1]
+`arr  = [3, 7, 1]`
 
 my answer:
 1. find range of array
