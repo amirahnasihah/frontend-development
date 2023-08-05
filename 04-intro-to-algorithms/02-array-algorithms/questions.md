@@ -93,6 +93,12 @@ Make sure the input array `arr` is sorted for this approach to work correctly. T
 
 #### Practice Find Missing Numbers
 
+Techniques used:
+
+1. Find range if array
+2. Temporary Variables
+3. Looping Twice
+
 i am doing practices of javascript array algorithm
 
 question: have an unsorted integer array (without duplicate number) and some numbers are missing in this array. In order to make the array consecutive. How do you find that missing number?
