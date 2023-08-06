@@ -9,4 +9,4 @@ console.log(fruits[5 + 1]) // grapes
 
 fruits.sort();
 console.log(fruits);
-// [ 'apple', 'apple', 'apple', 'banana', 'grapes', 'grapes', 'guava', 'orange']
+// [ 'apple', 'apple', 'apple', 'banana', 'grapes', 'grapes', 'guava', 'orange' ]
