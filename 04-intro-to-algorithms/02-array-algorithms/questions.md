@@ -316,7 +316,7 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 - `fruits[i + 1]` means location of the element of where they are, at index `i` plus 1 index. ex; the location of element `guava` where at index `1` plus index `1` is then become index `2`. index `2` is the location for element `apple`
 
-- `fruits.indexOf("apple")` means find what is the first index to get from the wanted element's location. ex; if the the value apple have
+- `fruits.indexOf("apple")` means find what is the first index to get from the wanted element's location. ex; if the the element apple have 3 same value, it shows the first index that occur in the arr
 
 . `arr.indexOf(i) === -1`:
    This expression checks whether the value `i` is present in the array `arr`. The `indexOf()` method returns the index of the first occurrence of the specified value in the array. If the value is not found, `indexOf()` returns `-1`. So, `arr.indexOf(i) === -1` checks if the value `i` is NOT present in the array `arr`.
