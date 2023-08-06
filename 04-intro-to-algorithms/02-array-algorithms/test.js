@@ -8,6 +8,7 @@ console.log(fruits[5 + 1]) // grapes
 console.log(fruits[8]) // undefined
 
 console.log(fruits.indexOf(fruits[8])) // -1
+console.log(fruits.indexOf(fruits[5])) // 5
 
 fruits.sort();
 console.log(fruits);
