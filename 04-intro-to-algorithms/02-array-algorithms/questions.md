@@ -316,4 +316,4 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 - `fruits[i + 1]` means location of the element of where they are, at index `i` plus 1 index. ex; the location of element `guava` where at index `1` plus index `1` is then become index `2`. index `2` is the location for element `apple`
 
-- `fruits.indexOf("apple")` means where is
+- `fruits.indexOf("apple")` means find where is the index of element's location. ex; 
