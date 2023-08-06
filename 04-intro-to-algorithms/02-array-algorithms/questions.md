@@ -375,3 +375,32 @@ In conclusion:
 
 1. `console.log(fruits[8])` prints `undefined` because there is no element at index 8 in the 'fruits' array.
 2. `console.log(fruits.indexOf(fruits[8]))` prints `-1` because the `indexOf()` method could not find `undefined` in the 'fruits' array.
+
+### Find the pair number
+
+Your approach is on the right track, but there are a couple of issues with your current implementation. The return statement inside the inner loop will return the first pair that sums up to the target, but it won't find all pairs that satisfy the condition. Additionally, you should make sure that the two elements in a pair are not the same element, as the question asks for pairs with distinct integers.
+
+To find all pairs of integers in the array that sum up to the given target, you can modify your code as follows:
+
+```javascript
+function findPairsWithSum(arr, targetSum) {
+    const pairs = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] === targetSum) {
+                pairs.push([arr[i], arr[j]]);
+            }
+        }
+    }
+
+    return pairs;
+}
+
+const arr = [2, 3, 7, 9, 2];
+const targetSum = 10;
+const pairs = findPairsWithSum(arr, targetSum);
+console.log(pairs);
+```
+
+Now, when you call `findPairsWithSum(arr, targetSum)`, it will return an array containing all the pairs whose elements sum up to the target value. Keep in mind that this approach has a time complexity of O(n^2), which means it might not be the most efficient solution for large arrays. There are more optimized algorithms available for solving this problem, such as using a hash table or a two-pointer approach.
