@@ -13,3 +13,7 @@ console.log(fruits.indexOf(fruits[6])) // 6, it gives index
 fruits.sort();
 console.log(fruits);
 // [ 'apple', 'apple', 'apple', 'banana', 'grapes', 'grapes', 'guava', 'orange' ]
+
+arr = [2, 3, 3, 7, 9, 2]
+sortedArr = arr.sort()
+console.log(sortedArr);
