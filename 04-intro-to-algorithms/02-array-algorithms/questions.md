@@ -376,7 +376,7 @@ In conclusion:
 1. `console.log(fruits[8])` prints `undefined` because there is no element at index 8 in the 'fruits' array.
 2. `console.log(fruits.indexOf(fruits[8]))` prints `-1` because the `indexOf()` method could not find `undefined` in the 'fruits' array.
 
-### Find the pair number
+### Practice Finding Number Pairs
 
 Your approach is on the right track, but there are a couple of issues with your current implementation. The return statement inside the inner loop will return the first pair that sums up to the target, but it won't find all pairs that satisfy the condition. Additionally, you should make sure that the two elements in a pair are not the same element, as the question asks for pairs with distinct integers.
 
