@@ -5,3 +5,11 @@ console.log(fruits.indexOf("mangosteen")) // -1, not exist
 
 console.log(fruits[5]) // orange
 console.log(fruits[5 + 1]) // grapes
+
+
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+fruits.sort();
+
+console.log(fruits);
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
