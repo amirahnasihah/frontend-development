@@ -5,6 +5,7 @@ console.log(fruits.indexOf("mangosteen")) // -1, not exist
 
 console.log(fruits[5]) // orange
 console.log(fruits[5 + 1]) // grapes
+console.log(fruits[8]) // undefined
 
 fruits.sort();
 console.log(fruits);
