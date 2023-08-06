@@ -1,5 +1,4 @@
 fruits = ['banana', 'guava', 'apple', 'apple', 'apple', 'orange', 'grapes', 'grapes']
 
-fruitsLong = ['banana', 'guava', 'red apple', 'apple', 'apple', 'orange', 'grapes purple', 'grapes']
-
-console.log(fruitsLong.indexOf("grapes"))
+console.log(fruits.indexOf("apple")) // 2
+console.log(fruits[5])
