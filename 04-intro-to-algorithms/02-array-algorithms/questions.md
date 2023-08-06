@@ -320,6 +320,8 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 - `arr.indexOf(i) === -1` checks if the value `i` is not present in the array `arr`, meaning `i` is a missing number. If the value is not found, `indexOf()` returns `-1`. So, `arr.indexOf(i) === -1` checks if the value `i` is NOT present in the array `arr`.
 
+- `if (tempResultArray.indexOf(sortedArr[i]) === -1)`: Checks if the current duplicate number has already been added to the `tempResultArray`. If the index of the current duplicate number is `-1`, that means it hasn't been added yet.
+
 Your understanding is mostly correct! Here's a summary of your points with some minor clarifications:
 
 1. `fruits[i]` represents the element/value at index `i` in the array 'fruits'. For example, `fruits[0]` would give you 'banana', `fruits[3]` would give you 'apple', and so on.
