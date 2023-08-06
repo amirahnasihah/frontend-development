@@ -348,3 +348,23 @@ Sure! Let's explain the two lines of code in simple plain English for beginners:
    - In this case, 'grapes' first occurs at index 6 in the 'fruits' array. So, `console.log(fruits.indexOf(fruits[8]))` will print 6, which is the index of 'grapes' in the 'fruits' array.
 
 In summary, `console.log(fruits[8])` prints the value at the 9th position in the 'fruits' array, which is 'grapes', and `console.log(fruits.indexOf(fruits[8]))` prints the index of the first occurrence of 'grapes' in the 'fruits' array, which is 6.
+
+> if element in array not exists
+
+1. `console.log(fruits[8])`
+
+   - However, the 'fruits' array has only 8 elements, and arrays are zero-indexed, meaning the last valid index in this case is 7 (not 8).
+   - Since there is no element at index 8 in the 'fruits' array, trying to access it will result in `undefined`.
+   - The output of `console.log(fruits[8])` will be `undefined`.
+
+2. `console.log(fruits.indexOf(fruits[8]))`
+
+   - The code first evaluates `fruits[8]`, which as we discussed earlier, returns `undefined`.
+   - Now, the `indexOf()` method looks for the first occurrence of `undefined` in the 'fruits' array.
+   - Since `undefined` is not found in the array, the `indexOf()` method returns `-1`.
+   - The output of `console.log(fruits.indexOf(fruits[8]))` will be `-1`.
+
+In conclusion:
+
+1. `console.log(fruits[8])` prints `undefined` because there is no element at index 8 in the 'fruits' array.
+2. `console.log(fruits.indexOf(fruits[8]))` prints `-1` because the `indexOf()` method could not find `undefined` in the 'fruits' array.
