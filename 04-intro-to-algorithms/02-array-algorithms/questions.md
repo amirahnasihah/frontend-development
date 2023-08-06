@@ -330,6 +330,8 @@ Here's a summary of previous points with some minor clarifications:
 
 Sure! Let's explain the two lines of code in simple plain English for beginners:
 
+> `fruits[8]` and `fruits.indexOf(fruits[8])`
+
 1. `console.log(fruits[8])`:
 
    - This line of code prints something to the console, which is a window in your browser or a terminal where you can see messages or output from your code.
