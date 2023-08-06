@@ -331,5 +331,3 @@ Your understanding is mostly correct! Here's a summary of your points with some 
 4. When finding missing numbers, you are indeed looking for elements that are not present in the array but are expected to be part of a specific range.
 
 5. `arr.indexOf(i) === -1` checks if the value `i` is not present in the array 'arr', which implies `i` is a missing number. If the value is not found, `indexOf()` returns -1, so `arr.indexOf(i) === -1` checks if the value `i` is NOT present in the array 'arr'.
-
-Your understanding is clear, and you've grasped the concepts quite well. Keep up the good work with JavaScript array algorithms! If you have any more questions or need further clarifications, feel free to ask. Happy coding!
