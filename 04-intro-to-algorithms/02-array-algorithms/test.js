@@ -17,3 +17,11 @@ console.log(fruits);
 arr = [2, 3, 3, 7, 9, 2]
 sortedArr = arr.sort()
 console.log(sortedArr);
+
+let tempResultArray = []
+for (let i = 0; i < sortedArr.length - 1; i++){
+    if (sortedArr[i] === sortedArr[i+1]){
+        tempResultArray.push(sortedArr[i])
+    }
+}
+console.log(tempResultArray)
