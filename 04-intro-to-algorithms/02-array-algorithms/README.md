@@ -591,7 +591,7 @@ Full
 ```javascript
 // Part 1 - Sort the Array
 arr = [2, 3, 3, 7, 9, 2]
-sortedArr = arr.sort()
+sortedArr = arr.sort() // [ 2, 2, 3, 3, 7, 9 ]
 
 // Part 2 - Check for Duplicating Numbers
 let tempResultArray = []
