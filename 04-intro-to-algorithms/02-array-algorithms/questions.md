@@ -320,7 +320,7 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 
 - `arr.indexOf(i) === -1` checks if the value `i` is not present in the array `arr`, meaning `i` is a missing number. If the value is not found, `indexOf()` returns `-1`. So, `arr.indexOf(i) === -1` checks if the value `i` is NOT present in the array `arr`.
 
-- `if (tempResultArray.indexOf(sortedArr[i]) === -1)`: Checks if the current duplicate number has already been added to the `tempResultArray`. If the index of the current duplicate number is `-1`, that means it hasn't been added yet.
+
 
 Your understanding is mostly correct! Here's a summary of your points with some minor clarifications:
 
@@ -333,3 +333,27 @@ Your understanding is mostly correct! Here's a summary of your points with some 
 4. When finding missing numbers, you are indeed looking for elements that are not present in the array but are expected to be part of a specific range.
 
 5. `arr.indexOf(i) === -1` checks if the value `i` is not present in the array 'arr', which implies `i` is a missing number. If the value is not found, `indexOf()` returns -1, so `arr.indexOf(i) === -1` checks if the value `i` is NOT present in the array 'arr'.
+
+6. `if (tempResultArray.indexOf(sortedArr[i]) === -1)`: Checks if the current duplicate number has already been added to the `tempResultArray`. If the index of the current duplicate number is `-1`, that means it hasn't been added yet.
+7. `fruits.indexOf(fruits[8])`
+
+
+
+Sure! Let's explain the two lines of code in simple plain English for beginners:
+
+1. `console.log(fruits[8])`:
+
+   - This line of code prints something to the console, which is a window in your browser or a terminal where you can see messages or output from your code.
+   - `fruits[8]` means accessing the element at index 8 in the 'fruits' array. In other words, it gets the value that is stored in the 'fruits' array at position 8.
+   - Arrays are like numbered lists, and they start counting from 0. So, if you see `fruits[8]`, it means you are getting the value at the 9th position (since the index starts from 0) in the 'fruits' array.
+   - If the 'fruits' array contains `['banana', 'guava', 'apple', 'apple', 'apple', 'orange', 'grapes', 'grapes']`, then `console.log(fruits[8])` will print 'grapes', because 'grapes' is at the 9th position in the array.
+
+2. `console.log(fruits.indexOf(fruits[8]))`:
+
+   - This line of code is also printing something to the console.
+   - `fruits[8]` is getting the value at index 8 in the 'fruits' array, which is 'grapes', as we discussed earlier.
+   - Now, `fruits.indexOf(fruits[8])` takes that value ('grapes') and looks for its first occurrence in the 'fruits' array.
+   - The `indexOf()` method returns the index of the first occurrence of the specified value in the array.
+   - In this case, 'grapes' first occurs at index 6 in the 'fruits' array. So, `console.log(fruits.indexOf(fruits[8]))` will print 6, which is the index of 'grapes' in the 'fruits' array.
+
+In summary, `console.log(fruits[8])` prints the value at the 9th position in the 'fruits' array, which is 'grapes', and `console.log(fruits.indexOf(fruits[8]))` prints the index of the first occurrence of 'grapes' in the 'fruits' array, which is 6.
