@@ -7,6 +7,8 @@ console.log(fruits[5]) // orange
 console.log(fruits[5 + 1]) // grapes
 console.log(fruits[8]) // undefined
 
+console.log(fruits.indexOf(fruits[8])) // -1
+
 fruits.sort();
 console.log(fruits);
 // [ 'apple', 'apple', 'apple', 'banana', 'grapes', 'grapes', 'guava', 'orange' ]
