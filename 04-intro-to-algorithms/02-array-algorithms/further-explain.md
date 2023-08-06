@@ -4,11 +4,19 @@
     - [exercise-2.js](#exercise-2js)
     - [exercise-3.js](#exercise-3js)
 - [Other](#other)
+  - [Built-in array methods tips](#built-in-array-methods-tips)
   - [Built-in array methods](#built-in-array-methods)
     - [sort()](#sort)
     - [indexOf(), find()](#indexof-find)
       - [indexOf](#indexof)
+        - [Difference `arr.indexOf(i) === -1` and `arr[i] === -1`](#difference-arrindexofi---1-and-arri---1)
       - [find](#find)
+  - [this for(let i = 1; i \< arr.length; i++) which i = 1 or in another for loop where i = 0, is it refer tu index of element? or refer to a number?](#this-forlet-i--1-i--arrlength-i-which-i--1-or-in-another-for-loop-where-i--0-is-it-refer-tu-index-of-element-or-refer-to-a-number)
+  - [exercise-1.js - Multiple ways Finding Missing Numbers (sorted array)](#exercise-1js---multiple-ways-finding-missing-numbers-sorted-array)
+    - [sorted array with two loops using `indexOf`](#sorted-array-with-two-loops-using-indexof)
+    - [sorted array with single loop using `includes`](#sorted-array-with-single-loop-using-includes)
+    - [If not to use a function (with issues!)](#if-not-to-use-a-function-with-issues)
+  - [Finding Missing Numbers (unsorted array + duplicate numbers)](#finding-missing-numbers-unsorted-array--duplicate-numbers)
 
 # Array Algorithms
 

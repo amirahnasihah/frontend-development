@@ -1,3 +1,10 @@
+- [Array Algorithm Problems in JS](#array-algorithm-problems-in-js)
+  - [Finding Missing Numbers (sorted array - 2 ways)](#finding-missing-numbers-sorted-array---2-ways)
+    - [sorted array with two loops using `indexOf`](#sorted-array-with-two-loops-using-indexof)
+    - [sorted array with single loop using `includes`](#sorted-array-with-single-loop-using-includes)
+      - [Practice Find Missing Numbers](#practice-find-missing-numbers)
+      - [Practice Finding Duplicate Number](#practice-finding-duplicate-number)
+
 # Array Algorithm Problems in JS
 
 ## Finding Missing Numbers (sorted array - 2 ways)
