@@ -319,3 +319,17 @@ In summary, the `if` condition is a simple way to identify duplicate numbers in 
 - `fruits.indexOf("apple")` means find what is the first index to get from the wanted element's location. ex; if the the element `apple` have 3 same value, it shows the first index that occur in the `fruits` array which is at index `2`. When finding missing numbers, you are looking for the elements that are not present in the array but are part of a specific range.
 
 - `arr.indexOf(i) === -1` checks if the value `i` is not present in the array `arr`, meaning `i` is a missing number. If the value is not found, `indexOf()` returns `-1`. So, `arr.indexOf(i) === -1` checks if the value `i` is NOT present in the array `arr`.
+
+Your understanding is mostly correct! Here's a summary of your points with some minor clarifications:
+
+1. `fruits[i]` represents the element/value at index `i` in the array 'fruits'. For example, `fruits[0]` would give you 'banana', `fruits[3]` would give you 'apple', and so on.
+
+2. `fruits[i + 1]` represents the element/value at the index obtained by adding 1 to the current index `i`. For example, if `i` is 1, then `fruits[i + 1]` would give you 'guava', which is at index 2.
+
+3. `fruits.indexOf("apple")` finds the first index where the element/value 'apple' occurs in the 'fruits' array. If there are multiple occurrences of 'apple', `indexOf()` returns the index of the first occurrence. For example, since 'apple' first occurs at index 2, `fruits.indexOf("apple")` would return 2.
+
+4. When finding missing numbers, you are indeed looking for elements that are not present in the array but are expected to be part of a specific range.
+
+5. `arr.indexOf(i) === -1` checks if the value `i` is not present in the array 'arr', which implies `i` is a missing number. If the value is not found, `indexOf()` returns -1, so `arr.indexOf(i) === -1` checks if the value `i` is NOT present in the array 'arr'.
+
+Your understanding is clear, and you've grasped the concepts quite well. Keep up the good work with JavaScript array algorithms! If you have any more questions or need further clarifications, feel free to ask. Happy coding!
