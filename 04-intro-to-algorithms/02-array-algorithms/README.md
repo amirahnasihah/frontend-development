@@ -667,13 +667,9 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-**EXPLAINATION**
-
-
+**EXPLANATION**
 
 ### Part 2 - Loop Thru in a Nested Loop (important part)
-
-
 
 Then we need to create a nested loop to go thru each of the elements again.
 
