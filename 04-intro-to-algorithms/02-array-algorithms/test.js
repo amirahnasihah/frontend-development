@@ -32,4 +32,8 @@ console.log(tempResultArray)
 let inputArr = [2, 3, 7, 9, 2]
 let targetSum = 10
 
-fun
+function findPairNumber(inputArr, targetSum) {
+	for (let i = 0; i < inputArr.length; i++) {
+		Things[i]
+	}
+}
