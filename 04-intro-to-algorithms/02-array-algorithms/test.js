@@ -33,7 +33,11 @@ let inputArr = [2, 3, 7, 9, 2]
 let targetSum = 10
 
 function findPairNumber(inputArr, targetSum) {
+	// first loop
 	for (let i = 0; i < inputArr.length; i++) {
-		Things[i]
+		// second loop
+		for (let j = 0; j < inputArr.length; j++) {
+			Things[j]
+		}
 	}
 }
