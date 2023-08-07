@@ -77,7 +77,7 @@ const newText = text.replace("World", "Universe"); // Output: "Hello, Universe!"
 
 This algorithm allows you to replace specific characters or words within a string. It's like correcting a misspelled word. For example, if you have the string "I like cats," replacing "cats" with "dogs" would give you "I like dogs."
 
-These are some common JavaScript string algorithms. Each algorithm serves a specific purpose and can be used in various scenarios to process and manipulate strings effectively.
+These are some common JavaScript string algorithms. Each algorithm serves a specific purpose and can be used in various scenarios to process and manipulate strings effectively.g
 
 # String Algorithms (String as Arrays)
 
