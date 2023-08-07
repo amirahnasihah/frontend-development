@@ -45,5 +45,5 @@ function findPairNumber(inputArr, targetSum) {
 let inputArr = [2, 3, 7, 9, 2]
 let targetSum = 10
 
-let pairNumber = findPairNumber(inputArr, targetSum)
-console.log(pairNumber)
+let pairs = findPairNumber(inputArr, targetSum)
+console.log(pairs)
