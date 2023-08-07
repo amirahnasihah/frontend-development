@@ -85,10 +85,10 @@ console.log(a[6]) // Print out the letter “W”
 - Given that strings can be treated as arrays, you can actually consider 
 most of the strings questions as array questions
 - Still the same techniques:
- - Temporary Variables
- - Looping Twice
- - Nested Loops
- - Sort First
+	- Temporary Variables
+	- Looping Twice
+	- Nested Loops
+	- Sort First
 
 ## Strings Question 1 - Finding Substring
 
