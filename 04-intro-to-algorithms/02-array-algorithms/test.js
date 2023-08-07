@@ -29,8 +29,6 @@ console.log(tempResultArray)
 
 // Find Pair Numbers that added to target sum
 
-let inputArr = [2, 3, 7, 9, 2]
-let targetSum = 10
 
 function findPairNumber(inputArr, targetSum) {
 	// first loop
@@ -44,5 +42,8 @@ function findPairNumber(inputArr, targetSum) {
 	}
 }
 
+let inputArr = [2, 3, 7, 9, 2]
+let targetSum = 10
+
 let pairNumber = findPairNumber(inputArr, targetSum)
-let 
+console.log(pairNumber)
