@@ -433,7 +433,7 @@ In this step, we are going to leverage a `for` loop to check on the numbers one 
 
 After identified the duplicating number, then we push it to the tempResultArray.
 
-> array already sorted: if (arr[i] === arr[i + 1]) // 
+> array already sorted: if (arr[i] === arr[i + 1]) // if the current element same as next element.  arr[i + 1]
 > 
 
 Input Array (already sort): [2, 2, 3, 3, 3, 7, 9] // Expected output: [2, 3, 3]
