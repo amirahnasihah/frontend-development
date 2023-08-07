@@ -805,6 +805,10 @@ if i is 2 now, then j + 1 = 3.
 | 7  | 9  | 10  | 14  | 16  |
 | 9  | 11  | 12  | 16  | 18  |
 
+**further explain**
+
+`let j = i +1`
+
 ### Techniques that we used
 
 1. Nested Loops
