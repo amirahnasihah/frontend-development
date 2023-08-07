@@ -172,8 +172,7 @@ The above code will print the numbers from 0 to 2, and then exit the loop when i
 
 Console Output:
 
-although originally, we're going to do 0, 1, 2, 3. but, we drop off at 3. so, the console output only have 0, 1, and 2.
-same as with the `while` loop.
+although originally, we're going to do 0, 1, 2, 3. but, we drop off at 3. so, the console output only have 0, 1, and 2. same as with the `while` loop.
 
 ```console
 It's now 0
