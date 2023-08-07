@@ -1,5 +1,5 @@
-const a = "Hello World!"
-const a = [“H”, “e”, “l”, …]
+const string = "Hello World!"
+const arrStr = [“H”, “e”, “l”, …]
 
-console.log(a[1]) // Print out the letter “e”
-console.log(a[6]) // Print out the letter “W”
+console.log("String:", str[1]) // Print out the letter “e”
+console.log("Array String:", arrStr[6]) // Print out the letter “W”
