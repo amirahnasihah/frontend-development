@@ -807,7 +807,55 @@ if i is 2 now, then j + 1 = 3.
 
 **further explain**
 
-`let j = i +1`
+`let j = i + 1` vs `let j = 0`
+
+Why we use `(let j = i + 1; j < arr.length; j++)` in the inner loop.
+
+By using `let j = i + 1`, we ensure that we don't repeat the same pairs of elements. Since the question asks for pairs of distinct integers in the array, we should not consider a pair twice. If we don't use this approach and set `let j = 0`, we will end up finding the same pairs twice, once with `arr[i]` as the first element and `arr[j]` as the second element, and another time with `arr[j]` as the first element and `arr[i]` as the second element.
+
+By starting the inner loop from `i + 1`, we skip all the elements that come before `arr[i]`, ensuring that each pair is unique and doesn't include the same element twice. This way, we find all possible pairs in the array whose sum is equal to the target without redundancy.
+
+Difference results:
+
+Sure, let's take the same example array `[2, 3, 7, 9, 2]` and the target sum `10`.
+
+Using `let j = i + 1` (distinct pairs approach):
+
+```javascript
+let arr = [2, 3, 7, 9, 2];
+let targetSum = 10;
+let pairs = [];
+
+for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+        if (arr[i] + arr[j] === targetSum) {
+            pairs.push([arr[i], arr[j]]);
+        }
+    }
+}
+
+console.log(pairs); // Output: [[3, 7], [2, 8], [9, 1]]
+```
+
+Using `let j = 0` (considering all pairs, including duplicates):
+
+```javascript
+let arr = [2, 3, 7, 9, 2];
+let targetSum = 10;
+let pairs = [];
+
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[i] + arr[j] === targetSum) {
+            pairs.push([arr[i], arr[j]]);
+        }
+    }
+}
+
+console.log(pairs); // Output: [[3, 7], [7, 3], [2, 8], [8, 2], [9, 1], [1, 9]]
+```
+
+As you can see, when using `let j = i + 1`, we only get the distinct pairs that satisfy the condition `arr[i] + arr[j] === targetSum`. On the other hand, when using `let j = 0`, we find all pairs, including duplicates, resulting in pairs with the same elements in reverse order. To avoid duplicates, it's better to use `let j = i + 1` to ensure we only get unique pairs.
 
 ### Techniques that we used
 
