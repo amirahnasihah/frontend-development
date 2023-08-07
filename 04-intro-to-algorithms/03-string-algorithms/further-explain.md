@@ -121,6 +121,61 @@ So, the output `4` indicates that the first occurrence of 'bison' after index 2 
 
 # String Algorithms (String as Arrays)
 
+String algorithms that treat strings as arrays involve manipulating and working with strings as if they were arrays of characters. This approach allows you to use array-like operations, such as accessing individual characters by index, iterating over characters, and applying various array methods.
+
+Here are a few examples of string algorithms using the "String as Arrays" approach:
+
+1. Accessing characters by index:
+You can treat a string as an array of characters and access specific characters using their index. For example:
+```
+const str = "Hello";
+const firstChar = str[0]; // This will give you "H"
+const thirdChar = str[2]; // This will give you "l"
+```
+
+2. Iterating over characters:
+You can use a loop to iterate through each character in a string. This is helpful when you want to perform some operation on each character in the string:
+```
+const str = "Hello";
+for (let i = 0; i < str.length; i++) {
+  console.log(str[i]); // This will print each character of the string on a new line
+}
+```
+
+3. Reversing a string:
+By treating a string as an array of characters, you can reverse the order of the characters:
+```
+function reverseString(str) {
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+
+const originalStr = "Hello";
+const reversedStr = reverseString(originalStr); // This will give you "olleH"
+```
+
+4. Counting occurrences of a specific character:
+You can count how many times a specific character appears in a string by iterating through the string as an array:
+```
+function countOccurrences(str, targetChar) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === targetChar) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const str = "banana";
+const occurrencesOfA = countOccurrences(str, 'a'); // This will give you 3
+```
+
+These examples demonstrate how treating strings as arrays can be useful for implementing various string algorithms efficiently. By using array-like techniques, you can perform tasks like accessing, iterating, and manipulating strings effectively in JavaScript.
+
 ## Exercises explained
 
 ### exercise-1.js
