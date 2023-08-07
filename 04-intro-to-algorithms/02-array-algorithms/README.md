@@ -429,9 +429,11 @@ console.log(array1);
 
 ### Part 2 - Check for Duplicating Numbers (important part)
 
-In the step, we are going to leverage a for loop to check on the numbers one by one. If the number is same as the next number, then it is duplicated.
+In this step, we are going to leverage a `for` loop to check on the numbers one by one. If the number is same as the next number, then it is duplicated.
 
-After identified the duplicating number, then we push it to the tempResultArray. 
+After identified the duplicating number, then we push it to the tempResultArray.
+
+> array already sorted: 
 
 Input Array (already sort): [2, 2, 3, 3, 3, 7, 9] // Expected output: [2, 3, 3]
 
