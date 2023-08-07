@@ -896,6 +896,12 @@ Sample output:
 Explanation: 2020 - 1721 = 299; 1721 * 299 = 514579
 ```
 
+my answer:
+
+```javascript
+
+```
+
 **Solution Using Brute Force Pattern**
 
 Pseudocode:
