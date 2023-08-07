@@ -798,7 +798,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-`let j = i + 1;` : inner loop start with next element o
+`let j = i + 1;` : inner loop start with next element of array. because wants to avoid duplicate result outp
 
 ----
 
