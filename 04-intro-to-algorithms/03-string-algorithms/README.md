@@ -166,7 +166,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 The above code will print the numbers from 0 to 2, and then exit the loop when i is equal to 3.
 
