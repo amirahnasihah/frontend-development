@@ -799,7 +799,9 @@ for (let i = 0; i < arr.length; i++) {
 ```
 
 `let j = i + 1;` : we only ended up with the index that is larger. so, will always start with `i + 1` instead of starting with 0.
+
 so, when i is 0, will be starting with j + 1 = 1 and that will be adding up index 1, 2, and 3.
+
 if i is 2 now, then j + 1 = 3. 
 
 |   | 2  | 3  | 7  | 9  |
