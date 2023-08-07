@@ -5,7 +5,7 @@ console.log("String:", str[1]) // Print out the letter “e”
 console.log("String space:", str[5])
 console.log("Array String:", arrStr[6]) // Print out the letter “W”
 
-// BREAK - 
+// BREAK - it will loop until 3 only
 for (let i = 0; i < 5; i++) {
   if (i === 3) {
     // Jump to here whe the break line is hit
