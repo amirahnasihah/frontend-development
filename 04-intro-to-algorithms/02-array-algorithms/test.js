@@ -62,5 +62,7 @@ for (let i = 0; i < list.length; i++) {
 	// second loop + avoid duplicate output (unique result)
 	for (let j = i + 1; list.length; j++) {
 		if (list[i] + list[j] === target) {
+			console.log("Answer:" + list[i] +)
+		}
 	}
 }
