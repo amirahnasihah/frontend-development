@@ -692,6 +692,7 @@ for (let i = 0; i < arr.length; i++) {
 // Expected  output second answer: 7, 3
 ```
 
+read from here →
 |   | 2  | 3  | 7  | 9  |
 |---|---|---|---|---|
 | 2  | 4  | 5  | 9  | 11  |
