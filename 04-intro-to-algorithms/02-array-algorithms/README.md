@@ -802,7 +802,7 @@ for (let i = 0; i < arr.length; i++) {
 
 so, when i is 0, will be starting with j + 1 = 1 and that will be adding up index 1, 2, and 3.
 
-if i is 2 now, then j + 1 = 3. 
+if i is 2 now, then j + 1 = 3.
 
 |   | 2  | 3  | 7  | 9  |
 |---|---|---|---|---|
@@ -810,6 +810,8 @@ if i is 2 now, then j + 1 = 3.
 | 3  | 5  | 6  | 10  | 12  |
 | 7  | 9  | 10  | 14  | 16  |
 | 9  | 11  | 12  | 16  | 18  |
+
+i = 0: 2. j
 
 **further explain**
 
