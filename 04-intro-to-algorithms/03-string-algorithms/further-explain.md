@@ -8,6 +8,62 @@
 
 # String Algorithm
 
+1. **String Concatenation**: This algorithm combines two or more strings into a single string using the `+` operator or the `concat()` method.
+
+```javascript
+const str1 = "Hello";
+const str2 = "World";
+const result = str1 + " " + str2; // Output: "Hello World"
+// or
+const resultConcat = str1.concat(" ", str2); // Output: "Hello World"
+```
+
+2. **String Length**: To determine the length of a string, use the `length` property.
+
+```javascript
+const text = "JavaScript";
+const length = text.length; // Output: 10
+```
+
+3. **Substring**: Extract a part of the string using `substring(start, end)` or `slice(start, end)`.
+
+```javascript
+const text = "Hello, World!";
+const substr1 = text.substring(0, 5); // Output: "Hello"
+const substr2 = text.slice(7); // Output: "World!"
+```
+
+4. **String Splitting**: Divide a string into an array of substrings using `split(separator)`.
+
+```javascript
+const text = "apple,banana,orange";
+const fruitsArray = text.split(","); // Output: ["apple", "banana", "orange"]
+```
+
+5. **String Reversal**: Reverse a string using various methods, like a loop or the `split()` and `reverse()` combination.
+
+```javascript
+const text = "hello";
+const reversedText = text.split("").reverse().join(""); // Output: "olleh"
+```
+
+6. **String Searching**: Find the index of a substring within a string using `indexOf(substring)` or `lastIndexOf(substring)`.
+
+```javascript
+const text = "JavaScript is amazing!";
+const index1 = text.indexOf("is"); // Output: 11
+const index2 = text.lastIndexOf("a"); // Output: 16
+```
+
+7. **String Replacement**: Replace occurrences of a substring with another using `replace(searchValue, replaceValue)`.
+
+```javascript
+const text = "Hello, World!";
+const newText = text.replace("World", "Universe"); // Output: "Hello, Universe!"
+```
+
+These are some basic string algorithms in JavaScript. By combining these operations creatively, you can build more complex algorithms for various tasks involving strings!
+
 # String Algorithms (String as Arrays)
 
 ## Exercises explained
