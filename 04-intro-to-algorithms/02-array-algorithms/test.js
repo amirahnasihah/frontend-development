@@ -38,8 +38,11 @@ function findPairNumber(inputArr, targetSum) {
 		// second loop
 		for (let j = 0; j < inputArr.length; j++) {
 			if (inputArr[i] + inputArr[j] = targetSum) {
-				console.log("pair numbers:", inputArr[i] + " ")
+				console.log("pair numbers:", inputArr[i] + ", " + inputArr[j])
 			}
 		}
 	}
 }
+
+let pairNumber = findPairNumber(inputArr, targetSum)
+let 
