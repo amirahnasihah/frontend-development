@@ -27,7 +27,9 @@ for (let i = 0; i < sortedArr.length - 1; i++){
 }
 console.log(tempResultArray)
 
-// Find Pair Numbers that added to 
+// Find Pair Numbers that added to target sum
 
-let arr = [2, 3, 7, 9, 2]
+let inputArr = [2, 3, 7, 9, 2]
 let targetSum = 10
+
+fun
