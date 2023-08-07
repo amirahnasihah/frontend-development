@@ -52,3 +52,10 @@ let targetSum = 10
 
 let pairs = findPairNumber(inputArr, targetSum)
 console.log(pairs)
+
+// QUESTION: Given a list of numbers, find two numbers that sum up to a given target and return the product of these numbers.
+
+list = [1721, 979, 366, 299, 756, 1456]
+target = 2020
+
+function
