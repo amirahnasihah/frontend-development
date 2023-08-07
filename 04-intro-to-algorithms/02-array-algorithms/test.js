@@ -58,13 +58,15 @@ console.log(pairs)
 list = [1721, 979, 366, 299, 756, 1456]
 target = 2020
 
+let su
+
 for (let i = 0; i < list.length; i++) {
 	// second loop + avoid duplicate output (unique result)
 	for (let j = i + 1; list.length; j++) {
 		if (list[i] + list[j] === target) {
-			console.log("Answer:" + list[i] list[j])
+			console.log("Answer:", list[i] + "," + list[j])
 		}
 	}
 }
 
-// output: 1731, 999
+// output: 1731, 299
