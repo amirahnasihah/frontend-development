@@ -1,5 +1,5 @@
 const str = "Hello World!"
-const arrStr = [“H”, “e”, “l”, "l", "o", " ", "W"]
+const arrStr = [“H”, “e”, “l”, "l", "o", " ", "W", "O", "R", "L", "D"]
 
 console.log("String:", str[1]) // Print out the letter “e”
 console.log("Array String:", arrStr[6]) // Print out the letter “W”
