@@ -817,7 +817,7 @@ By starting the inner loop from `i + 1`, we skip all the elements that come befo
 
 Difference results:
 
-Sure, let's take the same example array `[2, 3, 7, 9, 2]` and the target sum `10`.
+Example array `[2, 3, 7, 9, 2]` and the target sum `10`.
 
 Using `let j = i + 1` (distinct pairs approach):
 
