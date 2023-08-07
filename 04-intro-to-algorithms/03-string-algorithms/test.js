@@ -5,13 +5,14 @@ console.log("String:", str[1]) // Print out the letter “e”
 console.log("String space:", str[5])
 console.log("Array String:", arrStr[6]) // Print out the letter “W”
 
-// BREAK - it will loop until at index 3 only
+// BREAK
 for (let i = 0; i < 5; i++) {
   if (i === 3) {
     // Jump to here whe the break line is hit
     break; // exit the loop when i is equal to 3
   }
-  console.log("It's now " + i) // output: 0,1,2
+  console.log("It's now " + i)
+  // output: print the numbers from 0 to 2, and then exit the loop when i is equal to 3.
 }
 
 
