@@ -35,7 +35,7 @@ function findPairNumber(inputArr, targetSum) {
 	// first loop
 	for (let i = 0; i < inputArr.length; i++) {
 		// second loop
-		for (let j = 0; j < inputArr.length; j++) {
+		for (let j = i + 1; j < inputArr.length; j++) {
 			if (inputArr[i] + inputArr[j] === targetSum) {
 				console.log("pair numbers:", inputArr[i] + ", " + inputArr[j])
 				// push to pairs array
