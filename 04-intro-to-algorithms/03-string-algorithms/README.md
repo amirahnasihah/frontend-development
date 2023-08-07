@@ -122,28 +122,6 @@ console.log(beasts.indexOf('giraffe'));
 // Expected output: -1
 ```
 
-**further explain**
-
-In the given code, we have an array named `beasts` containing five elements: 'ant', 'bison', 'camel', 'duck', and 'bison'. 
-
-The second line of code is using the `indexOf` method on the `beasts` array. The `indexOf` method is used to find the index of a particular element in an array. It takes two arguments:
-
-1. The first argument is the element we want to find the index of, which is 'bison' in this case.
-
-2. The second argument is the starting index from where the search should begin. In this case, it is 2.
-
-So, the code is asking to find the index of the element 'bison' in the `beasts` array, starting the search from the index 2 (which is 'camel'). The output of this code will be the index of the first occurrence of 'bison' after index 2 in the `beasts` array. If there is no 'bison' after index 2, the output will be -1.
-
-The output `4` is because the `indexOf` method starts searching for the element 'bison' in the `beasts` array from index 2 (which is the third element, 'camel'). It then finds the first occurrence of 'bison' after that starting index, which is at index 4 in the `beasts` array.
-
-To clarify further, let's break down the `indexOf` method usage step by step:
-
-1. The `indexOf` method starts searching for 'bison' in the `beasts` array from index 2 ('camel').
-2. It finds 'bison' at index 4 in the `beasts` array.
-3. The `indexOf` method returns the index of the first occurrence of 'bison' after index 2, which is 4.
-
-So, the output `4` indicates that the first occurrence of 'bison' after index 2 is found at index 4 in the `beasts` array.
-
 ### What is your solution?
 
 Hint: Using 2 loops, nested loops
