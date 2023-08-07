@@ -58,4 +58,6 @@ console.log(pairs)
 list = [1721, 979, 366, 299, 756, 1456]
 target = 2020
 
-function
+for (let i = 0; i < list.length; i++) {
+	
+}
