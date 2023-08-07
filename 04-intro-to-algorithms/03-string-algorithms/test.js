@@ -8,7 +8,7 @@ console.log("Array String:", arrStr[6]) // Print out the letter “W”
 // BREAK
 for (let i = 0; i < 5; i++) {
   if (i === 3) {
-    // Jump to here whe the break line is hit
+    // Jump to here when the break line is hit
     break; // exit the loop when i is equal to 3
   }
   console.log("It's now " + i)
