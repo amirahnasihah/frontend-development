@@ -15,7 +15,6 @@ for (let i = 0; i < 5; i++) {
   // output: print the numbers from 0 to 2, and then exit the loop when i is equal to 3.
 }
 
-
 // Strings Question 1 - Finding Substring: How can you check if a substring exists in a string? (How to implement the indexOf() function?)
 // why use indexOf()?
 
