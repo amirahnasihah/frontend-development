@@ -37,7 +37,7 @@ function findPairNumber(inputArr, targetSum) {
 	for (let i = 0; i < inputArr.length; i++) {
 		// second loop
 		for (let j = 0; j < inputArr.length; j++) {
-			Things[j]
+			if (inputArr[i] + inputArr)
 		}
 	}
 }
