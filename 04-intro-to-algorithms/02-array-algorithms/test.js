@@ -14,6 +14,7 @@ fruits.sort();
 console.log(fruits);
 // [ 'apple', 'apple', 'apple', 'banana', 'grapes', 'grapes', 'guava', 'orange' ]
 
+// Find Duplicate Number with unsorted array
 arr = [2, 3, 3, 7, 9, 2]
 sortedArr = arr.sort()
 console.log(sortedArr);
@@ -25,3 +26,8 @@ for (let i = 0; i < sortedArr.length - 1; i++){
     }
 }
 console.log(tempResultArray)
+
+// Find Pair Numbers that added to 
+
+let arr = [2, 3, 7, 9, 2]
+let targetSum = 10
