@@ -31,15 +31,18 @@ console.log(tempResultArray)
 
 
 function findPairNumber(inputArr, targetSum) {
+	let pairs = []
 	// first loop
 	for (let i = 0; i < inputArr.length; i++) {
 		// second loop
 		for (let j = 0; j < inputArr.length; j++) {
-			if (inputArr[i] + inputArr[j] = targetSum) {
+			if (inputArr[i] + inputArr[j] === targetSum) {
 				console.log("pair numbers:", inputArr[i] + ", " + inputArr[j])
 			}
 		}
 	}
+	
+	return pairs
 }
 
 let inputArr = [2, 3, 7, 9, 2]
