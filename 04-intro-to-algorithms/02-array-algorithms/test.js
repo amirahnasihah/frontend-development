@@ -43,7 +43,7 @@ function findPairNumber(inputArr, targetSum) {
 			}
 		}
 	}
-	
+	// dont forget to return
 	return pairs
 }
 
