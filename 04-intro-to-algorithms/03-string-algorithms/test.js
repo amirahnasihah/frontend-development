@@ -11,7 +11,7 @@ for (let i = 0; i < 5; i++) {
     // Jump to here whe the break line is hit
     break; // exit the loop when i is equal to 3
   }
-  console.log("It's now " + i)
+  console.log("It's now " + i) // output: 0,1,2
 }
 
 
