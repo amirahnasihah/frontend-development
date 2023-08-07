@@ -119,6 +119,42 @@ To clarify further, let's break down the `indexOf` method usage step by step:
 
 So, the output `4` indicates that the first occurrence of 'bison' after index 2 is found at index 4 in the `beasts` array.
 
+### `break` and `return`
+
+Both `break` and `return` are keywords used in programming, but they serve different purposes:
+
+1. `break`:
+The `break` statement is used within loops (such as `for`, `while`, and `switch`) to immediately exit the loop's execution. It's often used in conditional situations to prematurely terminate the loop when a certain condition is met. When a `break` statement is encountered, the loop will stop running, and the program will continue executing the code after the loop.
+
+Example:
+```javascript
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        break; // This will exit the loop when i is 3
+    }
+    console.log(i);
+}
+// Output: 0 1 2
+```
+
+2. `return`:
+The `return` statement is used within functions to indicate that a value should be returned to the caller of the function. When a `return` statement is encountered, the function execution will immediately stop, and the specified value (or `undefined` if no value is provided) will be passed back to the caller.
+
+Example:
+```javascript
+function add(a, b) {
+    return a + b; // This will return the sum of a and b to the caller
+}
+
+const result = add(2, 3); // result will be 5
+```
+
+In summary:
+- `break` is used within loops to exit the loop's execution prematurely.
+- `return` is used within functions to provide a value back to the caller and to terminate the function's execution.
+
+Remember that `break` is used in loops, while `return` is used in functions. They serve distinct purposes and are not interchangeable.
+
 # String Algorithms (String as Arrays)
 
 String algorithms that treat strings as arrays involve manipulating and working with strings as if they were arrays of characters. This approach allows you to use array-like operations, such as accessing individual characters by index, iterating over characters, and applying various array methods.
