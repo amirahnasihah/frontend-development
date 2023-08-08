@@ -195,6 +195,25 @@ After considering all these combinations, the code prints "Found at position 3".
 
 This visualization helps you understand how the loops work together to compare the two strings!
 
+Result output:
 
+```plaintext
+H l
+H o
+
+e l
+e o
+
+l l
+l o
+
+l l
+l o
+
+o l
+o o
+```
+
+In this representation, each row corresponds to a specific combination of `i` (position in `originalString`) and `j` (position in `targetString`). The columns show the characters being compared in each iteration of the inner loop.
 
 # String as Arrays Algorithm Problems in JS
