@@ -125,6 +125,8 @@ So, to answer your questions:
 
 ### Visualize the flow
 
+"to length of originalString - 1", it's saying that the loop should go from the first box (0) to the last box (length of originalString - 1) to ensure we're checking each position of the string.
+
 **Pseudocode**
 
 ```plaintext
@@ -215,5 +217,7 @@ o o
 ```
 
 In this representation, each row corresponds to a specific combination of `i` (position in `originalString`) and `j` (position in `targetString`). The columns show the characters being compared in each iteration of the inner loop.
+
+
 
 # String as Arrays Algorithm Problems in JS
