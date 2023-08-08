@@ -259,6 +259,32 @@ console.log(result)
 
 `inputString.length-1` —> Start from the end of the array
 
+**using reverse() method solution:**
+
+ Here's a way to reverse the word order in a string using the logic you provided earlier:
+
+```javascript
+function reverseWordOrder(inputString) {
+    let result = "";
+    let words = inputString.split(" "); // Split the string into an array of words
+
+    for (let i = words.length - 1; i >= 0; i--) {
+        result += words[i];
+        if (i !== 0) {
+            result += " "; // Add a space between words except for the last word
+        }
+    }
+
+    return result;
+}
+
+const inputString = "Reverse the word order";
+const reversedString = reverseWordOrder(inputString);
+console.log(reversedString); // Output: "order word the Reverse"
+```
+
+In this example, the `reverseWordOrder` function takes an input string, splits it into an array of words, and then iterates through the array in reverse order, building the `result` string. It also adds a space between words except for the last word to maintain proper spacing. This way, you'll get a reversed string with the word order reversed as well.
+
 #### Flow Visualize
 
 Your solution is on the right track! In the line `result += inputString[i]`, you are iterating through the characters of the `inputString` in reverse order, starting from the last character and going all the way to the first character. The `+=` operator is used to concatenate each character to the `result` string, effectively reversing the order of characters.
