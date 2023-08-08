@@ -224,10 +224,9 @@ In this representation, each row corresponds to a specific combination of `i` (p
 
 Reverse the word order in a string? (Implement the `array.reverse()` function for string)
 
-Example 1:
+Examples:
 Input String: Talentlabs, Output: sbaltnelaT
 
-Example 2:
 Input Array: Hello, Output: olleH
 
 **JS Fact**
@@ -239,7 +238,11 @@ const text = "hello";
 const reversedText = text.split("").reverse().join(""); // Output: "olleh"
 ```
 
+1. Part 1 - Loop Thru the Array
+
 ### What is your solution?
+
+Part 1 - Loop Thru the Array
 
 
 
