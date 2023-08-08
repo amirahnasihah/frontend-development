@@ -29,6 +29,6 @@ for (let i = 0; i < originalString.length; i++) {
 }
 ```
 
-> (j === targetString.length -1) vs (originalString[i + j] === targetString[j] && j === targetString.length -1)
+> `(j === targetString.length -1)` vs `(originalString[i + j] === targetString[j] && j === targetString.length -1)`
 
 # String as Arrays Algorithm Problems in JS
