@@ -123,4 +123,52 @@ So, to answer your questions:
 - `i + j` is used to match the corresponding letters in both strings. It helps compare letters starting from the current position in the `originalString`.
 - Yes, you're correct. `(j === targetString.length - 1)` checks if the current position in the `targetString` is the last one. If it is, it means the entire `targetString` has been successfully matched.
 
+### Visualize the flow
+
+Let's use `originalString = "Hello"` and `targetString = "lo"` as in your code.
+
+1. **Outer Loop (`i` loop):**
+   - `i` starts at 0 and increments by 1 until it reaches the length of `originalString` (5).
+   - In the first iteration, `i = 0`.
+   - In the second iteration, `i = 1`.
+   - And so on, until `i = 4`.
+
+2. **Inner Loop (`j` loop):**
+   - Inside each iteration of the outer loop, the inner loop (`j` loop) runs.
+   - `j` starts at 0 and increments by 1 until it reaches the length of `targetString` (2).
+   - In the first iteration, `j = 0`.
+   - In the second iteration, `j = 1`.
+
+Now, let's see how these loops work together for each combination of `i` and `j`:
+
+- When `i = 0` and `j = 0`:
+  - Compare `originalString[0 + 0]` (which is "H") with `targetString[0]` (which is "l").
+  - Since they don't match, the inner loop breaks.
+
+- When `i = 0` and `j = 1`:
+  - Compare `originalString[0 + 1]` (which is "e") with `targetString[1]` (which is "o").
+  - Since they don't match, the inner loop breaks.
+
+- When `i = 1` and `j = 0`:
+  - Compare `originalString[1 + 0]` (which is "e") with `targetString[0]` (which is "l").
+  - Since they don't match, the inner loop breaks.
+
+- When `i = 1` and `j = 1`:
+  - Compare `originalString[1 + 1]` (which is "l") with `targetString[1]` (which is "o").
+  - They don't match, so the inner loop breaks.
+
+- When `i = 2` and `j = 0`:
+  - Compare `originalString[2 + 0]` (which is "l") with `targetString[0]` (which is "l").
+  - They match, so we move on to the next iteration of the inner loop.
+
+- When `i = 2` and `j = 1`:
+  - Compare `originalString[2 + 1]` (which is "l") with `targetString[1]` (which is "o").
+  - They don't match, so the inner loop breaks.
+
+- The pattern repeats for `i = 3` and `i = 4`, but since `i + j` exceeds the length of `originalString`, the inner loop breaks instantly.
+
+After considering all these combinations, the code prints "Found at position 3". This means that the "targetString" "lo" was found in the "originalString" "Hello" starting at position 3.
+
+I hope this visualization helps you understand how the loops work together to compare the two strings!
+
 # String as Arrays Algorithm Problems in JS
