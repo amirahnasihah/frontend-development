@@ -230,6 +230,15 @@ Input String: Talentlabs, Output: sbaltnelaT
 Example 2:
 Input Array: Hello, Output: olleH
 
+**JS Fact**
+
+Reverse a string by various methods, such as using a loop or the `split()` and `reverse()` combination.
+
+```javascript
+const text = "hello";
+const reversedText = text.split("").reverse().join(""); // Output: "olleh"
+```
+
 ### What is your solution?
 
 #### Flow Visualize
