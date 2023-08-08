@@ -73,4 +73,56 @@ So, when you combine both parts, you're checking if the characters match while e
 
 In simpler terms, the `(j === targetString.length - 1)` part is like checking if you've successfully matched all characters in the target string. And the whole condition is used to confirm that you've successfully matched the target string's characters in the original string.
 
+**further explain**
+
+Sure, I'd be happy to explain the code to you in simple terms!
+
+Imagine you have two strings of letters. The first one is called "originalString" and it says "Hello". The second one is called "targetString" and it's "lo".
+
+Now, the code wants to check if the "targetString" can be found inside the "originalString". It does this by comparing each letter of the "targetString" with the letters in the "originalString".
+
+It uses two loops to do this. The first loop goes through each letter of the "originalString". The second loop goes through each letter of the "targetString".
+
+Inside the loops, it checks if the current letter in the "originalString" matches the corresponding letter in the "targetString". If they don't match, it stops checking and moves on to the next letter in the "originalString".
+
+But if the letters do match, it keeps comparing the next letters in both strings. If all the letters in the "targetString" match the letters in the "originalString" starting from the current position, it means the "targetString" was found inside the "originalString". In that case, it prints a message saying where it found the "targetString".
+
+So, in this case, the code will find that "lo" starts at position 3 in the "originalString" (remember, positions start counting from 0), and it will print: "Found at position 3".
+
+> confusion of inner loop
+
+```javascript
+originalString = "Hello"
+targetString = "lo"
+
+for (let i = 0; i < originalString.length; i++) {
+```
+Here, the code defines two strings: `originalString` is "Hello", and `targetString` is "lo". The code then starts a loop that goes through each position in the `originalString`. The `i` variable is used to keep track of the current position being checked.
+
+```javascript
+  for (let j = 0; j < targetString.length; j++) {
+```
+Inside the outer loop, there's another loop, which goes through each position in the `targetString`. This inner loop is used to compare the letters of the `targetString` with the letters of the `originalString` starting from the current position (`i`).
+
+```javascript
+    if (originalString[i + j] !== targetString[j]) {
+      break;
+    }
+```
+This line checks if the letter in the `originalString` at the position `i + j` (this is done to match the letters in the `originalString` with the corresponding letters in the `targetString`) is not the same as the letter in the `targetString` at position `j`. If this condition is met, it means the current segment of letters being checked is not a match, so the `break` statement is used to stop checking the rest of the letters and move on to the next position in the `originalString`.
+
+```javascript
+    else if (j === targetString.length - 1) {
+      console.log("Found at position " + i)
+    }
+  }
+}
+```
+If the condition in the previous line was not met (meaning the letters match), then this line checks if the variable `j` has reached the last position in the `targetString`. If it has, that means all the letters in the `targetString` were successfully matched with the corresponding letters in the `originalString`. In that case, it prints a message saying the `targetString` was found at the position `i` in the `originalString`.
+
+So, to answer your questions:
+- The inner loop goes through the `targetString` because it's used to compare the letters of the `targetString` with the letters of the `originalString`.
+- `i + j` is used to match the corresponding letters in both strings. It helps compare letters starting from the current position in the `originalString`.
+- Yes, you're correct. `(j === targetString.length - 1)` checks if the current position in the `targetString` is the last one. If it is, it means the entire `targetString` has been successfully matched.
+
 # String as Arrays Algorithm Problems in JS
