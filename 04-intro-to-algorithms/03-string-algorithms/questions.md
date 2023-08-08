@@ -81,7 +81,7 @@ Now, the code wants to check if the "targetString" can be found inside the "orig
 
 It uses two loops to do this. The first loop goes through each letter of the "originalString". The second loop goes through each letter of the "targetString".
 
-Inside the loops, it checks if the current letter in the "originalString" matches the corresponding letter in the "targetString". If they don't match, it stops checking and moves on to the next letter in the "originalString".
+Inside the loops, **it checks if the current letter in the "originalString" matches the corresponding letter in the "targetString". If they don't match, it stops checking and moves on to the next letter in the "originalString".**
 
 But if the letters do match, it keeps comparing the next letters in both strings. If all the letters in the "targetString" match the letters in the "originalString" starting from the current position, it means the "targetString" was found inside the "originalString". In that case, it prints a message saying where it found the "targetString".
 
