@@ -5,9 +5,9 @@
 > How can you check if a substring exists in a string? (How to implement the `indexOf()` function?)
 
 1. Part 1 - Create outer loop
-2. Part 2 - Crear inner loop
+2. Part 2 - Create inner loop
 
-In this step, we need to create an inner loop that would help us in checking if the next few letters (including the current letter) matched with the inner loop.
+In Part 2 step, we need to create an inner loop that would help us in checking if the next few letters (including the current letter) matched with the inner loop.
 
 ```javascript
 originalString = "Hello"
