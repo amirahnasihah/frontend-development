@@ -232,5 +232,7 @@ Input Array: Hello, Output: olleH
 
 ### What is your solution?
 
+#### Flow Visualize
+
 
 # String as Arrays Algorithm Problems in JS
