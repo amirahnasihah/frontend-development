@@ -125,6 +125,24 @@ So, to answer your questions:
 
 ### Visualize the flow
 
+**Pseudocode**
+
+```plaintext
+originalString = "Hello"
+targetString = "lo"
+
+for i = 0 to length of originalString - 1:
+    for j = 0 to length of targetString - 1:
+        if originalString[i + j] is not equal to targetString[j]:
+            break
+        else if j is equal to length of targetString - 1:
+            print "Found at position " + i
+```
+
+Expected output: `"Found at position 3"`
+
+The above pseudo-code outlines the logic of the code you provided and what it's trying to achieve, without specifying any programming language syntax. It gives you a step-by-step representation of how the loops and conditionals work together to find the "targetString" within the "originalString".
+
 Let's use `originalString = "Hello"` and `targetString = "lo"` as in your code.
 
 1. **Outer Loop (`i` loop):**
@@ -177,12 +195,6 @@ After considering all these combinations, the code prints "Found at position 3".
 
 This visualization helps you understand how the loops work together to compare the two strings!
 
-```javascript
-// pseudocode output
 
-H, l
-H, o
-
-```
 
 # String as Arrays Algorithm Problems in JS
