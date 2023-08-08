@@ -75,8 +75,6 @@ In simpler terms, the `(j === targetString.length - 1)` part is like checking if
 
 **further explain**
 
-Sure, I'd be happy to explain the code to you in simple terms!
-
 Imagine you have two strings of letters. The first one is called "originalString" and it says "Hello". The second one is called "targetString" and it's "lo".
 
 Now, the code wants to check if the "targetString" can be found inside the "originalString". It does this by comparing each letter of the "targetString" with the letters in the "originalString".
