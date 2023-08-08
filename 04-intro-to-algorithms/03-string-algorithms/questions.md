@@ -29,6 +29,18 @@ for (let i = 0; i < originalString.length; i++) {
 }
 ```
 
+Sure, here's the explanation in simple plain English:
+
+Let's say you have a word "Hello" and you want to find another word "lo" inside it. Imagine you're checking each letter of "Hello" one by one to see if they match the letters of "lo."
+
+You start with the first letter of "Hello," which is "H." Then you compare it with the first letter of "lo," which is "l." Since they don't match, you stop checking and move to the next letter of "Hello."
+
+You continue this process for each letter in "Hello." If you find a letter that doesn't match the corresponding letter in "lo," you stop checking that part of "Hello" and move on to the next letter.
+
+But if you do find matching letters all the way to the end of "lo," that means you've found the word "lo" inside "Hello." You would then say, "Found at position [position number]." The position number tells you where "lo" starts in the word "Hello."
+
+So, this code is like a game where you're looking for a hidden word "lo" inside the word "Hello." You check each letter and see if they match. If they do match and the hidden word "lo" is all there, you announce where you found it in "Hello." If they don't match, you move on to the next starting point in "Hello" to check again.
+
 > `(j === targetString.length -1)` vs `(originalString[i + j] === targetString[j] && j === targetString.length -1)`
 
 In the given code, you're trying to find a specific target string ("lo") inside an original string ("Hello"). Let's break down the two parts you mentioned:
