@@ -29,26 +29,6 @@ for (let i = 0; i < originalString.length; i++) {
 }
 ```
 
-
-
-
-```javascript
-originalString = "Hello"
-targetString = "lo"
-
-for (let i = 0; i < originalString.length; i++) {
-  // Leave for Step 2
-  for (let j = 0; j < targetString.length; j++) {
-    // Case 1: Not Match, and end this iteration
-    if (originalString[i + j] !== targetString[j]) {
-      break;
-  }
-  // Case 2: Match and it’s the last character
-  else if (j === targetString.length -1) {
-    console.log("Found at position " + i)
-  }
- }
-}
-```
+> (j === targetString.length -1) vs (originalString[i + j] === targetString[j] && j === targetString.length -1)
 
 # String as Arrays Algorithm Problems in JS
