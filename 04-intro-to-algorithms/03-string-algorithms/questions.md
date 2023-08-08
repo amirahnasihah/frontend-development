@@ -29,8 +29,6 @@ for (let i = 0; i < originalString.length; i++) {
 }
 ```
 
-Sure, here's the explanation in simple plain English:
-
 Let's say you have a word "Hello" and you want to find another word "lo" inside it. Imagine you're checking each letter of "Hello" one by one to see if they match the letters of "lo."
 
 You start with the first letter of "Hello," which is "H." Then you compare it with the first letter of "lo," which is "l." Since they don't match, you stop checking and move to the next letter of "Hello."
