@@ -39,6 +39,24 @@ But if you do find matching letters all the way to the end of "lo," that means y
 
 So, this code is like a game where you're looking for a hidden word "lo" inside the word "Hello." You check each letter and see if they match. If they do match and the hidden word "lo" is all there, you announce where you found it in "Hello." If they don't match, you move on to the next starting point in "Hello" to check again.
 
+> `(let j = 0; j < targetString.length; j++)`
+
+```javascript
+for (let j = 0; j < targetString.length; j++) {
+  // Code inside this loop will be executed for each character in the target string
+}
+```
+
+In this loop, you're using the variable `j` to represent the position of characters within the `targetString`. The loop is set up to iterate through each character of the `targetString` one by one.
+
+Here's how it works:
+
+- `let j = 0;` initializes the variable `j` to start from 0, which is the position of the first character in the `targetString`.
+- `j < targetString.length` is the condition that checks whether the current value of `j` is less than the length of the `targetString`. As long as this condition is true, the loop will continue to execute.
+- `j++` increments the value of `j` by 1 after each iteration of the loop. This means that `j` will go from 0 to 1, then from 1 to 2, and so on, until it reaches the length of the `targetString` minus 1.
+
+So, for each iteration of this loop, the code inside it will be executed, allowing you to compare each character of the `targetString` with corresponding characters in the `originalString`. This loop helps you check whether the characters in the `targetString` match the characters in the `originalString` when considering different starting positions.
+
 > `(j === targetString.length -1)` vs `(originalString[i + j] === targetString[j] && j === targetString.length -1)`
 
 In the given code, you're trying to find a specific target string ("lo") inside an original string ("Hello"). Let's break down the two parts you mentioned:
