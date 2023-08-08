@@ -175,6 +175,10 @@ Now, let's see how these loops work together for each combination of `i` and `j`
 
 After considering all these combinations, the code prints "Found at position 3". This means that the "targetString" "lo" was found in the "originalString" "Hello" starting at position 3.
 
-I hope this visualization helps you understand how the loops work together to compare the two strings!
+This visualization helps you understand how the loops work together to compare the two strings!
+
+```javascript
+// output
+```
 
 # String as Arrays Algorithm Problems in JS
