@@ -249,3 +249,36 @@ With this modification, the function will return -1 if the `targetString` is lon
 ### exercise-3.js
 
 # Other
+
+## return statement in a function()
+
+Not every function needs to have a `return` statement. Whether a function needs to return a value or not depends on the purpose and behavior of the function. Here are a few scenarios:
+
+1. **Functions that Return Values:**
+   Functions are often used to perform computations and provide results back to the caller. In such cases, you use the `return` statement to send a value back to the caller. For example:
+   ```javascript
+   function add(a, b) {
+       return a + b;
+   }
+   const sum = add(3, 5); // sum will be 8
+   ```
+
+2. **Functions that Perform Actions:**
+   Some functions are used to perform actions or operations without necessarily returning a value. These functions are called for their side effects. For example:
+   ```javascript
+   function displayMessage(message) {
+       console.log(message);
+   }
+   displayMessage("Hello, world!"); // This function logs the message but doesn't return a value
+   ```
+
+3. **Functions without Return:**
+   Functions can also be defined without a `return` statement. In this case, the function implicitly returns `undefined`. This is common for functions that perform actions or have side effects:
+   ```javascript
+   function greet(name) {
+       console.log(`Hello, ${name}!`);
+   }
+   const result = greet("Alice"); // result will be undefined
+   ```
+
+In summary, whether you include a `return` statement in a function depends on whether the function is intended to provide a result back to the caller. Functions without a `return` statement can still be useful for performing tasks and actions, even if they don't produce a return value.
