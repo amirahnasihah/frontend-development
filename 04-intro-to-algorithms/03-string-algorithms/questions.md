@@ -141,6 +141,12 @@ Let's use `originalString = "Hello"` and `targetString = "lo"` as in your code.
 
 Now, let's see how these loops work together for each combination of `i` and `j`:
 
+```javascript
+    if (originalString[i + j] !== targetString[j]) {
+      break;
+    }
+```
+
 - When `i = 0` and `j = 0`:
   - Compare `originalString[0 + 0]` (which is "H") with `targetString[0]` (which is "l").
   - Since they don't match, the inner loop breaks.
