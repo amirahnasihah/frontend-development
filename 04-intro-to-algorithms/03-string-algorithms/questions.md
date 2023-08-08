@@ -178,7 +178,11 @@ After considering all these combinations, the code prints "Found at position 3".
 This visualization helps you understand how the loops work together to compare the two strings!
 
 ```javascript
-// output
+// pseudocode output
+
+H, l
+H, o
+
 ```
 
 # String as Arrays Algorithm Problems in JS
