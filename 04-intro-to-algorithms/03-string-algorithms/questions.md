@@ -244,9 +244,38 @@ const reversedText = text.split("").reverse().join(""); // Output: "olleh"
 
 ### What is your solution?
 
+``` javascript
+const inputString = "Talentlabs"
+let result = ""
 
+for (let i = inputString.length-1; i >= 0; i--){
+ result += inputString[i]
+}
+
+console.log(result)
+```
+
+`i--` —> count down instead of count up
+
+`inputString.length-1` —> Start from the end of the array
 
 #### Flow Visualize
 
+Your solution is on the right track! In the line `result += inputString[i]`, you are iterating through the characters of the `inputString` in reverse order, starting from the last character and going all the way to the first character. The `+=` operator is used to concatenate each character to the `result` string, effectively reversing the order of characters.
+
+So, for the input string "Talentlabs", your loop would iterate as follows:
+
+1. i = 9, inputString[9] = "s", result = "s"
+2. i = 8, inputString[8] = "b", result = "sb"
+3. i = 7, inputString[7] = "a", result = "sba"
+4. i = 6, inputString[6] = "l", result = "sbal"
+5. i = 5, inputString[5] = "n", result = "sbaln"
+6. i = 4, inputString[4] = "e", result = "sbalne"
+7. i = 3, inputString[3] = "t", result = "sbalnet"
+8. i = 2, inputString[2] = "l", result = "sbalnetl"
+9. i = 1, inputString[1] = "a", result = "sbalnetla"
+10. i = 0, inputString[0] = "T", result = "sbalnetlaT"
+
+So, your final `result` will be "sbalnetlaT", which is the reverse of the original input string "Talentlabs". Your code successfully reverses the word order in the string.
 
 # String as Arrays Algorithm Problems in JS
