@@ -47,7 +47,7 @@ for (let j = 0; j < targetString.length; j++) {
 }
 ```
 
-In this loop, you're using the variable `j` to represent the position of characters within the `targetString`. The loop is set up to iterate through each character of the `targetString` one by one.
+In this loop, you're using the variable `j` to represent the position of characters within the `targetString`. The loopp is set up to iterate through each character of the `targetString` one by one.
 
 Here's how it works:
 
