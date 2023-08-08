@@ -51,7 +51,7 @@ In this loop, you're using the variable `j` to represent the position of charact
 
 Here's how it works:
 
-- `let j = 0;` initializes the variable `j` to start from 0, which is the position of the first character in the `targetString`.
+- `let j = 0;` initializes the variable `j` to start from 0, which is the position of the first character in the `targetString`. >>> l
 - `j < targetString.length` is the condition that checks whether the current value of `j` is less than the length of the `targetString`. As long as this condition is true, the loop will continue to execute.
 - `j++` increments the value of `j` by 1 after each iteration of the loop. This means that `j` will go from 0 to 1, then from 1 to 2, and so on, until it reaches the length of the `targetString` minus 1.
 
