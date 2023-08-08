@@ -294,7 +294,7 @@ for (let i = 0; i < originalString.length; i++) {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 ### Part 3 - Optimization
 
