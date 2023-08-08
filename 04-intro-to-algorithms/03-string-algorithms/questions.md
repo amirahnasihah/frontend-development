@@ -238,11 +238,11 @@ const text = "hello";
 const reversedText = text.split("").reverse().join(""); // Output: "olleh"
 ```
 
-1. Part 1 - Loop Thru the Array
+1. Use a for loop to loop thru the inputString from the end of the array
+2. For each letter, append it to a temp string
+3. Return temp string as result
 
 ### What is your solution?
-
-Part 1 - Loop Thru the Array
 
 
 
