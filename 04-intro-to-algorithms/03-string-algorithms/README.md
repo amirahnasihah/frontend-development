@@ -319,7 +319,7 @@ for (let i = 0; i < originalString.length; i++) {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 1. `originalString = "Hello"`: This line declares a variable called `originalString` and assigns it the value "Hello". This will be the string we're searching for the target string within.
 
@@ -387,7 +387,7 @@ console.log(result)
 
 `inputString.length-1` —> Start from the end of the array
 
-**EXPLAINATION**
+**EXPLANATION**
 
 1. `const inputString = "Talentlabs"`: This line creates a constant variable called `inputString` and sets its value to the string `"Talentlabs"`.
 
@@ -591,7 +591,7 @@ if (sortedArray1.join("") === sortedArray2.join("")) {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 ```javascript
 const inputString1 = "Paris"
