@@ -10,6 +10,8 @@
 
 In Part 2 step, we need to create an inner loop that would help us in checking if the next few letters (including the current letter) matched with the inner loop.
 
+### What is your solution?
+
 ```javascript
 originalString = "Hello"
 targetString = "lo"
@@ -123,7 +125,7 @@ So, to answer your questions:
 - `i + j` is used to match the corresponding letters in both strings. It helps compare letters starting from the current position in the `originalString`.
 - Yes, you're correct. `(j === targetString.length - 1)` checks if the current position in the `targetString` is the last one. If it is, it means the entire `targetString` has been successfully matched.
 
-### Visualize the flow
+#### Visualize the flow
 
 "to length of originalString - 1", it's saying that the loop should go from the first box (0) to the last box (length of originalString - 1) to ensure we're checking each position of the string.
 
@@ -218,6 +220,17 @@ o o
 
 In this representation, each row corresponds to a specific combination of `i` (position in `originalString`) and `j` (position in `targetString`). The columns show the characters being compared in each iteration of the inner loop.
 
+## Strings Question 2 - Reverse Word Order
+
+Reverse the word order in a string? (Implement the `array.reverse()` function for string)
+
+Example 1:
+Input String: Talentlabs, Output: sbaltnelaT
+
+Example 2:
+Input Array: Hello, Output: olleH
+
+### What is your solution?
 
 
 # String as Arrays Algorithm Problems in JS
