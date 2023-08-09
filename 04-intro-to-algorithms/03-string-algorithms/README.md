@@ -96,6 +96,8 @@ most of the strings questions as array questions
 
 How can you check if a substring exists in a string? (How to implement the `indexOf()` function?)
 
+> search a part of a string inside full word strings
+
 **Example 1 (Found case):**
 Input String: "Hello", Target: "lo" 
 Results: 3
@@ -106,7 +108,7 @@ Results: -1
 
 **JS Fact:**
 
-> `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present. (indexOf() is basically a searching function. -1 means not exist in the array)
+> `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present. (indexOf() is basically a **searching** function. -1 means not exist in the array)
 
 ```javascript
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
