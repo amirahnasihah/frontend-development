@@ -18,7 +18,7 @@ for (let i = 0; i < 5; i++) {
 /*
 Strings Question 1 - Finding Substring: How can you check if a substring exists in a string? (How to implement the indexOf() function?)
 
-why use indexOf()?
+Why use indexOf()?
 */
 
 originalString = "Hello";
@@ -52,11 +52,7 @@ for (let i = 0; i < originalString.length; i++) {
 /*
 Strings Question 2 - Reverse Word Order
 
-How can you reverse the word order in a string? (Implement the array.reverse() function for string)
-
-Examples:
-Input String: Talentlabs, Output: sbaltnelaT
-Input Array: Hello, Output: olleH
+(Implement the array.reverse() function for string)
 */
 
 function reverseWords(input) {
@@ -76,3 +72,9 @@ console.log(reversedString); // Output: "sbaltnelaT"
 const inputArray = "Hello";
 const reversedArray = reverseWords(inputArray);
 console.log(reversedArray); // Output: "olleH"
+
+/*
+Strings Question 2 - Reverse Word Order
+
+(Implement the array.reverse() function for string)
+*/
