@@ -305,6 +305,17 @@ Here's what's happening:
 
 In simpler words, think of `.split(" ")` as a way to make a list of words from a sentence by looking for spaces between words. This makes it easier to work with each word separately. Just like if you were cutting a sandwich into smaller pieces to eat them one by one!
 
+If you apply the `split(" ")` function to a word like "TalentLabs", which doesn't have any spaces, it will still work, but it will split the word into individual characters instead of words. Let's see how that would look:
+
+```javascript
+const inputWord = "TalentLabs";
+const words = inputWord.split(" ");
+
+console.log(words); // Output: ["T", "a", "l", "e", "n", "t", "L", "a", "b", "s"]
+```
+
+In this case, the `split(" ")` function will break the word "TalentLabs" into an array where each character is a separate element in the array. This behavior is due to the fact that there are no spaces in the word to use as splitting points.
+
 ##### split().reverse().join()
 
 > `words[i] = words[i].split("").reverse().join("");`
