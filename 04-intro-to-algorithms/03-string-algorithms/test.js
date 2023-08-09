@@ -32,3 +32,22 @@ for (let i = 0; i < originalString.length; i++) {
 
 }
 
+// Question 2
+
+function reverseWords(input) {
+   // const words = input.split(" ");
+    
+    for (let i = 0; i < input.length; i++) {
+        words[i] = words[i].split("").reverse().join(""); // Reverse characters within each word
+    }
+    
+    return words.join(" ");
+}
+
+const inputString = "Talentlabs";
+const reversedString = reverseWords(inputString);
+console.log(reversedString); // Output: "sbaltnelaT"
+
+const inputArray = "Hello";
+const reversedArray = reverseWords(inputArray);
+console.log(reversedArray); // Output: "olleH"
