@@ -13,7 +13,7 @@
 
 # String Algorithm Problems in JS
 
-## Question 1 - Finding Substring
+## Strings Question 1 - Finding Substring
 
 > How can you check if a substring exists in a string? (How to implement the `indexOf()` function?)
 
@@ -462,3 +462,10 @@ In this code, the `capitalizeFirstLetter` function performs the following steps:
 6. Finally, it combines the capitalized first character with the lowercase remaining part to create the resulting capitalized string.
 
 The example input `"hElLo"` would be transformed to `"Hello"` as a result.
+
+## Strings Question 3 - Anagram
+
+How to check if two strings are anagram to each other?
+
+Anagram is words with same letters, but different word.
+(e.g. Paris/Pairs are anagram, arc/car are anagram)
