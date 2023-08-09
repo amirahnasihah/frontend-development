@@ -34,6 +34,9 @@ for (let i = 0; i < originalString.length; i++) {
   }
 }
 
+// targetStr: l,o
+//targetStr: l,o
+
 
 // 2. TalentLabs Solution - Optimization
 for (let i = 0; i < originalString.length; i++) {
