@@ -14,10 +14,7 @@ for (let i = inputString.length - 1; i >= 0; i--) {
 console.log(result); // sbaltnelaT
 
 
-// TalentLabs Solution
-originalString = "Hello";
-target = "lo";
-
+// TalentLabs Solution - Optimization
 for (let i = 0; i < originalString.length; i++) {
   // Leave for Step 2
   for (let j = 0; j < targetString.length; j++) {
@@ -26,7 +23,7 @@ for (let i = 0; i < originalString.length; i++) {
       break;
     }
     // Case 2: Match and it’s the last character
-    else if (j === targetString.length - 1) {
+    else if (j === targetString.length - 1) { // optimize
       console.log("Found at position " + i);
     }
   }
