@@ -354,7 +354,7 @@ So, if you had a sentence like "Hello world!", and you applied the steps in your
 
 ---
 
- Here's a way to reverse the word order in a string using the logic you provided earlier:
+> Here's a way to **reverse the word order** in a string using the logic you provided earlier:
 
 ```javascript
 function reverseWordOrder(inputString) {
