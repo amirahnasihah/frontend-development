@@ -42,6 +42,12 @@ const reversedString = inputString.split("").reverse().join("")
 
 console.log(reversedString) // sbaltnelaT
 
+// Reverse Sentences Order - split.reverse.join method
+
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+const reversedSenten
+
 /*
 Anagram
 
