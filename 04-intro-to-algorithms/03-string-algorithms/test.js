@@ -22,13 +22,13 @@ Why use indexOf()?
 */
 
 originalString = "Hello";
-target = "lo";
+targetString = "lo";
 
 // Part 1 Create Outer Loop - h,e,l,l,o
 for (let i = 0; i < originalString.length; i++) {
   // Inner Loop - must be unique; e.l.l
   for (let j = i + 1; j < originalString.length; j++) {
-    if (originalString[i] + originalString[j] === target) {
+    if (originalString[i] + originalString[j] === targetString) {
       console.log("targetStr:", originalString[i] + "," + originalString[j]);
     }
   }
