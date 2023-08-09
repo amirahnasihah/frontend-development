@@ -1,7 +1,7 @@
 /*
-Strings Question 1 - Finding Substring: How can you check if a substring exists in a string?
+Strings Question 2 - Reverse Word Order
 
-Simple solution
+Simple solution: loop start at last index and continue until reach the first index, bcsits reverse
 */
 
 const inputString = "Talentlabs";
