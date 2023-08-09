@@ -465,8 +465,6 @@ So, following this process, if `inputString` is "Talentlabs", you would get the 
 1. Loop
 2. Temp Variable
 
-
-
 ## Strings Question 3 - Anagram
 
 ### Anagram
