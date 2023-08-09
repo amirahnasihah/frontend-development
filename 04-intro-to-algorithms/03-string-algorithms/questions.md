@@ -258,7 +258,7 @@ const reversedText = text.split("").reverse().join(""); // Output: "olleh"
 If the word is reversed using reverse() method, remember this:
 
 1. split("") wit no empty string to separate it into individual word; // ["T", "a", "l", "e", ...]
-2. split().reverse().join
+2. split().reverse().join()
 3. join
 
 ### What is your solution?
@@ -304,7 +304,7 @@ console.log(reversedArray); // Output: "olleH"
 
 In this solution, the `reverseWords` function splits the input string into an array of words, then iterates through each word, reversing the characters within it using the `split`, `reverse`, and `join` functions. Finally, it joins the modified words back together to form the reversed string with reversed word characters. The same logic applies to reversing an input array of words.
 
-> why use double split? Answer: a difference between a string and an array of words.
+> why have 2 split() method? Answer: a difference between a string and an array of words.
 
 Your attempt to simplify the code is understandable, but there's a small misunderstanding. In your updated code, you're trying to loop through `input` directly as if it's an array of words, and you apply `.split("").reverse().join("")` to each character. However, there's a difference between a string and an array of words.
 
