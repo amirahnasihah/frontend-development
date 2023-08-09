@@ -353,6 +353,8 @@ Input String: Talentlabs, Output: sbaltnelaT
 Example 2:
 Input Array: Hello, Output: olleH
 
+> REMEMBER!! It is Reverse Word Order.
+
 ### What is your solution?
 
 Hint: Use a loop with temp variable
