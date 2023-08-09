@@ -298,7 +298,35 @@ Here's what's happening:
 
 In simpler words, think of `.split(" ")` as a way to make a list of words from a sentence by looking for spaces between words. This makes it easier to work with each word separately. Just like if you were cutting a sandwich into smaller pieces to eat them one by one!
 
-> 
+####£ 
+
+> `words[i] = words[i].split("").reverse().join("");`
+
+```javascript
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].split("").reverse().join(""); // Reverse characters within each word
+}
+```
+
+Here's what's happening step by step:
+
+1. `for (let i = 0; i < words.length; i++)`: This line starts a loop that will go through each word in the `words` array. The loop variable `i` will take on values from 0 to 1 less than the length of the `words` array.
+
+2. `words[i]`: This refers to the current word in the loop. `words[i]` is the word at the current index `i` within the `words` array.
+
+3. `words[i].split("").reverse().join("")`: This part takes the current word and performs a series of operations on it:
+
+   - `.split("")`: This takes the current word and breaks it into an array of individual characters. For example, "Hello" becomes ["H", "e", "l", "l", "o"].
+
+   - `.reverse()`: This reverses the order of the characters in the array. So, ["H", "e", "l", "l", "o"] becomes ["o", "l", "l", "e", "H"].
+
+   - `.join("")`: This puts the characters back together to form a single string. So, ["o", "l", "l", "e", "H"] becomes "olleH".
+
+4. `words[i] = ...`: This part assigns the reversed word back to the `words` array at the same index `i`. So, if the original word was "Hello" at index `i`, it will now be "olleH".
+
+Putting it all together, the loop goes through each word in the `words` array, reverses the characters in each word, and updates the `words` array with the reversed words.
+
+In simpler terms, this loop takes each word, flips its letters around, and puts the flipped words back in their original positions in the array. It's like turning "Hello" into "olleH" and "world" into "dlrow".
 
 In this solution, the `reverseWords` function splits the input string into an array of words, then iterates through each word, reversing the characters within it using the `split`, `reverse`, and `join` functions. Finally, it joins the modified words back together to form the reversed string with reversed word characters. The same logic applies to reversing an input array of words.
 
