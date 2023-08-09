@@ -261,6 +261,32 @@ console.log(result)
 
 **using reverse() method solution:**
 
+To reverse the order of characters within each word in a given string, while keeping the words themselves in the same order. Here's how:
+
+```javascript
+function reverseWords(input) {
+    const words = input.split(" ");
+    
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].split("").reverse().join(""); // Reverse characters within each word
+    }
+    
+    return words.join(" ");
+}
+
+const inputString = "Talentlabs";
+const reversedString = reverseWords(inputString);
+console.log(reversedString); // Output: "sbaltnelaT"
+
+const inputArray = "Hello";
+const reversedArray = reverseWords(inputArray);
+console.log(reversedArray); // Output: "olleH"
+```
+
+In this solution, the `reverseWords` function splits the input string into an array of words, then iterates through each word, reversing the characters within it using the `split`, `reverse`, and `join` functions. Finally, it joins the modified words back together to form the reversed string with reversed word characters. The same logic applies to reversing an input array of words.
+
+---
+
  Here's a way to reverse the word order in a string using the logic you provided earlier:
 
 ```javascript
