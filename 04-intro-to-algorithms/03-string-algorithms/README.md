@@ -362,7 +362,9 @@ Hint: Use a loop with temp variable
 ```
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
-Loop, start from last index; continue until reach first index; 
+// Loop from the last in
+
+Loop, start from last index; continue until reach at first index; which decrement by 1.
 ```
 
 ### Example Algorithm
