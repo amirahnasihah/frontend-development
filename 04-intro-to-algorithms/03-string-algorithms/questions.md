@@ -242,7 +242,9 @@ const reversedText = text.split("").reverse().join(""); // Output: "olleh"
 2. For each letter, append it to a temp string
 3. Return temp string as result
 
-If the word is in sentences, 
+If the word is reversed using reverse() method, remember this:
+
+1. split the 
 
 ### What is your solution?
 
