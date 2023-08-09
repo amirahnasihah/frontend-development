@@ -32,7 +32,7 @@ for (let i = 0; i < originalString.length; i++) {
 
 }
 
-// Solution
+// Alt Solution
 for (let i = 0; i < originalString.length; i++) {
   // Leave for Step 2
   for (let j = 0; j < targetString.length; j++) {
