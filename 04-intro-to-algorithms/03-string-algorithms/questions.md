@@ -244,7 +244,7 @@ const reversedText = text.split("").reverse().join(""); // Output: "olleh"
 
 If the word is reversed using reverse() method, remember this:
 
-1. split to separate it into individual words 
+1. split to separate it into individual words; // ["T", "a", "l", "e", ...]
 2. split.reverse.join
 3. join
 
