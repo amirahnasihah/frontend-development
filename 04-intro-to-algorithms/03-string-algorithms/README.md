@@ -372,7 +372,9 @@ Reverse word order using reverse()
 ```javascript
 const inputString = "Talentlabs"
 
-const reversedString = inputString.
+const reversedString = inputString.split("").reverse().join("")
+
+console.log(reversedString)
 ```
 
 ### Example Algorithm
