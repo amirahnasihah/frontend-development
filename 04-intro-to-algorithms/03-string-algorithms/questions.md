@@ -224,8 +224,21 @@ In this representation, each row corresponds to a specific combination of `i` (p
 
 Reverse the word order in a string? (Implement the `array.reverse()` function for string)
 
-Examples:
-Input String: Talentlabs, Output: sbaltnelaT
+Absolutely, I can explain that part!
+
+```javascript
+return words.join(" ");
+```
+
+This line is the finishing touch of the code, where we're putting everything back together after the words have been reversed. Here's what's happening:
+
+1. `words.join(" ")`: The `join()` function takes all the items in an array and joins them together into a single string. In this case, it's taking the `words` array, which contains the reversed words, and joining them together with spaces in between.
+
+2. `" "`: The space inside the `join()` function specifies that we want to add a space between each word when joining them together.
+
+3. `return`: This is the final result that the `reverseWords` function will give you when you call it. It's what the function will "return" to you. In this case, it's returning the joined string of reversed words with spaces.
+
+So, if you had a sentence like "Hello world!", and you applied the steps in your code, the `return words.join(" ");` line would give you back "olleH !dlrow". It's like putting the words back together after they've been reversed individually, but still maintaining the same order of words as in the original sentence.
 
 Input Array: Hello, Output: olleH
 
@@ -241,6 +254,8 @@ const reversedText = text.split("").reverse().join(""); // Output: "olleh"
 1. Use a for loop to loop thru the inputString from the end of the array
 2. For each letter, append it to a temp string
 3. Return temp string as result
+
+If the word is in sentences, 
 
 ### What is your solution?
 
@@ -332,7 +347,19 @@ In simpler terms, this loop takes each word, flips its letters around, and puts 
 
 > `return words.join(" ");`
 
+```javascript
+return words.join(" ");
+```
 
+This line is the finishing touch of the code, where we're putting everything back together after the words have been reversed. Here's what's happening:
+
+1. `words.join(" ")`: The `join()` function takes all the items in an array and joins them together into a single string. In this case, it's taking the `words` array, which contains the reversed words, and joining them together with spaces in between.
+
+2. `" "`: The space inside the `join()` function specifies that we want to add a space between each word when joining them together.
+
+3. `return`: This is the final result that the `reverseWords` function will give you when you call it. It's what the function will "return" to you. In this case, it's returning the joined string of reversed words with spaces.
+
+So, if you had a sentence like "Hello world!", and you applied the steps in your code, the `return words.join(" ");` line would give you back "olleH !dlrow". It's like putting the words back together after they've been reversed individually, but still maintaining the same order of words as in the original sentence.
 
 In this solution, the `reverseWords` function splits the input string into an array of words, then iterates through each word, reversing the characters within it using the `split`, `reverse`, and `join` functions. Finally, it joins the modified words back together to form the reversed string with reversed word characters. The same logic applies to reversing an input array of words.
 
