@@ -24,7 +24,7 @@ Why use indexOf()?
 originalString = "Hello";
 targetString = "lo";
 
-// Part 1 Create Outer Loop - h,e,l,l,o
+// 1.Part 1 Create Outer Loop - h,e,l,l,o
 for (let i = 0; i < originalString.length; i++) {
   // Inner Loop - must be unique; e.l.l
   for (let j = i + 1; j < originalString.length; j++) {
@@ -33,6 +33,22 @@ for (let i = 0; i < originalString.length; i++) {
     }
   }
 }
+
+
+// 2. TalentLabs Solution - Optimization
+for (let i = 0; i < originalString.length; i++) {
+  // Leave for Step 2
+  for (let j = 0; j < targetString.length; j++) {
+    // Case 1: Not Match, and end this iteration
+    if (originalString[i + j] !== targetString[j]) {
+      break;
+    }
+    // Case 2: Match and it’s the last character
+    else if (j === targetString.length - 1) { // optimize
+      console.log("Found at position " + i);
+    }
+  }
+} // Output: Found at position 3
 
 
 
