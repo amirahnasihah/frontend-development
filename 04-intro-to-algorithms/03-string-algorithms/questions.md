@@ -245,6 +245,7 @@ const reversedText = text.split("").reverse().join(""); // Output: "olleh"
 If the word is reversed using reverse() method, remember this:
 
 1. split the 
+2. 
 
 ### What is your solution?
 
