@@ -1,3 +1,10 @@
+/*
+Strings Question 1 - Finding Substring: How can you check if a substring exists in a string? 
+
+
+*/
+
+
 const inputString = "Talentlabs"
 let result = ""
 
