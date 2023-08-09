@@ -35,9 +35,9 @@ for (let i = 0; i < originalString.length; i++) {
 // Question 2
 
 function reverseWords(input) {
-   // const words = input.split(" ");
+    const words = input.split(" ");
     
-    for (let i = 0; i < input.length; i++) {
+    for (let i = 0; i < words.length; i++) {
         words[i] = words[i].split("").reverse().join(""); // Reverse characters within each word
     }
     
