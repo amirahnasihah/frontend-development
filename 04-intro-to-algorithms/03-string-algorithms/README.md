@@ -493,7 +493,12 @@ Hint: Use sorting
 ```markdown
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
+Keyword:
 
+1. split
+2. sort
+3. reverse
+4. join
 ```
 
 ### Example Algorithm
