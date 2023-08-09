@@ -74,7 +74,10 @@ const reversedArray = reverseWords(inputArray);
 console.log(reversedArray); // Output: "olleH"
 
 /*
-Strings Question 2 - Reverse Word Order
+Strings Question 3 - Anagram
 
-(Implement the array.reverse() function for string)
+How to check if two strings are anagram to each other?
+
+Anagram is words with same letters, but different word.
+(e.g. Paris/Pairs are anagram, arc/car are anagram)
 */
