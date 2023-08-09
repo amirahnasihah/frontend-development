@@ -40,7 +40,7 @@ console.log(result); // sbaltnelaT
 // Reverse Word Order - split.reverse.join method
 const reversedString = inputString.split("").reverse().join("")
 
-console.log("reversedString:", reversedString) // sbaltnelaT
+console.log(reversedString) // sbaltnelaT
 
 // Reverse Sentences Order - split.reverse.join method
 // reverse by word, not letter
