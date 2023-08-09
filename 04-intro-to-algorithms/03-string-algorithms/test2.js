@@ -36,13 +36,11 @@ for (let i = inputString.length - 1; i >= 0; i--) {
 
 console.log(result); // sbaltnelaT
 
-// Reverse Word Order - split.reverse.join
 
-const inputString = "Talentlabs"
-
+// Reverse Word Order - split.reverse.join method
 const reversedString = inputString.split("").reverse().join("")
 
-console.log(reversedString)
+console.log(reversedString) // sbaltnelaT
 
 /*
 Anagram
