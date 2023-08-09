@@ -367,6 +367,13 @@ Hint: Use a loop with temp variable
 Loop, start from last index; continue until reach at first index; which decrement by 1.
 ```
 
+Reverse word order using reverse()
+
+```javascript
+const inputString = "Talentlabs"
+
+```
+
 ### Example Algorithm
 
 1. Use a for loop to loop thru the inputString from the end of the array
