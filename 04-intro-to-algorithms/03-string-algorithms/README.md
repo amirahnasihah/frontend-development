@@ -353,7 +353,7 @@ Input String: Talentlabs, Output: sbaltnelaT
 Example 2:
 Input Array: Hello, Output: olleH
 
-> REMEMBER!! It is Reverse Word Order.
+> REMEMBER!! It is Reverse Word Order. It loop backward, from last index to first index and decrement by minus 1. 
 
 ### What is your solution?
 
