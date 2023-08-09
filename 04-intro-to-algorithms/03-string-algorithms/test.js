@@ -32,6 +32,21 @@ for (let i = 0; i < originalString.length; i++) {
 
 }
 
+// Solution
+for (let i = 0; i < originalString.length; i++) {
+  // Leave for Step 2
+  for (let j = 0; j < targetString.length; j++) {
+    // Case 1: Not Match, and end this iteration
+    if (originalString[i + j] !== targetString[j]) {
+      break;
+  }
+  // Case 2: Match and it’s the last character
+  else if (j === targetString.length -1) {
+    console.log("Found at position " + i)
+  }
+ }
+}
+
 // Question 2
 
 function reverseWords(input) {
