@@ -1,12 +1,24 @@
 - [String Algorithm](#string-algorithm)
+  - [Searching with `indexOf()`](#searching-with-indexof)
+    - [`break` and `return`](#break-and-return)
 - [String Algorithms (String as Arrays)](#string-algorithms-string-as-arrays)
   - [Exercises explained](#exercises-explained)
     - [exercise-1.js](#exercise-1js)
     - [exercise-2.js](#exercise-2js)
     - [exercise-3.js](#exercise-3js)
 - [Other](#other)
+  - [return statement in a function()](#return-statement-in-a-function)
 
 # String Algorithm
+
+1. Concatenate
+2. String Length
+3. Substring
+4. String Split
+5. Reverse
+6. String Search (indexOf())
+7. Replace
+8. Uppercase and Lowercase
 
 A JavaScript string algorithm is a set of instructions that help you manipulate and work with text (sequences of characters) in JavaScript.
 
@@ -78,6 +90,14 @@ const newText = text.replace("World", "Universe"); // Output: "Hello, Universe!"
 This algorithm allows you to replace specific characters or words within a string. It's like correcting a misspelled word. For example, if you have the string "I like cats," replacing "cats" with "dogs" would give you "I like dogs."
 
 These are some common JavaScript string algorithms. Each algorithm serves a specific purpose and can be used in various scenarios to process and manipulate strings effectively.
+
+8. **Uppercase and Lowercase**: Changing case is like shouting or whispering words using the `toUpperCase()` and `toLowerCase()` method.
+
+```javascript
+const sentence = "Hello, World";
+const uppercase = sentence.toUpperCase(); // Result: "HELLO, WORLD"
+const lowercase = sentence.toLowerCase(); // Result: "hello, world"
+```
 
 ## Searching with `indexOf()`
 

@@ -1,3 +1,16 @@
+- [String Algorithm Problems in JS](#string-algorithm-problems-in-js)
+  - [Question 1 - Finding Substring](#question-1---finding-substring)
+    - [What is your solution?](#what-is-your-solution)
+      - [Visualize the flow](#visualize-the-flow)
+  - [Strings Question 2 - Reverse Word Order](#strings-question-2---reverse-word-order)
+    - [What is your solution?](#what-is-your-solution-1)
+        - [split()](#split)
+        - [split().reverse().join()](#splitreversejoin)
+        - [join()](#join)
+      - [Flow Visualize](#flow-visualize)
+- [String as Arrays Algorithm Problems in JS](#string-as-arrays-algorithm-problems-in-js)
+- [Question: Capitalize only the first letter of a string](#question-capitalize-only-the-first-letter-of-a-string)
+
 # String Algorithm Problems in JS
 
 ## Question 1 - Finding Substring
@@ -421,3 +434,31 @@ So, for the input string "Talentlabs", your loop would iterate as follows:
 So, your final `result` will be "sbalnetlaT", which is the reverse of the original input string "Talentlabs". Your code successfully reverses the word order in the string.
 
 # String as Arrays Algorithm Problems in JS
+
+# Question: Capitalize only the first letter of a string
+
+To capitalize only the first letter of a string while leaving the rest of the letters in lowercase, you can use the following approach:
+
+```javascript
+function capitalizeFirstLetter(str) {
+    // Check if the string is not empty
+    if (str.length === 0) {
+        return str; // Return empty string if input is empty
+    }
+    return str[0].toUpperCase() + str.slice(1).toLowerCase();
+}
+
+const inputString = "hElLo";
+const capitalizedString = capitalizeFirstLetter(inputString); // Result: "Hello"
+```
+
+In this code, the `capitalizeFirstLetter` function performs the following steps:
+
+1. It checks if the input string is not empty. If the input string is empty, it simply returns an empty string.
+2. It uses `str[0]` to access the first character of the string.
+3. It converts the first character to uppercase using `.toUpperCase()`.
+4. It uses `.slice(1)` to get the remaining part of the string (excluding the first character).
+5. It converts the remaining part of the string to lowercase using `.toLowerCase()`.
+6. Finally, it combines the capitalized first character with the lowercase remaining part to create the resulting capitalized string.
+
+The example input `"hElLo"` would be transformed to `"Hello"` as a result.

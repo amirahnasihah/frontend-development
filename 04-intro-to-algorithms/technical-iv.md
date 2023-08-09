@@ -36,6 +36,8 @@ function findDuplicates(arr) {
 }
 ```
 
+> hint: array algorithm, return the duplicate numbers
+
 ## 3. Write a function called flattenArray that takes an array of nested arrays as an argument and returns a flattened array. The output array should contain all the elements of the input array, in the order they appear, but with no nested arrays.
 
 For example, if the input is [1, [2, 3], [4, [5, 6]]], the output should be [1, 2, 3, 4, 5, 6].
@@ -55,6 +57,8 @@ function capitalizeWords(str) {
   // Your code here
 }
 ```
+
+> hint: string algorithm, return capitalized of first letter (toCapitalCase())
 
 ## 5. Write a function called groupAnagrams that takes an array of strings as an argument and returns an array of arrays, where each array contains a group of anagrams.
 
