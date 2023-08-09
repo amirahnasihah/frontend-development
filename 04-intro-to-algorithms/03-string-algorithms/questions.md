@@ -298,7 +298,7 @@ Here's what's happening:
 
 In simpler words, think of `.split(" ")` as a way to make a list of words from a sentence by looking for spaces between words. This makes it easier to work with each word separately. Just like if you were cutting a sandwich into smaller pieces to eat them one by one!
 
-####£ 
+##### split().reverse().join()
 
 > `words[i] = words[i].split("").reverse().join("");`
 
@@ -327,6 +327,12 @@ Here's what's happening step by step:
 Putting it all together, the loop goes through each word in the `words` array, reverses the characters in each word, and updates the `words` array with the reversed words.
 
 In simpler terms, this loop takes each word, flips its letters around, and puts the flipped words back in their original positions in the array. It's like turning "Hello" into "olleH" and "world" into "dlrow".
+
+##### join()
+
+> `return words.join(" ");`
+
+
 
 In this solution, the `reverseWords` function splits the input string into an array of words, then iterates through each word, reversing the characters within it using the `split`, `reverse`, and `join` functions. Finally, it joins the modified words back together to form the reversed string with reversed word characters. The same logic applies to reversing an input array of words.
 
