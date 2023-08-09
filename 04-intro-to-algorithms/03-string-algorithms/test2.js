@@ -13,6 +13,8 @@ for (let i = inputString.length - 1; i >= 0; i--) {
 
 console.log(result); // sbaltnelaT
 
+originalString = "Hello";
+target = "lo";
 
 // TalentLabs Solution - Optimization
 for (let i = 0; i < originalString.length; i++) {
