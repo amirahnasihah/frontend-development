@@ -283,7 +283,7 @@ const reversedArray = reverseWords(inputArray);
 console.log(reversedArray); // Output: "olleH"
 ```
 
-#### split()
+##### split()
 
 > `const words = input.split(" ");`
 
@@ -297,6 +297,8 @@ Here's what's happening:
 4. All these smaller pieces (or words) are then put into a new variable called `words`.
 
 In simpler words, think of `.split(" ")` as a way to make a list of words from a sentence by looking for spaces between words. This makes it easier to work with each word separately. Just like if you were cutting a sandwich into smaller pieces to eat them one by one!
+
+> 
 
 In this solution, the `reverseWords` function splits the input string into an array of words, then iterates through each word, reversing the characters within it using the `split`, `reverse`, and `join` functions. Finally, it joins the modified words back together to form the reversed string with reversed word characters. The same logic applies to reversing an input array of words.
 
