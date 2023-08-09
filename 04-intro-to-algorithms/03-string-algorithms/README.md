@@ -353,7 +353,7 @@ Input String: Talentlabs, Output: sbaltnelaT
 Example 2:
 Input Array: Hello, Output: olleH
 
-> REMEMBER!! It is Reverse Word Order. It loop backward, from last index to first index and decrement by minus 1. 
+> **REMEMBER!!** It is Reverse Word Order. It loop backward, from last index to first index and decrement by minus 1. 
 
 ### What is your solution?
 
@@ -362,6 +362,7 @@ Hint: Use a loop with temp variable
 ```
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
+Repeat, start from last index 
 ```
 
 ### Example Algorithm
