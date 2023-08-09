@@ -364,33 +364,6 @@ Hint: Use a loop with temp variable
 
 ```
 
-```javascript
-for (let i = inputString.length - 1; i >= 0; i--) {
-    // Your code inside the loop
-}
-```
-
-Let's use the example `inputString = "Talentlabs"` to go through the loop step by step:
-
-```plaintext
-1. i = 9, inputString[9] = "s"
-2. i = 8, inputString[8] = "b"
-3. i = 7, inputString[7] = "a"
-4. i = 6, inputString[6] = "l"
-5. i = 5, inputString[5] = "n"
-6. i = 4, inputString[4] = "e"
-7. i = 3, inputString[3] = "t"
-8. i = 2, inputString[2] = "l"
-9. i = 1, inputString[1] = "a"
-10. i = 0, inputString[0] = "T"
-```
-
-Here's how it works:
-- The loop starts with `i = 9` (the last index of the string) and goes until `i` reaches 0 (the first index of the string).
-- In each iteration, you're accessing the character of `inputString` at index `i`, which is then added to the `result` string.
-
-So, following this process, if `inputString` is "Talentlabs", you would get the `result` string "sbaltnelaT".
-
 ### Example Algorithm
 
 1. Use a for loop to loop thru the inputString from the end of the array
@@ -455,10 +428,41 @@ console.log(result)
 i: 9 8 7 6 5 4 3 2 1 0 -1
 result: sbaltnelaT
 
+#### Visualize flow of Reverse Word Order
+
+```javascript
+for (let i = inputString.length - 1; i >= 0; i--) {
+    // Your code inside the loop
+}
+```
+
+Let's use the example `inputString = "Talentlabs"` to go through the loop step by step:
+
+```plaintext
+1. i = 9, inputString[9] = "s"
+2. i = 8, inputString[8] = "b"
+3. i = 7, inputString[7] = "a"
+4. i = 6, inputString[6] = "l"
+5. i = 5, inputString[5] = "n"
+6. i = 4, inputString[4] = "e"
+7. i = 3, inputString[3] = "t"
+8. i = 2, inputString[2] = "l"
+9. i = 1, inputString[1] = "a"
+10. i = 0, inputString[0] = "T"
+```
+
+Here's how it works:
+- The loop starts with `i = 9` (the last index of the string) and goes until `i` reaches 0 (the first index of the string).
+- In each iteration, you're accessing the character of `inputString` at index `i`, which is then added to the `result` string.
+
+So, following this process, if `inputString` is "Talentlabs", you would get the `result` string "sbaltnelaT".
+
 ### Techniques that we used
 
 1. Loop
 2. Temp Variable
+
+
 
 ## Strings Question 3 - Anagram
 
