@@ -308,7 +308,7 @@ In this solution, the `reverseWords` function splits the input string into an ar
 
 Your attempt to simplify the code is understandable, but there's a small misunderstanding. In your updated code, you're trying to loop through `input` directly as if it's an array of words, and you apply `.split("").reverse().join("")` to each character. However, there's a difference between a string and an array of words.
 
-When you try to treat `input` as an array and loop through it, you're actually iterating over each character in the string. So, if you use this approach, the code will reverse the order of characters within the entire input string, not just within each word.
+When you try to treat `input` (argument) as an array and loop through it, you're actually iterating over each character in the string. So, if you use this approach, the code will reverse the order of characters within the entire input string, not just within each word.
 
 Your initial code had two splits because it was correctly treating the input as a sentence with multiple words. By splitting it at spaces first, you could then loop through each word and reverse the order of characters within that word.
 
