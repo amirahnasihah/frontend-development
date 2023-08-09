@@ -362,7 +362,7 @@ Hint: Use a loop with temp variable
 ```
 <!-- your solution - (doesnt have to code, can be a pseudocode or methodology) -->
 
-Repeat, start from last index 
+Loop, start from last index; continue until reach first index; 
 ```
 
 ### Example Algorithm
