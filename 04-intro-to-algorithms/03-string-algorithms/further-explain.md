@@ -19,6 +19,7 @@
 6. String Search (indexOf())
 7. Replace
 8. Uppercase and Lowercase
+9. Anagram (same letter, different word)
 
 A JavaScript string algorithm is a set of instructions that help you manipulate and work with text (sequences of characters) in JavaScript.
 
