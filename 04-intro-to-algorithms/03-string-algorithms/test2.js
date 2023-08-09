@@ -40,7 +40,7 @@ console.log(result); // sbaltnelaT
 // Reverse Word Order - split.reverse.join method
 const reversedString = inputString.split("").reverse().join("")
 
-console.log(reversedString) // sbaltnelaT
+console.log("reversedString:", reversedString) // sbaltnelaT
 
 // Reverse Sentences Order - split.reverse.join method
 // reverse by word, not letter
@@ -48,7 +48,7 @@ const sentence = 'The quick brown fox jumps over the lazy dog.';
 
 const reversedSentence = sentence.split(" ").reverse().join(" ")
 
-console.log(r)
+console.log("reversedSentence:", reversedSentence)
 
 /*
 Anagram
