@@ -39,11 +39,11 @@ Anagram
 
 const str = 'The quick brown fox jumps over the lazy dog.';
 
-const words = str.split(' ');
+const words = str.split(' '); // ← has emltyspace
 console.log(words[4]);
 // Expected output: "jumps"
 
-const chars = str.split('');
+const chars = str.split(''); // ← no space
 console.log(chars[8]);
 // Expected output: "k"
 
