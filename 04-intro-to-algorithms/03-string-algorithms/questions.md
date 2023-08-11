@@ -506,3 +506,7 @@ In this code, the `capitalizeFirstLetter` function performs the following steps:
 6. Finally, it combines the capitalized first character with the lowercase remaining part to create the resulting capitalized string.
 
 The example input `"hElLo"` would be transformed to `"Hello"` as a result.
+
+## 2 arrays, 1 target
+## 1 array, 1 target
+## 1 array, subarray, target
