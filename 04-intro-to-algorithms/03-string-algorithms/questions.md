@@ -515,6 +515,10 @@ The example input `"hElLo"` would be transformed to `"Hello"` as a result.
 
 ## Finding Target of subarray (Substring)
 
+1. first, outer loop. we loop thru original string
+2. next, inner loop. we loop thru target string.
+3. 
+
 The code:
 
 ```javascript
