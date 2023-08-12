@@ -553,6 +553,11 @@ Let's break down the code:
 
 4. The `if` statement `originalString[i + j] !== targetString[j]` checks if the current letter in the `originalString` (at position `i+j`) is not the same as the current letter in the `targetString` (at position `j`). This is like comparing the words in the sentence to see if they match.
 
+- `i` represents the current position in the `originalString`.
+- `j` represents the current position in the `targetString`.
+
+So, `originalString[i + j]` is comparing the character at the current position `i + j` in the `originalString` with the character at the current position `j` in the `targetString`. This comparison is crucial for checking whether the characters in both strings match or not during the loop iterations.
+
 5. If the letters don't match, it means the word you're looking for isn't here, so you `break` out of the inner loop and move on to the next word in the sentence.
 
 6. But if all the letters match (you've gone through the whole `targetString` and found all the letters in order), the `else if` statement `j === targetString.length - 1` checks if you've reached the end of the `targetString`. If yes, it means you've found the word you were looking for in the sentence!
@@ -598,3 +603,4 @@ Questions:
 
 
 ### (j === targetString.length -1)
+
