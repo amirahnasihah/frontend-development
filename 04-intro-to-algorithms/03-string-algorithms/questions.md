@@ -517,7 +517,8 @@ The example input `"hElLo"` would be transformed to `"Hello"` as a result.
 
 1. first, outer loop. we loop thru original string
 2. next, inner loop. we loop thru target string.
-3. 
+3. this is because we want to compare/find the a piece of string which is the target string inside the original string.
+4. 
 
 The code:
 
