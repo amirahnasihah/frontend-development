@@ -101,7 +101,8 @@ function anagram(inputString) {
 	const joinedString = sortedString.join("")
 	console.log("join string:", joinedString)
 	
-	// 4. 
+	// 4. Found Anagram is true or false
+	if (joinedString === )
 }
 
 const inputString1 = "Paris"
