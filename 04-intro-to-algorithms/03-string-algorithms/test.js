@@ -89,9 +89,11 @@ Anagram is words with same letters, but different word.
 */
 
 function anagram(inputString) {
-	// Word to string array
-	const stringArray = inputString.split(" ")
-	co
+	// 1. Word to string array
+	const stringArray = inputString.split("")
+	console.log("stringArray:", stringArray)
+	
+	// 2. Sort 
 }
 
 const inputString1 = "Paris"
