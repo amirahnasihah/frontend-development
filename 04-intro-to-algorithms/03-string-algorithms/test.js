@@ -103,7 +103,9 @@ function anagram(inputString) {
 	
 	// 4. Check if joinedString is an anagram or not
 	if (joinedString === inputString) {
-		c
+		console.log("Yes Anagram")
+	} else {
+		console.log("Not Anagram")
 	}
 }
 
