@@ -104,11 +104,14 @@ function anagram(inputString) {
 	// 4. Check if joinedString is an anagram or not
 	if (joinedString === inputString) {
 		console.log("Yes Anagram")
+		return true
 	} else {
 		console.log("Not Anagram")
+		return false
 	}
 }
 
+// In order to call a function successfully, need to 
 const inputString1 = "Paris"
 const anagramCall = anagram(inputString1)
 console.log(anagramCall)
