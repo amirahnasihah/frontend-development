@@ -509,8 +509,9 @@ Keyword:
 
 1. split
 2. sort
-3. reverse
-4. join
+3. join
+
+Anagram does not have reverse() method
 ```
 
 ### Example Algorithm
