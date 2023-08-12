@@ -98,7 +98,10 @@ function anagram(inputString) {
 	console.log("sorted string:", sortedString)
 	
 	// 3. Join string array to word again
-	const 
+	const joinedString = sortedString.join("")
+	console.log("join string:", joinedString)
+	
+	// 4. 
 }
 
 const inputString1 = "Paris"
