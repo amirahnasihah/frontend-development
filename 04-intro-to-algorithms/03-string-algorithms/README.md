@@ -613,13 +613,13 @@ stringInArray2 = inputString2.split("")
 
 const sortedArray1 = stringInArray1.sort()
 const sortedArray2 = stringInArray2.sort()
-```
 
 console.log(stringInArray1); // Expected output: Array ["P", "a", "r", "i", "s"]
 console.log(stringInArray2); // Expected output: Array ["P", "a", "i", "r", "s"]
 
 console.log(sortedArray1); // Expected output: Array ["P", "a", "i", "r", "s"]
 console.log(sortedArray2); // Expected output: Array ["P", "a", "i", "r", "s"]
+```
 
 ### Part 3 - Compare the sorted array 
 
@@ -731,8 +731,6 @@ if (sortedArray1.join("") === sortedArray2.join("")) {
  console.log("Not Anagram")
 }
 // Expected output: "Anagram"
-
-
 ```
 
 exercise-3.js:
