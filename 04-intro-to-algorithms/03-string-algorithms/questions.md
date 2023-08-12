@@ -559,7 +559,7 @@ So, the code goes through each letter in the sentence and compares it with the l
 **pseudo-code representation with expected result**
 
 Here's the pseudocode representation of your code, along with the expected results:
-k
+
 ```
 originalString = "Hello"
 targetString = "lo"
@@ -574,7 +574,7 @@ for each position i in originalString:
 
 For the given input of `originalString = "Hello"` and `targetString = "lo"`, here's how the inner loop progresses:
 
-1. i = 0, j = 0: 'H' != 'l' (Not Match) -> Break
+1  i = 0, j = 0: 'H' != 'l' (Not Match) -> Break
 2. i = 0, j = 1: (Skipped after the previous break)
 3. i = 1, j = 0: 'e' != 'l' (Not Match) -> Break
 4. i = 1, j = 1: (Skipped after the previous break)
