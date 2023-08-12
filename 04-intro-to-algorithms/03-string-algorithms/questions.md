@@ -536,6 +536,30 @@ for (let i = 0; i < originalString.length; i++) {
 }
 ```
 
+Imagine you have a sentence written on a piece of paper and you want to find a specific word within that sentence. This code is like a way for a computer to do that.
+
+Let's break down the code:
+
+1. `originalString` is like the big sentence you're searching through, and `targetString` is the specific word you're looking for.
+
+2. The `for` loop with `i` goes through each letter in the `originalString`. It's like reading the sentence one word at a time.
+
+3. Inside that loop, there's another loop with `j` that goes through each letter of the `targetString`. This loop helps you compare the letters in the `originalString` with the letters in the `targetString`.
+
+4. The `if` statement `originalString[i + j] !== targetString[j]` checks if the current letter in the `originalString` (at position `i+j`) is not the same as the current letter in the `targetString` (at position `j`). This is like comparing the words in the sentence to see if they match.
+
+5. If the letters don't match, it means the word you're looking for isn't here, so you `break` out of the inner loop and move on to the next word in the sentence.
+
+6. But if all the letters match (you've gone through the whole `targetString` and found all the letters in order), the `else if` statement `j === targetString.length - 1` checks if you've reached the end of the `targetString`. If yes, it means you've found the word you were looking for in the sentence!
+
+7. When you find the whole word, the code says `console.log("Found at position " + i)`, which means it will print out where in the sentence you found the word.
+
+So, the code goes through each letter in the sentence and compares it with the letters in the word you're looking for. If all the letters match in order, and you've reached the end of the word, it means you've found the word in the sentence, and it tells you where it's located.
+
 Questions:
 
 ### (originalString[i + j] !== targetString[j])
+
+
+
+### (j === targetString.length -1)
