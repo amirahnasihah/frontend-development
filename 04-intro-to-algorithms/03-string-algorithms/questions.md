@@ -559,7 +559,7 @@ So, the code goes through each letter in the sentence and compares it with the l
 **pseudo-code representation with expected result**
 
 Here's the pseudocode representation of your code, along with the expected results:
-
+k
 ```
 originalString = "Hello"
 targetString = "lo"
