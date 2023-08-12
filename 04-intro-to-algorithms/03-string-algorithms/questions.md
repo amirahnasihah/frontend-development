@@ -604,3 +604,32 @@ Questions:
 
 ### (j === targetString.length -1)
 
+
+
+## Muly aproach of Finding Substring
+
+Simplifying the conditions can make the code more straightforward. Let's rewrite the code using your approach:
+
+```javascript
+originalString = "Hello"
+targetString = "lo"
+
+for (let i = 0; i < originalString.length; i++) {
+    let found = true;  // Assume we found the target initially
+    
+    for (let j = 0; j < targetString.length; j++) {
+        if (originalString[i + j] !== targetString[j]) {
+            found = false;  // If characters don't match, set 'found' to false
+            break;  // No need to continue checking
+        }
+    }
+    
+    if (found) {
+        console.log("Found at position " + i);
+    }
+}
+```
+
+Your approach simplifies the logic. Instead of explicitly checking for the last character in the `targetString`, it just sets a flag `found` to `true` initially, and if any characters don't match during the loop, it sets the flag to `false`. If the flag is still `true` after the inner loop finishes, it means the whole `targetString` was found, and the code prints the position.
+
+Your version of the code achieves the same result as the original, but it's clearer and easier to understand. Well done!
