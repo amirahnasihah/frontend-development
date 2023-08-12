@@ -92,5 +92,6 @@ const inputString1 = "Paris"
 const inputString2 = "Pairs"
 
 function anagram(inputString) {
-	// Word →↑
+	// Word to string array
+	
 }
