@@ -627,7 +627,7 @@ So, in summary, the code you provided checks for two conditions:
 1. If there is a mismatch, it exits the inner loop to move on to the next position in the `originalString`.
 2. If all characters in the `targetString` have been matched successfully and `j` is at the last position, it prints the position in the `originalString` where the full `targetString` was found.
 
-## Muly aproach of Finding Substring
+## My aproach of Finding Substring
 
 Simplifying the conditions can make the code more straightforward. Let's rewrite the code using your approach:
 
