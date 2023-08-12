@@ -556,6 +556,36 @@ Let's break down the code:
 
 So, the code goes through each letter in the sentence and compares it with the letters in the word you're looking for. If all the letters match in order, and you've reached the end of the word, it means you've found the word in the sentence, and it tells you where it's located.
 
+**pseudo-code representation with expected result**
+
+Here's the pseudocode representation of your code, along with the expected results:
+
+```
+originalString = "Hello"
+targetString = "lo"
+
+for each position i in originalString:
+    for each position j in targetString:
+        if originalString[i + j] is not equal to targetString[j]:
+            break to exit inner loop
+        else if j is the last position in targetString:
+            print "Found at position " + i
+```
+
+For the given input of `originalString = "Hello"` and `targetString = "lo"`, here's how the inner loop progresses:
+
+1. i = 0, j = 0: 'H' != 'l' (Not Match) -> Break
+2. i = 0, j = 1: (Skipped after the previous break)
+3. i = 1, j = 0: 'e' != 'l' (Not Match) -> Break
+4. i = 1, j = 1: (Skipped after the previous break)
+5. i = 2, j = 0: 'l' == 'l' (Match)
+6. i = 2, j = 1: 'l' == 'o' (Not Match) -> Break
+7. i = 3, j = 0: 'l' == 'l' (Match)
+8. i = 3, j = 1: 'o' == 'o' (Match)
+9. i = 4, j = 0: 'o' == 'l' (Not Match) -> Break
+
+So, the inner loop breaks for cases 1, 3, and 9. The only time it doesn't break is when `j` is the last position in the `targetString`, as seen in case 8. This is when the code prints "Found at position 3" since the complete `targetString` "lo" was found starting from position 3 in the `originalString` "Hello".
+
 Questions:
 
 ### (originalString[i + j] !== targetString[j])
