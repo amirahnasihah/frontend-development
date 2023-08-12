@@ -111,7 +111,7 @@ function anagram(inputString) {
 	}
 }
 
-// In order to call a function successfully, need to 
+// In order to call a function successfully, need to have a return
 const inputString1 = "Paris"
 const anagramCall = anagram(inputString1)
 console.log(anagramCall)
