@@ -208,6 +208,8 @@ Source: https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-sea
     c. if the element at the middle is smaller than the target, shrink the search range to the larger half
 2. Repeat step 1 until target is found or the range contains only 1 element
 
+However, binary search can only be applied to sorted arrays.
+
 **dry run**
 
 Input Array: [1, 2, 4, 6, 7, 9, 10, 11, 13]
