@@ -606,6 +606,27 @@ Questions:
 
 
 
+### else if statement conditions
+
+Let's break down the conditions you've mentioned:
+
+1. **Case 1: Not Match, and end this iteration**
+
+    In this condition, `originalString[i + j] !== targetString[j]` checks if the character at the current position (`i + j`) in the `originalString` is not equal to the character at the current position (`j`) in the `targetString`. If this is true, it means that the letters are not matching, which indicates that the current attempt to find the `targetString` within the `originalString` has failed.
+
+    By having this condition, the code breaks out of the inner loop immediately when a mismatch is found. This is because if even one character doesn't match, it's not possible for the rest of the characters to match as well. So, there's no need to continue checking the rest of the characters in the `targetString`.
+
+2. **Case 2: Match and it’s the last character**
+
+    This `else if` condition `j === targetString.length - 1` checks if the current position `j` is the last position in the `targetString`. If this is true, it means that all the previous characters in the `targetString` have matched with the consecutive characters in the `originalString`.
+
+    By checking this condition, the code ensures that it only prints "Found at position..." when the entire `targetString` has been successfully matched, rather than just a partial match. This ensures that the code only reports a successful match when it finds the complete `targetString` and not just a subset of it.
+
+So, in summary, the code you provided checks for two conditions: 
+
+1. If there is a mismatch, it exits the inner loop to move on to the next position in the `originalString`.
+2. If all characters in the `targetString` have been matched successfully and `j` is at the last position, it prints the position in the `originalString` where the full `targetString` was found.
+
 ## Muly aproach of Finding Substring
 
 Simplifying the conditions can make the code more straightforward. Let's rewrite the code using your approach:
