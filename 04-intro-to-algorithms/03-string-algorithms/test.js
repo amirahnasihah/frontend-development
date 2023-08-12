@@ -88,11 +88,13 @@ Anagram is words with same letters, but different word.
 (e.g. Paris/Pairs are anagram, arc/car are anagram)
 */
 
-const inputString1 = "Paris"
-const inputString2 = "Pairs"
-
 function anagram(inputString) {
 	// Word to string array
 	const stringArray = inputString.split(" ")
 	
 }
+
+const inputString1 = "Paris"
+const anagraCall = anagram(inputString)
+
+const inputString2 = "Pairs"
