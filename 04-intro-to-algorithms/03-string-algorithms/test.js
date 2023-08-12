@@ -93,5 +93,6 @@ const inputString2 = "Pairs"
 
 function anagram(inputString) {
 	// Word to string array
+	const stringArray = inputString.split(" ")
 	
 }
