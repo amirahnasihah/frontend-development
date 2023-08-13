@@ -42,8 +42,8 @@ Agenda:
 
 - Common Algorithms
 - Searching
-- Linear Search
-- Binary Search
+  - Linear Search
+  - Binary Search
 
 ## Common Algorithms
 
@@ -54,9 +54,34 @@ Agenda:
 
 Sample Interview Questions:
 - Can you name and describe 2 sorting algorithms to me?
-answer: Bubble sort, Merge sort, Quick sort
+keyword: Bubble sort, Merge sort, Quick sort
+
+Two sorting algorithms are "Bubble Sort" and "Merge Sort":
+   - Bubble Sort compares adjacent elements and swaps them if they're in the wrong order, repeatedly iterating through the list until no swaps are needed. While simple, it's not very efficient for larger lists.
+   - Merge Sort divides the list into smaller halves, sorts them, and then merges them back together in the correct order. It's more efficient than Bubble Sort, especially for larger datasets.
+
+---
+
+1. Bubble Sort:
+   Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they're in the wrong order. This process is repeated for each element until the list is sorted. While easy to understand, Bubble Sort is not very efficient, especially for large datasets, due to its average and worst-case time complexity of O(n^2).
+
+2. Merge Sort:
+   Merge Sort is a divide-and-conquer sorting algorithm. It works by dividing the unsorted list into smaller sub-lists, sorting each sub-list, and then merging these sorted sub-lists back together to get the final sorted array. Merge Sort has a consistent time complexity of O(n log n) in all cases, making it more efficient than Bubble Sort for larger datasets.
+
+3. Quick Sort:
+   Quick Sort is also a divide-and-conquer algorithm. It chooses a pivot element and partitions the array into two sub-arrays: one with elements smaller than the pivot and another with elements greater than the pivot. It then recursively sorts these sub-arrays. Quick Sort has an average and best-case time complexity of O(n log n), making it efficient for large datasets. However, its worst-case time complexity can be O(n^2) if the pivot choice is unbalanced.
+
+These sorting algorithms have different trade-offs in terms of efficiency and
+simplicity, which makes them suitable for various scenarios based on the size of
+the dataset and available resources.
 
 - Can you describe “Binary Search” algorithm to me?
+
+"Binary Search" is an algorithm used to find the position of a target value
+within a sorted array. It works by repeatedly dividing the search range in half,
+comparing the middle element to the target value, and narrowing down the search
+until the target is found or the range becomes empty. This approach is much
+faster than linear search, especially for large datasets.
 
 ### Searching Algorithm
 
