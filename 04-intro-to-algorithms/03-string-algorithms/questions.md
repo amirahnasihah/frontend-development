@@ -236,7 +236,7 @@ After considering all these combinations, the code prints "Found at position 3".
 
 This visualization helps you understand how the loops work together to compare the two strings!
 
-Result output:
+Result output, Hello:
 
 ```plaintext
 H l
@@ -250,6 +250,9 @@ l o
 
 l l
 l o
+
+o l
+o o
 
 o l
 o o
