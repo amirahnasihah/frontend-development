@@ -239,17 +239,24 @@ This visualization helps you understand how the loops work together to compare t
 Result output, Hello:
 
 ```plaintext
+i = 0 (H), j = 0 (l) >> Not match| i = 0 (H), j = 1 (o) >> Not match
 H l
 H o
 
+i = 1 (e), j = 0 (l) >> Not match| i = 1 (e), j = 1 (o) >> Not match
 e l
 e o
 
+i = 2 (l), j = 0 (l) >> Not match| i = 2 (l), j = 1 (0) >> Not match
+i = 2, j = 0 | i = 2, j = 1
 l l
 l o
 
 l l
 l o
+
+o l
+o o
 
 o l
 o o
