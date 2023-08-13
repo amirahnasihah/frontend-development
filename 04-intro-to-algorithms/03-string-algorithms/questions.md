@@ -680,3 +680,131 @@ Your understanding is generally correct. To find a substring within a larger str
 6. If you find a match, you can output or store the starting position (`i`) where the target string was found in the original string.
 
 Keep in mind that while this approach works, it's not the most efficient way to find substrings within strings. More advanced algorithms like the Knuth-Morris-Pratt algorithm or the Boyer-Moore algorithm offer better time complexity for substring searching.
+
+## Finding Substring
+
+```javascript
+originalString ="Hello"
+targetString = "lo"
+
+for (let i = 0; i < originalString.length; i++) {
+  // Leave for Step 2
+  for (let j = 0; j < targetString.length; j++) {
+    // Case 1: Not Match, and end this iteration
+    if (originalString[i + j] !== targetString[j]) {
+      break;
+  }
+  // Case 2: Match and it’s the last character
+  else if (originalString[i + j] === targetString[j] && j === targetString.length -1) {
+    console.log("Found at position " + i)
+  }
+ }
+}
+```
+
+Expected output: `"Found at position 3"`
+
+The above pseudo-code outlines the logic of the code you provided and what it's trying to achieve, without specifying any programming language syntax. It gives you a step-by-step representation of how the loops and conditionals work together to find the "targetString" within the "originalString".
+
+Let's use `originalString = "Hello"` and `targetString = "lo"` as in your code.
+
+1. **Outer Loop (`i` loop):**
+`for (let i = 0; i < originalString.length; i++)`
+   - `i` starts at 0 and increments by 1 until it reaches the length of `originalString` (5).
+   - In the first iteration, `i = 0`.
+   - In the second iteration, `i = 1`.
+   - And so on, until `i = 4`.
+
+2. **Inner Loop (`j` loop):**
+`for (let j = 0; j < targetString.length; j++)`
+   - Inside each iteration of the outer loop, the inner loop (`j` loop) runs.
+   - `j` starts at 0 and increments by 1 until it reaches the length of `targetString` (2).
+   - In the first iteration, `j = 0`.
+   - In the second iteration, `j = 1`.
+
+Now, let's see how these loops work together for each combination of `i` and `j`:
+
+```javascript
+    if (originalString[i + j] !== targetString[j]) {
+      break;
+    }
+```
+
+- When `i = 0` and `j = 0`:
+  - Compare `originalString[0 + 0]` (which is "H") with `targetString[0]` (which is "l").
+  - Since they don't match, the inner loop breaks.
+
+- When `i = 0` and `j = 1`:
+  - Compare `originalString[0 + 1]` (which is "e") with `targetString[1]` (which is "o").
+  - Since they don't match, the inner loop breaks.
+
+- When `i = 1` and `j = 0`:
+  - Compare `originalString[1 + 0]` (which is "e") with `targetString[0]` (which is "l").
+  - Since they don't match, the inner loop breaks.
+
+- When `i = 1` and `j = 1`:
+  - Compare `originalString[1 + 1]` (which is "l") with `targetString[1]` (which is "o").
+  - They don't match, so the inner loop breaks.
+
+- When `i = 2` and `j = 0`:
+  - Compare `originalString[2 + 0]` (which is "l") with `targetString[0]` (which is "l").
+  - They match, so we move on to the next iteration of the inner loop.
+
+- When `i = 2` and `j = 1`:
+  - Compare `originalString[2 + 1]` (which is "l") with `targetString[1]` (which is "o").
+  - They don't match, so the inner loop breaks.
+
+- The pattern repeats for `i = 3` and `i = 4`, but since `i + j` exceeds the length of `originalString`, the inner loop breaks instantly.
+
+The continuation of the pattern for `i = 3` and `i = 4`:
+
+For `i = 3`:
+
+- When `i = 3` and `j = 0`:
+  - `originalString[3 + 0]` is out of bounds since it exceeds the length of `originalString`. Therefore, the inner loop breaks instantly for this `i` value.
+
+- When `i = 3` and `j = 1`:
+  - Similarly, `originalString[3 + 1]` is also out of bounds, so the inner loop breaks instantly for this combination.
+
+For `i = 4`:
+
+- When `i = 4` and `j = 0`:
+  - `originalString[4 + 0]` is out of bounds, and the inner loop breaks instantly.
+
+- When `i = 4` and `j = 1`:
+  - Similarly, `originalString[4 + 1]` is out of bounds, and the inner loop breaks instantly.
+
+Since both `i = 3` and `i = 4` lead to out-of-bounds indices for the `originalString`, the inner loop breaks instantly for these values of `i`, and the code does not print any further output.
+
+As you can see, the pattern repeats for each valid combination of `i` and `j`,
+and the inner loop breaks instantly when `i + j` exceeds the length of
+`originalString`.
+
+After considering all these combinations, the code prints "Found at position 3". This means that the "targetString" "lo" was found in the "originalString" "Hello" starting at position 3.
+
+This visualization helps you understand how the loops work together to compare the two strings!
+
+Result output:
+
+```plaintext
+H l
+H o
+
+e l
+e o
+
+l l
+l o
+
+l l
+l o
+
+o l
+o o
+```
+
+In this representation, each row corresponds to a specific combination of `i` (position in `originalString`) and `j` (position in `targetString`). The columns show the characters being compared in each iteration of the inner loop.
+
+
+
+Can you continue to show the pattern repeats for `i = 3` and `i = 4`, but since `i + j` exceeds the length of `originalString`, the inner loop breaks instantly. I m not sure, with expected result output
