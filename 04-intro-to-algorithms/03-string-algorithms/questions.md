@@ -758,23 +758,26 @@ Now, let's see how these loops work together for each combination of `i` and `j`
 
 The continuation of the pattern for `i = 3` and `i = 4`:
 
-For `i = 3`:
-
 - When `i = 3` and `j = 0`:
-  - `originalString[3 + 0]` is out of bounds since it exceeds the length of `originalString`. Therefore, the inner loop breaks instantly for this `i` value.
+  - Compare `originalString[3 + 0]` (which is "l") with `targetString[0]` (which is "l").
+  - They match, so we move on to the next iteration of the inner loop.
 
-- When `i = 3` and `j = 1`:
-  - Similarly, `originalString[3 + 1]` is also out of bounds, so the inner loop breaks instantly for this combination.
-
-For `i = 4`:
+  - Compare `originalString[3 + 1]` (which is "o") with `targetString[1]` (which is "o").
+  - They match! Since this is the last character in the "targetString", we found a match! The code prints "Found at position 3".
 
 - When `i = 4` and `j = 0`:
-  - `originalString[4 + 0]` is out of bounds, and the inner loop breaks instantly.
+  - Compare `originalString[4 + 0]` (which is "o") with `targetString[0]` (which is "l").
+  - They don't match, so the inner loop breaks.
 
 - When `i = 4` and `j = 1`:
-  - Similarly, `originalString[4 + 1]` is out of bounds, and the inner loop breaks instantly.
+  - Compare `originalString[4 + 1]` (which is out of bounds) with `targetString[1]` (which is "o").
+  - Since the index exceeds the length of `originalString`, the inner loop breaks instantly.
 
-Since both `i = 3` and `i = 4` lead to out-of-bounds indices for the `originalString`, the inner loop breaks instantly for these values of `i`, and the code does not print any further output.
+To summarize:
+
+- At `i = 3`, the inner loop successfully matches both characters "l" and "o" from the `targetString`, resulting in the code printing "Found at position 3".
+
+- At `i = 4`, the inner loop starts but can't complete due to an out-of-bounds index.
 
 As you can see, the pattern repeats for each valid combination of `i` and `j`,
 and the inner loop breaks instantly when `i + j` exceeds the length of
