@@ -26,10 +26,14 @@ In Part 2 step, we need to create an inner loop that would help us in checking i
 ### What is your solution?
 
 ```javascript
-originalString = "Hello"
+originalString =
+
+`for (let i = 0; i < originalString.length; i++) "Hello"
 targetString = "lo"
 
-for (let i = 0; i < originalString.length; i++) {
+
+
+`for (let i = 0; i < originalString.length; i++) `
   // Leave for Step 2
   for (let j = 0; j < targetString.length; j++) {
     // Case 1: Not Match, and end this iteration
@@ -161,6 +165,8 @@ Expected output: `"Found at position 3"`
 The above pseudo-code outlines the logic of the code you provided and what it's trying to achieve, without specifying any programming language syntax. It gives you a step-by-step representation of how the loops and conditionals work together to find the "targetString" within the "originalString".
 
 Let's use `originalString = "Hello"` and `targetString = "lo"` as in your code.
+
+`for (let i = 0; i < originalString.length; i++)`
 
 1. **Outer Loop (`i` loop):**
    - `i` starts at 0 and increments by 1 until it reaches the length of `originalString` (5).
