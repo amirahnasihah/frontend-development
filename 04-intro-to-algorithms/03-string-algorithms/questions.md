@@ -651,30 +651,26 @@ So, in summary, the code you provided checks for two conditions:
 1. If there is a mismatch, it exits the inner loop to move on to the next position in the `originalString`.
 2. If all characters in the `targetString` have been matched successfully and `j` is at the last position, it prints the position in the `originalString` where the full `targetString` was found.
 
-## My aproach of Finding Substring
+## My understanding of Finding Substring
 
-Simplifying the conditions can make the code more straightforward. Let's rewrite the code using your approach:
+```
+based on my understanding
 
-```javascript
-originalString = "Hello"
-targetString = "lo"
+If wants to solve questions like finding substring, have to do
 
-for (let i = 0; i < originalString.length; i++) {
-    let found = true;  // Assume we found the target initially
-    
-    for (let j = 0; j < targetString.length; j++) {
-        if (originalString[i + j] !== targetString[j]) {
-            found = false;  // If characters don't match, set 'found' to false
-            break;  // No need to continue checking
-        }
-    }
-    
-    if (found) {
-        console.log("Found at position " + i);
-    }
-}
+1. We use two loops
+2. I need first to check the string is not match with the letter in target string. Need to remove first the current letter that is not match with current letter of the target string
+3. After loop thru whole strings in original and target, we found all letters in order of the target string.
+4. Then, we have to make another check to make sure we have found the substring by check the if the current letter of target string reached the end, the last index
 ```
 
-Your approach simplifies the logic. Instead of explicitly checking for the last character in the `targetString`, it just sets a flag `found` to `true` initially, and if any characters don't match during the loop, it sets the flag to `false`. If the flag is still `true` after the inner loop finishes, it means the whole `targetString` was found, and the code prints the position.
+Your understanding is generally correct. To find a substring within a larger string, you can follow these steps:
 
-Your version of the code achieves the same result as the original, but it's clearer and easier to understand. Well done!
+1. Use two nested loops to iterate over the characters in both the original string and the target string.
+2. Within the outer loop (original string), start comparing characters with the target string's characters.
+3. If a character mismatch is found (i.e., `originalString[i + j] !== targetString[j]`), break the loop and move to the next position in the original string. This is because a mismatch indicates the substring cannot start at the current position.
+4. If you manage to loop through all characters of the target string without encountering a mismatch, you can consider it a potential match.
+5. After the inner loop completes, check if the index `j` (counter for the target string) has reached the end of the target string (`j === targetString.length - 1`). If it has, that means you've found a complete match for the target string starting at position `i` in the original string.
+6. If you find a match, you can output or store the starting position (`i`) where the target string was found in the original string.
+
+Keep in mind that while this approach works, it's not the most efficient way to find substrings within strings. More advanced algorithms like the Knuth-Morris-Pratt algorithm or the Boyer-Moore algorithm offer better time complexity for substring searching.
