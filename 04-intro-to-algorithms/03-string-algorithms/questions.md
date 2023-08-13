@@ -253,9 +253,6 @@ l o
 
 o l
 o o
-
-o l
-o o
 ```
 
 In this representation, each row corresponds to a specific combination of `i` (position in `originalString`) and `j` (position in `targetString`). The columns show the characters being compared in each iteration of the inner loop.
