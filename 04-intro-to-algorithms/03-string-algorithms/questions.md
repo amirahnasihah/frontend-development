@@ -247,19 +247,22 @@ i = 1 (e), j = 0 (l) >> Not match| i = 1 (e), j = 1 (o) >> Not match
 e l
 e o
 
-i = 2 (l), j = 0 (l) >> Not match| i = 2 (l), j = 1 (0) >> Not match
-i = 2, j = 0 | i = 2, j = 1
+i = 2 (l), j = 0 (l) >> Match| i = 2 (l), j = 1 (o) >> Not match
 l l
 l o
 
+i = 3 (l), j = 0 (l) >> Match| i = 3 (l), j = 1 (o) >> Not match
 l l
 l o
 
+i = 4 (o), j = 0 (l) >> Not match| i = 4 (o), j = 1 (o) >> Match, but `i = 4, i
++ j` becomes 5, which exceeds the length of the originalString (5), so the inner
+loop breaks immediately.
 o l
 o o
 
-o l
-o o
+// expected output confirms that the code correctly identifies the match of the
+`targetString` "lo" within the `originalString` "Hello" starting at position 3.
 ```
 
 In this representation, each row corresponds to a specific combination of `i` (position in `originalString`) and `j` (position in `targetString`). The columns show the characters being compared in each iteration of the inner loop.
