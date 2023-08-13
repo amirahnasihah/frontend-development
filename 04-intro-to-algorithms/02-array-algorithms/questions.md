@@ -4,6 +4,7 @@
     - [sorted array with single loop using `includes`](#sorted-array-with-single-loop-using-includes)
       - [Practice Find Missing Numbers](#practice-find-missing-numbers)
       - [Practice Finding Duplicate Number](#practice-finding-duplicate-number)
+      - [Practice Finding Number Pairs](#practice-finding-number-pairs)
 
 # Array Algorithm Problems in JS
 

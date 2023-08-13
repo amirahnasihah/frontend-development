@@ -24,7 +24,7 @@
     - [Example Algorithm](#example-algorithm-2)
     - [Part 1 - Loop Thru the Array](#part-1---loop-thru-the-array)
     - [Part 2 - Loop Thru in a Nested Loop (important part)](#part-2---loop-thru-in-a-nested-loop-important-part)
-    - [Part 3 - Avoiding Duplicate Results](#part-3---avoiding-duplicate-results)
+    - [Part 3 - Avoiding Duplicate Results (important)](#part-3---avoiding-duplicate-results-important)
     - [Techniques that we used](#techniques-that-we-used-2)
 - [Feedback on exercise](#feedback-on-exercise)
   - [exercise-1.js](#exercise-1js)

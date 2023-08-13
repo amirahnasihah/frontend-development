@@ -20,6 +20,7 @@
     - [What is your solution?](#what-is-your-solution-1)
     - [Example Algorithm](#example-algorithm-1)
     - [Part 1 - Loop Thru the Array](#part-1---loop-thru-the-array)
+      - [Visualize flow of Reverse Word Order](#visualize-flow-of-reverse-word-order)
     - [Techniques that we used](#techniques-that-we-used-1)
   - [Strings Question 3 - Anagram](#strings-question-3---anagram)
     - [Anagram](#anagram)

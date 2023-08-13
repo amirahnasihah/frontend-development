@@ -8,6 +8,7 @@
     - [exercise-3.js](#exercise-3js)
 - [Other](#other)
   - [return statement in a function()](#return-statement-in-a-function)
+  - [Difference between a string and an array of words](#difference-between-a-string-and-an-array-of-words)
 
 # String Algorithm
 

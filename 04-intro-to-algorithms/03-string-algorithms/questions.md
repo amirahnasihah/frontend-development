@@ -1,5 +1,5 @@
 - [String Algorithm Problems in JS](#string-algorithm-problems-in-js)
-  - [Question 1 - Finding Substring](#question-1---finding-substring)
+  - [Strings Question 1 - Finding Substring](#strings-question-1---finding-substring)
     - [What is your solution?](#what-is-your-solution)
       - [Visualize the flow](#visualize-the-flow)
   - [Strings Question 2 - Reverse Word Order](#strings-question-2---reverse-word-order)
@@ -8,8 +8,19 @@
         - [split().reverse().join()](#splitreversejoin)
         - [join()](#join)
       - [Flow Visualize](#flow-visualize)
+      - [Visualize flow of Reverse Word Order](#visualize-flow-of-reverse-word-order)
+  - [Strings Question 3 - Anagram](#strings-question-3---anagram)
 - [String as Arrays Algorithm Problems in JS](#string-as-arrays-algorithm-problems-in-js)
-- [Question: Capitalize only the first letter of a string](#question-capitalize-only-the-first-letter-of-a-string)
+- [Other](#other)
+  - [Question: Capitalize only the first letter of a string](#question-capitalize-only-the-first-letter-of-a-string)
+        - [2 arrays, 1 target](#2-arrays-1-target)
+        - [1 array, 1 target](#1-array-1-target)
+  - [Finding Target of subarray (Substring)](#finding-target-of-subarray-substring)
+    - [(originalString\[i + j\] !== targetString\[j\])](#originalstringi--j--targetstringj)
+    - [(j === targetString.length -1)](#j--targetstringlength--1)
+    - [else if statement conditions](#else-if-statement-conditions)
+  - [My understanding of Finding Substring](#my-understanding-of-finding-substring)
+  - [Finding Substring](#finding-substring)
 
 # String Algorithm Problems in JS
 
