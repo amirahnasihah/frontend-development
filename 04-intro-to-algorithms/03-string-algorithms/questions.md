@@ -166,15 +166,15 @@ The above pseudo-code outlines the logic of the code you provided and what it's 
 
 Let's use `originalString = "Hello"` and `targetString = "lo"` as in your code.
 
-`for (let i = 0; i < originalString.length; i++)`
-
 1. **Outer Loop (`i` loop):**
+`for (let i = 0; i < originalString.length; i++)`
    - `i` starts at 0 and increments by 1 until it reaches the length of `originalString` (5).
    - In the first iteration, `i = 0`.
    - In the second iteration, `i = 1`.
    - And so on, until `i = 4`.
 
 2. **Inner Loop (`j` loop):**
+`for (let j = 0; j < targetString.length; j++)`
    - Inside each iteration of the outer loop, the inner loop (`j` loop) runs.
    - `j` starts at 0 and increments by 1 until it reaches the length of `targetString` (2).
    - In the first iteration, `j = 0`.
