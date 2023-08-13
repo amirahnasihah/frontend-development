@@ -805,6 +805,4 @@ o o
 
 In this representation, each row corresponds to a specific combination of `i` (position in `originalString`) and `j` (position in `targetString`). The columns show the characters being compared in each iteration of the inner loop.
 
-
-
 Can you continue to show the pattern repeats for `i = 3` and `i = 4`, but since `i + j` exceeds the length of `originalString`, the inner loop breaks instantly. I m not sure, with expected result output
