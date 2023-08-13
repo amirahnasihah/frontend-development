@@ -26,14 +26,10 @@ In Part 2 step, we need to create an inner loop that would help us in checking i
 ### What is your solution?
 
 ```javascript
-originalString =
-
-`for (let i = 0; i < originalString.length; i++) "Hello"
+originalString ="Hello"
 targetString = "lo"
 
-
-
-`for (let i = 0; i < originalString.length; i++) `
+for (let i = 0; i < originalString.length; i++) {
   // Leave for Step 2
   for (let j = 0; j < targetString.length; j++) {
     // Case 1: Not Match, and end this iteration
