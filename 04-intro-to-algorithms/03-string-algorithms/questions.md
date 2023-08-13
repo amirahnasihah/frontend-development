@@ -142,6 +142,24 @@ So, to answer your questions:
 - `i + j` is used to match the corresponding letters in both strings. It helps compare letters starting from the current position in the `originalString`.
 - Yes, you're correct. `(j === targetString.length - 1)` checks if the current position in the `targetString` is the last one. If it is, it means the entire `targetString` has been successfully matched.
 
+> why at first if block use case of not match instead of match first?
+
+The loop is designed to find a target string within an original string by iterating through each character of the original string and comparing it with the characters of the target string. 
+
+Regarding why the first if block checks for "Not Match" instead of "Match," it's because the intention is to handle the case where a mismatch occurs as early as possible. If a mismatch is detected, there's no point in checking further for a match with the remaining characters in the target string, and the loop should be broken to move on to the next position in the original string.
+
+The code structure could be optimized and made clearer by reversing the order of
+these conditions, but as it stands, this code tries to find a match sequentially
+and exits as soon as a mismatch is found.
+
+The reason the first case is to "break the loop" when a mismatch occurs is
+because, when you're searching for a target string within the original string,
+once you encounter a character that doesn't match with the corresponding
+character in the target string, it doesn't make sense to continue checking the
+remaining characters in the target string at that particular starting position
+in the original string. Hence, the loop is exited prematurely to move on to the
+next position in the original string.
+
 #### Visualize the flow
 
 "to length of originalString - 1", it's saying that the loop should go from the first box (0) to the last box (length of originalString - 1) to ensure we're checking each position of the string.
