@@ -54,6 +54,31 @@ This pseudocode calculates the factorial of a given positive integer `n` using a
 the current value of `factorial` by `i`, and then increments `i` by 1 in each
 iteration. Finally, it outputs the calculated factorial value.
 
+---
+
+Here's a simple pseudocode example of a `while` loop that calculates the sum of numbers from 1 to a given positive integer `n`:
+
+```
+Input: n (a positive integer)
+Output: sum (the sum of numbers from 1 to n)
+
+Set sum to 0
+Set i to 1
+
+While i is less than or equal to n:
+    Add i to sum
+    Increment i by 1
+
+Output sum
+```
+
+In this pseudocode, we're using a `while` loop to calculate the sum of numbers from 1 to `n`. We start by initializing the `sum` variable to 0 and the counter `i` to 1. The loop continues as long as `i` is less than or equal to `n`. Inside the loop, we add the value of `i` to the `sum` and then increment `i` by 1 in each iteration. Finally, we output the calculated sum.
+
+Feel free to adapt and modify this pseudocode to create your own examples and
+better understand the concepts behind `while` loops!
+
+Example:
+
 For example, let's say you want to print numbers from 1 to 5 using a `while` loop:
 
 ```javascript
