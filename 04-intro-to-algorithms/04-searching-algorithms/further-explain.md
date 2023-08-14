@@ -20,6 +20,10 @@
 
 # Other
 
+## if statement
+
+
+
 ## while loop
 
 A `while` loop in JavaScript is used to execute a block of code repeatedly as long as a specified condition is true. Here's the basic syntax:
@@ -128,6 +132,8 @@ In general, if you know the number of iterations beforehand, a `for` loop might 
 
 ## for loop
 
+
+### fir
 Pseudocode is a way to outline the logic of a program without using specific programming syntax. Here's how you could write a `for` loop in pseudocode:
 
 ```
