@@ -32,6 +32,8 @@ middle element: 16
 
 target number: 23 (middle < 23 -> cari yg next larger half iaitu lepas target, 23 punya range. above middle)
 
+(ke kiri <—)
+
 1. Langkah 1: Mulakan dengan tengah senarai. Nilai tengah adalah 16.
 2. Langkah 2: Bandingkan 16 dengan nilai yang dicari. Jika sama, kita telah menemui nilai.
 3. Langkah 3: Tetapi dalam contoh ini, katakan kita mencari nilai 23 yang lebih besar daripada 16.
