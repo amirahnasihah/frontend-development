@@ -125,3 +125,28 @@ for (let i = 0; i < 5; i++) {
 ```
 
 In general, if you know the number of iterations beforehand, a `for` loop might be more appropriate. If you're looping until a specific condition is met and you're not sure how many iterations it will take, a `while` loop could be a better choice.
+
+## for loop
+
+Pseudocode is a way to outline the logic of a program without using specific programming syntax. Here's how you could write a `for` loop in pseudocode:
+
+```
+FOR each value from start TO end
+  // Code to be executed in each iteration
+END FOR
+```
+
+Let's translate this pseudocode into an example where you want to print numbers from 1 to 5:
+
+```
+FOR value = 1 TO 5
+  PRINT value
+END FOR
+```
+
+In this pseudocode:
+- `FOR value = 1 TO 5` sets up the loop to iterate from 1 to 5.
+- `PRINT value` represents the code that would be executed in each iteration, which is printing the current value.
+- `END FOR` indicates the end of the loop.
+
+Remember, pseudocode is not a programming language but a way to outline your logic before writing actual code. It helps you plan and understand the structure of your program without getting caught up in specific syntax details.
