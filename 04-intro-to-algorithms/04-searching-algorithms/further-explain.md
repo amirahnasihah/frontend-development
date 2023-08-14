@@ -10,6 +10,16 @@
 
 # Binary Search
 
+1. Start with the element at the middle position:
+    a. if the element at the middle equals to the target, then return true.
+    b. if the element at the middle is larger than the target, shrink the search
+    range to smaller half.
+    c. if the element at the middle is smaller than the target, shrink the
+    search range to the larger half.
+2. Repeat step 1 until target is found or the range contains only 1 element.
+
+However, binary search can only be applied to sorted arrays.
+
 ### Visualise BS (malay)
 
 Gambaran cara kerja binary search dengan contoh:
