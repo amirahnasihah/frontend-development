@@ -278,7 +278,7 @@ while (start <= end) {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 **JS FACT**
 
