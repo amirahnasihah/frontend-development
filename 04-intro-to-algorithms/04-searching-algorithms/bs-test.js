@@ -18,10 +18,10 @@ while (start <= end) {
         break;
     }
     else if (arr[middle] < target) {
-        start = middle + 1; // ke 
+        start = middle + 1; // ke kanan
     }
     else {
-        end = middle - 1;
+        end = middle - 1; // ke kiri
     }
 }
 
