@@ -128,9 +128,61 @@ In this example:
 
 `else if` statements are helpful when you have multiple conditions that need to be checked in a specific order.
 
-## switch case statement
+## switch statement
 
+The `switch` statement is another control structure in programming that allows you to compare a value against multiple possible cases and execute different blocks of code based on which case matches. Here's how it's structured:
 
+```javascript
+switch (expression) {
+  case value1:
+    // Code to be executed if expression matches value1
+    break;
+  case value2:
+    // Code to be executed if expression matches value2
+    break;
+  // ... more cases ...
+  default:
+    // Code to be executed if none of the cases match
+}
+```
+
+Here's an example using pseudocode and its JavaScript equivalent:
+
+Pseudocode:
+```
+SWITCH dayOfWeek
+  CASE "Monday"
+    Print "It's the start of the week"
+  CASE "Friday"
+    Print "It's the end of the week"
+  DEFAULT
+    Print "It's a regular day"
+END SWITCH
+```
+
+JavaScript:
+```javascript
+switch (dayOfWeek) {
+  case "Monday":
+    console.log("It's the start of the week");
+    break;
+  case "Friday":
+    console.log("It's the end of the week");
+    break;
+  default:
+    console.log("It's a regular day");
+}
+```
+
+In this example:
+- The program checks the `dayOfWeek` variable against each case.
+- If `dayOfWeek` matches "Monday," the code inside the first case block is executed.
+- If `dayOfWeek` matches "Friday," the code inside the second case block is executed.
+- If `dayOfWeek` doesn't match any of the cases, the code inside the `default` block is executed.
+
+The `break` statement is used to exit the `switch` block after the code associated with a matching case is executed. This prevents the program from continuing to execute code in subsequent cases.
+
+The `switch` statement is useful when you have a single expression to compare against multiple possible values and perform different actions accordingly.
 
 ## while loop
 
