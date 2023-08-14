@@ -1,7 +1,7 @@
 - [Assignment 4 - Searching Algorithms](#assignment-4---searching-algorithms)
   - [1.1 In this part, you are going to try coding the “Reverse String” algorithm question we discussed in class.](#11-in-this-part-you-are-going-to-try-coding-the-reverse-string-algorithm-question-we-discussed-in-class)
   - [1.2 In this part, you are going to try coding the “Find Substring” algorithm question we discussed in class](#12-in-this-part-you-are-going-to-try-coding-the-find-substring-algorithm-question-we-discussed-in-class)
-- [Lecture 4: Searching Algorithms\\](#lecture-4-searching-algorithms)
+- [Lecture 4: Searching Algorithms](#lecture-4-searching-algorithms)
   - [Common Algorithms](#common-algorithms)
     - [Common Algorithms](#common-algorithms-1)
     - [Searching Algorithm](#searching-algorithm)
@@ -36,7 +36,7 @@ Open `linear-search.js` file and please finish the `linearSearch` function accor
 
 Open `binary-search.js` file and please finish the `binarySearch` function according to the specification in the file. We have prepared some test cases for you to test your functions.
 
-# Lecture 4: Searching Algorithms\
+# Lecture 4: Searching Algorithms
 
 Agenda:
 
