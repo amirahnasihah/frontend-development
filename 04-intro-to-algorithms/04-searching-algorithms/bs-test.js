@@ -25,4 +25,4 @@ while (start <= end) {
     }
 }
 
-// output: Found at position: 4
+// output: Found at position: 2
