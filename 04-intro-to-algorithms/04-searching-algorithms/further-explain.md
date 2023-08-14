@@ -96,3 +96,32 @@ Remember to be cautious when using `while` loops to ensure that the condition ev
 
 ### while loop vs for loop
 
+Both `while` loops and `for` loops are control structures in programming that allow you to repeat a block of code multiple times. They serve similar purposes but have different use cases based on the situation.
+
+1. **`while` loop:**
+   - The `while` loop is used when you want to repeat a block of code as long as a given condition is `true`.
+   - It doesn't require you to specify the number of iterations beforehand. The loop will continue running until the condition becomes `false`.
+   - It's particularly useful when you don't know the exact number of iterations in advance.
+
+Example of a `while` loop:
+```javascript
+let count = 0;
+while (count < 5) {
+  console.log(count);
+  count++;
+}
+```
+
+2. **`for` loop:**
+   - The `for` loop is used when you want to repeat a block of code for a specific number of times.
+   - It has three parts: initialization, condition, and increment. The loop runs as long as the condition is `true`, and after each iteration, the increment step is executed.
+   - It's often used when you know the exact number of iterations you want to perform.
+
+Example of a `for` loop:
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+In general, if you know the number of iterations beforehand, a `for` loop might be more appropriate. If you're looping until a specific condition is met and you're not sure how many iterations it will take, a `while` loop could be a better choice.
