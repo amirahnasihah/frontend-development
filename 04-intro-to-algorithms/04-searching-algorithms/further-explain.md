@@ -30,7 +30,7 @@ Kita ada senarai yang disusun dari yang terkecil ke yang terbesar (length, 10): 
 
 middle element: 16
 
-target number: 23 (middle < 23 -> cari yg next larger half iaitu lepas target, 23)
+target number: 23 (middle < 23 -> cari yg next larger half iaitu lepas target, 23 punya range. above middle)
 
 1. Langkah 1: Mulakan dengan tengah senarai. Nilai tengah adalah 16.
 2. Langkah 2: Bandingkan 16 dengan nilai yang dicari. Jika sama, kita telah menemui nilai.
