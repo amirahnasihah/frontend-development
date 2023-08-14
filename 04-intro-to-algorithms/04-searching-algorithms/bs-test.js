@@ -1,7 +1,7 @@
 // while loop
 
 const arr = [1, 2, 4, 6, 7, 9, 10, 11, 13];
-const target = 7
+const target = 4
 
 // Control the search range
 let start = 0
@@ -14,7 +14,7 @@ while (start <= end) {
     
     // Found!
     if (arr[middle] === target) {
-        console.log("Found at position: " + middle);
+        console.log("True. Found at position: " + middle);
         break;
     }
     else if (arr[middle] < target) {
@@ -25,4 +25,4 @@ while (start <= end) {
     }
 }
 
-// output: 
+// output: Found at position: 4
