@@ -10,6 +10,27 @@
 
 # Binary Search
 
+### Visualise BS (malay)
+
+Gambaran cara kerja binary search dengan contoh:
+
+Kita ada senarai yang disusun dari yang terkecil ke yang terbesar: [2, 5, 8, 12, 16, 23, 38, 45, 56, 72]
+
+1. Langkah 1: Mulakan dengan tengah senarai. Nilai tengah adalah 16.
+2. Langkah 2: Bandingkan 16 dengan nilai yang dicari. Jika sama, kita telah menemui nilai.
+3. Langkah 3: Tetapi dalam contoh ini, katakan kita mencari nilai 23 yang lebih besar daripada 16.
+4. Langkah 4: Oleh itu, kita tumpukan kepada bahagian selepasnya: [23, 38, 45, 56, 72].
+5. Langkah 5: Kini kita bergerak ke nilai tengah bahagian selepas, iaitu 56.
+6. Langkah 6: Bandingkan 56 dengan nilai yang dicari. Dalam contoh ini, 23 masih lebih kecil daripada 56.
+7. Langkah 7: Kita tumpukan kepada bahagian sebelumnya: [23, 38, 45].
+8. Langkah 8: Kini kita bergerak ke nilai tengah bahagian sebelum, iaitu 38.
+9. Langkah 9: Bandingkan 38 dengan nilai yang dicari. Dalam contoh ini, 23 masih lebih kecil daripada 38.
+10. Langkah 10: Kita tumpukan kepada bahagian sebelumnya lagi: [23].
+11. Langkah 11: Kini kita hanya mempunyai satu nilai dalam julat ini, iaitu 23.
+12. Langkah 12: Bandingkan 23 dengan nilai yang dicari. Kita telah menemui nilai yang dicari!
+
+Itulah cara kerja binary search. Dengan setiap langkah, julat yang perlu diperiksa menjadi lebih kecil sehingga kita akhirnya menemui nilai yang dicari atau menyedari bahawa nilai tersebut tidak wujud dalam senarai.
+
 # Linear Search
 
 ## Exercises explained
