@@ -78,6 +78,60 @@ This sequence of conditions will execute the first block of code where the condi
 
 `if` statements are essential for making decisions in your code based on different situations and conditions.
 
+### else if statement
+
+An `else if` statement is used in programming to check multiple conditions in a sequence. It allows you to provide an alternative block of code to execute if the initial `if` condition is false, but before resorting to the `else` block. Here's how it looks:
+
+```javascript
+if (condition1) {
+  // Code to be executed if condition1 is true
+} else if (condition2) {
+  // Code to be executed if condition1 is false and condition2 is true
+} else if (condition3) {
+  // Code to be executed if condition1 and condition2 are false, and condition3 is true
+}
+// ... more else if blocks if needed ...
+else {
+  // Code to be executed if none of the above conditions are true
+}
+```
+
+Here's an example using pseudocode and its JavaScript equivalent:
+
+Pseudocode:
+```
+IF time is morning
+  Greet "Good morning"
+ELSE IF time is afternoon
+  Greet "Good afternoon"
+ELSE
+  Greet "Good evening"
+ENDIF
+```
+
+JavaScript:
+```javascript
+if (time === "morning") {
+  console.log("Good morning");
+} else if (time === "afternoon") {
+  console.log("Good afternoon");
+} else {
+  console.log("Good evening");
+}
+```
+
+In this example:
+- The program checks the `time` variable against each condition sequentially.
+- If `time` is "morning," the first block is executed.
+- If `time` is not "morning," but it's "afternoon," the second block is executed.
+- If none of the previous conditions are true, the code inside the `else` block is executed.
+
+`else if` statements are helpful when you have multiple conditions that need to be checked in a specific order.
+
+## switch case statement
+
+
+
 ## while loop
 
 A `while` loop in JavaScript is used to execute a block of code repeatedly as long as a specified condition is true. Here's the basic syntax:
