@@ -290,6 +290,44 @@ for (let i = 0; i < 5; i++) {
 
 In general, if you know the number of iterations beforehand, a `for` loop might be more appropriate. If you're looping until a specific condition is met and you're not sure how many iterations it will take, a `while` loop could be a better choice.
 
+#### while loop example
+
+Here's an example of a `while` loop with an explanation of the output it generates:
+
+```javascript
+let count = 1;
+
+while (count <= 5) {
+  console.log("Count is: " + count);
+  count++;
+}
+```
+
+Explanation:
+- The `count` variable is initialized to 1.
+- The `while` loop continues as long as the condition `count <= 5` is true.
+- In each iteration of the loop, the code within the curly braces is executed.
+- The code prints the value of `count` along with the message "Count is: ".
+- After printing, the `count` is incremented by 1 using the `count++` statement.
+
+Output:
+```
+Count is: 1
+Count is: 2
+Count is: 3
+Count is: 4
+Count is: 5
+```
+
+Here's how the loop runs step by step:
+1. `count` is 1. Condition `1 <= 5` is true. Print "Count is: 1". Increment `count` to 2.
+2. `count` is 2. Condition `2 <= 5` is true. Print "Count is: 2". Increment `count` to 3.
+3. `count` is 3. Condition `3 <= 5` is true. Print "Count is: 3". Increment `count` to 4.
+4. `count` is 4. Condition `4 <= 5` is true. Print "Count is: 4". Increment `count` to 5.
+5. `count` is 5. Condition `5 <= 5` is true. Print "Count is: 5". Increment `count` to 6.
+
+At this point, the condition `count <= 5` becomes false, and the loop stops. The output shows that the loop executed five times, printing the count values from 1 to 5.
+
 ## for loop
 
 The `for` loop is a fundamental loop structure in programming that allows you to repeat a block of code for a specific number of times. It's often used when you have a known number of iterations. The syntax of a `for` loop consists of three parts: initialization, condition, and increment. Here's the basic structure:
