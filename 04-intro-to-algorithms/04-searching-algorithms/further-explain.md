@@ -16,6 +16,8 @@ Gambaran cara kerja binary search dengan contoh:
 
 Kita ada senarai yang disusun dari yang terkecil ke yang terbesar: [2, 5, 8, 12, 16, 23, 38, 45, 56, 72]
 
+> ingatv binary search kena sort dulu
+
 1. Langkah 1: Mulakan dengan tengah senarai. Nilai tengah adalah 16.
 2. Langkah 2: Bandingkan 16 dengan nilai yang dicari. Jika sama, kita telah menemui nilai.
 3. Langkah 3: Tetapi dalam contoh ini, katakan kita mencari nilai 23 yang lebih besar daripada 16.
