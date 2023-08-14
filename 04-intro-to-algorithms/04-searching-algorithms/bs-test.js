@@ -14,7 +14,7 @@ while (start <= end) {
     
     // Found!
     if (arr[middle] === target) {
-        console.log("True. Found at position: " + middle);
+        console.log("Found at position: " + middle);
         break;
     }
     else if (arr[middle] < target) {
