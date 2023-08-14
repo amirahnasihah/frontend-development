@@ -18,7 +18,7 @@ while (start <= end) {
         break;
     }
     else if (arr[middle] < target) {
-        start = middle + 1;
+        start = middle + 1; // ke 
     }
     else {
         end = middle - 1;
