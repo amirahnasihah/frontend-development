@@ -93,3 +93,6 @@ while (count <= 5) {
 In this example, the loop will continue executing as long as the `count` variable is less than or equal to 5. Each time the loop iterates, it prints the value of `count` and then increments it by 1.
 
 Remember to be cautious when using `while` loops to ensure that the condition eventually becomes false; otherwise, you might end up with an infinite loop.
+
+### while loop vs for loop
+
