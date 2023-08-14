@@ -239,11 +239,13 @@ However, binary search can only be applied to sorted arrays.
 
 **dry run**
 
+```plaintext
 Input Array: [1, 2, 4, 6, 7, 9, 10, 11, 13]
 Target: 3
 
 Start: 0
 End: 8
+```
 
 ### Converting into Code
 
