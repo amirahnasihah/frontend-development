@@ -89,7 +89,7 @@ In the code snippet `start = middle + 1;`, the purpose is to update the `start` 
 For example, let's say the `middle` index is `1` and the value at that index (`arr[middle]`) is `2`. This means that we've already checked that the target is not at index `1`. Since the target is `7`, which is larger than `2`, we know that the target must be located somewhere to the right of index `1`. So, by updating `start` to `middle + 1`, we are essentially saying "Let's start searching from the index after the current `middle` index, which is index `2`."
 
 In terms of the array you provided `[1, 2, 4, 6, 7, 9, 10, 11, 13]`, if `middle`
-is `1`, then `arr[middle]` is `2`, and `start` will be updated to `2 + 1`, which
+index is `1`, then value `arr[middle]` is `2`, and `start` will be updated to `2 + 1`, which
 becomes `3`. So, the next iteration of the loop will focus on the subarray `[6,
 7, 9, 10, 11, 13]`, effectively excluding the elements `[1, 2, 4]` from
 consideration.
