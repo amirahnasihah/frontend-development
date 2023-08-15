@@ -303,7 +303,33 @@ while (start <= end) {
 }
 ```
 
-**EXPLANATION**
+**tips - binary search (C-CAFRE)**
+
+Simple way to remember the steps for performing a binary search in JavaScript:
+
+1. **Set Up**: Initialize `start` and `end` pointers to the first and last indices of the array.
+
+2. **Loop Condition**: Keep looping while `start` is less than or equal to `end`.
+
+3. **Find Middle**: Calculate the `middle` index as the average of `start` and `end`.
+
+4. **Compare**: Check if the element at `middle` is equal to the target. If yes, you've found it!
+
+5. **Adjust Pointers**:
+   - If element at `middle` is less than the target, set `start` to `middle + 1` to look in the second half.
+   - If element at `middle` is greater than the target, set `end` to `middle - 1` to look in the first half.
+
+6. **Repeat**: The loop continues narrowing down the search space until either you find the target or `start` becomes greater than `end`.
+
+Remember the acronym "C-CAFRE":
+- **C**: Compare with the middle element.
+- **C**: Check if you've found the target.
+- **A**: Adjust the pointers.
+- **F**: Find the middle.
+- **R**: Repeat the process.
+- **E**: Exit when done.
+
+By keeping these steps in mind and using the "C-CAFRE" acronym, you can easily recall how to perform a binary search in JavaScript!
 
 **JS FACT**
 
