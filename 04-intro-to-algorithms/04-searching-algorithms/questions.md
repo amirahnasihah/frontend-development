@@ -150,6 +150,7 @@ Your explanation is spot on:
 1. Initially, `middle` is calculated to be `3` (since `(0 + 6) / 2` is `3`), and the value at index `3` is "grape".
 
 2. Since "grape" comes before "pear" alphabetically and we're looking for "pear", we update `start` to `middle + 1`, which is `4`.
+(grape sorted first, then pear. middle {3 + 1 = 4})
 
 3. Now, we focus on the range from index `4` to index `6`: ["orange", "pear", "strawberry"].
 
@@ -157,5 +158,5 @@ Your explanation is spot on:
 
 5. At index `5`, we find the target "pear", so we've successfully found the target and can stop searching.
 
-You've grasped the core concept beautifully! Binary search is all about halving the search range and honing in on the target by comparing values and adjusting the search range accordingly. Well done!
+You've grasped the core concept beautifully! Binary searchis all about halving the search range and honing in on the target by comparing values and adjusting the search range accordingly. Well done!
 ```
