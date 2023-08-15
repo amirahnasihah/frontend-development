@@ -4,7 +4,7 @@
 
 ## How to find an element in a sorted array? (sorted)
 
-Algorithm:
+**Algorithm:**
 
 ```plaintext
 1. Start with the element at the middle position:
@@ -18,7 +18,7 @@ Algorithm:
 However, binary search can only be applied to sorted arrays.
 ```
 
-Converting into Code:
+**Converting into Code:**
 
 ```javascript
 const arr = [1, 2, 4, 6, 7, 9, 10, 11, 13];
@@ -47,5 +47,27 @@ while (start <= end) {
 }
 ```
 
-Explanation:
+**Explanation:**
 
+1. First, we have an array of numbers: `[1, 2, 4, 6, 7, 9, 10, 11, 13]`, and a target number we want to find, which is `7`.
+
+2. We set up two variables: `start` and `end`. These will help us keep track of the portion of the array we're searching through. At the beginning, `start` is set to the first position (0), and `end` is set to the last position (8) of the array.
+
+3. The code then enters a loop, which keeps running as long as the `start` position is less than or equal to the `end` position. This loop is a way to systematically search for our target number.
+
+4. Inside the loop, we calculate the `middle` position of the current search range. We do this by adding the `start` and `end` positions together and then dividing by 2. We use `Math.floor` to make sure we get a whole number, even if the division results in a decimal.
+
+5. Next, we check if the number at the `middle` position of the array is equal to our target number (`7` in this case). If it is, we've found our target! We print a message saying we found it at that specific position and then break out of the loop.
+
+6. If the number at the `middle` position is less than our target number (`7`), that means our target must be in the right half of the search range. So, we update the `start` position to be one more than the `middle` position. This narrows down the search range to the right half of where we were looking.
+
+7. If the number at the `middle` position is greater than our target number (`7`), then our target must be in the left half of the search range. So, we update the `end` position to be one less than the `middle` position. This narrows down the search range to the left half of where we were looking.
+
+8. The loop continues to repeat this process, narrowing down the search range with each iteration. It will either find the target number and break out of the loop, or eventually, the `start` position will become greater than the `end` position, and the loop will stop.
+
+In simple terms, this code is like playing a guessing game with a sorted list of
+numbers. We start in the middle of the list and compare the number there with
+our target. If the guess is too low, we look in the higher numbers; if it's too
+high, we look in the lower numbers. We keep doing this, narrowing down the range
+of numbers we're looking at, until we either find the target or realize it's not
+in the list.
