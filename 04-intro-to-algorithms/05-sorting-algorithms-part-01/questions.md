@@ -48,6 +48,32 @@ Then it moves on to `1` and `8`. It calculates `1 - 8`, which is `-7`. Since the
 
 The sorting continues for the rest of the elements, using the same logic. In the end, the array is sorted from smallest to largest: `[1, 2, 3, 5, 8]`.
 
+---
+
+Let's go through the sorting process step by step using the placeholders `a` and `b`.
+
+1. **First comparison: a=3, b=1**
+   - The arrow function `(a, b) => a - b` calculates `3 - 1`, which is `2`. Since the result is positive, `3` is considered larger than `1`, so their positions are swapped.
+   - Array after this comparison: `[1, 3, 8, 2, 5]`
+
+2. **Second comparison: a=3, b=8**
+   - The arrow function `(a, b) => a - b` calculates `3 - 8`, which is `-5`. Since the result is negative, `3` is considered smaller than `8`, so their positions remain unchanged.
+   - Array after this comparison: `[1, 3, 8, 2, 5]`
+
+3. **Third comparison: a=8, b=2**
+   - The arrow function `(a, b) => a - b` calculates `8 - 2`, which is `6`. Since the result is positive, `8` is considered larger than `2`, so their positions are swapped.
+   - Array after this comparison: `[1, 3, 2, 8, 5]`
+
+4. **Fourth comparison: a=8, b=5**
+   - The arrow function `(a, b) => a - b` calculates `8 - 5`, which is `3`. Since the result is positive, `8` is considered larger than `5`, so their positions are swapped.
+   - Array after this comparison: `[1, 3, 2, 5, 8]`
+
+5. **Fifth comparison: a=5, b=8**
+   - The arrow function `(a, b) => a - b` calculates `5 - 8`, which is `-3`. Since the result is negative, `5` is considered smaller than `8`, so their positions remain unchanged.
+   - Array after this comparison: `[1, 3, 2, 5, 8]`
+
+The sorting process continues in this manner until all elements are compared and arranged in the correct order. The key concept to understand is that the placeholders `a` and `b` represent the two elements being compared at each step of the sorting algorithm.
+
 # Bubble Sort Problems in JS
 
 # Insertion Sort Problems in JS
