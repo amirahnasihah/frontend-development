@@ -163,19 +163,19 @@ so, based on my understanding:
 
 1. `let start = 0`: start at index 0
 
-2. let end = arr.length - 1: the end is at the last index of array (arr.length -> 7 - 1 = 6, so 6 is the last index)
+2. `let end = arr.length - 1`: the end is at the last index of array (arr.length -> 7 - 1 = 6, so 6 is the last index)
 
-3. (start <= end): this code means to loop from start until end of array, from index 0 until 6
+3. `(start <= end)`: this code means to loop from start until end of array, from index 0 until 6
 
-4. middle = Math.floor((start + end) / 2): this to find the middle, where the middle variable is set to divition by 2 of the array. Index 0 + 6 is 6, then 6 divide by 2 we got index 3, element value is grape.
+4. `middle = Math.floor((start + end) / 2)`: this to find the middle, where the middle variable is set to divition by 2 of the array. Index 0 + 6 is 6, then 6 divide by 2 we got index 3, element value is grape.
 
-5. (arr[middle] === target): this code is to check condition where if the middle, the element grape equal to pear, our target, then we end the loop. or is the code looking at index? like if index middle, 3 equal to target index 5?
+5. `(arr[middle] === target)`: this code is to check condition where if the middle, the element grape equal to pear, our target, then we end the loop. or is the code looking at index? like if index middle, 3 equal to target index 5?
 
-6. (arr[middle] < target): another condition to check is if the middle, grape comes before and less than pear, the target.
+6. `(arr[middle] < target)` another condition to check is if the middle, grape comes before and less than pear, the target.
 
-7. start = middle + 1: this code executed if condition else if is true. Which is we will set the start variable to index middle + 1, 3 + 1 is 4. the new start is at index 4, element value is orange. so find target from start to end (index 4 to 6; orange, pear, strawberry). so, if the middle comes before the target, the start point is after the middle point, we search to the right (second half)
+7. `start = middle + 1`: this code executed if condition else if is true. Which is we will set the start variable to index middle + 1, 3 + 1 is 4. the new start is at index 4, element value is orange. so find target from start to end (index 4 to 6; orange, pear, strawberry). so, if the middle comes before the target, the start point is after the middle point, we search to the right (second half)
 
-8.end = middle - 1: code executed if all `else if` statement is false. We will set the end variable to middle - 1. index middle is 3 - 1 is 2. the new end index is 2, element value is cherry. so we find our target from arrange start to end (index 0 to 2; apple, banana, cherry). so, if the middle comes after the target, the end point is before the middle point, we search to the left (first half)
+8. `end = middle - 1`: code executed if all `else if` statement is false. We will set the end variable to middle - 1. index middle is 3 - 1 is 2. the new end index is 2, element value is cherry. so we find our target from arrange start to end (index 0 to 2; apple, banana, cherry). so, if the middle comes after the target, the end point is before the middle point, we search to the left (first half)
 
 ---
 
