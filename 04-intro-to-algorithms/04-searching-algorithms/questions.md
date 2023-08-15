@@ -183,6 +183,8 @@ so, based on my understanding:
 (arr[middle] === target)
 ```
 
+arr[middle] is print as values, ex; grape is eq
+
 This code is indeed checking whether the element at the `middle` index is equal to the `target`. So, it's comparing the values, not the indexes. If the element at the middle matches the target, then we've found the target and we can end the loop.
 
 ```javascript
