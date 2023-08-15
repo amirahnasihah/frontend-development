@@ -221,7 +221,7 @@ console.log(arr)
 // Output: [10, 14, 28, 33, 40]
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 ==1. `for (let i = 0; i < arr.length-1; i++) {`==
 
