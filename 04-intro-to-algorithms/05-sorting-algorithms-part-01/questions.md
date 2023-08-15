@@ -105,4 +105,8 @@ console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]
 
 Consider using bubble sort to sort this array in increasing order.
 
+```javascript
+arr = [14, 33, 28, 40, 10]
+```
+
 # Insertion Sort Problems in JS
