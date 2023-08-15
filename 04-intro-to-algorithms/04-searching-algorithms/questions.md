@@ -130,3 +130,30 @@ In this case, think of the array as a list of words in alphabetical order. We wa
 - Now, we're looking at the second half of the list: ["orange", "pear", "strawberry"]. "orange" is our target, so we found it at the first position of this subarray, which is position `4` overall.
 
 The concept remains the same: we narrow down the search range based on whether the current word comes before or after our target word in alphabetical order. This technique is known as binary search, and it works similarly whether we're dealing with numbers or strings.
+
+---
+
+```
+const arr = ["apple", "banana", "cherry", "grape", "orange", "pear", "strawberry"];
+const target = "pear";
+```
+
+So based on my understanding, let's say the `middle` index is `3` and the value at that index (`arr[middle]`) is `grape`. This means that we've already checked that the target is not at index `3`. Since the target is `pear` at index 5, which is alphabetically larger than index`3`, we know that the target must be located somewhere to the right of index `3`. So, by updating `start` to `middle + 1`, we are essentially saying "Let's start searching from the index after the current `middle` index, which is index `3`." So, since middle is at index 3, value is grape. the start variable will be set to 3 + 1 is 4, then we start again finding the range from index 4 to index 6, find from element orange, pear, strawberry.
+
+then divide again to find the middle from the start (index 4) + end (index 6) divide by 2. then we got the middle index which is (4 + 6 / 2 = 5). then we got the middle which is at index 5, element pear. is it like this?
+
+```plaintext
+You've got it almost exactly right! You have a solid understanding of how the binary search algorithm works. Your explanation is spot on:
+
+1. Initially, `middle` is calculated to be `3` (since `(0 + 6) / 2` is `3`), and the value at index `3` is "grape".
+
+2. Since "grape" comes before "pear" alphabetically and we're looking for "pear", we update `start` to `middle + 1`, which is `4`.
+
+3. Now, we focus on the range from index `4` to index `6`: ["orange", "pear", "strawberry"].
+
+4. We then calculate the new `middle` index for this range as `(4 + 6) / 2`, which is `5`.
+
+5. At index `5`, we find the target "pear", so we've successfully found the target and can stop searching.
+
+You've grasped the core concept beautifully! Binary search is all about halving the search range and honing in on the target by comparing values and adjusting the search range accordingly. Well done!
+```
