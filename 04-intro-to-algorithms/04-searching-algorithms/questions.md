@@ -119,6 +119,12 @@ while (start <= end) {
         end = middle - 1;
     }
 }
+
+/*
+(arr[middle] < target)
+
+
+*/
 ```
 
 In this case, think of the array as a list of words in alphabetical order. We want to find the position of the word "orange" in the list.
