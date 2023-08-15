@@ -28,6 +28,26 @@ Let's break it down step by step:
 
 So when you put it all together, `((a, b) => a - b)` is a quick way of creating a function that takes two numbers, subtracts the second from the first, and that result is what the computer uses to decide how to sort the numbers in your array.
 
+---
+
+Let's clarify this.
+
+The placeholders `a` and `b` are not fixed numbers like `(3, 1)`. Instead, they represent the elements being compared while the sorting algorithm is doing its work. When you use the `sort()` method with the arrow function `(a, b) => a - b`, the sorting algorithm will automatically provide the correct values for `a` and `b` as it compares the elements within the `numbers` array.
+
+So, in your example:
+
+```javascript
+const numbers = [3, 1, 8, 2, 5];
+numbers.sort((a, b) => a - b);
+console.log(numbers);  // Output: [1, 2, 3, 5, 8]
+```
+
+The sorting algorithm first compares `3` with `1`. It calculates `3 - 1`, which is `2`. Since the result is positive, it means `3` is larger than `1`, so their positions are swapped.
+
+Then it moves on to `1` and `8`. It calculates `1 - 8`, which is `-7`. Since the result is negative, it means `1` is smaller than `8`, so their positions are not swapped.
+
+The sorting continues for the rest of the elements, using the same logic. In the end, the array is sorted from smallest to largest: `[1, 2, 3, 5, 8]`.
+
 # Bubble Sort Problems in JS
 
 # Insertion Sort Problems in JS
