@@ -80,7 +80,9 @@ More clarify:
 arr = [1, 2, 4, 6, 7, 9, 10, 11, 13];
 ```
 
-`arr[middle]` represents the element at the `middle` index in the array. So, if the `middle` index corresponds to the value `2` in the array, then `arr[middle]` would be `4`.
+`arr[middle]` represents the element at the `middle` index in the array. So, if
+the `middle` index is `2` in the array, then the value at that index 2 `arr[middle]` would be
+element `4`.
 
 In the code snippet `start = middle + 1;`, the purpose is to update the `start` variable so that it points to the index immediately after the `middle` index. You can think of it like shifting the starting point of our search to the right, moving past the current `middle` index.
 
