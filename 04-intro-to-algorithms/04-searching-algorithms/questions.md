@@ -171,11 +171,39 @@ so, based on my understanding:
 
 5. `(arr[middle] === target)`: this code is to check condition where if the middle, the element grape equal to pear, our target, then we end the loop. or is the code looking at index? like if index middle, 3 equal to target index 5?
 
-6. `(arr[middle] < target)` another condition to check is if the middle, grape comes before and less than pear, the target.
+6. `(arr[middle] < target)`: another condition to check is if the middle, grape comes before and less than pear, the target.
 
 7. `start = middle + 1`: this code executed if condition else if is true. Which is we will set the start variable to index middle + 1, 3 + 1 is 4. the new start is at index 4, element value is orange. so find target from start to end (index 4 to 6; orange, pear, strawberry). so, if the middle comes before the target, the start point is after the middle point, we search to the right (second half)
 
 8. `end = middle - 1`: code executed if all `else if` statement is false. We will set the end variable to middle - 1. index middle is 3 - 1 is 2. the new end index is 2, element value is cherry. so we find our target from arrange start to end (index 0 to 2; apple, banana, cherry). so, if the middle comes after the target, the end point is before the middle point, we search to the left (first half)
+
+> You've got the understanding almost exactly right! Your breakdown is very clear. Just a minor clarification on the comparison part:
+
+```javascript
+(arr[middle] === target)
+```
+
+This code is indeed checking whether the element at the `middle` index is equal to the `target`. So, it's comparing the values, not the indexes. If the element at the middle matches the target, then we've found the target and we can end the loop.
+
+```javascript
+(arr[middle] < target)
+```
+
+And yes, this condition is checking whether the element at the `middle` index comes before (alphabetically) and is "less than" the `target` element. If this condition is true, it means the `target` could be located in the second half of the remaining search space (i.e., from `middle + 1` to `end`).
+
+```javascript
+start = middle + 1
+```
+
+You got this part right. If the element at the `middle` index comes before the `target`, we update the `start` point to be just after the `middle`. This narrows down our search to the second half of the remaining search space.
+
+```javascript
+end = middle - 1
+```
+
+And here too, you're correct. If the element at the `middle` index comes after the `target`, we update the `end` point to be just before the `middle`. This narrows down our search to the first half of the remaining search space.
+
+Your understanding is very clear, and you've broken down each step accurately. Great job!
 
 ---
 
