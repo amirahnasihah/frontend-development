@@ -101,9 +101,31 @@ const sortedArray = bubbleSort(unsortedArray);
 console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]
 ```
 
-## Using bubble sort to sort this array in increasing order.
+## Using bubble sort to sort this array in increasing order
 
 Consider using bubble sort to sort this array in increasing order.
+
+Converting into code:
+
+```javascript
+const arr = [14, 33, 28, 40, 10]
+
+// How many iterations of swapping we need to do?
+for (let i = 0; i < arr.length-1; i++) {
+    // For each iteration, how many comparisons we need to do?
+    for (let j = 0; j < arr.length-i-1; j++) {
+        if (arr[j] > arr[j + 1]) {
+            j_value = arr[j]
+            j_plus_1_value = arr[j + 1]
+            arr[j] = j_plus_1_value
+            arr[j + 1] = j_value
+        }
+    }
+}
+
+console.log(arr)
+// Output: [10, 14, 28, 33, 40]
+```
 
 ```javascript
 arr = [14, 33, 28, 40, 10]
@@ -129,7 +151,5 @@ So we need to swap the position of 10 and 40. The **new array** will be: `[14, 2
 But **the array is still not sorted. We need to repeat step 1 to 4 again. Until our array is sorted.**
 
 (Note that we don’t need to worry about “40” anymore as we are sure that it is the largest one)
-
-
 
 # Insertion Sort Problems in JS
