@@ -76,4 +76,30 @@ The sorting process continues in this manner until all elements are compared and
 
 # Bubble Sort Problems in JS
 
+## Basic implementation
+
+Certainly! The Bubble Sort algorithm is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated for each element until the entire list is sorted. Here's a basic implementation of the Bubble Sort algorithm in JavaScript:
+
+```javascript
+function bubbleSort(arr) {
+    const n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                // Swap the elements
+                const temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
+const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
+const sortedArray = bubbleSort(unsortedArray);
+console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]
+```
+
+
 # Insertion Sort Problems in JS
