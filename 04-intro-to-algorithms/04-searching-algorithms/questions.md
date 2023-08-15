@@ -143,7 +143,9 @@ So based on my understanding, let's say the `middle` index is `3` and the value 
 then divide again to find the middle from the start (index 4) + end (index 6) divide by 2. then we got the middle index which is (4 + 6 / 2 = 5). then we got the middle which is at index 5, element pear. is it like this?
 
 ```plaintext
-You've got it almost exactly right! You have a solid understanding of how the binary search algorithm works. Your explanation is spot on:
+You've got it almost exactly right! You have a solid 
+understanding of how the binary search algorithm works. 
+Your explanation is spot on:
 
 1. Initially, `middle` is calculated to be `3` (since `(0 + 6) / 2` is `3`), and the value at index `3` is "grape".
 
