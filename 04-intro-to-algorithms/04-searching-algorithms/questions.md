@@ -100,7 +100,7 @@ Let's use strings in place of numbers to explain the same code:
 
 ```javascript
 const arr = ["apple", "banana", "cherry", "grape", "orange", "pear", "strawberry"];
-const target = "orange";
+const target = "pear";
 
 let start = 0;
 let end = arr.length - 1;
