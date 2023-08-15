@@ -93,3 +93,40 @@ index is `1`, then value `arr[middle]` is `2`, and `start` will be updated to `2
 becomes `3`. So, the next iteration of the loop will focus on the subarray `[6,
 7, 9, 10, 11, 13]`, effectively excluding the elements `[1, 2, 4]` from
 consideration.
+
+## How to find an element in a sorted array? (strings)
+
+Let's use strings in place of numbers to explain the same code:
+
+```javascript
+const arr = ["apple", "banana", "cherry", "grape", "orange", "pear", "strawberry"];
+const target = "orange";
+
+let start = 0;
+let end = arr.length - 1;
+
+while (start <= end) {
+    let middle = Math.floor((start + end) / 2);
+
+    if (arr[middle] === target) {
+        console.log("Found at position: " + middle);
+        break;
+    }
+    else if (arr[middle] < target) {
+        start = middle + 1;
+    }
+    else {
+        end = middle - 1;
+    }
+}
+```
+
+In this case, think of the array as a list of words in alphabetical order. We want to find the position of the word "orange" in the list.
+
+- `start` and `end` represent the positions in the list that we are currently looking at.
+
+- We start in the middle of the list: "grape". Since "grape" comes before "orange" in alphabetical order, we update `start` to the position after "grape".
+
+- Now, we're looking at the second half of the list: ["orange", "pear", "strawberry"]. "orange" is our target, so we found it at the first position of this subarray, which is position `4` overall.
+
+The concept remains the same: we narrow down the search range based on whether the current word comes before or after our target word in alphabetical order. This technique is known as binary search, and it works similarly whether we're dealing with numbers or strings.
