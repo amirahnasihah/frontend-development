@@ -117,7 +117,9 @@ arr = [14, 33, 28, 40, 10]
 
 1. 1st: Bubble sort starts with the first two elements, comparing them to check which one is greater. Since 33 > 14, it is in the correct position.
 
+2. 2nd: We compare 33 with 28.(Compare 2nd and 3rd element). Since 28 < 33, it is in incorrect position.
+So we need to swap the position of 28 and 33. The **new array** will be:
 
-
+3. 
 
 # Insertion Sort Problems in JS
