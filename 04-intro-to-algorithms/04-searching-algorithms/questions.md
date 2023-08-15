@@ -22,7 +22,7 @@ Converting into Code:
 
 ```javascript
 const arr = [1, 2, 4, 6, 7, 9, 10, 11, 13];
-const target = 7
+const target = 11
 
 // Control the search range
 let start = 0
