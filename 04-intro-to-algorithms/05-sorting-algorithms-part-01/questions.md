@@ -2,6 +2,8 @@
 
 ## `numbers.sort((a, b) => a - b);` - Sorting Numbers
 
+**To sort numbers, you need to provide a comparison function.**
+
 In the line of code `numbers.sort((a, b) => a - b);`, we're telling the computer how to compare and arrange the numbers in the `numbers` list.
 
 Think of `a` and `b` like two numbers that the computer is comparing. The computer wants to figure out if `a` should come before `b` or if `b` should come before `a`. To do this, we use `a - b`.
