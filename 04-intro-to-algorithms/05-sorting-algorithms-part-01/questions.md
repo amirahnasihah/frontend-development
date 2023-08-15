@@ -109,4 +109,9 @@ Consider using bubble sort to sort this array in increasing order.
 arr = [14, 33, 28, 40, 10]
 ```
 
+**How**
+
+1st: Bubble sort starts with the first two elements, comparing them to check which one is greater.
+
+
 # Insertion Sort Problems in JS
