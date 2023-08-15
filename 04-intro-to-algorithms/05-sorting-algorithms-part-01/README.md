@@ -87,6 +87,7 @@ Source: https://lamfo-unb.github.io/2019/04/21/Sorting-algorithms/
 
 - Bubble sort works by examining each set of adjacent elements in the array, from left to right, switching their positions if they are out of order.
 - The algorithm repeats this process until it can traverse the entire array and cannot find two elements that need to be swapped.
+- But, Bubble Sort is not the most efficient sorting algorithm, especially for larger lists, as it has a time complexity of O(n^2) in the worst and average cases
 
 ### Bubble Sort
 
