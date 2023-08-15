@@ -101,5 +101,8 @@ const sortedArray = bubbleSort(unsortedArray);
 console.log(sortedArray); // Output: [11, 12, 22, 25, 34, 64, 90]
 ```
 
+## Using bubble sort to sort this array in increasing order.
+
+Consider using bubble sort to sort this array in increasing order.
 
 # Insertion Sort Problems in JS
