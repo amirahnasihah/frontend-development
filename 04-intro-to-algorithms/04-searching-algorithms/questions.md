@@ -2,7 +2,7 @@
 
 # Binary Search Problems in JS
 
-## How to find an element in a sorted array?
+## How to find an element in a sorted array? (sorted)
 
 Algorithm:
 
@@ -46,4 +46,6 @@ while (start <= end) {
     }
 }
 ```
+
+Explanation:
 
