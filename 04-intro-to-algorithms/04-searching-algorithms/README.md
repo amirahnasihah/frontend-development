@@ -372,10 +372,6 @@ Remember the acronym "C-CAFRE":
 
 By keeping these steps in mind and using the "C-CAFRE" acronym, you can easily recall how to perform a binary search in JavaScript!
 
-**JS FACT**
-
-1. 
-
 **binary-search.js exercise:**
 
 ```javascript
