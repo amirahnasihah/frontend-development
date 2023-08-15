@@ -120,6 +120,10 @@ arr = [14, 33, 28, 40, 10]
 2. 2nd: We compare 33 with 28.(Compare 2nd and 3rd element). Since 28 < 33, it is in incorrect position.
 So we need to swap the position of 28 and 33. The **new array** will be: [14, 28, 33, 40, 10]
 
-3. 
+3. 3rd: We compare 33 with 40.(Compare 3rd and 4th element). Since 40 > 33, it is in the correct position.
+
+4. 4th: We compare 40 with 10.(Compare 4th and 5th element). Since 10 < 40, it is in incorrect position.
+So we need to swap the position of 10 and 40. The **new array** will be:
+
 
 # Insertion Sort Problems in JS
