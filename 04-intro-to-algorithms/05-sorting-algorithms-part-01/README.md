@@ -105,6 +105,8 @@ Attribution: Swfung8, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3
 
 Consider using bubble sort to sort this array in increasing order.
 
+arr = [14, 33, 28, 40, 10]
+
 |14|33|28|40|10|
 |:-:|:-:|:-:|:-:|:-:|
 
