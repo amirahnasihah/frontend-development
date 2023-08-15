@@ -227,6 +227,47 @@ Source: https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-sea
 
 ### Binary Search
 
+Pseudocode example #1:
+
+```
+Repeat until the (sub)array is of size 0:
+    Calculate the middle point of the current (sub)array
+    If the target element is the middle element, stop
+    Else if it's less than the middle: 
+        End point is now just to the left of the current middle, repeat
+    Else if it's greater than the middle: 
+        Start point is now just to the right of the current middle, repeat
+```
+
+Pseudocode example #2:
+
+```
+If no items
+    Return false
+If middle item is target_element
+    Return true
+Else if target_element < middle item
+    Update end point
+    Search left half
+Else if target_element > middle item
+    Update start point
+    Search right half
+```
+
+JavaScript example (recursive):
+
+```javascript
+binarySearch = (arr, target, start, end) => {   
+    if (end >= start) {
+        let mid = Math.floor((start+end)/2);
+        if (arr[mid] === target) return mid;
+        else if(arr[mid] > target) return binarySearch(arr, target, start, mid-1); 
+        else return binarySearch(arr, target, mid+1, end); 
+    }
+    return false;
+}
+```
+
 ```plaintext
 1. Start with the element at the middle position:
     a. if the element at the middle equals to the target, then return true.
