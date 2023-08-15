@@ -123,7 +123,7 @@ while (start <= end) {
 /*
 (arr[middle] < target)
 
-
+check condition if current middle, grape comes
 */
 ```
 
