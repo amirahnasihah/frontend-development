@@ -127,15 +127,31 @@ check condition if current middle, grape comes before pear, our target.
 */
 ```
 
-In this case, think of the array as a list of words in alphabetical order. We want to find the position of the word "orange" in the list.
+Sure, let's break down the code step by step in simple terms:
 
-- `start` and `end` represent the positions in the list that we are currently looking at.
+1. We start by creating a list of fruits in a specific order: "apple", "banana", "cherry", "grape", "orange", "pear", and "strawberry".
 
-- We start in the middle of the list: "grape". Since "grape" comes before "orange" in alphabetical order, we update `start` to the position after "grape".
+2. We want to find a specific fruit in this list, so we pick the fruit we're looking for, which is "pear".
 
-- Now, we're looking at the second half of the list: ["orange", "pear", "strawberry"]. "orange" is our target, so we found it at the first position of this subarray, which is position `4` overall.
+3. We set up two special points, one at the beginning of the list (pointed to by `start`) and one at the end of the list (pointed to by `end`).
 
-The concept remains the same: we narrow down the search range based on whether the current word comes before or after our target word in alphabetical order. This technique is known as binary search, and it works similarly whether we're dealing with numbers or strings.
+4. Now we start a loop that continues as long as the `start` point is less than or equal to the `end` point.
+
+5. Inside the loop, we find the middle point between `start` and `end`. This helps us divide the list in half and check the fruit in the middle.
+
+6. We compare the fruit at the middle point with our target fruit, which is "pear".
+
+7. If the fruit at the middle point is exactly the same as our target fruit ("pear"), we found it! We show a message that says "Found at position" followed by the position where we found it, and then we stop the loop.
+
+8. If the fruit at the middle point is not the target fruit, we check whether it comes before or after the target fruit in the list.
+
+9. If the fruit at the middle point comes before the target fruit in the list, we update the `start` point to be right after the middle point. This way, we narrow down our search to the second half of the list.
+
+10. If the fruit at the middle point comes after the target fruit in the list, we update the `end` point to be right before the middle point. This narrows down our search to the first half of the list.
+
+11. The loop keeps repeating these steps until either we find the target fruit or the `start` point becomes greater than the `end` point. In other words, if the `start` point passes the `end` point, it means we've checked the entire list and didn't find the target fruit.
+
+That's how binary search works. It's like guessing a number between 1 and 100 by asking if the correct number is higher or lower after each guess. Similarly, in the code, we're dividing the list in half each time, which helps us find the target fruit more efficiently.
 
 ---
 
