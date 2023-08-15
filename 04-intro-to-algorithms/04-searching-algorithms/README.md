@@ -372,6 +372,10 @@ Remember the acronym "C-CAFRE":
 
 By keeping these steps in mind and using the "C-CAFRE" acronym, you can easily recall how to perform a binary search in JavaScript!
 
+7. `start = middle + 1`: this code executed if condition else if is true. Which is we will set the start variable to index middle + 1, 3 + 1 is 4. the new start is at index 4, element value is orange. so find target from start to end (index 4 to 6; orange, pear, strawberry). so, if the middle comes before the target, the start point is after the middle point, we search to the right/kanan→ (second half)
+
+8. `end = middle - 1`: code executed if all `else if` statement is false. We will set the end variable to middle - 1. index middle is 3 - 1 is 2. the new end index is 2, element value is cherry. so we find our target from arrange start to end (index 0 to 2; apple, banana, cherry). so, if the middle comes after the target, the end point is before the middle point, we search to the left/kiri ← (first half)
+
 **binary-search.js exercise:**
 
 ```javascript
