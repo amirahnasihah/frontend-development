@@ -125,13 +125,8 @@ So we need to swap the position of 28 and 33. The **new array** will be: `[14, 2
 4. 4th: We compare 40 with 10.(Compare 4th and 5th element). Since 10 < 40, it is in incorrect position.
 So we need to swap the position of 10 and 40. The **new array** will be: `[14, 28, 33, 10, 40]`
 
-5. 5th: Now we have reached the end of the array. Our array look like this:
-
-|14|28|33|10|40|
-|:-:|:-:|:-:|:-:|:-:|
-
-But the array is still not sorted.
-We need to repeat step 1 to 4 again. Until our array is sorted.
+5. 5th: Now we have reached the end of the array. Our array look like this: `[14, 28, 33, 10, 40]`.
+But **the array is still not sorted. We need to repeat step 1 to 4 again. Until our array is sorted.**
 
 (Note that we don’t need to worry about “40” anymore as we are sure that it is the largest one)
 
