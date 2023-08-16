@@ -10,7 +10,7 @@
 
 JavaScript offers several built-in sorting algorithms through the `Array.prototype.sort()` method. It uses a variation of the QuickSort algorithm called "TimSort." It's efficient for most use cases, but keep in mind it sorts items as strings by default.
 
-> sort() : sorts items as strings by default
+> sort() : sorts items as strings alphabetically by default, in ascending order.
 
 ## Sorting String
 
