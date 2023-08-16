@@ -39,7 +39,7 @@ So, in your example:
 ```javascript
 const numbers = [3, 1, 8, 2, 5];
 numbers.sort((a, b) => a - b);
-console.log(numbers);  // Output: [1, 2, 3, 5, 8]
+console.log(numbers); // Output: [1, 2, 3, 5, 8]
 ```
 
 The sorting algorithm first compares `3` with `1`. It calculates `3 - 1`, which is `2`. Since the result is positive, it means `3` is larger than `1`, so their positions are swapped.
@@ -53,24 +53,24 @@ The sorting continues for the rest of the elements, using the same logic. In the
 Let's go through the sorting process step by step using the placeholders `a` and `b`.
 
 1. **First comparison: a=3, b=1**
-   - The arrow function `(a, b) => a - b` calculates `3 - 1`, which is `2`. Since the result is positive, `3` is considered larger than `1`, so their positions are swapped.
-   - Array after this comparison: `[1, 3, 8, 2, 5]`
+- The arrow function `(a, b) => a - b` calculates `3 - 1`, which is `2`. Since the result is positive, `3` is considered larger than `1`, so their positions are swapped.
+- Array after this comparison: `[1, 3, 8, 2, 5]`
 
 2. **Second comparison: a=3, b=8**
-   - The arrow function `(a, b) => a - b` calculates `3 - 8`, which is `-5`. Since the result is negative, `3` is considered smaller than `8`, so their positions remain unchanged.
-   - Array after this comparison: `[1, 3, 8, 2, 5]`
+- The arrow function `(a, b) => a - b` calculates `3 - 8`, which is `-5`. Since the result is negative, `3` is considered smaller than `8`, so their positions remain unchanged.
+- Array after this comparison: `[1, 3, 8, 2, 5]`
 
 3. **Third comparison: a=8, b=2**
-   - The arrow function `(a, b) => a - b` calculates `8 - 2`, which is `6`. Since the result is positive, `8` is considered larger than `2`, so their positions are swapped.
-   - Array after this comparison: `[1, 3, 2, 8, 5]`
+- The arrow function `(a, b) => a - b` calculates `8 - 2`, which is `6`. Since the result is positive, `8` is considered larger than `2`, so their positions are swapped.
+- Array after this comparison: `[1, 3, 2, 8, 5]`
 
 4. **Fourth comparison: a=8, b=5**
-   - The arrow function `(a, b) => a - b` calculates `8 - 5`, which is `3`. Since the result is positive, `8` is considered larger than `5`, so their positions are swapped.
-   - Array after this comparison: `[1, 3, 2, 5, 8]`
+- The arrow function `(a, b) => a - b` calculates `8 - 5`, which is `3`. Since the result is positive, `8` is considered larger than `5`, so their positions are swapped.
+- Array after this comparison: `[1, 3, 2, 5, 8]`
 
 5. **Fifth comparison: a=5, b=8**
-   - The arrow function `(a, b) => a - b` calculates `5 - 8`, which is `-3`. Since the result is negative, `5` is considered smaller than `8`, so their positions remain unchanged.
-   - Array after this comparison: `[1, 3, 2, 5, 8]`
+- The arrow function `(a, b) => a - b` calculates `5 - 8`, which is `-3`. Since the result is negative, `5` is considered smaller than `8`, so their positions remain unchanged.
+- Array after this comparison: `[1, 3, 2, 5, 8]`
 
 The sorting process continues in this manner until all elements are compared and arranged in the correct order. The key concept to understand is that the placeholders `a` and `b` represent the two elements being compared at each step of the sorting algorithm.
 
@@ -82,18 +82,18 @@ The Bubble Sort algorithm is a simple sorting algorithm that repeatedly steps th
 
 ```javascript
 function bubbleSort(arr) {
-    const n = arr.length;
-    for (let i = 0; i < n - 1; i++) {
-        for (let j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                // Swap the elements
-                const temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
+  const n = arr.length;
+  for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        // Swap the elements
+        const temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
     }
-    return arr;
+  }
+  return arr;
 }
 
 const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
@@ -112,15 +112,15 @@ const arr = [14, 33, 28, 40, 10]
 
 // How many iterations of swapping we need to do?
 for (let i = 0; i < arr.length-1; i++) {
-    // For each iteration, how many comparisons we need to do?
-    for (let j = 0; j < arr.length-i-1; j++) {
-        if (arr[j] > arr[j + 1]) {
-            j_value = arr[j]
-            j_plus_1_value = arr[j + 1]
-            arr[j] = j_plus_1_value
-            arr[j + 1] = j_value
-        }
+  // For each iteration, how many comparisons we need to do?
+  for (let j = 0; j < arr.length-i-1; j++) {
+    if (arr[j] > arr[j + 1]) {
+      j_value = arr[j]
+      j_plus_1_value = arr[j + 1]
+      arr[j] = j_plus_1_value
+      arr[j + 1] = j_value
     }
+  }
 }
 
 console.log(arr)
@@ -160,15 +160,15 @@ const arr = [14, 33, 28, 40, 10]
 
 // How many iterations of swapping we need to do?
 for (let i = 0; i < arr.length-1; i++) {
-    // For each iteration, how many comparisons we need to do?
-    for (let j = 0; j < arr.length - i - 1; j++) {
-        if (arr[j] > arr[j + 1]) {
-            j_value = arr[j]
-            j_plus_1_value = arr[j + 1]
-            arr[j] = j_plus_1_value
-            arr[j + 1] = j_value
-        }
+  // For each iteration, how many comparisons we need to do?
+  for (let j = 0; j < arr.length - i - 1; j++) {
+    if (arr[j] > arr[j + 1]) {
+      j_value = arr[j]
+      j_plus_1_value = arr[j + 1]
+      arr[j] = j_plus_1_value
+      arr[j + 1] = j_value
     }
+  }
 }
 
 console.log(arr)
@@ -218,16 +218,67 @@ optimization helps make the sorting process more efficient.
 const arr = [14, 33, 28, 40, 10]
 
 // existing code
-        if (arr[j] > arr[j + 1]) {
-            j_value = arr[j]
-            j_plus_1_value = arr[j + 1]
-            arr[j] = j_plus_1_value
-            arr[j + 1] = j_value
-        }
+if (arr[j] > arr[j + 1]) {
+  j_value = arr[j]
+  j_plus_1_value = arr[j + 1]
+  arr[j] = j_plus_1_value
+  arr[j + 1] = j_value
+}
 // existing code
 
 console.log(arr)
 // Output: [10, 14, 28, 33, 40]
 ```
+
+## minus 1 in loop vs last index (-1)
+
+```javascript
+const arr = [14, 33, 28, 40, 10]
+
+// -1 use in variable
+end = arr.length - 1
+console.log(end)
+
+// -1 use directly inside loop
+for (let i = 0; i < arr.length - 1; i++) {
+  // existing code here
+}
+```
+
+> when store in variable, the -1 means the last index of array. But when use inside the loop, it is means second last index?
+
+When you store `arr.length - 1` in a variable, it represents the last index of the array. For example:
+```javascript
+const end = arr.length - 1;
+```
+Here, `end` holds the value of the last index, and you can use it later in your code.
+
+However, when you use `arr.length - 1` directly inside the loop condition like this:
+```javascript
+for (let i = 0; i < arr.length - 1; i++) {
+  // existing code here
+}
+```
+It's used to ensure that the loop runs up to the second-to-last index, stopping
+just before the last index. This is important when performing certain algorithms
+like the bubble sort you've shown earlier, where you don't need to compare or
+swap the last element in the final iteration.
+
+## `-1` cases
+
+Yes, the "-1" adjustment is quite common in programming and can be used in various contexts. Here are a few other cases where you might encounter it:
+
+1. **Indexing Arrays**: As you mentioned, it's often used to access the last element or the second-to-last element of an array. For example, `arr[arr.length - 1]` gives you the last element.
+
+2. **Loop Conditions**: Apart from sorting loops, there are cases where you might want to loop through all but the last or first elements of an array. For example, you could loop from the first element to the second-to-last element using `for (let i = 0; i < arr.length - 1; i++)`.
+
+3. **Slicing Arrays**: When using array slicing, you might use `-1` to indicate the last element. For instance, `arr.slice(0, -1)` gives you a new array containing all elements except the last one.
+
+4. **String Manipulation**: It's used in string manipulation, too. If you want to remove the last character from a string, you can use `str.slice(0, -1)`.
+
+5. **Array Methods**: Some array methods like `pop()` and `splice()` remove the last element from the array. You wouldn't use `-1` directly here, but they involve working with the last element in some cases.
+
+Remember, the `-1` adjustment is generally used when dealing with positions or
+indices to make sure you're referring to the element you intend to work with.
 
 # Insertion Sort Problems in JS
