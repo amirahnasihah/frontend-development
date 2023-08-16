@@ -334,7 +334,7 @@ Output:
 In this example, each element in the 2D array is printed out as the inner loop
 iterates through the subarrays.
 
-> What is index of the main array here
+> What is index of the main array here, `for (let i = 0; i < array2D.length; i++)`
 
 In the code you provided:
 
@@ -349,3 +349,19 @@ Here's the breakdown of what happens:
 So, the value of `i` corresponds to the row index of the 2D array. In your
 example, the value of `i` goes from 0 to 2, which represents the rows of the
 `array2D`.
+
+> What is the index of the subarray here, `for (let j = 0; j < array2D[i].length; j++)`
+
+In the code you provided:
+
+The index `j` corresponds to the index of the subarray within the main array `array2D`. In this context, `j` represents the column of the 2D array.
+
+Here's what happens:
+
+- When `i` is 0, the inner loop iterates through the subarray at index 0: `[1, 2, 3]`. In this subarray, `j` goes from 0 to 2, representing the indices of the elements `[1, 2, 3]`.
+- When `i` is 1, the inner loop iterates through the subarray at index 1: `[4, 5, 6]`. In this subarray, `j` again goes from 0 to 2, representing the indices of the elements `[4, 5, 6]`.
+- When `i` is 2, the inner loop iterates through the subarray at index 2: `[7, 8, 9]`. In this subarray, `j` once more goes from 0 to 2, representing the indices of the elements `[7, 8, 9]`.
+
+So, the value of `j` corresponds to the column index of the 2D array. In your
+example, the value of `j` goes from 0 to 2, which represents the column indices
+within each subarray.
