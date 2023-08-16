@@ -341,5 +341,5 @@ end InsertionSort
 
 based on my understanding:
 
-first, outer loop. we loop for first iteration. we start at first index; continues to loop until length of array.
-then, set variable called current. this is for current element, arr[i]. example; 
+first, outer loop. we loop for first iteration. we start at first index; continues to loop until length of array. (i = 1 means at value 9.)
+then, set variable called current. this is for current element, arr[i]. s
