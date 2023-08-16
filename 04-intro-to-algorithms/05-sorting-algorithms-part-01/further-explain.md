@@ -247,3 +247,40 @@ insertionSort = (arr) => {
 ### insertion-sort.js
 
 # Other
+
+## Having 2 for loops (compare elements within same subarray)
+
+Yes, when you want to compare elements within a subarray (nested array) or a 2D array, you would typically use two nested loops. The outer loop iterates through the main array, while the inner loop iterates through the subarray (nested array) at each position in the main array.
+
+The code snippet you provided:
+
+```javascript
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+        // Your code here
+    }
+}
+```
+
+In this case, `i` represents the index of the main array, and `j` represents the index of the subarray. The inner loop iterates through each element of the subarray for every element in the main array.
+
+Inside the inner loop, you can perform comparisons or other operations involving the elements at indices `i` and `j`.
+
+For example, if you have an array of arrays (a 2D array) and you want to compare elements within the subarrays, you could use this structure:
+
+```javascript
+const array2D = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+for (let i = 0; i < array2D.length; i++) {
+    for (let j = 0; j < array2D[i].length; j++) {
+        // Compare or perform operations on array2D[i][j]
+    }
+}
+```
+
+This nested loop structure allows you to access and work with individual
+elements within the subarrays of a 2D array.
