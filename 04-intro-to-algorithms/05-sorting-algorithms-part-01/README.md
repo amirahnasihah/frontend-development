@@ -422,7 +422,7 @@ Consider using insertion sort to sort this array in increasing order.
 |12|9|20|4|5|
 |:-:|:-:|:-:|:-:|:-:|
 
-Loop form i = 1 (second element of the array) to 4 (last element of the array)
+Loop from i = 1 (second element of the array) to 4 (last element of the array)
 
 ### Insertion Sort
 
