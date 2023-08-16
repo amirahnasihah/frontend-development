@@ -278,6 +278,12 @@ elements within the subarrays of a 2D array.
 The code you've provided is a nested loop structure that iterates through a 2D array (`array2D`) and allows you to perform operations on each element within the subarrays. Let's break down the loop structure and what it does:
 
 ```javascript
+const array2D = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
 for (let i = 0; i < array2D.length; i++) {
   for (let j = 0; j < array2D[i].length; j++) {
     // Compare or perform operations on array2D[i][j]
@@ -298,19 +304,20 @@ However, if you were to add some operations, let's say printing the elements, it
 
 ```javascript
 const array2D = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
 ];
 
 for (let i = 0; i < array2D.length; i++) {
-    for (let j = 0; j < array2D[i].length; j++) {
-        console.log(array2D[i][j]);
-    }
+  for (let j = 0; j < array2D[i].length; j++) {
+    console.log(array2D[i][j]);
+  }
 }
 ```
 
 Output:
+
 ```
 1
 2
