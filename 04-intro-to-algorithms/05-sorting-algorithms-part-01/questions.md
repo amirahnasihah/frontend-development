@@ -133,7 +133,6 @@ arr = [14, 33, 28, 40, 10]
 
 **How**
 
-
 - Bubble sort works by examining each set of adjacent elements in the array, from left to right, switching their positions if they are out of order.
 - The algorithm repeats this process until it can traverse the entire array and cannot find two elements that need to be swapped.
 
@@ -151,5 +150,53 @@ So we need to swap the position of 10 and 40. The **new array** will be: `[14, 2
 But **the array is still not sorted. We need to repeat step 1 to 4 again. Until our array is sorted.**
 
 (Note that we don’t need to worry about “40” anymore as we are sure that it is the largest one)
+
+## Bubble Sort Algorithm (`j < arr.length - i - 1;`)
+
+Converting into code:
+
+```javascript
+const arr = [14, 33, 28, 40, 10]
+
+// How many iterations of swapping we need to do?
+for (let i = 0; i < arr.length-1; i++) {
+    // For each iteration, how many comparisons we need to do?
+    for (let j = 0; j < arr.length - i - 1; j++) {
+        if (arr[j] > arr[j + 1]) {
+            j_value = arr[j]
+            j_plus_1_value = arr[j + 1]
+            arr[j] = j_plus_1_value
+            arr[j + 1] = j_value
+        }
+    }
+}
+
+console.log(arr)
+// Output: [10, 14, 28, 33, 40]
+```
+
+**EXPLANATION**
+
+The expression `j < arr.length - i - 1` is used in the inner loop to control how many comparisons and swaps are performed in each iteration. Let's break it down step by step:
+
+1. `arr.length` is the total number of elements in the array. In your case, it's 5 because there are five numbers in the array `[14, 33, 28, 40, 10]`.
+
+2. `i` is the variable that represents the current iteration of the outer loop. It starts from 0 and increases by 1 with each iteration.
+
+3. `arr.length - i - 1` calculates the number of elements that need to be considered in the inner loop. Since the outer loop progresses, the largest value of `i` will be 4 (when `i` is equal to `arr.length - 1`). So, for each iteration of the outer loop, we are reducing the number of elements in the inner loop by 1.
+
+Let's see how this works:
+
+- In the first iteration of the outer loop (`i = 0`), the inner loop will run for `j` values from 0 to `arr.length - i - 1`, which is 0 to 4. This means it will compare and possibly swap adjacent pairs of all five elements.
+
+- In the second iteration of the outer loop (`i = 1`), the inner loop will run for `j` values from 0 to `arr.length - i - 1`, which is 0 to 3. This means it will compare and possibly swap adjacent pairs of the first four elements.
+
+- And so on...
+
+The reason for using `arr.length - i - 1` is to avoid unnecessary comparisons in
+the later iterations of the outer loop. Since the largest element is "bubbled
+up" to the end in each iteration, there's no need to compare it again in the
+subsequent iterations, as it's already in the correct position. This
+optimization helps make the sorting process more efficient.
 
 # Insertion Sort Problems in JS
