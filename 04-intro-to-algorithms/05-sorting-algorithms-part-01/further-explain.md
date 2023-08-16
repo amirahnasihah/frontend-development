@@ -279,9 +279,9 @@ The code you've provided is a nested loop structure that iterates through a 2D a
 
 ```javascript
 const array2D = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
 ];
 
 for (let i = 0; i < array2D.length; i++) {
@@ -291,9 +291,12 @@ for (let i = 0; i < array2D.length; i++) {
 }
 ```
 
-- The outer loop (`for (let i = 0; i < array2D.length; i++)`) iterates through the main array (`array2D`). `i` represents the index of the main array.
+- The outer loop (`for (let i = 0; i < array2D.length; i++)`) iterates through
+the main array (`array2D`). `i` represents the **index of the main array**.
 
-- Inside the outer loop, the inner loop (`for (let j = 0; j < array2D[i].length; j++)`) iterates through the subarray at index `i` in the main array. `j` represents the index of the subarray.
+- Inside the outer loop, the inner loop (`for (let j = 0; j < array2D[i].length;
+j++)`) iterates through the subarray at index `i` in the main array. `j`
+represents the **index of the subarray**.
 
 - Within the inner loop, you have the opportunity to work with each element of the 2D array using `array2D[i][j]`. You can compare, modify, or perform any operations you need on these elements.
 
@@ -332,3 +335,19 @@ Output:
 
 In this example, each element in the 2D array is printed out as the inner loop
 iterates through the subarrays.
+
+> What is index of the main array here
+
+In the code you provided:
+
+The index `i` corresponds to the index of the main array `array2D`. In this context, `i` represents the row of the 2D array.
+
+Here's the breakdown of what happens:
+
+- When `i` is 0, the inner loop iterates through the subarray at index 0: `[1, 2, 3]`.
+- When `i` is 1, the inner loop iterates through the subarray at index 1: `[4, 5, 6]`.
+- When `i` is 2, the inner loop iterates through the subarray at index 2: `[7, 8, 9]`.
+
+So, the value of `i` corresponds to the row index of the 2D array. In your
+example, the value of `i` goes from 0 to 2, which represents the rows of the
+`array2D`.
