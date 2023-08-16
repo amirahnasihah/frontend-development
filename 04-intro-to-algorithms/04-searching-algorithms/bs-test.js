@@ -2,6 +2,7 @@
 while loop (sorted number)
 
 array length: 9
+end = at index 8 (last index)
 */
 
 const arr = [1, 2, 4, 6, 7, 9, 10, 11, 13];
