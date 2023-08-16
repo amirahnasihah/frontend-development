@@ -10,6 +10,64 @@
 
 JavaScript offers several built-in sorting algorithms through the `Array.prototype.sort()` method. It uses a variation of the QuickSort algorithm called "TimSort." It's efficient for most use cases, but keep in mind it sorts items as strings by default.
 
+## Sorting String
+
+You can sort strings in JavaScript using the built-in `Array.prototype.sort()` method. By default, this method sorts elements alphabetically in ascending order. Here's an example of how to sort an array of strings:
+
+```javascript
+const unsortedStrings = ["banana", "apple", "grape", "pear"];
+const sortedStrings = unsortedStrings.sort();
+
+console.log(sortedStrings); // Output: ["apple", "banana", "grape", "pear"]
+```
+
+If you want to sort strings in descending order, you can provide a custom sorting function to the `sort()` method:
+
+```javascript
+const unsortedStrings = ["banana", "apple", "grape", "pear"];
+const sortedStringsDescending = unsortedStrings.sort((a, b) => b.localeCompare(a));
+
+console.log(sortedStringsDescending); // Output: ["pear", "grape", "banana", "apple"]
+```
+
+The `localeCompare()` method is used to compare strings while taking into
+account locale-specific sorting rules. In this case, by reversing the comparison
+(comparing `b` to `a`), you achieve descending order sorting.
+
+## Sorting Numbers
+
+Sorting numbers in JavaScript is quite straightforward. You can use the built-in `Array.prototype.sort()` method to sort an array of numbers. By default, it sorts elements as strings, so you might need to provide a custom comparison function to ensure numeric sorting. Here's how you can do it:
+
+```javascript
+const unsortedNumbers = [5, 2, 8, 1, 10];
+const sortedNumbers = unsortedNumbers.sort((a, b) => a - b);
+
+console.log(sortedNumbers); // Output: [1, 2, 5, 8, 10]
+```
+
+In this example, the comparison function `a - b` returns a negative value when `a` is smaller than `b`, causing the numbers to be sorted in ascending order.
+
+For descending order sorting, you can reverse the comparison:
+
+```javascript
+const unsortedNumbers = [5, 2, 8, 1, 10];
+const sortedNumbersDescending = unsortedNumbers.sort((a, b) => b - a);
+
+console.log(sortedNumbersDescending); // Output: [10, 8, 5, 2, 1]
+```
+
+Keep in mind that the `sort()` method modifies the original array. If you want to avoid modifying the original array, you can create a copy of the array before sorting:
+
+```javascript
+const unsortedNumbers = [5, 2, 8, 1, 10];
+const sortedNumbers = [...unsortedNumbers].sort((a, b) => a - b);
+
+console.log(sortedNumbers); // Output: [1, 2, 5, 8, 10]
+console.log(unsortedNumbers); // Original array remains unchanged
+```
+
+---
+
 **To sort numbers, you need to provide a comparison function:**
 
 ```javascript
