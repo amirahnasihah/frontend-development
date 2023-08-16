@@ -199,6 +199,19 @@ We need to repeat step 1 to 4 again. Until our array is sorted.
 
 ### Bubble Sort Algorithm
 
+**Pseudocode Bubble Sort**
+
+```
+Initialize an array called "arr" with values [14, 33, 28, 40, 10]
+
+For each "i" from 0 to length of arr - 2:
+    For each "j" from 0 to length of arr - i - 2:
+        If the value at arr[j] is greater than the value at arr[j + 1]:
+            Swap the values at arr[j] and arr[j + 1]
+
+Print the sorted array "arr"
+```
+
 Converting into code:
 
 ```javascript
