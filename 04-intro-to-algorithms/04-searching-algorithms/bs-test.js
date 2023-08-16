@@ -44,13 +44,13 @@ let startArr = 0;
 let endArr = fruits.length - 1;
 
 while (startArr <= endArr) {
-    let middle = Math.floor((start + end) / 2);
+    let middle = Math.floor((startArr + endArr) / 2);
 
-    if (arr[middle] === targetFruit) {
+    if (fruits[middle] === targetFruit) {
         console.log("Found fruit at position: " + middle);
         break;
     }
-    else if (arr[middle] < targetFruit) {
+    else if (fruits[middle] < targetFruit) {
         startArr = middle + 1;
     }
     else {
