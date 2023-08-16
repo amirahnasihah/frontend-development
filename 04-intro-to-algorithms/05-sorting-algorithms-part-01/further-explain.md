@@ -292,11 +292,9 @@ for (let i = 0; i < array2D.length; i++) {
 ```
 
 - The outer loop (`for (let i = 0; i < array2D.length; i++)`) iterates through
-the main array (`array2D`). `i` represents the **index of the main array**.
+  the main array (`array2D`). `i` represents the **index of the main array**.
 
-- Inside the outer loop, the inner loop (`for (let j = 0; j < array2D[i].length;
-j++)`) iterates through the subarray at index `i` in the main array. `j`
-represents the **index of the subarray**.
+- Inside the outer loop, the inner loop (`for (let j = 0; j < array2D[i].length; j++)`) iterates through the subarray at index `i` in the main array. **`j` represents the index of the subarray**.
 
 - Within the inner loop, you have the opportunity to work with each element of the 2D array using `array2D[i][j]`. You can compare, modify, or perform any operations you need on these elements.
 
