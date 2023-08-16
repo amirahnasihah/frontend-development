@@ -328,10 +328,12 @@ InsertionSort(array)
     for i = 1 to length(array) - 1
         current = array[i]
         j = i - 1
+        
         while j >= 0 and current < array[j]
-            array[j + 1] = array[j]
+            array[j + 1] = array[j] // creates space
             j = j - 1
         end while
+        
         array[j + 1] = current
     end for
 end InsertionSort
