@@ -80,6 +80,33 @@ negative value, it indicates that `b` should come before `a` in the sorted
 order, effectively reversing the normal ascending order and giving you a
 descending order of strings.
 
+---
+
+To sort an array of objects by the "name" property, you need to modify the comparison function slightly, as comparing strings is different from comparing numbers. Here's how you can sort the `people` array by the "name" property:
+
+```javascript
+const people = [
+  { name: "Alice", age: 30 },
+  { name: "Dob", age: 25 },
+  { name: "Beve", age: 35 },
+];
+
+people.sort((a, b) => a.name.localeCompare(b.name));
+console.log(people);
+```
+
+In this code, the comparison function `a.name.localeCompare(b.name)` uses the `localeCompare()` method to compare the "name" properties of the objects. This method compares strings while taking into account locale-specific sorting rules. It returns a positive value if `a.name` comes after `b.name` in the sorting order, a negative value if it comes before, and 0 if they are the same.
+
+This will output the `people` array sorted by the "name" property:
+
+```
+[
+  { name: "Alice", age: 30 },
+  { name: "Beve", age: 35 },
+  { name: "Dob", age: 25 }
+]
+```
+
 ## Sorting Numbers
 
 Sorting numbers in JavaScript is quite straightforward. You can use the built-in
