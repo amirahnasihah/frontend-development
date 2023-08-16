@@ -282,3 +282,39 @@ Remember, the `-1` adjustment is generally used when dealing with positions or
 indices to make sure you're referring to the element you intend to work with.
 
 # Insertion Sort Problems in JS
+
+## why a while loop is used inside a for loop for the insertion sort algorithm
+
+Why a while loop is used inside a for loop for the insertion sort algorithm.
+
+In the given code snippet:
+```javascript
+for (let i = 1; i < arr.length; i++) {
+    let current = arr[i];
+    let j = i - 1;
+
+    while (j >= 0 && current < arr[j]) {
+        arr[j + 1] = arr[j];
+        j--;
+    }
+    arr[j + 1] = current;
+}
+```
+
+Here's what's happening:
+
+1. The outer `for` loop iterates over each element in the array, starting from the second element (at index 1) and going up to the last element.
+
+2. Inside the loop, a variable `current` is used to store the value of the element at the current index `i`. This is the element that you're trying to insert into its correct position within the already sorted part of the array.
+
+3. The variable `j` is set to `i - 1`, which means it's initially pointing to the element just before the current element.
+
+4. The `while` loop is used to compare the value of `current` with the elements before it in the sorted part of the array (i.e., elements at indices `j`). The condition `j >= 0 && current < arr[j]` ensures that the loop continues as long as `j` is a valid index (not negative) and the current element is smaller than the element at index `j`.
+
+5. Inside the `while` loop, you're shifting the elements to the right by assigning `arr[j]` to `arr[j + 1]`. This creates space for the `current` element to be inserted in its correct position.
+
+6. After the `while` loop ends, you've found the correct position for the `current` element, and you assign its value to `arr[j + 1]`.
+
+By using the `while` loop inside the `for` loop, you're able to keep moving back through the already sorted part of the array until you find the correct position for the `current` element. This process continues for each element in the array, effectively sorting it.
+
+So, the combination of the `for` loop and the `while` loop helps achieve the insertion sort algorithm's goal of inserting each element into its proper position within the sorted part of the array.
