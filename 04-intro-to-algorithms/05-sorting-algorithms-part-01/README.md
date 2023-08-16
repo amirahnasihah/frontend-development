@@ -201,10 +201,24 @@ We need to repeat step 1 to 4 again. Until our array is sorted.
 
 **Pseudocode Bubble Sort**
 
+1. Pseudocode
+
 ```
 Initialize an array called "arr" with values [14, 33, 28, 40, 10]
 
-For each "i" from 0 to length of arr - 2:
+For each "i" from 0 to length of arr - 1 (second last index):
+    For each "j" from 0 to length of arr - i - 1:
+        If the value at arr[j] is greater than the value at arr[j + 1]:
+            Swap the values at arr[j] and arr[j + 1]
+
+Print the sorted array "arr"
+```
+
+2. Pseudocode
+```
+Initialize an array called "arr" with values [14, 33, 28, 40, 10]
+
+For each "i" from 0 to length of arr - 1:
     For each "j" from 0 to length of arr - i - 2:
         If the value at arr[j] is greater than the value at arr[j + 1]:
             Swap the values at arr[j] and arr[j + 1]
