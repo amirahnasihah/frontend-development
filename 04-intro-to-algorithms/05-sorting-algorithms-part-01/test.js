@@ -5,11 +5,11 @@ For more complex sorting, you can customize the comparison function. If you need
 
 const people = [
   { name: "Alice", age: 30 },
-  { name: "Bob", age: 25 },
-  { name: "Eve", age: 35 },
+  { name: "Dob", age: 25 },
+  { name: "Beve", age: 35 },
 ];
 
-people.sort((a, b) => a.age - b.age);
+people.sort((a, b) => a.name - b.name);
 console.log(people);
 
 /*
