@@ -52,6 +52,30 @@ So, when the `sort()` method applies the custom comparison function to the array
 of strings, it compares each pair of strings and reorders them based on their
 relative order. As a result, you get the output `["pear", "grape", "banana", "apple"]`, which is the original array sorted in descending alphabetical order.
 
+---
+
+> **What is `a`. What is `b` for? What are they represent in array?**
+
+In the context of the code you provided:
+
+```javascript
+const unsortedStrings = ["banana", "apple", "grape", "pear"];
+const sortedStringsDescending = unsortedStrings.sort((a, b) => b.localeCompare(a));
+
+console.log(sortedStringsDescending); // Output: ["pear", "grape", "banana", "apple"]
+```
+
+- `a` represents the first element being compared in the array.
+- `b` represents the second element being compared in the array.
+
+When you use the `.sort()` method with a custom comparison function like `(a, b) => b.localeCompare(a)`, the function is called multiple times to compare pairs of elements within the array. The comparison function determines the order of these elements by comparing `a` and `b`.
+
+In your specific example, the `b.localeCompare(a)` comparison is used to sort
+the array of strings in descending order. When the comparison function returns a
+negative value, it indicates that `b` should come before `a` in the sorted
+order, effectively reversing the normal ascending order and giving you a
+descending order of strings.
+
 ## Sorting Numbers
 
 Sorting numbers in JavaScript is quite straightforward. You can use the built-in
