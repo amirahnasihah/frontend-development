@@ -228,6 +228,9 @@ Print the sorted array "arr"
 
 Converting into code:
 
+> if in a function, Copy the input array and work on the cloned array. In JS, we
+always try to work in an immutable way: `let inputArr = [...arr]`
+
 ```javascript
 const arr = [14, 33, 28, 40, 10]
 
