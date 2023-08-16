@@ -212,4 +212,22 @@ up" to the end in each iteration, there's no need to compare it again in the
 subsequent iterations, as it's already in the correct position. This
 optimization helps make the sorting process more efficient.
 
+## Part 2 Inner Loop
+
+```javascript
+const arr = [14, 33, 28, 40, 10]
+
+// existing code
+        if (arr[j] > arr[j + 1]) {
+            j_value = arr[j]
+            j_plus_1_value = arr[j + 1]
+            arr[j] = j_plus_1_value
+            arr[j + 1] = j_value
+        }
+// existing code
+
+console.log(arr)
+// Output: [10, 14, 28, 33, 40]
+```
+
 # Insertion Sort Problems in JS
