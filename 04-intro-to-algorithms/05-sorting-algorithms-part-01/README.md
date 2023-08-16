@@ -223,7 +223,33 @@ console.log(arr)
 
 **EXPLANATION**
 
-==1. `for (let i = 0; i < arr.length-1; i++) {`==
+```javascript
+j < arr.length - i - 1;
+```
+
+- The expression `j < arr.length - i - 1` is **used in the inner loop to control how many comparisons and swaps are performed in each iteration**.
+
+`arr.length - i - 1` calculates the number of elements that need to be considered in the inner loop. Since the outer loop progresses, the largest value of `i` will be 4 (when `i` is equal to `arr.length - 1`). So, for each iteration of the outer loop, we are reducing the number of elements in the inner loop by 1.
+
+Let's see how this works:
+
+- In the first iteration of the outer loop (`i = 0`), the inner loop will run for `j` values from 0 to `arr.length - i - 1`, which is 0 to 4. This means it will compare and possibly swap adjacent pairs of all five elements.
+
+```plaintext
+`arr.length - i - 1`
+
+5 - 0 - 1 = 4; (i is at index 0, the current element of outer loop)
+```
+
+- In the second iteration of the outer loop (`i = 1`), the inner loop will run for `j` values from 0 to `arr.length - i - 1`, which is 0 to 3. This means it will compare and possibly swap adjacent pairs of the first four elements.
+
+```plaintext
+`arr.length - i - 1`
+
+5 - 1 - 1 = 3; (i is at index 1, the new current element of outer loop)
+```
+
+- And so on...
 
 **How many iterations of swapping we need to do?**
 
@@ -232,18 +258,6 @@ In the first cycle, we solved first element.
 In the second cycle, we solved second element.
 - For list of 5 elements, we need 4 cycles to solve 5 elements (as solving 4 elements is same as solving 5 elements)
 - For a list of n elements, we need n-1 iterations.
-
-
-==2. `for (let j = 0; j < arr.length-i-1; j++) {`==
-
-**For each iteration, how many comparisons we need to do?**
-
-For array length of 5,
-In the first iteration (i=0), we need to compare 4 times (1-2, 2-3, 3-4, 4-5)
-
-In the second iteration (i=1), we need to compare 3 times only (1-2, 2-3, 3-4) as the last element is already fixed.
-- For each iteration, we only need to check for “number of unfixed elements - 1” times
-- Number of unfixed elements = array.length - i
 
 **Line By Line**
 
@@ -263,9 +277,13 @@ In the second iteration (i=1), we need to compare 3 times only (1-2, 2-3, 3-4) a
 
 In the context of a loop, the condition "i < arr.length-1" means that the loop will execute as long as the value of variable "i" is less than the length of the array "arr" minus 1.
 
-Since array indices start from 0, the last index of the array is always its length minus 1. Therefore, the loop condition "i < arr.length-1" ensures that ==the loop will iterate through all the elements of the array, except for the last one==.
+Since array indices start from 0, the last index of the array is always its
+length minus 1. Therefore, the loop condition "i < arr.length-1" ensures that
+**the loop will iterate through all the elements of the array, except for the last one**.
 
-For example, if an array "arr" has a length of 5, the condition "i < arr.length-1" will be true for values of "i" from 0 to 3, and the loop will execute 4 times, which is equal to the length of the array minus 1. This is because the last element of the array will already be in its correct position after the previous iterations, so there is no need to iterate over it again.
+For example, if an array "arr" has a length of 5, the condition "i <
+arr.length-1" will be true for values of "i" from 0 to 3, and the loop will
+execute 4 times, which is equal to the length of the array minus 1. **This is because the last element of the array will already be in its correct position after the previous iterations, so there is no need to iterate over it again.**
 
 **bubble-sort.js**
 
