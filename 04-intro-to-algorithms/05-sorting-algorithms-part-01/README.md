@@ -471,9 +471,9 @@ console.log(arr)
 // Output: [4, 5, 9, 12, 20]
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
-==1. `for (let i = 1; i < arr.length; i++) {`==
+1. `for (let i = 1; i < arr.length; i++) {`
 
 **How many iterations do we need?**
 
@@ -482,9 +482,7 @@ console.log(arr)
 - So we will start with i = 1 and end with i = length - 1
 
 
-==2. ```
-let j = i - 1;
-while (j >= 0 && current < arr[j]) {```==
+2. `let j = i - 1; while (j >= 0 && current < arr[j]) {`
 
 **For each iteration, how many “comparisons and shift” we need to do?**
 
@@ -492,7 +490,7 @@ while (j >= 0 && current < arr[j]) {```==
 
 - The meaning here is - for every elements that is smaller than “current element” and before the “current element”, we shift it to the right by 1.
 
-**EXPLAINATION**
+**EXPLANATION**
 
 **insertion-sort.js**
 
