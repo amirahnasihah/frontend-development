@@ -177,7 +177,8 @@ console.log(arr)
 
 **EXPLANATION**
 
-The expression `j < arr.length - i - 1` is used in the inner loop to control how many comparisons and swaps are performed in each iteration. Let's break it down step by step:
+The expression `j < arr.length - i - 1` is **used in the inner loop to control how many comparisons and swaps are performed in each iteration**.
+Let's break it down step by step:
 
 1. `arr.length` is the total number of elements in the array. In your case, it's 5 because there are five numbers in the array `[14, 33, 28, 40, 10]`.
 
