@@ -1,4 +1,6 @@
-// while loop (number)
+/*
+
+*/
 
 const arr = [1, 2, 4, 6, 7, 9, 10, 11, 13];
 const target = 4
@@ -11,6 +13,7 @@ let end = arr.length - 1
 while (start <= end) {
     // Handle the odd length scenario
     let middle = Math.floor((start + end) / 2)
+    console.log("end", end)
     
     // Found!
     if (arr[middle] === target) {
