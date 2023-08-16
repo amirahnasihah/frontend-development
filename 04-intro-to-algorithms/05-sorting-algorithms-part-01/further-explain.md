@@ -36,7 +36,9 @@ account locale-specific sorting rules. In this case, by reversing the comparison
 
 ## Sorting Numbers
 
-Sorting numbers in JavaScript is quite straightforward. You can use the built-in `Array.prototype.sort()` method to sort an array of numbers. By default, it sorts elements as strings, so you might need to provide a custom comparison function to ensure numeric sorting. Here's how you can do it:
+Sorting numbers in JavaScript is quite straightforward. You can use the built-in
+`Array.prototype.sort()` method to sort an array of numbers. **By default, it sorts elements as strings, so you might need to provide a custom comparison function to ensure numeric sorting**.
+Here's how you can do it:
 
 ```javascript
 const unsortedNumbers = [5, 2, 8, 1, 10];
