@@ -58,4 +58,4 @@ while (startArr <= endArr) {
     }
 }
 
-// output: 
+// output: Found fruit at position: 4
