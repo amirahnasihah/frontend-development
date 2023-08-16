@@ -12,4 +12,14 @@ const people = [
 people.sort((a, b) => a.age - b.age);
 console.log(people);
 
-// 
+/*
+// by age
+[
+  { name: 'Bob', age: 25 },
+  { name: 'Alice', age: 30 },
+  { name: 'Eve', age: 35 }
+]
+
+// by name
+
+*/
