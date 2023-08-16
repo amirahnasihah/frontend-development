@@ -190,7 +190,19 @@ Let's see how this works:
 
 - In the first iteration of the outer loop (`i = 0`), the inner loop will run for `j` values from 0 to `arr.length - i - 1`, which is 0 to 4. This means it will compare and possibly swap adjacent pairs of all five elements.
 
+```plaintext
+`arr.length - i - 1`
+
+5 - 0 - 1 = 4; (i is at index 0, the current element of outer loop)
+```
+
 - In the second iteration of the outer loop (`i = 1`), the inner loop will run for `j` values from 0 to `arr.length - i - 1`, which is 0 to 3. This means it will compare and possibly swap adjacent pairs of the first four elements.
+
+```plaintext
+`arr.length - i - 1`
+
+5 - 1 - 1 = 3; (i is at index 1, the new current element of outer loop)
+```
 
 - And so on...
 
