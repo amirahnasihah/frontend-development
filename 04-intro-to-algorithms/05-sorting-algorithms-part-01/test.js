@@ -30,9 +30,9 @@ Bubble Sort Algorithm
 
 const arr = [14, 33, 28, 40, 10]
 
-// -1 use in variable
+// -1 use in variable (Searching Algorithm - Binary Search)
 end = arr.length - 1
-console.log(end) // Out
+console.log(end) // Output: 5 - 1 = 4
 
 // -1 use directly inside loop
 for (let i = 0; i < arr.length - 1; i++) {
