@@ -341,4 +341,5 @@ end InsertionSort
 
 based on my understanding:
 
-first, outer loop. we loop for first iteration. we start at first index; continues to loop until length o
+first, outer loop. we loop for first iteration. we start at first index; continues to loop until length of array.
+then, set variable cal
