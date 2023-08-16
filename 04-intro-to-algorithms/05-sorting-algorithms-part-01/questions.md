@@ -341,4 +341,4 @@ end InsertionSort
 
 based on my understanding:
 
-first, outer loop. we loop for first iteration, start at first
+first, outer loop. we loop for first iteration. we start at first index; continues to loop until length o
