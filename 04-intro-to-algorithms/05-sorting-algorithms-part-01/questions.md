@@ -235,7 +235,7 @@ console.log(arr)
 ```javascript
 const arr = [14, 33, 28, 40, 10]
 
-// -1 use in variable
+// -1 use in variable (Searching Algorithm - Binary Search)
 end = arr.length - 1
 console.log(end)
 
