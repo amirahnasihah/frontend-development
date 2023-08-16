@@ -351,4 +351,4 @@ second, inner loop using while loop. the loop continues as long as the condition
 
 end while loop, which this is the process of shifting correct positions
 
-outer loop, we set the c
+outer loop, we set the next element to current element (array[j + 1] = current)
