@@ -318,3 +318,21 @@ Here's what's happening:
 By using the `while` loop inside the `for` loop, you're able to keep moving back through the already sorted part of the array until you find the correct position for the `current` element. This process continues for each element in the array, effectively sorting it.
 
 So, the combination of the `for` loop and the `while` loop helps achieve the insertion sort algorithm's goal of inserting each element into its proper position within the sorted part of the array.
+
+---
+
+Pseudocode
+
+```javascript
+InsertionSort(array)
+    for i = 1 to length(array) - 1
+        current = array[i]
+        j = i - 1
+        while j >= 0 and current < array[j]
+            array[j + 1] = array[j]
+            j = j - 1
+        end while
+        array[j + 1] = current
+    end for
+end InsertionSort
+```
