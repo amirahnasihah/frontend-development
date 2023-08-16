@@ -345,4 +345,4 @@ first, outer loop. we loop for first iteration. we start at first index; continu
 
 Since we want to compare current element with previous element - Insertion Sort
 then, we set variable called current. this is for current element, arr[i]. so, current element now is value 9.
-next, store for previous element in variable c
+next, store for previous element in variable called j. We want to compare the second element with the element befor
