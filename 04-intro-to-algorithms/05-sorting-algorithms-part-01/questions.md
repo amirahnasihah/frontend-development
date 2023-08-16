@@ -347,4 +347,7 @@ Since we want to compare current element with previous element - Insertion Sort
 then, we set variable called current. this is for current element, arr[i]. so, current element now is value 9.
 next, we store for previous index in variable called j. We want to compare the second element with the element before the second, which means the previous element. so, to get previous index (current index minus 1, j = i - 1)
 
-second, inner loop using while loop. the loop continues as long as the condition: previous index is not negative index number, which means previous index is more or equal 0 index number and the current element is less than previous element value (current < array[j]); j-- because we compared it with previous index 
+second, inner loop using while loop. the loop continues as long as the condition: previous index is not negative index number, which means previous index is more or equal 0 index number and the current element is less than previous element value (current < array[j]); j-- because we compared it with previous index
+
+end while loop, which this is the process of shifting positions
+
