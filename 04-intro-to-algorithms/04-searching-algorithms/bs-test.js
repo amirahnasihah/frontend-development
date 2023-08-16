@@ -10,7 +10,7 @@ let end = arr.length - 1
 // Exit Condition: start is larger than the end
 while (start <= end) {
     // Handle the odd length scenario
-    let middle = Math.floor((start + end) / 2) 
+    let middle = Math.floor((start + end) / 2)
     
     // Found!
     if (arr[middle] === target) {
@@ -27,7 +27,9 @@ while (start <= end) {
 
 // output: Found at position: 2
 
-/* while loop (strimg array) */
+/*
+while loop (string array)
+*/
 
 const fruits = ["apple", "banana", "cherry", "grape", "orange", "pear", "strawberry"];
 const targetFruit = "orange";
