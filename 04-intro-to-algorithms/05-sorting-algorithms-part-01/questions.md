@@ -349,5 +349,6 @@ next, we store for previous index in variable called j. We want to compare the s
 
 second, inner loop using while loop. the loop continues as long as the condition: previous index is not negative index number, which means previous index is more or equal 0 index number and the current element is less than previous element value (current < array[j]); j-- because we compared it with previous index
 
-end while loop, which this is the process of shifting positions
+end while loop, which this is the process of shifting correct positions
 
+outer loop, we set the c
