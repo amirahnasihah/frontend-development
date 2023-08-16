@@ -1,5 +1,7 @@
 /*
+while loop (sorted number)
 
+array length: 9
 */
 
 const arr = [1, 2, 4, 6, 7, 9, 10, 11, 13];
