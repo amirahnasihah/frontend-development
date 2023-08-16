@@ -263,20 +263,21 @@ for (let i = 0; i < arr.length; i++) {
 ```
 
 In this case, `i` represents the index of the main array, and `j` represents the
-index of the subarray. The inner loop(j) iterates through each element of the
+index of the subarray. The inner loop (`j`) iterates through each element of the
 subarray for every element in the main array.
 
 Inside the inner loop, you can perform comparisons or other operations involving the elements at indices `i` and `j`.
 
+## 2D array
+
 For example, if you have an array of arrays (a 2D array) and you want to compare elements within the subarrays, you could use this structure:
 
-```javascript
-const array2D = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
+This nested loop structure allows you to access and work with individual
+elements within the subarrays of a 2D array.
 
+The code you've provided is a nested loop structure that iterates through a 2D array (`array2D`) and allows you to perform operations on each element within the subarrays. Let's break down the loop structure and what it does:
+
+```javascript
 for (let i = 0; i < array2D.length; i++) {
   for (let j = 0; j < array2D[i].length; j++) {
     // Compare or perform operations on array2D[i][j]
@@ -284,5 +285,43 @@ for (let i = 0; i < array2D.length; i++) {
 }
 ```
 
-This nested loop structure allows you to access and work with individual
-elements within the subarrays of a 2D array.
+- The outer loop (`for (let i = 0; i < array2D.length; i++)`) iterates through the main array (`array2D`). `i` represents the index of the main array.
+
+- Inside the outer loop, the inner loop (`for (let j = 0; j < array2D[i].length; j++)`) iterates through the subarray at index `i` in the main array. `j` represents the index of the subarray.
+
+- Within the inner loop, you have the opportunity to work with each element of the 2D array using `array2D[i][j]`. You can compare, modify, or perform any operations you need on these elements.
+
+Expected Output:
+Since the code snippet you provided doesn't include any specific operations, the output will depend on what you actually do within the inner loop. Without those operations, the code itself won't produce any visible output.
+
+However, if you were to add some operations, let's say printing the elements, it might look something like this:
+
+```javascript
+const array2D = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+for (let i = 0; i < array2D.length; i++) {
+    for (let j = 0; j < array2D[i].length; j++) {
+        console.log(array2D[i][j]);
+    }
+}
+```
+
+Output:
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+In this example, each element in the 2D array is printed out as the inner loop
+iterates through the subarrays.
