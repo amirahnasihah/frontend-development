@@ -330,7 +330,7 @@ InsertionSort(array)
         j = i - 1
         
         while j >= 0 and current < array[j]
-            array[j + 1] = array[j] // creates space, the shifting part
+            array[j + 1] = array[j] // creates space, the shifting process part
             j = j - 1
         end while
         
@@ -347,4 +347,4 @@ Since we want to compare current element with previous element - Insertion Sort
 then, we set variable called current. this is for current element, arr[i]. so, current element now is value 9.
 next, we store for previous index in variable called j. We want to compare the second element with the element before the second, which means the previous element. so, to get previous index (current index minus 1, j = i - 1)
 
-second, inner loop using while loop. the loop continues as long as the condition: previous index is not negative index number, which means previous index is more or equal 0 index number and current element is less than previous element value (current < arr[j])
+second, inner loop using while loop. the loop continues as long as the condition: previous index is not negative index number, which means previous index is more or equal 0 index number and the current element is less than previous element value (current < array[j]), j++
