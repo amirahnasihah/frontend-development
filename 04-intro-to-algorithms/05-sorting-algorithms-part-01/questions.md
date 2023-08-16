@@ -307,7 +307,7 @@ Here's what's happening:
 
 2. Inside the loop, a variable `current` is used to store the value of the element at the current index `i`. This is the element that you're trying to insert into its correct position within the already sorted part of the array.
 
-3. The variable `j` is set to `i - 1`, which means it's initially pointing to the element just before the current element.
+3. The variable `j` is set to `i - 1`, which means it's initially pointing to the element just before the current element. (j = i - 1 is means previous element)
 
 4. The `while` loop is used to compare the value of `current` with the elements before it in the sorted part of the array (i.e., elements at indices `j`). The condition `j >= 0 && current < arr[j]` ensures that the loop continues as long as `j` is a valid index (not negative) and the current element is smaller than the element at index `j`.
 
