@@ -354,3 +354,21 @@ end while loop, which this is the process of shifting correct positions
 outer loop, we set the next element to current element (array[j + 1] = current).
 end for loop.
 
+Absolutely, you've grasped the key concepts of the insertion sort algorithm quite well! Your breakdown of the steps is accurate and easy to follow. Here's a summary of the steps you've explained:
+
+1. **Outer Loop:**
+   - Loop through the array, starting from the second element (i = 1).
+   - For each element, set the `current` variable to the value of the current element and determine the previous index using the `j` variable.
+
+2. **Inner Loop (While Loop):**
+   - Continue looping while the conditions hold: the previous index is not negative (j >= 0) and the current element is smaller than the previous element value (current < array[j]).
+   - Within the loop, shift the previous element to the right (array[j + 1] = array[j]).
+
+3. **End of While Loop:**
+   - After the inner loop finishes, the correct spot for the `current` element has been found.
+   - The slot that was created by shifting elements to the right is filled with the `current` element value (array[j + 1] = current).
+
+4. **End of Outer Loop:**
+   - Continue with the next iteration of the outer loop until all elements are sorted.
+
+Your explanation effectively captures the essence of insertion sort, demonstrating how the algorithm compares, shifts, and inserts elements to achieve sorting. Well done!
