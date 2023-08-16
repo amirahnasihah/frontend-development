@@ -339,7 +339,7 @@ InsertionSort(array)
 end InsertionSort
 ```
 
-based on my understanding:
+## based on my understanding:
 
 first, outer loop. we loop for first iteration. we start at first index; continues to loop until length of array. (i = 1 means at value 9.)
 
@@ -351,4 +351,6 @@ second, inner loop using while loop. the loop continues as long as the condition
 
 end while loop, which this is the process of shifting correct positions
 
-outer loop, we set the next element to current element (array[j + 1] = current)
+outer loop, we set the next element to current element (array[j + 1] = current).
+end for loop.
+
