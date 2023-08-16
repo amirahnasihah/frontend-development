@@ -294,6 +294,40 @@ const bubbleSort = (arr) => {
 
 ## Sorting Algorithm 2 - Insertion Sort
 
+To build a sorted array in place; shifting elements out of the way to make room if necessary as the array is being built.
+
+Pseudocode example #1:
+
+```
+Call the first element of the array sorted
+Repeat until all elements are sorted:
+    Insert next unsorted item into sorted part shifting the required number of items
+```
+
+Pseudocode example #2:
+
+```
+For i from 1 to n–1
+    Insert next unsorted item into sorted part shifting i items
+```
+
+JavaScript example:
+
+```javascript
+insertionSort = arr => { 
+    for (let i = 1; i < arr.length; i++) { 
+        let key = arr[i]; 
+        let j = i-1; 
+        while (j >= 0 && arr[j] > key) { 
+            arr[j+1] = arr[j]; 
+            j = j-1; 
+        } 
+        arr[j+1] = key; 
+    } 
+    return arr;
+}
+```
+
 ### Insertion Sort
 
 - The idea of insertion sort is to insert the elements to the right position one by one, from the left to right (dari kiri ke kanan)
