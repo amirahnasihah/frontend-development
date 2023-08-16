@@ -256,13 +256,15 @@ The code snippet you provided:
 
 ```javascript
 for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
-        // Your code here
-    }
+  for (let j = 0; j < arr.length; j++) {
+    // Your code here
+  }
 }
 ```
 
-In this case, `i` represents the index of the main array, and `j` represents the index of the subarray. The inner loop iterates through each element of the subarray for every element in the main array.
+In this case, `i` represents the index of the main array, and `j` represents the
+index of the subarray. The inner loop(j) iterates through each element of the
+subarray for every element in the main array.
 
 Inside the inner loop, you can perform comparisons or other operations involving the elements at indices `i` and `j`.
 
@@ -270,15 +272,15 @@ For example, if you have an array of arrays (a 2D array) and you want to compare
 
 ```javascript
 const array2D = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
 ];
 
 for (let i = 0; i < array2D.length; i++) {
-    for (let j = 0; j < array2D[i].length; j++) {
-        // Compare or perform operations on array2D[i][j]
-    }
+  for (let j = 0; j < array2D[i].length; j++) {
+    // Compare or perform operations on array2D[i][j]
+  }
 }
 ```
 
