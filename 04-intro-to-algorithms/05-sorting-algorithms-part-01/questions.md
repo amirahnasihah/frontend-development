@@ -330,7 +330,7 @@ InsertionSort(array)
         j = i - 1
         
         while j >= 0 and current < array[j]
-            array[j + 1] = array[j] // creates space
+            array[j + 1] = array[j] // creates space, the shifting part
             j = j - 1
         end while
         
@@ -338,3 +338,5 @@ InsertionSort(array)
     end for
 end InsertionSort
 ```
+
+based on my understanding
