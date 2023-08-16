@@ -27,7 +27,9 @@ If you want to sort strings in **descending order**, you can provide a custom so
 
 ```javascript
 const unsortedStrings = ["banana", "apple", "grape", "pear"];
-const sortedStringsDescending = unsortedStrings.sort((a, b) => b.localeCompare(a));
+const sortedStringsDescending = unsortedStrings.sort((a, b) =>
+  b.localeCompare(a)
+);
 
 console.log(sortedStringsDescending); // Output: ["pear", "grape", "banana", "apple"]
 ```
@@ -60,7 +62,9 @@ In the context of the code you provided:
 
 ```javascript
 const unsortedStrings = ["banana", "apple", "grape", "pear"];
-const sortedStringsDescending = unsortedStrings.sort((a, b) => b.localeCompare(a));
+const sortedStringsDescending = unsortedStrings.sort((a, b) =>
+  b.localeCompare(a)
+);
 
 console.log(sortedStringsDescending); // Output: ["pear", "grape", "banana", "apple"]
 ```
@@ -91,7 +95,15 @@ console.log(sortedNumbers); // Output: [1, 2, 5, 8, 10]
 
 In this example, the comparison function `a - b` returns a negative value when `a` is smaller than `b`, causing the numbers to be sorted in ascending order.
 
-For descending order sorting, you can reverse the comparison:
+Yes, you have the right understanding!
+
+In the comparison function `(a, b) => a - b`, when `a` is subtracted from `b`, the result determines whether `a` should come before `b` in the sorted order. If the result is positive, it means that `a` is greater than `b`, and swapping them ensures that the array is sorted in ascending order. If the result is negative, it means that `a` is smaller than `b`, and no swap is needed.
+
+So, your interpretation is correct: the comparison result dictates whether `a`
+and `b` should swap positions to achieve the desired sorting order. In the end,
+the array becomes sorted in ascending numerical order.
+
+For **descending order sorting**, you can reverse the comparison:
 
 ```javascript
 const unsortedNumbers = [5, 2, 8, 1, 10];
@@ -117,16 +129,16 @@ console.log(unsortedNumbers); // Original array remains unchanged
 ```javascript
 const numbers = [3, 1, 8, 2, 5];
 numbers.sort((a, b) => a - b);
-console.log(numbers);  // Output: [1, 2, 3, 5, 8]
+console.log(numbers); // Output: [1, 2, 3, 5, 8]
 ```
 
 For more complex sorting, you can customize the comparison function. If you need to sort objects based on a specific property, like sorting an array of objects by their ages:
 
 ```javascript
 const people = [
-  { name: 'Alice', age: 30 },
-  { name: 'Bob', age: 25 },
-  { name: 'Eve', age: 35 }
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Eve", age: 35 },
 ];
 
 people.sort((a, b) => a.age - b.age);
@@ -187,18 +199,18 @@ For i from 1 to n–1
 JavaScript example:
 
 ```javascript
-insertionSort = arr => { 
-    for (let i = 1; i < arr.length; i++) { 
-        let key = arr[i]; 
-        let j = i-1; 
-        while (j >= 0 && arr[j] > key) { 
-            arr[j+1] = arr[j]; 
-            j = j-1; 
-        } 
-        arr[j+1] = key; 
-    } 
-    return arr;
-}
+insertionSort = (arr) => {
+  for (let i = 1; i < arr.length; i++) {
+    let key = arr[i];
+    let j = i - 1;
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
+      j = j - 1;
+    }
+    arr[j + 1] = key;
+  }
+  return arr;
+};
 ```
 
 ## Exercises explained
