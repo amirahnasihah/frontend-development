@@ -339,4 +339,6 @@ InsertionSort(array)
 end InsertionSort
 ```
 
-based on my understanding
+based on my understanding:
+
+first, outer loop. we loop for first iteration, start at first
