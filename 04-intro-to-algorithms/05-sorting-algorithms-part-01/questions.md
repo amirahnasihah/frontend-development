@@ -342,4 +342,4 @@ end InsertionSort
 based on my understanding:
 
 first, outer loop. we loop for first iteration. we start at first index; continues to loop until length of array.
-then, set variable cal
+then, set variable called current. this is for current element, arr[i]. example; 
