@@ -347,4 +347,4 @@ Since we want to compare current element with previous element - Insertion Sort
 then, we set variable called current. this is for current element, arr[i]. so, current element now is value 9.
 next, store for previous element in variable called j. We want to compare the second element with the element before the second, which means the previous element. so, to get previous element (current element minus 1, j = i - 1)
 
-second, inner loop using while loop. 
+second, inner loop using while loop. the loop continues as long as the condition: previous element is not negative nu
