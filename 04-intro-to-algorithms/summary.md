@@ -9,6 +9,14 @@
 7. Sort Algorithm - Merge Sort
 8. Sort Algorithm - Quick Sort
 
+Common Algorithm
+1. Recursion
+
 Searching Algorithm
-1. Linear Search
-2. 
+1. Linear Search (aka Brute Force)
+2. Binary Search
+
+Sorting Algorithm
+1. Bubble Sort
+2. Insertion Sort
+3. 
