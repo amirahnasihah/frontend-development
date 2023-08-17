@@ -16,6 +16,43 @@
 
 # Merge Sort
 
+## Study Note
+
+Here's a concise set of study notes to understand and memorize how the Merge Sort algorithm works:
+
+**Key Study Notes:**
+
+1. **Exit Condition:** The algorithm stops when there's only one element in a "half."
+2. **Merge Challenge:** The hardest part is merging. We assume both halves are sorted, so we only compare and arrange the smallest element.
+
+**Merge Sort:**
+Imagine you're using Merge Sort to sort the array: 6, 5, 12, 10, 9, 1.
+
+**Step 1: Divide**
+- Initially, split the array into two halves: 6, 5, 12 and 10, 9, 1.
+
+**Step 2: Divide Further**
+- Continue dividing: 6; 5, 12 and 10; 9; 1.
+
+**Step 3: Merge**
+- Begin merging the small arrays: 6; 5, 12 becomes 5, 6, 12.
+- Merge 10; 9; 1 into 1, 9, 10.
+
+**Step 4: Final Merging**
+- Compare and merge the two bigger sorted arrays: 5, 6, 12 and 1, 9, 10 become 1, 5, 6, 9, 10, 12.
+
+**Step 5: Sorted Result**
+- The final merged array is now sorted: 1, 5, 6, 9, 10, 12.
+
+**Merge Sort Algorithm:**
+1. If there's only one element, it's already sorted. Return.
+2. If there are more than one element, break the list in half and call mergeSort() on each half.
+3. Merge the two smaller sorted lists into a new list in a sorted order.
+
+By following these steps and understanding that Merge Sort works by breaking
+down, sorting, and then merging arrays, you'll have an easier time remembering
+and applying the algorithm.
+
 ## Pseudocode - Recursive Approach
 
 Certainly! Understanding and memorizing algorithms can be challenging, but breaking them down into smaller steps and practicing can make it easier. Here's a simple approach to help you solidify your understanding of the merge sort algorithm using a recursive approach, along with a pseudocode-like description:
