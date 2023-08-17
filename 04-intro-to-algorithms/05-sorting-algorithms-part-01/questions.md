@@ -327,7 +327,7 @@ Pseudocode
 InsertionSort(array)
     for i = 1 to length(array) - 1
         current = array[i]
-        j = i - 1
+        j = i - 1 // previous_element
         
         while j >= 0 and current < array[j]
             array[j + 1] = array[j] // creates space, the shifting process part
