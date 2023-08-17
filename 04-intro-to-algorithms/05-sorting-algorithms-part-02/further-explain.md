@@ -168,3 +168,35 @@ loops and a stack instead of recursive function calls.
 # Quick Sort
 
 # Other
+
+## `slice()` and `splice()`
+
+The differences between `slice()` and `splice()` can be tricky at first, but with a bit of practice and some mnemonics, you'll be able to remember them easily.
+
+**`slice()` vs. `splice()`**
+
+**`slice()`**
+- **Purpose:** Creates a new array by extracting a portion of an existing array.
+- **Does Modify Original Array?:** No, the original array remains unchanged.
+- **Syntax:** `array.slice(startIndex, endIndex)`
+- **Example:** `const newArray = array.slice(1, 4);` (Extracts elements from index 1 to 3)
+
+**`splice()`**
+- **Purpose:** Modifies an array by adding, replacing, or removing elements from a specific index.
+- **Does Modify Original Array?:** Yes, it changes the original array.
+- **Syntax:** `array.splice(startIndex, deleteCount, ...itemsToAdd)`
+- **Example:** `array.splice(1, 2);` (Removes 2 elements starting from index 1)
+
+**Tips to Remember:**
+
+1. **Slice and Keep (No Change):** To remember `slice()`, think of slicing a pizza. When you slice a pizza, you create new portions, but the original pizza remains unchanged. Similarly, `slice()` creates new portions of an array without altering the original.
+
+2. **Splice and Change:** For `splice()`, the word itself sounds a bit like "slice," but it's more than just slicing. When you `splice` something, like in surgery, you're making a change to it. Similarly, `splice()` makes changes to the original array by adding, removing, or replacing elements.
+
+3. **Focus on the First Letter:** The first letters of "slice" and "splice" can help you remember: "s" stands for "same" (as in `slice` creates a new array that's the same as a portion of the original) and "sp" stands for "splice" and "swap" (as in `splice` swaps elements around in the array).
+
+4. **Draw Analogies:** Visualize the actions. Imagine you're cutting a cake (pizza) into slices for `slice()`, and you're performing surgery or altering something for `splice()`.
+
+5. **Practice:** Use both methods in coding exercises. The more you practice, the easier it will become to remember which one to use in different scenarios.
+
+Remember that it's okay if it takes a bit of time to differentiate them initially. As you use them more often in coding, you'll naturally develop a better understanding and memory of when to use each method.
