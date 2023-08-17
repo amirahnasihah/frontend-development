@@ -19,4 +19,5 @@ Searching Algorithm
 Sorting Algorithm
 1. Bubble Sort
 2. Insertion Sort
-3. 
+3. Merge Sort
+4. Quick Sort
