@@ -215,6 +215,7 @@ We first compare the element for each list and then combine them into another li
 
 |5|12|
 |:-:|:-:|
+
 ----
 
 |10|
@@ -279,7 +280,7 @@ function mergeSort(inputList) {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 1. If the input list is of size 1, then no need sort, just return it.
 
@@ -330,7 +331,7 @@ function merge(leftList, rightList) {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 1. If both left and right list still have at least 1 element.
 
@@ -532,7 +533,7 @@ const partition = (arr, minIndex, maxIndex) => {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 1. The range that we are going to do partition, i.e. defining the “sub array” using min and max index.
 
@@ -591,7 +592,7 @@ const quickSort = (arr, minIndex, maxIndex) => {
 }
 ```
 
-**EXPLAINATION**
+**EXPLANATION**
 
 1. For the range, we will do the partition
 - First cycle, range would be from 0 to end
