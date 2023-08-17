@@ -27,8 +27,21 @@ Sorting Algorithm
 
 - definition
 - psedeucode
-- how 
+- how it works
+- example code
 
 ## Brute Force
 
 ## Recursion
+
+# Searching Algorithm
+
+## Linear Search
+
+## Binary Search
+
+# Sorting Algorithm
+
+## Bubble Sort
+
+## Insertion Sort
