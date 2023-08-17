@@ -10,7 +10,8 @@
 8. Sort Algorithm - Quick Sort
 
 Common Algorithm
-1. Recursion
+1. Brute Force
+2. Recursion
 
 Searching Algorithm
 1. Linear Search (aka Brute Force)
@@ -21,3 +22,11 @@ Sorting Algorithm
 2. Insertion Sort
 3. Merge Sort
 4. Quick Sort
+
+# Common Algorithm
+
+- 
+
+## Brute Force
+
+## Recursion
