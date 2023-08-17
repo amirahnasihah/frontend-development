@@ -145,4 +145,34 @@ This function, called `mergeSort`, sorts a given list called `inputList` using t
 
 That's how the code works step by step to perform the merge sort algorithm!
 
+## JavaScript Prototype
+
+### `slice()`
+
+In the context of JavaScript and arrays, the `slice()` method is used to create a new array that contains elements from a specific starting index up to (but not including) a specified ending index. It allows you to extract a portion of an array without modifying the original array. Here's how you can use it:
+
+**Syntax:**
+```javascript
+array.slice(startIndex, endIndex);
+```
+
+- `array`: The array from which you want to extract a portion.
+- `startIndex`: The index at which to start extracting elements (inclusive).
+- `endIndex`: The index at which to stop extracting elements (exclusive).
+
+**Usage Example:**
+```javascript
+const originalArray = [1, 2, 3, 4, 5];
+const slicedArray = originalArray.slice(1, 4);
+
+console.log(slicedArray); // Output: [2, 3, 4]
+console.log(originalArray); // Original array is unchanged: [1, 2, 3, 4, 5]
+```
+
+In the context of the merge sort algorithm, you might use the `slice()` method to divide an array into two halves before applying the merge sort recursively. For example, in the code snippet you provided, the `inputList.splice(0, half)` line is used to extract the left half of the array, and the `mergeSort(inputList)` line is used to sort the right half.
+
+Remember that `slice()` does not modify the original array but creates a new
+array. If you're dealing with large arrays, keep in mind that creating new
+arrays using `slice()` can consume memory.
+
 # Quick Sort Problems in JS
