@@ -175,6 +175,7 @@ We further divide these arrays and we achieve atomic value which can no more be 
 
 |12|
 |:-:|
+
 ----
 
 |10|
