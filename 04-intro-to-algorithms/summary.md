@@ -1,3 +1,14 @@
+- [Common Algorithm CheatSheet](#common-algorithm-cheatsheet)
+- [Common Algorithm](#common-algorithm)
+  - [Brute Force](#brute-force)
+  - [Recursion](#recursion)
+- [Searching Algorithm](#searching-algorithm)
+  - [Linear Search](#linear-search)
+  - [Binary Search](#binary-search)
+- [Sorting Algorithm](#sorting-algorithm)
+  - [Bubble Sort](#bubble-sort)
+  - [Insertion Sort](#insertion-sort)
+
 # Common Algorithm CheatSheet
 
 1. Brute Force aka Linear Search

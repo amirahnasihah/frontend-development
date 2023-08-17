@@ -1,3 +1,17 @@
+- [Sorting Problems](#sorting-problems)
+  - [`numbers.sort((a, b) => a - b);` - Sorting Numbers](#numberssorta-b--a---b---sorting-numbers)
+    - [`((a, b) => ...)`](#a-b--)
+- [Bubble Sort Problems in JS](#bubble-sort-problems-in-js)
+  - [Basic implementation](#basic-implementation)
+  - [Using bubble sort to sort this array in increasing order](#using-bubble-sort-to-sort-this-array-in-increasing-order)
+  - [Bubble Sort Algorithm (`j < arr.length - i - 1;`)](#bubble-sort-algorithm-j--arrlength---i---1)
+  - [Part 2 Inner Loop](#part-2-inner-loop)
+  - [minus 1 in loop vs last index (-1)](#minus-1-in-loop-vs-last-index--1)
+  - [`-1` cases](#-1-cases)
+- [Insertion Sort Problems in JS](#insertion-sort-problems-in-js)
+  - [why a while loop is used inside a for loop for the insertion sort algorithm](#why-a-while-loop-is-used-inside-a-for-loop-for-the-insertion-sort-algorithm)
+  - [based on my understanding:](#based-on-my-understanding)
+
 # Sorting Problems
 
 ## `numbers.sort((a, b) => a - b);` - Sorting Numbers

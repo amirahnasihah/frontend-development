@@ -1,10 +1,15 @@
 - [Sorting Algorithm](#sorting-algorithm)
+  - [Sorting String](#sorting-string)
+  - [Sorting Numbers](#sorting-numbers)
 - [Bubble Sort](#bubble-sort)
 - [Insertion Sort](#insertion-sort)
-  - [Exercises explained](#exercises-explained)
-    - [bubble-sort.js](#bubble-sortjs)
-    - [insertion-sort.js](#insertion-sortjs)
+  - [why a while loop is used inside a for loop for the insertion sort algorithm](#why-a-while-loop-is-used-inside-a-for-loop-for-the-insertion-sort-algorithm)
+- [Exercises explained](#exercises-explained)
+  - [bubble-sort.js](#bubble-sortjs)
+  - [insertion-sort.js](#insertion-sortjs)
 - [Other](#other)
+  - [Having 2 for loops (compare elements within same subarray)](#having-2-for-loops-compare-elements-within-same-subarray)
+  - [2D array](#2d-array)
 
 # Sorting Algorithm
 

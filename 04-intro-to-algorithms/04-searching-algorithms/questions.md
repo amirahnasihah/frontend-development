@@ -1,3 +1,9 @@
+- [Linear Search Problems in JS](#linear-search-problems-in-js)
+- [Binary Search Problems in JS](#binary-search-problems-in-js)
+  - [How to find an element in a sorted array? (sorted)](#how-to-find-an-element-in-a-sorted-array-sorted)
+    - [`start = middle + 1;`](#start--middle--1)
+  - [How to find an element in a sorted array? (strings)](#how-to-find-an-element-in-a-sorted-array-strings)
+
 # Linear Search Problems in JS
 
 # Binary Search Problems in JS

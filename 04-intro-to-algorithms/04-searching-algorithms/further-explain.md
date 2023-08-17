@@ -1,10 +1,20 @@
 - [Searching Algorithm](#searching-algorithm)
 - [Binary Search](#binary-search)
+    - [Visualise BS (malay)](#visualise-bs-malay)
 - [Linear Search](#linear-search)
   - [Exercises explained](#exercises-explained)
     - [binary-search.js](#binary-searchjs)
     - [linear-search.js](#linear-searchjs)
 - [Other](#other)
+  - [if statement](#if-statement)
+    - [else if statement](#else-if-statement)
+  - [switch statement](#switch-statement)
+  - [while loop](#while-loop)
+      - [while loop example](#while-loop-example)
+    - [Pseudocode while loop](#pseudocode-while-loop)
+    - [while loop vs for loop](#while-loop-vs-for-loop)
+  - [for loop](#for-loop)
+    - [for loop pseudocode](#for-loop-pseudocode)
 
 # Searching Algorithm
 
