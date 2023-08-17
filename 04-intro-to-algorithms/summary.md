@@ -25,7 +25,9 @@ Sorting Algorithm
 
 # Common Algorithm
 
-- 
+- definition
+- psedeucode
+- how 
 
 ## Brute Force
 
