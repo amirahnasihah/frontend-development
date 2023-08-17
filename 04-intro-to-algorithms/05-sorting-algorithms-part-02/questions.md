@@ -147,6 +147,41 @@ That's how the code works step by step to perform the merge sort algorithm!
 
 ## JavaScript Prototype
 
+### `splice()`
+
+The `splice()` method in JavaScript is used to change the contents of an array by removing, replacing, or adding elements at a specific index. It's a versatile method that can be quite helpful in various scenarios. Let's break down how it works:
+
+**Syntax:**
+```javascript
+array.splice(startIndex, deleteCount, ...itemsToAdd);
+```
+
+- `array`: The array you want to modify.
+- `startIndex`: The index at which to start the modification.
+- `deleteCount`: The number of elements to remove starting from the `startIndex`. If `0`, no elements are removed.
+- `itemsToAdd`: Elements you want to add at the `startIndex`.
+
+**Usage Examples:**
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+// Removing elements using splice()
+numbers.splice(1, 2); // Removes 2 and 3
+// numbers is now [1, 4, 5]
+
+// Replacing elements using splice()
+numbers.splice(1, 1, 6, 7); // Replaces 4 with 6 and 7
+// numbers is now [1, 6, 7, 5]
+
+// Adding elements using splice()
+numbers.splice(2, 0, 8, 9); // Adds 8 and 9 at index 2
+// numbers is now [1, 6, 8, 9, 7, 5]
+```
+
+In the context of merge sort, you might use the `splice()` method to split an array into two halves by removing elements from a specific index. For example, in the code snippet you provided earlier, the `inputList.splice(0, half)` line divides the `inputList` into the `left` array.
+
+Remember that `splice()` modifies the original array and returns an array of the removed elements. If you only want to access a portion of the array without modifying it, you can use the `slice()` method instead.
+
 ### `slice()`
 
 In the context of JavaScript and arrays, the `slice()` method is used to create a new array that contains elements from a specific starting index up to (but not including) a specified ending index. It allows you to extract a portion of an array without modifying the original array. Here's how you can use it:
