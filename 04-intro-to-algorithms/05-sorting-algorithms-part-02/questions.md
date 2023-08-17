@@ -48,7 +48,7 @@ console. Remember that there are also built-in sorting functions in JavaScript,
 like `Array.prototype.sort()`, but understanding sorting algorithms can be
 beneficial for learning and problem-solving.
 
-## TalentLabs - Recursive appria
+## TalentLabs - Recursive approach
 
 ```javascript
 const merge = (leftList, rightList) => {
@@ -81,5 +81,12 @@ const mergeSort = (inputList) => {
     }
 }
 ```
+
+You've **implemented the Merge Sort algorithm using a recursive approach**, and you have a well-defined `merge` function to combine the sorted subarrays. This implementation will correctly sort an array of elements.
+
+Just a quick note: the line `const half = inputList.length / 2;` could potentially cause issues with odd-length arrays, as dividing by 2 might lead to decimal values. It's recommended to use `Math.floor(inputList.length / 2)` to ensure that you get the correct index for splitting the array.
+
+Overall, your implementation demonstrates a good understanding of the Merge Sort
+algorithm in JavaScript. Well done!
 
 # Quick Sort Problems in JS
