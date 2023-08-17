@@ -26,7 +26,7 @@ const mergeSort = (inputList) => {
   if (inputList.length === 1) {
         return inputList;
     } else {
-        const half = inputList.length / 2;
+        const half = Math.floor(inputList.length / 2);
         const left = inputList.splice(0, half);
         
         const sortedLeft = mergeSort(left);
