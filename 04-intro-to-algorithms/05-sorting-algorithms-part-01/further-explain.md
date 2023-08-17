@@ -177,7 +177,7 @@ people.sort((a, b) => a.age - b.age);
 console.log(people);
 ```
 
-Remember that `sort()` modifies the original array. If you want to keep the original array unchanged, consider making a copy before sorting:
+Remember that **`sort()` modifies the original array**. If you want to keep the original array unchanged, consider making a copy before sorting:
 
 ```javascript
 const originalArray = [3, 1, 8, 2, 5];
