@@ -69,11 +69,7 @@ JavaScript Prototype:
 
 4. **splice**: Picture a string of beads, and you want to remove a few beads from the middle. When you "splice", you're cutting out a section and then putting some new beads in their place. In the code, `inputList.splice(0, half)` takes out the first `half` items from `inputList`.
 
-5. Of course! `Math.floor()` is a function in JavaScript that helps you round down a decimal number to the nearest whole number. 
-
-Imagine you have a number like 3.7. If you use `Math.floor(3.7)`, it will round down to 3. It basically chops off the decimal part to give you the largest whole number that's less than or equal to the original number.
-
-In the code you provided, `Math.floor(inputList.length / 2)` is used to find the index that divides the `inputList` array into two halves as evenly as possible. It helps with the process of splitting the array into smaller parts for the merge sort algorithm.
+5. **Math.floor**: A function in JavaScript that helps you round down a decimal number to the nearest whole number. Imagine you have a number like 3.7. If you use `Math.floor(3.7)`, it will round down to 3. It basically chops off the decimal part to give you the largest whole number that's less than or equal to the original number. In the code you provided, `Math.floor(inputList.length / 2)` is used to find the index that divides the `inputList` array into two halves as evenly as possible. It helps with the process of splitting the array into smaller parts for the merge sort algorithm.
 
 So, in this code, these are like the building blocks that help in sorting and merging arrays. You use `push` and `shift` to move items around, `concat` to combine arrays, and `splice` to take out a portion of an array.
 
