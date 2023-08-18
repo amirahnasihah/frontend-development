@@ -25,7 +25,9 @@ function mergeSort(inputList) {
 		const midpoint = Math.floor(inputList / 2)
 		const kiri = splice(0, midpoint) // inputList array yg bahagian kiri amik setakat midpoint
 		
-		// recursive 
+		// recursion part
+		const sortedLeft = 
+		const sortedRight = 
 	}
 }
 
