@@ -58,6 +58,7 @@ JavaScript Prototype:
 3. concat
 4. splice
 
+---
 
 1. **push**: Imagine you have a bunch of objects arranged in a line. When you "push" something, you're adding a new object to the end of that line. In the code, `arr.push(leftList.shift())` adds the first item from `leftList` to the end of `arr`.
 
