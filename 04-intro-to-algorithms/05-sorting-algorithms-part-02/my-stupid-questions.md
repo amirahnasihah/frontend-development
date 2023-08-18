@@ -8,7 +8,7 @@ since i am using recursive approach, it means the function needs to be called di
 
 i am using strings of array
 
-const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];
+`const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];``
 
 so, what i am going to do, i am gonna focus on divide and sort part first.
 
