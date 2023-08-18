@@ -17,7 +17,13 @@ Recursive - divide and keep divide
 
 function mergeSort(inputList) {
 	// exit condition
-	if (inputList.length === 1)
+	if (inputList.length === 1) {
+		return inputList
+	}
+	// inputList length is more than 1
+	else {
+		
+	}
 }
 
 const part1 = mergeSort([8, 3, 2, 4, 9, 0, 1])
