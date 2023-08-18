@@ -10,3 +10,11 @@ const spliced = fruits.splice(0, half)
 console.log("half:", half) // output: 3
 console.log("splice:", spliced) // output: cherry, strawberry, apple
 console.log("fruits:", fruits) // output: [ 'banana', 'orange', 'pear', 'grape' ]
+
+/*
+Recursive _
+*/
+
+function mergeSort(inputList) {
+	
+}
