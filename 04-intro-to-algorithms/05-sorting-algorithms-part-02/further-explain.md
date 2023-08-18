@@ -16,6 +16,59 @@
 
 # Merge Sort
 
+## JavaScript Prototypes in Merge Sort Recursive Approach
+
+```javascript
+const merge = (leftList, rightList) => {
+  let arr = [];
+
+    while (leftList.length > 0 && rightList.length > 0) {
+        if (leftList[0] < rightList[0]) {
+            arr.push(leftList.shift());
+        }
+        else {
+            arr.push(rightList.shift());
+        }
+    }
+
+    return arr.concat(leftList).concat(rightList);
+}
+
+const mergeSort = (inputList) => {
+  // Add your code here
+  if (inputList.length === 1) {
+        return inputList;
+    } else {
+        const half = Math.floor(inputList.length / 2);
+        const left = inputList.splice(0, half);
+        
+        const sortedLeft = mergeSort(left);
+        const sortedRight = mergeSort(inputList);
+
+        return merge(sortedLeft, sortedRight);
+    }
+}
+```
+
+explain to beginner,  in simple plain english for beginner easy to understand and memeorize about the javascript prototypes use in above  code
+
+JavaScript Prototype:
+1. push
+2. shift
+3. concat
+4. splice
+
+
+1. **push**: Imagine you have a bunch of objects arranged in a line. When you "push" something, you're adding a new object to the end of that line. In the code, `arr.push(leftList.shift())` adds the first item from `leftList` to the end of `arr`.
+
+2. **shift**: Think of a line of people, and the first person goes away. When you "shift" something, you're removing the first object from a group. In the code, `leftList.shift()` takes out the first item from `leftList`.
+
+3. **concat**: Imagine you have two separate stacks of cards, and you want to combine them into one stack. When you "concatenate", you're putting the cards from one stack on top of the other to make a bigger stack. In the code, `arr.concat(leftList)` and `arr.concat(rightList)` combine the arrays `leftList` and `rightList` into the `arr` array.
+
+4. **splice**: Picture a string of beads, and you want to remove a few beads from the middle. When you "splice", you're cutting out a section and then putting some new beads in their place. In the code, `inputList.splice(0, half)` takes out the first `half` items from `inputList`.
+
+So, in this code, these are like the building blocks that help in sorting and merging arrays. You use `push` and `shift` to move items around, `concat` to combine arrays, and `splice` to take out a portion of an array.
+
 ## Study Note
 
 Here's a concise set of study notes to understand and memorize how the Merge Sort algorithm works:
