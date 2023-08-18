@@ -73,6 +73,71 @@ JavaScript Prototype:
 
 So, in this code, these are like the building blocks that help in sorting and merging arrays. You use `push` and `shift` to move items around, `concat` to combine arrays, and `splice` to take out a portion of an array.
 
+---
+
+Here's a breakdown with examples and study tips:
+
+1. **push()**:
+   - **Explanation**: The `push()` method is used to add one or more elements to the end of an array.
+   - **Example**:
+     ```javascript
+     let fruits = ['apple', 'banana'];
+     fruits.push('orange', 'grape');
+     console.log(fruits); // Output: ['apple', 'banana', 'orange', 'grape']
+     ```
+   - **Study Tip**: Remember "push" is like adding something at the end, just like pushing things into a container.
+
+2. **shift()**:
+   - **Explanation**: The `shift()` method removes the first element from an array.
+   - **Example**:
+     ```javascript
+     let fruits = ['apple', 'banana', 'orange'];
+     let removedFruit = fruits.shift();
+     console.log(removedFruit); // Output: 'apple'
+     console.log(fruits); // Output: ['banana', 'orange']
+     ```
+   - **Study Tip**: Think of "shift" as taking out the first item, shifting the rest up.
+
+3. **concat()**:
+   - **Explanation**: The `concat()` method combines arrays to create a new one.
+   - **Example**:
+     ```javascript
+     let fruits = ['apple', 'banana'];
+     let moreFruits = ['orange', 'grape'];
+     let allFruits = fruits.concat(moreFruits);
+     console.log(allFruits); // Output: ['apple', 'banana', 'orange', 'grape']
+     ```
+   - **Study Tip**: "Concatenate" means linking together, just like joining arrays together.
+
+4. **splice()**:
+   - **Explanation**: The `splice()` method adds/removes elements at a specific index in an array.
+   - **Example**:
+     ```javascript
+     let fruits = ['apple', 'banana', 'orange'];
+     fruits.splice(1, 1, 'grape', 'kiwi');
+     console.log(fruits); // Output: ['apple', 'grape', 'kiwi', 'orange']
+     ```
+   - **Study Tip**: Think of "splice" as slicing an array to insert or remove elements.
+
+5. **Math.floor()**:
+   - **Explanation**: `Math.floor()` rounds down a number to the nearest integer.
+   - **Example**:
+     ```javascript
+     let number = 7.89;
+     let roundedDown = Math.floor(number);
+     console.log(roundedDown); // Output: 7
+     ```
+   - **Study Tip**: Imagine "floor" as the lowest level, so it rounds down.
+
+**Study Tips**:
+- Create simple, memorable examples like the ones above.
+- Practice coding these methods to reinforce your understanding.
+- Draw analogies or mnemonic devices to connect concepts.
+- Experiment in your browser's console to see results in real-time.
+- Break down the names of methods to relate to their functionality.
+
+Remember, practice and repetition will help you internalize these concepts and make them easier to understand and recall.
+
 ## Study Note
 
 Here's a concise set of study notes to understand and memorize how the Merge Sort algorithm works:
