@@ -1,6 +1,6 @@
 # Merge Sort
 
-## Part 1. Divide and Sort
+## Part 1. Divide and Continue to Divide
 
 okay, based on my understanding, i want try to have better understand about javascript merge sort with recursion approach.
 
@@ -106,3 +106,5 @@ For instance, imagine you have an array `[5]`. Since there's only one element, y
 So, when the `mergeSort` function reaches an array with only one element, it returns that array as it's already sorted (base case). It's important to note that this is a termination point for the recursion. As you correctly noted, an array with one element is not really unsorted, but it's so small that further sorting isn't necessary.
 
 The real sorting magic happens when these sorted pieces are merged back together. By combining smaller sorted arrays, the larger merged arrays become progressively more ordered. This is why, even though the individual pieces might not be sorted to begin with (when they're just one element), the merging process ensures that the entire array becomes sorted.
+
+## Part 2. Sort and Merge
