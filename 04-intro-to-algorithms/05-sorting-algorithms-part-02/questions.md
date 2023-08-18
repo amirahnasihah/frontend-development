@@ -86,7 +86,25 @@ You've **implemented the Merge Sort algorithm using a recursive approach**, and 
 
 Just a quick note: the line `const half = inputList.length / 2;` could potentially cause issues with odd-length arrays, as dividing by 2 might lead to decimal values. It's recommended to use `Math.floor(inputList.length / 2)` to ensure that you get the correct index for splitting the array.
 
-## Explanation Recursive Approach
+### Order of Execution
+
+The `mergeSort` function will execute first, and then the `merge` function will execute. Let's walk through the order of execution:
+
+1. **mergeSort Function Execution:**
+   - When you call `mergeSort(inputList)`, it starts the sorting process.
+   - The `mergeSort` function divides the input list into smaller sublists using recursive calls.
+   - It keeps dividing the list until it reaches base cases where the list length is 1.
+   - Then, it starts merging the sorted sublists back together using the `merge` function.
+
+2. **merge Function Execution:**
+   - The `merge` function is called when `mergeSort` starts merging sublists.
+   - It takes two sorted sublists (`leftList` and `rightList`) as input and merges them together in order.
+   - The comparison and merging process happens within the `while` loop of the `merge` function.
+   - Elements are taken from the `leftList` and `rightList` arrays and placed in the `arr` array in a sorted manner.
+
+So, you're correct that the `mergeSort` function is responsible for breaking down the array and initiating the sorting process, and the `merge` function is responsible for merging the smaller sorted parts back together into a fully sorted array. This is the essence of the Merge Sort algorithm's divide-and-conquer approach.
+
+### Explanation Recursive Approach
 
 JavaScript Prototype:
 1. push()
