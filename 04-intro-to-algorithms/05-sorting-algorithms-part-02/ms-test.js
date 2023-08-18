@@ -22,7 +22,8 @@ function mergeSort(inputList) {
 	}
 	// inputList length is more than 1, continue to divide into half
 	else {
-		const midpoint = Math.floor(inputList )
+		const midpoint = Math.floor(inputList / 2)
+		const kiri = splice(0, midpoint) 
 	}
 }
 
