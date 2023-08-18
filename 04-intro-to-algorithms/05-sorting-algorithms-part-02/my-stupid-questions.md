@@ -92,3 +92,17 @@ So, the sequence of operations roughly looks like this:
 3. As the recursion unwinds, these sorted pieces will be merged together using the `merge` function.
 
 This recursive approach might feel a bit complex at first, but it's a powerful technique for solving problems that can be broken down into smaller subproblems. It's like solving a puzzle by breaking it into smaller, manageable pieces, solving each piece, and then putting everything back together to get the final solution.
+
+---
+
+> Okay so based on my understanding, this lines const sortedLeft = mergeSort(firstHalf); and const sortedRight = mergeSort(inputList); means it keeps on dividing the half arrays until it has 1 element and it is not sorted yet? What does it means that it is considered "sorted" in itself? Is it because since they divided into just 1 element left, it already sorted? Well infact that actually they are not?
+
+The lines `const sortedLeft = mergeSort(firstHalf);` and `const sortedRight = mergeSort(inputList);` are indeed part of the recursive process that continues to divide the array into smaller halves until each piece contains only one element. Let's clarify the concept of being "sorted" in itself:
+
+When we say an array with just one element is "sorted" in itself, we mean that it's so small that there's no need for further sorting. Think of it as the simplest case of sorting. If you have only one item, it's technically already in the correct position since there's nothing to compare it to.
+
+For instance, imagine you have an array `[5]`. Since there's only one element, you can say it's "sorted" because it doesn't need any rearranging.
+
+So, when the `mergeSort` function reaches an array with only one element, it returns that array as it's already sorted (base case). It's important to note that this is a termination point for the recursion. As you correctly noted, an array with one element is not really unsorted, but it's so small that further sorting isn't necessary.
+
+The real sorting magic happens when these sorted pieces are merged back together. By combining smaller sorted arrays, the larger merged arrays become progressively more ordered. This is why, even though the individual pieces might not be sorted to begin with (when they're just one element), the merging process ensures that the entire array becomes sorted.
