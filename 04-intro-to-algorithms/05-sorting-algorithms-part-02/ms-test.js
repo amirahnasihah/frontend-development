@@ -23,11 +23,11 @@ function mergeSort(inputList) {
 	// inputList length is more than 1, continue to divide into half
 	else {
 		const midpoint = Math.floor(inputList / 2)
-		const kiri = splice(0, midpoint) // inputList array yg bahagian kiri kita nak amik setakat midpoint je. untuk 
+		const kiri = splice(0, midpoint) // inputList array yg bahagian kiri kita nak amik setakat midpoint je. untuk bahagian kanan dah ada inputList yg dah dimodified
 		
 		// recursion part - nak terus divide sampai element array tinggal 1 supaya untuk exit
-		const sortedLeft = mergeSort()
-		const sortedRight = 
+		const sortedLeft = mergeSort(kiri)
+		const sortedRight = mergeSort(inputList)
 	}
 }
 
