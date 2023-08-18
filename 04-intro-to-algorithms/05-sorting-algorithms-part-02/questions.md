@@ -124,7 +124,7 @@ This part of the code defines a function named `merge` that takes two lists, `le
 
 **Line by line**
 
-Absolutely, I'd be happy to explain that part!
+> `arr.push(leftList.shift())`
 
 Imagine you have two stacks of cards, a "left pile" and a "sorted pile," and you're comparing the top cards of these piles to sort them. The line `arr.push(leftList.shift())` is like taking the top card from the "left pile" and putting it onto the "sorted pile."
 
