@@ -12,9 +12,12 @@ console.log("splice:", spliced) // output: cherry, strawberry, apple
 console.log("fruits:", fruits) // output: [ 'banana', 'orange', 'pear', 'grape' ]
 
 /*
-Recursive _
+Recursive - divide and keep divide
 */
 
 function mergeSort(inputList) {
-	
+	if 
 }
+
+const part1 = mergeSort([8, 3, 2, 4, 9, 0, 1])
+console.log("")
