@@ -4,5 +4,5 @@ splice(startIndex, deleteCount, ...addTo) will create new array from fruits, and
 
 const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"]
 
-con
-let spliced = fruits.splice(0, )
+const half = Math.floor(fruits.length / 2)
+const spliced = fruits.splice(0, )ㅣㄹ
