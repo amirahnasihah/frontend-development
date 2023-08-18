@@ -89,10 +89,11 @@ Just a quick note: the line `const half = inputList.length / 2;` could potential
 ## Explanation Recursive Approach
 
 JavaScript Prototype:
-1. push
-2. shift
-3. concat
-4. splice
+1. push()
+2. shift()
+3. concat()
+4. splice()
+5. Mat.floor()
 
 ```javascript
 const merge = (leftList, rightList) => {
@@ -120,6 +121,22 @@ This part of the code defines a function named `merge` that takes two lists, `le
 6. This process continues until one of the input lists becomes empty.
 7. Once the loop is done, any remaining elements in `leftList` and `rightList` are concatenated to the end of the `arr` list.
 8. Finally, the `arr` list is returned, which now contains all elements from `leftList` and `rightList` merged and sorted.
+
+**Line by line**
+
+Absolutely, I'd be happy to explain that part!
+
+Imagine you have two stacks of cards, a "left pile" and a "sorted pile," and you're comparing the top cards of these piles to sort them. The line `arr.push(leftList.shift())` is like taking the top card from the "left pile" and putting it onto the "sorted pile."
+
+Here's a breakdown of what's happening step by step:
+
+1. `leftList` is an array containing cards (numbers) in the "left pile."
+2. `leftList.shift()` is like picking the top card from the "left pile."
+3. `arr.push(...)` is like putting the card you just picked onto the "sorted pile."
+
+This process happens as long as there are still cards left in both the "left pile" and the "right pile." You're continuously picking the smaller card from the top of the two piles and adding it to the "sorted pile."
+
+So, this line of code is a key step in the merging process of the Merge Sort algorithm. It's all about comparing elements, choosing the smaller one, and arranging them in order, just like how you'd sort a deck of cards by picking the smaller card to put it in the right place.
 
 Now, let's look at the `mergeSort` function:
 
