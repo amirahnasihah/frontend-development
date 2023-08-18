@@ -20,9 +20,9 @@ function mergeSort(inputList) {
 	if (inputList.length === 1) {
 		return inputList
 	}
-	// inputList length is more than 1
+	// inputList length is more than 1, continue to divide into half
 	else {
-		
+		const midpoint = Math.floor(inputList )
 	}
 }
 
