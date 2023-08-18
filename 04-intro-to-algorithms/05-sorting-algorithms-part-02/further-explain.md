@@ -322,3 +322,20 @@ The differences between `slice()` and `splice()` can be tricky at first, but wit
 5. **Practice:** Use both methods in coding exercises. The more you practice, the easier it will become to remember which one to use in different scenarios.
 
 Remember that it's okay if it takes a bit of time to differentiate them initially. As you use them more often in coding, you'll naturally develop a better understanding and memory of when to use each method.
+
+### `splice()`
+
+```javascript
+/*
+splice(startIndex, deleteCount, ...addTo) will create new array from fruits, and fruits array will be modified.
+*/
+
+const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"]
+
+const half = Math.floor(fruits.length / 2)
+const spliced = fruits.splice(0, half)
+
+console.log("half:", half) // output: 3
+console.log("splice:", spliced) // output: cherry, strawberry, apple
+console.log("fruits:", fruits) // output: [ 'banana', 'orange', 'pear', 'grape' ]
+```
