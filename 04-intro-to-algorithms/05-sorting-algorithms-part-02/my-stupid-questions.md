@@ -25,11 +25,14 @@ Then, why it already sorted when we dont use sort() method?
 
 I really dont understand this 
 
+```javascript
 const sortedLeft = mergeSort(left);
     const sortedRight = mergeSort(inputList);
+```
 
 this is the code for divide and sort part only
 
+```javascript
 const mergeSort = (inputList) => {
   if (inputList.length === 1) {
     return inputList;
@@ -44,3 +47,21 @@ const mergeSort = (inputList) => {
   }
 }
 ```
+
+---
+
+It's great that you're working to understand Merge Sort with a recursive approach! I'll address your questions step by step.
+
+1. **Left and Right Half:**
+   You're correct that when using `splice()` to create the `firstHalf` array, it modifies the original `inputList` array by removing elements from it. This is why you don't need to explicitly create a `secondHalf` array. After creating `firstHalf`, the `inputList` will automatically contain the remaining elements, which will act as the right half.
+
+2. **Sorting without `sort()`:**
+   The sorting is actually done during the merging step, not in the `mergeSort` function itself. The key concept here is that when you're merging two smaller sorted arrays (the `sortedLeft` and `sortedRight` arrays), the process of comparing elements and merging them back together ensures that the resulting merged array is sorted. 
+
+The merging step takes care of ensuring that the elements from the left and right halves are placed in the correct order, which is why you don't need to manually sort them again using the `sort()` method.
+
+Your code for the divide and sort part looks good. The `mergeSort` function divides the array into smaller halves, recursively sorts them, and then the `merge` function combines these sorted halves in the correct order.
+
+Remember, Merge Sort's magic comes from the merging step where the sorting is truly happening. It's a bit like assembling a puzzle: if you know that the pieces you're working with are already in the right order, you can focus on putting them together correctly, and the result will be a complete and correctly sorted puzzle.
+
+Your understanding seems to be on the right track, and working through the code like you're doing is a great way to solidify your grasp of the concept!
