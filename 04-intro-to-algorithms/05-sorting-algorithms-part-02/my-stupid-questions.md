@@ -108,3 +108,19 @@ So, when the `mergeSort` function reaches an array with only one element, it ret
 The real sorting magic happens when these sorted pieces are merged back together. By combining smaller sorted arrays, the larger merged arrays become progressively more ordered. This is why, even though the individual pieces might not be sorted to begin with (when they're just one element), the merging process ensures that the entire array becomes sorted.
 
 ## Part 2. Sort and Merge
+
+```javascript
+const merge = (leftList, rightList) => {
+  let arr = [];
+
+  while (leftList.length > 0 && rightList.length > 0) {
+    if (leftList[0] < rightList[0]) {
+      arr.push(leftList.shift());
+    } else {
+      arr.push(rightList.shift());
+    }
+  }
+
+  return arr.concat(leftList).concat(rightList);
+}
+```
