@@ -325,11 +325,9 @@ Remember that it's okay if it takes a bit of time to differentiate them initiall
 
 ### `splice()`
 
-```javascript
-/*
 splice(startIndex, deleteCount, ...addTo) will create new array from fruits, and fruits array will be modified.
-*/
 
+```javascript
 const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"]
 
 const half = Math.floor(fruits.length / 2)
