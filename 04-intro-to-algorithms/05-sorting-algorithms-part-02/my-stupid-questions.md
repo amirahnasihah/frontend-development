@@ -65,3 +65,30 @@ Your code for the divide and sort part looks good. The `mergeSort` function divi
 Remember, Merge Sort's magic comes from the merging step where the sorting is truly happening. It's a bit like assembling a puzzle: if you know that the pieces you're working with are already in the right order, you can focus on putting them together correctly, and the result will be a complete and correctly sorted puzzle.
 
 Your understanding seems to be on the right track, and working through the code like you're doing is a great way to solidify your grasp of the concept!
+
+---
+
+> **`const sortedLeft = mergeSort(firstHalf);` and `const sortedRight = mergeSort(inputList);`**
+
+
+Let's break down how the lines `const sortedLeft = mergeSort(firstHalf);` and `const sortedRight = mergeSort(inputList);` work in the context of your `mergeSort` function.
+
+1. **`const sortedLeft = mergeSort(firstHalf);`**
+   - In this line, you're recursively calling the `mergeSort` function on the `firstHalf` array.
+   - This step is essential because you're breaking down the `firstHalf` array into even smaller halves until they contain only one element each (base case).
+   - The recursion continues until each individual element is considered "sorted" in itself.
+   - As the recursion unwinds, you'll start merging these individual elements into pairs of sorted elements, then combine pairs into quadruples, and so on, until the entire `firstHalf` is sorted.
+
+2. **`const sortedRight = mergeSort(inputList);`**
+   - Similarly, you're recursively calling the `mergeSort` function on the `inputList` array.
+   - Just like with `firstHalf`, this will divide the remaining part of the array (`inputList`) into smaller halves, sort them, and then merge them back together.
+
+The key idea behind this recursive process is that the array is continually divided into smaller pieces until each piece contains only one element (or is already considered sorted). Then, as the recursion "unwinds," the individual sorted pieces are merged together to create larger sorted pieces. This process repeats until the entire array is sorted.
+
+So, the sequence of operations roughly looks like this:
+
+1. Call `mergeSort` on `firstHalf`, dividing it into smaller halves and sorting each piece along the way.
+2. Call `mergeSort` on `inputList`, dividing it into smaller halves and sorting each piece along the way.
+3. As the recursion unwinds, these sorted pieces will be merged together using the `merge` function.
+
+This recursive approach might feel a bit complex at first, but it's a powerful technique for solving problems that can be broken down into smaller subproblems. It's like solving a puzzle by breaking it into smaller, manageable pieces, solving each piece, and then putting everything back together to get the final solution.
