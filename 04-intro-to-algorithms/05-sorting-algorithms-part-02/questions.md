@@ -48,7 +48,7 @@ console. Remember that there are also built-in sorting functions in JavaScript,
 like `Array.prototype.sort()`, but understanding sorting algorithms can be
 beneficial for learning and problem-solving.
 
-## TalentLabs - Recursive approach
+## TalentLabs - Recursive Approach **
 
 ```javascript
 const merge = (leftList, rightList) => {
