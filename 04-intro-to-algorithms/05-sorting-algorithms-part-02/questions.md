@@ -88,6 +88,12 @@ Just a quick note: the line `const half = inputList.length / 2;` could potential
 
 ## Explanation Recursive Approach
 
+JavaScript Prototype:
+1. push
+2. shift
+3. concat
+4. splice
+
 ```javascript
 const merge = (leftList, rightList) => {
   let arr = [];
