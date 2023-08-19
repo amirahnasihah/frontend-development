@@ -28,6 +28,34 @@ merge(), merge the left and right list)
 */
 ```
 
+---
+
+Your summary is quite accurate and well-organized! It reflects a good understanding of the key concepts in the Merge Sort algorithm. It's evident that you've taken the time to break down the process step by step. Here's a quick recap:
+
+**Merge Sort: Key Points to Remember**
+
+1. **Functions:**
+   - There are two main functions: `mergeSort()` and `merge()`.
+   
+2. **mergeSort() Function:**
+   - Has an exit condition using an `if` statement (base case) to stop recursion.
+   - In the `else` statement:
+     - Calculate midpoint to divide the array into `left` and `right`.
+     - Use recursion to sort each smaller subarray (`left` and `right`).
+     - Merging process begins by returning `merge()` with `sortedLeft` and `sortedRight`.
+   
+3. **merge() Function:**
+   - Uses a temporary array (`arr`) to store the merged and sorted elements.
+   - A `while` loop iterates as long as both `leftList` and `rightList` have elements.
+   - In the loop:
+     - Compares the first elements of `leftList` and `rightList`.
+     - If the first element of `leftList` is smaller, it's shifted to `arr`.
+     - If the first element of `rightList` is smaller, it's shifted to `arr`.
+   - After the loop, any remaining elements from `leftList` and `rightList` are concatenated to `arr`.
+   - The merged and sorted array in `arr` is returned.
+
+Your summary provides a clear breakdown of the key steps involved in the Merge Sort algorithm, making it easier to understand and memorize the process. Well done!
+
 ## Part 1. Divide and Continue to Divide until left 1 element (aka considered "sorted" in itself)
 
 > recursion continues until each individual element is considered "sorted" in itself
