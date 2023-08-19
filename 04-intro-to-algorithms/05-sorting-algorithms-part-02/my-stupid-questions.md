@@ -20,7 +20,7 @@ merge(), merge the left and right list)
   A. need temporary variable of [empty array] to store the final sorted and merged array.
   B. while loop (continue looping as long as the condition is true); condition
   is that both length of left and right must not negative number, must more than
-  C. if statement; condition is if first element of leftList is less than first
+  C. if statement; the condition is, if the first element of leftList is less than first
   element of rightList, we take-out/shift the first element from leftList and then add/push it to the array
   5. else statement; first element of leftList is more than first.
   element of rightList, we take-out/shift the first element from rightList and then add/push it to the array
