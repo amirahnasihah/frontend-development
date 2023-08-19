@@ -160,6 +160,36 @@ Now, when you focus on the `merge` function, you'll see how the magic of
 combining sorted arrays works to achieve the final sorted result. Keep up the
 great work!
 
+### `inputList.length === 1`
+
+The condition `inputList.length === 1` will be true when the `inputList` array contains only one element. In the context of the Merge Sort algorithm, this condition serves as the base case for the recursive process.
+
+As the `mergeSort` function recursively divides the array into smaller halves, it eventually reaches the point where each subarray has only one element left. At this point, the condition `inputList.length === 1` becomes true because the length of that subarray is indeed 1.
+
+In other words, the base case is reached when the array has been divided into
+its smallest possible parts, which are already considered "sorted" because they
+contain only one element. This is the moment when the recursion starts to
+"unwind," and the merging process begins to combine these sorted pieces back
+together.
+
+---
+
+The `return inputList;` statement inside the `if` statement is there to handle the base case of the recursion. When the length of the `inputList` array is equal to 1, it means you've reached a point where the array is already sorted (since an array with only one element is inherently sorted). In this case, you simply return the `inputList` as it is.
+
+Here's how it works step by step:
+
+1. The `mergeSort` function is called with an array, let's say `["cherry"]`.
+
+2. The condition `inputList.length === 1` is true because the length of `["cherry"]` is indeed 1.
+
+3. Since the base case is met, the function returns the `inputList` array.
+
+4. This returned array becomes the `sortedLeft` or `sortedRight` value in the higher-level recursive call, and it will be used for merging purposes.
+
+In other words, when the `if` condition is true, the recursive process stops for
+that specific branch of the recursion, and the already sorted array is passed
+back up through the calls until it becomes part of the merging process.
+
 ## Part 2. Sort and Merge
 
 ```javascript
