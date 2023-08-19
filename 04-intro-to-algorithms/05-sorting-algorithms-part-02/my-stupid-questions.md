@@ -107,6 +107,31 @@ So, when the `mergeSort` function reaches an array with only one element, it ret
 
 The real sorting magic happens when these sorted pieces are merged back together. By combining smaller sorted arrays, the larger merged arrays become progressively more ordered. This is why, even though the individual pieces might not be sorted to begin with (when they're just one element), the merging process ensures that the entire array becomes sorted.
 
+### Does Recursion similar to Loop?
+
+Yes, recursion is similar to a loop in that it involves repeated execution of a certain set of instructions. However, there are important differences between recursion and loops:
+
+1. **Function Calls vs. Iteration:**
+   - In recursion, a function calls itself with modified parameters to solve a smaller version of the problem. Each recursive call creates a new instance of the function.
+   - In loops, the same block of code is executed repeatedly based on a loop condition, and the variables within the loop are updated during each iteration.
+
+2. **Base Case:**
+   - Recursion requires a base case, a condition that stops the recursion and prevents infinite calls.
+   - Loops usually have a condition that, when false, stops the iteration.
+
+3. **Memory Usage:**
+   - Recursion can use more memory due to the creation of multiple function call instances on the call stack.
+   - Loops generally use less memory because they don't involve creating additional function call instances.
+
+4. **Complexity:**
+   - Some problems are more naturally solved using recursion, while others are more intuitive with loops.
+
+In your Merge Sort example, recursion is used to divide and conquer the sorting
+problem. The base case `(inputList.length === 1)` stops the recursion when the
+problem becomes small enough. Recursion is a powerful technique, but it's
+important to ensure that the base case is reached and that the recursion doesn't
+lead to infinite calls.
+
 ## Part 2. Sort and Merge
 
 ```javascript
