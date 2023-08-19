@@ -273,3 +273,26 @@ const merge = (leftList, rightList) => {
    - The merged and sorted array, stored in `arr`, is returned as the result of the `merge` function.
 
 The `merge` function is a crucial part of the Merge Sort algorithm. It ensures that the smaller sorted arrays created during the recursion are combined in the correct order, resulting in a fully sorted array.
+
+---
+
+> I confused, if condition inputList.length === 1 is true because the length of
+["cherry"] is indeed 1 and Since the base case is met, the function returns the
+inputList array, then why code continue to execute the merge() function? Or is
+it not?
+
+I apologize for any confusion. It seems there might be a misunderstanding. Let's clarify the flow of execution based on the Merge Sort algorithm:
+
+1. The `mergeSort` function is called with an input array (e.g., `inputList = ["cherry"]`).
+2. Since the input array's length is 1 (`inputList.length === 1` is true), the `mergeSort` function immediately returns the input array as it's already sorted.
+3. This returned value (`["cherry"]`) is then assigned to the `sortedLeft` or `sortedRight` variable in the higher-level recursive call.
+4. At this point, the recursion for this branch ends. There is no further code execution for this branch, and there is no call to the `merge()` function for this specific case.
+
+The purpose of the base case `inputList.length === 1` is to halt the recursion and return the array immediately without going through further recursive steps or merging. If you have understood that part correctly, you are indeed on the right track.
+
+However, the `merge()` function comes into play when we have larger arrays that need to be merged after being divided into smaller sorted parts. The merging process involves taking two sorted arrays and combining them into one sorted array. This happens during the "unwinding" of the recursion, when the smaller sorted arrays are being merged back together.
+
+So, in short, if the base case is met (`inputList.length === 1`), the code does
+not continue to execute the `merge()` function for that specific case. The
+`merge()` function is involved only when merging larger arrays during the
+recursion's unwinding process.
