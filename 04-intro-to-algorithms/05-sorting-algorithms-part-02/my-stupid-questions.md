@@ -415,3 +415,31 @@ So, the loop works like this:
 8. This process repeats until `count` becomes 5. At this point, the condition `count < 5` is no longer true, and the loop stops.
 
 Remember, the loop keeps running as long as the condition remains true. As soon as the condition becomes false, the loop stops executing.
+
+## for loop
+
+Let's go through the `for` loop using the same example:
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log("i is:", i);
+}
+```
+
+Here's how the example breaks down:
+
+- **Initialization:** `let i = 0;` initializes a variable `i` with an initial value of 0.
+- **Condition:** `i < 5` is the condition that's checked before each iteration. As long as this condition is true, the loop continues.
+- **Iteration:** `i++` is the iteration part. After each iteration, the value of `i` is incremented by 1.
+
+So, the loop works like this:
+1. `i` starts at 0.
+2. The condition `i < 5` is checked. Since 0 is less than 5, the loop block executes.
+3. The value of `i` (0) is printed.
+4. `i` is incremented by 1 to become 1.
+5. The condition `i < 5` is checked again. Since 1 is less than 5, the loop block executes again.
+6. The value of `i` (1) is printed.
+7. `i` is incremented to become 2.
+8. This process repeats until `i` becomes 5. At this point, the condition `i < 5` is no longer true, and the loop stops executing.
+
+In summary, the `for` loop's structure contains the initialization, condition, and iteration parts all in one line, making it a bit more compact than the `while` loop.
