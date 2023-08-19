@@ -22,7 +22,9 @@ merge(), merge the left and right list)
   is that both length of left and right must not negative number, must more than
   C. if statement; the condition is, if the first element of leftList is less than first
   element of rightList, code executed: we take-out/shift the first element from leftList and then add/push it to the temp variable array.
-  5. else statement; (first element of leftList is more than first element of rightList), we take-out/shift the first element from rightList and then add/push it to the temp variable array.
+  D. else statement; (first element of leftList is more than first element of rightList), we take-out/shift the first element from rightList and then add/push it to the temp variable array.
+  E. exit while loop.
+  F. return function call. 
 */
 ```
 
