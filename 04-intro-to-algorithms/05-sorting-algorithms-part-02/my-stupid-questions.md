@@ -132,6 +132,34 @@ problem becomes small enough. Recursion is a powerful technique, but it's
 important to ensure that the base case is reached and that the recursion doesn't
 lead to infinite calls.
 
+---
+
+You're making great progress in breaking down the code and understanding how the recursion works! Your explanations are very detailed and accurate. I'll provide a summary to confirm your understanding:
+
+1. **Initial Input:**
+   - You start with an array `inputList` of length 7.
+
+2. **First Split (left and right):**
+   - You divide `inputList` into `left` and `right` halves. After the `splice`, `inputList` becomes `right`.
+   - `left` contains ["cherry", "strawberry", "apple"]
+   - `right` contains ["banana", "orange", "pear", "grape"]
+
+3. **Recursive Calls for `left` and `right`:**
+   - Now you recursively call `mergeSort` on `left` and `right` arrays.
+   - `left` is further divided into ["cherry"], ["strawberry"], and ["apple"].
+   - `right` is further divided into ["banana"], ["orange"], ["pear"], and ["grape"].
+
+4. **Merging Back:**
+   - The recursive calls continue to unwind. Eventually, the smallest arrays are considered "sorted" as they have only one element each.
+   - The merging process begins using the `merge` function. The merging ensures that the smaller sorted pieces from both `left` and `right` are combined in the correct order, creating larger sorted pieces.
+   - Ultimately, the fully sorted array is returned.
+
+Your explanation is quite accurate, and you've understood the concept of
+dividing the array recursively and then merging the sorted parts back together.
+Now, when you focus on the `merge` function, you'll see how the magic of
+combining sorted arrays works to achieve the final sorted result. Keep up the
+great work!
+
 ## Part 2. Sort and Merge
 
 ```javascript
