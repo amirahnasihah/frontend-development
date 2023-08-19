@@ -21,9 +21,10 @@ merge(), merge the left and right list)
   B. while loop (continue looping as long as the condition is true); condition
   is that both length of left and right must not negative number, must more than
   C. if statement; condition is if first element of leftList is less than first
-  element of rightList, we take out the first element of the leftList and next add (push) to the array
-  5. else statement; first element of leftList is more than first
-  element of rightList, then push the right side to inside the array.
+  element of rightList, we take-out/shift the first element from leftList and then add/push it to the array
+  5. else statement; first element of leftList is more than first.
+  element of rightList, we take-out/shift the first element from leftList and then add/push it to the array
+  5. else statement; first element of leftList is more than first.
 */
 ```
 
