@@ -355,3 +355,31 @@ So, in short, if the base case is met (`inputList.length === 1`), the code does
 not continue to execute the `merge()` function for that specific case. The
 `merge()` function is involved only when merging larger arrays during the
 recursion's unwinding process.
+
+# while loop and for loop
+
+How loops work can be challenging, but let's break it down in a simple way:
+
+**While Loop:**
+A `while` loop keeps running as long as a certain condition is true. It doesn't have a fixed number of iterations like a `for` loop. Here's a way to think about it:
+
+1. **Check the Condition:** Before each iteration, the condition inside the parentheses is checked.
+2. **If True, Execute the Loop Block:** If the condition is true, the code inside the loop block is executed.
+3. **Repeat:** After executing the loop block, the condition is checked again. If it's still true, the loop block is executed again. This continues until the condition becomes false.
+
+**For Loop:**
+A `for` loop is a bit more structured. It has three parts: initialization, condition, and iteration. Here's a simple way to think about it:
+
+1. **Initialization:** Set up a variable (like `i`) and give it an initial value.
+2. **Check the Condition:** Before each iteration, the condition involving the initialized variable is checked.
+3. **If True, Execute the Loop Block:** If the condition is true, the code inside the loop block is executed.
+4. **Iteration:** After executing the loop block, the initialized variable is updated in a specific way (like adding 1 to `i`).
+5. **Repeat:** The condition is checked again. If it's still true, the loop block is executed again. This continues until the condition becomes false.
+
+**Memorizing Tips:**
+
+For `while` loops, remember it as a loop that runs while a condition is true. It keeps "whirling" as long as the condition is "spinning" true.
+
+For `for` loops, remember it as a loop that's structured with an initialization, condition, and iteration. It's like following a "formula" for looping.
+
+Practice is key to mastering loops. As you work with more examples, you'll become more comfortable with how each type of loop works and how to remember and use them effectively.
