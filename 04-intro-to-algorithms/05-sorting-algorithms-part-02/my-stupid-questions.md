@@ -383,3 +383,35 @@ For `while` loops, remember it as a loop that runs while a condition is true. It
 For `for` loops, remember it as a loop that's structured with an initialization, condition, and iteration. It's like following a "formula" for looping.
 
 Practice is key to mastering loops. As you work with more examples, you'll become more comfortable with how each type of loop works and how to remember and use them effectively.
+
+## while loop
+
+Let's take an example to illustrate the different parts of a `while` loop:
+
+```javascript
+let count = 0; // Initialization: Start count at 0
+
+while (count < 5) { // Condition: Loop while count is less than 5
+  console.log("Count is:", count);
+  count++; // Iteration: Increment count by 1
+}
+```
+
+In this example:
+
+- **Initialization:** `let count = 0;` sets up a variable `count` and gives it an initial value of 0.
+- **Condition:** `count < 5` is the condition that is checked before each iteration. As long as this condition is true, the loop continues.
+- **Loop Block:** Inside the loop, the code `console.log("Count is:", count);` prints the current value of `count`.
+- **Iteration:** `count++;` increments the value of `count` by 1 after each iteration.
+
+So, the loop works like this:
+1. The `count` starts at 0.
+2. The condition `count < 5` is checked. Since 0 is less than 5, the loop block executes.
+3. The value of `count` (0) is printed.
+4. `count` is incremented by 1 to become 1.
+5. The condition `count < 5` is checked again. Since 1 is less than 5, the loop block executes again.
+6. The value of `count` (1) is printed.
+7. `count` is incremented to become 2.
+8. This process repeats until `count` becomes 5. At this point, the condition `count < 5` is no longer true, and the loop stops.
+
+Remember, the loop keeps running as long as the condition remains true. As soon as the condition becomes false, the loop stops executing.
