@@ -23,8 +23,8 @@ merge(), merge the left and right list)
   C. if statement; condition is if first element of leftList is less than first
   element of rightList, we take-out/shift the first element from leftList and then add/push it to the array
   5. else statement; first element of leftList is more than first.
-  element of rightList, we take-out/shift the first element from leftList and then add/push it to the array
-  5. else statement; first element of leftList is more than first.
+  element of rightList, we take-out/shift the first element from rightList and then add/push it to the array
+  5. else statement; first element of leftList is more than first
 */
 ```
 
