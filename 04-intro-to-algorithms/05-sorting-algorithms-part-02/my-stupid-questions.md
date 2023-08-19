@@ -42,6 +42,7 @@ const mergeSort = (inputList) => {
     
     const sortedLeft = mergeSort(firstHalf);
     const sortedRight = mergeSort(inputList);
+    console.log(sortedRight); // Output: ["cherry"]
 
     return merge(sortedLeft, sortedRight);
   }
@@ -69,7 +70,6 @@ Your understanding seems to be on the right track, and working through the code 
 ---
 
 > **`const sortedLeft = mergeSort(firstHalf);` and `const sortedRight = mergeSort(inputList);`**
-
 
 Let's break down how the lines `const sortedLeft = mergeSort(firstHalf);` and `const sortedRight = mergeSort(inputList);` work in the context of your `mergeSort` function.
 
@@ -160,7 +160,7 @@ Now, when you focus on the `merge` function, you'll see how the magic of
 combining sorted arrays works to achieve the final sorted result. Keep up the
 great work!
 
-### `inputList.length === 1`
+### The output of `inputList.length === 1`
 
 The condition `inputList.length === 1` will be true when the `inputList` array contains only one element. In the context of the Merge Sort algorithm, this condition serves as the base case for the recursive process.
 
@@ -189,6 +189,50 @@ Here's how it works step by step:
 In other words, when the `if` condition is true, the recursive process stops for
 that specific branch of the recursion, and the already sorted array is passed
 back up through the calls until it becomes part of the merging process.
+
+---
+
+Yes, the `return inputList;` statement will not print anything, but it will return the array `["cherry"]`. The output won't be shown automatically; you would need to explicitly log or use the returned value somewhere in your code to see it.
+
+Here's how you might log and see the expected output:
+
+```javascript
+const inputList = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];
+
+const mergeSort = (inputList) => {
+  if (inputList.length === 1) {
+    return inputList;
+  } else {
+    // ... rest of the mergeSort function
+  }
+}
+
+const sortedArray = mergeSort(inputList);
+console.log(sortedArray); // Output: ["cherry"]
+```
+
+In this example, the `sortedArray` variable will hold the returned value from
+the `mergeSort` function, which is `["cherry"]`. When you log `sortedArray`, you
+will see the output `["cherry"]`.
+
+### The output of `const sortedLeft = mergeSort(firstHalf);`
+
+The output of `const sortedLeft = mergeSort(firstHalf);` would not directly print anything to the console by itself. However, it would execute the `mergeSort` function recursively on the `firstHalf` array and return the sorted array.
+
+If you were to log the `sortedLeft` variable after this line, you would see the sorted array as the output. Here's how you might do it:
+
+```javascript
+const inputList = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];
+const half = Math.floor(inputList.length / 2);
+const firstHalf = inputList.splice(0, half);
+
+const sortedLeft = mergeSort(firstHalf);
+
+console.log(sortedLeft); // Output will depend on the sorted content of firstHalf
+```
+
+The exact output would depend on the values within the `firstHalf` array after
+the `mergeSort` operation has been applied to it.
 
 ## Part 2. Sort and Merge
 
