@@ -18,7 +18,7 @@ merge(), merge the left and right list)
   arguments of that already halfed array, sortedLeft and sortedRight.
 3. merge() function:
   A. need temporary variable of [empty array] to store the final sorted and merged array.
-  B. while loop (continue looping as long as the condition is true); condition is that both length of left and right must not negative number or none, must more than 0. it stops the loop when 
+  B. while loop (continue looping as long as the condition is true); condition is that both length of left and right must not negative number or none, must more than 0. it stops the loop when no length left.
   C. if statement; the condition is, if the first element of leftList is less than first
   element of rightList, code executed: we take-out/shift the first element from leftList and then add/push it to the temp variable array.
   D. else statement; (first element of leftList is more than first element of rightList), we take-out/shift the first element from rightList and then add/push it to the temp variable array.
