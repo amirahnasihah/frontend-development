@@ -24,7 +24,7 @@ merge(), merge the left and right list)
   element of rightList, code executed: we take-out/shift the first element from leftList and then add/push it to the temp variable array.
   D. else statement; (first element of leftList is more than first element of rightList), we take-out/shift the first element from rightList and then add/push it to the temp variable array.
   E. exit while loop.
-  F. return function call. 
+  F. return function call where we merge/concat both of the array of leftList with rightList.
 */
 ```
 
