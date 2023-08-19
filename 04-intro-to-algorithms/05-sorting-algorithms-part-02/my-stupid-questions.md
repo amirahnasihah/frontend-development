@@ -238,6 +238,8 @@ the `mergeSort` operation has been applied to it.
 
 ## Part 2. Sort and Merge
 
+Next Part 2, moving on to the `merge` function! This function is responsible for taking two sorted arrays, `leftList` and `rightList`, and merging them together into a single sorted array. Let's break down the code:
+
 ```javascript
 const merge = (leftList, rightList) => {
   let arr = [];
@@ -253,3 +255,19 @@ const merge = (leftList, rightList) => {
   return arr.concat(leftList).concat(rightList);
 }
 ```
+
+1. **Initialization:**
+   - `arr` is an empty array that will hold the merged and sorted elements from `leftList` and `rightList`.
+
+2. **Merging Loop:**
+   - A `while` loop runs as long as both `leftList` and `rightList` still have elements to compare.
+   - Inside the loop, the first element from each list is compared. If the first element of `leftList` is smaller, it's pushed into `arr`, and then it's removed from `leftList` using `shift()`. If the first element of `rightList` is smaller, it's pushed into `arr`, and then it's removed from `rightList` using `shift()`.
+
+3. **Merging Remaining Elements:**
+   - After the loop, either `leftList` or `rightList` (or both) might still have remaining elements.
+   - The `concat()` method is used to concatenate any remaining elements from `leftList` and `rightList` to the end of `arr`.
+   
+4. **Returning the Result:**
+   - The merged and sorted array, stored in `arr`, is returned as the result of the `merge` function.
+
+The `merge` function is a crucial part of the Merge Sort algorithm. It ensures that the smaller sorted arrays created during the recursion are combined in the correct order, resulting in a fully sorted array.
