@@ -17,7 +17,13 @@ merge(), merge the left and right list)
   D. recursion - Continue for merging process. return merge() function with
   arguments of that already halfed array, sortedLeft and sortedRight.
 3. merge() function:
-  A. 
+  A. need temporary variable of [empty array] to store the final sorted and merged array.
+  B. while loop (continue looping as long as the condition is true); condition
+  is that both length of left and right must not negative number, must more than
+  C. if statement; condition is if first element of leftList is less than first
+  element of rightList, then push the left side to inside the array.
+  5. else statement; first element of leftList is more than first
+  element of rightList, then push the right side to inside the array.
 */
 ```
 
