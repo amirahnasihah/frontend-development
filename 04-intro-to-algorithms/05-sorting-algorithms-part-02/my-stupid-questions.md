@@ -51,6 +51,8 @@ I really dont understand this
 
 ---
 
+**Clarification:**
+
 It's great that you're working to understand Merge Sort with a recursive approach! I'll address your questions step by step.
 
 1. **Left and Right Half:**
