@@ -7,14 +7,17 @@ const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "gr
 Merge Sort, hint/tip:
 1. 2 functions (A. mergeSort(), divide and divide until sorted itself; B.
 merge(), merge the left and right list)
-2. mergeSort()
+2. mergeSort() function:
   A. if statement; This is exit condition to halt recursion. Need the base case.
   B. else statement; need midpoint of array length, need left variable to store first half of
   array. This is the First Split (left and right):
   C. recursion - called mergeSort function directly. This is where recursively
   call `mergeSort` on `left` and `right` arrays. Where they will further divided into
-  each individual element of array.
-  D. return merge() function
+  each individual element of array and is considered "sorted" in itself.
+  D. recursion - Continue for merging process. return merge() function with
+  arguments of that already halfed array, sortedLeft and sortedRight.
+3. merge() function:
+  A. 
 */
 ```
 
