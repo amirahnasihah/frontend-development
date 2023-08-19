@@ -1,6 +1,8 @@
-# Merge Sort
+# Merge Sort (Recusive Approach)
 
-## Part 1. Divide and Continue to Divide
+## Part 1. Divide and Continue to Divide until left 1 element (aka considered "sorted" in itself)
+
+> recursion continues until each individual element is considered "sorted" in itself
 
 ```javascript
 const sortedLeft = mergeSort(left);
