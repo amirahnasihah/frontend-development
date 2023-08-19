@@ -1,5 +1,18 @@
 # Merge Sort (Recusive Approach)
 
+```javascript
+const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];
+
+/*
+Merge Sort:
+1. 2 functions (A. mergeSort(), divide and divide until sorted itself; B.
+merge(), merge the left and right list)
+2. mergeSort()
+  A. need midpoint of array length, need left variable to store first half array.
+  B. 
+*/
+```
+
 ## Part 1. Divide and Continue to Divide until left 1 element (aka considered "sorted" in itself)
 
 > recursion continues until each individual element is considered "sorted" in itself
@@ -34,7 +47,7 @@ since i am using recursive approach, it means the function needs to be called di
 
 i am using strings of array
 
-`const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];``
+`const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];`
 
 so, what i am going to do, i am gonna focus on divide and sort part first.
 
