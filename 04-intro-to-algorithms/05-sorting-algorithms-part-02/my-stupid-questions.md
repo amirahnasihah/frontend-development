@@ -1,4 +1,4 @@
-# Merge Sort (Recusive Approach)
+# Merge Sort (Recursive Approach)
 
 ```javascript
 const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];
