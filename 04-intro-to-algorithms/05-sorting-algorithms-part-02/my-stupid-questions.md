@@ -4,12 +4,17 @@
 const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];
 
 /*
-Merge Sort:
+Merge Sort, hint/tip:
 1. 2 functions (A. mergeSort(), divide and divide until sorted itself; B.
 merge(), merge the left and right list)
 2. mergeSort()
-  A. need midpoint of array length, need left variable to store first half array.
-  B. 
+  A. if statement; This is exit condition to halt recursion. Need the base case.
+  B. else statement; need midpoint of array length, need left variable to store first half of
+  array. This is the First Split (left and right):
+  C. recursion - called mergeSort function directly. This is where recursively
+  call `mergeSort` on `left` and `right` arrays. Where they will further divided into
+  each individual element of array.
+  D. return merge() function
 */
 ```
 
@@ -177,7 +182,7 @@ Now, when you focus on the `merge` function, you'll see how the magic of
 combining sorted arrays works to achieve the final sorted result. Keep up the
 great work!
 
-### The output of `inputList.length === 1`
+### The return of `inputList.length === 1`
 
 The condition `inputList.length === 1` will be true when the `inputList` array contains only one element. In the context of the Merge Sort algorithm, this condition serves as the base case for the recursive process.
 
@@ -231,6 +236,10 @@ console.log(sortedArray); // Output: ["cherry"]
 In this example, the `sortedArray` variable will hold the returned value from
 the `mergeSort` function, which is `["cherry"]`. When you log `sortedArray`, you
 will see the output `["cherry"]`.
+
+---
+
+The `return inputList;` statement will return the array `["cherry"]` in this example. It's not just about printing it, but actually returning this array as the result of the function call. **This returned result will then become the value of the `sortedLeft` or `sortedRight` variable in the higher-level recursive call**, and it will eventually contribute to the merging process.
 
 ### The output of `const sortedLeft = mergeSort(firstHalf);`
 
