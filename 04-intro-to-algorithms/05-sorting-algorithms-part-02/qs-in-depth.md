@@ -44,16 +44,29 @@ const quickSort = (arr, minIndex, maxIndex) => {
 // Example usage
 const array = [5, 2, 9, 3, 5, 6];
 quickSort(array, 0, array.length - 1);
-console.log(array); // Output: [2, 3, 5, 5, 6, 9]
+console.log(array); //  Output: [2, 3, 5, 5, 6, 9]
 ```
 
 1. At start, the `quickSort` function is called with the array array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
 2. if statement, where condition is maxIndex bigger than minIndex (nombor paling besar max kena lagi besar dari min number, obviously). first block must be true for the code to be executed.
-3. Inside if block, nak kena cari 
-
-First cycle, range would be from 0 to end.
-Partition function should return the position of pivot after partition
+3. Inside if block, benda penting kita nak kena cari adalah Partition Index. Create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan. (First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition)
+4. Sekarang ni kita kat partition function lagi. So, looked at partition function.
+5. Mula2, kita setkan pivot kita at the rightmost element, element paling kanan ataupun last element.
+6. Pastu, setkan i 
 
 ## `pi = partition(arr, minIndex, maxIndex);`
 
-1. We callimg the `partition()` function with arguments
+The line `pi = partition(arr, minIndex, maxIndex);` in your code is a call to the `partition` function. This line will execute the `partition` function and assign the value returned by the function to the variable `pi`.
+
+Here's a breakdown of what happens:
+
+1. The `partition` function is called with the arguments `arr`, `minIndex`, and `maxIndex`.
+2. Inside the `partition` function, the partitioning process takes place, where elements smaller than the pivot are moved to the left and elements greater than the pivot are moved to the right.
+3. The index of the pivot element in the modified array (after partitioning) is returned by the `partition` function.
+4. This returned index is then assigned to the variable `pi` in the calling code.
+
+In the context of the QuickSort algorithm, the value of `pi` represents the index at which the pivot element has been placed after the partitioning process. This index will be used to recursively sort the subarrays on both sides of the pivot.
+
+So, after the line `pi = partition(arr, minIndex, maxIndex);` is executed, `pi` will hold the index value returned by the `partition` function, indicating the correct position of the pivot within the partitioned array.
+
+### `i = minIndex - 1;`
