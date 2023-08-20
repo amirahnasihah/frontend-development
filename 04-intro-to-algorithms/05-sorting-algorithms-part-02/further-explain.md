@@ -33,7 +33,44 @@ This is because as it could be only one list was emptied. (When would this happe
 
 ### quick-sort.js
 
-partition() function:
+```javascript
+const partition = (arr, minIndex, maxIndex) => {
+    let pivot = arr[maxIndex];
+    let i = minIndex - 1;
+
+    for (let j = minIndex; j <= maxIndex - 1; j++) {
+        if (arr[j] < pivot) {
+            i++;
+
+            let tempI = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tempI;
+        }
+    }
+
+    let tempIPlus1 = arr[i+1];
+    arr[i+1] = pivot;
+    arr[maxIndex] = tempIPlus1;
+
+    return i+1;
+}
+
+const quickSort = (arr, minIndex, maxIndex) => {
+    if (maxIndex > minIndex) {
+        let pi = partition(arr, minIndex, maxIndex);
+
+        quickSort(arr, minIndex, pi-1);
+        quickSort(arr, pi + 1, maxIndex);
+    }
+}
+
+// Example usage
+const array = [5, 2, 9, 3, 5, 6];
+quickSort(array, 0, array.length - 1);
+console.log(array); // Output: [2, 3, 5, 5, 6, 9]
+```
+
+**partition() function:**
 
 The range that we are going to do partition, i.e. defining the “sub array” using min and max index.
 
@@ -45,7 +82,7 @@ If the element j is smaller than pivot, then we will do i++ and swap element i w
 
 After finished all the comparison, we are going to put the pivot at the right position, which is position i+1.
 
-quickSort() function:
+**quickSort() function:**
 
 For the range, we will do the partition
 - First cycle, range would be from 0 to end
