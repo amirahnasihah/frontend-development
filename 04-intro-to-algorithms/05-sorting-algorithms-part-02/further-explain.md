@@ -12,6 +12,14 @@
 
 ### merge-sort.js
 
+If the input list is of size 1, then no need sort, just return it
+
+Split the array into 2 halves, using “splice” function
+
+Sort each halves using the “mergeSort()” function
+
+Combine the sorted left and sorted right
+
 ### quick-sort.js
 
 # Merge Sort
