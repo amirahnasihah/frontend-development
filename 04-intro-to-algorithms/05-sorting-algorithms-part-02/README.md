@@ -410,6 +410,8 @@ const mergeSort = (inputList) => {
 
 ## Sorting Algorithm 4 - Quick Sort
 
+> a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
+
 ### Quick Sort
 
 - Quick Sort picks an element as “pivot” and partitions the given array around the picked “pivot”.
