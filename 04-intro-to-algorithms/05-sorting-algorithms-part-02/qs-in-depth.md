@@ -46,4 +46,4 @@ quickSort(array, 0, array.length - 1);
 console.log(array); // Output: [2, 3, 5, 5, 6, 9]
 ```
 
-## 
+## `pi = partition(arr, minIndex, maxIndex);`
