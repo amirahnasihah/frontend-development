@@ -51,6 +51,10 @@ quickSort(array, 0, array.length - 1);
 console.log(array); //  Output: [2, 3, 5, 5, 6, 9]
 ```
 
+If the element j is smaller than pivot, then we will do i++ and swap element i with element j.
+< element j kecik dari pivot, index bertambah 1 kemudian kita tukar main element
+iaitu element i dengan element j > **yang lagi kecik kita swap**
+
 1. At start, the `quickSort` function is called with the array array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
 2. if statement, where condition is maxIndex bigger than minIndex (nombor paling besar max kena lagi besar dari min number, obviously). first block must be true for the code to be executed.
 3. Inside if block, benda penting kita nak kena cari adalah Partition Index. Create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan. (First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition)
