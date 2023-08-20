@@ -86,12 +86,11 @@ else {
 
 **mergeSort() function:**
 
-If both left and right list still have at least 1 element
+1. If both left and right list still have at least 1 element.
 
-Pick the smaller first element and push to the result array
+2. Pick the smaller first element and push to the result array.
 
-Combine the result list with left and right list.
-This is because as it could be only one list was emptied. (When would this happen?)
+3. Combine the result list with left and right list. This is because as it could be only one list was emptied. (When would this happen?)
 
 ### quick-sort.js
 
@@ -174,7 +173,6 @@ const merge = (leftList, rightList) => {
 }
 
 const mergeSort = (inputList) => {
-  // Add your code here
   if (inputList.length === 1) {
         return inputList;
     } else {
