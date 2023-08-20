@@ -197,12 +197,23 @@ right(kanan) position, which is position i+1. (kanan maksudnya kat sebelah)
 
 **quickSort() function:**
 
-For the range, we will do the partition
+1. For the range, we will do the partition
 - First cycle, range would be from 0 to end
 Partition function should return the position 
 of pivot after partition
+```javascript
+    // ...
+        let pi = partition(arr, minIndex, maxIndex);
+        // ...
+```
 
-Sort the left and right hand side using quick sort
+2. Sort the left and right hand side using quick sort
+```javascript
+    // ...
+        quickSort(arr, minIndex, pi-1);
+        quickSort(arr, pi + 1, maxIndex);
+    // ...
+```
 
 # Merge Sort
 
