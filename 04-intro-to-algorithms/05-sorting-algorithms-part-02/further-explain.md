@@ -8,7 +8,7 @@
 
 # Sorting Algorithm
 
-## Exercises explained
+## Exercises explained (line by line)
 
 ### merge-sort.js
 
