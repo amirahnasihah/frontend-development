@@ -185,28 +185,14 @@ iaitu element i dengan element j > **yang lagi kecik kita swap**
     // ...
 ```
 
-After finished all the comparison, we are going to put the pivot at the right position, which is position i+1.
+5. After finished all the comparison, we are going to put the pivot at the
+right(kanan) position, which is position i+1. (kanan maksudnya kat sebelah)
 ```javascript
-const partition = (arr, minIndex, maxIndex) => {
-    let pivot = arr[maxIndex];
-    let i = minIndex - 1;
-
-    for (let j = minIndex; j <= maxIndex - 1; j++) {
-        if (arr[j] < pivot) {
-            i++;
-
-            let tempI = arr[i];
-            arr[i] = arr[j];
-            arr[j] = tempI;
-        }
-    }
-
+    // ...
     let tempIPlus1 = arr[i+1];
     arr[i+1] = pivot;
     arr[maxIndex] = tempIPlus1;
-
-    return i+1;
-}
+    // ...
 ```
 
 **quickSort() function:**
