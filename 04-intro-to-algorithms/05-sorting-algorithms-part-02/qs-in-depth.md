@@ -69,4 +69,15 @@ In the context of the QuickSort algorithm, the value of `pi` represents the inde
 
 So, after the line `pi = partition(arr, minIndex, maxIndex);` is executed, `pi` will hold the index value returned by the `partition` function, indicating the correct position of the pivot within the partitioned array.
 
-### `i = minIndex - 1;`
+## `i = minIndex - 1;`
+
+In the context of the QuickSort algorithm, the line `let i = minIndex - 1;` initializes a variable `i` that will be used as an index to keep track of the position in the array where elements smaller than the pivot should be placed.
+
+Here's how it works within the partition function:
+
+1. `minIndex`: This represents the starting index of the partitioned subarray.
+2. `i`: This variable starts at `minIndex - 1`, which is one position before the actual subarray. This allows `i` to be used as a reference to where the last element less than the pivot element will end up.
+
+The partition function then iterates through the subarray between `minIndex` and `maxIndex - 1` (since `maxIndex` is the pivot element), comparing each element with the pivot. If an element is smaller than the pivot, `i` is incremented, and the element at index `i` is swapped with the current element at index `j`.
+
+In summary, `i` keeps track of the position where elements smaller than the pivot will be placed in the subarray during the partitioning process. After the iteration is complete, the pivot is placed at index `i + 1`, separating the smaller elements on the left and larger elements on the right.
