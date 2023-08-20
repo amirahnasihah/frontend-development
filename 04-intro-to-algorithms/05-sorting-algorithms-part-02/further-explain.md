@@ -13,7 +13,7 @@
 ### merge-sort.js
 
 ```javascript
-// PART 1: divide and keep divide
+// PART 1: divide and keep divide until sorted itself
 const mergeSort = (inputList) => {
   // Add your code here
   if (inputList.length === 1) {
