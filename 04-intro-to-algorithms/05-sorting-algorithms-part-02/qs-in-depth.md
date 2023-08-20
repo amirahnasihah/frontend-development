@@ -47,5 +47,8 @@ quickSort(array, 0, array.length - 1);
 console.log(array); // Output: [2, 3, 5, 5, 6, 9]
 ```
 
+1. At start, the `quickSort` function is called with the array array, and the values 0 (which is the minimum index) and array.length - 1 (which is the maximum index) are passed as arguments
+
 ## `pi = partition(arr, minIndex, maxIndex);`
 
+1. We callimg the `partition()` function with arguments
