@@ -28,11 +28,27 @@ If both left and right list still have at least 1 element
 
 Pick the smaller first element and push to the result array
 
-Combine the result list with left and right list. 
-
+Combine the result list with left and right list.
 This is because as it could be only one list was emptied. (When would this happen?)
 
 ### quick-sort.js
+
+Summarizing Partition
+d
+The range that we are going to 
+do partition, i.e. defining the 
+“sub array” using min and max 
+index
+Our pivot is always the 
+rightmost element
+We start from i = -1 (or min index -1)
+If the element j is smaller than 
+pivot, then we will do i++ and 
+swap element i with element j
+After finished all the 
+comparison, we are going to 
+put the pivot at the right 
+position, which is position i+1
 
 # Merge Sort
 
