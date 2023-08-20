@@ -3,7 +3,7 @@
 PART 2:
 ```javascript
 const partition = (arr, minIndex, maxIndex) => {
-  // Assuming the pivot is always the rightmost element
+  // Assuming the pivot is always the rightmost element (last index)
     let pivot = arr[maxIndex];
     
     // start i - 1 (previous element?)
