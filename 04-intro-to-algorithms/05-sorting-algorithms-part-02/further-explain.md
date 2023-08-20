@@ -198,9 +198,8 @@ right(kanan) position, which is position i+1. (kanan maksudnya kat sebelah)
 **quickSort() function:**
 
 1. For the range, we will do the partition
-- First cycle, range would be from 0 to end
-Partition function should return the position 
-of pivot after partition
+- First cycle, range would be from 0 to end.
+Partition function should return the position of pivot after partition
 ```javascript
     // ...
         let pi = partition(arr, minIndex, maxIndex);
