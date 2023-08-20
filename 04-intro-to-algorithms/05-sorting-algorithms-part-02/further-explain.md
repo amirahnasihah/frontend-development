@@ -153,7 +153,7 @@ console.log(array); // Output: [2, 3, 5, 5, 6, 9]
 
 The range that we are going to do partition, i.e. defining the “sub array” using min and max index.
 ```javascript
-const partition = (arr, minIndex, maxIndex) => {
+const partition = (..., minIndex, maxIndex) => {
     let pivot = arr[maxIndex];
     let i = minIndex - 1;
 
