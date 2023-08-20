@@ -87,10 +87,28 @@ else {
 **mergeSort() function:**
 
 1. If both left and right list still have at least 1 element.
+```javascript
+    while (leftList.length > 0 && rightList.length > 0) {
+        // ,..
+```
 
 2. Pick the smaller first element and push to the result array.
+```javascript
+    // .,,
+        if (leftList[0] < rightList[0]) {
+            arr.push(leftList.shift());
+        }
+        else {
+            arr.push(rightList.shift());
+        }
+    // ...
+```
 
 3. Combine the result list with left and right list. This is because as it could be only one list was emptied. (When would this happen?)
+```javascript
+    // ...
+    return arr.concat(leftList).concat(rightList);
+```
 
 ### quick-sort.js
 
