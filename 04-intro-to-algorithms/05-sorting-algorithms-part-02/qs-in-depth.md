@@ -2,7 +2,7 @@
 
 > a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
 
-Partition ni proses pengasingan untuk nak tahu kiri dengan kanan. Kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol < maksudnya ke kiri ⬅️ 
+Partition ni proses pengasingan untuk nak tahu kiri dengan kanan. Kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol, `<` ingat ke kiri ⬅️.
 
 PART 2:
 ```javascript
