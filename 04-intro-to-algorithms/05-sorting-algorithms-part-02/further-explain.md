@@ -33,21 +33,26 @@ This is because as it could be only one list was emptied. (When would this happe
 
 ### quick-sort.js
 
-Summarizing Partition
+partition() function:
 
-The range that we are going to do partition, i.e. defining the “sub array” using min and max index
+The range that we are going to do partition, i.e. defining the “sub array” using min and max index.
 
-Our pivot is always the rightmost element (at last index)
+Our pivot is always the rightmost element (at last index).
 
-We start from i = -1 (or min index -1)
+We start from i = -1 (or min index -1).
 
-If the element j is smaller than pivot, then we will do i++ and swap element i with element j
+If the element j is smaller than pivot, then we will do i++ and swap element i with element j.
 
-After finished all the comparison, we are going to put the pivot at the right position, which is position i+1
+After finished all the comparison, we are going to put the pivot at the right position, which is position i+1.
 
 quickSort() function:
 
+For the range, we will do the partition
+- First cycle, range would be from 0 to end
+Partition function should return the position 
+of pivot after partition
 
+Sort the left and right hand side using quick sort
 
 # Merge Sort
 
