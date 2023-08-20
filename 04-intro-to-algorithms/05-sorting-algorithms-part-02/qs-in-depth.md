@@ -1,5 +1,7 @@
 # Quick Sort Problems in JS
 
+> a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
+
 PART 2:
 ```javascript
 const partition = (arr, minIndex, maxIndex) => {
