@@ -33,6 +33,7 @@ PART 1:
 ```javascript
 const quickSort = (arr, minIndex, maxIndex) => {
     if (maxIndex > minIndex) {
+      // pi refer as partition index
         let pi = partition(arr, minIndex, maxIndex);
 
         quickSort(arr, minIndex, pi-1);
@@ -47,3 +48,4 @@ console.log(array); // Output: [2, 3, 5, 5, 6, 9]
 ```
 
 ## `pi = partition(arr, minIndex, maxIndex);`
+
