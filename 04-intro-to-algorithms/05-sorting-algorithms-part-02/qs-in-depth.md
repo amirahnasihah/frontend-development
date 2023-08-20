@@ -1,5 +1,6 @@
 # Quick Sort Problems in JS
 
+PART 2:
 ```javascript
 const partition = (arr, minIndex, maxIndex) => {
     let pivot = arr[maxIndex];
@@ -21,7 +22,10 @@ const partition = (arr, minIndex, maxIndex) => {
 
     return i+1;
 }
+```
 
+PART 1: 
+```javascript
 const quickSort = (arr, minIndex, maxIndex) => {
     if (maxIndex > minIndex) {
         let pi = partition(arr, minIndex, maxIndex);
@@ -36,3 +40,5 @@ const array = [5, 2, 9, 3, 5, 6];
 quickSort(array, 0, array.length - 1);
 console.log(array); // Output: [2, 3, 5, 5, 6, 9]
 ```
+
+## 
