@@ -13,6 +13,23 @@
 ### merge-sort.js
 
 ```javascript
+// PART 1: divide and keep divide
+const mergeSort = (inputList) => {
+  // Add your code here
+  if (inputList.length === 1) {
+        return inputList;
+    } else {
+        const half = inputList.length / 2;
+        const left = inputList.splice(0, half);
+        
+        const sortedLeft = mergeSort(left);
+        const sortedRight = mergeSort(inputList);
+
+        return merge(sortedLeft, sortedRight);
+    }
+}
+
+// PART 2: merge
 const merge = (leftList, rightList) => {
   // Add your code here
   let arr = [];
@@ -27,21 +44,6 @@ const merge = (leftList, rightList) => {
     }
 
     return arr.concat(leftList).concat(rightList);
-}
-
-const mergeSort = (inputList) => {
-  // Add your code here
-  if (inputList.length === 1) {
-        return inputList;
-    } else {
-        const half = inputList.length / 2;
-        const left = inputList.splice(0, half);
-        
-        const sortedLeft = mergeSort(left);
-        const sortedRight = mergeSort(inputList);
-
-        return merge(sortedLeft, sortedRight);
-    }
 }
 ```
 
