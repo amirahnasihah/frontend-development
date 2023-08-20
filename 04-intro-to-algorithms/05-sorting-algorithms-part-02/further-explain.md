@@ -151,85 +151,30 @@ console.log(array); // Output: [2, 3, 5, 5, 6, 9]
 
 **partition() function:**
 
-The range that we are going to do partition, i.e. defining the “sub array” using min and max index.
+1. The range that we are going to do partition, i.e. defining the “sub array” using min and max index.
 ```javascript
 const partition = (..., minIndex, maxIndex) => {
-    let pivot = arr[maxIndex];
-    let i = minIndex - 1;
-
-    for (let j = minIndex; j <= maxIndex - 1; j++) {
-        if (arr[j] < pivot) {
-            i++;
-
-            let tempI = arr[i];
-            arr[i] = arr[j];
-            arr[j] = tempI;
-        }
-    }
-
-    let tempIPlus1 = arr[i+1];
-    arr[i+1] = pivot;
-    arr[maxIndex] = tempIPlus1;
-
-    return i+1;
+    // ...
 }
 ```
 
-Our pivot is always the rightmost element (at last index).
+2. Our pivot is always the rightmost element (at last index).
 ```javascript
-const partition = (arr, minIndex, maxIndex) => {
     let pivot = arr[maxIndex];
-    let i = minIndex - 1;
-
-    for (let j = minIndex; j <= maxIndex - 1; j++) {
-        if (arr[j] < pivot) {
-            i++;
-
-            let tempI = arr[i];
-            arr[i] = arr[j];
-            arr[j] = tempI;
-        }
-    }
-
-    let tempIPlus1 = arr[i+1];
-    arr[i+1] = pivot;
-    arr[maxIndex] = tempIPlus1;
-
-    return i+1;
-}
+    // ...
 ```
 
-We start from i = -1 (or min index -1).
+3. We start from i = -1 (or min index -1).
 ```javascript
-const partition = (arr, minIndex, maxIndex) => {
-    let pivot = arr[maxIndex];
     let i = minIndex - 1;
-
-    for (let j = minIndex; j <= maxIndex - 1; j++) {
-        if (arr[j] < pivot) {
-            i++;
-
-            let tempI = arr[i];
-            arr[i] = arr[j];
-            arr[j] = tempI;
-        }
-    }
-
-    let tempIPlus1 = arr[i+1];
-    arr[i+1] = pivot;
-    arr[maxIndex] = tempIPlus1;
-
-    return i+1;
-}
+    // ...
 ```
 
-If the element j is smaller than pivot, then we will do i++ and swap element i with element j.
+4. If the element j is smaller than pivot, then we will do i++ and swap element i with element j.
+< element j kecik dari pivot, index bertambah 1 kemudian kita tukar main element
+iaitu element i dengan element j > **yang lagi kecik kita swap**
 ```javascript
-const partition = (arr, minIndex, maxIndex) => {
-    let pivot = arr[maxIndex];
-    let i = minIndex - 1;
-
-    for (let j = minIndex; j <= maxIndex - 1; j++) {
+    // ...
         if (arr[j] < pivot) {
             i++;
 
@@ -237,14 +182,7 @@ const partition = (arr, minIndex, maxIndex) => {
             arr[i] = arr[j];
             arr[j] = tempI;
         }
-    }
-
-    let tempIPlus1 = arr[i+1];
-    arr[i+1] = pivot;
-    arr[maxIndex] = tempIPlus1;
-
-    return i+1;
-}
+    // ...
 ```
 
 After finished all the comparison, we are going to put the pivot at the right position, which is position i+1.
