@@ -12,7 +12,7 @@
 
 ### merge-sort.js
 
-Main function:
+**Main function:**
 
 If the input list is of size 1, then no need sort, just return it.
 
@@ -22,7 +22,7 @@ Sort each halves using the “mergeSort()” function.
 
 Combine the sorted left and sorted right.
 
-mergeSort() function:
+**mergeSort() function:**
 
 If both left and right list still have at least 1 element
 
