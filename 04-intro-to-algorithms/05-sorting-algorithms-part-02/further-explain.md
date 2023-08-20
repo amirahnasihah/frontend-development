@@ -112,6 +112,8 @@ else {
 
 ### quick-sort.js
 
+> Partitioning is used to make solving maths problems involving large numbers easier by separating them into smaller units. For example, 782 can be partitioned into: 700 + 80 + 2.
+
 ```javascript
 const partition = (arr, minIndex, maxIndex) => {
     let pivot = arr[maxIndex];
