@@ -3,9 +3,14 @@
 PART 2:
 ```javascript
 const partition = (arr, minIndex, maxIndex) => {
+  // Assuming the pivot is always the rightmost element
     let pivot = arr[maxIndex];
+    
+    // start i - 1 (previous element?)
+    // (as we havent found any large elements yet)
     let i = minIndex - 1;
-
+    
+    // Find the right position of pivot
     for (let j = minIndex; j <= maxIndex - 1; j++) {
         if (arr[j] < pivot) {
             i++;
