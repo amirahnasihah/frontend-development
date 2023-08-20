@@ -207,7 +207,7 @@ of pivot after partition
         // ...
 ```
 
-2. Sort the left and right hand side using quick sort
+2. Sort the left and right hand side using quick sort. (Recursively)
 ```javascript
     // ...
         quickSort(arr, minIndex, pi-1);
