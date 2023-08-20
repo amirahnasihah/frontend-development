@@ -1,2 +1,2 @@
-# Quick Sort
+# Quick Sort Problems in JS
 
