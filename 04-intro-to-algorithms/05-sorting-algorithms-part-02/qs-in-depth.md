@@ -2,6 +2,8 @@
 
 > a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
 
+Partition ni proses pengasingan untuk nak tahu kiri dengan kanan. Kalau element  
+
 PART 2:
 ```javascript
 const partition = (arr, minIndex, maxIndex) => {
@@ -51,7 +53,7 @@ console.log(array); //  Output: [2, 3, 5, 5, 6, 9]
 
 1. At start, the `quickSort` function is called with the array array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
 2. if statement, where condition is maxIndex bigger than minIndex (nombor paling besar max kena lagi besar dari min number, obviously). first block must be true for the code to be executed.
-3. Inside if block, benda penting kita nak kena cari adalah Partition Index. Create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan. Partition ni proses pengasingan untuk nak tahu . (First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition)
+3. Inside if block, benda penting kita nak kena cari adalah Partition Index. Create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan. (First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition)
 4. Sekarang ni kita kat partition function lagi. So, looked at partition function.
 5. Mula2, kita setkan pivot kita at the rightmost element, element paling kanan ataupun last element.
 6. Pastu, setkan i 
