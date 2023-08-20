@@ -49,14 +49,14 @@ const merge = (leftList, rightList) => {
 
 **Main function:**
 
+1. If the input list is of size 1, then no need sort, just return it.
 ```javascript
 if (inputList.length === 1) {
         return inputList;
     }
 ```
 
-If the input list is of size 1, then no need sort, just return it.
-
+2. Split the array into 2 halves, using “splice” function.
 ```javascript
 else {
         const half = inputList.length / 2;
@@ -66,8 +66,7 @@ else {
     }
 ```
 
-Split the array into 2 halves, using “splice” function.
-
+3. Sort each halves using the “mergeSort()” function.
 ```javascript
 else {
         // ...
@@ -77,16 +76,13 @@ else {
     }
 ```
 
-Sort each halves using the “mergeSort()” function.
-
+4. Combine the sorted left and sorted right.
 ```javascript
 else {
         // ...
         return merge(sortedLeft, sortedRight);
     }
 ```
-
-Combine the sorted left and sorted right.
 
 **mergeSort() function:**
 
