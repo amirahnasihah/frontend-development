@@ -45,6 +45,10 @@ If the element j is smaller than pivot, then we will do i++ and swap element i w
 
 After finished all the comparison, we are going to put the pivot at the right position, which is position i+1
 
+quickSort() function:
+
+
+
 # Merge Sort
 
 ## JavaScript Prototypes in Merge Sort Recursive Approach
