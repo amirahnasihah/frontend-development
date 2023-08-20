@@ -252,3 +252,27 @@ array. If you're dealing with large arrays, keep in mind that creating new
 arrays using `slice()` can consume memory.
 
 # Quick Sort Problems in JS
+
+## What is Partition?
+
+Partition is a fundamental operation used in many sorting algorithms, including QuickSort. It involves reordering the elements in an array so that all elements smaller than a chosen pivot element come before it, and all elements greater than the pivot come after it. The pivot element itself is placed in its final sorted position.
+
+Here's a simple example to illustrate partitioning:
+
+Consider an unsorted array: `[4, 7, 2, 1, 9, 5]`. Let's use the last element, `5`, as the pivot.
+
+1. Start with the array: `[4, 7, 2, 1, 9, 5]`.
+2. Iterate through the array from the left (`i = 0`) and from the right (`j = 4`) until they meet.
+3. Swap elements that are out of place. Move `i` from the left until you find an element greater than the pivot, and move `j` from the right until you find an element smaller than the pivot. Swap these elements.
+4. Continue this process until `i` and `j` meet. All elements smaller than the pivot are now on the left, and all elements greater than the pivot are on the right.
+5. Finally, swap the pivot element (5) with the element at index `i`. The pivot is now in its sorted position.
+
+After partitioning, the array might look like this: `[4, 2, 1, 5, 9, 7]`. The pivot, 5, is in its sorted position, and elements smaller than 5 are on the left, while elements greater than 5 are on the right.
+
+Benefits for beginners:
+- Partitioning is a foundational concept in sorting algorithms and programming in general.
+- Understanding partitioning is essential for comprehending QuickSort, one of the most efficient sorting algorithms.
+- It introduces the concept of rearranging elements to achieve a desired order, which is a common programming task.
+- Learning partitioning provides a hands-on experience of how algorithms manipulate data structures.
+
+As you continue your programming journey, understanding partitioning will contribute to your knowledge of data manipulation and algorithmic thinking.
