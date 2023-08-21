@@ -8,7 +8,7 @@ Partition ni proses/perbuatan pengasingan untuk nak tahu kiri dan kanan. Kalau e
 PART 2:
 ```javascript
 const partition = (arr, minIndex, maxIndex) => {
-  // Assuming the pivot is always the rightmost element (last index)
+  // Assuming the pivot is always the rightmost element (last index; arr.length-1)
     let pivot = arr[maxIndex];
     
     // start i - 1 (previous element?)
