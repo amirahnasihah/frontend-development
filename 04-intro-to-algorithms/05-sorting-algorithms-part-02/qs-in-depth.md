@@ -61,7 +61,7 @@ If the element j is smaller than pivot, then we will do i++ and swap element i w
 4. Sekarang ni kita kat partition function. So, looked at partition function.
 5. Mula2, kita setkan pivot kita at the rightmost element, element paling kanan ataupun last element.
 6. Pastu, setkan i = minIndex - 1 (minIndex is 0, so 0 minus 1??).
-7. have a for loop to find the right position of pivot.
+7. use for loop to loop thru aray to find the right position of pivot. start j from minIndex; continue until j less than or equal maxIndex (macam cari range?); i++.
 
 ## `pi = partition(arr, minIndex, maxIndex);`
 
