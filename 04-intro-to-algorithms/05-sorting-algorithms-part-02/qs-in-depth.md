@@ -59,7 +59,7 @@ If the element j is smaller than pivot, then we will do i++ and swap element i w
 3. Inside if block, penting kita nak kena cari adalah Pivot Index(pi). Kita create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan elements. (First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition). So, the `partition` function is also called with the array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
 4. Sekarang ni kita kat partition function. So, looked at partition function.
 5. Mula2, kita setkan pivot kita at the rightmost element, element paling kanan ataupun last element.
-6. Pastu, setkan i 
+6. Pastu, setkan i = minIndex - 1 (minIndex is 0, so 0 minusz)
 
 ## `pi = partition(arr, minIndex, maxIndex);`
 
