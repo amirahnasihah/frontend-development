@@ -1,6 +1,7 @@
 # Quick Sort Problems in JS
 
-> a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
+> a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies. (pemisah/penghadang mcm kat masjid tu)
+> pivot as a central element that helps in dividing and conquering the sorting process. Its main purpose is to aid in rearranging the elements in a way that eventually leads to a sorted array.
 
 Partition ni proses pengasingan untuk nak tahu kiri dan kanan. Kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol, `<` ingat ke kiri ⬅️, bandingkan dengan pivot (fixed point)**
 
