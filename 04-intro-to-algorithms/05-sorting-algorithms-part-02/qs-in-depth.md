@@ -93,3 +93,76 @@ Here's how it works within the partition function:
 The partition function then iterates through the subarray between `minIndex` and `maxIndex - 1` (since `maxIndex` is the pivot element), comparing each element with the pivot. If an element is smaller than the pivot, `i` is incremented, and the element at index `i` is swapped with the current element at index `j`.
 
 In summary, `i` keeps track of the position where elements smaller than the pivot will be placed in the subarray during the partitioning process. After the iteration is complete, the pivot is placed at index `i + 1`, separating the smaller elements on the left and larger elements on the right.
+
+## Explanation (step by step)
+
+Let's break down the code step by step to provide a clear explanation for beginners:
+
+**PART 1:**
+
+```javascript
+const quickSort = (arr, minIndex, maxIndex) => {
+    if (maxIndex > minIndex) {
+        let pi = partition(arr, minIndex, maxIndex);
+
+        quickSort(arr, minIndex, pi - 1);
+        quickSort(arr, pi + 1, maxIndex);
+    }
+}
+```
+
+- This is the `quickSort` function, which implements the QuickSort algorithm.
+- It takes three arguments: `arr` (the array to be sorted), `minIndex` (the starting index of the subarray to be sorted), and `maxIndex` (the ending index of the subarray to be sorted).
+- The purpose of this function is to sort the elements between `minIndex` and `maxIndex` of the array.
+
+Here's how it works:
+
+1. It first checks if `maxIndex` is greater than `minIndex`. This condition ensures that there's more than one element in the subarray, as the sorting is not needed for single or empty subarrays.
+
+2. If the condition is met, it calls the `partition` function to find the correct position for the pivot element. The result of `partition` is stored in the variable `pi`.
+
+3. After partitioning, the function makes two recursive calls to `quickSort`:
+   - One for the subarray on the left of the pivot: `quickSort(arr, minIndex, pi - 1)`.
+   - Another for the subarray on the right of the pivot: `quickSort(arr, pi + 1, maxIndex)`.
+
+4. The partitioned subarrays will continue to be sorted in this recursive manner until they're fully sorted.
+
+**PART 2:**
+
+```javascript
+const partition = (arr, minIndex, maxIndex) => {
+    let pivot = arr[maxIndex];
+    let i = minIndex - 1;
+
+    for (let j = minIndex; j <= maxIndex - 1; j++) {
+        if (arr[j] < pivot) {
+            i++;
+
+            let tempI = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tempI;
+        }
+    }
+
+    let tempIPlus1 = arr[i + 1];
+    arr[i + 1] = pivot;
+    arr[maxIndex] = tempIPlus1;
+
+    return i + 1;
+}
+```
+
+- This is the `partition` function, responsible for rearranging the array elements around the pivot.
+- It takes three arguments: `arr` (the array being sorted), `minIndex` (the starting index of the subarray to partition), and `maxIndex` (the ending index of the subarray to partition).
+
+Here's how it works:
+
+1. It selects the pivot element, which is assumed to be the rightmost element (`arr[maxIndex]`).
+2. It initializes `i` as one less than `minIndex`. This will serve as the index for the last element that's smaller than the pivot.
+3. The loop iterates through the subarray from `minIndex` to `maxIndex - 1`:
+   - If the current element (`arr[j]`) is smaller than the pivot, it means that it should be moved to the left side of the pivot. So, `i` is incremented, and a swap is performed to move the element to the correct position.
+4. After the loop, the elements have been rearranged such that elements smaller than the pivot are on the left and elements greater than the pivot are on the right.
+5. The pivot element (`arr[maxIndex]`) is then swapped with the element at `arr[i + 1]`, effectively placing the pivot in its sorted position.
+6. The function returns the index at which the pivot has been placed in the rearranged array (`i + 1`).
+
+This partitioning process ensures that the pivot is positioned correctly within the array, with smaller elements to its left and larger elements to its right. This is a fundamental step in the QuickSort algorithm.
