@@ -56,7 +56,7 @@ If the element j is smaller than pivot, then we will do i++ and swap element i w
 
 1. At start, the `quickSort` function is called with the array array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
 2. Inside `quickSort()`. `if` statement; we want to have a condition where `maxIndex` is bigger than `minIndex` (nombor paling besar max kena lagi besar dari min number, obviously). first block must be true for the code to be executed.
-3. Inside if block, benda penting kita nak kena cari adalah Partition Index. Create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan. (First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition)
+3. Inside if block, benda penting kita nak kena cari adalah Pivot Index(pi). Kita create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan. (First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition)
 4. Sekarang ni kita kat partition function lagi. So, looked at partition function.
 5. Mula2, kita setkan pivot kita at the rightmost element, element paling kanan ataupun last element.
 6. Pastu, setkan i 
