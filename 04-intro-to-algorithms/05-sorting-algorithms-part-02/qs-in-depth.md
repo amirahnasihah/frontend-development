@@ -63,6 +63,8 @@ If the element j is smaller than pivot, then we will do i++ and swap element i w
 
 ## `pi = partition(arr, minIndex, maxIndex);`
 
+> **For the range, we will do the partition. First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition**
+
 The line `pi = partition(arr, minIndex, maxIndex);` in your code is a call to the `partition` function. This line will execute the `partition` function and assign the value returned by the function to the variable `pi`.
 
 Here's a breakdown of what happens:
