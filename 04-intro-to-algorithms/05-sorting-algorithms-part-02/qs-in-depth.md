@@ -122,8 +122,10 @@ Here's how it works:
 2. If the condition is met, it calls the `partition` function to find the correct position for the pivot element. The result of `partition` is stored in the variable `pi`.
 
 3. After partitioning, the function makes two recursive calls to `quickSort`:
-   - One for the subarray on the left(⬅ kiri) of the pivot: `quickSort(arr, minIndex, pi - 1)`.
-   - Another for the subarray on the right(kanan ➡ ) of the pivot: `quickSort(arr, pi + 1, maxIndex)`.
+   - One for the subarray on the left(⬅ kiri) of the pivot: `quickSort(arr, minIndex, pi - 1)`.(quickSort(array, from minIndex until the previous pivot))
+   - Another for the subarray on the right(kanan ➡ ) of the pivot: `quickSort(arr, pi + 1, maxIndex)`. (quickSort(array, after pivot until maxIndex))
+
+> pi - 1 is previous element; pi + 1 is next element
 
 4. The partitioned subarrays will continue to be sorted in this recursive manner until they're fully sorted.
 
