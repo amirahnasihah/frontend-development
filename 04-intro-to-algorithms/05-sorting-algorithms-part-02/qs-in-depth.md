@@ -168,3 +168,17 @@ Here's how it works:
 6. The function returns the index at which the pivot has been placed in the rearranged array (`i + 1`).
 
 This partitioning process ensures that the pivot is positioned correctly within the array, with smaller elements to its left and larger elements to its right. This is a fundamental step in the QuickSort algorithm.
+
+### for loop, `for (let j = minIndex; j <= maxIndex - 1; j++)`
+
+Correct! The line `for (let j = minIndex; j <= maxIndex - 1; j++)` initiates a loop that iterates through a subarray starting from the `minIndex` and continuing until the second-to-last element, which is represented by `maxIndex - 1`.
+
+Here's a breakdown:
+
+- `let j = minIndex`: The loop starts with `j` assigned the value of `minIndex`, which is the index of the first element in the subarray that needs to be partitioned.
+
+- `j <= maxIndex - 1`: The loop continues as long as `j` is less than or equal to `maxIndex - 1`. This condition ensures that the loop iterates through all elements up to the second-to-last element in the subarray. This is because the last element (`maxIndex`) is the pivot element, which is already in its sorted position.
+
+- `j++`: After each iteration of the loop, the value of `j` is incremented by one, effectively moving to the next element in the subarray.
+
+So yes, you're right in your understanding. The loop iterates through the subarray from the smallest element (at `minIndex`) to the second-to-last element (at `maxIndex - 1`) to compare each element with the pivot and determine whether it should be moved to the left or right side of the pivot during the partitioning process.
