@@ -73,9 +73,9 @@ Sorting Algorithm
 
 **How it works:**
 
-- have 2 functions (recursive apprroach)
-- Function 1: quickSort(). To sort the elements between `minIndex` and `maxIndex` of the array.
-- Function 2: partition(). To rearrange the elements of an array in a way that allows the algorithm to efficiently sort the array into two sub-arrays: one containing elements smaller than a chosen pivot and another containing elements greater than the pivot.
+- Have 2 functions (recursive apprroach)
+- Function 1: `quickSort()`. To sort the elements between `minIndex` and `maxIndex` of the array.
+- Function 2: `partition()`. To rearrange the elements of an array in a way that allows the algorithm to efficiently sort the array into two sub-arrays: one containing elements smaller than a chosen pivot and another containing elements greater than the pivot.
 
 **Example (with descriptive meaning):**
 
