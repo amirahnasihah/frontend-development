@@ -140,6 +140,7 @@ function merge(sortedLeft, sortedRight) {
   let arr = [];
 
   // keep looping as long as condition is true.
+  // condition to keep looping: 
   // combine the halves into single array
   while () {
 
