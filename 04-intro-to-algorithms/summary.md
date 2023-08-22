@@ -152,7 +152,7 @@ function merge(sortedLeft, sortedRight) {
   	// if condition: 1st element of leftList smaller than 1st element of rightList
   	// then, shift-out 1st element of leftList and push to arr[]. (sbb dia kecik, jadi push ke array as 1st element, start dari 1,2,...)
   	if (sortedLeft[0] < sortedRight[0]) {
-  		arr.push(sortedLeft.shift[0])
+  		arr.push(sortedLeft[0].shift())
   	}
   }
 }
