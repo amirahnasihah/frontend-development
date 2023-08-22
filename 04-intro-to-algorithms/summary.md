@@ -162,7 +162,8 @@ function merge(leftList, rightList) {
   }
   // after sorted both leftList and rightList
   // combine both into single array
-  return leftList.concat(rightList)
+  // arr is combined by leftList and combined by rightList
+  return arr.concat(leftList).concat(rightList)
 }
 
 // example usage
