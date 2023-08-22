@@ -134,14 +134,15 @@ function mergeSort(inputList) {
     let sortedLeft = merge(leftList);
     let sortedRight = merge(inputList);
 
-    // after recursively divide elements, we merge the left and right into single array
+    // after recursively divide elements, we merge the sortedLeft and sortedRight into single array
+    // so, passed as arguments to merge()
     return merge(sortedLeft, sortedRight);
   }
 }
 
 /* PART 2: merge the subarrays process */
 
-function merge(sortedLeft, sortedRight) {
+function merge(leftList, rightList) {
   // since the array splited to 2, left and right. so, need to create new empty array variable to store that combined and sorted single array
   let arr = [];
 
@@ -151,8 +152,8 @@ function merge(sortedLeft, sortedRight) {
   while (sortedLeft.length > 0 && sorted.length > 0) {
   	// if condition: 1st element of leftList smaller than 1st element of rightList
   	// then, shift-out 1st element of leftList and push to arr[]. (sbb dia kecik, jadi push ke array as 1st element, start dari 1,2,...)
-  	if (sortedLeft[0] < sortedRight[0]) {
-  		arr.push(sortedLeft[0].shift())
+  	if (leftList[0] < rightList[0]) {
+  		arr.push(leftList[0].shift())
   	}
   }
 }
