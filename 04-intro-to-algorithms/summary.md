@@ -55,7 +55,7 @@ Sorting Algorithm
 
 **Definition:**
 
->  Quick sort use pivot to sort array. Pivot is like a wall (fixed point) to helps rearrange. Elements smaller than pivot 
+>  Quick sort use "pivot" to sort array. Pivot is like a wall (a fixed point) to helps rearrange elements. Elements smaller than pivot 
 
 
 - Quick Sort picks an element as “pivot” and partitions the given array around the picked “pivot”.
@@ -70,9 +70,6 @@ Sorting Algorithm
 > pivot as a central element that helps in dividing and conquering the sorting process. Its main purpose is to aid in rearranging the elements in a way that eventually leads to a sorted array.
 
 Partition ni proses/perbuatan pengasingan untuk nak tahu kiri dan kanan. Cara kita sort utnuk guna partition ialah kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol, `<` ingat ke kiri ⬅️, bandingkan dengan pivot (fixed point)**
-
-
-
 
 **Psedeucode:**
 
