@@ -139,7 +139,8 @@ function merge(sortedLeft, sortedRight) {
   // already cut into two arrays, left and right. each them have own lengths. now, want to combine them into one array so, create array empty array variable to store that one combined array
   let arr = [];
 
-  // 
+  // keep looping as long as condition is true.
+  // combine the halves into single array
   while () {
 
   }
