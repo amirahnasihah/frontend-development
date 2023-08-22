@@ -79,6 +79,8 @@ Sorting Algorithm
 
 **Example (with descriptive meaning):**
 
+Code execute quickSort() -> partition() -> quickSort()
+
 ```javascript
 const partition = (arr, leftIndex, rightIndex) => {
     // Choose the rightmost element as the pivot
