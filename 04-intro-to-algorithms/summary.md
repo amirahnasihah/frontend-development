@@ -142,7 +142,7 @@ function mergeSort(inputList) {
 /* PART 2: merge the subarrays process */
 
 function merge(sortedLeft, sortedRight) {
-  // already cut into two arrays, left and right. each them have own lengths. now, want to combine them into one array so, create array empty array variable to store that one combined array
+  // since the array splited to 2, left and right. so, need to create new empty array variable to store that one combined array
   let arr = [];
 
   // keep looping as long as condition is true.
