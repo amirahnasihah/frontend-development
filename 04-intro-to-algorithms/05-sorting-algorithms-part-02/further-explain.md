@@ -1,10 +1,16 @@
 - [Sorting Algorithm](#sorting-algorithm)
-  - [Exercises explained](#exercises-explained)
+  - [Exercises explained (line by line)](#exercises-explained-line-by-line)
     - [merge-sort.js](#merge-sortjs)
     - [quick-sort.js](#quick-sortjs)
 - [Merge Sort](#merge-sort)
+  - [JavaScript Prototypes in Merge Sort Recursive Approach](#javascript-prototypes-in-merge-sort-recursive-approach)
+  - [Study Note](#study-note)
+  - [Pseudocode - Recursive Approach](#pseudocode---recursive-approach)
+  - [Pseudocode - Common Approach](#pseudocode---common-approach)
 - [Quick Sort](#quick-sort)
 - [Other](#other)
+  - [`slice()` and `splice()`](#slice-and-splice)
+    - [`splice()`](#splice)
 
 # Sorting Algorithm
 

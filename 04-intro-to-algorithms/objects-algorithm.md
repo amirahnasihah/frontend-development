@@ -1,3 +1,8 @@
+- [JavaScript Objects Algorithm](#javascript-objects-algorithm)
+  - [Examples](#examples)
+  - [Array as Objects Algorithm](#array-as-objects-algorithm)
+    - [Examples](#examples-1)
+
 # JavaScript Objects Algorithm
 
 These algorithms might involve tasks like searching for properties, iterating through object keys, merging objects, filtering, mapping, and more.

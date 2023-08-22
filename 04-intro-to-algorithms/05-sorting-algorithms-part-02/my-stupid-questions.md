@@ -1,3 +1,13 @@
+- [Merge Sort (Recursive Approach)](#merge-sort-recursive-approach)
+  - [Part 1. Divide and Continue to Divide until left 1 element (aka considered "sorted" in itself)](#part-1-divide-and-continue-to-divide-until-left-1-element-aka-considered-sorted-in-itself)
+    - [Does Recursion similar to Loop?](#does-recursion-similar-to-loop)
+    - [The return of `inputList.length === 1`](#the-return-of-inputlistlength--1)
+    - [The output of `const sortedLeft = mergeSort(firstHalf);`](#the-output-of-const-sortedleft--mergesortfirsthalf)
+  - [Part 2. Sort and Merge](#part-2-sort-and-merge)
+- [while loop and for loop](#while-loop-and-for-loop)
+  - [while loop](#while-loop)
+  - [for loop](#for-loop)
+
 # Merge Sort (Recursive Approach)
 
 ```javascript

@@ -1,3 +1,14 @@
+- [Quick Sort Problems in JS](#quick-sort-problems-in-js)
+- [Part 1 and Part 2 (Explanation - TalentLabs)](#part-1-and-part-2-explanation---talentlabs)
+- [Line by line](#line-by-line)
+  - [Part 1: Quick Sort](#part-1-quick-sort)
+    - [`pi = partition(arr, minIndex, maxIndex);`](#pi--partitionarr-minindex-maxindex)
+  - [Part 2: Partition](#part-2-partition)
+    - [`pivot = arr[maxIndex];`](#pivot--arrmaxindex)
+    - [`i = minIndex - 1;`](#i--minindex---1)
+    - [`for (let j = minIndex; j <= maxIndex - 1; j++)`](#for-let-j--minindex-j--maxindex---1-j)
+- [Descriptive variable names and adding comments - beginners](#descriptive-variable-names-and-adding-comments---beginners)
+
 # Quick Sort Problems in JS
 
 >  quick sort guna pivot untuk sort. pivot ni pemisah/penghadang yang fixed point macam dinding

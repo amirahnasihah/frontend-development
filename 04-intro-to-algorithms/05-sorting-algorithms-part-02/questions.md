@@ -1,3 +1,14 @@
+- [Merge Sort Problems in JS](#merge-sort-problems-in-js)
+  - [Basic Implementation](#basic-implementation)
+  - [TalentLabs - Recursive Approach \*\*](#talentlabs---recursive-approach-)
+    - [Order of Execution](#order-of-execution)
+    - [Explanation Recursive Approach](#explanation-recursive-approach)
+  - [JavaScript Prototype](#javascript-prototype)
+    - [`splice()`](#splice)
+    - [`slice()`](#slice)
+- [Quick Sort Problems in JS](#quick-sort-problems-in-js)
+  - [What is Partition?](#what-is-partition)
+
 # Merge Sort Problems in JS
 
 ## Basic Implementation

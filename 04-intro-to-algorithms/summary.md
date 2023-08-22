@@ -8,6 +8,8 @@
 - [Sorting Algorithm](#sorting-algorithm)
   - [Bubble Sort](#bubble-sort)
   - [Insertion Sort](#insertion-sort)
+  - [Merge Sort](#merge-sort)
+  - [Quick Sort](#quick-sort)
 
 # Common Algorithm CheatSheet
 
