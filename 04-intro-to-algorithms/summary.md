@@ -80,10 +80,7 @@ For each "i" from 0 to length of arr - 1:
 Print the sorted array "arr"
 ```
 
-Converting into code:
-
-> if in a function, Copy the input array and work on the cloned array. In JS, we
-always try to work in an immutable way: `let inputArr = [...arr]`
+> if in a function, Copy the input array and work on the cloned array. In JS, always try to work in an immutable way: `let inputArr = [...arr]` (spread operator)
 
 ## Insertion Sort
 
