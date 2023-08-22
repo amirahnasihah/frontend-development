@@ -126,6 +126,7 @@ const quickSort = (arr, leftIndex, rightIndex) => {
 
 // Example usage
 const array = [5, 2, 9, 3, 5, 6];
+// passed to quickSort = (arr, leftIndex, rightIndex)
 quickSort(array, 0, array.length - 1);
 console.log(array); //  Output: [2, 3, 5, 5, 6, 9]
 ```
