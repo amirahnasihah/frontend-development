@@ -50,7 +50,10 @@ Sorting Algorithm
 ## Bubble Sort
 
 **Definition:**
+
 **How it works:**
+
+
 **Example (with descriptive meaning):**
 
 **Pseudocode Bubble Sort:**
