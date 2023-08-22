@@ -164,7 +164,7 @@ Here's how it works:
 
 1. It selects the pivot element, which is assumed to be the rightmost element (`arr[maxIndex]`).
 2. It initializes `i` as one less than `minIndex`. This will serve as the index for the last element that's smaller than the pivot.
-3. The loop iterates through the subarray from `minIndex` to `maxIndex - 1`:
+3. The loop iterates through the subarray from `minIndex` to `maxIndex - 1` (second-last element bcs last index alrdy chosen as pivot so, no need to count):
    - If the current element (`arr[j]`) is smaller than the pivot, it means that it should be moved to the left side of the pivot. So, `i` is incremented, and a swap is performed to move the element to the correct position.
 4. After the loop, the elements have been rearranged such that elements smaller than the pivot are on the left and elements greater than the pivot are on the right.
 5. The pivot element (`arr[maxIndex]`) is then swapped with the element at `arr[i + 1]`, effectively placing the pivot in its sorted position.
