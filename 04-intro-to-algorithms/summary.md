@@ -76,7 +76,7 @@ merge(), merge the left and right list)
   D. recursion - Continue for merging process. return merge() function with arguments of that already halfed array, sortedLeft and sortedRight. Recursion continues until each individual element is considered "sorted" in itself
 3. Function 2 - merge():
   A. need temporary variable of [empty array] to store the final sorted and merged array.
-  B. while loop (continue looping as long as the condition is true); condition is that both length of left and right must not negative number or none, must more than 0. it stops the loop when no length left.
+  B. while loop (continue looping as long as the condition is true); condition to keep looping is that both length of left and right must not negative number or none, must more than 0, at least 1 element. it stops the loop when no length left.
   C. if statement; the condition is, if the first element of leftList is less than first
   element of rightList, code executed: we **take-out/shift the first element from leftList** and then add/push it to the temp variable array.
   D. else statement; (first element of leftList is more than first element of rightList), we take-out/shift the first element from rightList and then add/push it to the temp variable array.
@@ -143,7 +143,7 @@ function merge(sortedLeft, sortedRight) {
   // condition to keep looping: both left and right list have at least 1 element / more than 0 element (taknak kosong)
   // combine the halves into single array
   while (sortedLeft.length > 0 && sorted.length > 0) {
-  	// push ke arr
+  	// 
   }
 }
 
