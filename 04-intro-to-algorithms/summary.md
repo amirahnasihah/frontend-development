@@ -70,17 +70,22 @@ merge(), merge the left and right list)
   A. if statement; This is exit condition to halt recursion. Need the base case where element equals to 1, then it stop recursion.
   B. else statement; need midpoint of array length, need left variable to store first half of
   array. This is the First Split (left and right):
-  C. recursion - called mergeSort function directly. This is where recursively
-  call `mergeSort` on `left` and `right` arrays. Where they will further divided into
+  C. recursion - called mergeSort function directly. This is where recursively call `mergeSort` on `left` and `right` arrays. Where they will further divided into
   each individual element of array and is considered "sorted" in itself.
+  
   D. recursion - Continue for merging process. return merge() function with arguments of that already halfed array, sortedLeft and sortedRight. Recursion continues until each individual element is considered "sorted" in itself
+  
 3. Function 2 - merge():
   A. need temporary variable of [empty array] to store the final sorted and merged array.
+  
   B. while loop (continue looping as long as the condition is true); condition to keep looping is that both length of left and right must not negative number or none, must more than 0, at least 1 element. it stops the loop when no length left.
-  C. if statement; the condition is, if the first element of leftList is less than first
-  element of rightList, code executed: we **take-out/shift the first element from leftList** and then add/push it to the temp variable array.
+  
+  C. if statement; the condition is, if the first element of leftList is less than first element of rightList, code executed: we **take-out/shift the first element from leftList** and then add/push it to the temp variable array.
+  
   D. else statement; (first element of leftList is more than first element of rightList), we take-out/shift the first element from rightList and then add/push it to the temp variable array.
+  
   E. exit while loop.
+  
   F. return function call where we merge/concat both of the array of leftList with rightList.
 */
 ```
