@@ -53,6 +53,8 @@ Sorting Algorithm
 
 - Simple sorting algorithm that repeatedly steps through the list, compares neighboring elements, and swaps them if in the wrong order. This process is repeated for each element until the entire list is sorted.
 
+> bubble sort: kita comparekan element bersebelahan
+
 **How it works:**
 
 
