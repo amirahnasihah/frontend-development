@@ -77,7 +77,7 @@ Let's break down the code step by step to provide a clear explanation for beginn
 ```javascript
 const quickSort = (arr, minIndex, maxIndex) => {
     if (maxIndex > minIndex) {
-        let pi = partition(arr, minIndex, maxIndex);
+        let pi = partition(arr, minIndex, maxIndex); // -> go to partition() function
 
         quickSort(arr, minIndex, pi - 1);
         quickSort(arr, pi + 1, maxIndex);
@@ -147,22 +147,6 @@ This partitioning process ensures that the pivot is positioned correctly within 
 
 ## Part 1: Quick Sort
 
-## Part 2: Partition
-
-### for loop,`for (let j = minIndex; j <= maxIndex - 1; j++)`
-
-Correct! The line `for (let j = minIndex; j <= maxIndex - 1; j++)` initiates a loop that iterates through a subarray starting from the `minIndex` and continuing until the second-to-last element, which is represented by `maxIndex - 1`.
-
-Here's a breakdown:
-
-- `let j = minIndex`: The loop starts with `j` assigned the value of `minIndex`, which is the index of the first element in the subarray that needs to be partitioned.
-
-- `j <= maxIndex - 1`: The loop continues as long as `j` is less than or equal to `maxIndex - 1`. This condition ensures that the loop iterates through all elements up to the second-to-last element in the subarray. This is because the last element (`maxIndex`) is the pivot element, which is already in its sorted position.
-
-- `j++`: After each iteration of the loop, the value of `j` is incremented by one, effectively moving to the next element in the subarray.
-
-So yes, you're right in your understanding. The loop iterates through the subarray from the smallest element (at `minIndex`) to the second-to-last element (at `maxIndex - 1`) to compare each element with the pivot and determine whether it should be moved to the left or right side of the pivot during the partitioning process.
-
 ### `pi = partition(arr, minIndex, maxIndex);`
 
 > **For the range, we will do the partition. First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition**
@@ -181,7 +165,9 @@ In the context of the QuickSort algorithm, the value of `pi` represents the inde
 
 So, after the line `pi = partition(arr, minIndex, maxIndex);` is executed, `pi` will hold the index value returned by the `partition` function, indicating the correct position of the pivot within the partitioned array.
 
-### `pivot = arr[maxIndex]`
+## Part 2: Partition
+
+### `pivot = arr[maxIndex];`
 
 In the QuickSort algorithm, the pivot is chosen only once at the beginning of the partitioning process for each subarray. Once the pivot is chosen, it remains constant throughout that particular partitioning step. The goal of the partitioning process is to rearrange the elements around the pivot, so the pivot itself does not change its value.
 
@@ -208,3 +194,16 @@ The partition function then iterates through the subarray between `minIndex` and
 
 In summary, `i` keeps track of the position where elements smaller than the pivot will be placed in the subarray during the partitioning process. After the iteration is complete, the pivot is placed at index `i + 1`, separating the smaller elements on the left and larger elements on the right.
 
+### `for (let j = minIndex; j <= maxIndex - 1; j++)`
+
+Correct! The line `for (let j = minIndex; j <= maxIndex - 1; j++)` initiates a loop that iterates through a subarray starting from the `minIndex` and continuing until the second-to-last element, which is represented by `maxIndex - 1`.
+
+Here's a breakdown:
+
+- `let j = minIndex`: The loop starts with `j` assigned the value of `minIndex`, which is the index of the first element in the subarray that needs to be partitioned.
+
+- `j <= maxIndex - 1`: The loop continues as long as `j` is less than or equal to `maxIndex - 1`. This condition ensures that the loop iterates through all elements up to the second-to-last element in the subarray. This is because the last element (`maxIndex`) is the pivot element, which is already in its sorted position.
+
+- `j++`: After each iteration of the loop, the value of `j` is incremented by one, effectively moving to the next element in the subarray.
+
+So yes, you're right in your understanding. The loop iterates through the subarray from the smallest element (at `minIndex`) to the second-to-last element (at `maxIndex - 1`) to compare each element with the pivot and determine whether it should be moved to the left or right side of the pivot during the partitioning process.
