@@ -129,9 +129,9 @@ console.log(array); //  Output: [2, 3, 5, 5, 6, 9]
 
 Partition Process Demonstration:
 
-`i`: track the position where should the next “small” elements be placed
+`i`/`lastSmallerIndex`: track the position where should the next “small” elements be placed
 
-`j`: track which element we are comparing with “pivot”
+`j`/`currentIndex`: track which element we are comparing with “pivot”
 
 At the very beginning, i = -1, j = 0.
 that means if element 0 is smaller than pivot, then we will i++, and we will swap it with element i (after i++), aka element 0 aka, no need swap => because there are no element larger than pivot on the left.
