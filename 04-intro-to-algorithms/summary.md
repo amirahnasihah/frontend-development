@@ -126,9 +126,9 @@ function mergeSort(inputList) {
   if (inputList.length === 1) {
     return inputList;
   } else {
-    // but have more size elements, split array into 2 (left and right)
-    let half = Math.floor(inputList.length / 2);
-    let leftList = inputList.splice(0, half);
+    // but have more size elements, split array into 2 (left and right)  half is midpoint
+    let midpoint = Math.floor(inputList.length / 2);
+    let leftList = inputList.splice(0, midpoint);
 
     // recursively divide elements until inputList is size of 1, which sorted by itself
     let sortedLeft = merge(leftList);
