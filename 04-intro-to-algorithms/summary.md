@@ -127,6 +127,11 @@ quickSort(array, 0, array.length - 1);
 console.log(array); //  Output: [2, 3, 5, 5, 6, 9]
 ```
 
+Partition Process Demonstration:
+
+At the very beginning, i = -1, j = 0.
+that means if element 0 is smaller than pivot, then we will i++, and we will swap it with element i (after i++), aka element 0 aka, no need swap => because there are no element larger than pivot on the left.
+
 **Psedeucode:**
 
 1. At start, the `quickSort` function is called with the array array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
