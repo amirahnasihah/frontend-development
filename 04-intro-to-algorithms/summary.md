@@ -57,4 +57,50 @@ Definition:
 
 Psedeucode:
 
-How it works
+How it works:
+
+Example (with descriptive meaning):
+
+```javascript
+const partition = (arr, leftIndex, rightIndex) => {
+    // Choose the rightmost element as the pivot
+    let pivot = arr[rightIndex];
+    
+    // Initialize the index of the last element smaller than the pivot
+    let lastSmallerIndex = leftIndex - 1;
+
+    // Iterate through the subarray
+    for (let currentIndex = leftIndex; currentIndex <= rightIndex - 1; currentIndex++) {
+        // If the current element is smaller than the pivot
+        if (arr[currentIndex] < pivot) {
+            // Increment the index of the last smaller element
+            lastSmallerIndex++;
+
+            // Swap the current element with the last smaller element
+            let temp = arr[lastSmallerIndex];
+            arr[lastSmallerIndex] = arr[currentIndex];
+            arr[currentIndex] = temp;
+        }
+    }
+
+    // Swap the pivot with the element just after the last smaller element
+    let temp = arr[lastSmallerIndex + 1];
+    arr[lastSmallerIndex + 1] = pivot;
+    arr[rightIndex] = temp;
+
+    // Return the index of the pivot in its sorted position
+    return lastSmallerIndex + 1;
+}
+
+const quickSort = (arr, leftIndex, rightIndex) => {
+    // If there are more than one element in the subarray
+    if (rightIndex > leftIndex) {
+        // Partition the subarray and get the index of the pivot
+        let pivotIndex = partition(arr, leftIndex, rightIndex);
+
+        // Recursively sort the subarrays on both sides of the pivot
+        quickSort(arr, leftIndex, pivotIndex - 1);
+        quickSort(arr, pivotIndex + 1, rightIndex);
+    }
+}
+```
