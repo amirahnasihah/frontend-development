@@ -24,8 +24,8 @@ Searching Algorithm
 Sorting Algorithm
 1. Bubble Sort
 2. Insertion Sort
-3. Merge Sort - 
-4. Quick Sort
+3. Merge Sort - divide into smaller subarrays
+4. Quick Sort - use pivot to rearrange elements
 
 **Definition:**
 **How it works:**
