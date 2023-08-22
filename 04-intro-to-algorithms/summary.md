@@ -8,8 +8,8 @@
 - [Sorting Algorithm](#sorting-algorithm)
   - [Bubble Sort](#bubble-sort)
   - [Insertion Sort](#insertion-sort)
-  - [Merge Sort](#merge-sort)
-  - [Quick Sort](#quick-sort)
+  - [Merge Sort (“divide and conquer”)](#merge-sort-divide-and-conquer)
+  - [Quick Sort (“divide and conquer”)](#quick-sort-divide-and-conquer)
 
 # Common Algorithm CheatSheet
 
@@ -27,10 +27,10 @@ Sorting Algorithm
 3. Merge Sort
 4. Quick Sort
 
-- definition
-- psedeucode
-- how it works/tips (simple terms)
-- example code
+**Definition:**
+**How it works:**
+**Example (with descriptive meaning):**
+**Psedeucode:**
 
 # Common Algorithm
 
@@ -51,9 +51,105 @@ Sorting Algorithm
 
 ## Insertion Sort
 
-## Merge Sort
+## Merge Sort (“divide and conquer”)
 
-## Quick Sort
+**Definition:**
+
+- It works by breaking down the array into smaller subarrays, sorting them, and then merging them back together in the correct order.
+
+**How it works:**
+
+```javascript
+const fruits = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];
+
+/*
+Merge Sort, hint/tip:
+1. 2 functions (A. mergeSort(), divide and divide until sorted itself; B.
+merge(), merge the left and right list)
+2. Function 1 - mergeSort():
+  A. if statement; This is exit condition to halt recursion. Need the base case.
+  B. else statement; need midpoint of array length, need left variable to store first half of
+  array. This is the First Split (left and right):
+  C. recursion - called mergeSort function directly. This is where recursively
+  call `mergeSort` on `left` and `right` arrays. Where they will further divided into
+  each individual element of array and is considered "sorted" in itself.
+  D. recursion - Continue for merging process. return merge() function with arguments of that already halfed array, sortedLeft and sortedRight. Recursion continues until each individual element is considered "sorted" in itself
+3. Function 2 - merge():
+  A. need temporary variable of [empty array] to store the final sorted and merged array.
+  B. while loop (continue looping as long as the condition is true); condition is that both length of left and right must not negative number or none, must more than 0. it stops the loop when no length left.
+  C. if statement; the condition is, if the first element of leftList is less than first
+  element of rightList, code executed: we take-out/shift the first element from leftList and then add/push it to the temp variable array.
+  D. else statement; (first element of leftList is more than first element of rightList), we take-out/shift the first element from rightList and then add/push it to the temp variable array.
+  E. exit while loop.
+  F. return function call where we merge/concat both of the array of leftList with rightList.
+*/
+```
+
+Merge Sort: Key Points to Remember
+
+1. **Functions:**
+   - There are two main functions: `mergeSort()` and `merge()`.
+   
+2. **mergeSort() Function:**
+   - Has an exit condition using an `if` statement (base case) to stop recursion.
+   - In the `else` statement:
+     - Calculate midpoint to divide the array into `left` and `right`.
+     - Use recursion to sort each smaller subarray (`left` and `right`).
+     - Merging process begins by returning `merge()` with `sortedLeft` and `sortedRight`.
+   
+3. **merge() Function:**
+   - Uses a temporary array (`arr`) to store the merged and sorted elements.
+   - A `while` loop iterates as long as both `leftList` and `rightList` have elements.
+   - In the loop:
+     - Compares the first elements of `leftList` and `rightList`.
+     - If the first element of `leftList` is smaller, it's shifted to `arr`.
+     - If the first element of `rightList` is smaller, it's shifted to `arr`.
+   - After the loop, any remaining elements from `leftList` and `rightList` are concatenated to `arr`.
+   - The merged and sorted array in `arr` is returned.
+
+**Example (with descriptive meaning):**
+
+
+**Psedeucode:**
+
+```javascript
+/* PART 1: divide by 2 and continue to divide until sorted by itself */
+
+function mergeSort(inputList) {
+  // base case to stop infinite recursion. when element left only 1, no need sort, just return inputList as size of 1.
+  if (inputList.length === 1) {
+    return inputList;
+  } else {
+    // but have more size elements, split array into 2 (left and right)
+    let half = Math.floor(inputList.length / 2);
+    let leftList = inputList.splice(0, half);
+
+    // recursively divide elements until inputList is size of 1, which sorted by itself
+    let sortedLeft = merge(leftList);
+    let sortedRight = merge(inputList);
+
+    // after recursively divide elements, we merge the left and right into single array
+    return merge(sortedLeft, sortedRight);
+  }
+}
+
+/* PART 2: merge the subarrays process */
+
+function merge(sortedLeft, sortedRight) {
+  // already cut into two arrays, left and right. each them have own lengths. now, want to combine them into one array so, create array empty array variable to store that one combined array
+  let arr = [];
+
+  // 
+  while () {
+
+  }
+}
+
+// example usage
+const inputList = ["cherry", "strawberry", "apple", "banana", "orange", "pear", "grape"];
+```
+
+## Quick Sort (“divide and conquer”)
 
 **Definition:**
 
@@ -64,8 +160,6 @@ Sorting Algorithm
 - After “Partition”, all smaller elements (smaller than “pivot”) should be placed before “pivot”, and put all greater elements (greater than “pivot”) should be placed after “pivot”.
 
 - After “Partition”, we will call “quickSort()” method for both the Right List and the Left List to sort each half.
-
-- Quick Sort is also a “divide and conquer” algorithm.
 
 > Partition ni proses/perbuatan pengasingan untuk nak tahu kiri dan kanan. Cara kita sort utnuk guna partition ialah kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol, `<` ingat ke kiri ⬅️, bandingkan dengan pivot (fixed point)**
 

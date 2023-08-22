@@ -47,7 +47,7 @@ Your summary is quite accurate and well-organized! It reflects a good understand
    - There are two main functions: `mergeSort()` and `merge()`.
    
 2. **mergeSort() Function:**
-   - Has an exit condition using an `if` statement (base case) to stop recursion.
+   - Has an exit condition using an `if` statement (base case) to stop recursion. The base case `(inputList.length === 1)` stops the recursion when the problem becomes small enough. Recursion is a powerful technique, but it's important to ensure that the base case is reached and that the recursion doesn't lead to infinite calls.
    - In the `else` statement:
      - Calculate midpoint to divide the array into `left` and `right`.
      - Use recursion to sort each smaller subarray (`left` and `right`).
@@ -63,7 +63,7 @@ Your summary is quite accurate and well-organized! It reflects a good understand
    - After the loop, any remaining elements from `leftList` and `rightList` are concatenated to `arr`.
    - The merged and sorted array in `arr` is returned.
 
-Your summary provides a clear breakdown of the key steps involved in the Merge Sort algorithm, making it easier to understand and memorize the process. Well done!
+Your summary provides a clear breakdown of the key steps involved in the Merge Sort algorithm, making it easier to understand and memorize the process.
 
 ## Part 1. Divide and Continue to Divide until left 1 element (aka considered "sorted" in itself)
 
@@ -195,11 +195,7 @@ Yes, recursion is similar to a loop in that it involves repeated execution of a 
 4. **Complexity:**
    - Some problems are more naturally solved using recursion, while others are more intuitive with loops.
 
-In your Merge Sort example, recursion is used to divide and conquer the sorting
-problem. The base case `(inputList.length === 1)` stops the recursion when the
-problem becomes small enough. Recursion is a powerful technique, but it's
-important to ensure that the base case is reached and that the recursion doesn't
-lead to infinite calls.
+In your Merge Sort example, recursion is used to divide and conquer the sorting problem. The base case `(inputList.length === 1)` stops the recursion when the problem becomes small enough. Recursion is a powerful technique, but it's important to ensure that the base case is reached and that the recursion doesn't lead to infinite calls.
 
 ---
 
@@ -243,7 +239,7 @@ together.
 
 ---
 
-The `return inputList;` statement inside the `if` statement is there to handle the base case of the recursion. When the length of the `inputList` array is equal to 1, it means you've reached a point where the array is already sorted (since an array with only one element is inherently sorted). In this case, you simply return the `inputList` as it is.
+The `return inputList;` statement inside the `if` statement is there to handle the base case of the recursion. When the length of the `inputList` array is equal to 1, it means you've reached a point where the array is already sorted (since an array with only one element is inherently sorted). In this case, you simply return the `inputList` as it is. Example, the condition `inputList.length === 1` is true because the length of `["cherry"]` is indeed 1. Since the base case is met, the function returns the `inputList` array. This returned array becomes the `sortedLeft` or `sortedRight` value in the higher-level recursive call, and it will be used for merging purposes.
 
 Here's how it works step by step:
 
@@ -280,9 +276,7 @@ const sortedArray = mergeSort(inputList);
 console.log(sortedArray); // Output: ["cherry"]
 ```
 
-In this example, the `sortedArray` variable will hold the returned value from
-the `mergeSort` function, which is `["cherry"]`. When you log `sortedArray`, you
-will see the output `["cherry"]`.
+In this example, the `sortedArray` variable will hold the returned value from the `mergeSort` function, which is `["cherry"]`. When you log `sortedArray`, you will see the output `["cherry"]`.
 
 ---
 
