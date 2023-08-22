@@ -113,9 +113,6 @@ Merge Sort: Key Points to Remember
    - After the loop, any remaining elements from `leftList` and `rightList` are concatenated to `arr`.
    - The merged and sorted array in `arr` is returned.
 
-**Example (with descriptive meaning):**
-
-
 **Psedeucode:**
 
 ```javascript
