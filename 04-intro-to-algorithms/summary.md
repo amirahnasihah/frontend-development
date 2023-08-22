@@ -150,8 +150,10 @@ function merge(sortedLeft, sortedRight) {
   // combine the halves into single array
   while (sortedLeft.length > 0 && sorted.length > 0) {
   	// if condition: 1st element of leftList smaller than 1st element of rightList
-  	// then take-out 1st element of leftList and push to arr[]. (sbb dia kecik, jadi push ke array as 1st element, start dari 1,2,...)
-  	if (sortedLeft[0] )
+  	// then, shift-out 1st element of leftList and push to arr[]. (sbb dia kecik, jadi push ke array as 1st element, start dari 1,2,...)
+  	if (sortedLeft[0] < sortedRight[0]) {
+  		
+  	}
   }
 }
 
