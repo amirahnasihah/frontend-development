@@ -22,8 +22,8 @@ Searching Algorithm
 2. Binary Search
 
 Sorting Algorithm
-1. Bubble Sort
-2. Insertion Sort
+1. Bubble Sort - swap and swap
+2. Insertion Sort - insert
 3. Merge Sort - divide into smaller subarrays, use midpoint
 4. Quick Sort - use fixed pivot to rearrange elements
 
