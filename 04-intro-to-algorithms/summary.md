@@ -51,10 +51,13 @@ Sorting Algorithm
 
 **Definition:**
 
+- Simple sorting algorithm that repeatedly steps through the list, compares neighboring elements, and swaps them if in the wrong order. This process is repeated for each element until the entire list is sorted.
+
 **How it works:**
 
 
 **Example (with descriptive meaning):**
+
 
 **Pseudocode Bubble Sort:**
 
