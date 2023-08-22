@@ -68,7 +68,7 @@ If the element j is smaller than pivot, then we will do i++ and swap element i w
 
 - 2 functions (recursive apprroach)
 - Part 1: quickSort. To sort the elements between `minIndex` and `maxIndex` of the array.
-- Part 2: partition.
+- Part 2: partition. To rearrange the elements of an array in a way that allows the algorithm to efficiently sort the array into two sub-arrays: one containing elements smaller than a chosen pivot and another containing elements greater than the pivot.
 
 Let's break down the code step by step to provide a clear explanation for beginners:
 
