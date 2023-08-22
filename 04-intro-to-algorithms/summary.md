@@ -135,7 +135,7 @@ function mergeSort(inputList) {
     let sortedRight = merge(inputList);
 
     // after recursively divide elements, we merge the sortedLeft and sortedRight into single array
-    // so, passed as arguments to merge()
+    // so, passed as arguments to merge() function
     return merge(sortedLeft, sortedRight);
   }
 }
