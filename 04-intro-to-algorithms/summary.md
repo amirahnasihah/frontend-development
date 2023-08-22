@@ -55,7 +55,7 @@ Sorting Algorithm
 
 **Pseudocode Bubble Sort:**
 
-1. Pseudocode
+1. Pseudocode example #1:
 
 ```
 Initialize an array called "arr" with values [14, 33, 28, 40, 10]
@@ -68,7 +68,7 @@ For each "i" from 0 to length of arr - 1 (second last index):
 Print the sorted array "arr"
 ```
 
-2. Pseudocode
+2. Pseudocode example #2:
 ```
 Initialize an array called "arr" with values [14, 33, 28, 40, 10]
 
