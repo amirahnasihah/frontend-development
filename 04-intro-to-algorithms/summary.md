@@ -67,10 +67,6 @@ Sorting Algorithm
 
 > Partition ni proses/perbuatan pengasingan untuk nak tahu kiri dan kanan. Cara kita sort utnuk guna partition ialah kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol, `<` ingat ke kiri ⬅️, bandingkan dengan pivot (fixed point)**
 
-**Psedeucode:**
-
-
-
 **How it works:**
 
 - Have 2 functions (recursive apprroach)
@@ -130,3 +126,13 @@ const array = [5, 2, 9, 3, 5, 6];
 quickSort(array, 0, array.length - 1);
 console.log(array); //  Output: [2, 3, 5, 5, 6, 9]
 ```
+
+**Psedeucode:**
+
+1. At start, the `quickSort` function is called with the array array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
+2. Part 1: Inside `quickSort()`. `if` statement; we want to have a condition where `maxIndex` is bigger than `minIndex` (nombor paling besar max kena lagi besar dari min number, obviously). first block must be true for the code to be executed. Nak cari min dan max (macam cari range)
+3. Inside if block, penting kita nak kena cari adalah Pivot Index(`pi`). Kita create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan elements. **(First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition)**. So, the `partition` function is also called with the array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
+4. Part 1, but also Part 2: Sekarang ni kita ada di partition function. So, create partition function.
+5. First, kita setkan pivot kita at the always rightmost element (element paling kanan ataupun last element): `pivot = arr[maxIndex]`.
+6. Pastu, setkan i = minIndex - 1 (what if minIndex is 0, so 0 minus 1??). It initializes `i` as one less than `minIndex`. **This will serve as the index for the last element that's smaller than the pivot.**
+7. use for loop to loop thru aray to find the right position of pivot. start j from minIndex; continue until j less than or equal maxIndex (macam cari range?); i++.
