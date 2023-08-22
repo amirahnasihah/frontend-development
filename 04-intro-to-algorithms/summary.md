@@ -55,8 +55,7 @@ Sorting Algorithm
 
 **Definition:**
 
->  Quick sort use "pivot" to sort array. Pivot is like a wall (a fixed point) to helps rearrange elements. Elements smaller than pivot 
-
+>  Quick sort use "pivot" to sort array. Pivot is like a wall (a fixed point) to helps rearrange elements. Elements smaller than pivot goes to <-left. Elements bigger than pivot goes to right ->
 
 - Quick Sort picks an element as “pivot” and partitions the given array around the picked “pivot”.
 
