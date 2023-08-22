@@ -24,7 +24,7 @@ Searching Algorithm
 Sorting Algorithm
 1. Bubble Sort
 2. Insertion Sort
-3. Merge Sort
+3. Merge Sort - 
 4. Quick Sort
 
 **Definition:**
@@ -50,6 +50,11 @@ Sorting Algorithm
 ## Bubble Sort
 
 ## Insertion Sort
+
+**Definition:**
+**How it works:**
+**Example (with descriptive meaning):**
+**Psedeucode:**
 
 ## Merge Sort (“divide and conquer”)
 
