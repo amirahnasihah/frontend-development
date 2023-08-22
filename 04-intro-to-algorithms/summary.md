@@ -151,11 +151,12 @@ function merge(leftList, rightList) {
   // combine the halves into single array
   while (sortedLeft.length > 0 && sorted.length > 0) {
   	// if condition: 1st element of leftList smaller than 1st element of rightList
-  	// then, shift up 1st element of leftList and push to arr[]. (sbb dia kecik, jadi push ke array as 1st element, start dari 1,2,...)
+  	// then, shift up 1st element of leftList and push to arr[].
+  	// sbbkan lagi kecik, jadi kita kena push ke array dulu as 1st element, start dari 1,2,...
   	if (leftList[0] < rightList[0]) {
   		arr.push(leftList.shift())
   	} else {
-  		// else condition: 1st element of leftList > 1st element of rightList
+  		// else condition: 1st element of leftList > 1st element of rightList. then, shift 1
   		arr.push(rightList.shift())
   	}
   }
