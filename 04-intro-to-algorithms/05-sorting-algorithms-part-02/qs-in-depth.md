@@ -183,6 +183,8 @@ So, while the pivot's value itself does not change within a single partitioning 
 
 ### `i = minIndex - 1;`
 
+> untuk tahu index elements yang kecik dari pivot
+
 In the context of the QuickSort algorithm, the line `let i = minIndex - 1;` initializes a variable `i` that will be used as an index to keep track of the position in the array where elements smaller than the pivot should be placed.
 
 Here's how it works within the partition function:
@@ -193,6 +195,8 @@ Here's how it works within the partition function:
 The partition function then iterates through the subarray between `minIndex` and `maxIndex - 1` (since `maxIndex` is the pivot element), comparing each element with the pivot. If an element is smaller than the pivot, `i` is incremented, and the element at index `i` is swapped with the current element at index `j`.
 
 In summary, `i` keeps track of the position where elements smaller than the pivot will be placed in the subarray during the partitioning process. After the iteration is complete, the pivot is placed at index `i + 1`, separating the smaller elements on the left and larger elements on the right.
+
+> i = minIndex - 1 (what if minIndex is 0, so 0 minus 1??)
 
 ### `for (let j = minIndex; j <= maxIndex - 1; j++)`
 
@@ -207,3 +211,53 @@ Here's a breakdown:
 - `j++`: After each iteration of the loop, the value of `j` is incremented by one, effectively moving to the next element in the subarray.
 
 So yes, you're right in your understanding. The loop iterates through the subarray from the smallest element (at `minIndex`) to the second-to-last element (at `maxIndex - 1`) to compare each element with the pivot and determine whether it should be moved to the left or right side of the pivot during the partitioning process.
+
+# Descriptive variable names and adding comments - beginners
+
+Using descriptive variable names and adding comments can make the code much easier to understand, especially for beginners. Here's the modified code with more descriptive variable names and added comments:
+
+```javascript
+const partition = (arr, leftIndex, rightIndex) => {
+    // Choose the rightmost element as the pivot
+    let pivot = arr[rightIndex];
+    
+    // Initialize the index of the last element smaller than the pivot
+    let lastSmallerIndex = leftIndex - 1;
+
+    // Iterate through the subarray
+    for (let currentIndex = leftIndex; currentIndex <= rightIndex - 1; currentIndex++) {
+        // If the current element is smaller than the pivot
+        if (arr[currentIndex] < pivot) {
+            // Increment the index of the last smaller element
+            lastSmallerIndex++;
+
+            // Swap the current element with the last smaller element
+            let temp = arr[lastSmallerIndex];
+            arr[lastSmallerIndex] = arr[currentIndex];
+            arr[currentIndex] = temp;
+        }
+    }
+
+    // Swap the pivot with the element just after the last smaller element
+    let temp = arr[lastSmallerIndex + 1];
+    arr[lastSmallerIndex + 1] = pivot;
+    arr[rightIndex] = temp;
+
+    // Return the index of the pivot in its sorted position
+    return lastSmallerIndex + 1;
+}
+
+const quickSort = (arr, leftIndex, rightIndex) => {
+    // If there are more than one element in the subarray
+    if (rightIndex > leftIndex) {
+        // Partition the subarray and get the index of the pivot
+        let pivotIndex = partition(arr, leftIndex, rightIndex);
+
+        // Recursively sort the subarrays on both sides of the pivot
+        quickSort(arr, leftIndex, pivotIndex - 1);
+        quickSort(arr, pivotIndex + 1, rightIndex);
+    }
+}
+```
+
+I've added comments to explain each step and used descriptive variable names like `leftIndex`, `rightIndex`, `currentIndex`, and `lastSmallerIndex`. This should make the code much more intuitive for beginners to follow.
