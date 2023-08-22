@@ -53,13 +53,24 @@ Sorting Algorithm
 
 ## Quick Sort
 
-Definition:
+**Definition:**
 
-Psedeucode:
+- Quick Sort picks an element as “pivot” and partitions the given array around the picked “pivot”.
 
-How it works:
+- After “Partition”, all smaller elements (smaller than “pivot”) should be placed before “pivot”, and put all greater elements (greater than “pivot”) should be placed after “pivot”.
 
-Example (with descriptive meaning):
+- After “Partition”, we will call “quickSort()” method for both the Right List and the Left List to sort each half.
+
+- Quick Sort is also a “divide and conquer” algorithm.
+
+> pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
+
+
+**Psedeucode:**
+
+**How it works:**
+
+**Example (with descriptive meaning):**
 
 ```javascript
 const partition = (arr, leftIndex, rightIndex) => {
