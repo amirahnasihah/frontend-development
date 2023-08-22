@@ -169,7 +169,7 @@ Here's how it works:
 
 This partitioning process ensures that the pivot is positioned correctly within the array, with smaller elements to its left and larger elements to its right. This is a fundamental step in the QuickSort algorithm.
 
-### for loop, `for (let j = minIndex; j <= maxIndex - 1; j++)`
+### for loop;,`for (let j = minIndex; j <= maxIndex - 1; j++)`
 
 Correct! The line `for (let j = minIndex; j <= maxIndex - 1; j++)` initiates a loop that iterates through a subarray starting from the `minIndex` and continuing until the second-to-last element, which is represented by `maxIndex - 1`.
 
