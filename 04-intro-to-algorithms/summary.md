@@ -65,6 +65,14 @@ Sorting Algorithm
 
 > pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
 
+>  quick sort guna pivot untuk sort. pivot ni pemisah/penghadang yang fixed point macam dinding
+> a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
+> pivot as a central element that helps in dividing and conquering the sorting process. Its main purpose is to aid in rearranging the elements in a way that eventually leads to a sorted array.
+
+Partition ni proses/perbuatan pengasingan untuk nak tahu kiri dan kanan. Cara kita sort utnuk guna partition ialah kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol, `<` ingat ke kiri ⬅️, bandingkan dengan pivot (fixed point)**
+
+
+
 
 **Psedeucode:**
 
@@ -72,7 +80,9 @@ Sorting Algorithm
 
 **How it works:**
 
-
+- have 2 functions (recursive apprroach)
+- Function 1: quickSort. To sort the elements between `minIndex` and `maxIndex` of the array.
+- Function 2: partition. To rearrange the elements of an array in a way that allows the algorithm to efficiently sort the array into two sub-arrays: one containing elements smaller than a chosen pivot and another containing elements greater than the pivot.
 
 **Example (with descriptive meaning):**
 
