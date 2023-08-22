@@ -156,7 +156,7 @@ function merge(leftList, rightList) {
   	if (leftList[0] < rightList[0]) {
   		arr.push(leftList.shift())
   	} else {
-  		// else condition: 1st element of leftList > 1st element of rightList. then, shift 1
+  		// else condition: 1st element of leftList > 1st element of rightList. then, shift element from rightList and push to arr.
   		arr.push(rightList.shift())
   	}
   }
