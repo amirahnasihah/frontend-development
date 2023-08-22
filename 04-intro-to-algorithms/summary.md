@@ -49,6 +49,42 @@ Sorting Algorithm
 
 ## Bubble Sort
 
+**Definition:**
+**How it works:**
+**Example (with descriptive meaning):**
+
+**Pseudocode Bubble Sort:**
+
+1. Pseudocode
+
+```
+Initialize an array called "arr" with values [14, 33, 28, 40, 10]
+
+For each "i" from 0 to length of arr - 1 (second last index):
+    For each "j" from 0 to length of arr - i - 1:
+        If the value at arr[j] is greater than the value at arr[j + 1]:
+            Swap the values at arr[j] and arr[j + 1]
+
+Print the sorted array "arr"
+```
+
+2. Pseudocode
+```
+Initialize an array called "arr" with values [14, 33, 28, 40, 10]
+
+For each "i" from 0 to length of arr - 1:
+    For each "j" from 0 to length of arr - i - 2:
+        If the value at arr[j] is greater than the value at arr[j + 1]:
+            Swap the values at arr[j] and arr[j + 1]
+
+Print the sorted array "arr"
+```
+
+Converting into code:
+
+> if in a function, Copy the input array and work on the cloned array. In JS, we
+always try to work in an immutable way: `let inputArr = [...arr]`
+
 ## Insertion Sort
 
 **Definition:**
