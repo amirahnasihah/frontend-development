@@ -160,6 +160,7 @@ function merge(leftList, rightList) {
   		arr.push(rightList.shift())
   	}
   }
+  // after sorted both leftList and rightList
 }
 
 // example usage
