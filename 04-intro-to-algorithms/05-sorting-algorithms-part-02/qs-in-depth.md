@@ -1,9 +1,10 @@
 # Quick Sort Problems in JS
 
-> a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies. (pemisah/penghadang mcm kat masjid tu)
+>  quick sort guna pivot untuk sort. pivot ni pemisah/penghadang yang fixed point macam dinding
+> a pivot is a reference point that helps partition and sort an array efficiently by dividing it into smaller segments and using recursive strategies.
 > pivot as a central element that helps in dividing and conquering the sorting process. Its main purpose is to aid in rearranging the elements in a way that eventually leads to a sorted array.
 
-Partition ni proses/perbuatan pengasingan untuk nak tahu kiri dan kanan. Kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol, `<` ingat ke kiri ⬅️, bandingkan dengan pivot (fixed point)**
+Partition ni proses/perbuatan pengasingan untuk nak tahu kiri dan kanan. Cara kita sort utnuk guna partition ialah kalau element skrg lagi kecik dari pivot, ke kiri. **tip: less than symbol, `<` ingat ke kiri ⬅️, bandingkan dengan pivot (fixed point)**
 
 PART 2:
 ```javascript
@@ -56,12 +57,19 @@ If the element j is smaller than pivot, then we will do i++ and swap element i w
 > element j kecik dari pivot, index bertambah 1 kemudian kita tukar main element iaitu element i dengan element j. **yang lagi kecik kita swap**
 
 1. At start, the `quickSort` function is called with the array array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
-2. Inside `quickSort()`. `if` statement; we want to have a condition where `maxIndex` is bigger than `minIndex` (nombor paling besar max kena lagi besar dari min number, obviously). first block must be true for the code to be executed.
-3. Inside if block, penting kita nak kena cari adalah Pivot Index(pi). Kita create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan elements. (First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition). So, the `partition` function is also called with the array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
+2. Inside `quickSort()`. `if` statement; we want to have a condition where `maxIndex` is bigger than `minIndex` (nombor paling besar max kena lagi besar dari min number, obviously). first block must be true for the code to be executed. Nak cari min dan max (macam cari range)
+3. Inside if block, penting kita nak kena cari adalah Pivot Index(pi). Kita create partition function untuk nak tahu kat mana pivot duduk lepas kita asingkan elements. **(First cycle, range would be from 0 to end. Partition function should return the position of pivot after partition)**. So, the `partition` function is also called with the array, and the values `0` (which is the minimum index) and `array.length - 1` (which is the maximum index) are passed as arguments.
 4. Sekarang ni kita kat partition function. So, looked at partition function.
 5. Mula2, kita setkan pivot kita at the rightmost element, element paling kanan ataupun last element.
 6. Pastu, setkan i = minIndex - 1 (minIndex is 0, so 0 minus 1??).
 7. use for loop to loop thru aray to find the right position of pivot. start j from minIndex; continue until j less than or equal maxIndex (macam cari range?); i++.
+
+Quick Sort
+
+- 2 functions (recursive apprroach)
+- Part 1: quickSort
+- Part 2: partition
+
 
 ## `pi = partition(arr, minIndex, maxIndex);`
 
@@ -169,7 +177,7 @@ Here's how it works:
 
 This partitioning process ensures that the pivot is positioned correctly within the array, with smaller elements to its left and larger elements to its right. This is a fundamental step in the QuickSort algorithm.
 
-### for loop;,`for (let j = minIndex; j <= maxIndex - 1; j++)`
+### for loop,`for (let j = minIndex; j <= maxIndex - 1; j++)`
 
 Correct! The line `for (let j = minIndex; j <= maxIndex - 1; j++)` initiates a loop that iterates through a subarray starting from the `minIndex` and continuing until the second-to-last element, which is represented by `maxIndex - 1`.
 
@@ -182,3 +190,17 @@ Here's a breakdown:
 - `j++`: After each iteration of the loop, the value of `j` is incremented by one, effectively moving to the next element in the subarray.
 
 So yes, you're right in your understanding. The loop iterates through the subarray from the smallest element (at `minIndex`) to the second-to-last element (at `maxIndex - 1`) to compare each element with the pivot and determine whether it should be moved to the left or right side of the pivot during the partitioning process.
+
+## Pivot
+
+In the QuickSort algorithm, the pivot is chosen only once at the beginning of the partitioning process for each subarray. Once the pivot is chosen, it remains constant throughout that particular partitioning step. The goal of the partitioning process is to rearrange the elements around the pivot, so the pivot itself does not change its value.
+
+Here's how the pivot works within the QuickSort algorithm:
+
+1. **Initial Choice:** At the beginning of each partitioning step, a pivot element is chosen. The choice of pivot can be different for each partitioning step, or you might use the same pivot for all steps (like always choosing the last element of the subarray).
+
+2. **Partitioning:** The elements in the subarray are rearranged around the pivot. Elements smaller than the pivot are moved to its left, and elements greater than the pivot are moved to its right. The pivot itself is not moved, but its position in the array may change as a result of swapping elements around it.
+
+3. **Recursive Sorting:** After partitioning, the pivot is now in its final sorted position. The subarrays to the left and right of the pivot are then recursively sorted. The pivot's role in this step is to divide the subarray into smaller segments for sorting.
+
+So, while the pivot's value itself does not change within a single partitioning step, it does play a crucial role in how the subarrays are partitioned and ultimately sorted.
