@@ -48,3 +48,13 @@ Sorting Algorithm
 ## Bubble Sort
 
 ## Insertion Sort
+
+## Merge Sort
+
+## Quick Sort
+
+Definition:
+
+Psedeucode:
+
+How it works
