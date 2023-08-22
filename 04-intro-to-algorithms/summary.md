@@ -129,8 +129,47 @@ console.log(array); //  Output: [2, 3, 5, 5, 6, 9]
 
 Partition Process Demonstration:
 
+`i`: track the position where should the next “small” elements be placed
+
+`j`: track which element we are comparing with “pivot”
+
 At the very beginning, i = -1, j = 0.
 that means if element 0 is smaller than pivot, then we will i++, and we will swap it with element i (after i++), aka element 0 aka, no need swap => because there are no element larger than pivot on the left.
+
+|1|17|3|10|9|==6==|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+
+** 1 ↔ 17
+
+Partition Process Demonstration:
+
+`i`: track the position where should the next “small” elements be placed
+
+`j`: track which element we are comparing with “pivot”
+
+now, i = 0, j = 1.
+that means if element 1 is smaller than pivot, then we will swap it with element i+1, aka element 1 aka, no need swap => because there are no element larger than pivot on the left.
+
+However, element 1 is larger than the pivot, so no need to bump up i or do swapping.
+
+|1|17|3|10|9|==6==|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+
+Partition Process Demonstration:
+
+`i`: track the position where should the next “small” elements be placed
+
+`j`: track which element we are comparing with “pivot”
+
+now, i = 0, j = 2.
+that means if element 2 is smaller than pivot, then we will i++, and swap element 2 with i (after i++), aka element 1
+
+We need to do swap this time, because 3 is smaller than 6, and there is a element larger than pivot on the left (element 1)
+
+|1|17|3|10|9|==6==|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+
+** 17 ↔ 3
 
 **Psedeucode:**
 
