@@ -140,7 +140,7 @@ function merge(sortedLeft, sortedRight) {
   let arr = [];
 
   // keep looping as long as condition is true.
-  // condition to keep looping: 
+  // condition to keep looping: both left and right list have at least 1 element / more than 0 element ()
   // combine the halves into single array
   while () {
 
