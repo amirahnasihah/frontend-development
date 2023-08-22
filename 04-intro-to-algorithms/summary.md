@@ -149,8 +149,8 @@ function merge(sortedLeft, sortedRight) {
   // condition to keep looping: both left and right list have at least 1 element / more than 0 element (taknak kosong)
   // combine the halves into single array
   while (sortedLeft.length > 0 && sorted.length > 0) {
-  	// if condition: 
-  	// take-out 1st element of left then push to arr[]
+  	// if condition: 1st element of leftList smaller than 1st element of rightList
+  	// then take-out 1st element of leftList and push to arr[]. (sbb dia )
   	if ()
   }
 }
