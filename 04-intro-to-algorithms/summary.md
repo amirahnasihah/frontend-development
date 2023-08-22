@@ -154,6 +154,9 @@ function merge(leftList, rightList) {
   	// then, shift up 1st element of leftList and push to arr[]. (sbb dia kecik, jadi push ke array as 1st element, start dari 1,2,...)
   	if (leftList[0] < rightList[0]) {
   		arr.push(leftList.shift())
+  	} else {
+  		// else condition:
+  		arr.push(rightList.shift())
   	}
   }
 }
