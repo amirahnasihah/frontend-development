@@ -47,6 +47,8 @@ Sorting Algorithm
 
 # Sorting Algorithm
 
+> **To sort numbers, you need to provide a comparison function.**
+
 ## Bubble Sort
 
 **Definition:**
