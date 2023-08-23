@@ -59,6 +59,25 @@ Sorting Algorithm
 
 **How it works:**
 
+- Bubble sort works by examining each set of adjacent elements in the array, from left to right, switching their positions if they are out of order.
+- The algorithm repeats this process until it can traverse the entire array and cannot find two elements that need to be swapped.
+
+1. 1st: Bubble sort starts with the first two elements, comparing them to check which one is greater. Since 33 > 14, it is in the correct position.
+
+2. 2nd: We compare 33 with 28.(Compare 2nd and 3rd element). Since 28 < 33, it is in incorrect position.
+So we need to swap the position of 28 and 33. The **new array** will be: `[14, 28, 33, 40, 10]`
+
+3. 3rd: We compare 33 with 40.(Compare 3rd and 4th element). Since 40 > 33, it is in the correct position.
+
+4. 4th: We compare 40 with 10.(Compare 4th and 5th element). Since 10 < 40, it is in incorrect position.
+So we need to swap the position of 10 and 40. The **new array** will be: `[14, 28, 33, 10, 40]`
+
+5. 5th: Now we have reached the end of the array. Our array look like this: `[14, 28, 33, 10, 40]`.
+But **the array is still not sorted. We need to repeat step 1 to 4 again. Until our array is sorted.**
+
+(Note that we don’t need to worry about “40” anymore as we are sure that it is the largest one)
+
+**The reason for using `arr.length - i - 1` is to avoid unnecessary comparisons in the later iterations of the outer loop. Since the largest element is "bubbled up" to the end in each iteration, there's no need to compare it again in the subsequent iterations, as it's already in the correct position. This optimization helps make the sorting process more efficient.**
 
 **Example (with descriptive meaning):**
 
