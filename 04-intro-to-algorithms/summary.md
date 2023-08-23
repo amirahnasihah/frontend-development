@@ -59,7 +59,7 @@ Sorting Algorithm
 
 **How it works:**
 
-> loop th
+> repeat, firstb from left to second-last index. 
 
 - Bubble sort works by examining each set of neighboring elements in the array, from left to right, switching their positions if they are out of order.
 - The algorithm repeats this process until it can traverse the entire array and cannot find two elements that need to be swapped.
