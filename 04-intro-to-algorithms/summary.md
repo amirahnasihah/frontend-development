@@ -59,7 +59,7 @@ Sorting Algorithm
 
 **How it works:**
 
-> outer loop repeat, from left to second-last index. inner loop repeat, from left to third-last index. remember: we are comparing neighboring elements so, if current element of subarray > next element of subarray, then we swap them. swap current 
+> outer loop repeat, from left to second-last length. inner loop repeat, from left to third-last length. remember: we are comparing neighboring elements so, if current element of subarray > next element of subarray, then we swap them. swap current element witg 
 
 - Bubble sort works by examining each set of neighboring elements in the array, from left to right, switching their positions if they are out of order.
 - The algorithm repeats this process until it can traverse the entire array and cannot find two elements that need to be swapped.
@@ -79,7 +79,7 @@ But **the array is still not sorted. We need to repeat step 1 to 4 again. Until 
 
 (Note that we don’t need to worry about “40” anymore as we are sure that it is the largest one)
 
-**The `arr.length - i - 1` is to avoid unnecessary comparisons in the later iterations of the outer loop. Since the largest element is "bubbled up" to the end in each iteration, no need to compare it again in the next iterations, as it's already in the correct position**
+**third-last length: `arr.length - i - 1` is to avoid unnecessary comparisons in the later iterations of the outer loop. Since the largest element is "bubbled up" to the end in each iteration, no need to compare it again in the next iterations, as it's already in the correct position**
 
 **Example (with descriptive meaning):**
 
