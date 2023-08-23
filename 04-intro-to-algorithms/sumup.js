@@ -5,9 +5,9 @@ function bubbleSort(bubbleFruits) {
 		for (let j = 0; j < bubbleFruits.length - i - 1; j++) {
 			// need condition that if j > next element. then swap both
 			if (bubbleFruits[j] > bubbleFruits[j + 1]) {
-				let current = bubbleFruits[j]
+				let newCurrent = bubbleFruits[j]
 				bubbleFruits[j] = bubbleFruits[j + 1] // swap
-				bubbleFruits[j + 1] = current
+				bubbleFruits[j + 1] = newCurrent
 				
 			}
 		}
