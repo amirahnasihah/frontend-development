@@ -59,7 +59,7 @@ Sorting Algorithm
 
 **How it works:**
 
-> outer loop repeat, from left to second-last length. inner loop repeat, from left to third-last length. remember: we are comparing neighboring elements so, if current element of subarray > next element of subarray, then we swap the current element with the next element, and vice versa.
+> outer loop repeat, from left to second-last length. inner loop repeat, from left to third-last length. remember: we are comparing neighboring elements so, if current element of subarray > next element of subarray. then we swap the current element with the next element, and vice versa.
 
 - Bubble sort works by examining each set of neighboring elements in the array, from left to right, switching their positions if they are out of order.
 - The algorithm repeats this process until it can traverse the entire array and cannot find two elements that need to be swapped.
