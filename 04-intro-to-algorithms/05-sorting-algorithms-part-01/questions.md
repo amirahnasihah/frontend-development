@@ -220,11 +220,7 @@ Let's see how this works:
 
 - And so on...
 
-The reason for using `arr.length - i - 1` is to avoid unnecessary comparisons in
-the later iterations of the outer loop. Since the largest element is "bubbled
-up" to the end in each iteration, there's no need to compare it again in the
-subsequent iterations, as it's already in the correct position. This
-optimization helps make the sorting process more efficient.
+**The reason for using `arr.length - i - 1` is to avoid unnecessary comparisons in the later iterations of the outer loop. Since the largest element is "bubbled up" to the end in each iteration, there's no need to compare it again in the subsequent iterations, as it's already in the correct position. This optimization helps make the sorting process more efficient.**
 
 ## Part 2 Inner Loop
 
