@@ -5,15 +5,16 @@ function bubbleSort(bubbleFruits) {
 		for (let j = 0; j < bubbleFruits.length - i - 1; j++) {
 			// need condition that if j > next element. then swap both
 			if (bubbleFruits[j] > bubbleFruits[j + 1]) {
-				let swap = bubbleFruits[j]
-				swap = bubbleFruits[j + 1]
-				bubbleFruits[j + 1] = swap
+				let current = bubbleFruits[j]
+				current = bubbleFruits[j + 1]
+				bubbleFruits[j + 1] = current
 				
 			}
 		}
 	}
+	return
 }
 
 const unsortBubbleFruits = ["banana", "strawberry","apple", "kiwi", "grape", "pear", "mango"];
-const sortBubbleFruits = bubbleFruits(sortBubbleFruits)
+const sortBubbleFruits = bubbleSort(unsortBubbleFruits)
 console.log(sortBubbleFruits) // output: 
