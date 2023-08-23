@@ -79,7 +79,7 @@ But **the array is still not sorted. We need to repeat step 1 to 4 again. Until 
 
 (Note that we don’t need to worry about “40” anymore as we are sure that it is the largest one)
 
-**The reason for using `arr.length - i - 1` is to avoid unnecessary comparisons in the later iterations of the outer loop. Since the largest element is "bubbled up" to the end in each iteration, there's no need to compare it again in the subsequent iterations, as it's already in the correct position. This optimization helps make the sorting process more efficient.**
+**The `arr.length - i - 1` is to avoid unnecessary comparisons in the later iterations of the outer loop. Since the largest element is "bubbled up" to the end in each iteration, no need to compare it again in the next iterations, as it's already in the correct position**
 
 **Example (with descriptive meaning):**
 
