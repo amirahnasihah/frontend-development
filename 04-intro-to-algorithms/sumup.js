@@ -15,7 +15,7 @@ function bubbleSort(bubbleFruits) {
 	return bubbleFruits
 }
 
-const unsorted = [64, 34, 25, 12, 22, 11, 90];
+const unsortedNumb = [64, 34, 25, 12, 22, 11, 90];
 // const unsortBubbleFruits = ["banana", "strawberry","apple", "kiwi", "grape", "pear", "mango"];
-const sortBubbleFruits = bubbleSort(unsortBubbleFruits)
+const sortBubbleFruits = bubbleSort(unsortedNumb)
 console.log(sortBubbleFruits) // output: 
