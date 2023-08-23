@@ -127,7 +127,7 @@ Print the sorted array "arr"
 
 - It works by breaking down the array into smaller subarrays, sorting them, and then merging them back together in the correct order.
 
-> Ingat tangan (5 jari)
+> Ingat tangan (5 jari). Divide and continue to divide until sorted by itself
 
 **How it works:**
 
