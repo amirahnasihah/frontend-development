@@ -59,7 +59,9 @@ Sorting Algorithm
 
 **How it works:**
 
-- Bubble sort works by examining each set of adjacent elements in the array, from left to right, switching their positions if they are out of order.
+> loop th
+
+- Bubble sort works by examining each set of neighboring elements in the array, from left to right, switching their positions if they are out of order.
 - The algorithm repeats this process until it can traverse the entire array and cannot find two elements that need to be swapped.
 
 1. 1st: Bubble sort starts with the first two elements, comparing them to check which one is greater. Since 33 > 14, it is in the correct position.
