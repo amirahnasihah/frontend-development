@@ -6,7 +6,7 @@ function bubbleSort(bubbleFruits) {
 			// need condition that if j > next element. then swap both
 			if (bubbleFruits[j] > bubbleFruits[j + 1]) {
 				let swap = bubbleFruits[j]
-				swap = bu
+				swap = bubbleFruits[j + 1]
 				bubbleFruits[j + 1] = swap
 				
 			}
