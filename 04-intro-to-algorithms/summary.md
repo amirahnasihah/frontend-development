@@ -84,7 +84,7 @@ But **the array is still not sorted. We need to repeat step 1 to 4 again. Until 
 **Example (with descriptive meaning):**
 
 ```javascript
-
+function bubbleSort() 
 ```
 
 **Pseudocode Bubble Sort:**
