@@ -26,5 +26,6 @@ console.log(sortBubbleFruits) // output:
 OR SWAP:
 
 let temp = bubbleFruits[j]
-bubbleFruits[j] 
+bubbleFruits[j] = bubbleFruits[j + 1]
+bubbleFruits[j + 1]
 */
