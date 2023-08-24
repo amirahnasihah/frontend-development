@@ -23,5 +23,8 @@ const sortBubbleFruits = bubbleSort(unsortedNumb)
 console.log(sortBubbleFruits) // output:
 
 /*
-sortBubbleFruits
+OR SWAP:
+
+let temp = bubbleFruits[j]
+bubbleFruits[j] 
 */
