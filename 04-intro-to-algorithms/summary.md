@@ -170,7 +170,7 @@ Insertion sort is simple, but it might not be the fastest sorting algorithm for 
 2. In the second iteration, we focus on “inserting” the third element to the correct position.
 3. For each iteration, we shift the elements that’s larger than our “current element” to the right to make space for the “current element.
 
-> 
+> repeat, from 1st element to last element. remember: insertion sort compare current element with the 
 
 ```javascript
 const arr = [14, 33, 28, 40, 10]
