@@ -170,7 +170,20 @@ Insertion sort is simple, but it might not be the fastest sorting algorithm for 
 
 **Psedeucode:**
 
+Pseudocode example #1:
 
+```
+Call the first element of the array sorted
+Repeat until all elements are sorted:
+    Insert next unsorted item into sorted part shifting the required number of items
+```
+
+Pseudocode example #2:
+
+```
+For i from 1 to n–1
+    Insert next unsorted item into sorted part shifting i items
+```
 
 ## Merge Sort (“divide and conquer”)
 
