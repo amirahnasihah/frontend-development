@@ -89,9 +89,7 @@ function bubbleSort(arr) {
 	for (let i = 0; i < arr.length - 1; i++) {
 		// 2. loop thru within subarray from first to third-last, compare within subarray
 		for (let j = 0; j < arr.length - i - 1; j++) {
-			// 3. swap current subarray with next subarray
-			j_value = arr[j]
-			j
+			// use if condition: current
 		}
 	}
 }
