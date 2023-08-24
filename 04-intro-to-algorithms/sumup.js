@@ -6,10 +6,11 @@ function bubbleSort(bubbleFruits) {
 			// need condition that if j > next element. then swap both
 			if (bubbleFruits[j] > bubbleFruits[j + 1]) {
 				// SWAP
-				let newCurrent = bubbleFruits[j]
-				bubbleFruits[j] = bubbleFruits[j + 1]
-				bubbleFruits[j + 1] = newCurrent
-				
+				j_value = bubbleFruits[j]
+				j_plus_1_value = bubbleFruits[j + 1]
+				bubbleFruits[j] = j_plus_1_value
+				bubbleFruits[j + 1] = j_value
+
 			}
 		}
 	}
@@ -19,4 +20,8 @@ function bubbleSort(bubbleFruits) {
 const unsortedNumb = [64, 34, 25, 12, 22, 11, 90];
 // const unsortBubbleFruits = ["banana", "strawberry","apple", "kiwi", "grape", "pear", "mango"];
 const sortBubbleFruits = bubbleSort(unsortedNumb)
-console.log(sortBubbleFruits) // output: 
+console.log(sortBubbleFruits) // output:
+
+/*
+sortBubbleFruits
+*/
