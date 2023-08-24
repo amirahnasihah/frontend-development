@@ -150,7 +150,19 @@ Print the sorted array "arr"
 
 **How it works:**
 
+1. You start with the second card (the first card is already considered sorted because it's alone).
 
+2. You compare the second card with the first card. If the second card is smaller, you swap them.
+
+3. Then, you move to the third card. You compare it with the second card and swap if needed, and then compare it with the first card and swap again if needed.
+
+4. You keep doing this for each new card, moving it into its correct position in the already sorted part of the cards.
+
+So, it's like you're inserting each card into its right place among the sorted cards. This process repeats until all the cards are in order.
+
+In JavaScript terms, it's like going through an array of numbers, and for each number, you compare it with the previous numbers and move it to the correct spot in the sorted part of the array.
+
+Insertion sort is simple, but it might not be the fastest sorting algorithm for very large lists.
 
 **Example (with descriptive meaning):**
 
