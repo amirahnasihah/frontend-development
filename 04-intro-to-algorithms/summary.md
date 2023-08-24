@@ -173,7 +173,10 @@ Insertion sort is simple, but it might not be the fastest sorting algorithm for 
 ```javascript
 const arr = [14, 33, 28, 40, 10]
 
-//
+// 1. repeat, from 1st element to last element
+for (let i = 1; i < arr.length; i++) {
+	// 2. 
+}
 ```
 
 **Psedeucode:**
