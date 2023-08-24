@@ -166,7 +166,15 @@ Insertion sort is simple, but it might not be the fastest sorting algorithm for 
 
 **Example (with descriptive meaning):**
 
+1. In the first iteration, we focus on the first 2 elements. We will try to “insert” the second element to the correct position.
+2. In the second iteration, we focus on “inserting” the third element to the correct position.
+3. For each iteration, we shift the elements that’s larger than our “current element” to the right to make space for the “current element.
 
+```javascript
+const arr = [14, 33, 28, 40, 10]
+
+//
+```
 
 **Psedeucode:**
 
