@@ -20,12 +20,12 @@ function bubbleSort(bubbleFruits) {
 const unsortedNumb = [64, 34, 25, 12, 22, 11, 90];
 // const unsortBubbleFruits = ["banana", "strawberry","apple", "kiwi", "grape", "pear", "mango"];
 const sortBubbleFruits = bubbleSort(unsortedNumb)
-console.log(sortBubbleFruits) // output:
+console.log(sortBubbleFruits) // output: [11, 12, 22, 25, 34, 64, 90]
 
 /*
 OR SWAP:
 
 let temp = bubbleFruits[j]
 bubbleFruits[j] = bubbleFruits[j + 1]
-bubbleFruits[j + 1] = bubbleFruits[j]
+bubbleFruits[j + 1] = temp
 */
