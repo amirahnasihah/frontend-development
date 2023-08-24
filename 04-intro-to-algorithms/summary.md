@@ -186,13 +186,31 @@ for (let i = 1; i < arr.length; i++) {
 
 Pseudocode example #1:
 
+```javascript
+InsertionSort(array)
+    for i = 1 to length(array) - 1
+        current = array[i]
+        j = i - 1 // previous_element
+        
+        while j >= 0 and current < array[j]
+            array[j + 1] = array[j] // creates space, the shifting process part
+            j = j - 1
+        end while
+        
+        array[j + 1] = current
+    end for
+end InsertionSort
+```
+
+Pseudocode example #2:
+
 ```
 Call the first element of the array sorted
 Repeat until all elements are sorted:
     Insert next unsorted item into sorted part shifting the required number of items
 ```
 
-Pseudocode example #2:
+Pseudocode example #3:
 
 ```
 For i from 1 to n–1
