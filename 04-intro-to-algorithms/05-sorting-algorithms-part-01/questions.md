@@ -353,8 +353,7 @@ end InsertionSort
 
 first, outer loop. we loop for first iteration. we start at first index; continues to loop until length of array. (i = 1 means at value 9.)
 
-Since we want to compare current element with previous element - Insertion Sort
-then, we set variable called current. this is for current element, arr[i]. so, current element now is value 9.
+Since we want to compare current element with previous element - Insertion Sort. then, we set variable called current. this is for current element, arr[i]. so, current element now is value 9.
 next, we store for previous index in variable called j. We want to compare the second element with the element before the second, which means the previous element. so, to get previous index (current index minus 1, j = i - 1)
 
 second, inner loop using while loop. the loop continues as long as the condition: previous index is not negative index number, which means previous index is more or equal 0 index number and the current element is less than previous element value (current < array[j]); j-- because we compared it with previous index
@@ -364,7 +363,7 @@ end while loop, which this is the process of shifting correct positions
 outer loop, we set the next element to current element (array[j + 1] = current).
 end for loop.
 
-Absolutely, you've grasped the key concepts of the insertion sort algorithm quite well! Your breakdown of the steps is accurate and easy to follow. Here's a summary of the steps you've explained:
+> Absolutely, you've grasped the key concepts of the insertion sort algorithm quite well! Your breakdown of the steps is accurate and easy to follow. Here's a summary of the steps you've explained:
 
 1. **Outer Loop:**
    - Loop through the array, starting from the second element (i = 1).
