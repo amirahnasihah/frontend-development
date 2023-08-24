@@ -84,7 +84,14 @@ But **the array is still not sorted. We need to repeat step 1 to 4 again. Until 
 **Example (with descriptive meaning):**
 
 ```javascript
-function bubbleSort() 
+function bubbleSort(arr) {
+	
+}
+
+const unsortedNumb = [64, 34, 25, 12, 22, 11, 90];
+const sortBubbleFruits = bubbleSort(unsortedNumb)
+console.log(sortBubbleFruits)
+// output: [11, 12, 22, 25, 34, 64, 90]
 ```
 
 **Pseudocode Bubble Sort:**
