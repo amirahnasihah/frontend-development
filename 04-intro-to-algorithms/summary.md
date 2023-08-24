@@ -1,15 +1,15 @@
 - [Common Algorithm CheatSheet](#common-algorithm-cheatsheet)
 - [Common Algorithm](#common-algorithm)
-  - [Brute Force](#brute-force)
-  - [Recursion](#recursion)
+- [Brute Force](#brute-force)
+- [Recursion](#recursion)
 - [Searching Algorithm](#searching-algorithm)
-  - [Linear Search](#linear-search)
-  - [Binary Search](#binary-search)
+- [Linear Search](#linear-search)
+- [Binary Search](#binary-search)
 - [Sorting Algorithm](#sorting-algorithm)
-  - [Bubble Sort](#bubble-sort)
-  - [Insertion Sort](#insertion-sort)
-  - [Merge Sort (“divide and conquer”)](#merge-sort-divide-and-conquer)
-  - [Quick Sort (“divide and conquer”)](#quick-sort-divide-and-conquer)
+- [Bubble Sort](#bubble-sort)
+- [Insertion Sort](#insertion-sort)
+- [Merge Sort (“divide and conquer”)](#merge-sort-divide-and-conquer)
+- [Quick Sort (“divide and conquer”)](#quick-sort-divide-and-conquer)
 
 # Common Algorithm CheatSheet
 
@@ -89,7 +89,13 @@ function bubbleSort(arr) {
 	for (let i = 0; i < arr.length - 1; i++) {
 		// 2. loop thru within subarray from first to third-last, compare within subarray
 		for (let j = 0; j < arr.length - i - 1; j++) {
-			// use if condition: current
+			// 3. use if condition: current subarray > next subarray
+			if (arr[j] > arr[j + 1]) {
+				// 4. swap current subarray with next subarray
+				j_value = arr[j]
+				j_value_plus_one = arr[j + 1]
+				arr
+			}
 		}
 	}
 }
@@ -108,9 +114,9 @@ console.log(sortBubbleFruits)
 Initialize an array called "arr" with values [14, 33, 28, 40, 10]
 
 For each "i" from 0 to length of arr - 1 (second last index):
-    For each "j" from 0 to length of arr - i - 1:
-        If the value at arr[j] is greater than the value at arr[j + 1]:
-            Swap the values at arr[j] and arr[j + 1]
+For each "j" from 0 to length of arr - i - 1:
+If the value at arr[j] is greater than the value at arr[j + 1]:
+Swap the values at arr[j] and arr[j + 1]
 
 Print the sorted array "arr"
 ```
@@ -120,9 +126,9 @@ Print the sorted array "arr"
 Initialize an array called "arr" with values [14, 33, 28, 40, 10]
 
 For each "i" from 0 to length of arr - 1:
-    For each "j" from 0 to length of arr - i - 2:
-        If the value at arr[j] is greater than the value at arr[j + 1]:
-            Swap the values at arr[j] and arr[j + 1]
+For each "j" from 0 to length of arr - i - 2:
+If the value at arr[j] is greater than the value at arr[j + 1]:
+Swap the values at arr[j] and arr[j + 1]
 
 Print the sorted array "arr"
 ```
@@ -155,25 +161,16 @@ Merge Sort, hint/tip:
 
 2. Function 1 - mergeSort():
   A. if statement; This is exit condition to halt recursion. Need the base case where element equals to 1, then it stop recursion.
-  
   B. else statement; need midpoint of array length, need left variable to store first half of array. This is the First Split (left and right).
-  
   C. recursion - called mergeSort function directly. This is where recursively call `mergeSort` on `left` and `right` arrays. Where they will further divided into
   each individual element of array and is considered "sorted" in itself.
-  
   D. recursion - Continue for merging process. return merge() function with arguments of that already halfed array, sortedLeft and sortedRight. Recursion continues until each individual element is considered "sorted" in itself
-  
 3. Function 2 - merge():
   A. need temporary variable of [empty array] to store the final sorted and merged array.
-  
   B. while loop (continue looping as long as the condition is true); condition to keep looping is that both length of left and right must not negative number or none, must more than 0, at least 1 element. it stops the loop when no length left.
-  
   C. if statement; the condition is, if the first element of leftList is less than first element of rightList, code executed: we **take-out/shift the first element from leftList** and then add/push it to the temp variable array.
-  
   D. else statement; (first element of leftList is more than first element of rightList), we take-out/shift the first element from rightList and then add/push it to the temp variable array.
-  
   E. exit while loop.
-  
   F. return function call where we merge/concat both of the array of leftList with rightList.
 */
 ```
@@ -181,24 +178,24 @@ Merge Sort, hint/tip:
 Merge Sort: Key Points to Remember
 
 1. **Functions:**
-   - There are two main functions: `mergeSort()` and `merge()`.
-   
+- There are two main functions: `mergeSort()` and `merge()`.
+
 2. **mergeSort() Function:**
-   - Has an exit condition using an `if` statement (base case) to stop recursion.
-   - In the `else` statement:
-     - Calculate midpoint to divide the array into `left` and `right`.
-     - Use recursion to sort each smaller subarray (`left` and `right`).
-     - Merging process begins by returning `merge()` with `sortedLeft` and `sortedRight`.
-   
+- Has an exit condition using an `if` statement (base case) to stop recursion.
+- In the `else` statement:
+- Calculate midpoint to divide the array into `left` and `right`.
+- Use recursion to sort each smaller subarray (`left` and `right`).
+- Merging process begins by returning `merge()` with `sortedLeft` and `sortedRight`.
+
 3. **merge() Function:**
-   - Uses a temporary array (`arr`) to store the merged and sorted elements.
-   - A `while` loop iterates as long as both `leftList` and `rightList` have elements.
-   - In the loop:
-     - Compares the first elements of `leftList` and `rightList`.
-     - If the first element of `leftList` is smaller, it's shifted to `arr`.
-     - If the first element of `rightList` is smaller, it's shifted to `arr`.
-   - After the loop, any remaining elements from `leftList` and `rightList` are concatenated to `arr`.
-   - The merged and sorted array in `arr` is returned.
+- Uses a temporary array (`arr`) to store the merged and sorted elements.
+- A `while` loop iterates as long as both `leftList` and `rightList` have elements.
+- In the loop:
+- Compares the first elements of `leftList` and `rightList`.
+- If the first element of `leftList` is smaller, it's shifted to `arr`.
+- If the first element of `rightList` is smaller, it's shifted to `arr`.
+- After the loop, any remaining elements from `leftList` and `rightList` are concatenated to `arr`.
+- The merged and sorted array in `arr` is returned.
 
 **Psedeucode:**
 
@@ -206,48 +203,48 @@ Merge Sort: Key Points to Remember
 /* PART 1: divide by 2 and continue to divide until sorted by itself */
 
 function mergeSort(inputList) {
-  // base case to stop infinite recursion. when element left only 1, no need sort, just return inputList as size of 1.
-  if (inputList.length === 1) {
-    return inputList;
-  } else {
-    // but have more size elements, split array into 2 (left and right)  half is midpoint
-    let midpoint = Math.floor(inputList.length / 2);
-    let leftList = inputList.splice(0, midpoint);
+	// base case to stop infinite recursion. when element left only 1, no need sort, just return inputList as size of 1.
+	if (inputList.length === 1) {
+		return inputList;
+	} else {
+		// but have more size elements, split array into 2 (left and right)  half is midpoint
+		let midpoint = Math.floor(inputList.length / 2);
+		let leftList = inputList.splice(0, midpoint);
 
-    // recursively divide elements until inputList is size of 1, which sorted by itself
-    let sortedLeft = merge(leftList);
-    let sortedRight = merge(inputList);
+		// recursively divide elements until inputList is size of 1, which sorted by itself
+		let sortedLeft = merge(leftList);
+		let sortedRight = merge(inputList);
 
-    // after recursively divide elements, we merge the sortedLeft and sortedRight into single array
-    // so, passed as arguments to merge() function
-    return merge(sortedLeft, sortedRight);
-  }
+		// after recursively divide elements, we merge the sortedLeft and sortedRight into single array
+		// so, passed as arguments to merge() function
+		return merge(sortedLeft, sortedRight);
+	}
 }
 
 /* PART 2: merge the subarrays process */
 
 function merge(leftList, rightList) {
-  // since the array splited to 2, left and right. so, need to create new empty array variable to store that combined and sorted single array
-  let arr = [];
+	// since the array splited to 2, left and right. so, need to create new empty array variable to store that combined and sorted single array
+	let arr = [];
 
-  // keep looping as long as condition is true.
-  // condition to keep looping: both left and right list have at least 1 element / more than 0 element (taknak kosong)
-  // combine the halves into single array
-  while (sortedLeft.length > 0 && sorted.length > 0) {
-  	// if condition: 1st element of leftList smaller than 1st element of rightList
-  	// then, shift up 1st element of leftList and push to arr[].
-  	// sbbkan lagi kecik, jadi kita kena push ke array dulu as 1st element, start dari 1,2,...
-  	if (leftList[0] < rightList[0]) {
-  		arr.push(leftList.shift())
-  	} else {
-  		// else condition: 1st element of leftList > 1st element of rightList. then, shift element from rightList and push to arr.
-  		arr.push(rightList.shift())
-  	}
-  }
-  // after sorted both leftList and rightList
-  // combine both into single array
-  // arr is combined by leftList and combined by rightList
-  return arr.concat(leftList).concat(rightList)
+	// keep looping as long as condition is true.
+	// condition to keep looping: both left and right list have at least 1 element / more than 0 element (taknak kosong)
+	// combine the halves into single array
+	while (sortedLeft.length > 0 && sorted.length > 0) {
+		// if condition: 1st element of leftList smaller than 1st element of rightList
+		// then, shift up 1st element of leftList and push to arr[].
+		// sbbkan lagi kecik, jadi kita kena push ke array dulu as 1st element, start dari 1,2,...
+		if (leftList[0] < rightList[0]) {
+			arr.push(leftList.shift())
+		} else {
+			// else condition: 1st element of leftList > 1st element of rightList. then, shift element from rightList and push to arr.
+			arr.push(rightList.shift())
+		}
+	}
+	// after sorted both leftList and rightList
+	// combine both into single array
+	// arr is combined by leftList and combined by rightList
+	return arr.concat(leftList).concat(rightList)
 }
 
 // example usage
@@ -280,45 +277,45 @@ Code execute quickSort() -> partition() -> quickSort()
 
 ```javascript
 const partition = (arr, leftIndex, rightIndex) => {
-    // Choose the rightmost element as the pivot
-    let pivot = arr[rightIndex];
-    
-    // Initialize the index of the last element smaller than the pivot
-    let lastSmallerIndex = leftIndex - 1;
+	// Choose the rightmost element as the pivot
+	let pivot = arr[rightIndex];
 
-    // Iterate through the subarray
-    for (let currentIndex = leftIndex; currentIndex <= rightIndex - 1; currentIndex++) {
-        // If the current element is smaller than the pivot
-        if (arr[currentIndex] < pivot) {
-            // Increment the index of the last smaller element
-            lastSmallerIndex++;
+	// Initialize the index of the last element smaller than the pivot
+	let lastSmallerIndex = leftIndex - 1;
 
-            // Swap the current element with the last smaller element
-            let temp = arr[lastSmallerIndex];
-            arr[lastSmallerIndex] = arr[currentIndex];
-            arr[currentIndex] = temp;
-        }
-    }
+	// Iterate through the subarray
+	for (let currentIndex = leftIndex; currentIndex <= rightIndex - 1; currentIndex++) {
+		// If the current element is smaller than the pivot
+		if (arr[currentIndex] < pivot) {
+			// Increment the index of the last smaller element
+			lastSmallerIndex++;
 
-    // Swap the pivot with the element just after the last smaller element
-    let temp = arr[lastSmallerIndex + 1];
-    arr[lastSmallerIndex + 1] = pivot;
-    arr[rightIndex] = temp;
+			// Swap the current element with the last smaller element
+			let temp = arr[lastSmallerIndex];
+			arr[lastSmallerIndex] = arr[currentIndex];
+			arr[currentIndex] = temp;
+		}
+	}
 
-    // Return the index of the pivot in its sorted position
-    return lastSmallerIndex + 1;
+	// Swap the pivot with the element just after the last smaller element
+	let temp = arr[lastSmallerIndex + 1];
+	arr[lastSmallerIndex + 1] = pivot;
+	arr[rightIndex] = temp;
+
+	// Return the index of the pivot in its sorted position
+	return lastSmallerIndex + 1;
 }
 
 const quickSort = (arr, leftIndex, rightIndex) => {
-    // If there are more than one element in the subarray
-    if (rightIndex > leftIndex) {
-        // Partition the subarray and get the index of the pivot
-        let pivotIndex = partition(arr, leftIndex, rightIndex);
+	// If there are more than one element in the subarray
+	if (rightIndex > leftIndex) {
+		// Partition the subarray and get the index of the pivot
+		let pivotIndex = partition(arr, leftIndex, rightIndex);
 
-        // Recursively sort the subarrays on both sides of the pivot
-        quickSort(arr, leftIndex, pivotIndex - 1);
-        quickSort(arr, pivotIndex + 1, rightIndex);
-    }
+		// Recursively sort the subarrays on both sides of the pivot
+		quickSort(arr, leftIndex, pivotIndex - 1);
+		quickSort(arr, pivotIndex + 1, rightIndex);
+	}
 }
 
 // Example usage. Pivot is 6.
@@ -395,8 +392,8 @@ Here's how it works:
 2. If the condition is met, it calls the `partition` function to find the correct position for the pivot element. The result of `partition` is stored in the variable `pi`.
 
 3. After partitioning, the function makes two recursive calls to `quickSort`:
-   - One for the subarray on the left(⬅ kiri) of the pivot: `quickSort(arr, minIndex, pi - 1)`.(quickSort(array, from minIndex until the previous pivot))
-   - Another for the subarray on the right(kanan ➡ ) of the pivot: `quickSort(arr, pi + 1, maxIndex)`. (quickSort(array, after pivot until maxIndex))
+- One for the subarray on the left(⬅ kiri) of the pivot: `quickSort(arr, minIndex, pi - 1)`.(quickSort(array, from minIndex until the previous pivot))
+- Another for the subarray on the right(kanan ➡ ) of the pivot: `quickSort(arr, pi + 1, maxIndex)`. (quickSort(array, after pivot until maxIndex))
 
 > pi - 1 is previous element; pi + 1 is next element
 
@@ -410,7 +407,7 @@ Here's how it works:
 1. It selects the pivot element, which is assumed to be the rightmost element (`arr[maxIndex]`).
 2. It initializes `i` as one less than `minIndex`. This will serve as the index for the last element that's smaller than the pivot.
 3. The loop iterates through the subarray from `minIndex` to `maxIndex - 1` *(second-last element bcs last index alrdy chosen as pivot so, no need to count)*:
-   - If the current element (`arr[j]`) is smaller than the pivot, it means that it should be moved to the left side of the pivot. So, `i` is incremented, and a swap is performed to move the element to the correct position.
+- If the current element (`arr[j]`) is smaller than the pivot, it means that it should be moved to the left side of the pivot. So, `i` is incremented, and a swap is performed to move the element to the correct position.
 4. After the loop, the elements have been rearranged such that elements smaller than the pivot are on the left and elements greater than the pivot are on the right.
 5. The pivot element (`arr[maxIndex]`) is then swapped with the element at `arr[i + 1]`, effectively placing the pivot in its sorted position.
 6. The function returns the index at which the pivot has been placed in the rearranged array (`i + 1`).
