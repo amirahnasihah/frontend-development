@@ -99,6 +99,7 @@ function bubbleSort(arr) {
 			}
 		}
 	}
+	// to show output, return array
 	return arr
 }
 
