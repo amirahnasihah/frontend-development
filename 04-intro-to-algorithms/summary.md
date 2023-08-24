@@ -87,7 +87,10 @@ But **the array is still not sorted. We need to repeat step 1 to 4 again. Until 
 function bubbleSort(arr) {
 	// 1. loop thru main array from first to second-last
 	for (let i = 0; i < arr.length - 1; i++) {
-		// 2. loop thru within subarray from first to 
+		// 2. loop thru within subarray from first to third-last, compare within subarray
+		for (let j = 0; j < arr.length - i - 1; j++) {
+			
+		}
 	}
 }
 
