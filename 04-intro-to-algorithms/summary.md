@@ -144,8 +144,14 @@ Print the sorted array "arr"
 
 
 **How it works:**
+
+
 **Example (with descriptive meaning):**
+
+
 **Psedeucode:**
+
+
 
 ## Merge Sort (“divide and conquer”)
 
