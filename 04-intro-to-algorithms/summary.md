@@ -85,7 +85,10 @@ But **the array is still not sorted. We need to repeat step 1 to 4 again. Until 
 
 ```javascript
 function bubbleSort(arr) {
-	// 1. loop thru main array from first to sec
+	// 1. loop thru main array from first to second-last
+	for (let i = 0; i < arr.length - 1; i++) {
+		
+	}
 }
 
 const unsortedNumb = [64, 34, 25, 12, 22, 11, 90];
