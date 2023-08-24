@@ -94,10 +94,12 @@ function bubbleSort(arr) {
 				// 4. swap current subarray with next subarray
 				j_value = arr[j]
 				j_value_plus_one = arr[j + 1]
-				arr
+				arr[j] = j_value_plus_one
+				arr[j + 1] = j_value
 			}
 		}
 	}
+	return arr
 }
 
 const unsortedNumb = [64, 34, 25, 12, 22, 11, 90];
