@@ -147,6 +147,7 @@ Print the sorted array "arr"
 **Definition:**
 
 
+> start loop dari second element
 
 **How it works:**
 
