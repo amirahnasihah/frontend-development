@@ -11,6 +11,8 @@
 - [Merge Sort (“divide and conquer”)](#merge-sort-divide-and-conquer)
 - [Quick Sort (“divide and conquer”)](#quick-sort-divide-and-conquer)
 
+todo. job, revisit algo, backend (laptop)
+
 # Common Algorithm CheatSheet
 
 Common Algorithm
