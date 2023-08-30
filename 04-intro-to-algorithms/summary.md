@@ -491,3 +491,5 @@ Here's how it works:
 6. The function returns the index at which the pivot has been placed in the rearranged array (`i + 1`).
 
 This partitioning process ensures that the pivot is positioned correctly within the array, with smaller elements to its left and larger elements to its right. This is a fundamental step in the QuickSort algorithm.
+
+> todo: 
