@@ -490,5 +490,5 @@ Here's how it works:
 
 This partitioning process ensures that the pivot is positioned correctly within the array, with smaller elements to its left and larger elements to its right. This is a fundamental step in the QuickSort algorithm.
 
-> todo: summary algo, leetcode, backend, job, project
+> todo: summary algo, leetcode, backend, project
 understanding back end - watch youtube tutorial
