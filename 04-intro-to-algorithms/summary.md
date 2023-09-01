@@ -492,4 +492,3 @@ This partitioning process ensures that the pivot is positioned correctly within 
 
 > todo: summary algo, leetcode, backend, job, project
 understanding back end - watch youtube tutorial
-no response
