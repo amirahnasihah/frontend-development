@@ -34,7 +34,6 @@ Sorting Algorithm
 
 # Common Algorithm
 
-
 ## Brute Force
 
 ## Recursion
