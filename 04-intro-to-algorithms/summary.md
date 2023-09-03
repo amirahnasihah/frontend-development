@@ -13,6 +13,8 @@
 
 # Common Algorithm CheatSheet
 
+todo: react todo app + context
+
 Common Algorithm
 1. Brute Force
 2. Recursion
