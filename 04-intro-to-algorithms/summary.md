@@ -13,7 +13,7 @@
 
 # Common Algorithm CheatSheet
 
-todo: react todo app + context (codesandbox), backend (weather app), k youth
+todo: react todo app + context (codesandbox), backend (weather app), mysql with website
 
 Common Algorithm
 1. Brute Force
