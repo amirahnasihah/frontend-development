@@ -103,7 +103,29 @@ export default axios.create({
 > example for API endpoint: https://jsonplaceholder.typicode.com/users
 
 ```javascript
+// importing hooks and api
+import { useEffect, useState } from "react";
+import api from "../api/itemsData";
 
+// state variable
+const [data, setData] = useState([])
+
+// get data from api
+useEffect(() => {
+  // actual code to get data
+  const getData = async () => {
+    try {
+      // const response = await axios.get("other-url-like-json-placeholder");
+      const response = await api.get("/itemsData");
+      setData(response.data);
+    }
+    catch (error) {
+      console.log(error.message)
+    }
+  }
+
+  geData()
+}, [])
 ```
 
 ## PUT method - to update
