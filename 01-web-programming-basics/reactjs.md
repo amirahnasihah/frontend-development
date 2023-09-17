@@ -5,7 +5,7 @@
 - PATCH and **PUT** update existing data.
 - DELETE removes existing data.
 
-> reactjs: components, props, states, hooks
+> reactjs: components, props, states, hooks, context api
 
 # Setting up JSON server API
 
@@ -232,4 +232,12 @@ export default function EditModal({ open, onClose, item }) {
 
 ## POST - to add/create data
 
+```javascript
+
+```
+
 ## DELETE - to delete a data
+
+```javascript
+
+```
