@@ -229,3 +229,7 @@ export default function EditModal({ open, onClose, item }) {
   </form>
 }
 ```
+
+## POST - to add/create data
+
+## DELETE - to delete a data
