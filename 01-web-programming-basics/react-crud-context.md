@@ -95,7 +95,7 @@ export function useContactsCrud() {
 }
 ```
 
-Then, to use the context we import it to our main App file.
+Then, to use the context we import it to our main App file. For Context folders there are another way to create a Context by separating between Context and Provider.
 
 App.js:
 
