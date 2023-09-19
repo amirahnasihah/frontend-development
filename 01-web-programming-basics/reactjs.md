@@ -245,5 +245,3 @@ export default function EditModal({ open, onClose, item }) {
 ```javascript
 
 ```
-
-delete with id
