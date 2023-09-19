@@ -232,11 +232,15 @@ export default function EditModal({ open, onClose, item }) {
 
 ## POST - to add/create data
 
+> axios.post()
+
 ```javascript
 
 ```
 
 ## DELETE - to delete a data
+
+> axios.delete
 
 ```javascript
 
