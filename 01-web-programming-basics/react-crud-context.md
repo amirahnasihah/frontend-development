@@ -94,3 +94,10 @@ export function useContactsCrud() {
 }
 ```
 
+Then, to use the context we import it to our main App file.
+
+App.js:
+
+```javascript
+
+```
