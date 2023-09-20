@@ -7,6 +7,9 @@
 
 > reactjs: components, props, states, hooks, context api
 
+common dependencies installed
+
+
 # Setting up JSON server API
 
 JSON server is like a simple db connection for front-end to perform CRUD operations.
