@@ -11,7 +11,7 @@ common dependencies installed:
 - axios
 - react-router-dom
 - ui libraries like MUI/Semantic UI
-- 
+- uuidv4 (generate unique id)
 
 
 # Setting up JSON server API
