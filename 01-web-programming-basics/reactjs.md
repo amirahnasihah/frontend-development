@@ -7,7 +7,11 @@
 
 > reactjs: components, props, states, hooks, context api
 
-common dependencies installed
+common dependencies installed:
+- axios
+- react-router-dom
+- ui libraries like MUI/Semantic UI
+- 
 
 
 # Setting up JSON server API
