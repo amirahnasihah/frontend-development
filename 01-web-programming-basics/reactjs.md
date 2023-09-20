@@ -10,6 +10,7 @@
 common dependencies installed:
 - axios
 - react-router-dom
+- json-server (fake rest api)
 - ui libraries like MUI/Semantic UI
 - uuidv4 (generate unique id)
 
