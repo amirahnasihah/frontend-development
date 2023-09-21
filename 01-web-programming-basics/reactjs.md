@@ -16,7 +16,6 @@ common dependencies installed:
 - ui libraries like MUI/Semantic UI
 - uuidv4 (generate unique id)
 
-
 # Setting up JSON server API
 
 JSON server is like a simple db connection for front-end to perform CRUD operations.
