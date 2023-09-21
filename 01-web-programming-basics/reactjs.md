@@ -5,7 +5,7 @@
 - PATCH and **PUT** update existing data.
 - DELETE removes existing data.
 
-// islamic story app, malaysian artist from 70s to current app like wikipedia
+//dreams: islamic story app, malaysian artist from 70s to current app like wikipedia
 
 > reactjs: components, props, states, hooks, context api
 
