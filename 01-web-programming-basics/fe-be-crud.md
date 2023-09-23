@@ -12,5 +12,3 @@ common dependencies installed:
 - uuidv4 (generate unique id)
 
 // dreams: islamic story app, malaysian artist from 70s to current app like wikipedia
-
-be
