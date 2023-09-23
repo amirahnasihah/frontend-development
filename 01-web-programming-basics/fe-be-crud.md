@@ -11,4 +11,4 @@ common dependencies installed:
 - ui libraries like MUI/Semantic UI
 - uuidv4 (generate unique id)
 
-dreams: islamic story app, malaysian artist from 70s to current app like wikipedia
+// dreams: islamic story app, malaysian artist from 70s to current app like wikipedia
