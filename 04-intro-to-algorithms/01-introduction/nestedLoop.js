@@ -18,7 +18,7 @@ console.log("\n")
 
 for (var i = 1; i <= 5; i++) {
 	for (var j = 1; j <= 5; j++) {
-		console.log(i + j)
+		console.log(i  j)
 	}
 }
 
