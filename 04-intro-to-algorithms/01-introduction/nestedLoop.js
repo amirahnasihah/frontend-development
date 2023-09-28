@@ -1,4 +1,4 @@
-// nested for loop
+// a for loop
 
 for (var i = 0; i < 5; i++) {
 	console.log(i)
@@ -13,3 +13,12 @@ for (var i = 0; i < 5; i++) {
 4
 */
 
+// nested for loop
+
+for (var i = 0; i < 5; i++) {
+	console.log([i])
+}
+
+/* output
+
+*/
