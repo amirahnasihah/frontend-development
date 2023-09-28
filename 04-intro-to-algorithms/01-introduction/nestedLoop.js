@@ -26,7 +26,7 @@ for (var i = 1; i <= nums; i++) {
 
 /* output:
 
-row 1, col 1. row 1, 
+row 1, col 1; row 1, col 2
 
 1,1
 1,2
