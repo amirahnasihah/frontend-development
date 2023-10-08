@@ -13,7 +13,7 @@
 
 # Common Algorithm CheatSheet
 
-todo: react todo app + context (codesandbox), backend (weather app), mysql with website, how to get data from mysl with reactjs
+todo: react todo app + context (codesandbox), backend (weather app)
 
 > for loops with no array but like pyramid shape
 
