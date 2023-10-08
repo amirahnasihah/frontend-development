@@ -15,7 +15,7 @@
 
 todo: react todo app + context (codesandbox), backend (weather app)
 
-> for loops with no array but like pyramid shape 
+> for loops with no array but like pyramid shape.
 
 Common Algorithm
 1. Brute Force
