@@ -15,6 +15,8 @@
 
 todo: react todo app + context (codesandbox), backend (weather app), mysql with website, how to get data from mysl with reactjs
 
+> for loops with no array but like pyramid shape
+
 Common Algorithm
 1. Brute Force
 2. Recursion
