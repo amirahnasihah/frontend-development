@@ -31,7 +31,7 @@ Sorting Algorithm
 3. Merge Sort - divide into smaller subarrays, use midpoint
 4. Quick Sort - use fixed pivot to rearrange elements
 
-**Definition:**its a 
+**Definition:**
 **How it works:**
 **Example (with descriptive meaning):**
 **Psedeucode:**
