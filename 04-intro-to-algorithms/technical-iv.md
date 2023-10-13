@@ -116,4 +116,3 @@ function maxConsecutiveSum(nums) {
 }
 ```
 
-tata
