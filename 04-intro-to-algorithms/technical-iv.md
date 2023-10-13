@@ -116,4 +116,4 @@ function maxConsecutiveSum(nums) {
 }
 ```
 
-yuru
+yuru camp
