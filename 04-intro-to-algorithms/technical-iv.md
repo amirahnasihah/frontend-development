@@ -115,3 +115,5 @@ function maxConsecutiveSum(nums) {
   // Your code here
 }
 ```
+
+fin
