@@ -13,7 +13,7 @@
 
 # Common Algorithm CheatSheet
 
-todo: react todo app + context (codesandbox), backend (weather app)
+todo: react todo app + context (codesandbox), backend (weather app), cypress
 
 > for loops with no array but like pyramid shape
 
