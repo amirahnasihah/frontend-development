@@ -13,7 +13,7 @@
 
 # Common Algorithm CheatSheet
 
-todo: react todo app + context (codesandbox)
+todo: react todo app + context (codesandbox), sql
 
 > for loops with no array but like pyramid shape. 
 
