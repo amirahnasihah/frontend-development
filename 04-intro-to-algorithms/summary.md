@@ -13,7 +13,7 @@
 
 # Common Algorithm CheatSheet
 
-todo: react todo app + context (codesandbox), backend
+todo: react todo app + context (codesandbox)
 
 > for loops with no array but like pyramid shape. 
 
