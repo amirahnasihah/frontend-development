@@ -13,7 +13,7 @@
 
 # Common Algorithm CheatSheet
 
-todo: react todo app + context, mysql sequelize mysql2, projects db, cypress
+todo: react todo app + context, mysql sequelize mysql2, projects db, express, cypress
 
 > for loops with no array but like pyramid shape. 
 
