@@ -40,3 +40,5 @@ In CSS, you can control these aspects using properties like `width`, `height`, `
 ```
 
 This CSS rule would create a box with a total width of 240px (200px content + 2 * 20px padding + 2 * 2px border + 2 * 10px margin). Adjusting these properties allows for precise control over the layout and spacing of elements on a webpage.
+
+css, context, reducer, next, redux, mysql
