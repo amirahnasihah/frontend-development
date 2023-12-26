@@ -20,8 +20,6 @@
 
 10. **Vendor Prefixes:** In the past, different browsers required different prefixes for experimental or cutting-edge CSS features. This practice has become less common with more standardized support for CSS features.
 
-Mastering these fundamentals allows developers to create visually appealing, responsive, and well-structured webpages.
-
 # Box Model
 
 The box model is a fundamental concept in web development that describes how elements on a webpage are structured in terms of their dimensions and spacing. It consists of the following components:
