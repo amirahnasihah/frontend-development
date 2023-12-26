@@ -63,4 +63,41 @@ In CSS, you can control these aspects using properties like `width`, `height`, `
 
 This CSS rule would create a box with a total width of 240px (200px content + 2 * 20px padding + 2 * 2px border + 2 * 10px margin). Adjusting these properties allows for precise control over the layout and spacing of elements on a webpage.
 
-css, context, reducer, next, redux, mysql
+> css, context, reducer, next, redux, mysql
+
+# Flexbox
+
+Using Flexbox with an image can help in controlling its placement and alignment within a container. Here's an example of how you might use Flexbox to arrange an image within a container:
+
+HTML:
+```html
+<div class="container">
+  <img src="image.jpg" alt="Description of the image">
+</div>
+```
+
+CSS:
+```css
+.container {
+  display: flex;
+  justify-content: center; /* Centers content along the main axis (horizontally) */
+  align-items: center; /* Centers content along the cross axis (vertically) */
+  height: 300px; /* Set the height of the container */
+  border: 1px solid #ccc; /* Adding a border for visualization */
+}
+
+img {
+  max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+  max-height: 100%; /* Ensures the image doesn't exceed the container's height */
+  /* You can also add additional styles to the image as needed */
+}
+```
+
+In this example:
+
+- The container is set as a flex container using `display: flex`.
+- `justify-content: center` horizontally centers the image within the container.
+- `align-items: center` vertically centers the image within the container.
+- The image has `max-width: 100%` and `max-height: 100%` to ensure it doesn't exceed the dimensions of the container while maintaining its aspect ratio.
+
+You can adjust the container's size, add margins or padding, or apply other styles as needed to achieve the desired layout and appearance.
