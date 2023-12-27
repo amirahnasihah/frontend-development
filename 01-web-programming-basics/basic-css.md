@@ -101,3 +101,6 @@ In this example:
 - The image has `max-width: 100%` and `max-height: 100%` to ensure it doesn't exceed the dimensions of the container while maintaining its aspect ratio.
 
 You can adjust the container's size, add margins or padding, or apply other styles as needed to achieve the desired layout and appearance.
+
+# Grid Box
+
