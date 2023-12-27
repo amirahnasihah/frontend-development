@@ -104,7 +104,7 @@ You can adjust the container's size, add margins or padding, or apply other styl
 
 # Grid Box
 
-Certainly! To create a basic grid layout, you can use the CSS Grid Layout module. Here's a simple example:
+To create a basic grid layout, you can use the CSS Grid Layout module. Here's a simple example:
 
 HTML:
 
