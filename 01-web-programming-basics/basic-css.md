@@ -136,4 +136,21 @@ CSS:
 
 In this example, we have a grid container with three columns, and each grid item contains some placeholder text. Adjust the `grid-template-columns` property to change the number of columns or their widths.
 
-Feel free to customize the styles, add more grid items, or incorporate images as needed for your specific design. If you have any specific requirements or modifications you'd like, feel free to let me know!
+## grid-template-columns
+
+The `grid-template-columns` property in CSS Grid is used to define the number and size of columns in a grid container. Let me break down the specific part you asked about:
+
+```css
+grid-template-columns: repeat(3, 1fr);
+```
+
+- `repeat(3, 1fr)`: This part is using the `repeat` function to generate a repeating pattern for the columns. It takes two arguments: the number of repetitions (`3` in this case) and the size of each repetition (`1fr`).
+
+- `1fr`: The unit `fr` stands for "fractional unit." In this context, it means that the column should take up an equal share of the available space. So, when you have three columns with `1fr` each, they will share the available space equally, creating a flexible and responsive grid.
+
+Here's a breakdown:
+
+- `repeat(3, 1fr)`: Repeat the pattern three times.
+- `1fr`: Each repetition takes up an equal fraction of the available space.
+
+This is a common approach to creating a grid with three equal-width columns, and it's particularly useful for responsive designs where you want the columns to adjust based on the available space. You can modify the number of repetitions or adjust the size to suit your layout needs.
