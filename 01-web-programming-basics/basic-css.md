@@ -104,3 +104,36 @@ You can adjust the container's size, add margins or padding, or apply other styl
 
 # Grid Box
 
+Certainly! To create a basic grid layout, you can use the CSS Grid Layout module. Here's a simple example:
+
+HTML:
+
+```html
+<div class="grid-container">
+  <div class="grid-item">Item 1</div>
+  <div class="grid-item">Item 2</div>
+  <div class="grid-item">Item 3</div>
+  <div class="grid-item">Item 4</div>
+  <!-- Add more grid items as needed -->
+</div>
+```
+
+CSS:
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+  background-color: #eee; /* Set a background color or other styles */
+  padding: 20px; /* Set padding as needed */
+  text-align: center; /* Center content within each grid item */
+}
+```
+
+In this example, we have a grid container with three columns, and each grid item contains some placeholder text. Adjust the `grid-template-columns` property to change the number of columns or their widths.
+
+Feel free to customize the styles, add more grid items, or incorporate images as needed for your specific design. If you have any specific requirements or modifications you'd like, feel free to let me know!
