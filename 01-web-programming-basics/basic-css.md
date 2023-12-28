@@ -155,4 +155,4 @@ Here's a breakdown:
 
 This is a common approach to creating a grid with three equal-width columns, and it's particularly useful for responsive designs where you want the columns to adjust based on the available space. You can modify the number of repetitions or adjust the size to suit your layout needs.
 
-css, context, redux
+css, context, redux, usereducer
