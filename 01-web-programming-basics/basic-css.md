@@ -158,4 +158,4 @@ This is a common approach to creating a grid with three equal-width columns, and
 css, context, usereducer, Flexbox
 
 tech to learn 2024:
-nextjs, typescript, tailwind, prisma
+nextjs, typescript, tailwind, mysql
