@@ -160,3 +160,5 @@ tech to learn 2024:
 - nextjs, typescript, tailwind, mysql, framer motion => web portfolio
 
 - css, context, usereducer, Flexbox, grid, redux toolkit
+
+4 hari
