@@ -54,5 +54,6 @@ Flexbox is incredibly versatile and empowers developers to create a wide range o
 
 > https://flexboxfroggy.com
 
-1. `justify-content` property, which aligns items horizontally. (start, end, center, space-between, space-around, space-evenly)
-2. 
+1. `justify-content` property aligns items horizontally. (start, end, center, space-between, space-around, space-evenly)
+2. `align-items` property aligns items vertically. (start, end, center, stretch, baseline)
+3. 
