@@ -161,4 +161,4 @@ tech to learn 2024:
 
 - css, context, usereducer, Flexbox, grid, redux toolkit
 
-4 hari lagi.
+33 hari lagi.
