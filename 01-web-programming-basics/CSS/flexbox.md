@@ -49,3 +49,10 @@ Flexbox is a powerful layout model in CSS that provides a more efficient way to 
 - Offers flexibility for responsive designs without relying heavily on floats or positioning.
 
 Flexbox is incredibly versatile and empowers developers to create a wide range of layouts and designs with ease, making it a valuable tool for building modern web interfaces.
+
+# Flexbox Froggy
+
+> https://flexboxfroggy.com
+
+1. `justify-content` property, which aligns items horizontally. (start, end, center, space-between, space-around, space-evenly)
+2. 
