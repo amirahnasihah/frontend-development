@@ -153,8 +153,7 @@ Here's a breakdown:
 - `repeat(3, 1fr)`: Repeat the pattern three times.
 - `1fr`: Each repetition takes up an equal fraction of the available space.
 
-This is a common approach to creating a grid with three equal-width columns, and it's particularly useful for responsive designs where you want the columns to adjust based on the available space. You can modify the number of repetitions or adjust the size to suit your layout needs.
-
+This is a common approach to creating a grid with three equal-width columns, and it's particularly useful for responsive designs where you want the columns to adjust based on the available space. Can modify the number of repetitions or adjust the size to suit your layout needs.
 
 tech to learn 2024:
 
