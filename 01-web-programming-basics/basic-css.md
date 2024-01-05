@@ -157,6 +157,6 @@ This is a common approach to creating a grid with three equal-width columns, and
 
 tech to learn 2024:
 
-- nextjs, typescript, tailwind, mysql, framer motion => portfolio
+- nextjs, typescript, tailwind, mysql, framer motion => portfolio.
 
-- css, context, usereducer, Flexbox, grid, redux toolkit
+- css, context, usereducer, Flexbox, grid, redux toolkit.
