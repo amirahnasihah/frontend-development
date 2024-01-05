@@ -156,7 +156,8 @@ Here's a breakdown:
 This is a common approach to creating a grid with three equal-width columns, and it's particularly useful for responsive designs where you want the columns to adjust based on the available space. You can modify the number of repetitions or adjust the size to suit your layout needs.
 
 
-tech to learn 2024:
+tech to learn 2024-
+
 - nextjs, typescript, tailwind, mysql, framer motion => portfolio
 
 - css, context, usereducer, Flexbox, grid, redux toolkit
