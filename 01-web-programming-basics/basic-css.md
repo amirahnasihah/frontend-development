@@ -159,4 +159,4 @@ tech to learn 2024:
 
 - nextjs, typescript, tailwind, mysql, framer motion => portfolio.
 
-- context, usereducer, Flexbox froggy, Grid, redux toolkit.
+- context, usereducer, Flexbox froggy game, Grid, redux toolkit.
