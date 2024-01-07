@@ -161,4 +161,4 @@ tech to learn 2024:
 
 - context, usereducer, Flexbox froggy game, Grid, redux toolkit.
 
-- jwt token
+- jwt token be talentlabs
