@@ -59,3 +59,65 @@ Flexbox is incredibly versatile and empowers developers to create a wide range o
 3. `flex-direction` property defines the direction items are placed in the container. (row, row-reverse, column, column-reverse) **Notice that when you set the direction to a reversed row or column, start and end are also reversed** and **Notice that when the flex direction is a column, justify-content changes to the vertical and align-items to the horizontal**
 4. Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the `order` property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).
 5. 
+
+## order
+
+The `order` property in Flexbox allows you to change the visual order of flex items within their container, regardless of their actual position in the HTML structure. By default, flex items appear in the order they are written in the HTML.
+
+### Usage:
+
+- **Value:** It takes a number (integer) as its value.
+- **Default:** 0
+- **Negative Values:** Items with negative order values appear before items with a value of 0.
+- **Higher Values:** Items with higher values appear after items with lower values.
+
+### Example:
+
+Let's consider an example where you have three divs inside a flex container:
+
+```html
+<div class="flex-container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+```
+
+```css
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 5px;
+}
+
+.flex-container {
+  display: flex;
+}
+```
+
+By default, these items would appear in the order 1, 2, 3.
+
+Now, let's apply the `order` property to change the order of the items:
+
+```css
+.item:nth-child(1) {
+  order: 3;
+}
+
+.item:nth-child(2) {
+  order: 1;
+}
+
+.item:nth-child(3) {
+  order: 2;
+}
+```
+
+With this setup, despite the original order in the HTML, the items will visually rearrange themselves as follows:
+
+- Item 2 will appear first (order: 1)
+- Item 3 will appear second (order: 2)
+- Item 1 will appear last (order: 3)
+
+This property is helpful for reordering elements within a flex container without needing to alter the HTML structure, making it easier to create responsive layouts or change the visual hierarchy of elements based on different screen sizes or design needs.
