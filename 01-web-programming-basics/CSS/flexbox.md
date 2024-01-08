@@ -56,7 +56,7 @@ Flexbox is incredibly versatile and empowers developers to create a wide range o
 
 1. `justify-content` property aligns items horizontally. (start, end, center, space-between, space-around, space-evenly)
 2. `align-items` property aligns items vertically. (start, end, center, stretch, baseline)
-3. `flex-direction` property defines the direction items are placed in the container. (row, row-reverse, column, column-reverse) **Notice that when you set the direction to a reversed row or column, start and end are also reversed** and **Notice that when the flex direction is a column, justify-content changes to the vertical and align-items to the horizontal**
+3. `flex-direction` property defines the direction items are placed in the container. (row, row-reverse, column, column-reverse) **Notice that when you set the direction to a reversed row or column, start and end are also reversed** and **Notice that when the flex direction is a _column_, justify-content changes to the vertical and align-items to the horizontal**. but not for row.
 4. Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the `order` property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).
 5. 
 
