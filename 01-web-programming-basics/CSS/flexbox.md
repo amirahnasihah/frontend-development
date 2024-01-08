@@ -59,6 +59,7 @@ Flexbox is incredibly versatile and empowers developers to create a wide range o
 3. `flex-direction` property defines the direction items are placed in the container. (row, row-reverse, column, column-reverse) **Notice that when you set the direction to a reversed row or column, start and end are also reversed** and **Notice that when the flex direction is a _column_, justify-content changes to the vertical and align-items to the horizontal**. row-reverse = align-items and justify-content tak ubah.
 4. Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the `order` property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2). negative didepan, positive dibelakang.
 5. Another property you can apply to individual items is `align-self`. This property accepts the same values as `align-items` and its value for the specific item.
+6. Spread them out using the `flex-wrap` property, which accepts the following values: 1) `nowrap`: Every item is fit to a single line. 2) `wrap`: Items wrap around to additional lines. 3) `wrap-reverse`: Items wrap around to additional lines in reverse.
 
 ## order
 
