@@ -61,7 +61,7 @@ Flexbox is incredibly versatile and empowers developers to create a wide range o
 5. Another property you can apply to individual items is `align-self`. This property accepts the same values as `align-items` and its value for the specific item.
 6. Spread them out using the `flex-wrap` property, which accepts the following values: 1) `nowrap`: Every item is fit to a single line. 2) `wrap`: Items wrap around to additional lines. 3) `wrap-reverse`: Items wrap around to additional lines in reverse.
 7. The two properties `flex-direction` and `flex-wrap` are used so often together that the shorthand property `flex-flow` was created to combine them. This shorthand property accepts the value of the two properties separated by a space. For example, you can use `flex-flow: row wrap` or  `flex-flow: column wrap` to set rows and wrap them.
-8. `align-content` to set how multiple lines are spaced apart from each other. values same as `align-items` but for multiple lines.
+8. `align-content` to set how multiple lines are spaced apart from each other. (flex-start, flex-end, center, space-between, space-around, stretch)
 
 ## order
 
