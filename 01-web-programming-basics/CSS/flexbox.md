@@ -60,6 +60,7 @@ Flexbox is incredibly versatile and empowers developers to create a wide range o
 4. Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the `order` property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2). negative didepan, positive dibelakang.
 5. Another property you can apply to individual items is `align-self`. This property accepts the same values as `align-items` and its value for the specific item.
 6. Spread them out using the `flex-wrap` property, which accepts the following values: 1) `nowrap`: Every item is fit to a single line. 2) `wrap`: Items wrap around to additional lines. 3) `wrap-reverse`: Items wrap around to additional lines in reverse.
+7. The two properties `flex-direction` and `flex-wrap` are used so often together that the shorthand property `flex-flow` was created to combine them. This shorthand property accepts the value of the two properties separated by a space. For example, you can use `flex-flow`: row wrap to set rows and wrap them.
 
 ## order
 
