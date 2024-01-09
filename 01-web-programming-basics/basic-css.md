@@ -159,6 +159,6 @@ tech to learn 2024:
 
 - nextjs, typescript, tailwind, mysql, framer motion => portfolio.
 
-- context, usereducer, Flexbox froggy game, Grid, redux toolkit.
+- context, usereducer, Grid, redux toolkit.
 
-- jwt token be from talentlabs
+- jwt token be talentlabs
