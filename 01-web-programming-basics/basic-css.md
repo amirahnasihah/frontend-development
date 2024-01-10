@@ -162,3 +162,4 @@ tech to learn 2024:
 - context, usereducer, Grid, redux toolkit.
 
 - jwt token be talentlabs
+- todo: user manual
