@@ -163,4 +163,4 @@ tech to learn 2024:
 
 - jwt token be talentlabs
 - todo: wordpress, user manual, nextjs in codesandbox
-- 
+- weekend: wordpress, blog, website + mysql
