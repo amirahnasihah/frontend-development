@@ -154,13 +154,3 @@ Here's a breakdown:
 - `1fr`: Each repetition takes up an equal fraction of the available space.
 
 This is a common approach to creating a grid with three equal-width columns, and it's particularly useful for responsive designs where you want the columns to adjust based on the available space. Can modify the number of repetitions or adjust the size to suit your layout needs.
-
-tech to learn 2024:
-
-- nextjs (important), typescript (2nd important), tailwind css (important), mysql, framer motion => portfolio.
-
-- context, usereducer, Grid, redux toolkit.
-
-- jwt token be talentlabs
-- todo: wordpress, user manual, nextjs in codesandbox
-- weekend: wordpress, blog, website + mysql
