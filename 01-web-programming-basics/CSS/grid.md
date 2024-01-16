@@ -17,13 +17,9 @@
 }
 ```
 
-tech to learn 2024:
-
-- nextjs (important), typescript (2nd important), tailwind css (important), mysql, framer motion => portfolio.
-
 - context, usereducer, Grid, redux toolkit.
 
 - jwt token be talentlabs
 - todo: wordpress, user manual, nextjs in codesandbox
+- tech to learn 2024:- nextjs, typescript (2nd important), tailwind css (important), mysql, framer motion => portfolio.
 - weekend: wordpress, blog, website + mysql
-- 
