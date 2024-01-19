@@ -23,4 +23,3 @@
 - todo: wordpress, user manual, nextjs in codesandbox
 - tech to learn 2024:- nextjs, typescript, tailwind css, mysql, framer motion => portfolio.
 - weekend: wordpress, typescript, nextjs => website + mysql
-- wfh jumaat
