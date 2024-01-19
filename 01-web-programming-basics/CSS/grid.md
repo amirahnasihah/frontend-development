@@ -17,7 +17,7 @@
 }
 ```
 
-- context, usereducer, Grid, redux toolkit.
+- context, usereducer, redux toolkit.
 
 - jwt token be talentlabs
 - todo: wordpress, user manual, nextjs in codesandbox
