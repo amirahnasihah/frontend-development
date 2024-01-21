@@ -29,5 +29,31 @@ JSON
 hashtag
 
 ```markdown
+front-end
+back-end
+javascript
+html/css
+reactjs
+nextjs
+typescript
+expressjs
+material-ui
+tailwind
+semantic-ui
+bootstrap
+mongodb
+firebase
+sqlite
+mysql
+sequelize
+ejs
+postman
+swagger-ui
+open-api
 
+cloudinary
+open-meteo
+open-weather
+newsdata
+json-server
 ```
