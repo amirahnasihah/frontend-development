@@ -31,6 +31,8 @@ hashtag
 ```markdown
 front-end
 back-end
+fullstack
+mern-stack
 javascript
 html/css
 reactjs
@@ -56,14 +58,14 @@ open-api
 cloudinary
 open-meteo
 open-weather
-newsdata
+newsapi
 mock-api
 json-placeholder
 json-server
 context-hook
 reducer-hook
 react-router-dom
-env
+dotenv
 nodemon
 
 crud
@@ -75,6 +77,7 @@ web-design
 authorization
 load-more
 pagination
+localstorage
 notion
 ms-office
 ms-visio
