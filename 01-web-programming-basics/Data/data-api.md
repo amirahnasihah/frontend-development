@@ -23,10 +23,11 @@ JSON
 "description": "",
 "demoUrl": "",
 "githubUrl": "",
+"coder": "",
 "hashtag": [],
 ```
 
-hashtag
+hashtag type
 
 ```markdown
 front-end
