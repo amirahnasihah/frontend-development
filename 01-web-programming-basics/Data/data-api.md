@@ -27,7 +27,7 @@ JSON
 "hashtag": [],
 ```
 
-hashtag type
+hashtag type (which)
 
 ```markdown
 front-end
