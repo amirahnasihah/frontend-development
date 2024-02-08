@@ -23,4 +23,4 @@
 - todo: wordpress, user manual, nextjs in codesandbox
 - tech to learn 2024:- nextjs, typescript, tailwind css, mysql, framer motion => portfolio
 - weekend: nextjs + typescript, redux, tailwind css, prisma, vite, framer sites => website + mysql
-- nextjs + typescript, redux toolkit, tanstack query, zod, framer motion, figma, tailwind animate
+- nextjs + typescript, redux toolkit, tanstack, framer motion, figma, tailwind animate
