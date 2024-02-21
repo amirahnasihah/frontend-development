@@ -22,4 +22,4 @@
 - todo: wordpress, user manual, nextjs in codesandbox
 - tech to learn 2024:- nextjs, typescript, tailwind css, mysql, framer motion => portfolio
 - weekend: nextjs + typescript, redux, tailwind css, prisma, vite, framer sites => website + mysql
-- state management for dark mode
+- state management for theme mode
