@@ -22,4 +22,4 @@
 - todo: wordpress, user manual, nextjs in codesandbox
 - tech to learn 2024:- nextjs, typescript, tailwind css, mysql, framer motion => portfolio
 - weekend: nextjs + typescript, redux, tailwind css, prisma, vite, framer sites => website
-- state management for theme mode zustand, tanstack, zod form, recaptcha, prisma mysql, next auth, redux toolkit
+- state management for theme mode zustand, tanstack, zod form, prisma mysql, next auth, redux toolkit
