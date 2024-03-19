@@ -21,5 +21,5 @@
 - jwt token be talentlabs
 - todo: wordpress, user manual, nextjs in codesandbox
 - tech to learn 2024:- nextjs, typescript, tailwind css, mysql, framer motion => portfolio
-- weekend: nextjs + typescript, redux, tailwind css, prisma, vite, framer sites
+- weekend: nextjs + typescript, redux, tailwind css, prisma, vite, framer sites, figma
 - state management theme mode zustand, zod form, prisma mysql, next auth, redux toolkit, tanstack, laravel
